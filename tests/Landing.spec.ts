@@ -1,8 +1,12 @@
-import { test, expect} from '@playwright/test';
+import { test } from '@playwright/test';
+import { LandingPage } from './pages/LandingPage';
 
-test('test', async ({ page }) => {
-await page.goto(process.env.BASE_URL!);
-await page.getByRole('link', { name: 'Chaves na Mão' }).click();
-})
+test('landing page carrega e navega para Chaves na Mão', async ({ page }) => {
+  const landing = new LandingPage(page);
+  await landing.goto();
+  await landing.expectLoaded();
+  await landing.clickChavesNaMao();
+  await landing.expectOnChavesNaMao();
+});
 
 

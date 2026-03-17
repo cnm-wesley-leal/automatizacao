@@ -1,5 +1,7 @@
-import { test, expect } from '@playwright/test'; // Importe o expect
-import { fakerPT_BR as faker } from '@faker-js/faker'; // Use o locale PT_BR para dados mais reais
+import { test } from '@playwright/test';
+import { fakerPT_BR as faker } from '@faker-js/faker';
+import { LandingPage } from './pages/LandingPage';
+import { AuthPage } from './pages/AuthPage';
 
 test('criar conta com dados válidos', async ({ page }) => {
   const firstName = faker.person.firstName();
@@ -17,21 +19,11 @@ test('criar conta com dados válidos', async ({ page }) => {
     prefix: 'Aa1!'
   });
 
-await page.goto(process.env.BASE_URL!);
-  
-  // Interação
-  await page.getByRole('link', { name: 'Entrar' }).click();
-  await page.getByRole('link', { name: 'Cadastre-se aqui' }).click();
+  const landing = new LandingPage(page);
+  const auth = new AuthPage(page);
 
-  await page.getByRole('textbox', { name: 'Nome completo' }).fill(fullName);
-  await page.getByRole('textbox', { name: 'Email' }).fill(email);
-  await page.getByRole('textbox', { name: 'Telefone/whatsapp' }).fill(phone);
-
-  await page.getByRole('textbox', { name: 'Senha', exact: true }).fill(password);
-  await page.getByRole('textbox', { name: 'Repetir senha' }).fill(password);
-
-  await page.getByRole('button', { name: 'Criar conta' }).click();
-
-  await expect(page.locator('#avatar-container')).toBeVisible()
+  await landing.goto();
+  await auth.createAccount({ fullName, email, phone, password });
+  await auth.expectLoggedIn();
 
 });
