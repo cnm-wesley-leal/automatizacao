@@ -17,7 +17,8 @@ test('criar conta com dados válidos', async ({ page }) => {
     prefix: 'Aa1!'
   });
 
-await page.goto(process.env.BASE_URL!);  
+await page.goto(process.env.BASE_URL!);
+  
   // Interação
   await page.getByRole('link', { name: 'Entrar' }).click();
   await page.getByRole('link', { name: 'Cadastre-se aqui' }).click();
@@ -31,6 +32,6 @@ await page.goto(process.env.BASE_URL!);
 
   await page.getByRole('button', { name: 'Criar conta' }).click();
 
-  // --- VALIDAÇÃO (Exemplo) ---
+  await expect(page.locator('#avatar-container')).toBeVisible()
 
 });
