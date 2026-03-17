@@ -1,0 +1,8 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://qa.chavesnamao.com.br/');
+  await page.getByRole('link', { name: 'Chaves na Mão' }).click();
+  await page.getByText('Encontre milhões de imóveis, carros e motosImóveisVeículosO que você deseja?').click();
+});
+
