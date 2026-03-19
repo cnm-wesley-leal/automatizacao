@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { landingHome } from '../support/Landing.spect';
+
 
 test('Login usuário de teste', async ({ page }) => {
-    await page.goto(process.env.BASE_URL!);
+  await landingHome(page);
 
   await page.locator('body').press('Enter');
   await page.getByRole('link', { name: 'Entrar' }).click();
