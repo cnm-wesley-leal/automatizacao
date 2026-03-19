@@ -10,7 +10,7 @@ export type User = {
   password: string;
 };
 
-export function createUser(): User {
+export function createUserFake(): User {
     const firstName = faker.person.firstName();
     const lastName = faker.person.lastName();
   
