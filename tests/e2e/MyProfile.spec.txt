@@ -1,0 +1,74 @@
+import { test, expect } from '@playwright/test';
+import { logingUserTest} from '../support/Access.page';
+
+
+test.describe('Tela Meus Dados - Validações de Perfil e Contato', () => {
+
+  test.beforeEach(async ({ page }) => {
+
+    await logingUserTest(page);
+    await expect(page.locator('#avatar-container')).toBeVisible()
+
+    // Presumindo que o usuário já esteja logado ou acessando via estado persistido
+    await page.goto('/'); 
+    await page.getByRole('link', { name: 'WL Wesley' }).click();
+    await page.getByRole('link', { name: 'Minha conta' }).click();
+  });
+
+  test('Deve validar a estrutura do layout e informações de perfil', async ({ page }) => {
+    // 1. Verificação de Layout e Navegação Lateral (Snapshot de Acessibilidade)
+    const menuNavegacao = page.getByRole('article');
+    await expect(menuNavegacao).toBeVisible();
+    
+    // Valida se os itens essenciais do menu estão presentes e com URLs corretas
+    await expect(page.getByRole('link', { name: 'Meus dados' })).toHaveAttribute('href', /.*perfil/);
+    await expect(page.getByRole('link', { name: 'Senha' })).toHaveAttribute('href', /.*senha/);
+    
+    // 2. Validação de Dados Estáticos (Read-only)
+    await expect(page.getByRole('heading', { name: 'Meus dados', level: 3 })).toBeVisible();
+    await expect(page.getByText('Nome completo')).toBeVisible();
+    await expect(page.locator('paragraph').filter({ hasText: 'Wesley Leal dos Santos' })).toBeVisible();
+  });
+
+  test('Deve validar regras de formulário e mensagens de erro no Telefone', async ({ page }) => {
+    // 3. Verificação de Elementos de Contato
+    await expect(page.getByRole('heading', { name: 'Contato', level: 3 })).toBeVisible();
+    
+    // Abre a edição (clicando no botão de editar/lápis)
+    await page.getByRole('button').filter({ has: page.locator('img') }).first().click();
+
+    const inputTelefone = page.getByRole('textbox', { name: 'Telefone' });
+
+    // 4. Validação de Campo Obrigatório / Vazio
+    await inputTelefone.fill('');
+    await page.getByRole('button', { name: 'Salvar' }).click();
+    // Adicione aqui a validação de campo obrigatório se existir (ex: 'Campo obrigatório')
+
+    // 5. Validação de Formato Inválido (Telefone BR)
+    // Testando limite de caracteres ou formato incorreto
+    await inputTelefone.fill('119999'); 
+    await page.getByRole('button', { name: 'Salvar' }).click();
+    await expect(page.getByText('Telefone BR inválido')).toBeVisible();
+
+    // 6. Validação de Duplicidade (Regra de Negócio)
+    await inputTelefone.fill('(99) 99999-9999');
+    await page.getByRole('button', { name: 'Salvar' }).click();
+    await expect(page.getByText('Telefone já cadastrado')).toBeVisible();
+
+    // 7. Cancelamento de Edição
+    await page.getByRole('button', { name: 'Cancelar' }).click();
+    
+    // Garante que o formulário fechou e voltou para o estado de exibição
+    await expect(inputTelefone).not.toBeVisible();
+  });
+
+  test('Verificação visual de componentes de feedback', async ({ page }) => {
+    // Valida a presença do banner informativo de privacidade
+    const alertStatus = page.getByRole('status');
+    await expect(alertStatus).toContainText('Usamos esses dados para enviar informações');
+    
+    // Verifica se o ícone de informação está visível (ajuste o seletor conforme seu SVG/Img)
+    await expect(alertStatus.locator('paragraph')).toBeVisible();
+  });
+
+});
