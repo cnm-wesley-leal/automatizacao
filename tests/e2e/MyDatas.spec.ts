@@ -54,7 +54,9 @@ test.describe('WebUser', () => {
       
       await phoneInput.fill(newPhone);
       await page.getByRole('button', { name: 'Salvar' }).click();
- 
+
+      await expect(contactSection).toBeVisible();
+
       await expect(phoneInput).toHaveValue(newPhone);
       await expect(page.getByText(newPhone)).toBeVisible();
     });
