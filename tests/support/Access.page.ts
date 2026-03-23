@@ -2,9 +2,10 @@ import { Page, expect } from '@playwright/test';
 import { createUserFake } from '../test-data/fakerUser';
 import { landingHome } from './Landing.page';
 
+
 export async function logingUserTest(page: Page){
     await landingHome(page);
-  
+
     await page.getByRole('link', { name: 'Entrar' }).click();
     await page.getByRole('button', { name: 'Entrar com email' }).click();
     await page.getByPlaceholder('Email cadastrado').click();
@@ -20,7 +21,7 @@ export async function createUser(page: Page){
     const user = createUserFake()
 
     await landingHome(page);
-
+    
     await page.getByRole('link', { name: 'Entrar' }).click();
     await page.getByRole('link', { name: 'Cadastre-se aqui' }).click();
     await page.getByRole('textbox', { name: 'Nome completo' }).fill(user.fullName);
@@ -31,5 +32,4 @@ export async function createUser(page: Page){
     await page.getByRole('button', { name: 'Criar conta' }).click();
 
     await expect(page.getByText(user.email)).toBeVisible();
-
 }

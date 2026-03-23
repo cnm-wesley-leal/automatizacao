@@ -1,5 +1,5 @@
 import { fakerPT_BR as faker } from '@faker-js/faker'
-import { gerarTelefone } from '../helpers.ts'
+import { fakePhone } from '../helpers.ts'
 
 export type User = {
   firstName: string;
@@ -19,7 +19,7 @@ export function createUserFake(): User {
       lastName,
       fullName: `${firstName} ${lastName}`,
       email: faker.internet.email({ firstName, lastName }).toLowerCase(),
-      phone: gerarTelefone(),
+      phone: fakePhone(),
       password: faker.internet.password({
         length: 8,
         prefix: 'Aa1!',
