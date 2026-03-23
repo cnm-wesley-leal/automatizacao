@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
 import { createUserFake } from '../test-data/fakerUser';
-import { landingHome } from './Landing.page';
+import { landingHome } from '../helpers';
 
 
 export async function logingUserTest(page: Page){

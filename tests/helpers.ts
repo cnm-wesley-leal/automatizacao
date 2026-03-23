@@ -1,4 +1,6 @@
 import { faker as faker } from '@faker-js/faker';
+import { Page } from '@playwright/test';
+
 
 export function fakePhone(): string {
     const ddd = faker.number.int({ min: 11, max: 99 });
@@ -7,3 +9,8 @@ export function fakePhone(): string {
   
     return `(${ddd}) 9${prefix}-${suffix}`;
   }
+
+  export async function landingHome(page: Page) {
+    await page.goto(process.env.BASE_URL!);
+    await page.getByText('Entendi').click({timeout: 20000});
+    }
