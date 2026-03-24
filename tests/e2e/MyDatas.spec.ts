@@ -60,4 +60,33 @@ test.describe('WebUser', () => {
       await expect(phoneInput).toHaveValue(newPhone);
       await expect(page.getByText(newPhone)).toBeVisible();
     });
+
+    test('Telefone duplicado', async ({page}) =>{
+      const contactSection = page.getByRole('article').filter({ 
+        has: page.getByRole('heading', { name: 'Contato' }) 
+      });
+      const telefoneDuplicado = '(99) 99999-9999';
+      const inputTelefone = page.getByRole('textbox', { name: 'Telefone' });
+
+      await contactSection.getByRole('button').click();
+    
+      await expect(inputTelefone).toBeVisible();
+      await inputTelefone.fill(telefoneDuplicado);
+  
+      await page.getByRole('button', { name: 'Salvar' }).click();
+  
+      const mensagemErro = page.getByText('Telefone já cadastrado');
+  
+      await expect(mensagemErro).toBeVisible();
+
+      await page.getByRole('button', { name: 'Cancelar' }).click();
+      await expect(inputTelefone).not.toBeVisible()
+      await expect(contactSection).not.toContainText('(99) 99999-9999');    
+    })
+
   });
+
+  test.describe('Anunciante PF', () => {
+
+
+  })
