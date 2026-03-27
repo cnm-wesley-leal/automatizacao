@@ -3,18 +3,18 @@ import { createUserFake } from '../test-data/fakerUser';
 import { landingHome } from '../helpers';
 
 
-export async function logingUserTest(page: Page){
+export async function logingUserTestWebUser(page: Page){
     await landingHome(page);
 
     await page.getByRole('link', { name: 'Entrar' }).click();
     await page.getByRole('button', { name: 'Entrar com email' }).click();
     await page.getByPlaceholder('Email cadastrado').click();
-    await page.getByPlaceholder('Email cadastrado').fill(process.env.USER_EMAIL!);  
+    await page.getByPlaceholder('Email cadastrado').fill(process.env.USER_EMAIL_WEBUSER!);  
     await page.getByPlaceholder('Senha cadastrada').click();
     await page.getByPlaceholder('Senha cadastrada').fill(process.env.USER_PASSWORD!);  
     await page.getByRole('button', { name: 'Entrar' }).click();
 
-    await expect(page.getByText(process.env.USER_EMAIL!)).toBeVisible();
+    await expect(page.getByText(process.env.USER_EMAIL_WEBUSER!)).toBeVisible();
 }
 
 export async function createUser(page: Page){
@@ -32,4 +32,18 @@ export async function createUser(page: Page){
     await page.getByRole('button', { name: 'Criar conta' }).click();
 
     await expect(page.getByText(user.email)).toBeVisible();
+}
+
+export async function logingUserTestAdvitiser(page: Page){
+    await landingHome(page);
+
+    await page.getByRole('link', { name: 'Entrar' }).click();
+    await page.getByRole('button', { name: 'Entrar com email' }).click();
+    await page.getByPlaceholder('Email cadastrado').click();
+    await page.getByPlaceholder('Email cadastrado').fill(process.env.USER_EMAIL_ADVERTISER!);  
+    await page.getByPlaceholder('Senha cadastrada').click();
+    await page.getByPlaceholder('Senha cadastrada').fill(process.env.USER_PASSWORD!);  
+    await page.getByRole('button', { name: 'Entrar' }).click();
+
+    await expect(page.getByText(process.env.USER_EMAIL_ADVERTISER!)).toBeVisible();
 }

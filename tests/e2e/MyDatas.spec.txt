@@ -1,12 +1,12 @@
 import { test, expect } from '@playwright/test';
-import { logingUserTest } from '../support/Access.page';
+import { logingUserTestWebUser, logingUserTestAdvitiser } from '../support/Access.page';
 import { fakePhone } from '../helpers';
 
  
 test.describe('WebUser', () => {
 
   test.beforeEach(async ({ page }) => {
-    await logingUserTest(page);
+    await logingUserTestWebUser(page);
     await page.getByRole('link', { name: 'Minha conta' }).click();
   });
 
@@ -44,20 +44,20 @@ test.describe('WebUser', () => {
  
     test('Edição de telefone', async ({ page }) => {
       const newPhone = fakePhone();
-      
       const contactSection = page.getByRole('article').filter({ 
         has: page.getByRole('heading', { name: 'Contato' }) 
       });
-      await contactSection.getByRole('button').click();
-    
       const phoneInput = page.getByRole('textbox', { name: 'Telefone' });
-      
+
+
+      await contactSection.getByRole('button').click();
       await phoneInput.fill(newPhone);
       await page.getByRole('button', { name: 'Salvar' }).click();
-
       await expect(contactSection).toBeVisible();
-
       await expect(phoneInput).toHaveValue(newPhone);
+      await expect(phoneInput).not.toBeVisible()
+      await page.reload()
+
       await expect(page.getByText(newPhone)).toBeVisible();
     });
 
@@ -67,26 +67,56 @@ test.describe('WebUser', () => {
       });
       const telefoneDuplicado = '(99) 99999-9999';
       const inputTelefone = page.getByRole('textbox', { name: 'Telefone' });
+      const mensagemErro = page.getByText('Telefone já cadastrado');
 
       await contactSection.getByRole('button').click();
-    
       await expect(inputTelefone).toBeVisible();
       await inputTelefone.fill(telefoneDuplicado);
-  
       await page.getByRole('button', { name: 'Salvar' }).click();
-  
-      const mensagemErro = page.getByText('Telefone já cadastrado');
-  
+
       await expect(mensagemErro).toBeVisible();
 
-      await page.getByRole('button', { name: 'Cancelar' }).click();
+      await page.getByRole('button', { name: 'Cancelar' }).click()
+
       await expect(inputTelefone).not.toBeVisible()
       await expect(contactSection).not.toContainText('(99) 99999-9999');    
     })
 
+    test('Telefone em branco', async ({ page }) => {
+      const contactSection = page.getByRole('article').filter({
+        has: page.getByRole('heading', { name: 'Contato' }),
+      });
+    
+      await contactSection.getByRole('button').click();
+    
+      const phoneInput = page.getByRole('textbox', { name: 'Telefone' });
+      await expect(phoneInput).toBeVisible();
+    
+      await phoneInput.clear();
+      await page.getByRole('button', { name: 'Salvar' }).click();
+    
+      await expect(page.getByText('Telefone BR inválido')).toBeVisible();
+    
+      await expect(phoneInput).toBeVisible();
+    });
+    
+    test('Formato de telefone inválido', async ({ page }) => {
+      const invalidPhones = ['abc', '123', '!!@@##'];
+      const contactSection = page.getByRole('article').filter({
+        has: page.getByRole('heading', { name: 'Contato' }),
+      });
+      const phoneInput = page.getByRole('textbox', { name: 'Telefone' });
+
+      for (const phone of invalidPhones) {
+        await contactSection.getByRole('button').click();
+        await expect(phoneInput).toBeVisible();
+        await phoneInput.fill(phone);
+        await page.getByRole('button', { name: 'Salvar' }).click();
+        await expect(page.getByText('Telefone BR inválido')).toBeVisible();
+        await page.getByRole('button', { name: 'Cancelar' }).click();
+        await expect(phoneInput).not.toBeVisible();
+      }
+    });
+
   });
 
-  test.describe('Anunciante PF', () => {
-
-
-  })

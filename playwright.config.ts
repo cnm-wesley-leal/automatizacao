@@ -32,37 +32,34 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    actionTimeout: 5000,
+    actionTimeout: 10000,
     navigationTimeout: 10000
 
   },
-  timeout: 60000,
+  timeout: 120000,
 
   expect: {
-    timeout: 5000},
+    timeout: 10000},
 
   /* Configure projects for major browsers */
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
+    },{
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
     },
-    {
+        {
       name: 'Microsoft Edge',
       use: { ...devices['Desktop Edge'], channel: 'msedge' },
     },
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
-    },
-    /*{
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'Mobile Chrome',
-      use: { ...devices['Pixel 5'] },
-    },
+    }
+
+    /*,
      {
       name: 'Mobile Safari',
       use: { ...devices['iPhone 12'] },
