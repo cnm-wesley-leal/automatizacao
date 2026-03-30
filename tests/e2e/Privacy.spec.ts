@@ -1,38 +1,71 @@
 import { test, Page, expect } from '@playwright/test';
 import { logingUserTestWebUser } from '../support/Access.page';
 
-/*test.describe('Exclusão de conta', () => {
-    test.beforeEach(async ({ page }) => {
-      await logingUserTestWebUser(page);
-    });
-  
-    test('Deve solicitar exclusão com sucesso', async ({ page }) => {
+test.describe('Exclusão de conta', () => {
+
+  test.beforeEach(async ({ page }) => {
+    await logingUserTestWebUser(page);
+  });
+
+  test('Fluxo completo: solicitar e cancelar exclusão de conta', async ({ page }) => {
+
+    await test.step('Navegar até Exclusão da conta', async () => {
       await page.getByRole('link', { name: 'Minha conta' }).click();
       await page.getByTitle('Privacidade').click();
       await page.getByTitle('Exclusão da conta').click();
-  
-      await page.getByPlaceholder('e-mail@exemplo.com.br').fill(process.env.USER_EMAIL_WEBUSER!);
+    });
+
+    await test.step('Solicitar exclusão com sucesso', async () => {
+      await page.getByPlaceholder('e-mail@exemplo.com.br')
+        .fill(process.env.USER_EMAIL_WEBUSER!);
       await page.getByRole('button', { name: 'Solicitar exclusão' }).click();
-  
+
       const successModal = page.locator('#mdl-delete-account-success-modal');
       await expect(successModal).toBeVisible();
       await expect(successModal.getByRole('heading'))
         .toHaveText(/Solicitação realizada com sucesso/i);
 
     await page.getByRole('button', { name: 'Sair da conta' }).click();
-    await expect(page.getByRole('heading', { name: 'Acesse ou crie sua conta' })).toBeVisible();
-
+    
+    await expect(
+      page.getByRole('heading', { name: 'Acesse ou crie sua conta' })
+    ).toBeVisible();
 
     });
-  
-    test('Deve cancelar solicitação de exclusão com sucesso', async ({ page }) => {  
 
+    await test.step('Cancelar solicitação de exclusão', async () => {
+        await page.getByRole('link', { name: 'Entrar' }).click();
+        await page.getByRole('button', { name: 'Entrar com email' }).click();
+        await page.getByPlaceholder('Email cadastrado').click();
+        await page.getByPlaceholder('Email cadastrado').fill(process.env.USER_EMAIL_WEBUSER!);  
+        await page.getByPlaceholder('Senha cadastrada').click();
+        await page.getByPlaceholder('Senha cadastrada').fill(process.env.USER_PASSWORD!);  
+        await page.getByRole('button', { name: 'Entrar' }).click();
+    
       await page.getByRole('button', { name: 'Cancelar solicitação' }).click();
       await page.getByRole('button', { name: 'Ir para o login' }).click();
-  
-      await expect(page.getByRole('heading', { name: 'Acesse ou crie sua conta' })).toBeVisible();
+
+      await expect(
+        page.getByRole('heading', { name: 'Acesse ou crie sua conta' })
+      ).toBeVisible();
+   
+    
+    await page.getByRole('link', { name: 'Entrar' }).click();
+    await page.getByRole('button', { name: 'Entrar com email' }).click();
+    await page.getByPlaceholder('Email cadastrado').click();
+    await page.getByPlaceholder('Email cadastrado').fill(process.env.USER_EMAIL_WEBUSER!);  
+    await page.getByPlaceholder('Senha cadastrada').click();
+    await page.getByPlaceholder('Senha cadastrada').fill(process.env.USER_PASSWORD!);  
+    await page.getByRole('button', { name: 'Entrar' }).click();
+
+    const dataSection = page.getByRole('article').filter({ 
+      has: page.getByRole('heading', { name: 'Meus Dados' }) 
     });
-  });*/
+    await expect(dataSection).toBeVisible();
+  });
+  });
+
+});
 
 test.describe('Termos', () => {
     test.beforeEach(async ({ page }) => {
