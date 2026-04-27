@@ -1,5 +1,5 @@
 {
-  "name": "Automatização",
+  "name": "automatizacao",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -9,7 +9,10 @@
     "@types/node": "^25.5.0"
   },
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
     "dotenv": "^17.3.1"
