@@ -2,16 +2,21 @@ import { test as setup, expect } from '@playwright/test';
 import { TEST_DATA } from './utils/test-data';
 
 setup('authenticate as WebUser', async ({ page }) => {
-  await page.goto(TEST_DATA.urls.base);
-  await page.getByText(TEST_DATA.locators.common.cookieConsent).click({ timeout: 10000 }).catch(() => { });
+  // Use networkidle to ensure the page is stable in CI
+  await page.goto(TEST_DATA.urls.base, { waitUntil: 'networkidle' });
+  
+  // Handle cookie consent
+  await page.getByText(TEST_DATA.locators.common.cookieConsent).click({ timeout: 5000 }).catch(() => { });
 
-  await page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink }).click();
+  // Increase timeout for the 'Entrar' link
+  await page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink }).click({ timeout: 20000 });
   await page.getByRole('button', { name: TEST_DATA.locators.login.entrarComEmailBtn }).click();
+  
   await page.getByPlaceholder(TEST_DATA.locators.login.emailInput).fill(process.env.USER_EMAIL_WEBUSER!);
   await page.getByPlaceholder(TEST_DATA.locators.login.passwordInput).fill(process.env.USER_PASSWORD!);
   await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn }).click();
 
-  await expect(page.getByText(process.env.USER_EMAIL_WEBUSER!)).toBeVisible({ timeout: 15000 });
+  await expect(page.getByText(process.env.USER_EMAIL_WEBUSER!)).toBeVisible({ timeout: 20000 });
 
   await page.context().storageState({ path: TEST_DATA.auth.statePath });
 });
