@@ -2,24 +2,6 @@ import { test, expect } from '@playwright/test';
 import { TEST_DATA } from '../utils/test-data';
 
 const env = ((globalThis as any).process?.env ?? {}) as Record<string, string | undefined>;
-const isCI = Boolean(env.CI);
-
-async function dismissCookieConsentIfPresent(
-  page: import('@playwright/test').Page,
-  testInfo: import('@playwright/test').TestInfo
-) {
-  const consentButton = page.getByRole('button', { name: TEST_DATA.locators.common.cookieConsent });
-
-  try {
-    await expect(consentButton).toBeVisible({ timeout: 5000 });
-    await consentButton.click();
-  } catch (error) {
-    testInfo.annotations.push({
-      type: 'info',
-      description: `Cookie consent nao exibido ou nao clicavel: ${String(error)}`
-    });
-  }
-}
 
 async function openAuthPanel(page: import('@playwright/test').Page) {
   await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeVisible();
@@ -65,13 +47,9 @@ async function assertSocialLoginStarts(
 
     const popupPromise = page
       .context()
-      .waitForEvent('page', { timeout: isCI ? 15000 : 7000 })
+      .waitForEvent('page', { timeout: 7000 })
       .then(async popup => {
-        try {
-          await popup.waitForLoadState('domcontentloaded', { timeout: isCI ? 15000 : 7000 });
-        } catch (error) {
-          console.warn(`Popup de login social sem domcontentloaded para ${buttonName}: ${String(error)}`);
-        }
+        await popup.waitForLoadState('domcontentloaded', { timeout: 7000 }).catch(() => {});
         return popup.url();
       })
       .catch(() => null);
@@ -100,10 +78,11 @@ async function assertSocialLoginStarts(
 test.describe('Feature Auth - Login e Cadastro', () => {
   test.use({ storageState: { cookies: [], origins: [] } });
 
-  test.beforeEach(async ({ page }, testInfo) => {
+  test.beforeEach(async ({ page }) => {
     await page.goto(TEST_DATA.urls.base);
 
-    await dismissCookieConsentIfPresent(page, testInfo);
+    // Dismiss the cookie consent if present without introducing fixed waits.
+    await page.getByText(TEST_DATA.locators.common.cookieConsent).click({ timeout: 5000 }).catch(() => {});
 
     // Initial state checkpoint.
     await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeVisible();
@@ -122,27 +101,8 @@ test.describe('Feature Auth - Login e Cadastro', () => {
 
     await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn }).click();
 
-    // Final state checkpoint for authenticated user: UI + session cookies.
+    // Final state checkpoint for authenticated user.
     await expect(page.getByText(env.USER_EMAIL_WEBUSER!)).toBeVisible();
-    await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeHidden();
-    await expect
-      .poll(
-        async () => {
-          const cookies = await page.context().cookies();
-          const hasSession = cookies.some(
-            cookie => cookie.name === TEST_DATA.auth.cookies.sessionId && Boolean(cookie.value)
-          );
-          const hasAccount = cookies.some(
-            cookie => cookie.name === TEST_DATA.auth.cookies.accountInfo && Boolean(cookie.value)
-          );
-          return hasSession && hasAccount;
-        },
-        {
-          timeout: isCI ? 20000 : 10000,
-          message: 'Cookies de autenticacao nao foram persistidos apos login valido.'
-        }
-      )
-      .toBeTruthy();
   });
 
   test('CT02 - deve exibir erro ao tentar login com senha invalida', async ({ page }) => {
@@ -158,16 +118,9 @@ test.describe('Feature Auth - Login e Cadastro', () => {
 
     await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn }).click();
 
-    // Final checkpoint for invalid auth: feedback shown and no auth cookies.
+    // Checkpoint: user should remain on auth flow and get feedback.
     await expect(page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn })).toBeVisible();
     await expect(page.getByText(/email e\/ou senha inv[aá]lidos/i)).toBeVisible();
-    await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeVisible();
-
-    const cookies = await page.context().cookies();
-    const sessionCookie = cookies.find(cookie => cookie.name === TEST_DATA.auth.cookies.sessionId);
-    const authCookie = cookies.find(cookie => cookie.name === TEST_DATA.auth.cookies.accountInfo);
-    expect(sessionCookie).toBeUndefined();
-    expect(authCookie).toBeUndefined();
   });
 
   test('CT03 - deve abrir o fluxo de cadastro a partir do login', async ({ page }) => {

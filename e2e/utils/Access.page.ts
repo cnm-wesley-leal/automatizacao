@@ -2,6 +2,7 @@ import { Page, expect } from '@playwright/test';
 import { createUserFake } from '../fixtures/fakerUser';
 import { landingHome } from './helpers';
 import { TEST_DATA } from './test-data';
+import process from 'process';
 
 export async function logingUserTestWebUser(page: Page) {
     await landingHome(page);

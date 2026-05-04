@@ -5,8 +5,14 @@ setup('authenticate as WebUser', async ({ page }) => {
   // Use networkidle to ensure the page is stable in CI
   await page.goto(TEST_DATA.urls.base, { waitUntil: 'networkidle' });
   
-  // Handle cookie consent
-  await page.getByText(TEST_DATA.locators.common.cookieConsent).click({ timeout: 5000 }).catch(() => { });
+  // Handle cookie consent without silent failures.
+  const cookieConsentButton = page.getByRole('button', { name: TEST_DATA.locators.common.cookieConsent });
+  try {
+    await expect(cookieConsentButton).toBeVisible({ timeout: 5000 });
+    await cookieConsentButton.click();
+  } catch (error) {
+    console.warn(`Cookie consent nao exibido no setup: ${String(error)}`);
+  }
 
   // Increase timeout for the 'Entrar' link
   await page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink }).click({ timeout: 20000 });

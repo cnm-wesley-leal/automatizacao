@@ -17,6 +17,9 @@ export const TEST_DATA = {
     },
     login: {
       entrarLink: 'Entrar',
+      entrarComAppleBtn: 'Entrar com Apple',
+      entrarComGoogleBtn: 'Entrar com Google',
+      entrarComFacebookBtn: 'Entrar com Facebook',
       entrarComEmailBtn: 'Entrar com email',
       emailInput: 'Email cadastrado',
       passwordInput: 'Senha cadastrada',
