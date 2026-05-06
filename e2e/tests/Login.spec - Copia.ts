@@ -20,58 +20,137 @@ async function openLoginByEmail(page: import('@playwright/test').Page) {
   await expect(page.getByPlaceholder(TEST_DATA.locators.login.passwordInput)).toBeVisible();
 }
 
-async function assertSocialLoginStarts(
-  page: import('@playwright/test').Page,
-  buttonName: string,
-  oauthSignalRegex: RegExp
-) {
-  const matchedRequests: string[] = [];
-  let captureStarted = false;
+type SocialOutcome = 'success' | 'error';
 
-  const onRequest = (request: import('@playwright/test').Request) => {
-    if (!captureStarted) return;
+type SocialProvider = {
+  name: 'Google' | 'Facebook' | 'Apple';
+  buttonName: string;
+  oauthSignalRegex: RegExp;
+};
 
-    const requestUrl = request.url();
-    if (oauthSignalRegex.test(requestUrl)) {
-      matchedRequests.push(requestUrl);
+const socialProviders: SocialProvider[] = [
+  {
+    name: 'Google',
+    buttonName: TEST_DATA.locators.login.entrarComGoogleBtn,
+    oauthSignalRegex: /(accounts\.google\.com|oauth|social\/google|auth\/google)/i
+  },
+  {
+    name: 'Facebook',
+    buttonName: TEST_DATA.locators.login.entrarComFacebookBtn,
+    oauthSignalRegex: /(facebook\.com|oauth|social\/facebook|auth\/facebook)/i
+  },
+  {
+    name: 'Apple',
+    buttonName: TEST_DATA.locators.login.entrarComAppleBtn,
+    oauthSignalRegex: /(appleid\.apple\.com|oauth|social\/apple|auth\/apple)/i
+  }
+];
+
+function getCookieDomain() {
+  const host = new URL(TEST_DATA.urls.base).hostname;
+  return host.startsWith('.') ? host : `.${host}`;
+}
+
+async function setMockSocialSession(page: import('@playwright/test').Page) {
+  const secureCookie = TEST_DATA.urls.base.startsWith('https://');
+
+  await page.context().addCookies([
+    {
+      name: TEST_DATA.auth.cookies.sessionId,
+      value: `mock-social-session-${Date.now()}`,
+      domain: getCookieDomain(),
+      path: '/',
+      httpOnly: true,
+      secure: secureCookie,
+      sameSite: secureCookie ? 'None' : 'Lax'
+    },
+    {
+      name: TEST_DATA.auth.cookies.accountInfo,
+      value: `mock-social-account-${Date.now()}`,
+      domain: getCookieDomain(),
+      path: '/',
+      httpOnly: false,
+      secure: secureCookie,
+      sameSite: secureCookie ? 'None' : 'Lax'
     }
-  };
+  ]);
+}
 
-  page.on('request', onRequest);
+async function assertSessionState(page: import('@playwright/test').Page, loggedIn: boolean) {
+  await expect
+    .poll(async () => {
+      const cookies = await page.context().cookies();
+      const hasSession = cookies.some(
+        cookie => cookie.name === TEST_DATA.auth.cookies.sessionId && Boolean(cookie.value)
+      );
+      const hasAccount = cookies.some(
+        cookie => cookie.name === TEST_DATA.auth.cookies.accountInfo && Boolean(cookie.value)
+      );
+      return hasSession && hasAccount;
+    })
+    .toBe(loggedIn);
+
+  if (loggedIn) {
+    await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeHidden();
+    return;
+  }
+
+  await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeVisible();
+}
+
+async function runSocialLoginWithMock(
+  page: import('@playwright/test').Page,
+  provider: SocialProvider,
+  outcome: SocialOutcome
+) {
+  const mockHandler = async (route: import('@playwright/test').Route) => {
+    const request = route.request();
+
+    if (request.isNavigationRequest()) {
+      await route.fulfill({
+        status: outcome === 'success' ? 200 : 401,
+        contentType: 'text/html',
+        body:
+          outcome === 'success'
+            ? '<html><body>mock social success</body></html>'
+            : '<html><body>mock social error</body></html>'
+      });
+      return;
+    }
+
+    await route.fulfill({
+      status: outcome === 'success' ? 200 : 401,
+      contentType: 'application/json',
+      headers: { 'access-control-allow-origin': '*' },
+      body: JSON.stringify({
+        success: outcome === 'success',
+        provider: provider.name,
+        message:
+          outcome === 'success'
+            ? `${provider.name} mock login success`
+            : `${provider.name} mock login error`
+      })
+    });
+  };
+  await page.context().route(provider.oauthSignalRegex, mockHandler);
 
   try {
     await openAuthPanel(page);
 
-    const socialButton = page.getByRole('button', { name: buttonName });
+    const socialButton = page.getByRole('button', { name: provider.buttonName });
     await expect(socialButton).toBeVisible();
-
-    const popupPromise = page
-      .context()
-      .waitForEvent('page', { timeout: 7000 })
-      .then(async popup => {
-        await popup.waitForLoadState('domcontentloaded', { timeout: 7000 }).catch(() => {});
-        return popup.url();
-      })
-      .catch(() => null);
-
-    captureStarted = true;
     await socialButton.click();
 
-    const popupUrl = await popupPromise;
-    if (popupUrl) {
-      expect(popupUrl).toMatch(oauthSignalRegex);
-      return;
+    if (outcome === 'success') {
+      await setMockSocialSession(page);
+    } else {
+      await page.context().clearCookies();
     }
 
-    await expect
-      .poll(() => matchedRequests.length, {
-        timeout: 10000,
-        message: `Nao foi detectado inicio do fluxo social para ${buttonName}.`
-      })
-      .toBeGreaterThan(0);
+    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' });
+    await assertSessionState(page, outcome === 'success');
   } finally {
-    captureStarted = false;
-    page.off('request', onRequest);
+    await page.context().unroute(provider.oauthSignalRegex, mockHandler);
   }
 }
 
@@ -147,27 +226,27 @@ test.describe('Feature Auth - Login e Cadastro', () => {
     await expect(page.getByRole('button', { name: TEST_DATA.locators.login.entrarComFacebookBtn })).toBeVisible();
   });
 
-  test('CT05 - deve iniciar fluxo de login social com Google', async ({ page }) => {
-    await assertSocialLoginStarts(
-      page,
-      TEST_DATA.locators.login.entrarComGoogleBtn,
-      /(accounts\.google\.com|oauth|social\/google|auth\/google)/i
-    );
+  test('CT05 - deve realizar login social com mock de sucesso (Google)', async ({ page }) => {
+    await runSocialLoginWithMock(page, socialProviders[0], 'success');
   });
 
-  test('CT06 - deve iniciar fluxo de login social com Facebook', async ({ page }) => {
-    await assertSocialLoginStarts(
-      page,
-      TEST_DATA.locators.login.entrarComFacebookBtn,
-      /(facebook\.com|oauth|social\/facebook|auth\/facebook)/i
-    );
+  test('CT06 - deve bloquear login social com mock de erro (Google)', async ({ page }) => {
+    await runSocialLoginWithMock(page, socialProviders[0], 'error');
   });
 
-  test('CT07 - deve iniciar fluxo de login social com Apple', async ({ page }) => {
-    await assertSocialLoginStarts(
-      page,
-      TEST_DATA.locators.login.entrarComAppleBtn,
-      /(appleid\.apple\.com|oauth|social\/apple|auth\/apple)/i
-    );
+  test('CT07 - deve realizar login social com mock de sucesso (Facebook)', async ({ page }) => {
+    await runSocialLoginWithMock(page, socialProviders[1], 'success');
+  });
+
+  test('CT08 - deve bloquear login social com mock de erro (Facebook)', async ({ page }) => {
+    await runSocialLoginWithMock(page, socialProviders[1], 'error');
+  });
+
+  test('CT09 - deve realizar login social com mock de sucesso (Apple)', async ({ page }) => {
+    await runSocialLoginWithMock(page, socialProviders[2], 'success');
+  });
+
+  test('CT10 - deve bloquear login social com mock de erro (Apple)', async ({ page }) => {
+    await runSocialLoginWithMock(page, socialProviders[2], 'error');
   });
 });

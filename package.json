@@ -13,7 +13,10 @@
     "test": "playwright test",
     "test:e2e": "playwright test",
     "test:e2e:headed": "playwright test --headed",
-    "test:e2e:ui": "playwright test --ui"
+    "test:e2e:ui": "playwright test --ui",
+    "test:with-testdino": "playwright test && npx ts-node scripts/send-to-testdino.ts",
+    "testdino:report": "npx ts-node scripts/send-to-testdino.ts",
+    "testdino:sync": "playwright test --reporter=json > playwright-results.json; npx ts-node scripts/send-to-testdino.ts"
   },
   "dependencies": {
     "dotenv": "^17.3.1"
