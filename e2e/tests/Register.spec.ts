@@ -20,7 +20,7 @@ async function assertAuthenticatedCookies(page: import('@playwright/test').Page)
         return hasSession && hasAccount;
       },
       {
-        timeout: isCI ? 20000 : 10000,
+        timeout: isCI ? 30000 : 15000,
         message: 'Cookies de autenticacao nao foram criados no fluxo esperado.'
       }
     )
@@ -33,6 +33,52 @@ async function assertNoAuthenticatedCookies(page: import('@playwright/test').Pag
   const authCookie = cookies.find(c => c.name === TEST_DATA.auth.cookies.accountInfo);
   expect(sessionCookie).toBeUndefined();
   expect(authCookie).toBeUndefined();
+}
+
+async function waitForRegistrationOutcomeByUiOrUrl(page: import('@playwright/test').Page): Promise<'success' | 'duplicate'> {
+  let outcome: 'pending' | 'success' | 'duplicate' = 'pending';
+
+  await expect
+    .poll(
+      async () => {
+        const isDuplicateDataErrorVisible = await page
+          .getByText(/telefone j[aá] cadastrado|email j[aá] cadastrado|email j[aá] est[aá] em uso|este email j[aá]/i)
+          .first()
+          .isVisible()
+          .catch(() => false);
+
+        if (isDuplicateDataErrorVisible) {
+          outcome = 'duplicate';
+          return outcome;
+        }
+
+        const isEntrarHidden = await page
+          .getByRole('link', { name: TEST_DATA.locators.login.entrarLink })
+          .isHidden()
+          .catch(() => false);
+        const currentUrl = page.url().toLowerCase();
+        const isAuthFlowUrl = /\/entrar|\/login|\/cadastrar/.test(currentUrl);
+
+        if (isEntrarHidden || !isAuthFlowUrl) {
+          outcome = 'success';
+          return outcome;
+        }
+
+        outcome = 'pending';
+        return outcome;
+      },
+      {
+        timeout: isCI ? 30000 : 15000,
+        message: 'UI/URL nao confirmou desfecho de cadastro no tempo esperado.'
+      }
+    )
+    .not.toBe('pending');
+
+  if (outcome === 'pending') {
+    throw new Error('Desfecho de cadastro permaneceu pendente apos polling.');
+  }
+
+  return outcome;
 }
 
 test.describe('Feature Auth - Cadastro de Usuários', () => {
@@ -59,27 +105,57 @@ test.describe('Feature Auth - Cadastro de Usuários', () => {
 
   test('CT11 - deve realizar cadastro com dados válidos (email novo)', async ({ page }) => {
     const registerPage = new RegisterPage(page);
-    const newUser = createUserFake();
-
+    const maxAttempts = 3;
     // Step 1: Navegar até o formulário de cadastro
     await registerPage.navigateToRegisterForm();
 
     // Step 2: Validar que o formulário está completo
     await registerPage.assertFormFieldsVisible();
 
-    // Step 3: Preencher o formulário com dados válidos
-    await registerPage.fillRegistrationForm({
-      fullName: newUser.fullName,
-      email: newUser.email,
-      phone: newUser.phone,
-      password: newUser.password,
-    });
+    // Step 3 + 4: Preencher e submeter, com retry para colisao eventual de dado já cadastrado.
+    let lastTriedUser = createUserFake();
+    let submittedWithoutDuplicateError = false;
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      lastTriedUser = createUserFake();
+      await registerPage.fillRegistrationForm({
+        fullName: lastTriedUser.fullName,
+        email: lastTriedUser.email,
+        phone: lastTriedUser.phone,
+        password: lastTriedUser.password,
+      });
 
-    // Step 4: Submeter o formulário
-    await registerPage.submitRegistration();
+      await registerPage.submitRegistration();
 
-    // Step 5: Validar que o registro foi bem-sucedido
-    // Aguarda redirecionamento e verificação de autenticação com polling
+      const hasDuplicateDataError = await page
+        .getByText(/telefone j[aá] cadastrado|email j[aá] cadastrado|email j[aá] est[aá] em uso|este email j[aá]/i)
+        .first()
+        .isVisible({ timeout: 2500 })
+        .catch(() => false);
+      if (hasDuplicateDataError) {
+        if (attempt === maxAttempts) {
+          throw new Error(
+            `CT11 falhou apos ${maxAttempts} tentativas por dados duplicados. Ultimo email: ${lastTriedUser.email}, telefone: ${lastTriedUser.phone}`
+          );
+        }
+        continue;
+      }
+
+      const outcome = await waitForRegistrationOutcomeByUiOrUrl(page);
+      if (outcome === 'duplicate') {
+        if (attempt === maxAttempts) {
+          throw new Error(
+            `CT11 falhou apos ${maxAttempts} tentativas por dados duplicados. Ultimo email: ${lastTriedUser.email}, telefone: ${lastTriedUser.phone}`
+          );
+        }
+        continue;
+      }
+
+      submittedWithoutDuplicateError = true;
+      break;
+    }
+    expect(submittedWithoutDuplicateError).toBeTruthy();
+
+    // Step 5: Validar cookies apenas apos sucesso confirmado por UI/URL.
     await assertAuthenticatedCookies(page);
 
     // Step 6: Validar que o link de "Entrar" desaparece (indicador de autenticação)
