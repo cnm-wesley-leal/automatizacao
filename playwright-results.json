@@ -18,8 +18,36 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "setup",
-        "name": "setup",
+        "id": "setup-chromium",
+        "name": "setup-chromium",
+        "testDir": "C:/Automatização/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.ts/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Automatização/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "setup-webkit",
+        "name": "setup-webkit",
+        "testDir": "C:/Automatização/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.ts/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Automatização/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "setup-ios",
+        "name": "setup-ios",
         "testDir": "C:/Automatização/e2e",
         "testIgnore": [],
         "testMatch": [
@@ -34,6 +62,34 @@
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
+        "testDir": "C:/Automatização/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Automatização/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit-safari",
+        "name": "webkit-safari",
+        "testDir": "C:/Automatização/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Automatização/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "ios-safari-iphone-14",
+        "name": "ios-safari-iphone-14",
         "testDir": "C:/Automatização/e2e",
         "testIgnore": [],
         "testMatch": [
@@ -84,16 +140,1615 @@
               "timeout": 120000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "setup",
-              "projectName": "setup",
+              "projectId": "setup-ios",
+              "projectName": "setup-ios",
               "results": [],
               "status": "skipped"
             }
           ],
-          "id": "17e3fe6f4d9d8bd79c6b-dfe906634069248d6d71",
+          "id": "17e3fe6f4d9d8bd79c6b-79b7576be0c8af4a9709",
           "file": "auth.setup.ts",
-          "line": 68,
+          "line": 80,
           "column": 6
+        },
+        {
+          "title": "authenticate as WebUser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup-webkit",
+              "projectName": "setup-webkit",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-d7686079f35e4509168c",
+          "file": "auth.setup.ts",
+          "line": 80,
+          "column": 6
+        },
+        {
+          "title": "authenticate as WebUser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup-chromium",
+              "projectName": "setup-chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-cdc7b8df0f316be6340b",
+          "file": "auth.setup.ts",
+          "line": 80,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "tests\\AuthCheck.spec.ts",
+      "file": "tests/AuthCheck.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Verificação de Autenticação",
+          "file": "tests/AuthCheck.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Deve estar logado após a injeção do cookie",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "331f2038d4c76d8899bc-6ee902ec3d1e81cb8980",
+              "file": "tests/AuthCheck.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "Deve estar logado após a injeção do cookie",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "331f2038d4c76d8899bc-cceaadad6ec3a7ab742d",
+              "file": "tests/AuthCheck.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "Deve estar logado após a injeção do cookie",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "331f2038d4c76d8899bc-5109d02c218dec4e884e",
+              "file": "tests/AuthCheck.spec.ts",
+              "line": 5,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\Header.spec.ts",
+      "file": "tests/Header.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Feature Header — Usuário Deslogado",
+          "file": "tests/Header.spec.ts",
+          "line": 71,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT01 - deve renderizar o header corretamente em desktop (deslogado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-bf0b00b0845c87c76654",
+              "file": "tests/Header.spec.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve renderizar o header corretamente em mobile (390px)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-de5953339c09a7c16e34",
+              "file": "tests/Header.spec.ts",
+              "line": 100,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve abrir o menu lateral ao clicar no hambúrguer (mobile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-47a06b9aacffb127ee65",
+              "file": "tests/Header.spec.ts",
+              "line": 124,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve fechar o menu lateral (hambúrguer) com Escape ou botão fechar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-9c09fdb6840834cce82d",
+              "file": "tests/Header.spec.ts",
+              "line": 141,
+              "column": 7
+            },
+            {
+              "title": "CT05 - menu lateral com \"Minha conta\" visível: dropdown de conta não deve estar disponível",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-b31ddc8c8101cf2eb188",
+              "file": "tests/Header.spec.ts",
+              "line": 175,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve abrir o painel de conta ao clicar em \"Entrar\" (deslogado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-1b1f3d48491adeab7778",
+              "file": "tests/Header.spec.ts",
+              "line": 211,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve fechar o painel de conta pressionando Escape",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-0c7472cc39b3f84356b3",
+              "file": "tests/Header.spec.ts",
+              "line": 229,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve navegar para listagem de imóveis ao clicar em \"Imóveis\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-0769b8dd20cf27d2ecde",
+              "file": "tests/Header.spec.ts",
+              "line": 259,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve navegar para listagem de veículos ao clicar em \"Veículos\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-c67368e368fc9f01f162",
+              "file": "tests/Header.spec.ts",
+              "line": 272,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve navegar para a página de anúncios ao clicar em \"Anuncie\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-89f825cadeceec1df4d0",
+              "file": "tests/Header.spec.ts",
+              "line": 283,
+              "column": 7
+            },
+            {
+              "title": "CT11 - deve redirecionar para login ao acessar \"Favoritos\" sem autenticação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-ec3303a6313045685c68",
+              "file": "tests/Header.spec.ts",
+              "line": 294,
+              "column": 7
+            },
+            {
+              "title": "CT01 - deve renderizar o header corretamente em desktop (deslogado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-d325f1b7bad248a4b391",
+              "file": "tests/Header.spec.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve renderizar o header corretamente em mobile (390px)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-7f94c28ba4d93d84ca3f",
+              "file": "tests/Header.spec.ts",
+              "line": 100,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve abrir o menu lateral ao clicar no hambúrguer (mobile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-9664084ec204f3b45e12",
+              "file": "tests/Header.spec.ts",
+              "line": 124,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve fechar o menu lateral (hambúrguer) com Escape ou botão fechar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-287e70a1750c9efcb997",
+              "file": "tests/Header.spec.ts",
+              "line": 141,
+              "column": 7
+            },
+            {
+              "title": "CT05 - menu lateral com \"Minha conta\" visível: dropdown de conta não deve estar disponível",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-e7c1274e361ef45ba930",
+              "file": "tests/Header.spec.ts",
+              "line": 175,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve abrir o painel de conta ao clicar em \"Entrar\" (deslogado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-cfaeee295708588000fc",
+              "file": "tests/Header.spec.ts",
+              "line": 211,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve fechar o painel de conta pressionando Escape",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-7f4ba94db925dabd6ae5",
+              "file": "tests/Header.spec.ts",
+              "line": 229,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve navegar para listagem de imóveis ao clicar em \"Imóveis\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-b62d0ec0552d5ebbd24e",
+              "file": "tests/Header.spec.ts",
+              "line": 259,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve navegar para listagem de veículos ao clicar em \"Veículos\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-d98ef8d70f5a8ac18067",
+              "file": "tests/Header.spec.ts",
+              "line": 272,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve navegar para a página de anúncios ao clicar em \"Anuncie\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-15d6ca8cf8f35043a8de",
+              "file": "tests/Header.spec.ts",
+              "line": 283,
+              "column": 7
+            },
+            {
+              "title": "CT11 - deve redirecionar para login ao acessar \"Favoritos\" sem autenticação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-4da1b893e32bc481eeff",
+              "file": "tests/Header.spec.ts",
+              "line": 294,
+              "column": 7
+            },
+            {
+              "title": "CT01 - deve renderizar o header corretamente em desktop (deslogado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-44a36cbb125ce16ac231",
+              "file": "tests/Header.spec.ts",
+              "line": 81,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve renderizar o header corretamente em mobile (390px)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-6ef8dcd9a590f5031b7e",
+              "file": "tests/Header.spec.ts",
+              "line": 100,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve abrir o menu lateral ao clicar no hambúrguer (mobile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-4fec625f6e89733bb11b",
+              "file": "tests/Header.spec.ts",
+              "line": 124,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve fechar o menu lateral (hambúrguer) com Escape ou botão fechar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-776b68a15259322df7a9",
+              "file": "tests/Header.spec.ts",
+              "line": 141,
+              "column": 7
+            },
+            {
+              "title": "CT05 - menu lateral com \"Minha conta\" visível: dropdown de conta não deve estar disponível",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-6be52689751d12528472",
+              "file": "tests/Header.spec.ts",
+              "line": 175,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve abrir o painel de conta ao clicar em \"Entrar\" (deslogado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-77d5bfbce38ab1f3e8ed",
+              "file": "tests/Header.spec.ts",
+              "line": 211,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve fechar o painel de conta pressionando Escape",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-3bbe0fb206bcf8cdda76",
+              "file": "tests/Header.spec.ts",
+              "line": 229,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve navegar para listagem de imóveis ao clicar em \"Imóveis\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-cd437486c656b641d4a5",
+              "file": "tests/Header.spec.ts",
+              "line": 259,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve navegar para listagem de veículos ao clicar em \"Veículos\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-912d36d48e8c95c1cc38",
+              "file": "tests/Header.spec.ts",
+              "line": 272,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve navegar para a página de anúncios ao clicar em \"Anuncie\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-afed1b72b93ec30ba93c",
+              "file": "tests/Header.spec.ts",
+              "line": 283,
+              "column": 7
+            },
+            {
+              "title": "CT11 - deve redirecionar para login ao acessar \"Favoritos\" sem autenticação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-ae85c12c9c107a1df18e",
+              "file": "tests/Header.spec.ts",
+              "line": 294,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Feature Header — Usuário Logado",
+          "file": "tests/Header.spec.ts",
+          "line": 320,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT12 - deve exibir nome/avatar do usuário logado e ocultar \"Entrar\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-2a9054b1877fae83f85c",
+              "file": "tests/Header.spec.ts",
+              "line": 329,
+              "column": 7
+            },
+            {
+              "title": "CT13 - deve permitir acesso ao menu/área de conta ao clicar no avatar/nome (logado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-3ea1b2a47aa8a13b07a8",
+              "file": "tests/Header.spec.ts",
+              "line": 352,
+              "column": 7
+            },
+            {
+              "title": "CT14 - usuário logado: menu lateral mobile não deve exibir dropdown de conta simultaneamente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-38f1aa9a8bfd08941a88",
+              "file": "tests/Header.spec.ts",
+              "line": 396,
+              "column": 7
+            },
+            {
+              "title": "CT12 - deve exibir nome/avatar do usuário logado e ocultar \"Entrar\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-70aeef6ac7d7ec5b1d97",
+              "file": "tests/Header.spec.ts",
+              "line": 329,
+              "column": 7
+            },
+            {
+              "title": "CT13 - deve permitir acesso ao menu/área de conta ao clicar no avatar/nome (logado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-9ba0db111523179d4ae8",
+              "file": "tests/Header.spec.ts",
+              "line": 352,
+              "column": 7
+            },
+            {
+              "title": "CT14 - usuário logado: menu lateral mobile não deve exibir dropdown de conta simultaneamente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-3ece2966d101caca4ed8",
+              "file": "tests/Header.spec.ts",
+              "line": 396,
+              "column": 7
+            },
+            {
+              "title": "CT12 - deve exibir nome/avatar do usuário logado e ocultar \"Entrar\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-4cf6ee88d7d0e31f3b56",
+              "file": "tests/Header.spec.ts",
+              "line": 329,
+              "column": 7
+            },
+            {
+              "title": "CT13 - deve permitir acesso ao menu/área de conta ao clicar no avatar/nome (logado)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-c1902e16e1043cc530f9",
+              "file": "tests/Header.spec.ts",
+              "line": 352,
+              "column": 7
+            },
+            {
+              "title": "CT14 - usuário logado: menu lateral mobile não deve exibir dropdown de conta simultaneamente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "4f6ddc7a9da0d3b288e0-8fc7b6f85d5289fc72f3",
+              "file": "tests/Header.spec.ts",
+              "line": 396,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\Login.spec.ts",
+      "file": "tests/Login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Feature Auth - Login e Cadastro",
+          "file": "tests/Login.spec.ts",
+          "line": 175,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT01 - deve realizar login com credenciais validas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-039911d6731e685b895a",
+              "file": "tests/Login.spec.ts",
+              "line": 187,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve exibir erro ao tentar login com senha invalida",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-8c364caa9706665906f0",
+              "file": "tests/Login.spec.ts",
+              "line": 223,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve abrir o fluxo de cadastro a partir do login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-7a52b724750a102c5e5d",
+              "file": "tests/Login.spec.ts",
+              "line": 248,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve exibir opcoes de login social",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-a6816adab2be43841bfe",
+              "file": "tests/Login.spec.ts",
+              "line": 264,
+              "column": 7
+            },
+            {
+              "title": "CT05 - deve realizar login social com mock de sucesso (Google)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-c824dc732443d3f00724",
+              "file": "tests/Login.spec.ts",
+              "line": 272,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve bloquear login social com mock de erro (Google)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-2f986e8d0996be172c80",
+              "file": "tests/Login.spec.ts",
+              "line": 276,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve realizar login social com mock de sucesso (Facebook)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-2cbefb1863246b1f36bd",
+              "file": "tests/Login.spec.ts",
+              "line": 280,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve bloquear login social com mock de erro (Facebook)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-3e376c0801884c264ca2",
+              "file": "tests/Login.spec.ts",
+              "line": 284,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve realizar login social com mock de sucesso (Apple)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-b2329bb9525e12482eee",
+              "file": "tests/Login.spec.ts",
+              "line": 288,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve bloquear login social com mock de erro (Apple)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-9b47a08e3b2900b4bdb7",
+              "file": "tests/Login.spec.ts",
+              "line": 292,
+              "column": 7
+            },
+            {
+              "title": "CT01 - deve realizar login com credenciais validas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-9b7057b475c3f5fba462",
+              "file": "tests/Login.spec.ts",
+              "line": 187,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve exibir erro ao tentar login com senha invalida",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-02005f3dd474e8537e45",
+              "file": "tests/Login.spec.ts",
+              "line": 223,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve abrir o fluxo de cadastro a partir do login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-08853ef6b0bec77a2c4f",
+              "file": "tests/Login.spec.ts",
+              "line": 248,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve exibir opcoes de login social",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-5551eab4b3cb4322426f",
+              "file": "tests/Login.spec.ts",
+              "line": 264,
+              "column": 7
+            },
+            {
+              "title": "CT05 - deve realizar login social com mock de sucesso (Google)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-f4bbc342616ba734d893",
+              "file": "tests/Login.spec.ts",
+              "line": 272,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve bloquear login social com mock de erro (Google)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-b279d274002eb5f84d5b",
+              "file": "tests/Login.spec.ts",
+              "line": 276,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve realizar login social com mock de sucesso (Facebook)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-1898aa908f58c8884748",
+              "file": "tests/Login.spec.ts",
+              "line": 280,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve bloquear login social com mock de erro (Facebook)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-559653c9a62f0087603d",
+              "file": "tests/Login.spec.ts",
+              "line": 284,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve realizar login social com mock de sucesso (Apple)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-a872a17985dceddbe3cc",
+              "file": "tests/Login.spec.ts",
+              "line": 288,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve bloquear login social com mock de erro (Apple)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-a53a6d3f7b944802e6b1",
+              "file": "tests/Login.spec.ts",
+              "line": 292,
+              "column": 7
+            },
+            {
+              "title": "CT01 - deve realizar login com credenciais validas",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-5a1c1fc38331e71a2114",
+              "file": "tests/Login.spec.ts",
+              "line": 187,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve exibir erro ao tentar login com senha invalida",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-e9221dbf9d906cb8fd55",
+              "file": "tests/Login.spec.ts",
+              "line": 223,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve abrir o fluxo de cadastro a partir do login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-ec37b1f349276557f58c",
+              "file": "tests/Login.spec.ts",
+              "line": 248,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve exibir opcoes de login social",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-2227af2dc203a7e42044",
+              "file": "tests/Login.spec.ts",
+              "line": 264,
+              "column": 7
+            },
+            {
+              "title": "CT05 - deve realizar login social com mock de sucesso (Google)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-c6f65d777a692ea32c66",
+              "file": "tests/Login.spec.ts",
+              "line": 272,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve bloquear login social com mock de erro (Google)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-943fbf0ca965e7e79a5e",
+              "file": "tests/Login.spec.ts",
+              "line": 276,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve realizar login social com mock de sucesso (Facebook)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-c32a796ee3a5c33d7c74",
+              "file": "tests/Login.spec.ts",
+              "line": 280,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve bloquear login social com mock de erro (Facebook)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-cbbfd493c880d0f2be4f",
+              "file": "tests/Login.spec.ts",
+              "line": 284,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve realizar login social com mock de sucesso (Apple)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-f39c82b8f7ad73dd310c",
+              "file": "tests/Login.spec.ts",
+              "line": 288,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve bloquear login social com mock de erro (Apple)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "eea7205aa9b1820e2876-67989ec51472e7380308",
+              "file": "tests/Login.spec.ts",
+              "line": 292,
+              "column": 7
+            }
+          ]
         }
       ]
     },
@@ -107,7 +1762,7 @@
         {
           "title": "Feature Auth - Cadastro de Usuários",
           "file": "tests/Register.spec.ts",
-          "line": 84,
+          "line": 114,
           "column": 6,
           "specs": [
             {
@@ -127,7 +1782,7 @@
               ],
               "id": "de3567b02077f035b1b8-b6484802c0680fa63bf3",
               "file": "tests/Register.spec.ts",
-              "line": 106,
+              "line": 136,
               "column": 7
             },
             {
@@ -147,7 +1802,7 @@
               ],
               "id": "de3567b02077f035b1b8-56ed8d9662e095c0819b",
               "file": "tests/Register.spec.ts",
-              "line": 169,
+              "line": 199,
               "column": 7
             },
             {
@@ -167,7 +1822,7 @@
               ],
               "id": "de3567b02077f035b1b8-b64965066f24719014f3",
               "file": "tests/Register.spec.ts",
-              "line": 202,
+              "line": 232,
               "column": 7
             },
             {
@@ -187,7 +1842,7 @@
               ],
               "id": "de3567b02077f035b1b8-e8eeead1a2b2891a18ba",
               "file": "tests/Register.spec.ts",
-              "line": 230,
+              "line": 260,
               "column": 7
             },
             {
@@ -207,7 +1862,7 @@
               ],
               "id": "de3567b02077f035b1b8-3dda30d3adc52c2ba8a6",
               "file": "tests/Register.spec.ts",
-              "line": 271,
+              "line": 301,
               "column": 7
             },
             {
@@ -227,7 +1882,247 @@
               ],
               "id": "de3567b02077f035b1b8-ce2fc8fd4879f302270b",
               "file": "tests/Register.spec.ts",
-              "line": 312,
+              "line": 342,
+              "column": 7
+            },
+            {
+              "title": "CT11 - deve realizar cadastro com dados válidos (email novo)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-30657f3bca5a77953a0f",
+              "file": "tests/Register.spec.ts",
+              "line": 136,
+              "column": 7
+            },
+            {
+              "title": "CT12 - deve exibir erro ao tentar cadastro com email duplicado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-27866c15dbdb81c696d1",
+              "file": "tests/Register.spec.ts",
+              "line": 199,
+              "column": 7
+            },
+            {
+              "title": "CT13 - deve validar força de senha durante o cadastro",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-8314d8bc3f022a215b05",
+              "file": "tests/Register.spec.ts",
+              "line": 232,
+              "column": 7
+            },
+            {
+              "title": "CT14 - deve validar senhas não coincidentes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-aea9508348a326c11646",
+              "file": "tests/Register.spec.ts",
+              "line": 260,
+              "column": 7
+            },
+            {
+              "title": "CT15 - deve validar formato de email inválido",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-1aae7e3742d34bad0bbd",
+              "file": "tests/Register.spec.ts",
+              "line": 301,
+              "column": 7
+            },
+            {
+              "title": "CT17 - deve permitir login social com novo registro automático",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-1c1ccfbda694aa8a85f7",
+              "file": "tests/Register.spec.ts",
+              "line": 342,
+              "column": 7
+            },
+            {
+              "title": "CT11 - deve realizar cadastro com dados válidos (email novo)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-cb34a227eb56581369dd",
+              "file": "tests/Register.spec.ts",
+              "line": 136,
+              "column": 7
+            },
+            {
+              "title": "CT12 - deve exibir erro ao tentar cadastro com email duplicado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-fd45bd08eea31224a87d",
+              "file": "tests/Register.spec.ts",
+              "line": 199,
+              "column": 7
+            },
+            {
+              "title": "CT13 - deve validar força de senha durante o cadastro",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-eb7d21a2cd6efb355eea",
+              "file": "tests/Register.spec.ts",
+              "line": 232,
+              "column": 7
+            },
+            {
+              "title": "CT14 - deve validar senhas não coincidentes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-05c1a9e73afa60ec0bb6",
+              "file": "tests/Register.spec.ts",
+              "line": 260,
+              "column": 7
+            },
+            {
+              "title": "CT15 - deve validar formato de email inválido",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-00995712fcb5a54a31c6",
+              "file": "tests/Register.spec.ts",
+              "line": 301,
+              "column": 7
+            },
+            {
+              "title": "CT17 - deve permitir login social com novo registro automático",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-97c368ad43ad8f63a7b2",
+              "file": "tests/Register.spec.ts",
+              "line": 342,
               "column": 7
             }
           ]
@@ -237,10 +2132,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-06T17:11:51.882Z",
-    "duration": 261.82000000000005,
+    "startTime": "2026-05-06T17:27:58.366Z",
+    "duration": 234.45699999999988,
     "expected": 0,
-    "skipped": 7,
+    "skipped": 96,
     "unexpected": 0,
     "flaky": 0
   }

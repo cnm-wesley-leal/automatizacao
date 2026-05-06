@@ -65,7 +65,19 @@ async function waitForAuthenticatedState(
   return isAuthenticated;
 }
 
-setup('authenticate as WebUser', async ({ page }) => {
+function getStorageStatePath(projectName: string): string {
+  if (projectName === 'setup-webkit') {
+    return '.auth/user-webkit.json';
+  }
+
+  if (projectName === 'setup-ios') {
+    return '.auth/user-ios.json';
+  }
+
+  return TEST_DATA.auth.statePath;
+}
+
+setup('authenticate as WebUser', async ({ page }, testInfo) => {
   const userEmail = env.USER_EMAIL_WEBUSER;
   const userPassword = env.USER_PASSWORD;
   expect(userEmail, 'USER_EMAIL_WEBUSER nao definido para auth.setup.ts').toBeTruthy();
@@ -97,5 +109,5 @@ setup('authenticate as WebUser', async ({ page }) => {
 
   expect(authenticated, 'Nao foi possivel autenticar o usuario no setup apos retries.').toBeTruthy();
 
-  await page.context().storageState({ path: TEST_DATA.auth.statePath });
+  await page.context().storageState({ path: getStorageStatePath(testInfo.project.name) });
 });

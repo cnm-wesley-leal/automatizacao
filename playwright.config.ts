@@ -46,8 +46,22 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'setup',
+      name: 'setup-chromium',
       testMatch: /auth\.setup\.ts/,
+    },
+    {
+      name: 'setup-webkit',
+      testMatch: /auth\.setup\.ts/,
+      use: {
+        ...devices['Desktop Safari'],
+      },
+    },
+    {
+      name: 'setup-ios',
+      testMatch: /auth\.setup\.ts/,
+      use: {
+        ...devices['iPhone 14'],
+      },
     },
     {
       name: 'chromium',
@@ -56,7 +70,23 @@ export default defineConfig({
         // Default session for general tests
         storageState: '.auth/user.json',
       },
-      dependencies: ['setup'],
+      dependencies: ['setup-chromium'],
+    },
+    {
+      name: 'webkit-safari',
+      use: {
+        ...devices['Desktop Safari'],
+        storageState: '.auth/user-webkit.json',
+      },
+      dependencies: ['setup-webkit'],
+    },
+    {
+      name: 'ios-safari-iphone-14',
+      use: {
+        ...devices['iPhone 14'],
+        storageState: '.auth/user-ios.json',
+      },
+      dependencies: ['setup-ios'],
     },
 
     /* Exemplos de Multi-usuário (Escalabilidade futura)
@@ -71,11 +101,6 @@ export default defineConfig({
     */
 
     /*,
-     {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
-    },
-   
      {
       name: 'Google Chrome',
       use: { ...devices['Desktop Chrome'], channel: 'chrome' },

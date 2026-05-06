@@ -52,7 +52,7 @@ async function withMobilePage(
   run: (page: import('@playwright/test').Page) => Promise<void>
 ) {
   const context = await browser.newContext({
-    ...devices['iPhone 12'],
+    ...devices['iPhone 14'],
     storageState,
   });
 

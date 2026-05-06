@@ -106,7 +106,7 @@ export class HeaderPage {
     await expect(this.authPanel).toBeVisible();
   }
 
-  /** Define o viewport como mobile (iPhone 12 equivalente) */
+  /** Define o viewport como mobile (iPhone 14 equivalente) */
   async setMobileViewport() {
     await this.page.setViewportSize({ width: 390, height: 844 });
   }
