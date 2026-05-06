@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect, devices } from '@playwright/test';
 import { TEST_DATA } from '../utils/test-data';
 import { HeaderPage } from '../pages/HeaderPage';
 
@@ -43,10 +43,27 @@ async function dismissCookieConsent(page: import('@playwright/test').Page) {
 }
 
 function mobileMenuTrigger(page: import('@playwright/test').Page) {
-  return page
-    .locator('header button, header [role="button"], header [aria-label*="menu" i], header [class*="menu" i]')
-    .filter({ hasNot: page.getByRole('link', { name: /favoritos|entrar|imóveis|veículos|anuncie/i }) })
-    .first();
+  return page.locator('header button[aria-label*="menu" i], header [role="button"][aria-label*="menu" i]').first();
+}
+
+async function withMobilePage(
+  browser: import('@playwright/test').Browser,
+  storageState: import('@playwright/test').StorageState,
+  run: (page: import('@playwright/test').Page) => Promise<void>
+) {
+  const context = await browser.newContext({
+    ...devices['iPhone 12'],
+    storageState,
+  });
+
+  const page = await context.newPage();
+  try {
+    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' });
+    await dismissCookieConsent(page);
+    await run(page);
+  } finally {
+    await context.close();
+  }
 }
 
 // ── Suite deslogado ───────────────────────────────────────────────────────────
@@ -104,58 +121,50 @@ test.describe('Feature Header — Usuário Deslogado', () => {
     }
   });
 
-  test('CT03 - deve abrir o menu lateral ao clicar no hambúrguer (mobile)', async ({ page }) => {
-    await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' });
-    await dismissCookieConsent(page);
+  test('CT03 - deve abrir o menu lateral ao clicar no hambúrguer (mobile)', async ({ browser }) => {
+    await withMobilePage(browser, { cookies: [], origins: [] }, async mobilePage => {
+      // Estado inicial: confirma que o hambúrguer está visível
+      const hamburger = mobileMenuTrigger(mobilePage);
+      const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false);
+      test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile com emulação isMobile.');
 
-    // Estado inicial: confirma que o hambúrguer está visível
-    const hamburger = mobileMenuTrigger(page);
-    const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false);
-    test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile.');
+      // Clica no hambúrguer para abrir o menu
+      await hamburger.click();
 
-    // Checkpoint: painel lateral ainda não aberto
-    const sideMenuBefore = page.locator(
-      '[class*="drawer"], [class*="Drawer"], [class*="sidebar"], [class*="sidenav"], [class*="mobile-menu"], [class*="mobileMenu"]'
-    );
-    // Clica no hambúrguer para abrir o menu
-    await hamburger.click();
-
-    // Checkpoint: algum elemento de navegação deve se tornar visível
-    // (links que estavam ocultos agora aparecem no drawer)
-    const anyNavLink = page.getByRole('link', { name: /imóveis|veículos|anuncie/i }).first();
-    await expect(anyNavLink).toBeVisible({ timeout: 5000 });
+      // Checkpoint: algum elemento de navegação deve se tornar visível
+      // (links que estavam ocultos agora aparecem no drawer)
+      const anyNavLink = mobilePage.getByRole('link', { name: /imóveis|veículos|anuncie/i }).first();
+      await expect(anyNavLink).toBeVisible({ timeout: 5000 });
+    });
   });
 
-  test('CT04 - deve fechar o menu lateral (hambúrguer) com Escape ou botão fechar', async ({ page }) => {
-    await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' });
-    await dismissCookieConsent(page);
+  test('CT04 - deve fechar o menu lateral (hambúrguer) com Escape ou botão fechar', async ({ browser }) => {
+    await withMobilePage(browser, { cookies: [], origins: [] }, async mobilePage => {
+      const hamburger = mobileMenuTrigger(mobilePage);
+      const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false);
+      test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile com emulação isMobile.');
 
-    const hamburger = mobileMenuTrigger(page);
-    const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false);
-    test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile.');
+      // Abre o menu lateral
+      await hamburger.click();
+      const anyNavLink = mobilePage.getByRole('link', { name: /imóveis|veículos|anuncie/i }).first();
+      await expect(anyNavLink).toBeVisible({ timeout: 5000 });
 
-    // Abre o menu lateral
-    await hamburger.click();
-    const anyNavLink = page.getByRole('link', { name: /imóveis|veículos|anuncie/i }).first();
-    await expect(anyNavLink).toBeVisible({ timeout: 5000 });
+      // Fecha via Escape
+      await mobilePage.keyboard.press('Escape');
 
-    // Fecha via Escape
-    await page.keyboard.press('Escape');
-
-    // Checkpoint: após fechar via Escape, o painel some OU um botão de fechar é clicado
-    // Estratégia tolerante: verifica se o estado mudou (link some ou hamburger volta ao estado fechado)
-    try {
-      await expect(anyNavLink).toBeHidden({ timeout: 3000 });
-    } catch {
-      // Escape pode não fechar neste componente — tenta botão de fechar no drawer
-      const closeBtn = page.getByRole('button', { name: /fechar|close/i });
-      if (await closeBtn.isVisible({ timeout: 1000 })) {
-        await closeBtn.click();
+      // Checkpoint: após fechar via Escape, o painel some OU um botão de fechar é clicado
+      // Estratégia tolerante: verifica se o estado mudou (link some ou hamburger volta ao estado fechado)
+      try {
         await expect(anyNavLink).toBeHidden({ timeout: 3000 });
+      } catch {
+        // Escape pode não fechar neste componente — tenta botão de fechar no drawer
+        const closeBtn = mobilePage.getByRole('button', { name: /fechar|close/i });
+        if (await closeBtn.isVisible({ timeout: 1000 })) {
+          await closeBtn.click();
+          await expect(anyNavLink).toBeHidden({ timeout: 3000 });
+        }
       }
-    }
+    });
   });
 
   /**
@@ -163,40 +172,38 @@ test.describe('Feature Header — Usuário Deslogado', () => {
    * Quando o menu lateral mobile está aberto com a opção "Minha conta" visível,
    * o dropdown de conta (painel de auth "Entrar") NÃO deve estar disponível.
    */
-  test('CT05 - menu lateral com "Minha conta" visível: dropdown de conta não deve estar disponível', async ({ page }) => {
-    await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' });
-    await dismissCookieConsent(page);
+  test('CT05 - menu lateral com "Minha conta" visível: dropdown de conta não deve estar disponível', async ({ browser }) => {
+    await withMobilePage(browser, { cookies: [], origins: [] }, async mobilePage => {
+      const hamburger = mobileMenuTrigger(mobilePage);
+      const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false);
+      test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile com emulação isMobile.');
 
-    const hamburger = mobileMenuTrigger(page);
-    const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false);
-    test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile.');
+      // Abre o menu lateral
+      await hamburger.click();
 
-    // Abre o menu lateral
-    await hamburger.click();
+      // Verifica se o menu lateral tem opção "Minha conta"
+      const minhaContaLink = mobilePage.getByRole('link', { name: /minha conta/i });
+      const hasMinhaContaInSideMenu = await minhaContaLink.isVisible({ timeout: 4000 }).catch(() => false);
 
-    // Verifica se o menu lateral tem opção "Minha conta"
-    const minhaContaLink = page.getByRole('link', { name: /minha conta/i });
-    const hasMinhaContaInSideMenu = await minhaContaLink.isVisible({ timeout: 4000 }).catch(() => false);
+      if (hasMinhaContaInSideMenu) {
+        // REGRA: se "Minha conta" está no menu lateral, o dropdown de auth NÃO pode coexistir
+        const authPanel = mobilePage.getByRole('heading', { name: /acesse ou crie sua conta/i });
+        await expect(authPanel).toBeHidden({ timeout: 3000 });
 
-    if (hasMinhaContaInSideMenu) {
-      // REGRA: se "Minha conta" está no menu lateral, o dropdown de auth NÃO pode coexistir
-      const authPanel = page.getByRole('heading', { name: /acesse ou crie sua conta/i });
-      await expect(authPanel).toBeHidden({ timeout: 3000 });
-
-      // O link "Entrar" (que abre o dropdown) não deve estar clicável/visível
-      const entrarLink = page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink });
-      // Não deve estar visível em mobile quando o drawer está aberto com "Minha conta"
-      const entrarVisible = await entrarLink.isVisible().catch(() => false);
-      expect(entrarVisible).toBe(false);
-    } else {
-      // Menu lateral não possui "Minha conta" nesse viewport — registra como info
-      test.info().annotations.push({
-        type: 'info',
-        description: 'Menu lateral não exibiu "Minha conta" neste viewport. CT05 é N/A para este estado.',
-      });
-      expect(true).toBe(true);
-    }
+        // O link "Entrar" (que abre o dropdown) não deve estar clicável/visível
+        const entrarLink = mobilePage.getByRole('link', { name: TEST_DATA.locators.login.entrarLink });
+        // Não deve estar visível em mobile quando o drawer está aberto com "Minha conta"
+        const entrarVisible = await entrarLink.isVisible().catch(() => false);
+        expect(entrarVisible).toBe(false);
+      } else {
+        // Menu lateral não possui "Minha conta" nesse viewport — registra como info
+        test.info().annotations.push({
+          type: 'info',
+          description: 'Menu lateral não exibiu "Minha conta" neste viewport. CT05 é N/A para este estado.',
+        });
+        expect(true).toBe(true);
+      }
+    });
   });
 
   // ── Painel de conta ───────────────────────────────────────────────────────
@@ -386,42 +393,39 @@ test.describe('Feature Header — Usuário Logado', () => {
     expect(hasComplementary || hasLogoutAction || hasMinhaContaOption || redirectedToAccount || hasAccountHref).toBe(true);
   });
 
-  test('CT14 - usuário logado: menu lateral mobile não deve exibir dropdown de conta simultaneamente', async ({ page }) => {
+  test('CT14 - usuário logado: menu lateral mobile não deve exibir dropdown de conta simultaneamente', async ({ browser }) => {
     test.skip(
       !process.env.USER_EMAIL_WEBUSER,
       'Defina USER_EMAIL_WEBUSER para executar CT14.'
     );
 
-    // Mobile viewport
-    await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' });
-    await dismissCookieConsent(page);
+    await withMobilePage(browser, TEST_DATA.auth.statePath, async mobilePage => {
+      const hamburger = mobileMenuTrigger(mobilePage);
+      const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false);
+      test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile com emulação isMobile.');
 
-    const hamburger = mobileMenuTrigger(page);
-    const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false);
-    test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile.');
+      // Abre menu lateral
+      await hamburger.click();
 
-    // Abre menu lateral
-    await hamburger.click();
+      // Verifica se "Minha conta" está no menu lateral
+      const minhaContaLink = mobilePage.getByRole('link', { name: /minha conta/i });
+      const hasMinhaContaInSideMenu = await minhaContaLink.isVisible({ timeout: 4000 }).catch(() => false);
 
-    // Verifica se "Minha conta" está no menu lateral
-    const minhaContaLink = page.getByRole('link', { name: /minha conta/i });
-    const hasMinhaContaInSideMenu = await minhaContaLink.isVisible({ timeout: 4000 }).catch(() => false);
+      if (hasMinhaContaInSideMenu) {
+        // REGRA: com "Minha conta" no menu lateral, o dropdown de conta NÃO deve coexistir
+        const dropdownMenu = mobilePage
+          .locator('[class*="dropdown"], [class*="Dropdown"]')
+          .filter({ has: mobilePage.getByRole('link', { name: /sair|logout/i }) });
 
-    if (hasMinhaContaInSideMenu) {
-      // REGRA: com "Minha conta" no menu lateral, o dropdown de conta NÃO deve coexistir
-      const dropdownMenu = page
-        .locator('[class*="dropdown"], [class*="Dropdown"]')
-        .filter({ has: page.getByRole('link', { name: /sair|logout/i }) });
-
-      const dropdownVisible = await dropdownMenu.first().isVisible({ timeout: 2000 }).catch(() => false);
-      expect(dropdownVisible).toBe(false);
-    } else {
-      test.info().annotations.push({
-        type: 'info',
-        description: 'Menu lateral não exibiu "Minha conta" logado. CT14 é N/A para este estado.',
-      });
-      expect(true).toBe(true);
-    }
+        const dropdownVisible = await dropdownMenu.first().isVisible({ timeout: 2000 }).catch(() => false);
+        expect(dropdownVisible).toBe(false);
+      } else {
+        test.info().annotations.push({
+          type: 'info',
+          description: 'Menu lateral não exibiu "Minha conta" logado. CT14 é N/A para este estado.',
+        });
+        expect(true).toBe(true);
+      }
+    });
   });
 });

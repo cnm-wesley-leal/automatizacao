@@ -19,6 +19,7 @@
     "testdino:sync": "playwright test --reporter=json > playwright-results.json; npx ts-node scripts/send-to-testdino.ts"
   },
   "dependencies": {
-    "dotenv": "^17.3.1"
+    "dotenv": "^17.3.1",
+    "tdpw": "^1.0.36"
   }
 }

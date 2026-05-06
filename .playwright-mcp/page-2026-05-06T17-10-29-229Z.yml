@@ -1,0 +1,259 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e209] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e210]
+            - text: Favoritos
+          - link "Entrar" [ref=e212] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e27]:
+    - main [ref=e28]:
+      - generic [ref=e30]:
+        - heading "Cadastrar" [level=1] [ref=e32]
+        - generic [ref=e34]:
+          - group [ref=e35]:
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: Nome completo
+              - textbox "Nome completo" [ref=e38]:
+                - /placeholder: Insira seu nome completo
+          - group [ref=e39]:
+            - generic [ref=e40]:
+              - paragraph [ref=e41]: Email
+              - textbox "Email" [ref=e42]:
+                - /placeholder: email@exemplo.com
+          - group [ref=e43]:
+            - generic [ref=e44]:
+              - paragraph [ref=e45]: Telefone/whatsapp
+              - textbox "Telefone/whatsapp" [ref=e46]:
+                - /placeholder: (xx) xxxxx-xxxx
+          - generic [ref=e47]:
+            - group [ref=e49]:
+              - generic [ref=e50]:
+                - paragraph [ref=e51]: Senha
+                - textbox "Senha" [ref=e52]:
+                  - /placeholder: Insira sua senha
+                - img [ref=e54] [cursor=pointer]
+              - generic [ref=e56]:
+                - paragraph [ref=e57]: Repetir senha
+                - textbox "Repetir senha" [ref=e58]:
+                  - /placeholder: Repita a senha inserida
+                - img [ref=e60] [cursor=pointer]
+              - generic [ref=e62]:
+                - generic [ref=e63]:
+                  - img [ref=e64]
+                  - generic [ref=e66]: A senha deve conter no mínimo 8 caracteres
+                - generic [ref=e67]:
+                  - img [ref=e68]
+                  - generic [ref=e70]: Possuir letras e números
+                - generic [ref=e71]:
+                  - img [ref=e72]
+                  - generic [ref=e74]: As senhas devem ser iguais
+            - paragraph [ref=e75]:
+              - img [ref=e76]
+              - generic [ref=e78]: "Dica: Para garantir a segurança da sua conta, evite reutilizar senhas de outros sites. Opte por combinações únicas de letras, números e símbolos."
+          - button "Criar conta" [ref=e79] [cursor=pointer]
+        - paragraph [ref=e80]:
+          - text: Ao cadastrar, você afirma que leu e concorda com os nossos
+          - link "Termos de Uso" [ref=e81] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/termos-de-uso/
+          - text: e a
+          - link "Política de Privacidade" [ref=e82] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/politicas-de-privacidade/
+          - text: do Chaves na Mão.
+    - navigation [ref=e83]:
+      - list [ref=e84]:
+        - listitem [ref=e85]:
+          - paragraph [ref=e86]: Institucional
+        - listitem [ref=e87]:
+          - link [ref=e88] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/quem-somos/
+            - text: Quem somos
+        - listitem [ref=e89]:
+          - link [ref=e90] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/fale-conosco/
+            - text: Fale conosco
+        - listitem [ref=e91]:
+          - link [ref=e92] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/integradores-parceiros/
+            - text: Integradores parceiros
+        - listitem [ref=e93]:
+          - link [ref=e94] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/trabalhe-conosco/
+            - text: Trabalhe conosco
+        - listitem [ref=e95]:
+          - link [ref=e96] [cursor=pointer]:
+            - /url: http://www.planalto.gov.br/ccivil_03/leis/L8078.htm
+            - text: Cod. defesa do consumidor
+      - list [ref=e97]:
+        - listitem [ref=e98]:
+          - paragraph [ref=e99]: Imóveis
+        - listitem [ref=e100]:
+          - link [ref=e101] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/lancamentos-imoveis/brasil/
+            - paragraph [ref=e102]: Imóveis novos
+        - listitem [ref=e103]:
+          - link [ref=e104] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/imoveis-a-venda/brasil/
+            - paragraph [ref=e105]: Comprar imóveis
+        - listitem [ref=e106]:
+          - link [ref=e107] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/imoveis-para-alugar/brasil/
+            - paragraph [ref=e108]: Alugar imóveis
+        - listitem [ref=e109]:
+          - link [ref=e110] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/anunciar-gratis-imoveis-casas-apartamentos/
+            - paragraph [ref=e111]: Anunciar imóvel
+      - list [ref=e112]:
+        - listitem [ref=e113]:
+          - paragraph [ref=e114]: Veículos
+        - listitem [ref=e115]:
+          - link [ref=e116] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - paragraph [ref=e117]: Comprar carros
+        - listitem [ref=e118]:
+          - link [ref=e119] [cursor=pointer]:
+            - /url: /motos-usadas/brasil/
+            - paragraph [ref=e120]: Comprar motos
+        - listitem [ref=e121]:
+          - link [ref=e122] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/anunciar-gratis-carros-e-motos/
+            - paragraph [ref=e123]: Anunciar veículos
+        - listitem [ref=e124]:
+          - link [ref=e125] [cursor=pointer]:
+            - /url: /tabela-fipe/
+            - paragraph [ref=e126]: Tabela FIPE
+      - list [ref=e127]:
+        - listitem [ref=e128]:
+          - paragraph [ref=e129]: Blog de Imóveis
+        - listitem [ref=e130]:
+          - link [ref=e131] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/decoracao/
+            - paragraph [ref=e132]: Decoração
+        - listitem [ref=e133]:
+          - link [ref=e134] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/dicas-e-reformas/
+            - paragraph [ref=e135]: Dicas e Reformas
+        - listitem [ref=e136]:
+          - link [ref=e137] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guias/
+            - paragraph [ref=e138]: Guias
+        - listitem [ref=e139]:
+          - link [ref=e140] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/melhores-bairros/
+            - paragraph [ref=e141]: Melhores Bairros
+        - listitem [ref=e142]:
+          - link [ref=e143] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/mercado-imobiliario/
+            - paragraph [ref=e144]: Mercado Imobiliário
+      - list [ref=e145]:
+        - listitem [ref=e146]:
+          - paragraph [ref=e147]: Blog de Veículos
+        - listitem [ref=e148]:
+          - link [ref=e149] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guia-compra-carros/
+            - paragraph [ref=e150]: Guia de Carros
+        - listitem [ref=e151]:
+          - link [ref=e152] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guia-compra-motos/
+            - paragraph [ref=e153]: Guia de Motos
+        - listitem [ref=e154]:
+          - link [ref=e155] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/avaliacao/
+            - paragraph [ref=e156]: Avaliações
+        - listitem [ref=e157]:
+          - link [ref=e158] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/noticias-automotivas/
+            - paragraph [ref=e159]: Notícias
+      - list [ref=e160]:
+        - listitem [ref=e161]: Precisa de ajuda?
+        - listitem [ref=e162]:
+          - link [ref=e163] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/central-de-ajuda/
+            - text: Central de ajuda
+    - generic [ref=e164]:
+      - paragraph [ref=e165]: "Aplicativo disponivel em:"
+      - generic [ref=e166]:
+        - link [ref=e167] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=br.com.chavesnamao.www&utm_source=portal
+          - img [ref=e168]
+        - link [ref=e169] [cursor=pointer]:
+          - /url: https://apps.apple.com/br/app/chaves-na-m%C3%A3o/id6443436581?platform=iphone&pt=footer-cnm&ct=portal
+          - img [ref=e170]
+    - list [ref=e171]:
+      - listitem [ref=e172]:
+        - link [ref=e173] [cursor=pointer]:
+          - /url: http://www.facebook.com/ChavesNaMao
+          - img [ref=e174]
+      - listitem [ref=e176]:
+        - link [ref=e177] [cursor=pointer]:
+          - /url: https://www.youtube.com/ChavesNaMao
+          - img [ref=e178]
+      - listitem [ref=e180]:
+        - link [ref=e181] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@portalchavesnamao
+          - img [ref=e182]
+      - listitem [ref=e185]:
+        - link [ref=e186] [cursor=pointer]:
+          - /url: https://instagram.com/chavesnamao/
+          - img [ref=e187]
+      - listitem [ref=e189]:
+        - link [ref=e190] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/chavesnamao/
+          - img [ref=e191]
+      - listitem [ref=e193]:
+        - link [ref=e194] [cursor=pointer]:
+          - /url: https://br.pinterest.com/chavesnamao/
+          - img [ref=e195]
+    - generic [ref=e197]:
+      - paragraph [ref=e198]: Há uma história por trás de toda virada de chave. Quem procura, vira a chave para o seu sonho.
+      - generic [ref=e199]: Chaves na Mão. Procurou, virou.
+    - generic [ref=e200]:
+      - link [ref=e201] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e203]:
+        - text: © 2013 Chaves na Mão. Todos os direitos reservados.
+        - generic [ref=e204]:
+          - link [ref=e205] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/termos-de-uso/
+            - text: Termos de uso
+          - text: "|"
+          - link [ref=e206] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/politicas-de-privacidade/
+            - text: Políticas de privacidade
+  - generic [ref=e214] [cursor=pointer]:
+    - paragraph [ref=e215]:
+      - text: Utilizamos cookies para melhorar a experiência de navegação, ao continuar você concorda com nossos
+      - link [ref=e216]:
+        - /url: https://www.chavesnamao.com.br/termos-de-uso/
+        - text: Termos de uso
+      - text: e
+      - link [ref=e217]:
+        - /url: https://www.chavesnamao.com.br/politicas-de-privacidade/
+        - text: Política de Privacidade.
+    - button [ref=e218]:
+      - text: Entendi
+      - img
+  - generic [ref=e207]: Staging Environment - 933dbef79d745656996e9086f345d2e015bbdb14
+  - alert [ref=e208]

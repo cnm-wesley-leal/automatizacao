@@ -1,0 +1,652 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e22] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e23]
+            - text: Favoritos
+          - link "Entrar" [ref=e25] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e26]:
+    - article [ref=e27]:
+      - generic [ref=e28]:
+        - img "Família brincando com cachorro na garagem" [ref=e30]
+        - heading "Encontre milhões de imóveis, carros e motos" [level=1] [ref=e33]
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - heading "Encontre seu próximo imóvel com quem lidera o mercado" [level=2] [ref=e46]
+          - paragraph [ref=e47]: O Chaves na Mão é o portal imobiliário que conecta você ao imóvel ideal com rapidez, transparência e a maior quantidade de ofertas do Brasil.
+          - navigation [ref=e48]:
+            - generic [ref=e49] [cursor=pointer]:
+              - paragraph: Residenciais
+            - generic [ref=e50] [cursor=pointer]:
+              - paragraph: Comerciais
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - generic [ref=e54]:
+                - heading "Procure por tipo de imóvel" [level=3] [ref=e55]
+                - generic [ref=e57]:
+                  - button "Anterior" [disabled] [ref=e58]:
+                    - generic:
+                      - img
+                  - button "Próximo" [disabled] [ref=e59]:
+                    - generic:
+                      - img
+              - list "Procure por tipo de imóvel" [ref=e61]:
+                - listitem "Apartamento" [ref=e62] [cursor=pointer]:
+                  - img "Apartamento" [ref=e64]
+                  - strong [ref=e66]: Apartamento
+                - listitem "Casas e sobrados" [ref=e67] [cursor=pointer]:
+                  - img "Casas e sobrados" [ref=e69]
+                  - strong [ref=e71]: Casas e sobrados
+                - listitem "Casa em condomínio" [ref=e72] [cursor=pointer]:
+                  - img "Casa em condomínio" [ref=e74]
+                  - strong [ref=e76]: Casa em condomínio
+                - listitem "Kitnets e studios" [ref=e77] [cursor=pointer]:
+                  - img "Kitnets e studios" [ref=e79]
+                  - strong [ref=e81]: Kitnets e studios
+                - listitem "Flat" [ref=e82] [cursor=pointer]:
+                  - img "Flat" [ref=e84]
+                  - strong [ref=e86]: Flat
+                - listitem "Loft" [ref=e87] [cursor=pointer]:
+                  - img "Loft" [ref=e89]
+                  - strong [ref=e91]: Loft
+                - listitem "Cobertura" [ref=e92] [cursor=pointer]:
+                  - img "Cobertura" [ref=e94]
+                  - strong [ref=e96]: Cobertura
+                - listitem "Sítios e chácaras" [ref=e97] [cursor=pointer]:
+                  - img "Sítios e chácaras" [ref=e99]
+                  - strong [ref=e101]: Sítios e chácaras
+            - generic [ref=e102]:
+              - generic [ref=e104]:
+                - heading "Escolha pela comodidade que mais importa" [level=3] [ref=e105]
+                - generic [ref=e107]:
+                  - button "Anterior" [disabled] [ref=e108]:
+                    - generic:
+                      - img
+                  - button "Próximo" [disabled] [ref=e109]:
+                    - generic:
+                      - img
+              - list "Escolha pela comodidade que mais importa" [ref=e111]:
+                - listitem "Casas com piscina" [ref=e112] [cursor=pointer]:
+                  - img "Casas com piscina" [ref=e114]
+                  - generic [ref=e115]:
+                    - strong [ref=e116]: Casas com piscina
+                    - paragraph [ref=e117]: Encontre casas com piscina para comprar e aproveite lazer e conforto no dia a dia.
+                - listitem "Mobiliados" [ref=e118] [cursor=pointer]:
+                  - img "Mobiliados" [ref=e120]
+                  - generic [ref=e121]:
+                    - strong [ref=e122]: Mobiliados
+                    - paragraph [ref=e123]: Casas e apartamentos mobiliados para alugar, prontos para morar com praticidade e economia na mudança.
+                - listitem "Apartamentos na planta" [ref=e124] [cursor=pointer]:
+                  - img "Apartamentos na planta" [ref=e126]
+                  - generic [ref=e127]:
+                    - strong [ref=e128]: Apartamentos na planta
+                    - paragraph [ref=e129]: Garanta seu imóvel novo, moderno e personalizável, aproveitando condições exclusivas de compra.
+                - listitem "Apartamento com varanda" [ref=e130] [cursor=pointer]:
+                  - img "Apartamento com varanda" [ref=e132]
+                  - generic [ref=e133]:
+                    - strong [ref=e134]: Apartamento com varanda
+                    - paragraph [ref=e135]: Compre casas e apartamentos com varanda aconchegantes para aproveitar luz natural e ar livre.
+                - listitem "Casas com quintal" [ref=e136] [cursor=pointer]:
+                  - img "Casas com quintal" [ref=e138]
+                  - generic [ref=e139]:
+                    - strong [ref=e140]: Casas com quintal
+                    - paragraph [ref=e141]: Casas com quintal para comprar, perfeitas para momentos especiais ao ar livre.
+                - listitem "Direto com o proprietário" [ref=e142] [cursor=pointer]:
+                  - img "Direto com o proprietário" [ref=e144]
+                  - generic [ref=e145]:
+                    - strong [ref=e146]: Direto com o proprietário
+                    - paragraph [ref=e147]: Alugue seu imóvel direto com o proprietário, com negociação simples e sem burocracia.
+            - generic [ref=e148]:
+              - heading "Confira o que podemos fazer por você" [level=3] [ref=e151]
+              - list "Confira o que podemos fazer por você" [ref=e153]:
+                - listitem "Anuncie seu imóvel" [ref=e154] [cursor=pointer]:
+                  - img [ref=e155]
+                  - generic [ref=e157]:
+                    - strong [ref=e158]: Anuncie seu imóvel
+                    - paragraph [ref=e159]: Divulgue casas, apartamentos, terrenos e mais. Ideal para quem deseja vender ou alugar com rapidez e visibilidade.
+                    - generic [ref=e160]: Anunciar imóvel
+                - listitem "Blog imobiliário" [ref=e161] [cursor=pointer]:
+                  - img [ref=e162]
+                  - generic [ref=e164]:
+                    - strong [ref=e165]: Blog imobiliário
+                    - paragraph [ref=e166]: Dicas de decoração, guias para comprar ou vender imóveis e as últimas notícias do mercado imobiliário brasileiro.
+                    - generic [ref=e167]: Ler o blog
+        - generic [ref=e171]: Publicidade
+        - generic:
+          - heading "Carros, motos e utilitários de todas as marcas e modelos em um só lugar." [level=2] [ref=e172]
+          - paragraph [ref=e173]: Encontre milhares de ofertas de veículos novos e seminovos anunciados por lojas, concessionárias e particulares.
+          - navigation [ref=e174]:
+            - generic [ref=e175] [cursor=pointer]:
+              - paragraph: Carros
+            - generic [ref=e176] [cursor=pointer]:
+              - paragraph: Motos
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e180]:
+                - heading "Procure por tipo de carroceria" [level=3] [ref=e181]
+                - generic [ref=e183]:
+                  - button "Anterior" [disabled] [ref=e184]:
+                    - generic:
+                      - img
+                  - button "Próximo" [disabled] [ref=e185]:
+                    - generic:
+                      - img
+              - list "Procure por tipo de carroceria" [ref=e187]:
+                - listitem "Sedã" [ref=e188] [cursor=pointer]:
+                  - generic [ref=e189]:
+                    - img "Sedã"
+                  - strong [ref=e191]: Sedã
+                - listitem "Hatchback" [ref=e192] [cursor=pointer]:
+                  - generic [ref=e193]:
+                    - img "Hatchback"
+                  - strong [ref=e195]: Hatchback
+                - listitem "SUV/Crossover" [ref=e196] [cursor=pointer]:
+                  - generic [ref=e197]:
+                    - img "SUV/Crossover"
+                  - strong [ref=e199]: SUV/Crossover
+                - listitem "Picape" [ref=e200] [cursor=pointer]:
+                  - generic [ref=e201]:
+                    - img "Picape"
+                  - strong [ref=e203]: Picape
+                - listitem "SW/Perua" [ref=e204] [cursor=pointer]:
+                  - generic [ref=e205]:
+                    - img "SW/Perua"
+                  - strong [ref=e207]: SW/Perua
+                - listitem "Van/Minivan" [ref=e208] [cursor=pointer]:
+                  - generic [ref=e209]:
+                    - img "Van/Minivan"
+                  - strong [ref=e211]: Van/Minivan
+                - listitem "Conversível" [ref=e212] [cursor=pointer]:
+                  - generic [ref=e213]:
+                    - img "Conversível"
+                  - strong [ref=e215]: Conversível
+                - listitem "Cupê" [ref=e216] [cursor=pointer]:
+                  - generic [ref=e217]:
+                    - img "Cupê"
+                  - strong [ref=e219]: Cupê
+                - listitem "Buggy" [ref=e220] [cursor=pointer]:
+                  - generic [ref=e221]:
+                    - img "Buggy"
+                  - strong [ref=e223]: Buggy
+            - generic [ref=e224]:
+              - generic [ref=e226]:
+                - heading "Confira os carros mais procurados" [level=3] [ref=e227]
+                - generic [ref=e229]:
+                  - button "Anterior" [disabled] [ref=e230]:
+                    - generic:
+                      - img
+                  - button "Próximo" [disabled] [ref=e231]:
+                    - generic:
+                      - img
+              - list "Confira os carros mais procurados" [ref=e233]:
+                - listitem "Toyota Corolla" [ref=e234] [cursor=pointer]:
+                  - generic [ref=e235]:
+                    - img "Toyota Corolla"
+                  - strong [ref=e237]: Toyota Corolla
+                - listitem "Fiat Strada" [ref=e238] [cursor=pointer]:
+                  - generic [ref=e239]:
+                    - img "Fiat Strada"
+                  - strong [ref=e241]: Fiat Strada
+                - listitem "Honda Civic" [ref=e242] [cursor=pointer]:
+                  - generic [ref=e243]:
+                    - img "Honda Civic"
+                  - strong [ref=e245]: Honda Civic
+                - listitem "Jeep Compass" [ref=e246] [cursor=pointer]:
+                  - generic [ref=e247]:
+                    - img "Jeep Compass"
+                  - strong [ref=e249]: Jeep Compass
+                - listitem "Renault Kwid" [ref=e250] [cursor=pointer]:
+                  - generic [ref=e251]:
+                    - img "Renault Kwid"
+                  - strong [ref=e253]: Renault Kwid
+                - listitem "Fiat Uno" [ref=e254] [cursor=pointer]:
+                  - generic [ref=e255]:
+                    - img "Fiat Uno"
+                  - strong [ref=e257]: Fiat Uno
+                - listitem "Nissan Kicks" [ref=e258] [cursor=pointer]:
+                  - generic [ref=e259]:
+                    - img "Nissan Kicks"
+                  - strong [ref=e261]: Nissan Kicks
+                - listitem "Jeep Renegade" [ref=e262] [cursor=pointer]:
+                  - generic [ref=e263]:
+                    - img "Jeep Renegade"
+                  - strong [ref=e265]: Jeep Renegade
+                - listitem "Fiat Palio" [ref=e266] [cursor=pointer]:
+                  - generic [ref=e267]:
+                    - img "Fiat Palio"
+                  - strong [ref=e269]: Fiat Palio
+                - listitem "Chevrolet Onix" [ref=e270] [cursor=pointer]:
+                  - generic [ref=e271]:
+                    - img "Chevrolet Onix"
+                  - strong [ref=e273]: Chevrolet Onix
+                - listitem "Hyundai Creta" [ref=e274] [cursor=pointer]:
+                  - generic [ref=e275]:
+                    - img "Hyundai Creta"
+                  - strong [ref=e277]: Hyundai Creta
+                - listitem "Chevrolet Tracker" [ref=e278] [cursor=pointer]:
+                  - generic [ref=e279]:
+                    - img "Chevrolet Tracker"
+                  - strong [ref=e281]: Chevrolet Tracker
+                - listitem "Fiat Argo" [ref=e282] [cursor=pointer]:
+                  - generic [ref=e283]:
+                    - img "Fiat Argo"
+                  - strong [ref=e285]: Fiat Argo
+                - listitem "Chevrolet Cruze" [ref=e286] [cursor=pointer]:
+                  - generic [ref=e287]:
+                    - img "Chevrolet Cruze"
+                  - strong [ref=e289]: Chevrolet Cruze
+                - listitem "Hyundai HB20" [ref=e290] [cursor=pointer]:
+                  - generic [ref=e291]:
+                    - img "Hyundai HB20"
+                  - strong [ref=e293]: Hyundai HB20
+                - listitem "Volkswagen Golf" [ref=e294] [cursor=pointer]:
+                  - generic [ref=e295]:
+                    - img "Volkswagen Golf"
+                  - strong [ref=e297]: Volkswagen Golf
+            - generic [ref=e298]:
+              - heading "Veja as formas que encontramos para te ajudar" [level=3] [ref=e301]
+              - list "Veja as formas que encontramos para te ajudar" [ref=e303]:
+                - listitem "Tabela Fipe" [ref=e304] [cursor=pointer]:
+                  - img [ref=e305]
+                  - generic [ref=e307]:
+                    - strong [ref=e308]: Tabela Fipe
+                    - paragraph [ref=e309]: Quanto vale meu carro ou moto? Saiba o valor do seu veículo com base na referência mais usada por compradores e vendedores.
+                    - generic [ref=e310]: Consultar Fipe
+                - listitem "Anuncie seu veículo" [ref=e311] [cursor=pointer]:
+                  - img [ref=e312]
+                  - generic [ref=e314]:
+                    - strong [ref=e315]: Anuncie seu veículo
+                    - paragraph [ref=e316]: Anuncie carros ou motos. Ideal para revendas, concessionárias e proprietários que buscam o melhor negócio.
+                    - generic [ref=e317]: Anunciar veículo
+                - listitem "Blog automotivo" [ref=e318] [cursor=pointer]:
+                  - img [ref=e319]
+                  - generic [ref=e321]:
+                    - strong [ref=e322]: Blog automotivo
+                    - paragraph [ref=e323]: Acompanhe notícias, guia de compras, avaliações e tudo que você precisa saber antes de comprar ou vender seu veículo.
+                    - generic [ref=e324]: Ler o blog
+        - generic [ref=e325]:
+          - generic [ref=e326]:
+            - generic [ref=e327]:
+              - heading "No Chaves na Mão, você encontra mais de 4 milhões de imóveis e 100 mil veículos." [level=2] [ref=e328]
+              - paragraph [ref=e329]: Use o aplicativo para encontrar o imóvel ou o carro ideal, com praticidade e segurança.
+            - generic [ref=e330]:
+              - generic [ref=e331]:
+                - img "QR Code"
+              - generic [ref=e332]:
+                - strong [ref=e333]: Faça o download do aplicativo
+                - paragraph [ref=e334]: Instale o app e descubra ofertas de imóveis e veículos perto de você.
+                - list [ref=e335]:
+                  - listitem [ref=e336]:
+                    - link "app chavesnamão android" [ref=e337] [cursor=pointer]:
+                      - /url: https://play.google.com/store/apps/details?id=br.com.chavesnamao.www&utm_source=portal
+                      - img "app chavesnamão android" [ref=e338]
+                  - listitem [ref=e339]:
+                    - link "app chavesnamão ios" [ref=e340] [cursor=pointer]:
+                      - /url: https://apps.apple.com/br/app/chaves-na-m%C3%A3o/id6443436581?platform=iphone&pt=footer-cnm&ct=portal
+                      - img "app chavesnamão ios" [ref=e341]
+          - generic [ref=e342]:
+            - img "app chavesnamão" [ref=e343]
+            - img "app chavesnamão" [ref=e344]
+        - generic [ref=e345]:
+          - generic [ref=e346]:
+            - heading "Anuncie agora no portal líder na geração de resultados" [level=2] [ref=e347]
+            - list [ref=e348]:
+              - listitem [ref=e349]:
+                - generic [ref=e350]:
+                  - img [ref=e351]
+                  - generic [ref=e353]:
+                    - strong [ref=e354]: Mais visibilidade
+                    - paragraph [ref=e355]: Contamos com milhões de acessos todos os meses
+              - listitem [ref=e356]:
+                - generic [ref=e357]:
+                  - img [ref=e358]
+                  - generic [ref=e360]:
+                    - strong [ref=e361]: Credibilidade
+                    - paragraph [ref=e362]: Somos o portal líder na geração de resultados
+              - listitem [ref=e363]:
+                - generic [ref=e364]:
+                  - img [ref=e365]
+                  - generic [ref=e367]:
+                    - strong [ref=e368]: Destaque
+                    - paragraph [ref=e369]: Anuncie em um dos portais mais acessados do Brasil
+            - generic [ref=e370]:
+              - button "Selecione seu perfil" [ref=e372] [cursor=pointer]:
+                - generic:
+                  - generic: Selecione seu perfil
+                - img
+              - link "Anunciar" [ref=e373] [cursor=pointer]:
+                - /url: /anunciar-imoveis-carros-e-motos/
+          - generic:
+            - img "Pessoa anunciando imóvel ou veículo no portal Chaves na Mão"
+        - generic [ref=e374]:
+          - heading "Links de carros mais populares e por cidade" [level=2] [ref=e375]
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - heading "Carros mais populares" [level=3] [ref=e382]
+              - link "Hb20" [ref=e383] [cursor=pointer]:
+                - /url: /carros/brasil/hyundai-hb20/
+              - link "Gol" [ref=e384] [cursor=pointer]:
+                - /url: /carros/brasil/volkswagen-gol/
+              - link "Honda Fit" [ref=e385] [cursor=pointer]:
+                - /url: /carros/pr-curitiba/honda-fit/
+              - link "Sandero" [ref=e386] [cursor=pointer]:
+                - /url: /carros/brasil/renault-sandero/
+              - link "Saveiro" [ref=e387] [cursor=pointer]:
+                - /url: /carros/brasil/volkswagen-saveiro/
+            - generic [ref=e388]:
+              - heading "São Paulo" [level=3] [ref=e389]
+              - link "Carros usados em São Paulo" [ref=e390] [cursor=pointer]:
+                - /url: /carros-usados/sp-sao-paulo/
+              - link "HRV à venda em SP" [ref=e391] [cursor=pointer]:
+                - /url: /carros/sp-sao-paulo/honda-hr-v/
+              - link "Corolla à venda em SP" [ref=e392] [cursor=pointer]:
+                - /url: /carros/sp-sao-paulo/toyota-corolla/
+              - link "Creta à venda em SP" [ref=e393] [cursor=pointer]:
+                - /url: /carros/sp-sao-paulo/hyundai-creta/
+              - link "Hb20 à venda em SP" [ref=e394] [cursor=pointer]:
+                - /url: /carros/sp-sao-paulo/hyundai-hb20/
+            - generic [ref=e395]:
+              - heading "Curitiba" [level=3] [ref=e396]
+              - link "Carros usados em Curitiba" [ref=e397] [cursor=pointer]:
+                - /url: /carros-usados/pr-curitiba/
+              - link "Volvo Curitiba" [ref=e398] [cursor=pointer]:
+                - /url: /carros/pr-curitiba/volvo/
+              - link "Chevrolet Curitiba" [ref=e399] [cursor=pointer]:
+                - /url: /carros/pr-curitiba/chevrolet/
+              - link "Renault Curitiba" [ref=e400] [cursor=pointer]:
+                - /url: /carros/pr-curitiba/renault/
+              - link "Hyundai Curitiba" [ref=e401] [cursor=pointer]:
+                - /url: /carros/pr-curitiba/hyundai/
+            - generic [ref=e402]:
+              - heading "Belo Horizonte" [level=3] [ref=e403]
+              - link "Carros usados em Belo Horizonte" [ref=e404] [cursor=pointer]:
+                - /url: /carros-usados/mg-belo-horizonte/
+              - link "Palio à venda em BH" [ref=e405] [cursor=pointer]:
+                - /url: /carros/mg-belo-horizonte/fiat-palio/
+              - link "Gol à venda em BH" [ref=e406] [cursor=pointer]:
+                - /url: /carros/mg-belo-horizonte/volkswagen-gol/
+              - link "Corolla à venda em BH" [ref=e407] [cursor=pointer]:
+                - /url: /carros/mg-belo-horizonte/toyota-corolla/
+              - link "HRV à venda em BH" [ref=e408] [cursor=pointer]:
+                - /url: /carros/mg-belo-horizonte/honda-hr-v/
+            - generic [ref=e409]:
+              - heading "Rio de Janeiro" [level=3] [ref=e410]
+              - link "Carros usados no Rio de Janeiro" [ref=e411] [cursor=pointer]:
+                - /url: /carros-usados/rj-rio-de-janeiro/
+              - link "Corolla RJ" [ref=e412] [cursor=pointer]:
+                - /url: /carros/rj-rio-de-janeiro/toyota-corolla/
+              - link "Honda RJ" [ref=e413] [cursor=pointer]:
+                - /url: /carros/rj-rio-de-janeiro/honda/
+              - link "Gol à venda RJ" [ref=e414] [cursor=pointer]:
+                - /url: /carros/rj-rio-de-janeiro/volkswagen-gol/
+              - link "Hyundai RJ" [ref=e415] [cursor=pointer]:
+                - /url: /carros/rj-rio-de-janeiro/hyundai/
+            - generic [ref=e416]:
+              - heading "Porto Alegre" [level=3] [ref=e417]
+              - link "Carros Usados Porto Alegre" [ref=e418] [cursor=pointer]:
+                - /url: /carros-usados/rs-porto-alegre/
+              - link "Polo em Porto Alegre" [ref=e419] [cursor=pointer]:
+                - /url: /carros/rs-porto-alegre/volkswagen-polo/
+              - link "Onix em Porto Alegre" [ref=e420] [cursor=pointer]:
+                - /url: /carros/rs-porto-alegre/chevrolet-onix/
+              - link "HB20 em Porto Alegre" [ref=e421] [cursor=pointer]:
+                - /url: /carros/rs-porto-alegre/hyundai-hb20/
+              - link "Kwid em Porto Alegre" [ref=e422] [cursor=pointer]:
+                - /url: /carros/rs-porto-alegre/renault-kwid/
+            - generic [ref=e423]:
+              - heading "Joinville" [level=3] [ref=e424]
+              - link "Carros usados em Joinville" [ref=e425] [cursor=pointer]:
+                - /url: /carros-usados/sc-joinville/
+              - link "Jeep Joinville" [ref=e426] [cursor=pointer]:
+                - /url: /carros/sc-joinville/jeep/
+              - link "Hyundai Joinville" [ref=e427] [cursor=pointer]:
+                - /url: /carros/sc-joinville/hyundai/
+              - link "Fiat Joinville" [ref=e428] [cursor=pointer]:
+                - /url: /carros/sc-joinville/fiat/
+              - link "Ford Joinville" [ref=e429] [cursor=pointer]:
+                - /url: /carros/sc-joinville/ford/
+            - generic [ref=e430]:
+              - heading "Campinas" [level=3] [ref=e431]
+              - link "Carros usados em Campinas" [ref=e432] [cursor=pointer]:
+                - /url: /carros-usados/sp-campinas/
+              - link "Volkswagen Polo" [ref=e433] [cursor=pointer]:
+                - /url: /carros/sp-campinas/volkswagen-polo/
+              - link "Onix em Campinas" [ref=e434] [cursor=pointer]:
+                - /url: /carros/sp-campinas/chevrolet-onix/
+              - link "Hb20 em Campinas" [ref=e435] [cursor=pointer]:
+                - /url: /carros/sp-campinas/honda-fit/
+              - link "Mobi em Campinas" [ref=e436] [cursor=pointer]:
+                - /url: /carros/sp-campinas/fiat-mobi/
+            - generic [ref=e437]:
+              - heading "Londrina" [level=3] [ref=e438]
+              - link "Carros usados Londrina" [ref=e439] [cursor=pointer]:
+                - /url: /carros-usados/pr-londrina/
+              - link "Chevrolet Londrina" [ref=e440] [cursor=pointer]:
+                - /url: /carros/pr-londrina/chevrolet/
+              - link "Corolla à venda em Londrina" [ref=e441] [cursor=pointer]:
+                - /url: /carros/pr-londrina/toyota-corolla/
+              - link "S10 à venda em Londrina" [ref=e442] [cursor=pointer]:
+                - /url: /carros/pr-londrina/chevrolet-s10/
+              - link "Renault Londrina" [ref=e443] [cursor=pointer]:
+                - /url: /carros/pr-londrina/renault/
+            - generic [ref=e444]:
+              - heading "Ribeirão Preto" [level=3] [ref=e445]
+              - link "Carros Ribeirao Preto" [ref=e446] [cursor=pointer]:
+                - /url: /carros-usados/sp-ribeirao-preto/
+              - link "Hyundai Ribeirao Preto" [ref=e447] [cursor=pointer]:
+                - /url: /carros/sp-ribeirao-preto/hyundai/
+              - link "Fiat Ribeirao Preto" [ref=e448] [cursor=pointer]:
+                - /url: /carros/sp-ribeirao-preto/fiat/
+              - link "BMW Ribeirao Preto" [ref=e449] [cursor=pointer]:
+                - /url: /carros/sp-ribeirao-preto/bmw/
+              - link "Ford Ribeirao Preto" [ref=e450] [cursor=pointer]:
+                - /url: /carros/sp-ribeirao-preto/ford/
+            - generic [ref=e451]:
+              - heading "Sorocaba" [level=3] [ref=e452]
+              - link "Carros usados em Sorocaba" [ref=e453] [cursor=pointer]:
+                - /url: /carros-usados/sp-sorocaba/
+              - link "Toyota Sorocaba" [ref=e454] [cursor=pointer]:
+                - /url: /carros/sp-sorocaba/toyota/
+              - link "Chevrolet Sorocaba" [ref=e455] [cursor=pointer]:
+                - /url: /carros/sp-sorocaba/chevrolet/
+              - link "Audi Sorocaba" [ref=e456] [cursor=pointer]:
+                - /url: /carros/sp-sorocaba/audi/
+              - link "Hyundai Sorocaba" [ref=e457] [cursor=pointer]:
+                - /url: /carros/sp-sorocaba/hyundai/
+            - generic [ref=e458]:
+              - heading "Maringá" [level=3] [ref=e459]
+              - link "Carros usados em Maringá" [ref=e460] [cursor=pointer]:
+                - /url: /carros-usados/pr-maringa/
+              - link "Fiat Strada em Maringá" [ref=e461] [cursor=pointer]:
+                - /url: /carros/pr-maringa/fiat-strada/
+              - link "T-cross em Maringá" [ref=e462] [cursor=pointer]:
+                - /url: /carros/pr-maringa/volkswagen-t-cross/
+              - link "HB20 em Maringá" [ref=e463] [cursor=pointer]:
+                - /url: /carros/pr-maringa/hyundai-hb20/
+              - link "Onix em Maringá" [ref=e464] [cursor=pointer]:
+                - /url: /carros/pr-maringa/chevrolet-onix/
+  - navigation [ref=e465]:
+    - list [ref=e466]:
+      - listitem [ref=e467]:
+        - paragraph [ref=e468]: Institucional
+      - listitem [ref=e469]:
+        - link [ref=e470] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/quem-somos/
+          - text: Quem somos
+      - listitem [ref=e471]:
+        - link [ref=e472] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/fale-conosco/
+          - text: Fale conosco
+      - listitem [ref=e473]:
+        - link [ref=e474] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/integradores-parceiros/
+          - text: Integradores parceiros
+      - listitem [ref=e475]:
+        - link [ref=e476] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/trabalhe-conosco/
+          - text: Trabalhe conosco
+      - listitem [ref=e477]:
+        - link [ref=e478] [cursor=pointer]:
+          - /url: http://www.planalto.gov.br/ccivil_03/leis/L8078.htm
+          - text: Cod. defesa do consumidor
+    - list [ref=e479]:
+      - listitem [ref=e480]:
+        - paragraph [ref=e481]: Imóveis
+      - listitem [ref=e482]:
+        - link [ref=e483] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/lancamentos-imoveis/brasil/
+          - paragraph [ref=e484]: Imóveis novos
+      - listitem [ref=e485]:
+        - link [ref=e486] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/imoveis-a-venda/brasil/
+          - paragraph [ref=e487]: Comprar imóveis
+      - listitem [ref=e488]:
+        - link [ref=e489] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/imoveis-para-alugar/brasil/
+          - paragraph [ref=e490]: Alugar imóveis
+      - listitem [ref=e491]:
+        - link [ref=e492] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/anunciar-gratis-imoveis-casas-apartamentos/
+          - paragraph [ref=e493]: Anunciar imóvel
+    - list [ref=e494]:
+      - listitem [ref=e495]:
+        - paragraph [ref=e496]: Veículos
+      - listitem [ref=e497]:
+        - link [ref=e498] [cursor=pointer]:
+          - /url: /carros-usados/brasil/
+          - paragraph [ref=e499]: Comprar carros
+      - listitem [ref=e500]:
+        - link [ref=e501] [cursor=pointer]:
+          - /url: /motos-usadas/brasil/
+          - paragraph [ref=e502]: Comprar motos
+      - listitem [ref=e503]:
+        - link [ref=e504] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/anunciar-gratis-carros-e-motos/
+          - paragraph [ref=e505]: Anunciar veículos
+      - listitem [ref=e506]:
+        - link [ref=e507] [cursor=pointer]:
+          - /url: /tabela-fipe/
+          - paragraph [ref=e508]: Tabela FIPE
+    - list [ref=e509]:
+      - listitem [ref=e510]:
+        - paragraph [ref=e511]: Blog de Imóveis
+      - listitem [ref=e512]:
+        - link [ref=e513] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/decoracao/
+          - paragraph [ref=e514]: Decoração
+      - listitem [ref=e515]:
+        - link [ref=e516] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/dicas-e-reformas/
+          - paragraph [ref=e517]: Dicas e Reformas
+      - listitem [ref=e518]:
+        - link [ref=e519] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/guias/
+          - paragraph [ref=e520]: Guias
+      - listitem [ref=e521]:
+        - link [ref=e522] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/melhores-bairros/
+          - paragraph [ref=e523]: Melhores Bairros
+      - listitem [ref=e524]:
+        - link [ref=e525] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/mercado-imobiliario/
+          - paragraph [ref=e526]: Mercado Imobiliário
+    - list [ref=e527]:
+      - listitem [ref=e528]:
+        - paragraph [ref=e529]: Blog de Veículos
+      - listitem [ref=e530]:
+        - link [ref=e531] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/guia-compra-carros/
+          - paragraph [ref=e532]: Guia de Carros
+      - listitem [ref=e533]:
+        - link [ref=e534] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/guia-compra-motos/
+          - paragraph [ref=e535]: Guia de Motos
+      - listitem [ref=e536]:
+        - link [ref=e537] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/avaliacao/
+          - paragraph [ref=e538]: Avaliações
+      - listitem [ref=e539]:
+        - link [ref=e540] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/noticias-automotivas/
+          - paragraph [ref=e541]: Notícias
+    - list [ref=e542]:
+      - listitem [ref=e543]: Precisa de ajuda?
+      - listitem [ref=e544]:
+        - link [ref=e545] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/central-de-ajuda/
+          - text: Central de ajuda
+  - generic [ref=e546]:
+    - paragraph [ref=e547]: "Aplicativo disponivel em:"
+    - generic [ref=e548]:
+      - link [ref=e549] [cursor=pointer]:
+        - /url: https://play.google.com/store/apps/details?id=br.com.chavesnamao.www&utm_source=portal
+        - img [ref=e550]
+      - link [ref=e551] [cursor=pointer]:
+        - /url: https://apps.apple.com/br/app/chaves-na-m%C3%A3o/id6443436581?platform=iphone&pt=footer-cnm&ct=portal
+        - img [ref=e552]
+  - list [ref=e553]:
+    - listitem [ref=e554]:
+      - link [ref=e555] [cursor=pointer]:
+        - /url: http://www.facebook.com/ChavesNaMao
+        - img [ref=e556]
+    - listitem [ref=e558]:
+      - link [ref=e559] [cursor=pointer]:
+        - /url: https://www.youtube.com/ChavesNaMao
+        - img [ref=e560]
+    - listitem [ref=e562]:
+      - link [ref=e563] [cursor=pointer]:
+        - /url: https://www.tiktok.com/@portalchavesnamao
+        - img [ref=e564]
+    - listitem [ref=e567]:
+      - link [ref=e568] [cursor=pointer]:
+        - /url: https://instagram.com/chavesnamao/
+        - img [ref=e569]
+    - listitem [ref=e571]:
+      - link [ref=e572] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/chavesnamao/
+        - img [ref=e573]
+    - listitem [ref=e575]:
+      - link [ref=e576] [cursor=pointer]:
+        - /url: https://br.pinterest.com/chavesnamao/
+        - img [ref=e577]
+  - generic [ref=e579]:
+    - paragraph [ref=e580]: Há uma história por trás de toda virada de chave. Quem procura, vira a chave para o seu sonho.
+    - generic [ref=e581]: Chaves na Mão. Procurou, virou.
+  - generic [ref=e582]:
+    - link [ref=e583] [cursor=pointer]:
+      - /url: /
+    - paragraph [ref=e585]:
+      - text: © 2013 Chaves na Mão. Todos os direitos reservados.
+      - generic [ref=e586]:
+        - link [ref=e587] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/termos-de-uso/
+          - text: Termos de uso
+        - text: "|"
+        - link [ref=e588] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/politicas-de-privacidade/
+          - text: Políticas de privacidade
+  - generic [ref=e589]: Staging Environment - 933dbef79d745656996e9086f345d2e015bbdb14
+  - alert [ref=e590]
