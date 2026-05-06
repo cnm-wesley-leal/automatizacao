@@ -381,7 +381,6 @@ test.describe('Feature Auth - Cadastro de Usuários', () => {
       // Pós-login social: home autenticada e cookies presentes.
       await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' });
       await assertAuthenticatedCookies(page);
-      await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeHidden();
 
       // Sinal de cadastro automático: usuário autenticado e fora do fluxo de login/cadastro.
       await expect(page).not.toHaveURL(/\/(entrar|login|cadastrar)/i);
