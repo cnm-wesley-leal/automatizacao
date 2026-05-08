@@ -1,0 +1,159 @@
+{
+  "cookies": [
+    {
+      "name": "__cf_bm",
+      "value": "tnHwSuPov2fJdmlWT9xZ0aPiEzFNWMtrpYdFftuUbdc-1778251866.970475-1.0.1.1-eZ99T6rn_1stXu44YMezJut77.aXfdnh_Xy.SqJO2l03MWUm8Rxq3P3apPcDvq53XcL2seT4CIwGONbEYo1yajZjxhwTKUs8h7RctFJzCwbscZtPZDZvkev_nMgUZAoD",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1778253667.119212,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.2050270751.1778251868",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1812811868.471538,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cfz_zaraz-analytics",
+      "value": "%7B%22_cfa_clientId%22%3A%7B%22v%22%3A%2257260479984802350%22%2C%22e%22%3A1809787874378%7D%2C%22_cfa_sId%22%3A%7B%22v%22%3A%2254103879405139930%22%2C%22e%22%3A1778253674378%7D%7D",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1809787874.37209,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.527257762.1778251868.1273384324.1778251875.1778251875",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1786027868,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_T3BPD6LBLF",
+      "value": "GS2.1.s1778251868$o1$g0$t1778251875$j53$l0$h371044703",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1812811875.273814,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "uid",
+      "value": "27893971-64e7-4f0a-99a6-fb07999858fc",
+      "domain": ".criteo.com",
+      "path": "/",
+      "expires": 1811947875.344972,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUl7LFLNPs0GfSxalwdcW_Evrj4hBNGIw_KgAM6z5uaIyL6QJXA_e8rMVsS_",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1812811875.35055,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "PHPSESSID",
+      "value": "dtrq6o0lbmfno50djn3e0di624",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1779547875,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "lgak",
+      "value": "on",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1780843875,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Secure-cnm_session_id",
+      "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMUtSM01XUDhDUUFHNEsyVjNTMllZQlMwNSIsImRhdGEiOnsiaWQiOiIwMUtSM01XUDhDUUFHNEsyVjNTMllZQlMwNSIsImRlcGVuZGVuY2llcyI6W10sImVtYWlsVmVyaWZpZWRBdCI6IiIsInBob25lIjoiKzU1NDE5OTE5MzEzMjQiLCJlbWFpbCI6Indlc2xleS5sZWFsKzk5QGNoYXZlc25hbWFvLmNvbS5iciIsInVzZXJUeXBlIjoiV0VCVVNFUiIsIm5hbWUiOiJXZXNsZXkgU2FudG9zIiwiYXBwbGVJZCI6bnVsbCwiZ29vZ2xlSWQiOm51bGwsInBpY3R1cmVVcmwiOm51bGwsImZhY2Vib29rSWQiOm51bGwsInBocHNzaWQiOiJkdHJxNm8wbGJtZm5vNTBkam4zZTBkaTYyNCIsImxhc3RBY2Nlc3MiOnsiZGF0ZSI6IjIwMjYtMDUtMDhUMTE6NTA6MjMuMDU2LTAzOjAwIiwidXNlckFnZW50IjoiTW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzE0NS4wLjc2MzIuNiBTYWZhcmkvNTM3LjM2IiwiaXAiOiIxNzcuNjkuNzIuMjMzLCAxNzIuNjkuMzkuNDkifX0sImlhdCI6MTc3ODI1MTg3NSwiZXhwIjoxNzg2MDI3ODc1fQ.NW8dK0SXm8hYApgyAIJeirioQqUV_BwZosnkHgJ6Rgo",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1779547875,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cto_bundle",
+      "value": "XU5iLF9JVFRwZDhYZmhMdzk1RXpTNWZpeUJLenNEbWpnVUd2MkZ6OWFJamFibXhmbkVrczNrcm1sUjlWV3N4SmpRZGtwek81NEI1elpDaUk0VmUxV2M0QiUyQnQxZ3o1U0wlMkIwQ0dDUVlWOUZOc0Rwd0hjSGVuQiUyQjY3bldOUHZ4aCUyQnptYXVoWnF6JTJCSnNzb0JhbHRXTnMwdjJWZTVBJTNEJTNE",
+      "domain": ".criteo.com",
+      "path": "/",
+      "expires": 1811947875.513819,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None",
+      "partitionKey": "https://chavesnamao.com.br",
+      "_crHasCrossSiteAncestor": true
+    },
+    {
+      "name": "cto_bundle",
+      "value": "SdQ6sV9HSVF5bmh3WnNJdXdVaUdhOTNiYXJwYUlLZExzak4wbnNpczZ0UVNYVVZTNXNkVzBUb1ZrQUV3VHlNOXBzMUpvOGtCVzlZSmR1MUd6JTJCYTdzJTJCUXZQZFg2a3Y0RE5RVWtIQVRxc2dXZG9YJTJGNllMY3EzZ0klMkZKNXRMYW1wenJoSzNqTlo5RnRISzFyeThpNkxPa3hhcjRCSEUwazBHSEJDbW4xa0xWJTJGJTJGQWlBUWclM0Q",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1812415875,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "cnm_ac",
+      "value": "{\"userType\":\"WEBUSER\",\"email\":\"wesley.leal+99@chavesnamao.com.br\",\"hasPassword\":true}",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1780843875,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://staging.chavesnamao.com.br",
+      "localStorage": [
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1778251868120},\"expires\":1786027868120}}"
+        },
+        {
+          "name": "userInformationRefresh",
+          "value": "{\"name\":\"Wesley Santos\",\"email\":\"wesley.leal+99@chavesnamao.com.br\",\"phone\":\"(41) 9919-31324\"}"
+        },
+        {
+          "name": "cto_bundle",
+          "value": "SdQ6sV9HSVF5bmh3WnNJdXdVaUdhOTNiYXJwYUlLZExzak4wbnNpczZ0UVNYVVZTNXNkVzBUb1ZrQUV3VHlNOXBzMUpvOGtCVzlZSmR1MUd6JTJCYTdzJTJCUXZQZFg2a3Y0RE5RVWtIQVRxc2dXZG9YJTJGNllMY3EzZ0klMkZKNXRMYW1wenJoSzNqTlo5RnRISzFyeThpNkxPa3hhcjRCSEUwazBHSEJDbW4xa0xWJTJGJTJGQWlBUWclM0Q"
+        },
+        {
+          "name": "accountInfo",
+          "value": "{\"sphinxId\":\"01KR3MWP8CQAG4K2V3S2YYBS05\",\"sphinxName\":\"Wesley Santos\",\"sphinxEmail\":\"wesley.leal+99@chavesnamao.com.br\",\"sphinxPhone\":\"(41) 9919-31324\",\"sphinxAddress\":{\"city\":{\"id\":0,\"name\":\"\"},\"state\":{\"id\":0,\"name\":\"\"},\"complement\":null,\"neighborhood\":null,\"number\":null,\"street\":null,\"zipCode\":null},\"sphinxBirthDate\":null,\"sphinxDocument\":null,\"userType\":\"WEBUSER\",\"lastAccess\":{\"date\":\"2026-05-08T11:50:23.056-03:00\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.7632.6 Safari/537.36\",\"ip\":\"177.69.72.233, 172.69.39.49\"},\"customer\":{\"id\":1292065,\"cpfCnpj\":null,\"personType\":\"PF\",\"name\":\"Wesley Santos\",\"suspended\":false,\"address\":{\"street\":{},\"number\":\"\",\"complement\":\"\",\"neighborhood\":{\"id\":0,\"name\":\"\",\"url\":\"\"},\"city\":{},\"zipCode\":\"\",\"shareAddress\":true,\"coordinates\":{\"lat\":\"\",\"lon\":\"\"}},\"phoneBusinessNumber\":null,\"phoneLandlineNumber\":null,\"phoneMobileNumber\":\"(41) 9919-31324\"},\"scheduledDeletionDate\":null,\"hasPassword\":true}"
+        }
+      ]
+    }
+  ]
+}

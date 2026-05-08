@@ -1,0 +1,842 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e77] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e78]
+            - text: Favoritos
+          - link "Entrar" [ref=e80] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e81]:
+    - navigation [ref=e82]:
+      - button "voltar" [ref=e83] [cursor=pointer]:
+        - img
+      - button "Anúncio" [ref=e84] [cursor=pointer]
+      - button "Fotos & Videos" [ref=e85] [cursor=pointer]
+      - button "Mapa" [ref=e86] [cursor=pointer]
+      - button "Street View" [ref=e87] [cursor=pointer]
+      - button "Nas proximidades" [ref=e88] [cursor=pointer]
+    - article [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - img "Ascent Paulista - Apartamento de 66m² com 2 dormitórios para alugar próximo Av. Paulista" [ref=e93]
+          - generic [ref=e94]:
+            - img "title" [ref=e96]
+            - img "title" [ref=e98]
+          - generic [ref=e99]:
+            - img "title" [ref=e101]
+            - img "title" [ref=e103]
+        - generic:
+          - button "Anterior" [disabled] [ref=e144]:
+            - generic:
+              - img
+          - button "Próximo" [ref=e145] [cursor=pointer]:
+            - generic:
+              - img
+      - generic [ref=e147]:
+        - generic [ref=e148]:
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - navigation "breadcrumb" [ref=e151]:
+                - list [ref=e152]:
+                  - listitem [ref=e153]:
+                    - link "Home" [ref=e154] [cursor=pointer]:
+                      - /url: /
+                  - listitem [ref=e155]:
+                    - img [ref=e156]
+                  - listitem [ref=e158]:
+                    - link "Brasil" [ref=e159] [cursor=pointer]:
+                      - /url: /apartamentos-para-alugar/brasil/
+                  - listitem [ref=e160]:
+                    - img [ref=e161]
+                  - listitem [ref=e163]:
+                    - link "SP" [ref=e164] [cursor=pointer]:
+                      - /url: /apartamentos-para-alugar/sp/
+                  - listitem [ref=e165]:
+                    - img [ref=e166]
+                  - listitem [ref=e168]:
+                    - link "São Paulo" [ref=e169] [cursor=pointer]:
+                      - /url: /apartamentos-para-alugar/sp-sao-paulo/
+                  - listitem [ref=e170]:
+                    - img [ref=e171]
+                  - listitem [ref=e173]:
+                    - link "Zona Central" [ref=e174] [cursor=pointer]:
+                      - /url: /apartamentos-para-alugar/sp-sao-paulo/zona-central/
+                  - listitem [ref=e175]:
+                    - img [ref=e176]
+                  - listitem [ref=e178]:
+                    - link "Bela Vista" [ref=e179] [cursor=pointer]:
+                      - /url: /apartamentos-para-alugar/sp-sao-paulo/bela-vista/
+                  - listitem [ref=e180]:
+                    - img [ref=e181]
+                  - listitem [ref=e183]:
+                    - link "Rua Sílvia" [disabled] [ref=e184]
+              - generic [ref=e185]:
+                - button "Compartilhar" [ref=e187] [cursor=pointer]:
+                  - img
+                - button "Favoritar" [ref=e188] [cursor=pointer]:
+                  - img
+            - table [ref=e189]:
+              - rowgroup [ref=e190]:
+                - row "Aluguel R$ 5.500/mês Solicitar Visita" [ref=e191]:
+                  - cell "Aluguel R$ 5.500/mês" [ref=e192]:
+                    - paragraph [ref=e193]: Aluguel
+                    - paragraph [ref=e194]:
+                      - generic [ref=e195]: R$ 5.500/mês
+                  - cell "Solicitar Visita" [ref=e196]:
+                    - button "Solicitar Visita" [ref=e197] [cursor=pointer]:
+                      - img
+                      - text: Solicitar Visita
+                - row "Condomínio R$ 1.525/mês IPTU R$ 377 Aluguel + Condomínio R$ 7.025/mês" [ref=e198]:
+                  - cell "Condomínio R$ 1.525/mês IPTU R$ 377 Aluguel + Condomínio R$ 7.025/mês" [ref=e199]:
+                    - generic [ref=e200]:
+                      - generic [ref=e201]:
+                        - paragraph [ref=e202]: Condomínio
+                        - paragraph [ref=e203]: R$ 1.525/mês
+                      - generic [ref=e205]:
+                        - paragraph [ref=e206]: IPTU
+                        - paragraph [ref=e207]: R$ 377
+                    - paragraph [ref=e209]: Aluguel + Condomínio R$ 7.025/mês
+          - generic [ref=e212]:
+            - img [ref=e213]
+            - text: Apartamento
+          - generic [ref=e216] [cursor=pointer]:
+            - img [ref=e217]
+            - heading "Rua Sílvia, 399, Bela Vista, São Paulo/SP" [level=2] [ref=e219]:
+              - generic [ref=e220]: Rua Sílvia, 399, Bela Vista, São Paulo/SP
+            - img [ref=e221]
+          - list [ref=e223]:
+            - listitem [ref=e224]:
+              - paragraph [ref=e225]:
+                - generic [ref=e226]: Área útil
+                - generic [ref=e227]:
+                  - img [ref=e228]
+                  - text: 66m²
+            - listitem [ref=e230]:
+              - paragraph [ref=e231]:
+                - generic [ref=e232]: Área total
+                - generic [ref=e233]:
+                  - img [ref=e234]
+                  - text: 66m²
+            - listitem [ref=e236]:
+              - paragraph [ref=e237]:
+                - generic [ref=e238]: Quartos
+                - generic [ref=e239]:
+                  - img [ref=e240]
+                  - text: "2"
+            - listitem [ref=e242]:
+              - paragraph [ref=e243]:
+                - generic [ref=e244]: Suites
+                - generic [ref=e245]:
+                  - img [ref=e246]
+                  - text: "1"
+            - listitem [ref=e248]:
+              - paragraph [ref=e249]:
+                - generic [ref=e250]: Banheiros
+                - generic [ref=e251]:
+                  - img [ref=e252]
+                  - text: "2"
+            - listitem [ref=e254]:
+              - paragraph [ref=e255]:
+                - generic [ref=e256]: Garagens
+                - generic [ref=e257]:
+                  - img [ref=e258]
+                  - text: "1"
+          - separator [ref=e260]
+          - article [ref=e261]:
+            - heading "Ascent Paulista - Apartamento de 66m² com 2 dormitórios para alugar próximo Av. Paulista" [level=1] [ref=e263]
+            - paragraph [ref=e264]: Descrição
+            - generic [ref=e265]:
+              - paragraph [ref=e266]:
+                - text: "Última atualização:"
+                - time [ref=e267]: 07/05/2026 às 05:15h
+                - text: "| Ref: 1123"
+              - paragraph [ref=e268]:
+                - text: •Armários Planejados
+                - text: •Projeto de Iluminação
+                - text: •Forno Elétrico
+                - text: •Cooktop
+                - text: •Fechadura Eletrônica
+                - text: •Ar Condicionado
+                - text: •Aquecimento Central
+                - text: As informações estão sujeitas a alterações. Consulte o corretor responsável.
+                - text: Informações sobre o condomínio
+                - text: Ao lado do principal eixo econômico e cultural de São Paulo, o Ascent Paulista proporciona a praticidade de ter fácil acesso às vias mais estratégicas da capital e as estações. Um projeto desenhado para quem deseja morar em uma região privilegiada e se conectar com a cidade inteira em um piscar de olhos.
+                - text: Hall Social, Sala de Reunião, Coworking, Coworking Externo e Central Delivery. Lazer Elevado no 9° andar com Fitness, Fitness Externo, Party Lounge, Living Lounge, Gourmet Lounge, Piscina, Solarium e Lavanderia.
+                - text: "Chave do anúncio: zRhhMDTuhVdDd0Gr"
+        - generic [ref=e269]:
+          - generic [ref=e270]:
+            - paragraph [ref=e271]: Área privativa
+            - list [ref=e272]:
+              - listitem [ref=e273]:
+                - img [ref=e274]
+                - paragraph [ref=e276]: Aquecimento a gás
+              - listitem [ref=e277]:
+                - img [ref=e278]
+                - paragraph [ref=e280]: Área de serviço
+              - listitem [ref=e281]:
+                - img [ref=e282]
+                - paragraph [ref=e284]: Cozinha
+              - listitem [ref=e285]:
+                - img [ref=e286]
+                - paragraph [ref=e288]: Playground
+              - listitem [ref=e289]:
+                - img [ref=e290]
+                - paragraph [ref=e292]: Elevador(es)
+          - generic [ref=e293]:
+            - paragraph [ref=e294]: Área comum
+            - list [ref=e295]:
+              - listitem [ref=e296]:
+                - img [ref=e297]
+                - paragraph [ref=e299]: Elevador(es)
+              - listitem [ref=e300]:
+                - img [ref=e301]
+                - paragraph [ref=e303]: Piscina
+              - listitem [ref=e304]:
+                - img [ref=e305]
+                - paragraph [ref=e307]: Playground
+              - listitem [ref=e308]:
+                - img [ref=e309]
+                - paragraph [ref=e311]: Salão de festas
+              - listitem [ref=e312]:
+                - img [ref=e313]
+                - paragraph [ref=e315]: Academia
+              - listitem [ref=e316]:
+                - img [ref=e317]
+                - paragraph [ref=e319]: Interfone
+              - listitem [ref=e320]:
+                - img [ref=e321]
+                - paragraph [ref=e323]: Solárium
+              - listitem [ref=e324]:
+                - img [ref=e325]
+                - paragraph [ref=e327]: Condomínio fechado
+              - listitem [ref=e328]:
+                - img [ref=e329]
+                - paragraph [ref=e331]: Aquecimento
+              - listitem [ref=e332]:
+                - img [ref=e333]
+                - paragraph [ref=e335]: Área de serviço
+        - separator [ref=e336]
+        - generic [ref=e337]:
+          - generic [ref=e338]:
+            - paragraph [ref=e339]: Perguntas rápidas para o anunciante
+            - paragraph [ref=e340]: Faça perguntas rápidas ao anunciante ou simplesmente escreva a sua própria pergunta.
+          - generic [ref=e341]:
+            - button "Eu posso visitar?" [ref=e342] [cursor=pointer]:
+              - text: Eu posso visitar?
+              - img
+            - button "Aceita pet?" [ref=e343] [cursor=pointer]:
+              - text: Aceita pet?
+              - img
+            - button "Tem mobília?" [ref=e344] [cursor=pointer]:
+              - text: Tem mobília?
+              - img
+            - button "Qual andar?" [ref=e345] [cursor=pointer]:
+              - text: Qual andar?
+              - img
+            - button "Me retorne no whatsapp!" [ref=e346] [cursor=pointer]:
+              - text: Me retorne no whatsapp!
+              - img
+            - button "Qual o valor do condomínio?" [ref=e347] [cursor=pointer]:
+              - text: Qual o valor do condomínio?
+              - img
+            - button "Tenho interesse, está disponível?" [ref=e348] [cursor=pointer]:
+              - text: Tenho interesse, está disponível?
+              - img
+          - generic [ref=e349]:
+            - generic [ref=e350]:
+              - textbox "Escreva sua pergunta..." [ref=e351]
+              - paragraph [ref=e352]: 0/200
+            - button "Enviar" [ref=e354] [cursor=pointer]:
+              - generic:
+                - img
+              - text: Enviar
+        - separator [ref=e355]
+        - generic [ref=e356]:
+          - generic [ref=e357]:
+            - generic [ref=e358]:
+              - heading "Proximidades do imóvel" [level=2] [ref=e359]
+              - paragraph [ref=e360]:
+                - text: Descubra o que há de melhor ao redor deste
+                - strong [ref=e361]: apartamento na Bela Vista, em São Paulo.
+            - generic [ref=e362]:
+              - generic [ref=e363] [cursor=pointer]:
+                - paragraph [ref=e364]:
+                  - img [ref=e365]
+                  - generic [ref=e367]:
+                    - text: Proximidades
+                    - generic [ref=e368]: Conheça o entorno do imóvel
+                - generic [ref=e369]: Ver no mapa
+              - generic [ref=e370] [cursor=pointer]:
+                - paragraph [ref=e371]:
+                  - img [ref=e372]
+                  - generic [ref=e374]:
+                    - text: Street View
+                    - generic [ref=e375]: Dê uma volta na vizinhança
+                - generic [ref=e376]: Ver no mapa
+          - generic [ref=e377]:
+            - paragraph [ref=e378]: Veja os pontos próximos na região.
+            - generic [ref=e379]:
+              - generic [ref=e381] [cursor=pointer]:
+                - generic [ref=e382]:
+                  - img [ref=e383]
+                  - generic [ref=e385]:
+                    - heading "Restaurantes" [level=3] [ref=e386]
+                    - paragraph [ref=e387]: Na Bela Vista, você encontra opções de alimentação para todos os gostos.
+                - img [ref=e388]
+              - generic [ref=e391] [cursor=pointer]:
+                - generic [ref=e392]:
+                  - img [ref=e393]
+                  - generic [ref=e395]:
+                    - heading "Mercado e conveniências" [level=3] [ref=e396]
+                    - paragraph [ref=e397]: Faça compras na Bela Vista e tenha tudo por perto no seu dia a dia.
+                - img [ref=e398]
+              - generic [ref=e401] [cursor=pointer]:
+                - generic [ref=e402]:
+                  - img [ref=e403]
+                  - generic [ref=e405]:
+                    - heading "Hospitais" [level=3] [ref=e406]
+                    - paragraph [ref=e407]: Bela Vista oferece hospitais e clínicas por perto, trazendo mais praticidade.
+                - img [ref=e408]
+        - separator [ref=e410]
+        - generic [ref=e415]:
+          - generic [ref=e416]:
+            - paragraph [ref=e417]:
+              - img [ref=e418]
+              - generic [ref=e420]: "Cuidados a serem tomados:"
+            - paragraph [ref=e421]: Nunca faça nenhum pagamento antecipado. O Portal serve apenas como divulgação, sendo assim não se responsabiliza pelas negociações feitas.
+          - button "Mostrar mais" [ref=e422] [cursor=pointer]:
+            - img
+          - button "Denunciar" [ref=e423] [cursor=pointer]
+      - separator [ref=e424]
+      - generic [ref=e425]:
+        - generic [ref=e426]:
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - heading "Anúncios na região do Bela Vista!" [level=3] [ref=e431]
+              - generic [ref=e433]:
+                - button "Anterior" [disabled] [ref=e434]:
+                  - generic:
+                    - img
+                - button "Próximo" [ref=e435] [cursor=pointer]:
+                  - generic:
+                    - img
+            - generic [ref=e437]:
+              - link "Apartamento com 2 dormitórios à venda, 63 m² por R$ 1.300.000,00 - Bela Vista - São Paulo/SP anuncios R$ 5.774 area quartos garagens Rua Doutor Penaforte Mendes Bela Vista, São Paulo" [ref=e438] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-63m2-RS5774/id-41259923/?relatedAds=true
+                - img "Apartamento com 2 dormitórios à venda, 63 m² por R$ 1.300.000,00 - Bela Vista - São Paulo/SP" [ref=e440]
+                - generic [ref=e441]:
+                  - paragraph [ref=e442]:
+                    - generic [ref=e443]: Apartamento p/ alugar
+                  - paragraph [ref=e444]: R$ 5.774
+                  - list [ref=e445]:
+                    - listitem [ref=e446]:
+                      - paragraph [ref=e447]: 63m²
+                    - listitem [ref=e448]:
+                      - paragraph [ref=e449]: 2 quartos
+                    - listitem [ref=e450]:
+                      - paragraph [ref=e451]: 1 vagas
+                  - text: Rua Doutor Penaforte Mendes Bela Vista, São Paulo
+              - link "Apartamento 62m², 02 dormitórios (sendo 01 suíte), 02 banheiros e 01 vaga de Garagem. Condomínio com portaria, segurança 24hrs, piscina anuncios R$ 5.400 area quartos garagens Rua Paim Bela Vista, São Paulo" [ref=e452] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-RS5400/id-30909299/?relatedAds=true
+                - img "Apartamento 62m², 02 dormitórios (sendo 01 suíte), 02 banheiros e 01 vaga de Garagem. Condomínio com portaria, segurança 24hrs, piscina" [ref=e454]
+                - generic [ref=e455]:
+                  - paragraph [ref=e456]:
+                    - generic [ref=e457]: Apartamento p/ alugar
+                  - paragraph [ref=e458]: R$ 5.400
+                  - list [ref=e459]:
+                    - listitem [ref=e460]:
+                      - paragraph [ref=e461]: 64m²
+                    - listitem [ref=e462]:
+                      - paragraph [ref=e463]: 2 quartos
+                    - listitem [ref=e464]:
+                      - paragraph [ref=e465]: 1 vagas
+                  - text: Rua Paim Bela Vista, São Paulo
+              - link "Apartamento com 2 quartos para alugar na Rua Itararé, 168, Bela Vista, São Paulo anuncios R$ 5.500 area quartos garagens Rua Itararé Bela Vista, São Paulo" [ref=e466] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-RS5500/id-41102224/?relatedAds=true
+                - img "Apartamento com 2 quartos para alugar na Rua Itararé, 168, Bela Vista, São Paulo" [ref=e468]
+                - generic [ref=e469]:
+                  - paragraph [ref=e470]:
+                    - generic [ref=e471]: Apartamento p/ alugar
+                  - paragraph [ref=e472]: R$ 5.500
+                  - list [ref=e473]:
+                    - listitem [ref=e474]:
+                      - paragraph [ref=e475]: 66m²
+                    - listitem [ref=e476]:
+                      - paragraph [ref=e477]: 2 quartos
+                    - listitem [ref=e478]:
+                      - paragraph [ref=e479]: 1 vagas
+                  - text: Rua Itararé Bela Vista, São Paulo
+              - link "Apartamento com 2 dormitórios para alugar, 65 m² por R$ 7.593,00/mês - Bela Vista - São Paulo/SP anuncios R$ 6.200 area quartos garagens Rua Paim Bela Vista, São Paulo" [ref=e480] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-101m2-RS6200/id-41563852/?relatedAds=true
+                - img "Apartamento com 2 dormitórios para alugar, 65 m² por R$ 7.593,00/mês - Bela Vista - São Paulo/SP" [ref=e482]
+                - generic [ref=e483]:
+                  - paragraph [ref=e484]:
+                    - generic [ref=e485]: Apartamento p/ alugar
+                  - paragraph [ref=e486]: R$ 6.200
+                  - list [ref=e487]:
+                    - listitem [ref=e488]:
+                      - paragraph [ref=e489]: 65m²
+                    - listitem [ref=e490]:
+                      - paragraph [ref=e491]: 2 quartos
+                    - listitem [ref=e492]:
+                      - paragraph [ref=e493]: 1 vagas
+                  - text: Rua Paim Bela Vista, São Paulo
+              - link "Apartamento para alugar, 45 m² por R$ 6.715,00/mês - Bela Vista - São Paulo/SP anuncios R$ 6.000 area quartos garagens Rua Paim Bela Vista, São Paulo" [ref=e494] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-45m2-RS6000/id-40484133/?relatedAds=true
+                - img "Apartamento para alugar, 45 m² por R$ 6.715,00/mês - Bela Vista - São Paulo/SP" [ref=e496]
+                - generic [ref=e497]:
+                  - paragraph [ref=e498]:
+                    - generic [ref=e499]: Apartamento p/ alugar
+                  - paragraph [ref=e500]: R$ 6.000
+                  - list [ref=e501]:
+                    - listitem [ref=e502]:
+                      - paragraph [ref=e503]: 45m²
+                    - listitem [ref=e504]:
+                      - paragraph [ref=e505]: 2 quartos
+                    - listitem [ref=e506]:
+                      - paragraph [ref=e507]: 1 vagas
+                  - text: Rua Paim Bela Vista, São Paulo
+              - link "Apartamento com 2 dormitórios para alugar, 55 m² por R$ 4.700,00/mês - Bela Vista - São Paulo/SP anuncios R$ 4.700 area quartos garagens Rua Artur Prado Bela Vista, São Paulo" [ref=e508] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-55m2-RS4700/id-39654434/?relatedAds=true
+                - img "Apartamento com 2 dormitórios para alugar, 55 m² por R$ 4.700,00/mês - Bela Vista - São Paulo/SP" [ref=e510]
+                - generic [ref=e511]:
+                  - paragraph [ref=e512]:
+                    - generic [ref=e513]: Apartamento p/ alugar
+                  - paragraph [ref=e514]: R$ 4.700
+                  - list [ref=e515]:
+                    - listitem [ref=e516]:
+                      - paragraph [ref=e517]: 55m²
+                    - listitem [ref=e518]:
+                      - paragraph [ref=e519]: 2 quartos
+                    - listitem [ref=e520]:
+                      - paragraph [ref=e521]: 1 vagas
+                  - text: Rua Artur Prado Bela Vista, São Paulo
+              - link "Apartamento com 2 quartos para alugar na Rua Paim, 296, Bela Vista, São Paulo anuncios R$ 6.000 area quartos garagens Rua Paim Bela Vista, São Paulo" [ref=e522] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-1m2-RS6000/id-40569250/?relatedAds=true
+                - img "Apartamento com 2 quartos para alugar na Rua Paim, 296, Bela Vista, São Paulo" [ref=e524]
+                - generic [ref=e525]:
+                  - paragraph [ref=e526]:
+                    - generic [ref=e527]: Apartamento p/ alugar
+                  - paragraph [ref=e528]: R$ 6.000
+                  - list [ref=e529]:
+                    - listitem [ref=e530]:
+                      - paragraph [ref=e531]: 40m²
+                    - listitem [ref=e532]:
+                      - paragraph [ref=e533]: 2 quartos
+                    - listitem [ref=e534]:
+                      - paragraph [ref=e535]: 1 vagas
+                  - text: Rua Paim Bela Vista, São Paulo
+              - link "Apartamento com 2 quartos para alugar na Alameda Rio Claro, 137, Bela Vista, São Paulo anuncios R$ 6.000 area quartos garagens Alameda Rio Claro Bela Vista, São Paulo" [ref=e536] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-160m2-RS6000/id-35455555/?relatedAds=true
+                - img "Apartamento com 2 quartos para alugar na Alameda Rio Claro, 137, Bela Vista, São Paulo" [ref=e538]
+                - generic [ref=e539]:
+                  - paragraph [ref=e540]:
+                    - generic [ref=e541]: Apartamento p/ alugar
+                  - paragraph [ref=e542]: R$ 6.000
+                  - list [ref=e543]:
+                    - listitem [ref=e544]:
+                      - paragraph [ref=e545]: 90m²
+                    - listitem [ref=e546]:
+                      - paragraph [ref=e547]: 2 quartos
+                    - listitem [ref=e548]:
+                      - paragraph [ref=e549]: 1 vagas
+                  - text: Alameda Rio Claro Bela Vista, São Paulo
+              - 'link "Apartamento para venda ou locação na Bela Vista, São Paulo-SP: 2 quartos, 1 suíte, 2 banheiros, 1 vaga, 66m². Agende sua visita! anuncios R$ 5.500 area quartos garagens Rua Itararé Bela Vista, São Paulo" [ref=e550] [cursor=pointer]':
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-76m2-RS5500/id-41314154/?relatedAds=true
+                - 'img "Apartamento para venda ou locação na Bela Vista, São Paulo-SP: 2 quartos, 1 suíte, 2 banheiros, 1 vaga, 66m². Agende sua visita!" [ref=e552]'
+                - generic [ref=e553]:
+                  - paragraph [ref=e554]:
+                    - generic [ref=e555]: Apartamento p/ alugar
+                  - paragraph [ref=e556]: R$ 5.500
+                  - list [ref=e557]:
+                    - listitem [ref=e558]:
+                      - paragraph [ref=e559]: 66m²
+                    - listitem [ref=e560]:
+                      - paragraph [ref=e561]: 2 quartos
+                    - listitem [ref=e562]:
+                      - paragraph [ref=e563]: 1 vagas
+                  - text: Rua Itararé Bela Vista, São Paulo
+              - link "Apartamento com 2 quartos para alugar na Rua Barata Ribeiro, --, Bela Vista, São Paulo anuncios R$ 4.700 area quartos garagens Rua Barata Ribeiro Bela Vista, São Paulo" [ref=e564] [cursor=pointer]:
+                - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-RS4700/id-39178503/?relatedAds=true
+                - img "Apartamento com 2 quartos para alugar na Rua Barata Ribeiro, --, Bela Vista, São Paulo" [ref=e566]
+                - generic [ref=e567]:
+                  - paragraph [ref=e568]:
+                    - generic [ref=e569]: Apartamento p/ alugar
+                  - paragraph [ref=e570]: R$ 4.700
+                  - list [ref=e571]:
+                    - listitem [ref=e572]:
+                      - paragraph [ref=e573]: 65m²
+                    - listitem [ref=e574]:
+                      - paragraph [ref=e575]: 2 quartos
+                    - listitem [ref=e576]:
+                      - paragraph [ref=e577]: 1 vagas
+                  - text: Rua Barata Ribeiro Bela Vista, São Paulo
+          - separator [ref=e578]
+        - generic [ref=e580]:
+          - heading "Outros tipos de imóveis para alugar em São Paulo" [level=3] [ref=e581]
+          - list [ref=e582]:
+            - listitem [ref=e583]:
+              - link "Sala comercial para alugar em São Paulo" [ref=e584] [cursor=pointer]:
+                - /url: /sala-comercial-para-alugar/sp-sao-paulo/
+            - listitem [ref=e585]:
+              - link "Casas para alugar em São Paulo" [ref=e586] [cursor=pointer]:
+                - /url: /casas-para-alugar/sp-sao-paulo/
+            - listitem [ref=e587]:
+              - link "Kitnets para alugar em São Paulo" [ref=e588] [cursor=pointer]:
+                - /url: /kitnet-para-alugar/sp-sao-paulo/
+            - listitem [ref=e589]:
+              - link "Ponto comercial para alugar em São Paulo" [ref=e590] [cursor=pointer]:
+                - /url: /ponto-comercial-para-alugar/sp-sao-paulo/
+            - listitem [ref=e591]:
+              - link "Casa comercial para alugar em São Paulo" [ref=e592] [cursor=pointer]:
+                - /url: /casa-comercial-para-alugar/sp-sao-paulo/
+            - listitem [ref=e593]:
+              - link "Prédios para alugar em São Paulo" [ref=e594] [cursor=pointer]:
+                - /url: /predio-para-alugar/sp-sao-paulo/
+            - listitem [ref=e595]:
+              - link "Galpões/Depósitos/Barracões para alugar em São Paulo" [ref=e596] [cursor=pointer]:
+                - /url: /galpao-para-alugar/sp-sao-paulo/
+            - listitem [ref=e597]:
+              - link "Flats para alugar em São Paulo" [ref=e598] [cursor=pointer]:
+                - /url: /flat-para-alugar/sp-sao-paulo/
+            - listitem [ref=e599]:
+              - link "Casas em condomínio para alugar em São Paulo" [ref=e600] [cursor=pointer]:
+                - /url: /casas-em-condominio-para-alugar/sp-sao-paulo/
+            - listitem [ref=e601]:
+              - link "Terreno comercial para alugar em São Paulo" [ref=e602] [cursor=pointer]:
+                - /url: /terreno-comercial-para-alugar/sp-sao-paulo/
+            - listitem [ref=e603]:
+              - link "Coberturas para alugar em São Paulo" [ref=e604] [cursor=pointer]:
+                - /url: /coberturas-para-alugar/sp-sao-paulo/
+            - listitem [ref=e605]:
+              - link "Lofts para alugar em São Paulo" [ref=e606] [cursor=pointer]:
+                - /url: /loft-para-alugar/sp-sao-paulo/
+            - listitem [ref=e607]:
+              - link "Terrenos para alugar em São Paulo" [ref=e608] [cursor=pointer]:
+                - /url: /terrenos-para-alugar/sp-sao-paulo/
+            - listitem [ref=e609]:
+              - link "Garagens para alugar em São Paulo" [ref=e610] [cursor=pointer]:
+                - /url: /garagem-para-alugar/sp-sao-paulo/
+            - listitem [ref=e611]:
+              - link "Chácaras para alugar em São Paulo" [ref=e612] [cursor=pointer]:
+                - /url: /chacaras-para-alugar/sp-sao-paulo/
+            - listitem [ref=e613]:
+              - link "Terrenos em condomínio para alugar em São Paulo" [ref=e614] [cursor=pointer]:
+                - /url: /terrenos-em-condominio-para-alugar/sp-sao-paulo/
+            - listitem [ref=e615]:
+              - link "Fazendas para alugar em São Paulo" [ref=e616] [cursor=pointer]:
+                - /url: /fazendas-para-alugar/sp-sao-paulo/
+        - generic [ref=e618]:
+          - heading "Apartamentos para alugar nos bairros próximos" [level=3] [ref=e619]
+          - list [ref=e620]:
+            - listitem [ref=e621]:
+              - link "Apartamentos para alugar na República" [ref=e622] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/republica/
+            - listitem [ref=e623]:
+              - link "Apartamentos para alugar na Consolação" [ref=e624] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/consolacao/
+            - listitem [ref=e625]:
+              - link "Apartamentos para alugar em Santa Cecília" [ref=e626] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/santa-cecilia/
+            - listitem [ref=e627]:
+              - link "Apartamentos para alugar em Higienópolis" [ref=e628] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/higienopolis/
+            - listitem [ref=e629]:
+              - link "Apartamentos para alugar na Vila Buarque" [ref=e630] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/vila-buarque/
+            - listitem [ref=e631]:
+              - link "Apartamentos para alugar na Liberdade" [ref=e632] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/liberdade/
+            - listitem [ref=e633]:
+              - link "Apartamentos para alugar no Cambuci" [ref=e634] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/cambuci/
+            - listitem [ref=e635]:
+              - link "Apartamentos para alugar na Sé" [ref=e636] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/se/
+            - listitem [ref=e637]:
+              - link "Apartamentos para alugar na Vila São Paulo" [ref=e638] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/vila-sao-paulo/
+            - listitem [ref=e639]:
+              - link "Apartamentos para alugar no Centro" [ref=e640] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/centro/
+            - listitem [ref=e641]:
+              - link "Apartamentos para alugar no Centro Histórico" [ref=e642] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/centro-historico/
+            - listitem [ref=e643]:
+              - link "Apartamentos para alugar em Santa Ifigênia" [ref=e644] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/santa-ifigenia/
+            - listitem [ref=e645]:
+              - link "Apartamentos para alugar no Luz" [ref=e646] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/luz/
+            - listitem [ref=e647]:
+              - link "Apartamentos para alugar no Patriarca" [ref=e648] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/patriarca/
+            - listitem [ref=e649]:
+              - link "Apartamentos para alugar na Barra Funda" [ref=e650] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/barra-funda/
+            - listitem [ref=e651]:
+              - link "Apartamentos para alugar no Campos Eliseos" [ref=e652] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/campos-eliseos/
+            - listitem [ref=e653]:
+              - link "Apartamentos para alugar no Bom Retiro" [ref=e654] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bom-retiro/
+            - listitem [ref=e655]:
+              - link "Apartamentos para alugar no Várzea da Barra Funda" [ref=e656] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/varzea-da-barra-funda/
+            - listitem [ref=e657]:
+              - link "Apartamentos para alugar em Perdizes" [ref=e658] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/perdizes/
+            - listitem [ref=e659]:
+              - link "Apartamentos para alugar no Pacaembu" [ref=e660] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/pacaembu/
+        - generic [ref=e662]:
+          - heading "Apartamentos para alugar nas Ruas próximas" [level=3] [ref=e663]
+          - list [ref=e664]:
+            - listitem [ref=e665]:
+              - link "Apartamentos para alugar em Avenida Brigadeiro Luís Antônio" [ref=e666] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/avenida-brigadeiro-luis-antonio/
+            - listitem [ref=e667]:
+              - link "Apartamentos para alugar em Alameda Campinas" [ref=e668] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/alameda-campinas/
+            - listitem [ref=e669]:
+              - link "Apartamentos para alugar em Alameda Joaquim Eugênio de Lima" [ref=e670] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/alameda-joaquim-eugenio-de-lima/
+            - listitem [ref=e671]:
+              - link "Apartamentos para alugar em Rua dos Franceses" [ref=e672] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-dos-franceses/
+            - listitem [ref=e673]:
+              - link "Apartamentos para alugar em Rua Pamplona" [ref=e674] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-pamplona/
+            - listitem [ref=e675]:
+              - link "Apartamentos para alugar em Rua São Carlos do Pinhal" [ref=e676] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-sao-carlos-do-pinhal/
+            - listitem [ref=e677]:
+              - link "Apartamentos para alugar em Rua Treze de Maio" [ref=e678] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-treze-de-maio/
+            - listitem [ref=e679]:
+              - link "Apartamentos para alugar em Rua dos Ingleses" [ref=e680] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-dos-ingleses/
+            - listitem [ref=e681]:
+              - link "Apartamentos para alugar em Rua Santa Madalena" [ref=e682] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-santa-madalena/
+            - listitem [ref=e683]:
+              - link "Apartamentos para alugar em Rua Doutor Alfredo Ellis" [ref=e684] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-doutor-alfredo-ellis/
+            - listitem [ref=e685]:
+              - link "Apartamentos para alugar em Rua Conselheiro Ramalho" [ref=e686] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-conselheiro-ramalho/
+            - listitem [ref=e687]:
+              - link "Apartamentos para alugar em Rua Major Quedinho" [ref=e688] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-major-quedinho/
+            - listitem [ref=e689]:
+              - link "Apartamentos para alugar em Rua Doutor Seng" [ref=e690] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-doutor-seng/
+            - listitem [ref=e691]:
+              - link "Apartamentos para alugar em Rua Almirante Marques Leão" [ref=e692] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-almirante-marques-leao/
+            - listitem [ref=e693]:
+              - link "Apartamentos para alugar em Rua Artur Prado" [ref=e694] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-artur-prado/
+            - listitem [ref=e695]:
+              - link "Apartamentos para alugar em Rua Conselheiro Carrão" [ref=e696] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-conselheiro-carrao/
+            - listitem [ref=e697]:
+              - link "Apartamentos para alugar em Rua Doutor Fausto Ferraz" [ref=e698] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-doutor-fausto-ferraz/
+            - listitem [ref=e699]:
+              - link "Apartamentos para alugar em Alameda Ribeirão Preto" [ref=e700] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/alameda-ribeirao-preto/
+            - listitem [ref=e701]:
+              - link "Apartamentos para alugar em Rua Cunha Bueno" [ref=e702] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-cunha-bueno/
+            - listitem [ref=e703]:
+              - link "Apartamentos para alugar em Rua dos Holandeses" [ref=e704] [cursor=pointer]:
+                - /url: /apartamentos-para-alugar/sp-sao-paulo/bairros/rua-dos-holandeses/
+      - generic [ref=e707]: Publicidade
+    - navigation [ref=e708]:
+      - list [ref=e709]:
+        - listitem [ref=e710]:
+          - paragraph [ref=e711]: Institucional
+        - listitem [ref=e712]:
+          - link [ref=e713] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/quem-somos/
+            - text: Quem somos
+        - listitem [ref=e714]:
+          - link [ref=e715] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/fale-conosco/
+            - text: Fale conosco
+        - listitem [ref=e716]:
+          - link [ref=e717] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/integradores-parceiros/
+            - text: Integradores parceiros
+        - listitem [ref=e718]:
+          - link [ref=e719] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/trabalhe-conosco/
+            - text: Trabalhe conosco
+        - listitem [ref=e720]:
+          - link [ref=e721] [cursor=pointer]:
+            - /url: http://www.planalto.gov.br/ccivil_03/leis/L8078.htm
+            - text: Cod. defesa do consumidor
+      - list [ref=e722]:
+        - listitem [ref=e723]:
+          - paragraph [ref=e724]: Imóveis
+        - listitem [ref=e725]:
+          - link [ref=e726] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/lancamentos-imoveis/brasil/
+            - paragraph [ref=e727]: Imóveis novos
+        - listitem [ref=e728]:
+          - link [ref=e729] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/imoveis-a-venda/brasil/
+            - paragraph [ref=e730]: Comprar imóveis
+        - listitem [ref=e731]:
+          - link [ref=e732] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/imoveis-para-alugar/brasil/
+            - paragraph [ref=e733]: Alugar imóveis
+        - listitem [ref=e734]:
+          - link [ref=e735] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/anunciar-gratis-imoveis-casas-apartamentos/
+            - paragraph [ref=e736]: Anunciar imóvel
+      - list [ref=e737]:
+        - listitem [ref=e738]:
+          - paragraph [ref=e739]: Veículos
+        - listitem [ref=e740]:
+          - link [ref=e741] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - paragraph [ref=e742]: Comprar carros
+        - listitem [ref=e743]:
+          - link [ref=e744] [cursor=pointer]:
+            - /url: /motos-usadas/brasil/
+            - paragraph [ref=e745]: Comprar motos
+        - listitem [ref=e746]:
+          - link [ref=e747] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/anunciar-gratis-carros-e-motos/
+            - paragraph [ref=e748]: Anunciar veículos
+        - listitem [ref=e749]:
+          - link [ref=e750] [cursor=pointer]:
+            - /url: /tabela-fipe/
+            - paragraph [ref=e751]: Tabela FIPE
+      - list [ref=e752]:
+        - listitem [ref=e753]:
+          - paragraph [ref=e754]: Blog de Imóveis
+        - listitem [ref=e755]:
+          - link [ref=e756] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/decoracao/
+            - paragraph [ref=e757]: Decoração
+        - listitem [ref=e758]:
+          - link [ref=e759] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/dicas-e-reformas/
+            - paragraph [ref=e760]: Dicas e Reformas
+        - listitem [ref=e761]:
+          - link [ref=e762] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guias/
+            - paragraph [ref=e763]: Guias
+        - listitem [ref=e764]:
+          - link [ref=e765] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/melhores-bairros/
+            - paragraph [ref=e766]: Melhores Bairros
+        - listitem [ref=e767]:
+          - link [ref=e768] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/mercado-imobiliario/
+            - paragraph [ref=e769]: Mercado Imobiliário
+      - list [ref=e770]:
+        - listitem [ref=e771]:
+          - paragraph [ref=e772]: Blog de Veículos
+        - listitem [ref=e773]:
+          - link [ref=e774] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guia-compra-carros/
+            - paragraph [ref=e775]: Guia de Carros
+        - listitem [ref=e776]:
+          - link [ref=e777] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guia-compra-motos/
+            - paragraph [ref=e778]: Guia de Motos
+        - listitem [ref=e779]:
+          - link [ref=e780] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/avaliacao/
+            - paragraph [ref=e781]: Avaliações
+        - listitem [ref=e782]:
+          - link [ref=e783] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/noticias-automotivas/
+            - paragraph [ref=e784]: Notícias
+      - list [ref=e785]:
+        - listitem [ref=e786]: Precisa de ajuda?
+        - listitem [ref=e787]:
+          - link [ref=e788] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/central-de-ajuda/
+            - text: Central de ajuda
+    - generic [ref=e789]:
+      - paragraph [ref=e790]: "Aplicativo disponivel em:"
+      - generic [ref=e791]:
+        - link [ref=e792] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=br.com.chavesnamao.www&utm_source=portal
+          - img [ref=e793]
+        - link [ref=e794] [cursor=pointer]:
+          - /url: https://apps.apple.com/br/app/chaves-na-m%C3%A3o/id6443436581?platform=iphone&pt=footer-cnm&ct=portal
+          - img [ref=e795]
+    - list [ref=e796]:
+      - listitem [ref=e797]:
+        - link [ref=e798] [cursor=pointer]:
+          - /url: http://www.facebook.com/ChavesNaMao
+          - img [ref=e799]
+      - listitem [ref=e801]:
+        - link [ref=e802] [cursor=pointer]:
+          - /url: https://www.youtube.com/ChavesNaMao
+          - img [ref=e803]
+      - listitem [ref=e805]:
+        - link [ref=e806] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@portalchavesnamao
+          - img [ref=e807]
+      - listitem [ref=e810]:
+        - link [ref=e811] [cursor=pointer]:
+          - /url: https://instagram.com/chavesnamao/
+          - img [ref=e812]
+      - listitem [ref=e814]:
+        - link [ref=e815] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/chavesnamao/
+          - img [ref=e816]
+      - listitem [ref=e818]:
+        - link [ref=e819] [cursor=pointer]:
+          - /url: https://br.pinterest.com/chavesnamao/
+          - img [ref=e820]
+    - generic [ref=e822]:
+      - paragraph [ref=e823]: Há uma história por trás de toda virada de chave. Quem procura, vira a chave para o seu sonho.
+      - generic [ref=e824]: Chaves na Mão. Procurou, virou.
+    - generic [ref=e825]:
+      - link [ref=e826] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e828]:
+        - text: © 2013 Chaves na Mão. Todos os direitos reservados.
+        - generic [ref=e829]:
+          - link [ref=e830] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/termos-de-uso/
+            - text: Termos de uso
+          - text: "|"
+          - link [ref=e831] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/politicas-de-privacidade/
+            - text: Políticas de privacidade
+  - generic [ref=e75]: Staging Environment - 933dbef79d745656996e9086f345d2e015bbdb14
+  - alert [ref=e76]
+  - button "Contatar" [ref=e834] [cursor=pointer]:
+    - img
+    - text: Contatar

@@ -1,0 +1,898 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e77] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e78]
+            - text: Favoritos
+          - link "Entrar" [ref=e80] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e81]:
+    - navigation [ref=e82]:
+      - button "voltar" [ref=e83] [cursor=pointer]:
+        - img
+      - button "Anúncio" [ref=e84] [cursor=pointer]
+      - button "17 Fotos" [ref=e85] [cursor=pointer]
+      - button "Mapa" [ref=e86] [cursor=pointer]
+      - button "Street View" [ref=e87] [cursor=pointer]
+      - button "Nas proximidades" [ref=e88] [cursor=pointer]
+    - article [ref=e89]:
+      - generic [ref=e90]:
+        - generic [ref=e91]:
+          - img "Apartamento com 3 quartos à venda na Rua Simão Álvares, 82, Pinheiros, São Paulo" [ref=e93]
+          - generic [ref=e94]:
+            - img "title" [ref=e96]
+            - img "title" [ref=e98]
+          - generic [ref=e99]:
+            - img "title" [ref=e101]
+            - img "title" [ref=e103]
+        - generic:
+          - button "Anterior" [disabled] [ref=e124]:
+            - generic:
+              - img
+          - button "Próximo" [ref=e125] [cursor=pointer]:
+            - generic:
+              - img
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - navigation "breadcrumb" [ref=e131]:
+                - list [ref=e132]:
+                  - listitem [ref=e133]:
+                    - link "Home" [ref=e134] [cursor=pointer]:
+                      - /url: /
+                  - listitem [ref=e135]:
+                    - img [ref=e136]
+                  - listitem [ref=e138]:
+                    - link "Brasil" [ref=e139] [cursor=pointer]:
+                      - /url: /apartamentos-a-venda/brasil/
+                  - listitem [ref=e140]:
+                    - img [ref=e141]
+                  - listitem [ref=e143]:
+                    - link "SP" [ref=e144] [cursor=pointer]:
+                      - /url: /apartamentos-a-venda/sp/
+                  - listitem [ref=e145]:
+                    - img [ref=e146]
+                  - listitem [ref=e148]:
+                    - link "São Paulo" [ref=e149] [cursor=pointer]:
+                      - /url: /apartamentos-a-venda/sp-sao-paulo/
+                  - listitem [ref=e150]:
+                    - img [ref=e151]
+                  - listitem [ref=e153]:
+                    - link "Zona Oeste" [ref=e154] [cursor=pointer]:
+                      - /url: /apartamentos-a-venda/sp-sao-paulo/zona-oeste/
+                  - listitem [ref=e155]:
+                    - img [ref=e156]
+                  - listitem [ref=e158]:
+                    - link "Pinheiros" [ref=e159] [cursor=pointer]:
+                      - /url: /apartamentos-a-venda/sp-sao-paulo/pinheiros/
+                  - listitem [ref=e160]:
+                    - img [ref=e161]
+                  - listitem [ref=e163]:
+                    - link "Rua Simão Álvares" [disabled] [ref=e164]
+              - generic [ref=e165]:
+                - button "Compartilhar" [ref=e167] [cursor=pointer]:
+                  - img
+                - button "Favoritar" [ref=e168] [cursor=pointer]:
+                  - img
+            - table [ref=e169]:
+              - rowgroup [ref=e170]:
+                - row "Venda R$ 1.450.000 Ver parcelas" [ref=e171]:
+                  - cell "Venda R$ 1.450.000" [ref=e172]:
+                    - paragraph [ref=e173]: Venda
+                    - paragraph [ref=e174]:
+                      - generic [ref=e175]: R$ 1.450.000
+                  - cell "Ver parcelas" [ref=e176]:
+                    - button "Ver parcelas" [ref=e177] [cursor=pointer]
+                - row "Condomínio R$ 2.300/mês IPTU R$ 500" [ref=e178]:
+                  - cell "Condomínio R$ 2.300/mês IPTU R$ 500" [ref=e179]:
+                    - generic [ref=e180]:
+                      - generic [ref=e181]:
+                        - paragraph [ref=e182]: Condomínio
+                        - paragraph [ref=e183]: R$ 2.300/mês
+                      - generic [ref=e185]:
+                        - paragraph [ref=e186]: IPTU
+                        - paragraph [ref=e187]: R$ 500
+          - generic [ref=e190]:
+            - img [ref=e191]
+            - text: Apartamento
+          - generic [ref=e194] [cursor=pointer]:
+            - img [ref=e195]
+            - heading "Rua Simão Álvares, 82, Pinheiros, São Paulo/SP" [level=2] [ref=e197]:
+              - generic [ref=e198]: Rua Simão Álvares, 82, Pinheiros, São Paulo/SP
+            - img [ref=e199]
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - paragraph [ref=e203]:
+                - generic [ref=e204]: Área útil
+                - generic [ref=e205]:
+                  - img [ref=e206]
+                  - text: 120m²
+            - listitem [ref=e208]:
+              - paragraph [ref=e209]:
+                - generic [ref=e210]: Área total
+                - generic [ref=e211]:
+                  - img [ref=e212]
+                  - text: 120m²
+            - listitem [ref=e214]:
+              - paragraph [ref=e215]:
+                - generic [ref=e216]: Quartos
+                - generic [ref=e217]:
+                  - img [ref=e218]
+                  - text: "3"
+            - listitem [ref=e220]:
+              - paragraph [ref=e221]:
+                - generic [ref=e222]: Suites
+                - generic [ref=e223]:
+                  - img [ref=e224]
+                  - text: "1"
+            - listitem [ref=e226]:
+              - paragraph [ref=e227]:
+                - generic [ref=e228]: Banheiros
+                - generic [ref=e229]:
+                  - img [ref=e230]
+                  - text: "3"
+            - listitem [ref=e232]:
+              - paragraph [ref=e233]:
+                - generic [ref=e234]: Garagens
+                - generic [ref=e235]:
+                  - img [ref=e236]
+                  - text: "1"
+          - separator [ref=e238]
+          - article [ref=e239]:
+            - heading "Apartamento com 3 quartos à venda na Rua Simão Álvares, 82, Pinheiros, São Paulo" [level=1] [ref=e241]
+            - paragraph [ref=e242]: Descrição
+            - generic [ref=e243]:
+              - paragraph [ref=e244]:
+                - text: "Última atualização:"
+                - time [ref=e245]: 05/03/2026 às 13:15h
+                - text: "| Ref: 05"
+              - paragraph [ref=e246]: Vende se belo apartamento em pinheiros, localizado a rua Simão Álvares, próximo à estação fradique Coutinho , em um dos bairros mais valorizados de são paulo , esse apartamento com 120 m2 , conta com 3 quartos, sala ampla , cozinha , 3 banheiros, lavanderia, quarto para alimentos . Todo conforto e segurança que a sua família merece ! Venha visitar . Estuda permuta por imóvel de menor valor .
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - paragraph [ref=e249]: Área privativa
+            - list [ref=e250]:
+              - listitem [ref=e251]:
+                - img [ref=e252]
+                - paragraph [ref=e254]: Box no banheiro
+              - listitem [ref=e255]:
+                - img [ref=e256]
+                - paragraph [ref=e258]: Depósito
+              - listitem [ref=e259]:
+                - img [ref=e260]
+                - paragraph [ref=e262]: Teto em gesso
+              - listitem [ref=e263]:
+                - img [ref=e264]
+                - paragraph [ref=e266]: Sacada
+              - listitem [ref=e267]:
+                - img [ref=e268]
+                - paragraph [ref=e270]: Armário(s) planejado(s)
+          - generic [ref=e271]:
+            - paragraph [ref=e272]: Área comum
+            - list [ref=e273]:
+              - listitem [ref=e274]:
+                - img [ref=e275]
+                - paragraph [ref=e277]: Elevador(es)
+              - listitem [ref=e278]:
+                - img [ref=e279]
+                - paragraph [ref=e281]: Espaço gourmet
+              - listitem [ref=e282]:
+                - img [ref=e283]
+                - paragraph [ref=e285]: Playground
+              - listitem [ref=e286]:
+                - img [ref=e287]
+                - paragraph [ref=e289]: Portão eletrônico
+              - listitem [ref=e290]:
+                - img [ref=e291]
+                - paragraph [ref=e293]: Portaria
+              - listitem [ref=e294]:
+                - img [ref=e295]
+                - paragraph [ref=e297]: Portaria 24h
+              - listitem [ref=e298]:
+                - img [ref=e299]
+                - paragraph [ref=e301]: Quadra de esporte
+              - listitem [ref=e302]:
+                - img [ref=e303]
+                - paragraph [ref=e305]: Salão de festas
+              - listitem [ref=e306]:
+                - img [ref=e307]
+                - paragraph [ref=e309]: Bicicletário
+              - listitem [ref=e310]:
+                - img [ref=e311]
+                - paragraph [ref=e313]: Elevador(es) de serviço
+              - listitem [ref=e314]:
+                - img [ref=e315]
+                - paragraph [ref=e317]: Academia
+              - listitem [ref=e318]:
+                - img [ref=e319]
+                - paragraph [ref=e321]: Hall de entrada decorado
+              - listitem [ref=e322]:
+                - img [ref=e323]
+                - paragraph [ref=e325]: Sistema de câmeras
+              - listitem [ref=e326]:
+                - img [ref=e327]
+                - paragraph [ref=e329]: Acesso de serviço
+        - separator [ref=e330]
+        - generic [ref=e331]:
+          - generic [ref=e332]:
+            - paragraph [ref=e333]: Perguntas rápidas para o anunciante
+            - paragraph [ref=e334]: Faça perguntas rápidas ao anunciante ou simplesmente escreva a sua própria pergunta.
+          - generic [ref=e335]:
+            - button "Eu posso visitar?" [ref=e336] [cursor=pointer]:
+              - text: Eu posso visitar?
+              - img
+            - button "Aceita permuta?" [ref=e337] [cursor=pointer]:
+              - text: Aceita permuta?
+              - img
+            - button "Qual andar?" [ref=e338] [cursor=pointer]:
+              - text: Qual andar?
+              - img
+            - button "Me retorne no whatsapp!" [ref=e339] [cursor=pointer]:
+              - text: Me retorne no whatsapp!
+              - img
+            - button "Qual o valor do condomínio?" [ref=e340] [cursor=pointer]:
+              - text: Qual o valor do condomínio?
+              - img
+            - button "Tenho interesse, está disponível?" [ref=e341] [cursor=pointer]:
+              - text: Tenho interesse, está disponível?
+              - img
+          - generic [ref=e342]:
+            - generic [ref=e343]:
+              - textbox "Escreva sua pergunta..." [ref=e344]
+              - paragraph [ref=e345]: 0/200
+            - button "Enviar" [ref=e347] [cursor=pointer]:
+              - generic:
+                - img
+              - text: Enviar
+        - separator [ref=e348]
+        - generic [ref=e349]:
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - heading "Proximidades do imóvel" [level=2] [ref=e352]
+              - paragraph [ref=e353]:
+                - text: Descubra o que há de melhor ao redor deste
+                - strong [ref=e354]: apartamento em Pinheiros, em São Paulo.
+            - generic [ref=e355]:
+              - generic [ref=e356] [cursor=pointer]:
+                - paragraph [ref=e357]:
+                  - img [ref=e358]
+                  - generic [ref=e360]:
+                    - text: Proximidades
+                    - generic [ref=e361]: Conheça o entorno do imóvel
+                - generic [ref=e362]: Ver no mapa
+              - generic [ref=e363] [cursor=pointer]:
+                - paragraph [ref=e364]:
+                  - img [ref=e365]
+                  - generic [ref=e367]:
+                    - text: Street View
+                    - generic [ref=e368]: Dê uma volta na vizinhança
+                - generic [ref=e369]: Ver no mapa
+          - generic [ref=e370]:
+            - paragraph [ref=e371]: Veja os pontos próximos na região.
+            - generic [ref=e372]:
+              - generic [ref=e374] [cursor=pointer]:
+                - generic [ref=e375]:
+                  - img [ref=e376]
+                  - generic [ref=e378]:
+                    - heading "Mercado e conveniências" [level=3] [ref=e379]
+                    - paragraph [ref=e380]: Faça compras em Pinheiros e tenha tudo por perto no seu dia a dia.
+                - img [ref=e381]
+              - generic [ref=e384] [cursor=pointer]:
+                - generic [ref=e385]:
+                  - img [ref=e386]
+                  - generic [ref=e388]:
+                    - heading "Restaurantes" [level=3] [ref=e389]
+                    - paragraph [ref=e390]: Em Pinheiros, você encontra opções de alimentação para todos os gostos.
+                - img [ref=e391]
+              - generic [ref=e394] [cursor=pointer]:
+                - generic [ref=e395]:
+                  - img [ref=e396]
+                  - generic [ref=e398]:
+                    - heading "Hospitais" [level=3] [ref=e399]
+                    - paragraph [ref=e400]: Pinheiros oferece hospitais e clínicas por perto, trazendo mais praticidade.
+                - img [ref=e401]
+        - separator [ref=e403]
+        - generic [ref=e408]:
+          - generic [ref=e409]:
+            - paragraph [ref=e410]:
+              - img [ref=e411]
+              - generic [ref=e413]: "Cuidados a serem tomados:"
+            - paragraph [ref=e414]: Nunca faça nenhum pagamento antecipado. O Portal serve apenas como divulgação, sendo assim não se responsabiliza pelas negociações feitas.
+          - button "Mostrar mais" [ref=e415] [cursor=pointer]:
+            - img
+          - button "Denunciar" [ref=e416] [cursor=pointer]
+      - separator [ref=e417]
+      - generic [ref=e850]:
+        - heading "Simular financiamento" [level=3] [ref=e853]
+        - generic [ref=e855]:
+          - generic [ref=e856]:
+            - generic [ref=e857]:
+              - paragraph [ref=e858]: Valor do imóvel
+              - textbox "Valor do imóvel" [disabled]: R$ 1.450.000
+            - generic [ref=e859]:
+              - paragraph [ref=e860]: Entrada
+              - textbox "Entrada" [ref=e861]: R$ 290.000
+          - generic [ref=e862]:
+            - paragraph [ref=e863]: Prazo em anos
+            - generic [ref=e864]:
+              - generic [ref=e865] [cursor=pointer]: "5"
+              - generic [ref=e866] [cursor=pointer]: "10"
+              - generic [ref=e867] [cursor=pointer]: "15"
+              - generic [ref=e868] [cursor=pointer]: "20"
+              - generic [ref=e869] [cursor=pointer]: "25"
+              - generic [ref=e870] [cursor=pointer]: "30"
+          - generic [ref=e871]:
+            - paragraph [ref=e872]:
+              - text: Valor a ser financiado
+              - img [ref=e874]
+            - paragraph [ref=e876]: R$ 1.160.000
+          - button "Ver parcelas" [ref=e877] [cursor=pointer]
+      - separator [ref=e437]
+      - generic [ref=e438]:
+        - generic [ref=e879]:
+          - generic [ref=e880]:
+            - heading "Preços de Apartamentos com 3 quartos à venda na região próxima de Rua Simão Álvares, 82" [level=2] [ref=e881]:
+              - generic [ref=e882]: Preços de Apartamentos com 3 quartos à venda na região próxima de Rua Simão Álvares, 82
+            - navigation [ref=e883]:
+              - button "Ver no Mapa" [ref=e884] [cursor=pointer]
+              - button "Ver Tabela" [ref=e885] [cursor=pointer]
+          - generic [ref=e888]:
+            - generic:
+              - generic:
+                - button "Marker" [ref=e889] [cursor=pointer]
+                - button "Marker" [ref=e890] [cursor=pointer]
+                - button "Marker" [ref=e891] [cursor=pointer]
+                - button "Marker" [ref=e892] [cursor=pointer]
+                - button "Marker" [ref=e893] [cursor=pointer]
+                - button "Marker" [ref=e894] [cursor=pointer]
+                - button "Marker" [ref=e895] [cursor=pointer]
+                - button "Marker" [ref=e896] [cursor=pointer]
+                - button "Marker" [ref=e897] [cursor=pointer]
+                - button "Marker" [ref=e898] [cursor=pointer]
+                - button "Marker" [ref=e899] [cursor=pointer]
+            - generic:
+              - generic [ref=e900]:
+                - button "Zoom in" [ref=e901] [cursor=pointer]: +
+                - button "Zoom out" [ref=e902] [cursor=pointer]: −
+              - link "Leaflet" [ref=e904] [cursor=pointer]:
+                - /url: https://leafletjs.com
+                - img [ref=e905]
+                - text: Leaflet
+        - separator [ref=e909]
+        - generic [ref=e439]:
+          - generic [ref=e442]:
+            - generic [ref=e443]:
+              - heading "Anúncios na região do Pinheiros!" [level=3] [ref=e444]
+              - generic [ref=e446]:
+                - button "Anterior" [disabled] [ref=e447]:
+                  - generic:
+                    - img
+                - button "Próximo" [ref=e448] [cursor=pointer]:
+                  - generic:
+                    - img
+            - generic [ref=e450]:
+              - link "Apartamento com 3 dormitórios à venda, 111 m² por R$ 1.250.000 - Pinheiros - São Paulo/SP anuncios R$ 1.250.000 area quartos garagens Rua Cônego Eugênio Leite Pinheiros, São Paulo" [ref=e451] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-111m2-RS1250000/id-40799743/?relatedAds=true
+                - img "Apartamento com 3 dormitórios à venda, 111 m² por R$ 1.250.000 - Pinheiros - São Paulo/SP" [ref=e453]
+                - generic [ref=e454]:
+                  - paragraph [ref=e455]:
+                    - generic [ref=e456]: Apartamento à venda
+                  - paragraph [ref=e457]: R$ 1.250.000
+                  - list [ref=e458]:
+                    - listitem [ref=e459]:
+                      - paragraph [ref=e460]: 111m²
+                    - listitem [ref=e461]:
+                      - paragraph [ref=e462]: 3 quartos
+                    - listitem [ref=e463]:
+                      - paragraph [ref=e464]: 1 vagas
+                  - text: Rua Cônego Eugênio Leite Pinheiros, São Paulo
+              - link "Apartamento com 3 quartos à venda na Rua Fradique Coutinho, 294, Pinheiros, São Paulo anuncios R$ 1.383.000 area quartos garagens Rua Fradique Coutinho Pinheiros, São Paulo" [ref=e465] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-RS1383000/id-22275884/?relatedAds=true
+                - img "Apartamento com 3 quartos à venda na Rua Fradique Coutinho, 294, Pinheiros, São Paulo" [ref=e467]
+                - generic [ref=e468]:
+                  - paragraph [ref=e469]:
+                    - generic [ref=e470]: Apartamento à venda
+                  - paragraph [ref=e471]: R$ 1.383.000
+                  - list [ref=e472]:
+                    - listitem [ref=e473]:
+                      - paragraph [ref=e474]: 80m²
+                    - listitem [ref=e475]:
+                      - paragraph [ref=e476]: 3 quartos
+                    - listitem [ref=e477]:
+                      - paragraph [ref=e478]: 2 vagas
+                  - text: Rua Fradique Coutinho Pinheiros, São Paulo
+              - link "Apartamento de luxo à venda em Pinheiros, São Paulo - 3 quartos, 2 suítes, 2 salas, 3 banheiros, 1 vaga, 111m²! anuncios R$ 1.263.000 area quartos garagens Rua Artur De Azevedo Pinheiros, São Paulo" [ref=e479] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-120m2-RS1263000/id-42236029/?relatedAds=true
+                - img "Apartamento de luxo à venda em Pinheiros, São Paulo - 3 quartos, 2 suítes, 2 salas, 3 banheiros, 1 vaga, 111m²!" [ref=e481]
+                - generic [ref=e482]:
+                  - paragraph [ref=e483]:
+                    - generic [ref=e484]: Apartamento à venda
+                  - paragraph [ref=e485]: R$ 1.263.000
+                  - list [ref=e486]:
+                    - listitem [ref=e487]:
+                      - paragraph [ref=e488]: 120m²
+                    - listitem [ref=e489]:
+                      - paragraph [ref=e490]: 3 quartos
+                    - listitem [ref=e491]:
+                      - paragraph [ref=e492]: 1 vagas
+                  - text: Rua Artur De Azevedo Pinheiros, São Paulo
+              - link "Apartamento com 3 quartos à venda na Rua Mateus Grou, 421, Pinheiros, São Paulo anuncios R$ 1.395.000 area quartos garagens Rua Mateus Grou Pinheiros, São Paulo" [ref=e493] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-95m2-RS1395000/id-39127730/?relatedAds=true
+                - img "Apartamento com 3 quartos à venda na Rua Mateus Grou, 421, Pinheiros, São Paulo" [ref=e495]
+                - generic [ref=e496]:
+                  - paragraph [ref=e497]:
+                    - generic [ref=e498]: Apartamento à venda
+                  - paragraph [ref=e499]: R$ 1.395.000
+                  - list [ref=e500]:
+                    - listitem [ref=e501]:
+                      - paragraph [ref=e502]: 95m²
+                    - listitem [ref=e503]:
+                      - paragraph [ref=e504]: 3 quartos
+                    - listitem [ref=e505]:
+                      - paragraph [ref=e506]: 2 vagas
+                  - text: Rua Mateus Grou Pinheiros, São Paulo
+              - link "Apartamento com 3 quartos à venda na Rua Henrique Schaumann, 332, Pinheiros, São Paulo anuncios R$ 1.550.000 area quartos garagens Rua Henrique Schaumann Pinheiros, São Paulo" [ref=e507] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-RS1550000/id-41604543/?relatedAds=true
+                - img "Apartamento com 3 quartos à venda na Rua Henrique Schaumann, 332, Pinheiros, São Paulo" [ref=e509]
+                - generic [ref=e510]:
+                  - paragraph [ref=e511]:
+                    - generic [ref=e512]: Apartamento à venda
+                  - paragraph [ref=e513]: R$ 1.550.000
+                  - list [ref=e514]:
+                    - listitem [ref=e515]:
+                      - paragraph [ref=e516]: 127m²
+                    - listitem [ref=e517]:
+                      - paragraph [ref=e518]: 3 quartos
+                    - listitem [ref=e519]:
+                      - paragraph [ref=e520]: 2 vagas
+                  - text: Rua Henrique Schaumann Pinheiros, São Paulo
+              - link "Apartamento com 3 quartos à venda na Rua Artur de Azevedo, 761, Pinheiros, São Paulo anuncios R$ 1.300.000 area quartos garagens Rua Artur De Azevedo Pinheiros, São Paulo" [ref=e521] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-RS1300000/id-41009628/?relatedAds=true
+                - img "Apartamento com 3 quartos à venda na Rua Artur de Azevedo, 761, Pinheiros, São Paulo" [ref=e523]
+                - generic [ref=e524]:
+                  - paragraph [ref=e525]:
+                    - generic [ref=e526]: Apartamento à venda
+                  - paragraph [ref=e527]: R$ 1.300.000
+                  - list [ref=e528]:
+                    - listitem [ref=e529]:
+                      - paragraph [ref=e530]: 107m²
+                    - listitem [ref=e531]:
+                      - paragraph [ref=e532]: 3 quartos
+                    - listitem [ref=e533]:
+                      - paragraph [ref=e534]: 1 vagas
+                  - text: Rua Artur De Azevedo Pinheiros, São Paulo
+              - link "Apartamento com 3 quartos à venda na Rua Capitão Prudente, 161, Pinheiros, São Paulo anuncios R$ 1.600.000 area quartos garagens Rua Capitão Prudente Pinheiros, São Paulo" [ref=e535] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-RS1600000/id-41009747/?relatedAds=true
+                - img "Apartamento com 3 quartos à venda na Rua Capitão Prudente, 161, Pinheiros, São Paulo" [ref=e537]
+                - generic [ref=e538]:
+                  - paragraph [ref=e539]:
+                    - generic [ref=e540]: Apartamento à venda
+                  - paragraph [ref=e541]: R$ 1.600.000
+                  - list [ref=e542]:
+                    - listitem [ref=e543]:
+                      - paragraph [ref=e544]: 160m²
+                    - listitem [ref=e545]:
+                      - paragraph [ref=e546]: 3 quartos
+                    - listitem [ref=e547]:
+                      - paragraph [ref=e548]: 1 vagas
+                  - text: Rua Capitão Prudente Pinheiros, São Paulo
+              - link "Apartamento à venda em São Paulo, Pinheiros, com 3 quartos, 129m² anuncios R$ 1.250.000 area quartos garagens Rua Capitão Prudente Pinheiros, São Paulo" [ref=e549] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-129m2-RS1250000/id-25531013/?relatedAds=true
+                - img "Apartamento à venda em São Paulo, Pinheiros, com 3 quartos, 129m²" [ref=e551]
+                - generic [ref=e552]:
+                  - paragraph [ref=e553]:
+                    - generic [ref=e554]: Apartamento à venda
+                  - paragraph [ref=e555]: R$ 1.250.000
+                  - list [ref=e556]:
+                    - listitem [ref=e557]:
+                      - paragraph [ref=e558]: 129m²
+                    - listitem [ref=e559]:
+                      - paragraph [ref=e560]: 3 quartos
+                    - listitem [ref=e561]:
+                      - paragraph [ref=e562]: 1 vagas
+                  - text: Rua Capitão Prudente Pinheiros, São Paulo
+              - link "Apartamento com 3 quartos à venda na Rua Henrique Schaumann, 332, Pinheiros, São Paulo anuncios R$ 1.400.000 area quartos garagens Rua Henrique Schaumann Pinheiros, São Paulo" [ref=e563] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-RS1400000/id-41009780/?relatedAds=true
+                - img "Apartamento com 3 quartos à venda na Rua Henrique Schaumann, 332, Pinheiros, São Paulo" [ref=e565]
+                - generic [ref=e566]:
+                  - paragraph [ref=e567]:
+                    - generic [ref=e568]: Apartamento à venda
+                  - paragraph [ref=e569]: R$ 1.400.000
+                  - list [ref=e570]:
+                    - listitem [ref=e571]:
+                      - paragraph [ref=e572]: 127m²
+                    - listitem [ref=e573]:
+                      - paragraph [ref=e574]: 3 quartos
+                    - listitem [ref=e575]:
+                      - paragraph [ref=e576]: 1 vagas
+                  - text: Rua Henrique Schaumann Pinheiros, São Paulo
+              - link "Apartamento com 3 quartos à venda na Rua Artur de Azevedo, 1856, Pinheiros, São Paulo anuncios R$ 1.250.000 area quartos garagens Rua Artur De Azevedo Pinheiros, São Paulo" [ref=e577] [cursor=pointer]:
+                - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-110m2-RS1250000/id-39209709/?relatedAds=true
+                - img "Apartamento com 3 quartos à venda na Rua Artur de Azevedo, 1856, Pinheiros, São Paulo" [ref=e579]
+                - generic [ref=e580]:
+                  - paragraph [ref=e581]:
+                    - generic [ref=e582]: Apartamento à venda
+                  - paragraph [ref=e583]: R$ 1.250.000
+                  - list [ref=e584]:
+                    - listitem [ref=e585]:
+                      - paragraph [ref=e586]: 110m²
+                    - listitem [ref=e587]:
+                      - paragraph [ref=e588]: 3 quartos
+                    - listitem [ref=e589]:
+                      - paragraph [ref=e590]: 1 vagas
+                  - text: Rua Artur De Azevedo Pinheiros, São Paulo
+          - separator [ref=e591]
+        - generic [ref=e593]:
+          - heading "Outros tipos de imóveis para vender em São Paulo" [level=3] [ref=e594]
+          - list [ref=e595]:
+            - listitem [ref=e596]:
+              - link "Terrenos a venda em São Paulo" [ref=e597] [cursor=pointer]:
+                - /url: /terrenos-a-venda/sp-sao-paulo/
+            - listitem [ref=e598]:
+              - link "Sala comercial a venda em São Paulo" [ref=e599] [cursor=pointer]:
+                - /url: /sala-comercial-a-venda/sp-sao-paulo/
+            - listitem [ref=e600]:
+              - link "Prédios a venda em São Paulo" [ref=e601] [cursor=pointer]:
+                - /url: /predio-a-venda/sp-sao-paulo/
+            - listitem [ref=e602]:
+              - link "Casa comercial a venda em São Paulo" [ref=e603] [cursor=pointer]:
+                - /url: /casa-comercial-a-venda/sp-sao-paulo/
+            - listitem [ref=e604]:
+              - link "Galpões/Depósitos/Barracões a venda em São Paulo" [ref=e605] [cursor=pointer]:
+                - /url: /galpao-a-venda/sp-sao-paulo/
+            - listitem [ref=e606]:
+              - link "Ponto comercial a venda em São Paulo" [ref=e607] [cursor=pointer]:
+                - /url: /ponto-comercial-a-venda/sp-sao-paulo/
+            - listitem [ref=e608]:
+              - link "Terreno comercial a venda em São Paulo" [ref=e609] [cursor=pointer]:
+                - /url: /terreno-comercial-a-venda/sp-sao-paulo/
+            - listitem [ref=e610]:
+              - link "Casas a venda em São Paulo" [ref=e611] [cursor=pointer]:
+                - /url: /casas-a-venda/sp-sao-paulo/
+            - listitem [ref=e612]:
+              - link "Terrenos em condomínio a venda em São Paulo" [ref=e613] [cursor=pointer]:
+                - /url: /terrenos-em-condominio-a-venda/sp-sao-paulo/
+            - listitem [ref=e614]:
+              - link "Kitnets a venda em São Paulo" [ref=e615] [cursor=pointer]:
+                - /url: /kitnet-a-venda/sp-sao-paulo/
+            - listitem [ref=e616]:
+              - link "Chácaras a venda em São Paulo" [ref=e617] [cursor=pointer]:
+                - /url: /chacaras-a-venda/sp-sao-paulo/
+            - listitem [ref=e618]:
+              - link "Casas em condomínio a venda em São Paulo" [ref=e619] [cursor=pointer]:
+                - /url: /casas-em-condominio-a-venda/sp-sao-paulo/
+            - listitem [ref=e620]:
+              - link "Garagens a venda em São Paulo" [ref=e621] [cursor=pointer]:
+                - /url: /garagem-a-venda/sp-sao-paulo/
+            - listitem [ref=e622]:
+              - link "Coberturas a venda em São Paulo" [ref=e623] [cursor=pointer]:
+                - /url: /coberturas-a-venda/sp-sao-paulo/
+            - listitem [ref=e624]:
+              - link "Fazendas a venda em São Paulo" [ref=e625] [cursor=pointer]:
+                - /url: /fazendas-a-venda/sp-sao-paulo/
+            - listitem [ref=e626]:
+              - link "Flats a venda em São Paulo" [ref=e627] [cursor=pointer]:
+                - /url: /flat-a-venda/sp-sao-paulo/
+            - listitem [ref=e628]:
+              - link "Lofts a venda em São Paulo" [ref=e629] [cursor=pointer]:
+                - /url: /loft-a-venda/sp-sao-paulo/
+        - generic [ref=e631]:
+          - heading "Apartamentos para vender nos bairros próximos" [level=3] [ref=e632]
+          - list [ref=e633]:
+            - listitem [ref=e634]:
+              - link "Apartamentos a venda no Jardim Paulistano" [ref=e635] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/jardim-paulistano/
+            - listitem [ref=e636]:
+              - link "Apartamentos a venda no Jardins" [ref=e637] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/jardins/
+            - listitem [ref=e638]:
+              - link "Apartamentos a venda no Itaim Bibi" [ref=e639] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/itaim-bibi/
+            - listitem [ref=e640]:
+              - link "Apartamentos a venda no Jardim América" [ref=e641] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/jardim-america/
+            - listitem [ref=e642]:
+              - link "Apartamentos a venda em Cerqueira César" [ref=e643] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/cerqueira-cesar/
+            - listitem [ref=e644]:
+              - link "Apartamentos a venda na Vila Madalena" [ref=e645] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/vila-madalena/
+            - listitem [ref=e646]:
+              - link "Apartamentos a venda na Vila Anglo Brasileira" [ref=e647] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/vila-anglo-brasileira/
+            - listitem [ref=e648]:
+              - link "Apartamentos a venda em Sumaré" [ref=e649] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/sumare/
+            - listitem [ref=e650]:
+              - link "Apartamentos a venda no Sumarezinho" [ref=e651] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/sumarezinho/
+            - listitem [ref=e652]:
+              - link "Apartamentos a venda em Alto de Pinheiros" [ref=e653] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/alto-de-pinheiros/
+            - listitem [ref=e654]:
+              - link "Apartamentos a venda no Butantã" [ref=e655] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/butanta/
+            - listitem [ref=e656]:
+              - link "Apartamentos a venda na Vila Nova Conceição" [ref=e657] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/vila-nova-conceicao/
+            - listitem [ref=e658]:
+              - link "Apartamentos a venda na Vila Olímpia" [ref=e659] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/vila-olimpia/
+            - listitem [ref=e660]:
+              - link "Apartamentos a venda em Moema" [ref=e661] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/moema/
+            - listitem [ref=e662]:
+              - link "Apartamentos a venda em Indianópolis" [ref=e663] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/indianopolis/
+            - listitem [ref=e664]:
+              - link "Apartamentos a venda na Vila Uberabinha" [ref=e665] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/vila-uberabinha/
+            - listitem [ref=e666]:
+              - link "Apartamentos a venda na Vila Clementino" [ref=e667] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/vila-clementino/
+            - listitem [ref=e668]:
+              - link "Apartamentos a venda no Jardim Paulista" [ref=e669] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/jardim-paulista/
+            - listitem [ref=e670]:
+              - link "Apartamentos a venda no Paraíso" [ref=e671] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/paraiso/
+            - listitem [ref=e672]:
+              - link "Apartamentos a venda na Bela Vista" [ref=e673] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bela-vista/
+        - generic [ref=e675]:
+          - heading "Apartamentos para vender nas Ruas próximas" [level=3] [ref=e676]
+          - list [ref=e677]:
+            - listitem [ref=e678]:
+              - link "Apartamentos a venda em Rua Capote Valente" [ref=e679] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-capote-valente/
+            - listitem [ref=e680]:
+              - link "Apartamentos a venda em Avenida Pedroso de Morais" [ref=e681] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/avenida-pedroso-de-morais/
+            - listitem [ref=e682]:
+              - link "Apartamentos a venda em Rua Mateus Grou" [ref=e683] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-mateus-grou/
+            - listitem [ref=e684]:
+              - link "Apartamentos a venda em Rua Teodoro Sampaio" [ref=e685] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-teodoro-sampaio/
+            - listitem [ref=e686]:
+              - link "Apartamentos a venda em Rua Joaquim Antunes" [ref=e687] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-joaquim-antunes/
+            - listitem [ref=e688]:
+              - link "Apartamentos a venda em Rua Fradique Coutinho" [ref=e689] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-fradique-coutinho/
+            - listitem [ref=e690]:
+              - link "Apartamentos a venda em Avenida Rebouças" [ref=e691] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/avenida-reboucas/
+            - listitem [ref=e692]:
+              - link "Apartamentos a venda em Rua Mourato Coelho" [ref=e693] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-mourato-coelho/
+            - listitem [ref=e694]:
+              - link "Apartamentos a venda em Rua Cônego Eugênio Leite" [ref=e695] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-conego-eugenio-leite/
+            - listitem [ref=e696]:
+              - link "Apartamentos a venda em Rua Artur de Azevedo" [ref=e697] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-artur-de-azevedo/
+            - listitem [ref=e698]:
+              - link "Apartamentos a venda em Rua das Fiandeiras" [ref=e699] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-das-fiandeiras/
+            - listitem [ref=e700]:
+              - link "Apartamentos a venda em Rua dos Pinheiros" [ref=e701] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-dos-pinheiros/
+            - listitem [ref=e702]:
+              - link "Apartamentos a venda em Rua Belmonte" [ref=e703] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-belmonte/
+            - listitem [ref=e704]:
+              - link "Apartamentos a venda em Rua Doutor Virgílio de Carvalho Pinto" [ref=e705] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-doutor-virgilio-de-carvalho-pinto/
+            - listitem [ref=e706]:
+              - link "Apartamentos a venda em Rua Navarro de Andrade" [ref=e707] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-navarro-de-andrade/
+            - listitem [ref=e708]:
+              - link "Apartamentos a venda em Rua Sampaio Vidal" [ref=e709] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-sampaio-vidal/
+            - listitem [ref=e710]:
+              - link "Apartamentos a venda em Rua Sebastião Gil" [ref=e711] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-sebastiao-gil/
+            - listitem [ref=e712]:
+              - link "Apartamentos a venda em Rua Dante Carraro" [ref=e713] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-dante-carraro/
+            - listitem [ref=e714]:
+              - link "Apartamentos a venda em Rua Capitão Rabelo" [ref=e715] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-capitao-rabelo/
+            - listitem [ref=e716]:
+              - link "Apartamentos a venda em Rua Capitão Prudente" [ref=e717] [cursor=pointer]:
+                - /url: /apartamentos-a-venda/sp-sao-paulo/bairros/rua-capitao-prudente/
+      - generic [ref=e720]: Publicidade
+    - navigation [ref=e721]:
+      - list [ref=e722]:
+        - listitem [ref=e723]:
+          - paragraph [ref=e724]: Institucional
+        - listitem [ref=e725]:
+          - link [ref=e726] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/quem-somos/
+            - text: Quem somos
+        - listitem [ref=e727]:
+          - link [ref=e728] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/fale-conosco/
+            - text: Fale conosco
+        - listitem [ref=e729]:
+          - link [ref=e730] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/integradores-parceiros/
+            - text: Integradores parceiros
+        - listitem [ref=e731]:
+          - link [ref=e732] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/trabalhe-conosco/
+            - text: Trabalhe conosco
+        - listitem [ref=e733]:
+          - link [ref=e734] [cursor=pointer]:
+            - /url: http://www.planalto.gov.br/ccivil_03/leis/L8078.htm
+            - text: Cod. defesa do consumidor
+      - list [ref=e735]:
+        - listitem [ref=e736]:
+          - paragraph [ref=e737]: Imóveis
+        - listitem [ref=e738]:
+          - link [ref=e739] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/lancamentos-imoveis/brasil/
+            - paragraph [ref=e740]: Imóveis novos
+        - listitem [ref=e741]:
+          - link [ref=e742] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/imoveis-a-venda/brasil/
+            - paragraph [ref=e743]: Comprar imóveis
+        - listitem [ref=e744]:
+          - link [ref=e745] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/imoveis-para-alugar/brasil/
+            - paragraph [ref=e746]: Alugar imóveis
+        - listitem [ref=e747]:
+          - link [ref=e748] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/anunciar-gratis-imoveis-casas-apartamentos/
+            - paragraph [ref=e749]: Anunciar imóvel
+      - list [ref=e750]:
+        - listitem [ref=e751]:
+          - paragraph [ref=e752]: Veículos
+        - listitem [ref=e753]:
+          - link [ref=e754] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - paragraph [ref=e755]: Comprar carros
+        - listitem [ref=e756]:
+          - link [ref=e757] [cursor=pointer]:
+            - /url: /motos-usadas/brasil/
+            - paragraph [ref=e758]: Comprar motos
+        - listitem [ref=e759]:
+          - link [ref=e760] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/anunciar-gratis-carros-e-motos/
+            - paragraph [ref=e761]: Anunciar veículos
+        - listitem [ref=e762]:
+          - link [ref=e763] [cursor=pointer]:
+            - /url: /tabela-fipe/
+            - paragraph [ref=e764]: Tabela FIPE
+      - list [ref=e765]:
+        - listitem [ref=e766]:
+          - paragraph [ref=e767]: Blog de Imóveis
+        - listitem [ref=e768]:
+          - link [ref=e769] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/decoracao/
+            - paragraph [ref=e770]: Decoração
+        - listitem [ref=e771]:
+          - link [ref=e772] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/dicas-e-reformas/
+            - paragraph [ref=e773]: Dicas e Reformas
+        - listitem [ref=e774]:
+          - link [ref=e775] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guias/
+            - paragraph [ref=e776]: Guias
+        - listitem [ref=e777]:
+          - link [ref=e778] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/melhores-bairros/
+            - paragraph [ref=e779]: Melhores Bairros
+        - listitem [ref=e780]:
+          - link [ref=e781] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/mercado-imobiliario/
+            - paragraph [ref=e782]: Mercado Imobiliário
+      - list [ref=e783]:
+        - listitem [ref=e784]:
+          - paragraph [ref=e785]: Blog de Veículos
+        - listitem [ref=e786]:
+          - link [ref=e787] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guia-compra-carros/
+            - paragraph [ref=e788]: Guia de Carros
+        - listitem [ref=e789]:
+          - link [ref=e790] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/guia-compra-motos/
+            - paragraph [ref=e791]: Guia de Motos
+        - listitem [ref=e792]:
+          - link [ref=e793] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/avaliacao/
+            - paragraph [ref=e794]: Avaliações
+        - listitem [ref=e795]:
+          - link [ref=e796] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/noticias-automotivas/
+            - paragraph [ref=e797]: Notícias
+      - list [ref=e798]:
+        - listitem [ref=e799]: Precisa de ajuda?
+        - listitem [ref=e800]:
+          - link [ref=e801] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/central-de-ajuda/
+            - text: Central de ajuda
+    - generic [ref=e802]:
+      - paragraph [ref=e803]: "Aplicativo disponivel em:"
+      - generic [ref=e804]:
+        - link [ref=e805] [cursor=pointer]:
+          - /url: https://play.google.com/store/apps/details?id=br.com.chavesnamao.www&utm_source=portal
+          - img [ref=e806]
+        - link [ref=e807] [cursor=pointer]:
+          - /url: https://apps.apple.com/br/app/chaves-na-m%C3%A3o/id6443436581?platform=iphone&pt=footer-cnm&ct=portal
+          - img [ref=e808]
+    - list [ref=e809]:
+      - listitem [ref=e810]:
+        - link [ref=e811] [cursor=pointer]:
+          - /url: http://www.facebook.com/ChavesNaMao
+          - img [ref=e812]
+      - listitem [ref=e814]:
+        - link [ref=e815] [cursor=pointer]:
+          - /url: https://www.youtube.com/ChavesNaMao
+          - img [ref=e816]
+      - listitem [ref=e818]:
+        - link [ref=e819] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@portalchavesnamao
+          - img [ref=e820]
+      - listitem [ref=e823]:
+        - link [ref=e824] [cursor=pointer]:
+          - /url: https://instagram.com/chavesnamao/
+          - img [ref=e825]
+      - listitem [ref=e827]:
+        - link [ref=e828] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/chavesnamao/
+          - img [ref=e829]
+      - listitem [ref=e831]:
+        - link [ref=e832] [cursor=pointer]:
+          - /url: https://br.pinterest.com/chavesnamao/
+          - img [ref=e833]
+    - generic [ref=e835]:
+      - paragraph [ref=e836]: Há uma história por trás de toda virada de chave. Quem procura, vira a chave para o seu sonho.
+      - generic [ref=e837]: Chaves na Mão. Procurou, virou.
+    - generic [ref=e838]:
+      - link [ref=e839] [cursor=pointer]:
+        - /url: /
+      - paragraph [ref=e841]:
+        - text: © 2013 Chaves na Mão. Todos os direitos reservados.
+        - generic [ref=e842]:
+          - link [ref=e843] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/termos-de-uso/
+            - text: Termos de uso
+          - text: "|"
+          - link [ref=e844] [cursor=pointer]:
+            - /url: https://www.chavesnamao.com.br/politicas-de-privacidade/
+            - text: Políticas de privacidade
+  - generic [ref=e75]: Staging Environment - 933dbef79d745656996e9086f345d2e015bbdb14
+  - alert [ref=e76]
+  - generic [ref=e846]:
+    - button "Telefone" [ref=e847] [cursor=pointer]:
+      - img
+    - button "Contatar" [ref=e848] [cursor=pointer]:
+      - img
+      - text: Contatar
+    - button "WhatsApp" [ref=e849] [cursor=pointer]:
+      - img
+      - text: WhatsApp

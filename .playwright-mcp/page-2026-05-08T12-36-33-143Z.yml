@@ -1,0 +1,422 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]
+    - article [ref=e37]:
+      - generic [ref=e39]:
+        - navigation "breadcrumb" [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Imóveis" [ref=e44] [cursor=pointer]:
+                - /url: /imoveis/brasil/
+            - listitem [ref=e45]:
+              - img [ref=e46]
+            - listitem [ref=e48]:
+              - link "SP" [ref=e49] [cursor=pointer]:
+                - /url: /imoveis/sp/
+            - listitem [ref=e50]:
+              - img [ref=e51]
+            - listitem [ref=e53]:
+              - link "São Paulo" [disabled] [ref=e54]
+        - heading "1.164.424 Imóveis em São Paulo - SP" [level=1] [ref=e55]:
+          - strong [ref=e56]: 1.164.424 Imóveis em São Paulo - SP
+      - generic [ref=e58]:
+        - link "Conjunto à venda, 33 m² por R$ 414.000,00 - Consolação - São Paulo/SP Conjunto à venda, 33 m² por R$ 414.000,00 - Consolação - São Paulo/SP strong list Preço" [ref=e60] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-a-venda-2-salas-com-garagem-sp-sao-paulo-consolacao-74m2-RS414000/id-40362777/
+          - img "Conjunto à venda, 33 m² por R$ 414.000,00 - Consolação - São Paulo/SP" [ref=e63]
+          - generic [ref=e64]:
+            - heading "Conjunto à venda, 33 m² por R$ 414.000,00 - Consolação - São Paulo/SP" [level=2] [ref=e66]
+            - generic "strong" [ref=e67]:
+              - paragraph [ref=e68]: Endereço indisponível
+              - paragraph [ref=e69]: Consolação, São Paulo/SP
+            - generic "list" [ref=e70]:
+              - paragraph [ref=e71]:
+                - img [ref=e72]
+                - text: 33m²
+              - paragraph [ref=e74]:
+                - img [ref=e75]
+                - text: "2"
+              - paragraph [ref=e77]:
+                - img [ref=e78]
+                - text: "1"
+              - paragraph [ref=e80]:
+                - img [ref=e81]
+                - text: "1"
+            - paragraph [ref=e83]:
+              - generic [ref=e84]: R$ 414.000
+              - generic "Condominio" [ref=e85]:
+                - text: Condomínio
+                - generic [ref=e86]: R$ 540
+        - link "Kitnet para Locação em São Paulo, Tucuruvi, 1 dormitório, 1 suíte, 1 banheiro Kitnet para Locação em São Paulo, Tucuruvi, 1 dormitório, 1 suíte, 1 banheiro strong list Preço" [ref=e88] [cursor=pointer]:
+          - /url: /imovel/kitnet-para-alugar-sp-sao-paulo-tucuruvi-RS2000/id-39618236/
+          - img "Kitnet para Locação em São Paulo, Tucuruvi, 1 dormitório, 1 suíte, 1 banheiro" [ref=e91]
+          - generic [ref=e96]:
+            - heading "Kitnet para Locação em São Paulo, Tucuruvi, 1 dormitório, 1 suíte, 1 banheiro" [level=2] [ref=e98]
+            - generic "strong" [ref=e99]:
+              - paragraph [ref=e100]: Endereço indisponível
+              - paragraph [ref=e101]: Tucuruvi, São Paulo/SP
+            - generic "list" [ref=e102]:
+              - paragraph [ref=e103]:
+                - img [ref=e104]
+                - text: 28m²
+              - paragraph [ref=e106]:
+                - img [ref=e107]
+                - text: "1"
+              - paragraph [ref=e109]:
+                - img [ref=e110]
+                - text: "1"
+            - paragraph [ref=e112]:
+              - generic [ref=e113]: R$ 2.000
+              - generic "Condominio" [ref=e114]:
+                - text: Condomínio
+                - generic [ref=e115]: R$ 520
+        - link "Casa com 3 quartos à venda na Rua Coronel Estelita Ribas, Vila Ré, São Paulo Casa com 3 quartos à venda na Rua Coronel Estelita Ribas, Vila Ré, São Paulo strong list Preço" [ref=e117] [cursor=pointer]:
+          - /url: /imovel/casa-a-venda-3-quartos-com-garagem-sp-sao-paulo-vila-re-100m2-RS680000/id-41857371/
+          - img "Casa com 3 quartos à venda na Rua Coronel Estelita Ribas, Vila Ré, São Paulo" [ref=e120]
+          - generic [ref=e125]:
+            - heading "Casa com 3 quartos à venda na Rua Coronel Estelita Ribas, Vila Ré, São Paulo" [level=2] [ref=e127]
+            - generic "strong" [ref=e128]:
+              - paragraph [ref=e129]: Rua Coronel Estelita Ribas
+              - paragraph [ref=e130]: Vila Ré, São Paulo/SP
+            - generic "list" [ref=e131]:
+              - paragraph [ref=e132]:
+                - img [ref=e133]
+                - text: 100m²
+              - paragraph [ref=e135]:
+                - img [ref=e136]
+                - text: "3"
+              - paragraph [ref=e138]:
+                - img [ref=e139]
+                - text: "4"
+              - paragraph [ref=e141]:
+                - img [ref=e142]
+                - text: "1"
+            - paragraph [ref=e144]:
+              - generic [ref=e145]: R$ 680.000
+        - link "Ascent Paulista - Apartamento de 66m² com 2 dormitórios para alugar próximo Av. Paulista Ascent Paulista - Apartamento de 66m² com 2 dormitórios para alugar próximo Av. Paulista strong list Preço" [ref=e147] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-bela-vista-66m2-RS5500/id-16602110/
+          - img "Ascent Paulista - Apartamento de 66m² com 2 dormitórios para alugar próximo Av. Paulista" [ref=e150]
+          - generic [ref=e155]:
+            - heading "Ascent Paulista - Apartamento de 66m² com 2 dormitórios para alugar próximo Av. Paulista" [level=2] [ref=e157]
+            - generic "strong" [ref=e158]:
+              - paragraph [ref=e159]: Rua Sílvia, 399
+              - paragraph [ref=e160]: Bela Vista, São Paulo/SP
+            - generic "list" [ref=e161]:
+              - paragraph [ref=e162]:
+                - img [ref=e163]
+                - text: 66m²
+              - paragraph [ref=e165]:
+                - img [ref=e166]
+                - text: "2"
+              - paragraph [ref=e168]:
+                - img [ref=e169]
+                - text: "2"
+              - paragraph [ref=e171]:
+                - img [ref=e172]
+                - text: "1"
+            - paragraph [ref=e174]:
+              - generic [ref=e175]: R$ 5.500
+              - generic "Condominio" [ref=e176]:
+                - text: Condomínio
+                - generic [ref=e177]: R$ 1.525
+        - link "Apartamento a venda 02 quartos, 01 suíte, 67m2, em Vila Mariana, São Paulo. strong list Preço" [ref=e179] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-sao-paulo-vila-mariana-67m2-RS950000/id-42098685/
+          - generic [ref=e181]:
+            - heading "Apartamento a venda 02 quartos, 01 suíte, 67m2, em Vila Mariana, São Paulo." [level=2] [ref=e183]
+            - generic "strong" [ref=e184]:
+              - paragraph [ref=e185]: Rua Gaspar Lourenço, 200
+              - paragraph [ref=e186]: Vila Mariana, São Paulo/SP
+            - generic "list" [ref=e187]:
+              - paragraph [ref=e188]:
+                - img [ref=e189]
+                - text: 67m²
+              - paragraph [ref=e191]:
+                - img [ref=e192]
+                - text: "2"
+              - paragraph [ref=e194]:
+                - img [ref=e195]
+                - text: "2"
+              - paragraph [ref=e197]:
+                - img [ref=e198]
+                - text: "2"
+            - paragraph [ref=e200]:
+              - generic [ref=e201]: R$ 950.000
+              - generic "Condominio" [ref=e202]:
+                - text: Condomínio
+                - generic [ref=e203]: R$ 970
+        - generic [ref=e208]:
+          - list [ref=e213]:
+            - listitem [ref=e214]
+          - list [ref=e224]:
+            - listitem [ref=e225]
+          - list [ref=e235]:
+            - listitem [ref=e236]
+          - list [ref=e246]:
+            - listitem [ref=e247]
+          - list [ref=e257]:
+            - listitem [ref=e258]
+        - link "Ao lado do Metrô Bresser-Mooca | 2 dorms com varanda e lazer completo strong list Preço" [ref=e265] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-mooca-RS3500/id-40323214/
+          - generic [ref=e267]:
+            - heading "Ao lado do Metrô Bresser-Mooca | 2 dorms com varanda e lazer completo" [level=2] [ref=e269]
+            - generic "strong" [ref=e270]:
+              - paragraph [ref=e271]: Rua Guarapuava, 174
+              - paragraph [ref=e272]: Mooca, São Paulo/SP
+            - generic "list" [ref=e273]:
+              - paragraph [ref=e274]:
+                - img [ref=e275]
+                - text: 50m²
+              - paragraph [ref=e277]:
+                - img [ref=e278]
+                - text: "2"
+              - paragraph [ref=e280]:
+                - img [ref=e281]
+                - text: "1"
+              - paragraph [ref=e283]:
+                - img [ref=e284]
+                - text: "1"
+            - paragraph [ref=e286]:
+              - generic [ref=e287]: R$ 3.500
+              - generic "Condominio" [ref=e288]:
+                - text: Condomínio
+                - generic [ref=e289]: R$ 570
+        - link "Apartamento com 2 quartos à venda em Belenzinho, São Paulo strong list Preço" [ref=e291] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-sao-paulo-belenzinho-RS1630000/id-25691568/
+          - generic [ref=e293]:
+            - heading "Apartamento com 2 quartos à venda em Belenzinho, São Paulo" [level=2] [ref=e295]
+            - generic "strong" [ref=e296]:
+              - paragraph [ref=e297]: Endereço indisponível
+              - paragraph [ref=e298]: Belenzinho, São Paulo/SP
+            - generic "list" [ref=e299]:
+              - paragraph [ref=e300]:
+                - img [ref=e301]
+                - text: 106m²
+              - paragraph [ref=e303]:
+                - img [ref=e304]
+                - text: "2"
+              - paragraph [ref=e306]:
+                - img [ref=e307]
+                - text: "3"
+              - paragraph [ref=e309]:
+                - img [ref=e310]
+                - text: "2"
+            - paragraph [ref=e312]:
+              - generic [ref=e313]: R$ 1.630.000
+              - generic "IPTU" [ref=e314]:
+                - text: "Iptu:"
+                - generic [ref=e315]: R$ 300
+        - link "Kitnet / Stúdio para alugar na Consolação, São Paulo strong list Preço" [ref=e317] [cursor=pointer]:
+          - /url: /imovel/kitnet-para-alugar-sp-sao-paulo-consolacao-RS1600/id-39419444/
+          - generic [ref=e319]:
+            - heading "Kitnet / Stúdio para alugar na Consolação, São Paulo" [level=2] [ref=e321]
+            - generic "strong" [ref=e322]:
+              - paragraph [ref=e323]: Endereço indisponível
+              - paragraph [ref=e324]: Consolação, São Paulo/SP
+            - generic "list" [ref=e325]:
+              - paragraph [ref=e326]:
+                - img [ref=e327]
+                - text: 27m²
+            - paragraph [ref=e329]:
+              - generic [ref=e330]: R$ 1.600
+              - generic "Condominio" [ref=e331]:
+                - text: Condomínio
+                - generic [ref=e332]: R$ 740
+        - link "Apartamento com 2 quartos à venda no Bairro Jardim Taboão em SP com 41m² e 1 vaga de carro próximo à Estação Vila Sônia strong list Preço" [ref=e334] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-sao-paulo-jardim-taboao-41m2-RS359900/id-39945631/
+          - generic [ref=e336]:
+            - heading "Apartamento com 2 quartos à venda no Bairro Jardim Taboão em SP com 41m² e 1 vaga de carro próximo à Estação Vila Sônia" [level=2] [ref=e338]
+            - generic "strong" [ref=e339]:
+              - paragraph [ref=e340]: Avenida João Caiaffa, 40
+              - paragraph [ref=e341]: Jardim Taboão, São Paulo/SP
+            - generic "list" [ref=e342]:
+              - paragraph [ref=e343]:
+                - img [ref=e344]
+                - text: 41m²
+              - paragraph [ref=e346]:
+                - img [ref=e347]
+                - text: "2"
+              - paragraph [ref=e349]:
+                - img [ref=e350]
+                - text: "1"
+              - paragraph [ref=e352]:
+                - img [ref=e353]
+                - text: "1"
+            - paragraph [ref=e355]:
+              - generic [ref=e356]: R$ 359.900
+              - generic "Condominio" [ref=e357]:
+                - text: Condomínio
+                - generic [ref=e358]: R$ 390.000
+        - link "Apartamento com 1 quarto para alugar na Rua Tito, 799, Vila Romana, São Paulo strong list Preço" [ref=e368] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-1-quarto-sp-sao-paulo-vila-romana-RS1600/id-40861984/
+          - generic [ref=e370]:
+            - heading "Apartamento com 1 quarto para alugar na Rua Tito, 799, Vila Romana, São Paulo" [level=2] [ref=e372]
+            - generic "strong" [ref=e373]:
+              - paragraph [ref=e374]: Rua Tito, 799
+              - paragraph [ref=e375]: Vila Romana, São Paulo/SP
+            - generic "list" [ref=e376]:
+              - paragraph [ref=e377]:
+                - img [ref=e378]
+                - text: 24m²
+              - paragraph [ref=e380]:
+                - img [ref=e381]
+                - text: "1"
+              - paragraph [ref=e383]:
+                - img [ref=e384]
+                - text: "1"
+            - paragraph [ref=e386]:
+              - generic [ref=e387]: R$ 1.600
+              - generic "Condominio" [ref=e388]:
+                - text: Condomínio
+                - generic [ref=e389]: R$ 200
+        - link "Casa com 2 quartos à venda em Cerqueira César, São Paulo strong list Preço" [ref=e391] [cursor=pointer]:
+          - /url: /imovel/casa-a-venda-2-quartos-com-garagem-sp-sao-paulo-cerqueira-cesar-RS1500000/id-10866501/
+          - generic [ref=e393]:
+            - heading "Casa com 2 quartos à venda em Cerqueira César, São Paulo" [level=2] [ref=e395]
+            - generic "strong" [ref=e396]:
+              - paragraph [ref=e397]: Endereço indisponível
+              - paragraph [ref=e398]: Cerqueira César, São Paulo/SP
+            - generic "list" [ref=e399]:
+              - paragraph [ref=e400]:
+                - img [ref=e401]
+                - text: 143m²
+              - paragraph [ref=e403]:
+                - img [ref=e404]
+                - text: "2"
+              - paragraph [ref=e406]:
+                - img [ref=e407]
+                - text: "2"
+              - paragraph [ref=e409]:
+                - img [ref=e410]
+                - text: "3"
+            - paragraph [ref=e412]:
+              - generic [ref=e413]: R$ 1.500.000
+              - generic "IPTU" [ref=e414]:
+                - text: "Iptu:"
+                - generic [ref=e415]: R$ 1.377
+        - link "Galpão para alugar, 2975 m² por R$ 153.063,76/mês - Educandário - São Paulo/SP strong list Preço" [ref=e417] [cursor=pointer]:
+          - /url: /imovel/galpao-para-alugar-com-garagem-sp-sao-paulo-jardim-esmeralda-2975m2-RS153063/id-41393390/
+          - generic [ref=e419]:
+            - heading "Galpão para alugar, 2975 m² por R$ 153.063,76/mês - Educandário - São Paulo/SP" [level=2] [ref=e421]
+            - generic "strong" [ref=e422]:
+              - paragraph [ref=e423]: Endereço indisponível
+              - paragraph [ref=e424]: Jardim Esmeralda, São Paulo/SP
+            - generic "list" [ref=e425]:
+              - paragraph [ref=e426]:
+                - img [ref=e427]
+                - text: 2.975m²
+              - paragraph [ref=e429]:
+                - img [ref=e430]
+                - text: "7"
+              - paragraph [ref=e432]:
+                - img [ref=e433]
+                - text: "99"
+            - paragraph [ref=e435]:
+              - generic [ref=e436]: R$ 153.063
+        - link "Casa com 3 quartos à venda na Rua Horácio Rodrigues, Vila Carrão, São Paulo strong list Preço" [ref=e438] [cursor=pointer]:
+          - /url: /imovel/casa-a-venda-3-quartos-com-garagem-sp-sao-paulo-vila-carrao-190m2-RS650000/id-37391801/
+          - generic [ref=e440]:
+            - heading "Casa com 3 quartos à venda na Rua Horácio Rodrigues, Vila Carrão, São Paulo" [level=2] [ref=e442]
+            - generic "strong" [ref=e443]:
+              - paragraph [ref=e444]: Rua Horácio Rodrigues
+              - paragraph [ref=e445]: Vila Carrão, São Paulo/SP
+            - generic "list" [ref=e446]:
+              - paragraph [ref=e447]:
+                - img [ref=e448]
+                - text: 97m²
+              - paragraph [ref=e450]:
+                - img [ref=e451]
+                - text: "3"
+              - paragraph [ref=e453]:
+                - img [ref=e454]
+                - text: "1"
+              - paragraph [ref=e456]:
+                - img [ref=e457]
+                - text: "3"
+            - paragraph [ref=e459]:
+              - generic [ref=e460]: R$ 650.000
+        - link "Kitnet / Stúdio para alugar na Rua Avanhandava, 260, Bela Vista, São Paulo strong list Preço" [ref=e462] [cursor=pointer]:
+          - /url: /imovel/kitnet-para-alugar-sp-sao-paulo-bela-vista-35m2-RS1300/id-24333044/
+          - generic [ref=e464]:
+            - heading "Kitnet / Stúdio para alugar na Rua Avanhandava, 260, Bela Vista, São Paulo" [level=2] [ref=e466]
+            - generic "strong" [ref=e467]:
+              - paragraph [ref=e468]: Rua Avanhandava, 260
+              - paragraph [ref=e469]: Bela Vista, São Paulo/SP
+            - generic "list" [ref=e470]:
+              - paragraph [ref=e471]:
+                - img [ref=e472]
+                - text: 30m²
+              - paragraph [ref=e474]:
+                - img [ref=e475]
+                - text: "1"
+              - paragraph [ref=e477]:
+                - img [ref=e478]
+                - text: "1"
+            - paragraph [ref=e480]:
+              - generic [ref=e481]: R$ 1.300
+              - generic "Condominio" [ref=e482]:
+                - text: Condomínio
+                - generic [ref=e483]: R$ 550
+        - link "Casa com 4 dormitórios, 179 m² - venda por R$ 1.358.000,00 ou aluguel por R$ 6.503,00/mês - Chácara Japonesa - São Paulo/SP strong list Preço" [ref=e485] [cursor=pointer]:
+          - /url: /imovel/casa-para-alugar-4-quartos-com-garagem-sp-sao-paulo-chacara-japonesa-184m2-RS6000/id-40174798/
+          - generic [ref=e487]:
+            - heading "Casa com 4 dormitórios, 179 m² - venda por R$ 1.358.000,00 ou aluguel por R$ 6.503,00/mês - Chácara Japonesa - São Paulo/SP" [level=2] [ref=e489]
+            - generic "strong" [ref=e490]:
+              - paragraph [ref=e491]: Endereço indisponível
+              - paragraph [ref=e492]: Chácara Japonesa, São Paulo/SP
+            - generic "list" [ref=e493]:
+              - paragraph [ref=e494]:
+                - img [ref=e495]
+                - text: 179m²
+              - paragraph [ref=e497]:
+                - img [ref=e498]
+                - text: "4"
+              - paragraph [ref=e500]:
+                - img [ref=e501]
+                - text: "4"
+              - paragraph [ref=e503]:
+                - img [ref=e504]
+                - text: "2"
+            - paragraph [ref=e506]:
+              - generic [ref=e507]: R$ 6.000
+              - generic "IPTU" [ref=e508]:
+                - text: "Iptu:"
+                - generic [ref=e509]: R$ 503
+        - generic [ref=e510]:
+          - generic [ref=e515]:
+            - list [ref=e520]:
+              - listitem [ref=e521]
+            - list [ref=e531]:
+              - listitem [ref=e532]
+            - list [ref=e542]:
+              - listitem [ref=e543]
+            - list [ref=e553]:
+              - listitem [ref=e554]
+            - list [ref=e564]:
+              - listitem [ref=e565]
+          - link "Página 2" [ref=e572] [cursor=pointer]:
+            - /url: /imoveis/sp-sao-paulo/?pg=2
+  - generic [ref=e583]: Staging Environment - 933dbef79d745656996e9086f345d2e015bbdb14
+  - alert [ref=e584]

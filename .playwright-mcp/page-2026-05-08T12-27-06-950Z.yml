@@ -1,0 +1,428 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]
+    - article [ref=e37]:
+      - generic [ref=e39]:
+        - navigation "breadcrumb" [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Imóveis" [ref=e44] [cursor=pointer]:
+                - /url: /imoveis/brasil/
+            - listitem [ref=e45]:
+              - img [ref=e46]
+            - listitem [ref=e48]:
+              - link "Em todo Brasil" [disabled] [ref=e49]
+        - heading "4.598.032 Imóveis em todo Brasil" [level=1] [ref=e50]:
+          - strong [ref=e51]: 4.598.032 Imóveis em todo Brasil
+      - generic [ref=e53]:
+        - link "Imóvel a venda Casa Benedito Bentes 1 bem Localizada Pronta para Morar. Imóvel a venda Casa Benedito Bentes 1 bem Localizada Pronta para Morar. strong list Preço" [ref=e55] [cursor=pointer]:
+          - /url: /imovel/casa-a-venda-5-quartos-com-garagem-al-maceio-benedito-bentes-RS340000/id-40545820/
+          - img "Imóvel a venda Casa Benedito Bentes 1 bem Localizada Pronta para Morar." [ref=e58]
+          - generic [ref=e59]:
+            - heading "Imóvel a venda Casa Benedito Bentes 1 bem Localizada Pronta para Morar." [level=2] [ref=e61]
+            - generic "strong" [ref=e62]:
+              - paragraph [ref=e63]: Rua A-40, 75
+              - paragraph [ref=e64]: Benedito Bentes, Maceió/AL
+            - generic "list" [ref=e65]:
+              - paragraph [ref=e66]:
+                - img [ref=e67]
+                - text: 50m²
+              - paragraph [ref=e69]:
+                - img [ref=e70]
+                - text: "5"
+              - paragraph [ref=e72]:
+                - img [ref=e73]
+                - text: "2"
+              - paragraph [ref=e75]:
+                - img [ref=e76]
+                - text: "2"
+            - paragraph [ref=e78]:
+              - generic [ref=e79]: R$ 340.000
+        - link "Salões Comerciais para Aluguel na Frente – 30m², 1 Sala, 1 Banheiro e 1 Vaga (R$2.100,00 a R$ 2.500) Salões Comerciais para Aluguel na Frente – 30m², 1 Sala, 1 Banheiro e 1 Vaga (R$2.100,00 a R$ 2.500) strong list Preço" [ref=e81] [cursor=pointer]:
+          - /url: /imovel/casa-para-alugar-com-garagem-sp-ribeirao-preto-jardim-california-30m2-RS2500/id-41886480/
+          - img "Salões Comerciais para Aluguel na Frente – 30m², 1 Sala, 1 Banheiro e 1 Vaga (R$2.100,00 a R$ 2.500)" [ref=e84]
+          - generic [ref=e85]:
+            - heading "Salões Comerciais para Aluguel na Frente – 30m², 1 Sala, 1 Banheiro e 1 Vaga (R$2.100,00 a R$ 2.500)" [level=2] [ref=e87]
+            - generic "strong" [ref=e88]:
+              - paragraph [ref=e89]: Endereço indisponível
+              - paragraph [ref=e90]: Jardim Califórnia, Ribeirão Preto/SP
+            - generic "list" [ref=e91]:
+              - paragraph [ref=e92]:
+                - img [ref=e93]
+                - text: 30m²
+              - paragraph [ref=e95]:
+                - img [ref=e96]
+                - text: "1"
+              - paragraph [ref=e98]:
+                - img [ref=e99]
+                - text: "1"
+            - paragraph [ref=e101]:
+              - generic [ref=e102]: R$ 2.500
+        - link "Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville strong list Preço" [ref=e104] [cursor=pointer]:
+          - /url: /imovel/cobertura-a-venda-3-quartos-com-garagem-sc-joinville-saguacu-129m2-RS865536/id-18801598/
+          - img "Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville" [ref=e107]
+          - generic [ref=e108]:
+            - heading "Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville" [level=2] [ref=e110]
+            - generic "strong" [ref=e111]:
+              - paragraph [ref=e112]: Rua Carlos Benack, 131
+              - paragraph [ref=e113]: Saguaçu, Joinville/SC
+            - generic "list" [ref=e114]:
+              - paragraph [ref=e115]:
+                - img [ref=e116]
+                - text: 129m²
+              - paragraph [ref=e118]:
+                - img [ref=e119]
+                - text: "3"
+              - paragraph [ref=e121]:
+                - img [ref=e122]
+                - text: "2"
+              - paragraph [ref=e124]:
+                - img [ref=e125]
+                - text: "2"
+            - paragraph [ref=e127]:
+              - generic [ref=e128]: R$ 865.536
+        - link "Casa em condomínio fechado com 3 quartos para alugar na Saint Laurent, 359, Jardim Montreal Residence, Indaiatuba por R$ 6.000 Casa em condomínio fechado com 3 quartos para alugar na Saint Laurent, 359, Jardim Montreal Residence, Indaiatuba por R$ 6.000 strong list Preço" [ref=e130] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-para-alugar-3-quartos-com-garagem-sp-indaiatuba-jardim-montreal-residence-RS6000/id-42041924/
+          - img "Casa em condomínio fechado com 3 quartos para alugar na Saint Laurent, 359, Jardim Montreal Residence, Indaiatuba por R$ 6.000" [ref=e133]
+          - generic [ref=e134]:
+            - heading "Casa em condomínio fechado com 3 quartos para alugar na Saint Laurent, 359, Jardim Montreal Residence, Indaiatuba por R$ 6.000" [level=2] [ref=e136]
+            - generic "strong" [ref=e137]:
+              - paragraph [ref=e138]: Saint Laurent, 359
+              - paragraph [ref=e139]: Jardim Montreal Residence, Indaiatuba/SP
+            - generic "list" [ref=e140]:
+              - paragraph [ref=e141]:
+                - img [ref=e142]
+                - text: "3"
+              - paragraph [ref=e144]:
+                - img [ref=e145]
+                - text: "4"
+              - paragraph [ref=e147]:
+                - img [ref=e148]
+                - text: "2"
+            - paragraph [ref=e150]:
+              - generic [ref=e151]: R$ 6.000
+              - generic "Condominio" [ref=e152]:
+                - text: Condomínio
+                - generic [ref=e153]: R$ 250
+        - link "Casa Duplex com 4 Quartos (1 Suíte) e Edícula com Área Gourmet no São Sebastião em Palhoça/SC! strong list Preço" [ref=e155] [cursor=pointer]:
+          - /url: /imovel/casa-a-venda-4-quartos-com-garagem-sc-palhoca-sao-sebastiao-217m2-RS690000/id-40664709/
+          - generic [ref=e157]:
+            - heading "Casa Duplex com 4 Quartos (1 Suíte) e Edícula com Área Gourmet no São Sebastião em Palhoça/SC!" [level=2] [ref=e159]
+            - generic "strong" [ref=e160]:
+              - paragraph [ref=e161]: Endereço indisponível
+              - paragraph [ref=e162]: São Sebastião, Palhoça/SC
+            - generic "list" [ref=e163]:
+              - paragraph [ref=e164]:
+                - img [ref=e165]
+                - text: 187m²
+              - paragraph [ref=e167]:
+                - img [ref=e168]
+                - text: "4"
+              - paragraph [ref=e170]:
+                - img [ref=e171]
+                - text: "2"
+              - paragraph [ref=e173]:
+                - img [ref=e174]
+                - text: "3"
+            - paragraph [ref=e176]:
+              - generic [ref=e177]: R$ 690.000
+        - generic [ref=e182]:
+          - list [ref=e187]:
+            - listitem [ref=e188]
+          - list [ref=e198]:
+            - listitem [ref=e199]
+          - list [ref=e209]:
+            - listitem [ref=e210]
+          - list [ref=e220]:
+            - listitem [ref=e221]
+          - list [ref=e231]:
+            - listitem [ref=e232]
+        - link "Barracão / Galpão / Depósito para alugar no Jardim do Trevo, Campinas , 310 m2 por R$ 9.500 strong list Preço" [ref=e239] [cursor=pointer]:
+          - /url: /imovel/galpao-para-alugar-com-garagem-sp-campinas-jardim-do-trevo-310m2-RS9500/id-33215453/
+          - generic [ref=e241]:
+            - heading "Barracão / Galpão / Depósito para alugar no Jardim do Trevo, Campinas , 310 m2 por R$ 9.500" [level=2] [ref=e243]
+            - generic "strong" [ref=e244]:
+              - paragraph [ref=e245]: Endereço indisponível
+              - paragraph [ref=e246]: Jardim do Trevo, Campinas/SP
+            - generic "list" [ref=e247]:
+              - paragraph [ref=e248]:
+                - img [ref=e249]
+                - text: 310m²
+              - paragraph [ref=e251]:
+                - img [ref=e252]
+                - text: "2"
+              - paragraph [ref=e254]:
+                - img [ref=e255]
+                - text: "4"
+            - paragraph [ref=e257]:
+              - generic [ref=e258]: R$ 9.500
+              - generic "IPTU" [ref=e259]:
+                - text: "Iptu:"
+                - generic [ref=e260]: R$ 1.236
+        - link "Seu novo apartamento em João Pessoa com área de lazer completa e Entrada facilitada! strong list Preço" [ref=e262] [cursor=pointer]:
+          - /url: /lancamento/seu-novo-apartamento-em-joao-pessoa-com-area-de-lazer-completa-e-entrada-facilitada-/id-27549731/
+          - generic [ref=e264]:
+            - heading "Seu novo apartamento em João Pessoa com área de lazer completa e Entrada facilitada!" [level=2] [ref=e266]
+            - generic "strong" [ref=e267]:
+              - paragraph [ref=e268]: Endereço indisponível
+              - paragraph [ref=e269]: José Américo de Almeida, João Pessoa/PB
+            - generic "list" [ref=e270]:
+              - paragraph [ref=e271]:
+                - img [ref=e272]
+                - text: 50m²
+              - paragraph [ref=e274]:
+                - img [ref=e275]
+                - text: 2 a 3
+              - paragraph [ref=e277]:
+                - img [ref=e278]
+                - text: "2"
+              - paragraph [ref=e280]:
+                - img [ref=e281]
+                - text: "1"
+            - paragraph [ref=e283]:
+              - generic [ref=e284]: R$ 255.000
+        - link "Sala comercial para alugar na Rua Rodolfo Freygang, 16, Centro, Blumenau strong list Preço" [ref=e286] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-sc-blumenau-centro-RS9000/id-22519333/
+          - generic [ref=e288]:
+            - heading "Sala comercial para alugar na Rua Rodolfo Freygang, 16, Centro, Blumenau" [level=2] [ref=e290]
+            - generic "strong" [ref=e291]:
+              - paragraph [ref=e292]: Rua Rodolfo Freygang, 16
+              - paragraph [ref=e293]: Centro, Blumenau/SC
+            - generic "list" [ref=e294]:
+              - paragraph [ref=e295]:
+                - img [ref=e296]
+                - text: 540m²
+            - paragraph [ref=e298]:
+              - generic [ref=e299]: R$ 9.000
+        - link "Apartamento com 2 quartos à venda na Alameda E, S N, Quitandinha, São Luís strong list Preço" [ref=e301] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-ma-sao-luis-quitandinha-74m2-RS610000/id-41645378/
+          - generic [ref=e303]:
+            - heading "Apartamento com 2 quartos à venda na Alameda E, S N, Quitandinha, São Luís" [level=2] [ref=e305]
+            - generic "strong" [ref=e306]:
+              - paragraph [ref=e307]: Alameda E, S N
+              - paragraph [ref=e308]: Quitandinha, São Luís/MA
+            - generic "list" [ref=e309]:
+              - paragraph [ref=e310]:
+                - img [ref=e311]
+                - text: 74m²
+              - paragraph [ref=e313]:
+                - img [ref=e314]
+                - text: "2"
+              - paragraph [ref=e316]:
+                - img [ref=e317]
+                - text: "2"
+              - paragraph [ref=e319]:
+                - img [ref=e320]
+                - text: "1"
+            - paragraph [ref=e322]:
+              - generic [ref=e323]: R$ 610.000
+              - generic "Condominio" [ref=e324]:
+                - text: Condomínio
+                - generic [ref=e325]: R$ 600
+        - link "MARAVILHOSA Casa no Vila Maria - em Pirangi - 4suites - 4vagas strong list Preço" [ref=e327] [cursor=pointer]:
+          - /url: /imovel/casa-para-alugar-4-quartos-com-garagem-rn-parnamirim-pirangi-do-norte-distrito-litoral-340m2-RS7970/id-40579186/
+          - generic [ref=e329]:
+            - heading "MARAVILHOSA Casa no Vila Maria - em Pirangi - 4suites - 4vagas" [level=2] [ref=e331]
+            - generic "strong" [ref=e332]:
+              - paragraph [ref=e333]: Rua Carmi De Souza, 36
+              - paragraph [ref=e334]: Pirangi do Norte (Distrito Litoral), Parnamirim/RN
+            - generic "list" [ref=e335]:
+              - paragraph [ref=e336]:
+                - img [ref=e337]
+                - text: 340m²
+              - paragraph [ref=e339]:
+                - img [ref=e340]
+                - text: "4"
+              - paragraph [ref=e342]:
+                - img [ref=e343]
+                - text: "5"
+              - paragraph [ref=e345]:
+                - img [ref=e346]
+                - text: "3"
+            - paragraph [ref=e348]:
+              - generic [ref=e349]: R$ 7.970
+        - link "Apartamento com 3 quartos à venda na Rua Simão Álvares, 82, Pinheiros, São Paulo strong list Preço" [ref=e351] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-pinheiros-120m2-RS1450000/id-39529792/
+          - generic [ref=e353]:
+            - heading "Apartamento com 3 quartos à venda na Rua Simão Álvares, 82, Pinheiros, São Paulo" [level=2] [ref=e355]
+            - generic "strong" [ref=e356]:
+              - paragraph [ref=e357]: Rua Simão Álvares, 82
+              - paragraph [ref=e358]: Pinheiros, São Paulo/SP
+            - generic "list" [ref=e359]:
+              - paragraph [ref=e360]:
+                - img [ref=e361]
+                - text: 120m²
+              - paragraph [ref=e363]:
+                - img [ref=e364]
+                - text: "3"
+              - paragraph [ref=e366]:
+                - img [ref=e367]
+                - text: "3"
+              - paragraph [ref=e369]:
+                - img [ref=e370]
+                - text: "1"
+            - paragraph [ref=e372]:
+              - generic [ref=e373]: R$ 1.450.000
+              - generic "Condominio" [ref=e374]:
+                - text: Condomínio
+                - generic [ref=e375]: R$ 2.300
+        - link "Kitinete próximo ao portão 3 da USP, Vila Butantã, São Paulo - KI886 strong list Preço" [ref=e377] [cursor=pointer]:
+          - /url: /imovel/kitnet-para-alugar-sp-sao-paulo-vila-butanta-RS900/id-26162588/
+          - generic [ref=e379]:
+            - heading "Kitinete próximo ao portão 3 da USP, Vila Butantã, São Paulo - KI886" [level=2] [ref=e381]
+            - generic "strong" [ref=e382]:
+              - paragraph [ref=e383]: Rua Antônio De Bonis, 96
+              - paragraph [ref=e384]: Vila Butantã, São Paulo/SP
+            - generic "list" [ref=e385]:
+              - paragraph [ref=e386]:
+                - img [ref=e387]
+                - text: "1"
+            - paragraph [ref=e389]:
+              - generic [ref=e390]: R$ 900
+        - link "Apartamento com 2 quartos à venda na Rua Antônio Augusto Legutke, 100, Jardim Country Club, Poços de Caldas por R$ 320.000 strong list Preço" [ref=e392] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-mg-pocos-de-caldas-jardim-country-club-RS320000/id-36031239/
+          - generic [ref=e394]:
+            - heading "Apartamento com 2 quartos à venda na Rua Antônio Augusto Legutke, 100, Jardim Country Club, Poços de Caldas por R$ 320.000" [level=2] [ref=e396]
+            - generic "strong" [ref=e397]:
+              - paragraph [ref=e398]: Rua Antônio Augusto Legutke, 100
+              - paragraph [ref=e399]: Jardim Country Club, Poços de Caldas/MG
+            - generic "list" [ref=e400]:
+              - paragraph [ref=e401]:
+                - img [ref=e402]
+                - text: "2"
+              - paragraph [ref=e404]:
+                - img [ref=e405]
+                - text: "1"
+              - paragraph [ref=e407]:
+                - img [ref=e408]
+                - text: "1"
+            - paragraph [ref=e410]:
+              - generic [ref=e411]: R$ 320.000
+        - link "Sala comercial para alugar na Vila Olímpia, São Paulo strong list Preço" [ref=e413] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-com-garagem-sp-sao-paulo-vila-olimpia-RS28000/id-36264089/
+          - generic [ref=e415]:
+            - heading "Sala comercial para alugar na Vila Olímpia, São Paulo" [level=2] [ref=e417]
+            - generic "strong" [ref=e418]:
+              - paragraph [ref=e419]: Endereço indisponível
+              - paragraph [ref=e420]: Vila Olímpia, São Paulo/SP
+            - generic "list" [ref=e421]:
+              - paragraph [ref=e422]:
+                - img [ref=e423]
+                - text: 56m²
+              - paragraph [ref=e425]:
+                - img [ref=e426]
+                - text: "4"
+              - paragraph [ref=e428]:
+                - img [ref=e429]
+                - text: "8"
+            - paragraph [ref=e431]:
+              - generic [ref=e432]: R$ 28.000
+              - generic "Condominio" [ref=e433]:
+                - text: Condomínio
+                - generic [ref=e434]: R$ 4.876
+        - link "COMERCIAL para aluguel, Nossa Senhora da Abadia - Uberaba/MG strong list Preço" [ref=e436] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-mg-uberaba-nossa-senhora-da-abadia-15m2-RS600/id-34465034/
+          - generic [ref=e438]:
+            - heading "COMERCIAL para aluguel, Nossa Senhora da Abadia - Uberaba/MG" [level=2] [ref=e440]
+            - generic "strong" [ref=e441]:
+              - paragraph [ref=e442]: Endereço indisponível
+              - paragraph [ref=e443]: Nossa Senhora da Abadia, Uberaba/MG
+            - generic "list" [ref=e444]:
+              - paragraph [ref=e445]:
+                - img [ref=e446]
+                - text: 15m²
+              - paragraph [ref=e448]:
+                - img [ref=e449]
+                - text: "1"
+            - paragraph [ref=e451]:
+              - generic [ref=e452]: R$ 600
+        - generic [ref=e453]:
+          - generic [ref=e454]:
+            - generic [ref=e455]:
+              - heading "Imóveis nos estados do Brasil" [level=3] [ref=e456]
+              - generic [ref=e458]:
+                - button "Anterior" [disabled] [ref=e459]:
+                  - generic:
+                    - img
+                - button "Próximo" [disabled] [ref=e460]:
+                  - generic:
+                    - img
+            - generic [ref=e461]:
+              - link "Imóveis em SP" [ref=e462] [cursor=pointer]:
+                - /url: /imoveis/sp/
+              - link "Imóveis no RS" [ref=e463] [cursor=pointer]:
+                - /url: /imoveis/rs/
+              - link "Imóveis no PR" [ref=e464] [cursor=pointer]:
+                - /url: /imoveis/pr/
+              - link "Imóveis em MG" [ref=e465] [cursor=pointer]:
+                - /url: /imoveis/mg/
+              - link "Imóveis em SC" [ref=e466] [cursor=pointer]:
+                - /url: /imoveis/sc/
+              - link "Imóveis no RJ" [ref=e467] [cursor=pointer]:
+                - /url: /imoveis/rj/
+              - link "Imóveis na BA" [ref=e468] [cursor=pointer]:
+                - /url: /imoveis/ba/
+              - link "Imóveis em GO" [ref=e469] [cursor=pointer]:
+                - /url: /imoveis/go/
+              - link "Imóveis no MT" [ref=e470] [cursor=pointer]:
+                - /url: /imoveis/mt/
+              - link "Imóveis em PE" [ref=e471] [cursor=pointer]:
+                - /url: /imoveis/pe/
+              - link "Imóveis no CE" [ref=e472] [cursor=pointer]:
+                - /url: /imoveis/ce/
+              - link "Imóveis no RN" [ref=e473] [cursor=pointer]:
+                - /url: /imoveis/rn/
+              - link "Imóveis na PB" [ref=e474] [cursor=pointer]:
+                - /url: /imoveis/pb/
+              - link "Imóveis em SE" [ref=e475] [cursor=pointer]:
+                - /url: /imoveis/se/
+              - link "Imóveis no ES" [ref=e476] [cursor=pointer]:
+                - /url: /imoveis/es/
+              - link "Imóveis no MS" [ref=e477] [cursor=pointer]:
+                - /url: /imoveis/ms/
+              - link "Imóveis no PA" [ref=e478] [cursor=pointer]:
+                - /url: /imoveis/pa/
+              - link "Imóveis no PI" [ref=e479] [cursor=pointer]:
+                - /url: /imoveis/pi/
+              - link "Imóveis em AL" [ref=e480] [cursor=pointer]:
+                - /url: /imoveis/al/
+              - link "Imóveis no AM" [ref=e481] [cursor=pointer]:
+                - /url: /imoveis/am/
+          - generic [ref=e486]:
+            - list [ref=e491]:
+              - listitem [ref=e492]
+            - list [ref=e502]:
+              - listitem [ref=e503]
+            - list [ref=e513]:
+              - listitem [ref=e514]
+            - list [ref=e524]:
+              - listitem [ref=e525]
+            - list [ref=e535]:
+              - listitem [ref=e536]
+          - link "Página 2" [ref=e543] [cursor=pointer]:
+            - /url: /imoveis/brasil/?pg=2
+  - alert [ref=e554]

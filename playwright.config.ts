@@ -1,129 +1,87 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test'
 import * as dotenv from 'dotenv'
 dotenv.config({ quiet: true })
 
-const isCI = !!process.env.CI;
+const isCI = !!process.env.CI
+const ssrBaseUrl = process.env.SSR_BASE_URL || 'https://qa.chavesnamao.com'
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+const SSR_PROFILES = ['webuser', 'pf', 'pj'] as const
+const SSR_DEVICES = [
+  { suffix: 'chrome', config: devices['Desktop Chrome'] },
+  { suffix: 'ios', config: devices['iPhone 15'] },
+] as const
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
+type SsrProfile = (typeof SSR_PROFILES)[number]
+type SsrSuffix = (typeof SSR_DEVICES)[number]['suffix']
+
+function ssrAuthPath(profile: SsrProfile, suffix: SsrSuffix) {
+  return `.auth/ssr-${profile}-${suffix}.json`
+}
+
 export default defineConfig({
   testDir: './e2e',
-  /* Run tests in files in parallel */
   fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
   retries: isCI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
   workers: isCI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [['html'], ['json', { outputFile: 'playwright-results.json' }]],
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: process.env.BASE_URL,
-
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     actionTimeout: isCI ? 20000 : 10000,
-    navigationTimeout: isCI ? 30000 : 10000
-
+    navigationTimeout: isCI ? 30000 : 10000,
   },
   timeout: isCI ? 180000 : 120000,
+  expect: { timeout: isCI ? 15000 : 10000 },
 
-  expect: {
-    timeout: isCI ? 15000 : 10000},
-
-  /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'setup-chromium',
-      testMatch: /auth\.setup\.ts/,
-    },
-    {
-      name: 'setup-webkit',
-      testMatch: /auth\.setup\.ts/,
-      use: {
-        ...devices['Desktop Safari'],
-      },
-    },
-    {
-      name: 'setup-ios',
-      testMatch: /auth\.setup\.ts/,
-      use: {
-        ...devices['iPhone 14'],
-      },
-    },
+    // ── Shared auth setup ─────────────────────────────────────────────────────
+    { name: 'setup-chromium', testMatch: /auth\.setup\.ts/ },
+    { name: 'setup-webkit', testMatch: /auth\.setup\.ts/, use: { ...devices['Desktop Safari'] } },
+    { name: 'setup-ios', testMatch: /auth\.setup\.ts/, use: { ...devices['iPhone 14'] } },
+
+    // ── Main test projects ────────────────────────────────────────────────────
     {
       name: 'chromium',
-      use: { 
-        ...devices['Desktop Chrome'],
-        // Default session for general tests
-        storageState: '.auth/user.json',
-      },
+      testIgnore: /SSRRelatedListings\.spec\.ts/,
+      use: { ...devices['Desktop Chrome'], storageState: '.auth/user.json' },
       dependencies: ['setup-chromium'],
     },
     {
       name: 'webkit-safari',
-      use: {
-        ...devices['Desktop Safari'],
-        storageState: '.auth/user-webkit.json',
-      },
+      testIgnore: /SSRRelatedListings\.spec\.ts/,
+      use: { ...devices['Desktop Safari'], storageState: '.auth/user-webkit.json' },
       dependencies: ['setup-webkit'],
     },
     {
       name: 'ios-safari-iphone-14',
-      use: {
-        ...devices['iPhone 14'],
-        storageState: '.auth/user-ios.json',
-      },
+      testIgnore: /SSRRelatedListings\.spec\.ts/,
+      use: { ...devices['iPhone 14'], storageState: '.auth/user-ios.json' },
       dependencies: ['setup-ios'],
     },
 
-    /* Exemplos de Multi-usuário (Escalabilidade futura)
-    {
-      name: 'advertiser',
-      use: { 
-        ...devices['Desktop Chrome'],
-        storageState: '.auth/advertiser.json',
+    // ── SSR setup projects (generated) ────────────────────────────────────────
+    ...SSR_PROFILES.flatMap(profile =>
+      SSR_DEVICES.map(({ suffix, config }) => ({
+        name: `setup-ssr-${profile}-${suffix}`,
+        testMatch: /auth\.setup\.ssr\.ts/,
+        use: { ...config, baseURL: ssrBaseUrl },
+      }))
+    ),
+
+    // ── SSR test projects ─────────────────────────────────────────────────────
+    ...SSR_DEVICES.flatMap(({ suffix, config }) => [
+      {
+        name: `ssr-${suffix}-anonymous`,
+        testMatch: /SSRRelatedListings\.spec\.ts/,
+        use: { ...config, baseURL: ssrBaseUrl, storageState: { cookies: [], origins: [] } },
       },
-      dependencies: ['setup'],
-    },
-    */
-
-    /*,
-     {
-      name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-        {
-      name: 'Microsoft Edge',
-      use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    }
-      */
+      ...SSR_PROFILES.map(profile => ({
+        name: `ssr-${suffix}-${profile}`,
+        testMatch: /SSRRelatedListings\.spec\.ts/,
+        use: { ...config, baseURL: ssrBaseUrl, storageState: ssrAuthPath(profile, suffix) },
+        dependencies: [`setup-ssr-${profile}-${suffix}`],
+      })),
+    ]),
   ],
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://localhost:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
-});
+})

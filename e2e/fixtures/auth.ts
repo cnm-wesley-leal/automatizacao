@@ -1,27 +1,14 @@
-import { test as base, expect } from '@playwright/test';
-import { TEST_DATA } from '../utils/test-data';
+import { test as base, expect } from '@playwright/test'
+import { hasAuthenticatedCookies } from '../utils/helpers'
 
-type MyFixtures = {
-};
-
-export const test = base.extend<MyFixtures>({
-
+export const test = base.extend<{}>({
   page: async ({ page }, use) => {
-    await page.goto('/');
-    const cookies = await page.context().cookies();
-    const hasSessionCookie = cookies.some(
-      cookie => cookie.name === TEST_DATA.auth.cookies.sessionId && Boolean(cookie.value)
-    );
-    const hasAccountCookie = cookies.some(
-      cookie => cookie.name === TEST_DATA.auth.cookies.accountInfo && Boolean(cookie.value)
-    );
-
-    if (!hasSessionCookie || !hasAccountCookie) {
-      throw new Error('Sessão inválida ou expirada. Verifique o setup de autenticação.');
+    await page.goto('/')
+    if (!(await hasAuthenticatedCookies(page))) {
+      throw new Error('Sessão inválida ou expirada. Verifique o setup de autenticação.')
     }
-
-    await use(page);
+    await use(page)
   },
-});
+})
 
-export { expect };
+export { expect }
