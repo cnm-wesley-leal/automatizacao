@@ -1,0 +1,358 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]
+    - article [ref=e37]:
+      - generic [ref=e39]:
+        - navigation "breadcrumb" [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Imóveis" [ref=e44] [cursor=pointer]:
+                - /url: /imoveis/brasil/
+            - listitem [ref=e45]:
+              - img [ref=e46]
+            - listitem [ref=e48]:
+              - link "Em todo Brasil" [disabled] [ref=e49]
+        - heading "57 Imóveis em todo Brasil" [level=1] [ref=e50]:
+          - strong [ref=e51]: 57 Imóveis em todo Brasil
+      - generic [ref=e53]:
+        - link "Fazenda à venda no Centro, Ibiá Fazenda à venda no Centro, Ibiá strong list Preço" [ref=e55] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-mg-ibia-centro-50500000m2-RS550000000/id-34278615/
+          - img "Fazenda à venda no Centro, Ibiá" [ref=e58]
+          - generic [ref=e59]:
+            - heading "Fazenda à venda no Centro, Ibiá" [level=2] [ref=e61]
+            - generic "strong" [ref=e62]:
+              - paragraph [ref=e63]: Endereço indisponível
+              - paragraph [ref=e64]: Centro, Ibiá/MG
+            - generic "list" [ref=e65]:
+              - paragraph [ref=e66]:
+                - img [ref=e67]
+                - text: "14"
+            - paragraph [ref=e69]:
+              - generic [ref=e70]: R$ 550.000.000
+        - generic [ref=e71]:
+          - link "Fazenda à venda na Rua Vera Lucia, Centro, Pontes e Lacerda Fazenda à venda na Rua Vera Lucia, Centro, Pontes e Lacerda Fazenda à venda na Rua Vera Lucia, Centro, Pontes e Lacerda strong list Preço" [ref=e72] [cursor=pointer]:
+            - /url: /imovel/fazenda-a-venda-mt-pontes-e-lacerda-centro-96000000m2-RS500000000/id-40088639/
+            - generic [ref=e73]:
+              - img "Fazenda à venda na Rua Vera Lucia, Centro, Pontes e Lacerda" [ref=e75]
+              - img "Fazenda à venda na Rua Vera Lucia, Centro, Pontes e Lacerda" [ref=e77]
+            - generic [ref=e79]:
+              - heading "Fazenda à venda na Rua Vera Lucia, Centro, Pontes e Lacerda" [level=2] [ref=e81]
+              - generic "strong" [ref=e82]:
+                - paragraph [ref=e83]: Rua Vera Lucia
+                - paragraph [ref=e84]: Centro, Pontes e Lacerda/MT
+              - generic "list" [ref=e85]:
+                - paragraph [ref=e86]:
+                  - img [ref=e87]
+                  - text: "1"
+              - paragraph [ref=e89]:
+                - generic [ref=e90]: R$ 500.000.000
+          - generic [ref=e91]:
+            - button "Anterior" [disabled] [ref=e92]
+            - button "Próximo" [ref=e93] [cursor=pointer]
+        - generic [ref=e94]:
+          - link "Fazenda para agricultura com 9.300 hectares no município de brejo - ma Fazenda para agricultura com 9.300 hectares no município de brejo - ma Fazenda para agricultura com 9.300 hectares no município de brejo - ma strong list Preço" [ref=e95] [cursor=pointer]:
+            - /url: /imovel/fazenda-a-venda-ma-brejo-zona-rural-9300m2-RS550000000/id-19282110/
+            - generic [ref=e96]:
+              - img "Fazenda para agricultura com 9.300 hectares no município de brejo - ma" [ref=e98]
+              - img "Fazenda para agricultura com 9.300 hectares no município de brejo - ma" [ref=e100]
+            - generic [ref=e104]:
+              - heading "Fazenda para agricultura com 9.300 hectares no município de brejo - ma" [level=2] [ref=e106]
+              - generic "strong" [ref=e107]:
+                - paragraph [ref=e108]: Rodovia Br 222, S/N
+                - paragraph [ref=e109]: Zona Rural, Brejo/MA
+              - generic "list" [ref=e110]:
+                - paragraph [ref=e111]:
+                  - img [ref=e112]
+                  - text: 9.300m²
+              - paragraph [ref=e114]:
+                - generic [ref=e115]: R$ 550.000.000
+          - generic [ref=e116]:
+            - button "Anterior" [disabled] [ref=e117]
+            - button "Próximo" [ref=e118] [cursor=pointer]
+        - generic [ref=e119]:
+          - link "Fazenda à venda, 134000000 m² por R$ 586.250.000,00 - Zona Rural - Nova Ubiratã/MT Fazenda à venda, 134000000 m² por R$ 586.250.000,00 - Zona Rural - Nova Ubiratã/MT Fazenda à venda, 134000000 m² por R$ 586.250.000,00 - Zona Rural - Nova Ubiratã/MT strong list Preço" [ref=e120] [cursor=pointer]:
+            - /url: /imovel/fazenda-a-venda-mt-nova-ubirata-zona-rural-134000000m2-RS586250000/id-33024517/
+            - generic [ref=e121]:
+              - img "Fazenda à venda, 134000000 m² por R$ 586.250.000,00 - Zona Rural - Nova Ubiratã/MT" [ref=e123]
+              - img "Fazenda à venda, 134000000 m² por R$ 586.250.000,00 - Zona Rural - Nova Ubiratã/MT" [ref=e125]
+            - generic [ref=e129]:
+              - heading "Fazenda à venda, 134000000 m² por R$ 586.250.000,00 - Zona Rural - Nova Ubiratã/MT" [level=2] [ref=e131]
+              - generic "strong" [ref=e132]:
+                - paragraph [ref=e133]: Endereço indisponível
+                - paragraph [ref=e134]: Zona Rural, Nova Ubiratã/MT
+              - generic "list" [ref=e135]:
+                - paragraph [ref=e136]:
+                  - img [ref=e137]
+                  - text: "1"
+              - paragraph [ref=e139]:
+                - generic [ref=e140]: R$ 586.250.000
+          - generic [ref=e141]:
+            - button "Anterior" [disabled] [ref=e142]
+            - button "Próximo" [ref=e143] [cursor=pointer]
+        - link "Fazenda à venda, 30250000 m² por R$ 600.000.000,00 - Zona Rural - Nova Monte Verde/MT strong list Preço" [ref=e145] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-mt-nova-monte-verde-zona-rural-30250000m2-RS600000000/id-33024364/
+          - generic [ref=e147]:
+            - heading "Fazenda à venda, 30250000 m² por R$ 600.000.000,00 - Zona Rural - Nova Monte Verde/MT" [level=2] [ref=e149]
+            - generic "strong" [ref=e150]:
+              - paragraph [ref=e151]: Endereço indisponível
+              - paragraph [ref=e152]: Zona Rural, Nova Monte Verde/MT
+            - generic "list" [ref=e153]:
+              - paragraph [ref=e154]:
+                - img [ref=e155]
+                - text: "1"
+            - paragraph [ref=e157]:
+              - generic [ref=e158]: R$ 600.000.000
+        - generic [ref=e163]:
+          - list [ref=e168]:
+            - listitem [ref=e169]
+          - list [ref=e179]:
+            - listitem [ref=e180]
+          - list [ref=e190]:
+            - listitem [ref=e191]
+          - list [ref=e201]:
+            - listitem [ref=e202]
+          - list [ref=e212]:
+            - listitem [ref=e213]
+        - link "Fazenda dupla aptidao para venda na região de Matupa-MT com 35.000 hectares montada na pecuária, rica em agua e benfeitorias strong list Preço" [ref=e220] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-mt-matupa-zona-rural-14462m2-RS600000000/id-21761092/
+          - generic [ref=e222]:
+            - heading "Fazenda dupla aptidao para venda na região de Matupa-MT com 35.000 hectares montada na pecuária, rica em agua e benfeitorias" [level=2] [ref=e224]
+            - generic "strong" [ref=e225]:
+              - paragraph [ref=e226]: Endereço indisponível
+              - paragraph [ref=e227]: Zona Rural, Matupá/MT
+            - generic "list" [ref=e228]:
+              - paragraph [ref=e229]:
+                - img [ref=e230]
+                - text: 14.462m²
+            - paragraph [ref=e232]:
+              - generic [ref=e233]: R$ 600.000.000
+        - link "Fazenda à venda na ÁRea Rural, Zona Rural, Sacramento strong list Preço" [ref=e235] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-mg-sacramento-zona-rural-37570000m2-RS600000000/id-42270722/
+          - generic [ref=e237]:
+            - heading "Fazenda à venda na ÁRea Rural, Zona Rural, Sacramento" [level=2] [ref=e239]
+            - generic "strong" [ref=e240]:
+              - paragraph [ref=e241]: Área Rural
+              - paragraph [ref=e242]: Zona Rural, Sacramento/MG
+            - generic "list"
+            - paragraph [ref=e243]:
+              - generic [ref=e244]: R$ 600.000.000
+        - link "Fazenda de 1.017 alqueires – pecuária e cultura (dupla aptidão) ???? strong list Preço" [ref=e246] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-2-salas-mg-belo-horizonte-area-rural-de-belo-horizonte-24611400m2-RS500000000/id-35254100/
+          - generic [ref=e248]:
+            - heading "Fazenda de 1.017 alqueires – pecuária e cultura (dupla aptidão) ????" [level=2] [ref=e250]
+            - generic "strong" [ref=e251]:
+              - paragraph [ref=e252]: Rua Coelho De Souza
+              - paragraph [ref=e253]: Área Rural de Belo Horizonte, Belo Horizonte/MG
+            - generic "list" [ref=e254]:
+              - paragraph [ref=e255]:
+                - img [ref=e256]
+                - text: "2"
+              - paragraph [ref=e258]:
+                - img [ref=e259]
+                - text: "2"
+            - paragraph [ref=e261]:
+              - generic [ref=e262]: R$ 500.000.000
+        - link "Fazenda à venda no Setor Comercial, Sinop strong list Preço" [ref=e264] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-mt-sinop-setor-comercial-RS590000000/id-29485225/
+          - generic [ref=e266]:
+            - heading "Fazenda à venda no Setor Comercial, Sinop" [level=2] [ref=e268]
+            - generic "strong" [ref=e269]:
+              - paragraph [ref=e270]: Endereço indisponível
+              - paragraph [ref=e271]: Setor Comercial, Sinop/MT
+            - generic "list" [ref=e272]:
+              - paragraph [ref=e273]:
+                - img [ref=e274]
+                - text: "2"
+            - paragraph [ref=e276]:
+              - generic [ref=e277]: R$ 590.000.000
+        - link "Fazenda de 37 mil hectares na região do município de Peixoto de Azevedo no estad strong list Preço" [ref=e279] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-com-garagem-mt-peixoto-de-azevedo-zona-rural-370000000m2-RS600000000/id-31291806/
+          - generic [ref=e281]:
+            - heading "Fazenda de 37 mil hectares na região do município de Peixoto de Azevedo no estad" [level=2] [ref=e283]
+            - generic "strong" [ref=e284]:
+              - paragraph [ref=e285]: Municipio De Peixoto De Azevedo Mt, 121
+              - paragraph [ref=e286]: Zona Rural, Peixoto de Azevedo/MT
+            - generic "list" [ref=e287]:
+              - paragraph [ref=e288]:
+                - img [ref=e289]
+                - text: 2.800m²
+              - paragraph [ref=e291]:
+                - img [ref=e292]
+                - text: "2"
+              - paragraph [ref=e294]:
+                - img [ref=e295]
+                - text: "1"
+            - paragraph [ref=e297]:
+              - generic [ref=e298]: R$ 600.000.000
+        - link "Fazenda bruta grande extensão para venda na região de Xique-Xique-BA com 140.000 hectares, ideal para lavoura, abundante em agua para irrigação strong list Preço" [ref=e300] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-ba-xique-xique-zona-rural-57851m2-RS530000000/id-30227817/
+          - generic [ref=e302]:
+            - heading "Fazenda bruta grande extensão para venda na região de Xique-Xique-BA com 140.000 hectares, ideal para lavoura, abundante em agua para irrigação" [level=2] [ref=e304]
+            - generic "strong" [ref=e305]:
+              - paragraph [ref=e306]: Endereço indisponível
+              - paragraph [ref=e307]: Zona Rural, Xique-Xique/BA
+            - generic "list" [ref=e308]:
+              - paragraph [ref=e309]:
+                - img [ref=e310]
+                - text: 57.851m²
+            - paragraph [ref=e312]:
+              - generic [ref=e313]: R$ 530.000.000
+        - link "Fazenda à venda, 49464800 m² por R$ 512.999.999,99 - Centro - Pompéia/SP strong list Preço" [ref=e315] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-5-salas-sp-pompeia-centro-49464800m2-RS512999999/id-25077574/
+          - generic [ref=e317]:
+            - heading "Fazenda à venda, 49464800 m² por R$ 512.999.999,99 - Centro - Pompéia/SP" [level=2] [ref=e319]
+            - generic "strong" [ref=e320]:
+              - paragraph [ref=e321]: Endereço indisponível
+              - paragraph [ref=e322]: Centro, Pompéia/SP
+            - generic "list" [ref=e323]:
+              - paragraph [ref=e324]:
+                - img [ref=e325]
+                - text: 1.000m²
+              - paragraph [ref=e327]:
+                - img [ref=e328]
+                - text: "5"
+            - paragraph [ref=e330]:
+              - generic [ref=e331]: R$ 512.999.999
+        - link "Excepcional fazenda de multiplas aptidões com 1.050 alqueires em ibiá-mg strong list Preço" [ref=e333] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-mg-ibia-zona-rural-5089m2-RS500000000/id-31084584/
+          - generic [ref=e335]:
+            - heading "Excepcional fazenda de multiplas aptidões com 1.050 alqueires em ibiá-mg" [level=2] [ref=e337]
+            - generic "strong" [ref=e338]:
+              - paragraph [ref=e339]: Estrada Vicinal Municipal De Ibiá, Km 1
+              - paragraph [ref=e340]: Zona Rural, Ibiá/MG
+            - generic "list" [ref=e341]:
+              - paragraph [ref=e342]:
+                - img [ref=e343]
+                - text: 5.089m²
+            - paragraph [ref=e345]:
+              - generic [ref=e346]: R$ 500.000.000
+        - link "Fazenda à venda na Fazenda, 00, Zona Rural, Nova Mutum, 7727 m2 por R$ 550.000.000 strong list Preço" [ref=e348] [cursor=pointer]:
+          - /url: /imovel/fazenda-a-venda-com-garagem-mt-nova-mutum-zona-rural-77270000m2-RS550000000/id-18334121/
+          - generic [ref=e350]:
+            - heading "Fazenda à venda na Fazenda, 00, Zona Rural, Nova Mutum, 7727 m2 por R$ 550.000.000" [level=2] [ref=e352]
+            - generic "strong" [ref=e353]:
+              - paragraph [ref=e354]: Fazenda, 00
+              - paragraph [ref=e355]: Zona Rural, Nova Mutum/MT
+            - generic "list" [ref=e356]:
+              - paragraph [ref=e357]:
+                - img [ref=e358]
+                - text: 7.727m²
+              - paragraph [ref=e360]:
+                - img [ref=e361]
+                - text: "3"
+              - paragraph [ref=e363]:
+                - img [ref=e364]
+                - text: "3"
+            - paragraph [ref=e366]:
+              - generic [ref=e367]: R$ 550.000.000
+        - link "Chácara / sítio com 1 quarto à venda na Rural, Área Rural de Mineiros, Mineiros strong list Preço" [ref=e369] [cursor=pointer]:
+          - /url: /imovel/chacara-a-venda-1-quarto-com-garagem-go-mineiros-area-rural-de-mineiros-11492m2-RS500000000/id-19187226/
+          - generic [ref=e371]:
+            - heading "Chácara / sítio com 1 quarto à venda na Rural, Área Rural de Mineiros, Mineiros" [level=2] [ref=e373]
+            - generic "strong" [ref=e374]:
+              - paragraph [ref=e375]: Rural
+              - paragraph [ref=e376]: Área Rural de Mineiros, Mineiros/GO
+            - generic "list" [ref=e377]:
+              - paragraph [ref=e378]:
+                - img [ref=e379]
+                - text: 11.492m²
+              - paragraph [ref=e381]:
+                - img [ref=e382]
+                - text: "1"
+              - paragraph [ref=e384]:
+                - img [ref=e385]
+                - text: "1"
+              - paragraph [ref=e387]:
+                - img [ref=e388]
+                - text: "3"
+            - paragraph [ref=e390]:
+              - generic [ref=e391]: R$ 500.000.000
+        - generic [ref=e392]:
+          - generic [ref=e393]:
+            - generic [ref=e394]:
+              - heading "Imóveis nos estados do Brasil" [level=3] [ref=e395]
+              - generic [ref=e397]:
+                - button "Anterior" [disabled] [ref=e398]:
+                  - generic:
+                    - img
+                - button "Próximo" [disabled] [ref=e399]:
+                  - generic:
+                    - img
+            - generic [ref=e400]:
+              - link "Imóveis em SP" [ref=e401] [cursor=pointer]:
+                - /url: /imoveis/sp/
+              - link "Imóveis no RS" [ref=e402] [cursor=pointer]:
+                - /url: /imoveis/rs/
+              - link "Imóveis no PR" [ref=e403] [cursor=pointer]:
+                - /url: /imoveis/pr/
+              - link "Imóveis em MG" [ref=e404] [cursor=pointer]:
+                - /url: /imoveis/mg/
+              - link "Imóveis em SC" [ref=e405] [cursor=pointer]:
+                - /url: /imoveis/sc/
+              - link "Imóveis no RJ" [ref=e406] [cursor=pointer]:
+                - /url: /imoveis/rj/
+              - link "Imóveis na BA" [ref=e407] [cursor=pointer]:
+                - /url: /imoveis/ba/
+              - link "Imóveis em GO" [ref=e408] [cursor=pointer]:
+                - /url: /imoveis/go/
+              - link "Imóveis no MT" [ref=e409] [cursor=pointer]:
+                - /url: /imoveis/mt/
+              - link "Imóveis em PE" [ref=e410] [cursor=pointer]:
+                - /url: /imoveis/pe/
+              - link "Imóveis no CE" [ref=e411] [cursor=pointer]:
+                - /url: /imoveis/ce/
+              - link "Imóveis no RN" [ref=e412] [cursor=pointer]:
+                - /url: /imoveis/rn/
+              - link "Imóveis na PB" [ref=e413] [cursor=pointer]:
+                - /url: /imoveis/pb/
+              - link "Imóveis em SE" [ref=e414] [cursor=pointer]:
+                - /url: /imoveis/se/
+              - link "Imóveis no ES" [ref=e415] [cursor=pointer]:
+                - /url: /imoveis/es/
+              - link "Imóveis no MS" [ref=e416] [cursor=pointer]:
+                - /url: /imoveis/ms/
+              - link "Imóveis no PI" [ref=e417] [cursor=pointer]:
+                - /url: /imoveis/pi/
+              - link "Imóveis no PA" [ref=e418] [cursor=pointer]:
+                - /url: /imoveis/pa/
+              - link "Imóveis em AL" [ref=e419] [cursor=pointer]:
+                - /url: /imoveis/al/
+              - link "Imóveis no AM" [ref=e420] [cursor=pointer]:
+                - /url: /imoveis/am/
+          - generic [ref=e425]:
+            - list [ref=e430]:
+              - listitem [ref=e431]
+            - list [ref=e441]:
+              - listitem [ref=e442]
+            - list [ref=e452]:
+              - listitem [ref=e453]
+            - list [ref=e463]:
+              - listitem [ref=e464]
+            - list [ref=e474]:
+              - listitem [ref=e475]
+  - generic [ref=e491]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f
+  - alert [ref=e492]

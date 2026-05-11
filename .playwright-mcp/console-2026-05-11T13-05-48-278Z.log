@@ -1,0 +1,4 @@
+[     265ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://staging.chavesnamao.com.br/imoveis-a-venda/:0
+[     551ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://staging.chavesnamao.com.br/favicon.ico:0
+[     552ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://staging.chavesnamao.com.br/manifest.json:0
+[     552ms] [ERROR] Manifest fetch from https://staging.chavesnamao.com.br/manifest.json failed, code 502 @ https://staging.chavesnamao.com.br/imoveis-a-venda/:0

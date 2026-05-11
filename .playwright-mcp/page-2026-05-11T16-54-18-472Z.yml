@@ -1,0 +1,458 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - paragraph [ref=e31]:
+        - img [ref=e32]
+        - text: Filtros
+    - article [ref=e86]:
+      - generic [ref=e88]:
+        - navigation "breadcrumb" [ref=e90]:
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - link "Imóveis" [ref=e93] [cursor=pointer]:
+                - /url: /imoveis/brasil/
+            - listitem [ref=e94]:
+              - img [ref=e95]
+            - listitem [ref=e97]:
+              - link "Em todo Brasil" [disabled] [ref=e98]
+            - listitem [ref=e99]:
+              - link "2 quartos" [disabled] [ref=e100]
+        - heading "681.202 Imóveis com 2 quartos em todo Brasil" [level=1] [ref=e101]:
+          - strong [ref=e102]: 681.202 Imóveis com 2 quartos em todo Brasil
+      - generic [ref=e104]:
+        - link "Apartamento de 02 quartos/dormitórios, e 01 vaga/box no Edifício Union Tower, em Capão da Canoa. Apartamento de 02 quartos/dormitórios, e 01 vaga/box no Edifício Union Tower, em Capão da Canoa. strong list Preço" [ref=e106] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-rs-capao-da-canoa-zona-nova-101m2-RS980000/id-30290915/
+          - img "Apartamento de 02 quartos/dormitórios, e 01 vaga/box no Edifício Union Tower, em Capão da Canoa." [ref=e109]
+          - generic [ref=e110]:
+            - heading "Apartamento de 02 quartos/dormitórios, e 01 vaga/box no Edifício Union Tower, em Capão da Canoa." [level=2] [ref=e112]
+            - generic "strong" [ref=e113]:
+              - paragraph [ref=e114]: Rua Do Amor Perfeito, 598
+              - paragraph [ref=e115]: Zona Nova, Capão da Canoa/RS
+            - generic "list" [ref=e116]:
+              - paragraph [ref=e117]:
+                - img [ref=e118]
+                - text: 0m²
+              - paragraph [ref=e120]:
+                - img [ref=e121]
+                - text: "2"
+              - paragraph [ref=e123]:
+                - img [ref=e124]
+                - text: "2"
+              - paragraph [ref=e126]:
+                - img [ref=e127]
+                - text: "1"
+            - paragraph [ref=e129]:
+              - generic [ref=e130]: R$ 980.000
+              - generic "IPTU" [ref=e131]:
+                - text: "Iptu:"
+                - generic [ref=e132]: R$ 101
+        - link "Apartamento com 2 quartos à venda na Avenida Protásio Alves, 8301, Morro Santana, Porto Alegre por R$ 299.000 Apartamento com 2 quartos à venda na Avenida Protásio Alves, 8301, Morro Santana, Porto Alegre por R$ 299.000 strong list Preço" [ref=e134] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-rs-porto-alegre-morro-santana-687448m2-RS299000/id-38818656/
+          - img "Apartamento com 2 quartos à venda na Avenida Protásio Alves, 8301, Morro Santana, Porto Alegre por R$ 299.000" [ref=e137]
+          - generic [ref=e138]:
+            - heading "Apartamento com 2 quartos à venda na Avenida Protásio Alves, 8301, Morro Santana, Porto Alegre por R$ 299.000" [level=2] [ref=e140]
+            - generic "strong" [ref=e141]:
+              - paragraph [ref=e142]: Avenida Protásio Alves, 8301
+              - paragraph [ref=e143]: Morro Santana, Porto Alegre/RS
+            - generic "list" [ref=e144]:
+              - paragraph [ref=e145]:
+                - img [ref=e146]
+                - text: 0m²
+              - paragraph [ref=e148]:
+                - img [ref=e149]
+                - text: "2"
+              - paragraph [ref=e151]:
+                - img [ref=e152]
+                - text: "1"
+              - paragraph [ref=e154]:
+                - img [ref=e155]
+                - text: "1"
+            - paragraph [ref=e157]:
+              - generic [ref=e158]: R$ 299.000
+              - generic "Condominio" [ref=e159]:
+                - text: Condomínio
+                - generic [ref=e160]: R$ 500
+        - link "Casa em condomínio fechado com 3 quartos à venda na Avenida Senador Salgado Filho, 8500, Centro, Viamão por R$ 1.900.000 Casa em condomínio fechado com 3 quartos à venda na Avenida Senador Salgado Filho, 8500, Centro, Viamão por R$ 1.900.000 strong list Preço" [ref=e162] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-a-venda-3-quartos-com-garagem-rs-viamao-centro-0m2-RS1900000/id-4592010/
+          - img "Casa em condomínio fechado com 3 quartos à venda na Avenida Senador Salgado Filho, 8500, Centro, Viamão por R$ 1.900.000" [ref=e165]
+          - generic [ref=e166]:
+            - heading "Casa em condomínio fechado com 3 quartos à venda na Avenida Senador Salgado Filho, 8500, Centro, Viamão por R$ 1.900.000" [level=2] [ref=e168]
+            - generic "strong" [ref=e169]:
+              - paragraph [ref=e170]: Avenida Senador Salgado Filho, 8500
+              - paragraph [ref=e171]: Centro, Viamão/RS
+            - generic "list" [ref=e172]:
+              - paragraph [ref=e173]:
+                - img [ref=e174]
+                - text: "3"
+              - paragraph [ref=e176]:
+                - img [ref=e177]
+                - text: "5"
+              - paragraph [ref=e179]:
+                - img [ref=e180]
+                - text: "4"
+            - paragraph [ref=e182]:
+              - generic [ref=e183]: R$ 1.900.000
+              - generic "Condominio" [ref=e184]:
+                - text: Condomínio
+                - generic [ref=e185]: R$ 700
+        - link "Apartamento com 2 quartos à venda na Rua Soely Nunes Rosa, 115, Restinga, Porto Alegre por R$ 149.000 Apartamento com 2 quartos à venda na Rua Soely Nunes Rosa, 115, Restinga, Porto Alegre por R$ 149.000 strong list Preço" [ref=e187] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-rs-porto-alegre-restinga-0m2-RS149000/id-34632111/
+          - img "Apartamento com 2 quartos à venda na Rua Soely Nunes Rosa, 115, Restinga, Porto Alegre por R$ 149.000" [ref=e190]
+          - generic [ref=e191]:
+            - heading "Apartamento com 2 quartos à venda na Rua Soely Nunes Rosa, 115, Restinga, Porto Alegre por R$ 149.000" [level=2] [ref=e193]
+            - generic "strong" [ref=e194]:
+              - paragraph [ref=e195]: Rua Soely Nunes Rosa, 115
+              - paragraph [ref=e196]: Restinga, Porto Alegre/RS
+            - generic "list" [ref=e197]:
+              - paragraph [ref=e198]:
+                - img [ref=e199]
+                - text: "2"
+              - paragraph [ref=e201]:
+                - img [ref=e202]
+                - text: "1"
+              - paragraph [ref=e204]:
+                - img [ref=e205]
+                - text: "1"
+            - paragraph [ref=e207]:
+              - generic [ref=e208]: R$ 149.000
+              - generic "Condominio" [ref=e209]:
+                - text: Condomínio
+                - generic [ref=e210]: R$ 300
+        - link "Apartamento para locação - 2 quartos, 1 suíte, Marapé/Santos strong list Preço" [ref=e212] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-santos-marape-74m2-RS6400/id-37385598/
+          - generic [ref=e214]:
+            - heading "Apartamento para locação - 2 quartos, 1 suíte, Marapé/Santos" [level=2] [ref=e216]
+            - generic "strong" [ref=e217]:
+              - paragraph [ref=e218]: Rua Godofredo Fraga
+              - paragraph [ref=e219]: Marapé, Santos/SP
+            - generic "list" [ref=e220]:
+              - paragraph [ref=e221]:
+                - img [ref=e222]
+                - text: 0m²
+              - paragraph [ref=e224]:
+                - img [ref=e225]
+                - text: "2"
+              - paragraph [ref=e227]:
+                - img [ref=e228]
+                - text: "2"
+            - paragraph [ref=e230]:
+              - generic [ref=e231]: R$ 6.400
+        - generic [ref=e236]:
+          - list [ref=e241]:
+            - listitem [ref=e242]
+          - list [ref=e252]:
+            - listitem [ref=e253]
+          - list [ref=e263]:
+            - listitem [ref=e264]
+          - list [ref=e274]:
+            - listitem [ref=e275]
+          - list [ref=e285]:
+            - listitem [ref=e286]
+        - link "Apartamento com 2 quartos à venda na Rua Jaraguá, 879, América, Joinville por R$ 858.078 strong list Preço" [ref=e293] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sc-joinville-america-0m2-RS858078/id-40136921/
+          - generic [ref=e295]:
+            - heading "Apartamento com 2 quartos à venda na Rua Jaraguá, 879, América, Joinville por R$ 858.078" [level=2] [ref=e297]
+            - generic "strong" [ref=e298]:
+              - paragraph [ref=e299]: Rua Jaraguá, 879
+              - paragraph [ref=e300]: América, Joinville/SC
+            - generic "list" [ref=e301]:
+              - paragraph [ref=e302]:
+                - img [ref=e303]
+                - text: "2"
+              - paragraph [ref=e305]:
+                - img [ref=e306]
+                - text: "3"
+              - paragraph [ref=e308]:
+                - img [ref=e309]
+                - text: "1"
+            - paragraph [ref=e311]:
+              - generic [ref=e312]: R$ 858.078
+        - link "Apartamento com 2 quartos à venda na Avenida do Nazario, 760, Olaria, Canoas por R$ 279.999 strong list Preço" [ref=e314] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-rs-canoas-olaria-0m2-RS279999/id-39245826/
+          - generic [ref=e316]:
+            - heading "Apartamento com 2 quartos à venda na Avenida do Nazario, 760, Olaria, Canoas por R$ 279.999" [level=2] [ref=e318]
+            - generic "strong" [ref=e319]:
+              - paragraph [ref=e320]: Avenida Do Nazario, 760
+              - paragraph [ref=e321]: Olaria, Canoas/RS
+            - generic "list" [ref=e322]:
+              - paragraph [ref=e323]:
+                - img [ref=e324]
+                - text: "2"
+              - paragraph [ref=e326]:
+                - img [ref=e327]
+                - text: "1"
+              - paragraph [ref=e329]:
+                - img [ref=e330]
+                - text: "1"
+            - paragraph [ref=e332]:
+              - generic [ref=e333]: R$ 279.999
+              - generic "Condominio" [ref=e334]:
+                - text: Condomínio
+                - generic [ref=e335]: R$ 350
+        - link "Apartamento com 2 quartos à venda na Avenida do Nazario, 760, Olaria, Canoas por R$ 264.999 strong list Preço" [ref=e337] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-rs-canoas-olaria-0m2-RS264999/id-40296895/
+          - generic [ref=e339]:
+            - heading "Apartamento com 2 quartos à venda na Avenida do Nazario, 760, Olaria, Canoas por R$ 264.999" [level=2] [ref=e341]
+            - generic "strong" [ref=e342]:
+              - paragraph [ref=e343]: Avenida Do Nazario, 760
+              - paragraph [ref=e344]: Olaria, Canoas/RS
+            - generic "list" [ref=e345]:
+              - paragraph [ref=e346]:
+                - img [ref=e347]
+                - text: "2"
+              - paragraph [ref=e349]:
+                - img [ref=e350]
+                - text: "1"
+              - paragraph [ref=e352]:
+                - img [ref=e353]
+                - text: "1"
+            - paragraph [ref=e355]:
+              - generic [ref=e356]: R$ 264.999
+              - generic "Condominio" [ref=e357]:
+                - text: Condomínio
+                - generic [ref=e358]: R$ 350
+        - link "Apartamento com 2 quartos à venda na Rua Soely Nunes Rosa, Restinga, Porto Alegre por R$ 149.000 strong list Preço" [ref=e360] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-rs-porto-alegre-restinga-0m2-RS149000/id-34632837/
+          - generic [ref=e362]:
+            - heading "Apartamento com 2 quartos à venda na Rua Soely Nunes Rosa, Restinga, Porto Alegre por R$ 149.000" [level=2] [ref=e364]
+            - generic "strong" [ref=e365]:
+              - paragraph [ref=e366]: Rua Soely Nunes Rosa
+              - paragraph [ref=e367]: Restinga, Porto Alegre/RS
+            - generic "list" [ref=e368]:
+              - paragraph [ref=e369]:
+                - img [ref=e370]
+                - text: "2"
+              - paragraph [ref=e372]:
+                - img [ref=e373]
+                - text: "1"
+              - paragraph [ref=e375]:
+                - img [ref=e376]
+                - text: "1"
+            - paragraph [ref=e378]:
+              - generic [ref=e379]: R$ 149.000
+              - generic "Condominio" [ref=e380]:
+                - text: Condomínio
+                - generic [ref=e381]: R$ 300
+        - link "Apartamento com 3 quartos à venda na Rua Dea Coufal, 1411, Ipanema, Porto Alegre strong list Preço" [ref=e383] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-rs-porto-alegre-ipanema-0m2-RS530000/id-34820404/
+          - generic [ref=e385]:
+            - heading "Apartamento com 3 quartos à venda na Rua Dea Coufal, 1411, Ipanema, Porto Alegre" [level=2] [ref=e387]
+            - generic "strong" [ref=e388]:
+              - paragraph [ref=e389]: Rua Dea Coufal, 1411
+              - paragraph [ref=e390]: Ipanema, Porto Alegre/RS
+            - generic "list" [ref=e391]:
+              - paragraph [ref=e392]:
+                - img [ref=e393]
+                - text: "3"
+              - paragraph [ref=e395]:
+                - img [ref=e396]
+                - text: "2"
+              - paragraph [ref=e398]:
+                - img [ref=e399]
+                - text: "2"
+            - paragraph [ref=e401]:
+              - generic [ref=e402]: R$ 530.000
+        - link "Apartamento 77m2 à venda no bairro Campestre porteira fechada strong list Preço" [ref=e404] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-santo-andre-campestre-77m2-RS799000/id-42309344/
+          - generic [ref=e406]:
+            - heading "Apartamento 77m2 à venda no bairro Campestre porteira fechada" [level=2] [ref=e408]
+            - generic "strong" [ref=e409]:
+              - paragraph [ref=e410]: Endereço indisponível
+              - paragraph [ref=e411]: Campestre, Santo André/SP
+            - generic "list" [ref=e412]:
+              - paragraph [ref=e413]:
+                - img [ref=e414]
+                - text: 0m²
+              - paragraph [ref=e416]:
+                - img [ref=e417]
+                - text: "2"
+              - paragraph [ref=e419]:
+                - img [ref=e420]
+                - text: "2"
+              - paragraph [ref=e422]:
+                - img [ref=e423]
+                - text: "2"
+            - paragraph [ref=e425]:
+              - generic [ref=e426]: R$ 799.000
+              - generic "IPTU" [ref=e427]:
+                - text: "Iptu:"
+                - generic [ref=e428]: R$ 65
+        - link "Apartamento com 2 quartos à venda na Rua Coronel Rodolfo Porto, 157, Vila Monte Santo, São Paulo strong list Preço" [ref=e430] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-sao-paulo-vila-monte-santo-0m2-RS298000/id-42373739/
+          - generic [ref=e432]:
+            - heading "Apartamento com 2 quartos à venda na Rua Coronel Rodolfo Porto, 157, Vila Monte Santo, São Paulo" [level=2] [ref=e434]
+            - generic "strong" [ref=e435]:
+              - paragraph [ref=e436]: Rua Coronel Rodolfo Porto, 157
+              - paragraph [ref=e437]: Vila Monte Santo, São Paulo/SP
+            - generic "list" [ref=e438]:
+              - paragraph [ref=e439]:
+                - img [ref=e440]
+                - text: "2"
+              - paragraph [ref=e442]:
+                - img [ref=e443]
+                - text: "1"
+              - paragraph [ref=e445]:
+                - img [ref=e446]
+                - text: "1"
+            - paragraph [ref=e448]:
+              - generic [ref=e449]: R$ 298.000
+              - generic "Condominio" [ref=e450]:
+                - text: Condomínio
+                - generic [ref=e451]: R$ 650
+        - link "Cobertura com 2 quartos à venda na Rua João Pio Duarte Silva, Córrego Grande, Florianópolis por R$ 1.950.000 strong list Preço" [ref=e453] [cursor=pointer]:
+          - /url: /imovel/cobertura-a-venda-2-quartos-com-garagem-sc-florianopolis-corrego-grande-110m2-RS1950000/id-40678786/
+          - generic [ref=e455]:
+            - heading "Cobertura com 2 quartos à venda na Rua João Pio Duarte Silva, Córrego Grande, Florianópolis por R$ 1.950.000" [level=2] [ref=e457]
+            - generic "strong" [ref=e458]:
+              - paragraph [ref=e459]: Rua João Pio Duarte Silva
+              - paragraph [ref=e460]: Córrego Grande, Florianópolis/SC
+            - generic "list" [ref=e461]:
+              - paragraph [ref=e462]:
+                - img [ref=e463]
+                - text: 0m²
+              - paragraph [ref=e465]:
+                - img [ref=e466]
+                - text: "2"
+              - paragraph [ref=e468]:
+                - img [ref=e469]
+                - text: "3"
+              - paragraph [ref=e471]:
+                - img [ref=e472]
+                - text: "2"
+            - paragraph [ref=e474]:
+              - generic [ref=e475]: R$ 1.950.000
+              - generic "Condominio" [ref=e476]:
+                - text: Condomínio
+                - generic [ref=e477]: R$ 650
+        - link "Sobrado mobiliado em condomínio com 2 quartos 1 vaga, bairro fátima- canoas strong list Preço" [ref=e479] [cursor=pointer]:
+          - /url: /imovel/casa-a-venda-2-quartos-com-garagem-rs-canoas-fatima-0m2-RS340000/id-40356504/
+          - generic [ref=e481]:
+            - heading "Sobrado mobiliado em condomínio com 2 quartos 1 vaga, bairro fátima- canoas" [level=2] [ref=e483]
+            - generic "strong" [ref=e484]:
+              - paragraph [ref=e485]: Rua Barão De Mauá, 300
+              - paragraph [ref=e486]: Fátima, Canoas/RS
+            - generic "list" [ref=e487]:
+              - paragraph [ref=e488]:
+                - img [ref=e489]
+                - text: "2"
+              - paragraph [ref=e491]:
+                - img [ref=e492]
+                - text: "2"
+              - paragraph [ref=e494]:
+                - img [ref=e495]
+                - text: "1"
+            - paragraph [ref=e497]:
+              - generic [ref=e498]: R$ 340.000
+              - generic "Condominio" [ref=e499]:
+                - text: Condomínio
+                - generic [ref=e500]: R$ 550
+        - link "Apartamento com 2 quartos à venda na Avenida Antônio de Almeida, 238, Jardim Marica, Mogi das Cruzes strong list Preço" [ref=e502] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-mogi-das-cruzes-jardim-marica-RS450000/id-39835884/
+          - generic [ref=e504]:
+            - heading "Apartamento com 2 quartos à venda na Avenida Antônio de Almeida, 238, Jardim Marica, Mogi das Cruzes" [level=2] [ref=e506]
+            - generic "strong" [ref=e507]:
+              - paragraph [ref=e508]: Avenida Antônio De Almeida, 238
+              - paragraph [ref=e509]: Jardim Marica, Mogi das Cruzes/SP
+            - generic "list" [ref=e510]:
+              - paragraph [ref=e511]:
+                - img [ref=e512]
+                - text: "2"
+              - paragraph [ref=e514]:
+                - img [ref=e515]
+                - text: "1"
+              - paragraph [ref=e517]:
+                - img [ref=e518]
+                - text: "1"
+            - paragraph [ref=e520]:
+              - generic [ref=e521]: R$ 450.000
+              - generic "IPTU" [ref=e522]:
+                - text: "Iptu:"
+                - generic [ref=e523]: R$ 118
+        - generic [ref=e524]:
+          - generic [ref=e525]:
+            - generic [ref=e526]:
+              - heading "Imóveis com 2 quartos nos estados do Brasil" [level=3] [ref=e527]
+              - generic [ref=e529]:
+                - button "Anterior" [disabled] [ref=e530]:
+                  - generic:
+                    - img
+                - button "Próximo" [disabled] [ref=e531]:
+                  - generic:
+                    - img
+            - generic [ref=e532]:
+              - link "Imóveis em SP com 2 quartos" [ref=e533] [cursor=pointer]:
+                - /url: /imoveis/sp/2-quartos/
+              - link "Imóveis no RS com 2 quartos" [ref=e534] [cursor=pointer]:
+                - /url: /imoveis/rs/2-quartos/
+              - link "Imóveis no RJ com 2 quartos" [ref=e535] [cursor=pointer]:
+                - /url: /imoveis/rj/2-quartos/
+              - link "Imóveis em SC com 2 quartos" [ref=e536] [cursor=pointer]:
+                - /url: /imoveis/sc/2-quartos/
+              - link "Imóveis no PR com 2 quartos" [ref=e537] [cursor=pointer]:
+                - /url: /imoveis/pr/2-quartos/
+              - link "Imóveis em MG com 2 quartos" [ref=e538] [cursor=pointer]:
+                - /url: /imoveis/mg/2-quartos/
+              - link "Imóveis na BA com 2 quartos" [ref=e539] [cursor=pointer]:
+                - /url: /imoveis/ba/2-quartos/
+              - link "Imóveis em GO com 2 quartos" [ref=e540] [cursor=pointer]:
+                - /url: /imoveis/go/2-quartos/
+              - link "Imóveis em PE com 2 quartos" [ref=e541] [cursor=pointer]:
+                - /url: /imoveis/pe/2-quartos/
+              - link "Imóveis na PB com 2 quartos" [ref=e542] [cursor=pointer]:
+                - /url: /imoveis/pb/2-quartos/
+              - link "Imóveis no CE com 2 quartos" [ref=e543] [cursor=pointer]:
+                - /url: /imoveis/ce/2-quartos/
+              - link "Imóveis no MT com 2 quartos" [ref=e544] [cursor=pointer]:
+                - /url: /imoveis/mt/2-quartos/
+              - link "Imóveis no ES com 2 quartos" [ref=e545] [cursor=pointer]:
+                - /url: /imoveis/es/2-quartos/
+              - link "Imóveis no RN com 2 quartos" [ref=e546] [cursor=pointer]:
+                - /url: /imoveis/rn/2-quartos/
+              - link "Imóveis no MS com 2 quartos" [ref=e547] [cursor=pointer]:
+                - /url: /imoveis/ms/2-quartos/
+              - link "Imóveis em SE com 2 quartos" [ref=e548] [cursor=pointer]:
+                - /url: /imoveis/se/2-quartos/
+              - link "Imóveis em AL com 2 quartos" [ref=e549] [cursor=pointer]:
+                - /url: /imoveis/al/2-quartos/
+              - link "Imóveis no PA com 2 quartos" [ref=e550] [cursor=pointer]:
+                - /url: /imoveis/pa/2-quartos/
+              - link "Imóveis no AM com 2 quartos" [ref=e551] [cursor=pointer]:
+                - /url: /imoveis/am/2-quartos/
+              - link "Imóveis no MA com 2 quartos" [ref=e552] [cursor=pointer]:
+                - /url: /imoveis/ma/2-quartos/
+          - generic [ref=e557]:
+            - list [ref=e562]:
+              - listitem [ref=e563]
+            - list [ref=e573]:
+              - listitem [ref=e574]
+            - list [ref=e584]:
+              - listitem [ref=e585]
+            - list [ref=e595]:
+              - listitem [ref=e596]
+            - list [ref=e606]:
+              - listitem [ref=e607]
+  - generic [ref=e623]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f

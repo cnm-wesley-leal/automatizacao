@@ -21,7 +21,9 @@
         "id": "setup-chromium",
         "name": "setup-chromium",
         "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
+        "testIgnore": [
+          "**/fuzz/**"
+        ],
         "testMatch": [
           "/auth\\.setup\\.ts/"
         ],
@@ -35,7 +37,9 @@
         "id": "setup-webkit",
         "name": "setup-webkit",
         "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
+        "testIgnore": [
+          "**/fuzz/**"
+        ],
         "testMatch": [
           "/auth\\.setup\\.ts/"
         ],
@@ -49,7 +53,9 @@
         "id": "setup-ios",
         "name": "setup-ios",
         "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
+        "testIgnore": [
+          "**/fuzz/**"
+        ],
         "testMatch": [
           "/auth\\.setup\\.ts/"
         ],
@@ -64,7 +70,7 @@
         "name": "chromium",
         "testDir": "C:/Automatização/e2e",
         "testIgnore": [
-          "/SSRRelatedListings\\.spec\\.ts/"
+          "**/fuzz/**"
         ],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -80,7 +86,7 @@
         "name": "webkit-safari",
         "testDir": "C:/Automatização/e2e",
         "testIgnore": [
-          "/SSRRelatedListings\\.spec\\.ts/"
+          "**/fuzz/**"
         ],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -96,206 +102,10 @@
         "name": "ios-safari-iphone-14",
         "testDir": "C:/Automatização/e2e",
         "testIgnore": [
-          "/SSRRelatedListings\\.spec\\.ts/"
+          "**/fuzz/**"
         ],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "setup-ssr-webuser-chrome",
-        "name": "setup-ssr-webuser-chrome",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/auth\\.setup\\.ssr\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "setup-ssr-webuser-ios",
-        "name": "setup-ssr-webuser-ios",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/auth\\.setup\\.ssr\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "setup-ssr-pf-chrome",
-        "name": "setup-ssr-pf-chrome",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/auth\\.setup\\.ssr\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "setup-ssr-pf-ios",
-        "name": "setup-ssr-pf-ios",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/auth\\.setup\\.ssr\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "setup-ssr-pj-chrome",
-        "name": "setup-ssr-pj-chrome",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/auth\\.setup\\.ssr\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "setup-ssr-pj-ios",
-        "name": "setup-ssr-pj-ios",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/auth\\.setup\\.ssr\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "ssr-chrome-anonymous",
-        "name": "ssr-chrome-anonymous",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/SSRRelatedListings\\.spec\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "ssr-chrome-webuser",
-        "name": "ssr-chrome-webuser",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/SSRRelatedListings\\.spec\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "ssr-chrome-pf",
-        "name": "ssr-chrome-pf",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/SSRRelatedListings\\.spec\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "ssr-chrome-pj",
-        "name": "ssr-chrome-pj",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/SSRRelatedListings\\.spec\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "ssr-ios-anonymous",
-        "name": "ssr-ios-anonymous",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/SSRRelatedListings\\.spec\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "ssr-ios-webuser",
-        "name": "ssr-ios-webuser",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/SSRRelatedListings\\.spec\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "ssr-ios-pf",
-        "name": "ssr-ios-pf",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/SSRRelatedListings\\.spec\\.ts/"
-        ],
-        "timeout": 120000
-      },
-      {
-        "outputDir": "C:/Automatização/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "metadata": {},
-        "id": "ssr-ios-pj",
-        "name": "ssr-ios-pj",
-        "testDir": "C:/Automatização/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "/SSRRelatedListings\\.spec\\.ts/"
         ],
         "timeout": 120000
       }
@@ -327,134 +137,6 @@
     "webServer": null
   },
   "suites": [
-    {
-      "title": "auth.setup.ssr.ts",
-      "file": "auth.setup.ssr.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "ssr authenticate",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup-ssr-pj-ios",
-              "projectName": "setup-ssr-pj-ios",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c69b81ccea687cbe8bb9-123f22c7f711cad48016",
-          "file": "auth.setup.ssr.ts",
-          "line": 24,
-          "column": 6
-        },
-        {
-          "title": "ssr authenticate",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup-ssr-pf-ios",
-              "projectName": "setup-ssr-pf-ios",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c69b81ccea687cbe8bb9-9de59588e2b25ad943c5",
-          "file": "auth.setup.ssr.ts",
-          "line": 24,
-          "column": 6
-        },
-        {
-          "title": "ssr authenticate",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup-ssr-webuser-ios",
-              "projectName": "setup-ssr-webuser-ios",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c69b81ccea687cbe8bb9-0c3ccbbde390a7974375",
-          "file": "auth.setup.ssr.ts",
-          "line": 24,
-          "column": 6
-        },
-        {
-          "title": "ssr authenticate",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup-ssr-pj-chrome",
-              "projectName": "setup-ssr-pj-chrome",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c69b81ccea687cbe8bb9-9abba6cc20b4cbb8b835",
-          "file": "auth.setup.ssr.ts",
-          "line": 24,
-          "column": 6
-        },
-        {
-          "title": "ssr authenticate",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup-ssr-pf-chrome",
-              "projectName": "setup-ssr-pf-chrome",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c69b81ccea687cbe8bb9-54c3419981298c0f7076",
-          "file": "auth.setup.ssr.ts",
-          "line": 24,
-          "column": 6
-        },
-        {
-          "title": "ssr authenticate",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "setup-ssr-webuser-chrome",
-              "projectName": "setup-ssr-webuser-chrome",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c69b81ccea687cbe8bb9-14878229e741175f7521",
-          "file": "auth.setup.ssr.ts",
-          "line": 24,
-          "column": 6
-        }
-      ]
-    },
     {
       "title": "auth.setup.ts",
       "file": "auth.setup.ts",
@@ -690,7 +372,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-1b1f3d48491adeab7778",
               "file": "tests/Header.spec.ts",
-              "line": 139,
+              "line": 143,
               "column": 7
             },
             {
@@ -710,7 +392,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-0c7472cc39b3f84356b3",
               "file": "tests/Header.spec.ts",
-              "line": 148,
+              "line": 152,
               "column": 7
             },
             {
@@ -730,7 +412,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-0769b8dd20cf27d2ecde",
               "file": "tests/Header.spec.ts",
-              "line": 189,
+              "line": 193,
               "column": 7
             },
             {
@@ -750,7 +432,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-c67368e368fc9f01f162",
               "file": "tests/Header.spec.ts",
-              "line": 203,
+              "line": 207,
               "column": 7
             },
             {
@@ -770,7 +452,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-89f825cadeceec1df4d0",
               "file": "tests/Header.spec.ts",
-              "line": 217,
+              "line": 221,
               "column": 7
             },
             {
@@ -790,7 +472,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-ec3303a6313045685c68",
               "file": "tests/Header.spec.ts",
-              "line": 226,
+              "line": 230,
               "column": 7
             },
             {
@@ -810,7 +492,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-b169128e223d80787612",
               "file": "tests/Header.spec.ts",
-              "line": 245,
+              "line": 249,
               "column": 7
             },
             {
@@ -830,7 +512,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-e1f03740a66f7690120e",
               "file": "tests/Header.spec.ts",
-              "line": 258,
+              "line": 262,
               "column": 7
             },
             {
@@ -910,7 +592,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-cfaeee295708588000fc",
               "file": "tests/Header.spec.ts",
-              "line": 139,
+              "line": 143,
               "column": 7
             },
             {
@@ -930,7 +612,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-7f4ba94db925dabd6ae5",
               "file": "tests/Header.spec.ts",
-              "line": 148,
+              "line": 152,
               "column": 7
             },
             {
@@ -950,7 +632,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-b62d0ec0552d5ebbd24e",
               "file": "tests/Header.spec.ts",
-              "line": 189,
+              "line": 193,
               "column": 7
             },
             {
@@ -970,7 +652,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-d98ef8d70f5a8ac18067",
               "file": "tests/Header.spec.ts",
-              "line": 203,
+              "line": 207,
               "column": 7
             },
             {
@@ -990,7 +672,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-15d6ca8cf8f35043a8de",
               "file": "tests/Header.spec.ts",
-              "line": 217,
+              "line": 221,
               "column": 7
             },
             {
@@ -1010,7 +692,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-4da1b893e32bc481eeff",
               "file": "tests/Header.spec.ts",
-              "line": 226,
+              "line": 230,
               "column": 7
             },
             {
@@ -1030,7 +712,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-77375ee334edf2628bef",
               "file": "tests/Header.spec.ts",
-              "line": 245,
+              "line": 249,
               "column": 7
             },
             {
@@ -1050,7 +732,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-0ed302ab19205787d2a9",
               "file": "tests/Header.spec.ts",
-              "line": 258,
+              "line": 262,
               "column": 7
             },
             {
@@ -1130,7 +812,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-77d5bfbce38ab1f3e8ed",
               "file": "tests/Header.spec.ts",
-              "line": 139,
+              "line": 143,
               "column": 7
             },
             {
@@ -1150,7 +832,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-3bbe0fb206bcf8cdda76",
               "file": "tests/Header.spec.ts",
-              "line": 148,
+              "line": 152,
               "column": 7
             },
             {
@@ -1170,7 +852,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-cd437486c656b641d4a5",
               "file": "tests/Header.spec.ts",
-              "line": 189,
+              "line": 193,
               "column": 7
             },
             {
@@ -1190,7 +872,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-912d36d48e8c95c1cc38",
               "file": "tests/Header.spec.ts",
-              "line": 203,
+              "line": 207,
               "column": 7
             },
             {
@@ -1210,7 +892,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-afed1b72b93ec30ba93c",
               "file": "tests/Header.spec.ts",
-              "line": 217,
+              "line": 221,
               "column": 7
             },
             {
@@ -1230,7 +912,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-ae85c12c9c107a1df18e",
               "file": "tests/Header.spec.ts",
-              "line": 226,
+              "line": 230,
               "column": 7
             },
             {
@@ -1250,7 +932,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-af9d48db4283dab2773a",
               "file": "tests/Header.spec.ts",
-              "line": 245,
+              "line": 249,
               "column": 7
             },
             {
@@ -1270,7 +952,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-240352b98369f4b5b081",
               "file": "tests/Header.spec.ts",
-              "line": 258,
+              "line": 262,
               "column": 7
             }
           ]
@@ -1278,7 +960,7 @@
         {
           "title": "Feature Header — Usuário Logado",
           "file": "tests/Header.spec.ts",
-          "line": 277,
+          "line": 281,
           "column": 6,
           "specs": [
             {
@@ -1298,7 +980,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-2a9054b1877fae83f85c",
               "file": "tests/Header.spec.ts",
-              "line": 283,
+              "line": 287,
               "column": 7
             },
             {
@@ -1318,7 +1000,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-3ea1b2a47aa8a13b07a8",
               "file": "tests/Header.spec.ts",
-              "line": 317,
+              "line": 321,
               "column": 7
             },
             {
@@ -1338,7 +1020,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-38f1aa9a8bfd08941a88",
               "file": "tests/Header.spec.ts",
-              "line": 351,
+              "line": 355,
               "column": 7
             },
             {
@@ -1358,7 +1040,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-70aeef6ac7d7ec5b1d97",
               "file": "tests/Header.spec.ts",
-              "line": 283,
+              "line": 287,
               "column": 7
             },
             {
@@ -1378,7 +1060,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-9ba0db111523179d4ae8",
               "file": "tests/Header.spec.ts",
-              "line": 317,
+              "line": 321,
               "column": 7
             },
             {
@@ -1398,7 +1080,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-3ece2966d101caca4ed8",
               "file": "tests/Header.spec.ts",
-              "line": 351,
+              "line": 355,
               "column": 7
             },
             {
@@ -1418,7 +1100,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-4cf6ee88d7d0e31f3b56",
               "file": "tests/Header.spec.ts",
-              "line": 283,
+              "line": 287,
               "column": 7
             },
             {
@@ -1438,7 +1120,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-c1902e16e1043cc530f9",
               "file": "tests/Header.spec.ts",
-              "line": 317,
+              "line": 321,
               "column": 7
             },
             {
@@ -1458,7 +1140,7 @@
               ],
               "id": "4f6ddc7a9da0d3b288e0-8fc7b6f85d5289fc72f3",
               "file": "tests/Header.spec.ts",
-              "line": 351,
+              "line": 355,
               "column": 7
             }
           ]
@@ -2083,6 +1765,1823 @@
       ]
     },
     {
+      "title": "tests\\RealtySearch.spec.ts",
+      "file": "tests/RealtySearch.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Busca de Imóveis — Filtros e Resultados",
+          "file": "tests/RealtySearch.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT01 - deve exibir imóveis para alugar ao navegar para /imoveis-para-alugar/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-7c04361c2f49216199f4",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve exibir imóveis à venda ao navegar para /imoveis-a-venda/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-3c1c2aa53e699a42a38b",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve exibir lançamentos ao navegar para /lancamentos-imoveis/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-31b338d00e4aa157270d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve exibir contagem de apartamentos ao navegar para /apartamentos/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-98f13b471768e9ff2280",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "CT05 - deve filtrar por 3 quartos via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-db7ce5d7a838b82669c7",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve filtrar por quartos via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-be95283c2b36849f49ce",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 47,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve reidratar botão de quartos ao abrir URL com /2-quartos/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-cdbc720b047c18e96479",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve aplicar filtros de banheiros e garagens via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-8bc18e26e7734938bfcc",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 64,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve aplicar filtro de preço via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-3b5e7d92aebde114c981",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve aplicar filtro de preço via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-ea818b322d1ecc97e447",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 82,
+              "column": 7
+            },
+            {
+              "title": "CT11 - deve reidratar inputs de preço ao abrir URL com pmin/pmax",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-d43c77111c3a8a3005b6",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 88,
+              "column": 7
+            },
+            {
+              "title": "CT12 - deve aplicar filtro de área útil via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-e29830b5fafffe739dab",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 98,
+              "column": 7
+            },
+            {
+              "title": "CT13 - deve reidratar inputs de área ao abrir URL com amin/amax",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-6cdeb493a487d485281f",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 107,
+              "column": 7
+            },
+            {
+              "title": "CT14 - deve aplicar filtro de feature (Piscina) via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-b93ff30aac7232f0d869",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 117,
+              "column": 7
+            },
+            {
+              "title": "CT15 - deve marcar feature no painel ao abrir URL com are: aplicado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-008ef44ed9f3d0f3dfbc",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 123,
+              "column": 7
+            },
+            {
+              "title": "CT16 - deve aplicar ordenação \"Mais recentes\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-2459a46b34634d90563a",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 133,
+              "column": 7
+            },
+            {
+              "title": "CT17 - deve aplicar ordenação \"Menor preço\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-79894b3e18fbd73568ab",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 140,
+              "column": 7
+            },
+            {
+              "title": "CT18 - deve aplicar ordenação \"Maior preço\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-f868cd52a9b6f2c08bca",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 147,
+              "column": 7
+            },
+            {
+              "title": "CT19 - deve navegar para página 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-0e0878e608bade74c25d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 155,
+              "column": 7
+            },
+            {
+              "title": "CT20 - deve exibir link para próxima página",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-62b122a109c764333e83",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 161,
+              "column": 7
+            },
+            {
+              "title": "CT21 - deve exibir imóveis direto com proprietário",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-705022d89e859dc293bf",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 167,
+              "column": 7
+            },
+            {
+              "title": "CT22 - deve navegar para lançamentos ao selecionar no painel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-a61c3339102df8111c16",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 173,
+              "column": 7
+            },
+            {
+              "title": "CT23 - deve exibir 0 imóveis com filtros impossíveis",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-c021c0d1d32fed1f12fc",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 181,
+              "column": 7
+            },
+            {
+              "title": "CT24 - deve exibir listagens sugeridas mesmo com 0 resultados",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-47a55c555ecd6ca41e14",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 186,
+              "column": 7
+            },
+            {
+              "title": "CT25 - deve exibir botão Limpar quando há filtros aplicados",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-f2cc41bb34e4847d6ca7",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 193,
+              "column": 7
+            },
+            {
+              "title": "CT26 - navigationFilters API deve retornar lista de tipos com contagens",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-c9fb6ac1131e173fb627",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 200,
+              "column": 7
+            },
+            {
+              "title": "CT27 - extraFilters API deve retornar lista de features com IDs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-941e8713de7b3584fba0",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 213,
+              "column": 7
+            },
+            {
+              "title": "CT28 - deve aplicar filtros combinados via URL e preservar na navegação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-da0a971cb75632f7389d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "CT29 - deve limpar filtros ao clicar em Limpar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-85cec288d952a27c4a1b",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 234,
+              "column": 7
+            },
+            {
+              "title": "CT30 - deve atualizar contagem no h1 ao aplicar filtro de quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-c22a05a16330f3253d3d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 242,
+              "column": 7
+            },
+            {
+              "title": "CT01 - deve exibir imóveis para alugar ao navegar para /imoveis-para-alugar/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-a7442106932480e2d4d0",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve exibir imóveis à venda ao navegar para /imoveis-a-venda/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-1f42aea82c6f19ebe38a",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve exibir lançamentos ao navegar para /lancamentos-imoveis/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-0f674ca96a3dd45f3753",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve exibir contagem de apartamentos ao navegar para /apartamentos/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-745c80da5af0cfd00d19",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "CT05 - deve filtrar por 3 quartos via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-5d3f44ea31b402f11bf1",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve filtrar por quartos via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-d383caca1f66b55b78f3",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 47,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve reidratar botão de quartos ao abrir URL com /2-quartos/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-0a35f696da5e22a7fcd8",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve aplicar filtros de banheiros e garagens via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-b479808505cfa0c765d7",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 64,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve aplicar filtro de preço via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-392e5a64affba0984e32",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve aplicar filtro de preço via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-7ad1b82b5a5492cee755",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 82,
+              "column": 7
+            },
+            {
+              "title": "CT11 - deve reidratar inputs de preço ao abrir URL com pmin/pmax",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-61f1b37799d7c1b4f366",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 88,
+              "column": 7
+            },
+            {
+              "title": "CT12 - deve aplicar filtro de área útil via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-b5d63aed650b6f575890",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 98,
+              "column": 7
+            },
+            {
+              "title": "CT13 - deve reidratar inputs de área ao abrir URL com amin/amax",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-91dfd72705e2664d086f",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 107,
+              "column": 7
+            },
+            {
+              "title": "CT14 - deve aplicar filtro de feature (Piscina) via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-94e3d0803ed012671b86",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 117,
+              "column": 7
+            },
+            {
+              "title": "CT15 - deve marcar feature no painel ao abrir URL com are: aplicado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-71fab76bf1c3d4482016",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 123,
+              "column": 7
+            },
+            {
+              "title": "CT16 - deve aplicar ordenação \"Mais recentes\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-0494b283a810d80df256",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 133,
+              "column": 7
+            },
+            {
+              "title": "CT17 - deve aplicar ordenação \"Menor preço\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-5137b702eea38692487a",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 140,
+              "column": 7
+            },
+            {
+              "title": "CT18 - deve aplicar ordenação \"Maior preço\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-87d9d8a8733eae8a7316",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 147,
+              "column": 7
+            },
+            {
+              "title": "CT19 - deve navegar para página 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-9951c680d2f32b661dba",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 155,
+              "column": 7
+            },
+            {
+              "title": "CT20 - deve exibir link para próxima página",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-874b1cd7540ff985e08c",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 161,
+              "column": 7
+            },
+            {
+              "title": "CT21 - deve exibir imóveis direto com proprietário",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-a6b3d369d59f8f63e312",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 167,
+              "column": 7
+            },
+            {
+              "title": "CT22 - deve navegar para lançamentos ao selecionar no painel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-7a74bfae553a89e3ef83",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 173,
+              "column": 7
+            },
+            {
+              "title": "CT23 - deve exibir 0 imóveis com filtros impossíveis",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-58f0547acd0aef5bb1af",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 181,
+              "column": 7
+            },
+            {
+              "title": "CT24 - deve exibir listagens sugeridas mesmo com 0 resultados",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-5b5ac677288aeb9a02ef",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 186,
+              "column": 7
+            },
+            {
+              "title": "CT25 - deve exibir botão Limpar quando há filtros aplicados",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-4c7f79f5e2006f6504c7",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 193,
+              "column": 7
+            },
+            {
+              "title": "CT26 - navigationFilters API deve retornar lista de tipos com contagens",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-bb1616de814b5d69096f",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 200,
+              "column": 7
+            },
+            {
+              "title": "CT27 - extraFilters API deve retornar lista de features com IDs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-a582e4665a3d8a80a509",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 213,
+              "column": 7
+            },
+            {
+              "title": "CT28 - deve aplicar filtros combinados via URL e preservar na navegação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-1b5a2b39f4a38a6ec2cd",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "CT29 - deve limpar filtros ao clicar em Limpar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-c4e87023914eb0638fa9",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 234,
+              "column": 7
+            },
+            {
+              "title": "CT30 - deve atualizar contagem no h1 ao aplicar filtro de quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit-safari",
+                  "projectName": "webkit-safari",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-157fdb6cb6bdf2414f3f",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 242,
+              "column": 7
+            },
+            {
+              "title": "CT01 - deve exibir imóveis para alugar ao navegar para /imoveis-para-alugar/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-43d1428e67dbfa2f2931",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "CT02 - deve exibir imóveis à venda ao navegar para /imoveis-a-venda/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-f9deafd1f1bbd2957186",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "CT03 - deve exibir lançamentos ao navegar para /lancamentos-imoveis/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-e6ca8aa161e172707119",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 26,
+              "column": 7
+            },
+            {
+              "title": "CT04 - deve exibir contagem de apartamentos ao navegar para /apartamentos/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-0b09266b78260394f06d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "CT05 - deve filtrar por 3 quartos via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-04132bad02432d875f13",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "CT06 - deve filtrar por quartos via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-88067801a50421f6cf4f",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 47,
+              "column": 7
+            },
+            {
+              "title": "CT07 - deve reidratar botão de quartos ao abrir URL com /2-quartos/",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-5aef50d95313840fd714",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "CT08 - deve aplicar filtros de banheiros e garagens via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-9145aa22fef4bc8cce5d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 64,
+              "column": 7
+            },
+            {
+              "title": "CT09 - deve aplicar filtro de preço via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-0f727484742d2d669ab0",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "CT10 - deve aplicar filtro de preço via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-f2858a5df820bcbcc0f7",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 82,
+              "column": 7
+            },
+            {
+              "title": "CT11 - deve reidratar inputs de preço ao abrir URL com pmin/pmax",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-21cd98821508cc6cad9b",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 88,
+              "column": 7
+            },
+            {
+              "title": "CT12 - deve aplicar filtro de área útil via painel de filtros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-286d457dac542d734acc",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 98,
+              "column": 7
+            },
+            {
+              "title": "CT13 - deve reidratar inputs de área ao abrir URL com amin/amax",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-36d983a127f8c010508a",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 107,
+              "column": 7
+            },
+            {
+              "title": "CT14 - deve aplicar filtro de feature (Piscina) via URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-488a6f662de9be157add",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 117,
+              "column": 7
+            },
+            {
+              "title": "CT15 - deve marcar feature no painel ao abrir URL com are: aplicado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-02ebc005ac6782659807",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 123,
+              "column": 7
+            },
+            {
+              "title": "CT16 - deve aplicar ordenação \"Mais recentes\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-4ae11f399cbb6b10df3d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 133,
+              "column": 7
+            },
+            {
+              "title": "CT17 - deve aplicar ordenação \"Menor preço\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-39d97d9588a622f87a75",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 140,
+              "column": 7
+            },
+            {
+              "title": "CT18 - deve aplicar ordenação \"Maior preço\" via UI",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-230d5c92c0425945422d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 147,
+              "column": 7
+            },
+            {
+              "title": "CT19 - deve navegar para página 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-cef15e243b3b16ad53b6",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 155,
+              "column": 7
+            },
+            {
+              "title": "CT20 - deve exibir link para próxima página",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-1e57a8b7515a0aaf52b5",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 161,
+              "column": 7
+            },
+            {
+              "title": "CT21 - deve exibir imóveis direto com proprietário",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-3fcdb5e4b79a7f695ce9",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 167,
+              "column": 7
+            },
+            {
+              "title": "CT22 - deve navegar para lançamentos ao selecionar no painel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-34c0441418dea48c01c2",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 173,
+              "column": 7
+            },
+            {
+              "title": "CT23 - deve exibir 0 imóveis com filtros impossíveis",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-2121dc7819dce4849054",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 181,
+              "column": 7
+            },
+            {
+              "title": "CT24 - deve exibir listagens sugeridas mesmo com 0 resultados",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-7bae6a0af1cc054270d9",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 186,
+              "column": 7
+            },
+            {
+              "title": "CT25 - deve exibir botão Limpar quando há filtros aplicados",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-663533480fa1e0b7b633",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 193,
+              "column": 7
+            },
+            {
+              "title": "CT26 - navigationFilters API deve retornar lista de tipos com contagens",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-ff9fa9e06cef27a5107c",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 200,
+              "column": 7
+            },
+            {
+              "title": "CT27 - extraFilters API deve retornar lista de features com IDs",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-ae0b651179c74e81fc3a",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 213,
+              "column": 7
+            },
+            {
+              "title": "CT28 - deve aplicar filtros combinados via URL e preservar na navegação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-44cf3fc7604d6d70f98c",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "CT29 - deve limpar filtros ao clicar em Limpar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-3d5bca75955e964b69df",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 234,
+              "column": 7
+            },
+            {
+              "title": "CT30 - deve atualizar contagem no h1 ao aplicar filtro de quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ios-safari-iphone-14",
+                  "projectName": "ios-safari-iphone-14",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-55adfcd0cc7642e360a5",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 242,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "tests\\Register.spec.ts",
       "file": "tests/Register.spec.ts",
       "column": 0,
@@ -2458,1311 +3957,14 @@
           ]
         }
       ]
-    },
-    {
-      "title": "tests\\SSRRelatedListings.spec.ts",
-      "file": "tests/SSRRelatedListings.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Feature SSR – Listagens e Anúncios Relacionados",
-          "file": "tests/SSRRelatedListings.spec.ts",
-          "line": 43,
-          "column": 6,
-          "specs": [
-            {
-              "title": "CT01 – deve carregar a listagem de imóveis via SSR com cards visíveis",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-anonymous",
-                  "projectName": "ssr-chrome-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-126318d1ad8c332e78f4",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "CT02 – deve exibir estrutura de SEO mínima (title, h1) no SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-anonymous",
-                  "projectName": "ssr-chrome-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-038fd19c024c2e3e0399",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 57,
-              "column": 7
-            },
-            {
-              "title": "CT03 – cards de listagem devem conter dados mínimos (preço e/ou área)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-anonymous",
-                  "projectName": "ssr-chrome-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-af6f17eaeb5f17997fba",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "CT04 – página de detalhe de imóvel deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-anonymous",
-                  "projectName": "ssr-chrome-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-6306ea0a303c4ec88274",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "CT05 – página de detalhe deve exibir seção de anúncios relacionados",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-anonymous",
-                  "projectName": "ssr-chrome-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-df07e2afcb262f501972",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 91,
-              "column": 7
-            },
-            {
-              "title": "CT06 – anúncios relacionados devem permitir navegação para outro imóvel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-anonymous",
-                  "projectName": "ssr-chrome-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-35a9418caa3601aa4d4e",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 116,
-              "column": 7
-            },
-            {
-              "title": "CT07 – usuário autenticado deve manter sessão após navegação SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-anonymous",
-                  "projectName": "ssr-chrome-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-e1650499cd2fb342f4dd",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 152,
-              "column": 7
-            },
-            {
-              "title": "CT08 – listagem de veículos deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-anonymous",
-                  "projectName": "ssr-chrome-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-e0157b5139ca31df25fc",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 176,
-              "column": 7
-            },
-            {
-              "title": "CT01 – deve carregar a listagem de imóveis via SSR com cards visíveis",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-webuser",
-                  "projectName": "ssr-chrome-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-43b970698310bf9867fd",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "CT02 – deve exibir estrutura de SEO mínima (title, h1) no SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-webuser",
-                  "projectName": "ssr-chrome-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-fd7b6c57023731300331",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 57,
-              "column": 7
-            },
-            {
-              "title": "CT03 – cards de listagem devem conter dados mínimos (preço e/ou área)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-webuser",
-                  "projectName": "ssr-chrome-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-06f6a57ae377a67b49a7",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "CT04 – página de detalhe de imóvel deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-webuser",
-                  "projectName": "ssr-chrome-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-328eb8f98d4f15416644",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "CT05 – página de detalhe deve exibir seção de anúncios relacionados",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-webuser",
-                  "projectName": "ssr-chrome-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-915d7f240a0633920e85",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 91,
-              "column": 7
-            },
-            {
-              "title": "CT06 – anúncios relacionados devem permitir navegação para outro imóvel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-webuser",
-                  "projectName": "ssr-chrome-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-54bb5ccd377631a06206",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 116,
-              "column": 7
-            },
-            {
-              "title": "CT07 – usuário autenticado deve manter sessão após navegação SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-webuser",
-                  "projectName": "ssr-chrome-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-d42ee9380b2d5c046086",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 152,
-              "column": 7
-            },
-            {
-              "title": "CT08 – listagem de veículos deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-webuser",
-                  "projectName": "ssr-chrome-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-b59db53c9421bfc86590",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 176,
-              "column": 7
-            },
-            {
-              "title": "CT01 – deve carregar a listagem de imóveis via SSR com cards visíveis",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pf",
-                  "projectName": "ssr-chrome-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-64a5ac5ae6ee85ee476b",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "CT02 – deve exibir estrutura de SEO mínima (title, h1) no SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pf",
-                  "projectName": "ssr-chrome-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-dc4bbb1b1d8611f96df4",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 57,
-              "column": 7
-            },
-            {
-              "title": "CT03 – cards de listagem devem conter dados mínimos (preço e/ou área)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pf",
-                  "projectName": "ssr-chrome-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-93925826ca897dd1e995",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "CT04 – página de detalhe de imóvel deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pf",
-                  "projectName": "ssr-chrome-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-6b60cbb1c09a2606a786",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "CT05 – página de detalhe deve exibir seção de anúncios relacionados",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pf",
-                  "projectName": "ssr-chrome-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-1a1fb0c9d1bcb28ff51c",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 91,
-              "column": 7
-            },
-            {
-              "title": "CT06 – anúncios relacionados devem permitir navegação para outro imóvel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pf",
-                  "projectName": "ssr-chrome-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-ae6e2120338938d13216",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 116,
-              "column": 7
-            },
-            {
-              "title": "CT07 – usuário autenticado deve manter sessão após navegação SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pf",
-                  "projectName": "ssr-chrome-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-efb2d0e25b0dba571a2f",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 152,
-              "column": 7
-            },
-            {
-              "title": "CT08 – listagem de veículos deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pf",
-                  "projectName": "ssr-chrome-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-be64372223bb07dd71cd",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 176,
-              "column": 7
-            },
-            {
-              "title": "CT01 – deve carregar a listagem de imóveis via SSR com cards visíveis",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pj",
-                  "projectName": "ssr-chrome-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-56a2f501f671e15e51ee",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "CT02 – deve exibir estrutura de SEO mínima (title, h1) no SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pj",
-                  "projectName": "ssr-chrome-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-4a8d25bd3ea0c56c9485",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 57,
-              "column": 7
-            },
-            {
-              "title": "CT03 – cards de listagem devem conter dados mínimos (preço e/ou área)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pj",
-                  "projectName": "ssr-chrome-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-b84ced652e6d4dc1bb54",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "CT04 – página de detalhe de imóvel deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pj",
-                  "projectName": "ssr-chrome-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-1cc96dd276c945561aa6",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "CT05 – página de detalhe deve exibir seção de anúncios relacionados",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pj",
-                  "projectName": "ssr-chrome-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-0cf225fc94878bfe2164",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 91,
-              "column": 7
-            },
-            {
-              "title": "CT06 – anúncios relacionados devem permitir navegação para outro imóvel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pj",
-                  "projectName": "ssr-chrome-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-2970386c7f9bc816b99a",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 116,
-              "column": 7
-            },
-            {
-              "title": "CT07 – usuário autenticado deve manter sessão após navegação SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pj",
-                  "projectName": "ssr-chrome-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-ff3f3ef7d89086d4fba4",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 152,
-              "column": 7
-            },
-            {
-              "title": "CT08 – listagem de veículos deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-chrome-pj",
-                  "projectName": "ssr-chrome-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-5bfb566e21dc517060f3",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 176,
-              "column": 7
-            },
-            {
-              "title": "CT01 – deve carregar a listagem de imóveis via SSR com cards visíveis",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-anonymous",
-                  "projectName": "ssr-ios-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-135485658614e4201ba5",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "CT02 – deve exibir estrutura de SEO mínima (title, h1) no SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-anonymous",
-                  "projectName": "ssr-ios-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-5f7b8a06710756ef1622",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 57,
-              "column": 7
-            },
-            {
-              "title": "CT03 – cards de listagem devem conter dados mínimos (preço e/ou área)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-anonymous",
-                  "projectName": "ssr-ios-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-035eb0b9579b98265918",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "CT04 – página de detalhe de imóvel deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-anonymous",
-                  "projectName": "ssr-ios-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-3775f0ce7fbb2a948d9e",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "CT05 – página de detalhe deve exibir seção de anúncios relacionados",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-anonymous",
-                  "projectName": "ssr-ios-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-d3dc508aede0cd35bbd0",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 91,
-              "column": 7
-            },
-            {
-              "title": "CT06 – anúncios relacionados devem permitir navegação para outro imóvel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-anonymous",
-                  "projectName": "ssr-ios-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-301d7cebeb4ad180d29d",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 116,
-              "column": 7
-            },
-            {
-              "title": "CT07 – usuário autenticado deve manter sessão após navegação SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-anonymous",
-                  "projectName": "ssr-ios-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-73f87e188b2d0e8198ab",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 152,
-              "column": 7
-            },
-            {
-              "title": "CT08 – listagem de veículos deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-anonymous",
-                  "projectName": "ssr-ios-anonymous",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-73039365bec32222fdd0",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 176,
-              "column": 7
-            },
-            {
-              "title": "CT01 – deve carregar a listagem de imóveis via SSR com cards visíveis",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-webuser",
-                  "projectName": "ssr-ios-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-5f9f90ddcb898556a038",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "CT02 – deve exibir estrutura de SEO mínima (title, h1) no SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-webuser",
-                  "projectName": "ssr-ios-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-97c1d4d1cd971e250a94",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 57,
-              "column": 7
-            },
-            {
-              "title": "CT03 – cards de listagem devem conter dados mínimos (preço e/ou área)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-webuser",
-                  "projectName": "ssr-ios-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-6c38f7c94836053787f8",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "CT04 – página de detalhe de imóvel deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-webuser",
-                  "projectName": "ssr-ios-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-a14f3d4c50005c658904",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "CT05 – página de detalhe deve exibir seção de anúncios relacionados",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-webuser",
-                  "projectName": "ssr-ios-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-0a24fd72b5f1d7d7aa6b",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 91,
-              "column": 7
-            },
-            {
-              "title": "CT06 – anúncios relacionados devem permitir navegação para outro imóvel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-webuser",
-                  "projectName": "ssr-ios-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-dbbfb98981b4854c8613",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 116,
-              "column": 7
-            },
-            {
-              "title": "CT07 – usuário autenticado deve manter sessão após navegação SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-webuser",
-                  "projectName": "ssr-ios-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-611f3c90de979d07f985",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 152,
-              "column": 7
-            },
-            {
-              "title": "CT08 – listagem de veículos deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-webuser",
-                  "projectName": "ssr-ios-webuser",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-858fe0ac3c7da10726e9",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 176,
-              "column": 7
-            },
-            {
-              "title": "CT01 – deve carregar a listagem de imóveis via SSR com cards visíveis",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pf",
-                  "projectName": "ssr-ios-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-876fec4f29ef77788670",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "CT02 – deve exibir estrutura de SEO mínima (title, h1) no SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pf",
-                  "projectName": "ssr-ios-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-1228673952fa8b0a0eb4",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 57,
-              "column": 7
-            },
-            {
-              "title": "CT03 – cards de listagem devem conter dados mínimos (preço e/ou área)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pf",
-                  "projectName": "ssr-ios-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-6c667cd92a02b3475960",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "CT04 – página de detalhe de imóvel deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pf",
-                  "projectName": "ssr-ios-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-89d7b1cb7cdca520b7fc",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "CT05 – página de detalhe deve exibir seção de anúncios relacionados",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pf",
-                  "projectName": "ssr-ios-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-d4771e3bb2bd53286962",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 91,
-              "column": 7
-            },
-            {
-              "title": "CT06 – anúncios relacionados devem permitir navegação para outro imóvel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pf",
-                  "projectName": "ssr-ios-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-0d1607ef05454dadd04f",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 116,
-              "column": 7
-            },
-            {
-              "title": "CT07 – usuário autenticado deve manter sessão após navegação SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pf",
-                  "projectName": "ssr-ios-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-1ff8bdee961d7d267e3e",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 152,
-              "column": 7
-            },
-            {
-              "title": "CT08 – listagem de veículos deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pf",
-                  "projectName": "ssr-ios-pf",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-5a73d535d273d45fe4c0",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 176,
-              "column": 7
-            },
-            {
-              "title": "CT01 – deve carregar a listagem de imóveis via SSR com cards visíveis",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pj",
-                  "projectName": "ssr-ios-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-806befa06ffd580ef6ed",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 49,
-              "column": 7
-            },
-            {
-              "title": "CT02 – deve exibir estrutura de SEO mínima (title, h1) no SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pj",
-                  "projectName": "ssr-ios-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-15f348faa5e0312f54cb",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 57,
-              "column": 7
-            },
-            {
-              "title": "CT03 – cards de listagem devem conter dados mínimos (preço e/ou área)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pj",
-                  "projectName": "ssr-ios-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-e35b603de5e5478894c8",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 65,
-              "column": 7
-            },
-            {
-              "title": "CT04 – página de detalhe de imóvel deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pj",
-                  "projectName": "ssr-ios-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-489b68664f8329682f2a",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 78,
-              "column": 7
-            },
-            {
-              "title": "CT05 – página de detalhe deve exibir seção de anúncios relacionados",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pj",
-                  "projectName": "ssr-ios-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-ffab585a062270b0b5f3",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 91,
-              "column": 7
-            },
-            {
-              "title": "CT06 – anúncios relacionados devem permitir navegação para outro imóvel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pj",
-                  "projectName": "ssr-ios-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-393fea21222e7112875c",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 116,
-              "column": 7
-            },
-            {
-              "title": "CT07 – usuário autenticado deve manter sessão após navegação SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pj",
-                  "projectName": "ssr-ios-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-ac2e1e67657fc3fef8ad",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 152,
-              "column": 7
-            },
-            {
-              "title": "CT08 – listagem de veículos deve carregar via SSR",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "ssr-ios-pj",
-                  "projectName": "ssr-ios-pj",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "406197d2d19e3225b6a3-5b55ee6a1bab0f30ccb8",
-              "file": "tests/SSRRelatedListings.spec.ts",
-              "line": 176,
-              "column": 7
-            }
-          ]
-        }
-      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-08T17:47:37.024Z",
-    "duration": 434.0250000000001,
+    "startTime": "2026-05-11T17:42:34.526Z",
+    "duration": 224.88699999999994,
     "expected": 0,
-    "skipped": 166,
+    "skipped": 186,
     "unexpected": 0,
     "flaky": 0
   }

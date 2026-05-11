@@ -1,0 +1,463 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]
+    - article [ref=e37]:
+      - generic [ref=e39]:
+        - navigation "breadcrumb" [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Home" [ref=e44] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e45]:
+              - img [ref=e46]
+            - listitem [ref=e48]:
+              - link "Motos" [ref=e49] [cursor=pointer]:
+                - /url: /motos-usadas/brasil/
+            - listitem [ref=e50]:
+              - img [ref=e51]
+            - listitem [ref=e53]:
+              - link "Harley-davidson" [disabled] [ref=e54]
+        - heading "93 Motos Harley-davidson à venda" [level=1] [ref=e55]:
+          - strong [ref=e56]: 93 Motos Harley-davidson à venda
+      - generic [ref=e58]:
+        - link "Harley Davidson Harley Davidson ROAD GLIDE FLTRX ABS - Preta - 2025/2025 Logo HARLEY-DAVIDSON Harley-davidson Road GLIDE FLTRX 2025 10.817 km Gasolina Mecânico Pomerode, SC Preço" [ref=e60] [cursor=pointer]:
+          - /url: /moto/sc-pomerode/harley-davidson-road-glide-fltrx-2025-mecanico-preta-RS177900/id-8050483/
+          - img "Harley Davidson Harley Davidson ROAD GLIDE FLTRX ABS - Preta - 2025/2025" [ref=e63]
+          - generic [ref=e65]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Road GLIDE FLTRX" [level=2] [ref=e66]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e68]
+              - generic [ref=e69]:
+                - generic "HARLEY-DAVIDSON ROAD" [ref=e70]: Harley-davidson Road
+                - generic "GLIDE FLTRX" [ref=e71]
+            - list [ref=e72]:
+              - listitem [ref=e73]:
+                - img [ref=e74]
+                - text: "2025"
+              - listitem [ref=e76]:
+                - img [ref=e77]
+                - text: 10.817 km
+              - listitem [ref=e79]:
+                - img [ref=e80]
+                - text: Gasolina
+              - listitem [ref=e82]:
+                - img [ref=e83]
+                - text: Mecânico
+            - paragraph [ref=e85]: Pomerode, SC
+            - paragraph [ref=e86]:
+              - generic [ref=e87]: R$ 177.900
+        - link "Harley-davidson flhp 2013 Logo HARLEY-DAVIDSON Harley-davidson Road KING 2013 11.150 km Gasolina Mecânico Goiânia, GO Preço" [ref=e89] [cursor=pointer]:
+          - /url: /moto/go-goiania/harley-davidson-road-king-2013-mecanico-branca-metalica-RS159900/id-8467907/
+          - img "Harley-davidson flhp 2013" [ref=e92]
+          - generic [ref=e94]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Road KING" [level=2] [ref=e95]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e97]
+              - generic [ref=e98]:
+                - generic "HARLEY-DAVIDSON ROAD" [ref=e99]: Harley-davidson Road
+                - generic "KING" [ref=e100]
+            - list [ref=e101]:
+              - listitem [ref=e102]:
+                - img [ref=e103]
+                - text: "2013"
+              - listitem [ref=e105]:
+                - img [ref=e106]
+                - text: 11.150 km
+              - listitem [ref=e108]:
+                - img [ref=e109]
+                - text: Gasolina
+              - listitem [ref=e111]:
+                - img [ref=e112]
+                - text: Mecânico
+            - paragraph [ref=e114]: Goiânia, GO
+            - paragraph [ref=e115]:
+              - generic [ref=e116]: R$ 159.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Street GLIDE 2024 2.384 km Gasolina Mecânico Pomerode, SC Preço" [ref=e118] [cursor=pointer]:
+          - /url: /moto/sc-pomerode/harley-davidson-street-glide-2024-mecanico-branca-metalica-RS156900/id-7655517/
+          - generic [ref=e121]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Street GLIDE" [level=2] [ref=e122]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e124]
+              - generic [ref=e125]:
+                - generic "HARLEY-DAVIDSON STREET" [ref=e126]: Harley-davidson Street
+                - generic "GLIDE" [ref=e127]
+            - list [ref=e128]:
+              - listitem [ref=e129]:
+                - img [ref=e130]
+                - text: "2024"
+              - listitem [ref=e132]:
+                - img [ref=e133]
+                - text: 2.384 km
+              - listitem [ref=e135]:
+                - img [ref=e136]
+                - text: Gasolina
+              - listitem [ref=e138]:
+                - img [ref=e139]
+                - text: Mecânico
+            - paragraph [ref=e141]: Pomerode, SC
+            - paragraph [ref=e142]:
+              - generic [ref=e143]: R$ 156.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Ultra LIMITED FLTHTK 2022 26.852 km Gasolina Automático Curitiba, PR Preço" [ref=e145] [cursor=pointer]:
+          - /url: /moto/pr-curitiba/harley-davidson-ultra-limited-flthtk-2022-automatico-preta-RS129890/id-8486540/
+          - generic [ref=e148]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Ultra LIMITED FLTHTK" [level=2] [ref=e149]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e151]
+              - generic [ref=e152]:
+                - generic "HARLEY-DAVIDSON ULTRA" [ref=e153]: Harley-davidson Ultra
+                - generic "LIMITED FLTHTK" [ref=e154]
+            - list [ref=e155]:
+              - listitem [ref=e156]:
+                - img [ref=e157]
+                - text: "2022"
+              - listitem [ref=e159]:
+                - img [ref=e160]
+                - text: 26.852 km
+              - listitem [ref=e162]:
+                - img [ref=e163]
+                - text: Gasolina
+              - listitem [ref=e165]:
+                - img [ref=e166]
+                - text: Automático
+            - paragraph [ref=e168]: Curitiba, PR
+            - paragraph [ref=e169]:
+              - generic [ref=e170]: R$ 129.890
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Heritage SOFTAIL CLASSIC 2024 14.115 km Gasolina Mecânico Pomerode, SC Preço" [ref=e172] [cursor=pointer]:
+          - /url: /moto/sc-pomerode/harley-davidson-heritage-softail-classic-2024-mecanico-preta-RS122900/id-8045704/
+          - generic [ref=e175]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Heritage SOFTAIL CLASSIC" [level=2] [ref=e176]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e178]
+              - generic [ref=e179]:
+                - generic "HARLEY-DAVIDSON HERITAGE" [ref=e180]: Harley-davidson Heritage
+                - generic "SOFTAIL CLASSIC" [ref=e181]
+            - list [ref=e182]:
+              - listitem [ref=e183]:
+                - img [ref=e184]
+                - text: "2024"
+              - listitem [ref=e186]:
+                - img [ref=e187]
+                - text: 14.115 km
+              - listitem [ref=e189]:
+                - img [ref=e190]
+                - text: Gasolina
+              - listitem [ref=e192]:
+                - img [ref=e193]
+                - text: Mecânico
+            - paragraph [ref=e195]: Pomerode, SC
+            - paragraph [ref=e196]:
+              - generic [ref=e197]: R$ 122.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Heritage CLASSIC FLHC 2024 1.318 km Gasolina Mecânico Florianópolis, SC Preço" [ref=e199] [cursor=pointer]:
+          - /url: /moto/sc-florianopolis/harley-davidson-heritage-classic-flhc-2024-mecanico-preta-RS119800/id-8658364/
+          - generic [ref=e202]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Heritage CLASSIC FLHC" [level=2] [ref=e203]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e205]
+              - generic [ref=e206]:
+                - generic "HARLEY-DAVIDSON HERITAGE" [ref=e207]: Harley-davidson Heritage
+                - generic "CLASSIC FLHC" [ref=e208]
+            - list [ref=e209]:
+              - listitem [ref=e210]:
+                - img [ref=e211]
+                - text: "2024"
+              - listitem [ref=e213]:
+                - img [ref=e214]
+                - text: 1.318 km
+              - listitem [ref=e216]:
+                - img [ref=e217]
+                - text: Gasolina
+              - listitem [ref=e219]:
+                - img [ref=e220]
+                - text: Mecânico
+            - paragraph [ref=e222]: Florianópolis, SC
+            - paragraph [ref=e223]:
+              - generic [ref=e224]: R$ 119.800
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Breakout FXBR 2023 2.073 km Gasolina Mecânico Pomerode, SC Preço" [ref=e226] [cursor=pointer]:
+          - /url: /moto/sc-pomerode/harley-davidson-breakout-fxbr-2023-mecanico-preta-RS112900/id-7187633/
+          - generic [ref=e229]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Breakout FXBR" [level=2] [ref=e230]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e232]
+              - generic [ref=e233]:
+                - generic "HARLEY-DAVIDSON BREAKOUT" [ref=e234]: Harley-davidson Breakout
+                - generic "FXBR" [ref=e235]
+            - list [ref=e236]:
+              - listitem [ref=e237]:
+                - img [ref=e238]
+                - text: "2023"
+              - listitem [ref=e240]:
+                - img [ref=e241]
+                - text: 2.073 km
+              - listitem [ref=e243]:
+                - img [ref=e244]
+                - text: Gasolina
+              - listitem [ref=e246]:
+                - img [ref=e247]
+                - text: Mecânico
+            - paragraph [ref=e249]: Pomerode, SC
+            - paragraph [ref=e250]:
+              - generic [ref=e251]: R$ 112.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Road KING SPECIAL FLHRXS 2021 36.940 km Gasolina Mecânico Curitiba, PR Preço" [ref=e253] [cursor=pointer]:
+          - /url: /moto/pr-curitiba/harley-davidson-road-king-special-flhrxs-2021-mecanico-verde-RS103990/id-8461433/
+          - generic [ref=e256]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Road KING SPECIAL FLHRXS" [level=2] [ref=e257]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e259]
+              - generic [ref=e260]:
+                - generic "HARLEY-DAVIDSON ROAD" [ref=e261]: Harley-davidson Road
+                - generic "KING SPECIAL FLHRXS" [ref=e262]
+            - list [ref=e263]:
+              - listitem [ref=e264]:
+                - img [ref=e265]
+                - text: "2021"
+              - listitem [ref=e267]:
+                - img [ref=e268]
+                - text: 36.940 km
+              - listitem [ref=e270]:
+                - img [ref=e271]
+                - text: Gasolina
+              - listitem [ref=e273]:
+                - img [ref=e274]
+                - text: Mecânico
+            - paragraph [ref=e276]: Curitiba, PR
+            - paragraph [ref=e277]:
+              - generic [ref=e278]: R$ 103.990
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Pan America 1250 SPECIAL 2023 4.781 km Gasolina Mecânico Pomerode, SC Preço" [ref=e280] [cursor=pointer]:
+          - /url: /moto/sc-pomerode/harley-davidson-pan-america-1250-special-2023-mecanico-preta-RS92900/id-7538948/
+          - generic [ref=e283]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Pan America 1250 SPECIAL" [level=2] [ref=e284]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e286]
+              - generic [ref=e287]:
+                - generic "HARLEY-DAVIDSON PAN AMERICA" [ref=e288]: Harley-davidson Pan America
+                - generic "1250 SPECIAL" [ref=e289]
+            - list [ref=e290]:
+              - listitem [ref=e291]:
+                - img [ref=e292]
+                - text: "2023"
+              - listitem [ref=e294]:
+                - img [ref=e295]
+                - text: 4.781 km
+              - listitem [ref=e297]:
+                - img [ref=e298]
+                - text: Gasolina
+              - listitem [ref=e300]:
+                - img [ref=e301]
+                - text: Mecânico
+            - paragraph [ref=e303]: Pomerode, SC
+            - paragraph [ref=e304]:
+              - generic [ref=e305]: R$ 92.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Pan America 1250 SPECIAL 2023 14.912 km Gasolina Mecânico Pomerode, SC Preço" [ref=e307] [cursor=pointer]:
+          - /url: /moto/sc-pomerode/harley-davidson-pan-america-1250-special-2023-mecanico-preta-RS92900/id-7532086/
+          - generic [ref=e310]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Pan America 1250 SPECIAL" [level=2] [ref=e311]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e313]
+              - generic [ref=e314]:
+                - generic "HARLEY-DAVIDSON PAN AMERICA" [ref=e315]: Harley-davidson Pan America
+                - generic "1250 SPECIAL" [ref=e316]
+            - list [ref=e317]:
+              - listitem [ref=e318]:
+                - img [ref=e319]
+                - text: "2023"
+              - listitem [ref=e321]:
+                - img [ref=e322]
+                - text: 14.912 km
+              - listitem [ref=e324]:
+                - img [ref=e325]
+                - text: Gasolina
+              - listitem [ref=e327]:
+                - img [ref=e328]
+                - text: Mecânico
+            - paragraph [ref=e330]: Pomerode, SC
+            - paragraph [ref=e331]:
+              - generic [ref=e332]: R$ 92.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Softail ROCKER 2009 10.000 km Gasolina Mecânico Curitiba, PR Preço" [ref=e334] [cursor=pointer]:
+          - /url: /moto/pr-curitiba/harley-davidson-softail-rocker-2009-mecanico-vermelha-RS90000/id-7284955/
+          - generic [ref=e337]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Softail ROCKER" [level=2] [ref=e338]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e340]
+              - generic [ref=e341]:
+                - generic "HARLEY-DAVIDSON SOFTAIL" [ref=e342]: Harley-davidson Softail
+                - generic "ROCKER" [ref=e343]
+            - list [ref=e344]:
+              - listitem [ref=e345]:
+                - img [ref=e346]
+                - text: "2009"
+              - listitem [ref=e348]:
+                - img [ref=e349]
+                - text: 10.000 km
+              - listitem [ref=e351]:
+                - img [ref=e352]
+                - text: Gasolina
+              - listitem [ref=e354]:
+                - img [ref=e355]
+                - text: Mecânico
+            - paragraph [ref=e357]: Curitiba, PR
+            - paragraph [ref=e358]:
+              - generic [ref=e359]: R$ 90.000
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Fat Boy FLFBS 2021 5.686 km Gasolina Mecânico Bento Gonçalves, RS Preço" [ref=e361] [cursor=pointer]:
+          - /url: /moto/rs-bento-goncalves/harley-davidson-fat-boy-flfbs-2021-mecanico-cinza-RS89900/id-8609700/
+          - generic [ref=e364]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Fat Boy FLFBS" [level=2] [ref=e365]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e367]
+              - generic [ref=e368]:
+                - generic "HARLEY-DAVIDSON FAT BOY" [ref=e369]: Harley-davidson Fat Boy
+                - generic "FLFBS" [ref=e370]
+            - list [ref=e371]:
+              - listitem [ref=e372]:
+                - img [ref=e373]
+                - text: "2021"
+              - listitem [ref=e375]:
+                - img [ref=e376]
+                - text: 5.686 km
+              - listitem [ref=e378]:
+                - img [ref=e379]
+                - text: Gasolina
+              - listitem [ref=e381]:
+                - img [ref=e382]
+                - text: Mecânico
+            - paragraph [ref=e384]: Bento Gonçalves, RS
+            - paragraph [ref=e385]:
+              - generic [ref=e386]: R$ 89.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Heritage SOFTAIL CLASSIC 2017 20.720 km Gasolina Mecânico Curitiba, PR Preço" [ref=e388] [cursor=pointer]:
+          - /url: /moto/pr-curitiba/harley-davidson-heritage-softail-classic-2017-mecanico-azul-RS84900/id-8611313/
+          - generic [ref=e391]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Heritage SOFTAIL CLASSIC" [level=2] [ref=e392]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e394]
+              - generic [ref=e395]:
+                - generic "HARLEY-DAVIDSON HERITAGE" [ref=e396]: Harley-davidson Heritage
+                - generic "SOFTAIL CLASSIC" [ref=e397]
+            - list [ref=e398]:
+              - listitem [ref=e399]:
+                - img [ref=e400]
+                - text: "2017"
+              - listitem [ref=e402]:
+                - img [ref=e403]
+                - text: 20.720 km
+              - listitem [ref=e405]:
+                - img [ref=e406]
+                - text: Gasolina
+              - listitem [ref=e408]:
+                - img [ref=e409]
+                - text: Mecânico
+            - paragraph [ref=e411]: Curitiba, PR
+            - paragraph [ref=e412]:
+              - generic [ref=e413]: R$ 84.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Fat Boy FLSTF 2020 25.672 km Gasolina Mecânico Curitiba, PR Preço" [ref=e415] [cursor=pointer]:
+          - /url: /moto/pr-curitiba/harley-davidson-fat-boy-flstf-2020-mecanico-preta-RS84900/id-8344555/
+          - generic [ref=e418]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Fat Boy FLSTF" [level=2] [ref=e419]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e421]
+              - generic [ref=e422]:
+                - generic "HARLEY-DAVIDSON FAT BOY" [ref=e423]: Harley-davidson Fat Boy
+                - generic "FLSTF" [ref=e424]
+            - list [ref=e425]:
+              - listitem [ref=e426]:
+                - img [ref=e427]
+                - text: "2020"
+              - listitem [ref=e429]:
+                - img [ref=e430]
+                - text: 25.672 km
+              - listitem [ref=e432]:
+                - img [ref=e433]
+                - text: Gasolina
+              - listitem [ref=e435]:
+                - img [ref=e436]
+                - text: Mecânico
+            - paragraph [ref=e438]: Curitiba, PR
+            - paragraph [ref=e439]:
+              - generic [ref=e440]: R$ 84.900
+        - link "Logo HARLEY-DAVIDSON Harley-davidson Road KING CLASSIC 2017 34.110 km Gasolina Mecânico Curitiba, PR Preço" [ref=e442] [cursor=pointer]:
+          - /url: /moto/pr-curitiba/harley-davidson-road-king-classic-2017-mecanico-branca-metalica-RS83990/id-8572414/
+          - generic [ref=e445]:
+            - heading "Logo HARLEY-DAVIDSON Harley-davidson Road KING CLASSIC" [level=2] [ref=e446]:
+              - img "Logo HARLEY-DAVIDSON" [ref=e448]
+              - generic [ref=e449]:
+                - generic "HARLEY-DAVIDSON ROAD" [ref=e450]: Harley-davidson Road
+                - generic "KING CLASSIC" [ref=e451]
+            - list [ref=e452]:
+              - listitem [ref=e453]:
+                - img [ref=e454]
+                - text: "2017"
+              - listitem [ref=e456]:
+                - img [ref=e457]
+                - text: 34.110 km
+              - listitem [ref=e459]:
+                - img [ref=e460]
+                - text: Gasolina
+              - listitem [ref=e462]:
+                - img [ref=e463]
+                - text: Mecânico
+            - paragraph [ref=e465]: Curitiba, PR
+            - paragraph [ref=e466]:
+              - generic [ref=e467]: R$ 83.990
+        - generic [ref=e468]:
+          - generic [ref=e469]:
+            - generic [ref=e470]:
+              - generic [ref=e471]:
+                - heading "Buscas relacionadas no Brasil" [level=3] [ref=e472]
+                - generic [ref=e474]:
+                  - button "Anterior" [disabled] [ref=e475]:
+                    - generic:
+                      - img
+                  - button "Próximo" [disabled] [ref=e476]:
+                    - generic:
+                      - img
+              - generic [ref=e477]:
+                - link "Honda no Brasil" [ref=e478] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/honda/
+                - link "Yamaha no Brasil" [ref=e479] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/yamaha/
+                - link "Bmw no Brasil" [ref=e480] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/bmw/
+                - link "Triumph no Brasil" [ref=e481] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/triumph/
+                - link "Shineray no Brasil" [ref=e482] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/shineray/
+                - link "Kawasaki no Brasil" [ref=e483] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/kawasaki/
+                - link "Harley-davidson no Brasil" [ref=e484] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/harley-davidson/
+                - link "Suzuki no Brasil" [ref=e485] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/suzuki/
+                - link "Royal Enfield no Brasil" [ref=e486] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/royal-enfield/
+                - link "Haojue no Brasil" [ref=e487] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/haojue/
+                - link "Dafra no Brasil" [ref=e488] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/dafra/
+                - link "Ducati no Brasil" [ref=e489] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/ducati/
+                - link "Zontes no Brasil" [ref=e490] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/zontes/
+                - link "Bajaj no Brasil" [ref=e491] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/bajaj/
+                - link "Irun no Brasil" [ref=e492] [cursor=pointer]:
+                  - /url: https://qa.chavesnamao.com.br/motos/brasil/irun/
+            - generic "Preço FIPE" [ref=e493]:
+              - generic [ref=e494]:
+                - img "Logo fipe" [ref=e496]
+                - separator [ref=e497]
+                - paragraph [ref=e498]: Consulte os modelos Harley-davidson na Tabela Fipe
+              - link "Veja o preço Fipe" [ref=e499] [cursor=pointer]:
+                - /url: /tabela-fipe/motos-harley-davidson/
+                - text: Veja o preço Fipe
+                - img [ref=e500]
+          - link "Página 2" [ref=e503] [cursor=pointer]:
+            - /url: /motos/brasil/harley-davidson/?pg=2
+  - alert [ref=e514]

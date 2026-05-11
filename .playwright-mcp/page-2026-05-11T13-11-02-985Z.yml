@@ -1,0 +1,837 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e579] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e580]
+            - text: Favoritos
+          - link "Entrar" [ref=e582] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - generic [ref=e583]:
+        - list [ref=e584]:
+          - listitem [ref=e585]:
+            - button "Filtros" [ref=e586] [cursor=pointer]:
+              - img
+              - text: Filtros
+            - generic [ref=e936]: + 1
+          - listitem [ref=e587]:
+            - button "Em todo Brasil" [ref=e588] [cursor=pointer]:
+              - img
+              - generic: Em todo Brasil
+              - img
+          - listitem [ref=e589]:
+            - button "Alugar Todos os imóveis" [ref=e937] [cursor=pointer]:
+              - generic:
+                - generic: Alugar
+                - img
+                - text: Todos os imóveis
+              - img
+          - listitem [ref=e591]:
+            - button "2" [ref=e938] [cursor=pointer]:
+              - generic:
+                - generic "2 quartos":
+                  - img
+                  - text: "2"
+              - img
+          - listitem [ref=e593]:
+            - button "Preço" [ref=e594] [cursor=pointer]:
+              - img
+              - text: Preço
+              - img
+        - button "Limpar" [ref=e595] [cursor=pointer]:
+          - img
+          - text: Limpar
+    - article [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - navigation "breadcrumb" [ref=e41]:
+            - list [ref=e42]:
+              - listitem [ref=e43]:
+                - link "Imóveis para alugar" [ref=e939] [cursor=pointer]:
+                  - /url: /imoveis-para-alugar/brasil/
+              - listitem [ref=e45]:
+                - img [ref=e46]
+              - listitem [ref=e48]:
+                - link "Em todo Brasil" [disabled] [ref=e49]
+              - listitem [ref=e940]:
+                - link "2 quartos" [disabled] [ref=e941]
+          - heading "266.310 Imóveis de 2 quartos para alugar em todo o Brasil" [level=1] [ref=e942]:
+            - strong [ref=e51]: 266.310 Imóveis de 2 quartos para alugar em todo o Brasil
+        - button "Ordernar por Mais relevantes" [ref=e597] [cursor=pointer]:
+          - generic: Ordernar por
+          - generic:
+            - generic: Mais relevantes
+          - img
+      - generic [ref=e53]:
+        - generic [ref=e943]:
+          - 'link "Casa comercial para locação em São Paulo-SP: 1 quarto, 6 salas, 4 banheiros, 10 vagas, 200m² no Jardim Ester! Casa comercial para locação em São Paulo-SP: 1 quarto, 6 salas, 4 banheiros, 10 vagas, 200m² no Jardim Ester! Casa comercial para locação em São Paulo-SP: 1 quarto, 6 salas, 4 banheiros, 10 vagas, 200m² no Jardim Ester! strong list Preço" [ref=e944] [cursor=pointer]':
+            - /url: /imovel/casa-comercial-para-alugar-6-salas-com-garagem-sp-sao-paulo-jardim-ester-RS9995/id-41608255/
+            - generic [ref=e945]:
+              - 'img "Casa comercial para locação em São Paulo-SP: 1 quarto, 6 salas, 4 banheiros, 10 vagas, 200m² no Jardim Ester!" [ref=e947]'
+              - 'img "Casa comercial para locação em São Paulo-SP: 1 quarto, 6 salas, 4 banheiros, 10 vagas, 200m² no Jardim Ester!" [ref=e949]'
+            - generic [ref=e953]:
+              - 'heading "Casa comercial para locação em São Paulo-SP: 1 quarto, 6 salas, 4 banheiros, 10 vagas, 200m² no Jardim Ester!" [level=2] [ref=e955]'
+              - generic "strong" [ref=e956]:
+                - paragraph [ref=e957]: Rua Henrique Chaves, 534/542
+                - paragraph [ref=e958]: Jardim Ester, São Paulo/SP
+              - generic "list" [ref=e959]:
+                - paragraph [ref=e960]:
+                  - img [ref=e961]
+                  - text: 200m²
+                - paragraph [ref=e963]:
+                  - img [ref=e964]
+                  - text: "6"
+                - paragraph [ref=e966]:
+                  - img [ref=e967]
+                  - text: "4"
+                - paragraph [ref=e969]:
+                  - img [ref=e970]
+                  - text: "10"
+              - paragraph [ref=e972]:
+                - generic [ref=e973]: R$ 9.995
+                - generic "IPTU" [ref=e974]:
+                  - text: "Iptu:"
+                  - generic [ref=e975]: R$ 480
+          - button "Contatar" [ref=e976] [cursor=pointer]
+          - button "Favoritar" [ref=e977] [cursor=pointer]:
+            - img
+          - generic [ref=e978]:
+            - button "Anterior" [disabled] [ref=e979]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e980] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e981]:
+          - link "Localizado em um dos melhores bairros de Mogi das Cruzes, com ótima oportunidade de locação próxima ao Centro de Mogi da Localizado em um dos melhores bairros de Mogi das Cruzes, com ótima oportunidade de locação próxima ao Centro de Mogi da Localizado em um dos melhores bairros de Mogi das Cruzes, com ótima oportunidade de locação próxima ao Centro de Mogi da strong list Preço" [ref=e982] [cursor=pointer]:
+            - /url: /imovel/casa-comercial-para-alugar-3-salas-com-garagem-sp-mogi-das-cruzes-parque-monte-libano-110m2-RS15000/id-25290328/
+            - generic [ref=e983]:
+              - img "Localizado em um dos melhores bairros de Mogi das Cruzes, com ótima oportunidade de locação próxima ao Centro de Mogi da" [ref=e985]
+              - img "Localizado em um dos melhores bairros de Mogi das Cruzes, com ótima oportunidade de locação próxima ao Centro de Mogi da" [ref=e987]
+            - generic [ref=e991]:
+              - heading "Localizado em um dos melhores bairros de Mogi das Cruzes, com ótima oportunidade de locação próxima ao Centro de Mogi da" [level=2] [ref=e993]
+              - generic "strong" [ref=e994]:
+                - paragraph [ref=e995]: Endereço indisponível
+                - paragraph [ref=e996]: Parque Monte Líbano, Mogi das Cruzes/SP
+              - generic "list" [ref=e997]:
+                - paragraph [ref=e998]:
+                  - img [ref=e999]
+                  - text: 98m²
+                - paragraph [ref=e1001]:
+                  - img [ref=e1002]
+                  - text: "3"
+                - paragraph [ref=e1004]:
+                  - img [ref=e1005]
+                  - text: "1"
+                - paragraph [ref=e1007]:
+                  - img [ref=e1008]
+                  - text: "3"
+              - paragraph [ref=e1010]:
+                - generic [ref=e1011]: R$ 15.000
+          - button "Contatar" [ref=e1012] [cursor=pointer]
+          - button "Favoritar" [ref=e1013] [cursor=pointer]:
+            - img
+          - generic [ref=e1014]:
+            - button "Anterior" [disabled] [ref=e1015]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1016] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e1017]:
+          - link "Prédio Industrial ou Comercial na Vila Império - Próximo à Av. Cupecê Prédio Industrial ou Comercial na Vila Império - Próximo à Av. Cupecê Prédio Industrial ou Comercial na Vila Império - Próximo à Av. Cupecê strong list Preço" [ref=e1018] [cursor=pointer]:
+            - /url: /imovel/galpao-para-alugar-4-salas-com-garagem-sp-sao-paulo-cidade-ademar-310m2-RS7000/id-17155221/
+            - generic [ref=e1019]:
+              - img "Prédio Industrial ou Comercial na Vila Império - Próximo à Av. Cupecê" [ref=e1021]
+              - img "Prédio Industrial ou Comercial na Vila Império - Próximo à Av. Cupecê" [ref=e1023]
+            - generic [ref=e1027]:
+              - heading "Prédio Industrial ou Comercial na Vila Império - Próximo à Av. Cupecê" [level=2] [ref=e1029]
+              - generic "strong" [ref=e1030]:
+                - paragraph [ref=e1031]: Endereço indisponível
+                - paragraph [ref=e1032]: Cidade Ademar, São Paulo/SP
+              - generic "list" [ref=e1033]:
+                - paragraph [ref=e1034]:
+                  - img [ref=e1035]
+                  - text: 800m²
+                - paragraph [ref=e1037]:
+                  - img [ref=e1038]
+                  - text: "4"
+                - paragraph [ref=e1040]:
+                  - img [ref=e1041]
+                  - text: "4"
+                - paragraph [ref=e1043]:
+                  - img [ref=e1044]
+                  - text: "4"
+              - paragraph [ref=e1046]:
+                - generic [ref=e1047]: R$ 7.000
+                - generic "IPTU" [ref=e1048]:
+                  - text: "Iptu:"
+                  - generic [ref=e1049]: R$ 1.021
+          - button "Contatar" [ref=e1050] [cursor=pointer]
+          - button "Favoritar" [ref=e1051] [cursor=pointer]:
+            - img
+          - generic [ref=e1052]:
+            - button "Anterior" [disabled] [ref=e1053]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1054] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e1055]:
+          - link "Casa comercial com 4 salas para alugar na Rua Cerro Corá, --, Alto da Lapa, São Paulo, 87 m2 por R$ 4.500 Casa comercial com 4 salas para alugar na Rua Cerro Corá, --, Alto da Lapa, São Paulo, 87 m2 por R$ 4.500 Casa comercial com 4 salas para alugar na Rua Cerro Corá, --, Alto da Lapa, São Paulo, 87 m2 por R$ 4.500 strong list Preço" [ref=e1056] [cursor=pointer]:
+            - /url: /imovel/casa-comercial-para-alugar-4-salas-com-garagem-sp-sao-paulo-alto-da-lapa-87m2-RS4500/id-18165397/
+            - generic [ref=e1057]:
+              - img "Casa comercial com 4 salas para alugar na Rua Cerro Corá, --, Alto da Lapa, São Paulo, 87 m2 por R$ 4.500" [ref=e1059]
+              - img "Casa comercial com 4 salas para alugar na Rua Cerro Corá, --, Alto da Lapa, São Paulo, 87 m2 por R$ 4.500" [ref=e1061]
+            - generic [ref=e1065]:
+              - heading "Casa comercial com 4 salas para alugar na Rua Cerro Corá, --, Alto da Lapa, São Paulo, 87 m2 por R$ 4.500" [level=2] [ref=e1067]
+              - generic "strong" [ref=e1068]:
+                - paragraph [ref=e1069]: Rua Cerro Corá, --
+                - paragraph [ref=e1070]: Alto da Lapa, São Paulo/SP
+              - generic "list" [ref=e1071]:
+                - paragraph [ref=e1072]:
+                  - img [ref=e1073]
+                  - text: 87m²
+                - paragraph [ref=e1075]:
+                  - img [ref=e1076]
+                  - text: "4"
+                - paragraph [ref=e1078]:
+                  - img [ref=e1079]
+                  - text: "2"
+                - paragraph [ref=e1081]:
+                  - img [ref=e1082]
+                  - text: "1"
+              - paragraph [ref=e1084]:
+                - generic [ref=e1085]: R$ 4.500
+                - generic "IPTU" [ref=e1086]:
+                  - text: "Iptu:"
+                  - generic [ref=e1087]: R$ 420
+          - button "Contatar" [ref=e1088] [cursor=pointer]
+          - button "Favoritar" [ref=e1089] [cursor=pointer]:
+            - img
+          - generic [ref=e1090]:
+            - button "Anterior" [disabled] [ref=e1091]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1092] [cursor=pointer]:
+              - generic:
+                - img
+        - link "ALUGA-SE SALÃO COMERCIAL 144 m² - VILA GOMES CADIM, SÃO PAULO/SP strong list Preço" [ref=e1094] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-4-salas-sp-sao-paulo-tatuape-144m2-RS3700/id-36543929/
+          - generic [ref=e1096]:
+            - heading "ALUGA-SE SALÃO COMERCIAL 144 m² - VILA GOMES CADIM, SÃO PAULO/SP" [level=2] [ref=e1098]
+            - generic "strong" [ref=e1099]:
+              - paragraph [ref=e1100]: Rua Serra De Bragança, 22
+              - paragraph [ref=e1101]: Tatuapé, São Paulo/SP
+            - generic "list" [ref=e1102]:
+              - paragraph [ref=e1103]:
+                - img [ref=e1104]
+                - text: 144m²
+              - paragraph [ref=e1106]:
+                - img [ref=e1107]
+                - text: "4"
+              - paragraph [ref=e1109]:
+                - img [ref=e1110]
+                - text: "2"
+            - paragraph [ref=e1112]:
+              - generic [ref=e1113]: R$ 3.700
+              - generic "IPTU" [ref=e1114]:
+                - text: "Iptu:"
+                - generic [ref=e1115]: R$ 955
+        - generic [ref=e1120]:
+          - list [ref=e1125]:
+            - listitem [ref=e1126]
+          - list [ref=e1136]:
+            - listitem [ref=e1137]
+          - list [ref=e1147]:
+            - listitem [ref=e1148]
+          - list [ref=e1158]:
+            - listitem [ref=e1159]
+          - list [ref=e1169]:
+            - listitem [ref=e1170]
+        - link "Casa comercial no bairro parque santa barbara - campinas - sp strong list Preço" [ref=e1177] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-para-alugar-2-salas-com-garagem-sp-campinas-parque-santa-barbara-260m2-RS3000/id-38323516/
+          - generic [ref=e1179]:
+            - heading "Casa comercial no bairro parque santa barbara - campinas - sp" [level=2] [ref=e1181]
+            - generic "strong" [ref=e1182]:
+              - paragraph [ref=e1183]: Rua Teodoro Guedes De Campos, 161
+              - paragraph [ref=e1184]: Parque Santa Bárbara, Campinas/SP
+            - generic "list" [ref=e1185]:
+              - paragraph [ref=e1186]:
+                - img [ref=e1187]
+                - text: 104m²
+              - paragraph [ref=e1189]:
+                - img [ref=e1190]
+                - text: "2"
+              - paragraph [ref=e1192]:
+                - img [ref=e1193]
+                - text: "1"
+              - paragraph [ref=e1195]:
+                - img [ref=e1196]
+                - text: "2"
+            - paragraph [ref=e1198]:
+              - generic [ref=e1199]: R$ 3.000
+              - generic "IPTU" [ref=e1200]:
+                - text: "Iptu:"
+                - generic [ref=e1201]: R$ 97
+        - link "Sala comercial nova com 52m2 com ar condicionado varanda fechada de vidro do lado do metrô FL55 strong list Preço" [ref=e1203] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-2-salas-sp-sao-paulo-butanta-53m2-RS3400/id-40878710/
+          - generic [ref=e1205]:
+            - heading "Sala comercial nova com 52m2 com ar condicionado varanda fechada de vidro do lado do metrô FL55" [level=2] [ref=e1207]
+            - generic "strong" [ref=e1208]:
+              - paragraph [ref=e1209]: Rua Camargo, 72
+              - paragraph [ref=e1210]: Butantã, São Paulo/SP
+            - generic "list" [ref=e1211]:
+              - paragraph [ref=e1212]:
+                - img [ref=e1213]
+                - text: 52m²
+              - paragraph [ref=e1215]:
+                - img [ref=e1216]
+                - text: "2"
+              - paragraph [ref=e1218]:
+                - img [ref=e1219]
+                - text: "1"
+            - paragraph [ref=e1221]:
+              - generic [ref=e1222]: R$ 3.400
+              - generic "Condominio" [ref=e1223]:
+                - text: Condomínio
+                - generic [ref=e1224]: R$ 777
+        - link "Casa comercial com 3 salas para alugar na Rua Doutor César, 1161, Santana, São Paulo strong list Preço" [ref=e1226] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-para-alugar-3-salas-com-garagem-sp-sao-paulo-santana-45m2-RS4500/id-33189545/
+          - generic [ref=e1228]:
+            - heading "Casa comercial com 3 salas para alugar na Rua Doutor César, 1161, Santana, São Paulo" [level=2] [ref=e1230]
+            - generic "strong" [ref=e1231]:
+              - paragraph [ref=e1232]: Rua Doutor César, 1161
+              - paragraph [ref=e1233]: Santana, São Paulo/SP
+            - generic "list" [ref=e1234]:
+              - paragraph [ref=e1235]:
+                - img [ref=e1236]
+                - text: 45m²
+              - paragraph [ref=e1238]:
+                - img [ref=e1239]
+                - text: "3"
+              - paragraph [ref=e1241]:
+                - img [ref=e1242]
+                - text: "2"
+              - paragraph [ref=e1244]:
+                - img [ref=e1245]
+                - text: "1"
+            - paragraph [ref=e1247]:
+              - generic [ref=e1248]: R$ 4.500
+              - generic "Condominio" [ref=e1249]:
+                - text: Condomínio
+                - generic [ref=e1250]: R$ 567
+        - 'link "Sala Comercial de Alto Padrão para Locação em Petrópolis, Porto Alegre - RS: 2 Salas, 4 Banheiros, 5 Vagas - 243,76² strong list Preço" [ref=e1252] [cursor=pointer]':
+          - /url: /imovel/sala-comercial-para-alugar-2-salas-com-garagem-rs-porto-alegre-petropolis-243m2-RS22000/id-30410546/
+          - generic [ref=e1254]:
+            - 'heading "Sala Comercial de Alto Padrão para Locação em Petrópolis, Porto Alegre - RS: 2 Salas, 4 Banheiros, 5 Vagas - 243,76²" [level=2] [ref=e1256]'
+            - generic "strong" [ref=e1257]:
+              - paragraph [ref=e1258]: Avenida Senador Tarso Dutra, 565
+              - paragraph [ref=e1259]: Petrópolis, Porto Alegre/RS
+            - generic "list" [ref=e1260]:
+              - paragraph [ref=e1261]:
+                - img [ref=e1262]
+                - text: 243m²
+              - paragraph [ref=e1264]:
+                - img [ref=e1265]
+                - text: "2"
+              - paragraph [ref=e1267]:
+                - img [ref=e1268]
+                - text: "4"
+              - paragraph [ref=e1270]:
+                - img [ref=e1271]
+                - text: "5"
+            - paragraph [ref=e1273]:
+              - generic [ref=e1274]: R$ 22.000
+              - generic "Condominio" [ref=e1275]:
+                - text: Condomínio
+                - generic [ref=e1276]: R$ 4.200
+        - link "Galpão para Locação em Belo Horizonte, Carlos Prates, 1 dormitório, 4 banheiros, 10 vagas strong list Preço" [ref=e1278] [cursor=pointer]:
+          - /url: /imovel/galpao-para-alugar-5-salas-com-garagem-mg-belo-horizonte-carlos-prates-1900m2-RS10000/id-42096479/
+          - generic [ref=e1280]:
+            - heading "Galpão para Locação em Belo Horizonte, Carlos Prates, 1 dormitório, 4 banheiros, 10 vagas" [level=2] [ref=e1282]
+            - generic "strong" [ref=e1283]:
+              - paragraph [ref=e1284]: Endereço indisponível
+              - paragraph [ref=e1285]: Carlos Prates, Belo Horizonte/MG
+            - generic "list" [ref=e1286]:
+              - paragraph [ref=e1287]:
+                - img [ref=e1288]
+                - text: 1.900m²
+              - paragraph [ref=e1290]:
+                - img [ref=e1291]
+                - text: "5"
+              - paragraph [ref=e1293]:
+                - img [ref=e1294]
+                - text: "4"
+              - paragraph [ref=e1296]:
+                - img [ref=e1297]
+                - text: "10"
+            - paragraph [ref=e1299]:
+              - generic [ref=e1300]: R$ 10.000
+              - generic "IPTU" [ref=e1301]:
+                - text: "Iptu:"
+                - generic [ref=e1302]: R$ 1.200
+        - link "Galpão para locação com 140 m² quartos, localizado no bairro Jardim Pauliceia em Campinas/SP. strong list Preço" [ref=e1304] [cursor=pointer]:
+          - /url: /imovel/predio-para-alugar-2-salas-com-garagem-sp-campinas-jardim-pauliceia-3600m2-RS13200/id-41031869/
+          - generic [ref=e1306]:
+            - heading "Galpão para locação com 140 m² quartos, localizado no bairro Jardim Pauliceia em Campinas/SP." [level=2] [ref=e1308]
+            - generic "strong" [ref=e1309]:
+              - paragraph [ref=e1310]: Avenida Marechal Juarez Távora, 161
+              - paragraph [ref=e1311]: Jardim Paulicéia, Campinas/SP
+            - generic "list" [ref=e1312]:
+              - paragraph [ref=e1313]:
+                - img [ref=e1314]
+                - text: 240m²
+              - paragraph [ref=e1316]:
+                - img [ref=e1317]
+                - text: "2"
+              - paragraph [ref=e1319]:
+                - img [ref=e1320]
+                - text: "2"
+              - paragraph [ref=e1322]:
+                - img [ref=e1323]
+                - text: "5"
+            - paragraph [ref=e1325]:
+              - generic [ref=e1326]: R$ 13.200
+              - generic "IPTU" [ref=e1327]:
+                - text: "Iptu:"
+                - generic [ref=e1328]: R$ 684
+        - link "Casa, 156 m² - venda por R$ 2.000.000,00 ou aluguel por R$ 9.076,71/mês - Vila Madalena - São Paulo/SP strong list Preço" [ref=e1330] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-para-alugar-4-salas-com-garagem-sp-sao-paulo-vila-madalena-126m2-RS8000/id-39889042/
+          - generic [ref=e1332]:
+            - heading "Casa, 156 m² - venda por R$ 2.000.000,00 ou aluguel por R$ 9.076,71/mês - Vila Madalena - São Paulo/SP" [level=2] [ref=e1334]
+            - generic "strong" [ref=e1335]:
+              - paragraph [ref=e1336]: Rua Mourato Coelho, 1100
+              - paragraph [ref=e1337]: Vila Madalena, São Paulo/SP
+            - generic "list" [ref=e1338]:
+              - paragraph [ref=e1339]:
+                - img [ref=e1340]
+                - text: 156m²
+              - paragraph [ref=e1342]:
+                - img [ref=e1343]
+                - text: "4"
+              - paragraph [ref=e1345]:
+                - img [ref=e1346]
+                - text: "1"
+              - paragraph [ref=e1348]:
+                - img [ref=e1349]
+                - text: "2"
+            - paragraph [ref=e1351]:
+              - generic [ref=e1352]: R$ 8.000
+              - generic "IPTU" [ref=e1353]:
+                - text: "Iptu:"
+                - generic [ref=e1354]: R$ 1.076
+        - link "Casa comercial com 4 salas para alugar na Rua General Osório, 408, Lidice, Uberlândia por R$ 9.500 strong list Preço" [ref=e1356] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-para-alugar-4-salas-com-garagem-mg-uberlandia-lidice-160m2-RS9500/id-38577353/
+          - generic [ref=e1358]:
+            - heading "Casa comercial com 4 salas para alugar na Rua General Osório, 408, Lidice, Uberlândia por R$ 9.500" [level=2] [ref=e1360]
+            - generic "strong" [ref=e1361]:
+              - paragraph [ref=e1362]: Rua General Osório, 408
+              - paragraph [ref=e1363]: Lidice, Uberlândia/MG
+            - generic "list" [ref=e1364]:
+              - paragraph [ref=e1365]:
+                - img [ref=e1366]
+                - text: 160m²
+              - paragraph [ref=e1368]:
+                - img [ref=e1369]
+                - text: "4"
+              - paragraph [ref=e1371]:
+                - img [ref=e1372]
+                - text: "2"
+              - paragraph [ref=e1374]:
+                - img [ref=e1375]
+                - text: "3"
+            - paragraph [ref=e1377]:
+              - generic [ref=e1378]: R$ 9.500
+        - 'link "Casa Comercial para Locação no Centro de Sorocaba-SP: 1 quarto, 1 suíte, 3 salas, 2 banheiros, 150m². strong list Preço" [ref=e1380] [cursor=pointer]':
+          - /url: /imovel/galpao-para-alugar-3-salas-sp-sorocaba-centro-RS3490/id-41338009/
+          - generic [ref=e1382]:
+            - 'heading "Casa Comercial para Locação no Centro de Sorocaba-SP: 1 quarto, 1 suíte, 3 salas, 2 banheiros, 150m²." [level=2] [ref=e1384]'
+            - generic "strong" [ref=e1385]:
+              - paragraph [ref=e1386]: Rua Leopoldo Machado, 465
+              - paragraph [ref=e1387]: Centro, Sorocaba/SP
+            - generic "list" [ref=e1388]:
+              - paragraph [ref=e1389]:
+                - img [ref=e1390]
+                - text: 150m²
+              - paragraph [ref=e1392]:
+                - img [ref=e1393]
+                - text: "3"
+              - paragraph [ref=e1395]:
+                - img [ref=e1396]
+                - text: "2"
+            - paragraph [ref=e1398]:
+              - generic [ref=e1399]: R$ 3.490
+              - generic "IPTU" [ref=e1400]:
+                - text: "Iptu:"
+                - generic [ref=e1401]: R$ 80
+        - link "Casa comercial com 4 salas para alugar na Avenida Manuel Pimentel, Jardim Planalto, São Paulo strong list Preço" [ref=e1403] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-para-alugar-4-salas-sp-sao-paulo-jardim-planalto-70m2-RS2300/id-41563682/
+          - generic [ref=e1405]:
+            - heading "Casa comercial com 4 salas para alugar na Avenida Manuel Pimentel, Jardim Planalto, São Paulo" [level=2] [ref=e1407]
+            - generic "strong" [ref=e1408]:
+              - paragraph [ref=e1409]: Avenida Manuel Pimentel
+              - paragraph [ref=e1410]: Jardim Planalto, São Paulo/SP
+            - generic "list" [ref=e1411]:
+              - paragraph [ref=e1412]:
+                - img [ref=e1413]
+                - text: 70m²
+              - paragraph [ref=e1415]:
+                - img [ref=e1416]
+                - text: "4"
+              - paragraph [ref=e1418]:
+                - img [ref=e1419]
+                - text: "1"
+            - paragraph [ref=e1421]:
+              - generic [ref=e1422]: R$ 2.300
+        - generic [ref=e1423]:
+          - generic [ref=e1424]:
+            - generic [ref=e1425]:
+              - heading "Imóveis para alugar com 2 quartos nos estados do Brasil" [level=3] [ref=e1426]
+              - generic [ref=e1428]:
+                - button "Anterior" [disabled] [ref=e1429]:
+                  - generic:
+                    - img
+                - button "Próximo" [ref=e1430] [cursor=pointer]:
+                  - generic:
+                    - img
+            - generic [ref=e1431]:
+              - link "Imóveis para alugar em SP com 2 quartos" [ref=e1432] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/sp/2-quartos/
+              - link "Imóveis para alugar no RS com 2 quartos" [ref=e1433] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/rs/2-quartos/
+              - link "Imóveis para alugar em SC com 2 quartos" [ref=e1434] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/sc/2-quartos/
+              - link "Imóveis para alugar no PR com 2 quartos" [ref=e1435] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pr/2-quartos/
+              - link "Imóveis para alugar no RJ com 2 quartos" [ref=e1436] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/rj/2-quartos/
+              - link "Imóveis para alugar em MG com 2 quartos" [ref=e1437] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/mg/2-quartos/
+              - link "Imóveis para alugar na BA com 2 quartos" [ref=e1438] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/ba/2-quartos/
+              - link "Imóveis para alugar em PE com 2 quartos" [ref=e1439] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pe/2-quartos/
+              - link "Imóveis para alugar em GO com 2 quartos" [ref=e1440] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/go/2-quartos/
+              - link "Imóveis para alugar no MT com 2 quartos" [ref=e1441] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/mt/2-quartos/
+              - link "Imóveis para alugar no CE com 2 quartos" [ref=e1442] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/ce/2-quartos/
+              - link "Imóveis para alugar na PB com 2 quartos" [ref=e1443] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pb/2-quartos/
+              - link "Imóveis para alugar no RN com 2 quartos" [ref=e1444] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/rn/2-quartos/
+              - link "Imóveis para alugar em AL com 2 quartos" [ref=e1445] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/al/2-quartos/
+              - link "Imóveis para alugar no AM com 2 quartos" [ref=e1446] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/am/2-quartos/
+              - link "Imóveis para alugar no MS com 2 quartos" [ref=e1447] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/ms/2-quartos/
+              - link "Imóveis para alugar no PA com 2 quartos" [ref=e1448] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pa/2-quartos/
+              - link "Imóveis para alugar no PI com 2 quartos" [ref=e1449] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pi/2-quartos/
+              - link "Imóveis para alugar no ES com 2 quartos" [ref=e1450] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/es/2-quartos/
+              - link "Imóveis para alugar no DF com 2 quartos" [ref=e1451] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/df/2-quartos/
+          - generic [ref=e1456]:
+            - list [ref=e1461]:
+              - listitem [ref=e1462]
+            - list [ref=e1472]:
+              - listitem [ref=e1473]
+            - list [ref=e1483]:
+              - listitem [ref=e1484]
+            - list [ref=e1494]:
+              - listitem [ref=e1495]
+            - list [ref=e1505]:
+              - listitem [ref=e1506]
+          - link "Página 2" [ref=e1513] [cursor=pointer]:
+            - /url: /imoveis-para-alugar/brasil/2-quartos/?pg=2
+          - list [ref=e1517]:
+            - listitem [ref=e1518]
+            - listitem [ref=e1535]
+            - listitem [ref=e1552]
+            - listitem [ref=e1569]
+      - generic [ref=e1586]:
+        - generic [ref=e1587]:
+          - link "Apartamentos p/ alugar" [ref=e1588] [cursor=pointer]:
+            - /url: /apartamentos-para-alugar/brasil/2-quartos/
+            - img [ref=e1589]
+            - paragraph [ref=e1591]:
+              - text: Apartamentos
+              - generic [ref=e1592]: p/ alugar
+          - link "Casas e sobrados p/ alugar" [ref=e1593] [cursor=pointer]:
+            - /url: /casas-para-alugar/brasil/2-quartos/
+            - img [ref=e1594]
+            - paragraph [ref=e1596]:
+              - text: Casas e sobrados
+              - generic [ref=e1597]: p/ alugar
+          - link "Casas em condominio p/ alugar" [ref=e1598] [cursor=pointer]:
+            - /url: /casas-em-condominio-para-alugar/brasil/2-quartos/
+            - img [ref=e1599]
+            - paragraph [ref=e1601]:
+              - text: Casas em condominio
+              - generic [ref=e1602]: p/ alugar
+          - link "Sala comercial p/ alugar" [ref=e1603] [cursor=pointer]:
+            - /url: /sala-comercial-para-alugar/brasil/2-quartos/
+            - img [ref=e1604]
+            - paragraph [ref=e1606]:
+              - text: Sala comercial
+              - generic [ref=e1607]: p/ alugar
+          - link "Casa comercial p/ alugar" [ref=e1608] [cursor=pointer]:
+            - /url: /casa-comercial-para-alugar/brasil/2-quartos/
+            - img [ref=e1609]
+            - paragraph [ref=e1611]:
+              - text: Casa comercial
+              - generic [ref=e1612]: p/ alugar
+          - link "Galpão p/ alugar" [ref=e1613] [cursor=pointer]:
+            - /url: /galpao-para-alugar/brasil/2-quartos/
+            - img [ref=e1614]
+            - paragraph [ref=e1616]:
+              - text: Galpão
+              - generic [ref=e1617]: p/ alugar
+          - link "Coberturas p/ alugar" [ref=e1618] [cursor=pointer]:
+            - /url: /coberturas-para-alugar/brasil/2-quartos/
+            - img [ref=e1619]
+            - paragraph [ref=e1621]:
+              - text: Coberturas
+              - generic [ref=e1622]: p/ alugar
+          - link "Ponto comercial p/ alugar" [ref=e1623] [cursor=pointer]:
+            - /url: /ponto-comercial-para-alugar/brasil/2-quartos/
+            - img [ref=e1624]
+            - paragraph [ref=e1626]:
+              - text: Ponto comercial
+              - generic [ref=e1627]: p/ alugar
+          - link "Prédio p/ alugar" [ref=e1628] [cursor=pointer]:
+            - /url: /predio-para-alugar/brasil/2-quartos/
+            - img [ref=e1629]
+            - paragraph [ref=e1631]:
+              - text: Prédio
+              - generic [ref=e1632]: p/ alugar
+          - link "Chacaras p/ alugar" [ref=e1633] [cursor=pointer]:
+            - /url: /chacaras-para-alugar/brasil/2-quartos/
+            - img [ref=e1634]
+            - paragraph [ref=e1636]:
+              - text: Chacaras
+              - generic [ref=e1637]: p/ alugar
+          - link "Flats p/ alugar" [ref=e1638] [cursor=pointer]:
+            - /url: /flat-para-alugar/brasil/2-quartos/
+            - img [ref=e1639]
+            - paragraph [ref=e1641]:
+              - text: Flats
+              - generic [ref=e1642]: p/ alugar
+          - link "Kitnets p/ alugar" [ref=e1643] [cursor=pointer]:
+            - /url: /kitnet-para-alugar/brasil/2-quartos/
+            - img [ref=e1644]
+            - paragraph [ref=e1646]:
+              - text: Kitnets
+              - generic [ref=e1647]: p/ alugar
+          - link "Lofts p/ alugar" [ref=e1648] [cursor=pointer]:
+            - /url: /loft-para-alugar/brasil/2-quartos/
+            - img [ref=e1649]
+            - paragraph [ref=e1651]:
+              - text: Lofts
+              - generic [ref=e1652]: p/ alugar
+          - link "Terreno comercial p/ alugar" [ref=e1653] [cursor=pointer]:
+            - /url: /terreno-comercial-para-alugar/brasil/2-quartos/
+            - img [ref=e1654]
+            - paragraph [ref=e1656]:
+              - text: Terreno comercial
+              - generic [ref=e1657]: p/ alugar
+          - link "Garagens p/ alugar" [ref=e1658] [cursor=pointer]:
+            - /url: /garagem-para-alugar/brasil/2-quartos/
+            - img [ref=e1659]
+            - paragraph [ref=e1661]:
+              - text: Garagens
+              - generic [ref=e1662]: p/ alugar
+          - link "Fazendas p/ alugar" [ref=e1663] [cursor=pointer]:
+            - /url: /fazendas-para-alugar/brasil/2-quartos/
+            - img [ref=e1664]
+            - paragraph [ref=e1666]:
+              - text: Fazendas
+              - generic [ref=e1667]: p/ alugar
+        - generic:
+          - generic:
+            - button "Anterior" [disabled]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1670] [cursor=pointer]:
+              - generic:
+                - img
+  - generic [ref=e577]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f
+  - alert [ref=e578]: Imóveis de 2 quartos para alugar em todo o Brasil | Chaves na Mão
+  - generic [ref=e1672]:
+    - generic [ref=e1673]:
+      - button [ref=e1674] [cursor=pointer]:
+        - img
+      - paragraph [ref=e1675]: Filtros
+      - button "Limpar" [ref=e1676] [cursor=pointer]:
+        - img
+        - text: Limpar
+    - generic [ref=e1678]:
+      - generic [ref=e1679]:
+        - button "Comprar" [ref=e1680] [cursor=pointer]
+        - button "Alugar" [ref=e1681] [cursor=pointer]
+        - button "Lançamentos" [ref=e1682] [cursor=pointer]
+      - generic [ref=e1683]:
+        - paragraph [ref=e1684]: Localização
+        - button "Em todo Brasil" [ref=e1685] [cursor=pointer]:
+          - generic:
+            - img
+            - generic: Em todo Brasil
+          - img
+      - generic [ref=e1687]:
+        - paragraph [ref=e1688]: Tipos de imóveis
+        - generic [ref=e1690]:
+          - button "Apartamento" [ref=e1691] [cursor=pointer]:
+            - img
+            - text: Apartamento
+          - button "Casas & Sobrados" [ref=e1692] [cursor=pointer]:
+            - img
+            - text: Casas & Sobrados
+          - button "Kitnets & Stúdios" [ref=e1693] [cursor=pointer]:
+            - img
+            - text: Kitnets & Stúdios
+        - button "Mais tipos de imóveis" [ref=e1694] [cursor=pointer]:
+          - img
+          - text: Mais tipos de imóveis
+      - generic [ref=e1697]:
+        - generic [ref=e1698]:
+          - generic [ref=e1699]:
+            - paragraph [ref=e1700]: Preço à partir de
+            - textbox "Preço à partir de" [ref=e1701]:
+              - /placeholder: R$ 0
+          - generic [ref=e1702]:
+            - paragraph [ref=e1703]: Até
+            - textbox "Até" [ref=e1704]:
+              - /placeholder: R$ 0
+        - generic [ref=e1705]:
+          - generic [ref=e1706] [cursor=pointer]:
+            - checkbox "Incluir o preço do condomínio" [ref=e1707]
+            - paragraph [ref=e1708]: Incluir o preço do condomínio
+          - generic [ref=e1709] [cursor=pointer]: "?"
+      - generic [ref=e1710]:
+        - generic [ref=e1711]:
+          - paragraph [ref=e1712]:
+            - generic [ref=e1713]: Quantidade de quartos
+          - generic [ref=e1714]:
+            - button "+ 1" [ref=e1715] [cursor=pointer]
+            - button "+ 2" [ref=e1716] [cursor=pointer]
+            - button "+ 3" [ref=e1717] [cursor=pointer]
+            - button "+ 4" [ref=e1718] [cursor=pointer]
+        - generic [ref=e1719]:
+          - paragraph [ref=e1720]:
+            - generic [ref=e1721]: Banheiros
+          - generic [ref=e1722]:
+            - button "+ 1" [ref=e1723] [cursor=pointer]
+            - button "+ 2" [ref=e1724] [cursor=pointer]
+            - button "+ 3" [ref=e1725] [cursor=pointer]
+            - button "+ 4" [ref=e1726] [cursor=pointer]
+        - generic [ref=e1727]:
+          - paragraph [ref=e1728]:
+            - generic [ref=e1729]: Garagens
+          - generic [ref=e1730]:
+            - button "+ 1" [ref=e1731] [cursor=pointer]
+            - button "+ 2" [ref=e1732] [cursor=pointer]
+            - button "+ 3" [ref=e1733] [cursor=pointer]
+            - button "+ 4" [ref=e1734] [cursor=pointer]
+      - generic [ref=e1737]:
+        - generic [ref=e1738]:
+          - paragraph [ref=e1739]: Área útil (m²) de
+          - textbox "Área útil (m²) de" [ref=e1740]:
+            - /placeholder: 0 m²
+        - generic [ref=e1741]:
+          - paragraph [ref=e1742]: Até
+          - textbox "Até" [ref=e1743]:
+            - /placeholder: 0 m²
+      - generic [ref=e1745]:
+        - generic [ref=e1746] [cursor=pointer]:
+          - paragraph [ref=e1747]:
+            - generic [ref=e1748]: Área de Lazer
+            - img [ref=e1750]
+          - generic [ref=e1752]:
+            - button "Brinquedoteca" [ref=e1753]
+            - button "Churrasqueira" [ref=e1754]
+            - button "Espaço gourmet" [ref=e1755]
+            - button "Piscina" [ref=e1756]
+            - button "Playground" [ref=e1757]
+            - button "Salão de festas" [ref=e1758]
+            - button "Salão de jogos" [ref=e1759]
+        - generic [ref=e1760] [cursor=pointer]:
+          - paragraph [ref=e1761]:
+            - generic [ref=e1762]: Conveniências
+            - img [ref=e1764]
+          - generic [ref=e1766]:
+            - button "Ar-condicionado" [ref=e1767]
+            - button "Armários Planejados" [ref=e1768]
+            - button "Elevador" [ref=e1769]
+            - button "Hidromassagem" [ref=e1770]
+            - button "Jardim" [ref=e1771]
+            - button "Lareira" [ref=e1772]
+            - button "Mobiliado" [ref=e1773]
+            - button "Quintal" [ref=e1774]
+            - button "Sauna" [ref=e1775]
+            - button "Varanda" [ref=e1776]
+        - generic [ref=e1777] [cursor=pointer]:
+          - paragraph [ref=e1778]:
+            - generic [ref=e1779]: Funcional
+            - img [ref=e1781]
+          - generic [ref=e1783]:
+            - button "Área de serviço" [ref=e1784]
+            - button "Ático" [ref=e1785]
+            - button "Closet" [ref=e1786]
+            - button "Dependência de Empregada" [ref=e1787]
+            - button "Edícula" [ref=e1788]
+            - button "Escritório" [ref=e1789]
+            - button "Lavabo" [ref=e1790]
+            - button "Lavanderia" [ref=e1791]
+        - generic [ref=e1792] [cursor=pointer]:
+          - paragraph [ref=e1793]:
+            - generic [ref=e1794]: Segurança
+            - img [ref=e1796]
+          - generic [ref=e1798]:
+            - button "Circuito de segurança" [ref=e1799]
+            - button "Guarita" [ref=e1800]
+            - button "Interfone" [ref=e1801]
+            - button "Portaria" [ref=e1802]
+        - generic [ref=e1803] [cursor=pointer]:
+          - paragraph [ref=e1804]:
+            - generic [ref=e1805]: Tipo de Vendedor
+            - img [ref=e1807]
+          - generic [ref=e1809]:
+            - button "Direto com proprietário" [ref=e1810]
+            - button "Somente Imobiliárias" [ref=e1811]
+    - generic [ref=e1812]:
+      - paragraph [ref=e1817] [cursor=pointer]:
+        - generic [ref=e1818]: Seleção atual
+        - generic [ref=e1819]:
+          - generic [ref=e1820]: 2 Filtros selecionados
+          - img [ref=e1821]
+      - button "Aplicar Filtros" [ref=e1823] [cursor=pointer]:
+        - img
+        - text: Aplicar Filtros

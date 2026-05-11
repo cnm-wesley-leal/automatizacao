@@ -1,0 +1,690 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e587] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e588]
+            - text: Favoritos
+          - link "Entrar" [ref=e590] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - generic [ref=e591]:
+        - list [ref=e592]:
+          - listitem [ref=e593]:
+            - button "Filtros" [ref=e594] [cursor=pointer]:
+              - img
+              - text: Filtros
+            - generic [ref=e945]: + 2
+          - listitem [ref=e595]:
+            - button "Em todo Brasil" [ref=e596] [cursor=pointer]:
+              - img
+              - generic: Em todo Brasil
+              - img
+          - listitem [ref=e597]:
+            - button "Todos os imóveis" [ref=e598] [cursor=pointer]:
+              - generic:
+                - img
+                - text: Todos os imóveis
+              - img
+          - listitem [ref=e599]:
+            - button "Cômodos" [ref=e600] [cursor=pointer]:
+              - img
+              - text: Cômodos
+              - img
+          - listitem [ref=e601]:
+            - button "Preço" [ref=e602] [cursor=pointer]:
+              - img
+              - text: Preço
+              - img
+        - button "Limpar" [ref=e603] [cursor=pointer]:
+          - img
+          - text: Limpar
+    - article [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - navigation "breadcrumb" [ref=e41]:
+            - list [ref=e42]:
+              - listitem [ref=e43]:
+                - link "Imóveis" [ref=e44] [cursor=pointer]:
+                  - /url: /imoveis/brasil/
+              - listitem [ref=e45]:
+                - img [ref=e46]
+              - listitem [ref=e48]:
+                - link "Em todo Brasil" [disabled] [ref=e49]
+          - heading "416.176 Imóveis em todo Brasil" [level=1] [ref=e946]:
+            - strong [ref=e51]: 416.176 Imóveis em todo Brasil
+        - button "Ordernar por Mais relevantes" [ref=e605] [cursor=pointer]:
+          - generic: Ordernar por
+          - generic:
+            - generic: Mais relevantes
+          - img
+      - generic [ref=e53]:
+        - generic [ref=e947]:
+          - link "Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville strong list Preço" [ref=e948] [cursor=pointer]:
+            - /url: /imovel/cobertura-a-venda-3-quartos-com-garagem-sc-joinville-saguacu-129m2-RS865536/id-18801598/
+            - generic [ref=e949]:
+              - img "Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville" [ref=e951]
+              - img "Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville" [ref=e953]
+            - generic [ref=e957]:
+              - heading "Cobertura com 3 quartos à venda na Rua Carlos Benack, 131, Saguaçu, Joinville" [level=2] [ref=e959]
+              - generic "strong" [ref=e960]:
+                - paragraph [ref=e961]: Rua Carlos Benack, 131
+                - paragraph [ref=e962]: Saguaçu, Joinville/SC
+              - generic "list" [ref=e963]:
+                - paragraph [ref=e964]:
+                  - img [ref=e965]
+                  - text: 129m²
+                - paragraph [ref=e967]:
+                  - img [ref=e968]
+                  - text: "3"
+                - paragraph [ref=e970]:
+                  - img [ref=e971]
+                  - text: "2"
+                - paragraph [ref=e973]:
+                  - img [ref=e974]
+                  - text: "2"
+              - paragraph [ref=e976]:
+                - generic [ref=e977]: R$ 865.536
+          - button "Contatar" [ref=e978] [cursor=pointer]
+          - button "Favoritar" [ref=e979] [cursor=pointer]:
+            - img
+          - generic [ref=e980]:
+            - button "Anterior" [disabled] [ref=e981]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e982] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e983]:
+          - link "Apartamento com 2 quartos para alugar na Rua Endres, 1165, Vila das Bandeiras, Guarulhos Apartamento com 2 quartos para alugar na Rua Endres, 1165, Vila das Bandeiras, Guarulhos Apartamento com 2 quartos para alugar na Rua Endres, 1165, Vila das Bandeiras, Guarulhos strong list Preço" [ref=e984] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-guarulhos-vila-das-bandeiras-55m2-RS3100/id-41777327/
+            - generic [ref=e985]:
+              - img "Apartamento com 2 quartos para alugar na Rua Endres, 1165, Vila das Bandeiras, Guarulhos" [ref=e987]
+              - img "Apartamento com 2 quartos para alugar na Rua Endres, 1165, Vila das Bandeiras, Guarulhos" [ref=e989]
+            - generic [ref=e993]:
+              - heading "Apartamento com 2 quartos para alugar na Rua Endres, 1165, Vila das Bandeiras, Guarulhos" [level=2] [ref=e995]
+              - generic "strong" [ref=e996]:
+                - paragraph [ref=e997]: Rua Endres, 1165
+                - paragraph [ref=e998]: Vila das Bandeiras, Guarulhos/SP
+              - generic "list" [ref=e999]:
+                - paragraph [ref=e1000]:
+                  - img [ref=e1001]
+                  - text: 55m²
+                - paragraph [ref=e1003]:
+                  - img [ref=e1004]
+                  - text: "2"
+                - paragraph [ref=e1006]:
+                  - img [ref=e1007]
+                  - text: "2"
+                - paragraph [ref=e1009]:
+                  - img [ref=e1010]
+                  - text: "1"
+              - paragraph [ref=e1012]:
+                - generic [ref=e1013]: R$ 3.100
+                - generic "Condominio" [ref=e1014]:
+                  - text: Condomínio
+                  - generic [ref=e1015]: R$ 520
+          - button "Contatar" [ref=e1016] [cursor=pointer]
+          - button "Favoritar" [ref=e1017] [cursor=pointer]:
+            - img
+          - generic [ref=e1020]:
+            - img [ref=e1021]
+            - text: Destaque
+          - generic [ref=e1023]:
+            - button "Anterior" [disabled] [ref=e1024]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1025] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e1026]:
+          - link "Apartamento com 2 quartos à venda na Alameda E, S N, Quitandinha, São Luís Apartamento com 2 quartos à venda na Alameda E, S N, Quitandinha, São Luís Apartamento com 2 quartos à venda na Alameda E, S N, Quitandinha, São Luís strong list Preço" [ref=e1027] [cursor=pointer]:
+            - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-ma-sao-luis-quitandinha-74m2-RS610000/id-41645378/
+            - generic [ref=e1028]:
+              - img "Apartamento com 2 quartos à venda na Alameda E, S N, Quitandinha, São Luís" [ref=e1030]
+              - img "Apartamento com 2 quartos à venda na Alameda E, S N, Quitandinha, São Luís" [ref=e1032]
+            - generic [ref=e1036]:
+              - heading "Apartamento com 2 quartos à venda na Alameda E, S N, Quitandinha, São Luís" [level=2] [ref=e1038]
+              - generic "strong" [ref=e1039]:
+                - paragraph [ref=e1040]: Alameda E, S N
+                - paragraph [ref=e1041]: Quitandinha, São Luís/MA
+              - generic "list" [ref=e1042]:
+                - paragraph [ref=e1043]:
+                  - img [ref=e1044]
+                  - text: 74m²
+                - paragraph [ref=e1046]:
+                  - img [ref=e1047]
+                  - text: "2"
+                - paragraph [ref=e1049]:
+                  - img [ref=e1050]
+                  - text: "2"
+                - paragraph [ref=e1052]:
+                  - img [ref=e1053]
+                  - text: "1"
+              - paragraph [ref=e1055]:
+                - generic [ref=e1056]: R$ 610.000
+                - generic "Condominio" [ref=e1057]:
+                  - text: Condomínio
+                  - generic [ref=e1058]: R$ 600
+          - button "Contatar" [ref=e1059] [cursor=pointer]
+          - button "Favoritar" [ref=e1060] [cursor=pointer]:
+            - img
+          - generic [ref=e1061]:
+            - button "Anterior" [disabled] [ref=e1062]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1063] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e1064]:
+          - link "Apartamento para alugar na Avenida Almirante Fonseca Neves, Balneário Perequê, Porto Belo Apartamento para alugar na Avenida Almirante Fonseca Neves, Balneário Perequê, Porto Belo Apartamento para alugar na Avenida Almirante Fonseca Neves, Balneário Perequê, Porto Belo strong list Preço" [ref=e1065] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-com-garagem-sc-porto-belo-balneario-pereque-RS5800/id-42115231/
+            - generic [ref=e1066]:
+              - img "Apartamento para alugar na Avenida Almirante Fonseca Neves, Balneário Perequê, Porto Belo" [ref=e1068]
+              - img "Apartamento para alugar na Avenida Almirante Fonseca Neves, Balneário Perequê, Porto Belo" [ref=e1070]
+            - generic [ref=e1074]:
+              - heading "Apartamento para alugar na Avenida Almirante Fonseca Neves, Balneário Perequê, Porto Belo" [level=2] [ref=e1076]
+              - generic "strong" [ref=e1077]:
+                - paragraph [ref=e1078]: Avenida Almirante Fonseca Neves
+                - paragraph [ref=e1079]: Balneário Perequê, Porto Belo/SC
+              - generic "list" [ref=e1080]:
+                - paragraph [ref=e1081]:
+                  - img [ref=e1082]
+                  - text: 110m²
+                - paragraph [ref=e1084]:
+                  - img [ref=e1085]
+                  - text: "2"
+              - paragraph [ref=e1087]:
+                - generic [ref=e1088]: R$ 5.800
+          - button "Contatar" [ref=e1089] [cursor=pointer]
+          - button "Favoritar" [ref=e1090] [cursor=pointer]:
+            - img
+          - generic [ref=e1091]:
+            - button "Anterior" [disabled] [ref=e1092]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1093] [cursor=pointer]:
+              - generic:
+                - img
+        - link "Apartamento com 2 quartos à venda no Jardim das Belezas, Carapicuíba strong list Preço" [ref=e1095] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-carapicuiba-jardim-das-belezas-RS560000/id-33351843/
+          - generic [ref=e1097]:
+            - heading "Apartamento com 2 quartos à venda no Jardim das Belezas, Carapicuíba" [level=2] [ref=e1099]
+            - generic "strong" [ref=e1100]:
+              - paragraph [ref=e1101]: Endereço indisponível
+              - paragraph [ref=e1102]: Jardim das Belezas, Carapicuíba/SP
+            - generic "list" [ref=e1103]:
+              - paragraph [ref=e1104]:
+                - img [ref=e1105]
+                - text: 60m²
+              - paragraph [ref=e1107]:
+                - img [ref=e1108]
+                - text: "2"
+              - paragraph [ref=e1110]:
+                - img [ref=e1111]
+                - text: "2"
+              - paragraph [ref=e1113]:
+                - img [ref=e1114]
+                - text: "1"
+            - paragraph [ref=e1116]:
+              - generic [ref=e1117]: R$ 560.000
+              - generic "Condominio" [ref=e1118]:
+                - text: Condomínio
+                - generic [ref=e1119]: R$ 650
+        - generic [ref=e1124]:
+          - list [ref=e1129]:
+            - listitem [ref=e1130]
+          - list [ref=e1140]:
+            - listitem [ref=e1141]
+          - list [ref=e1151]:
+            - listitem [ref=e1152]
+          - list [ref=e1162]:
+            - listitem [ref=e1163]
+          - list [ref=e1173]:
+            - listitem [ref=e1174]
+        - link "Kitnet / Stúdio para alugar na Rua Machado de Assis, 150, Vila Mariana, São Paulo strong list Preço" [ref=e1181] [cursor=pointer]:
+          - /url: /imovel/kitnet-para-alugar-sp-sao-paulo-vila-mariana-30m2-RS3200/id-39861714/
+          - generic [ref=e1183]:
+            - heading "Kitnet / Stúdio para alugar na Rua Machado de Assis, 150, Vila Mariana, São Paulo" [level=2] [ref=e1185]
+            - generic "strong" [ref=e1186]:
+              - paragraph [ref=e1187]: Rua Machado De Assis, 150
+              - paragraph [ref=e1188]: Vila Mariana, São Paulo/SP
+            - generic "list" [ref=e1189]:
+              - paragraph [ref=e1190]:
+                - img [ref=e1191]
+                - text: 30m²
+              - paragraph [ref=e1193]:
+                - img [ref=e1194]
+                - text: "1"
+              - paragraph [ref=e1196]:
+                - img [ref=e1197]
+                - text: "1"
+            - paragraph [ref=e1199]:
+              - generic [ref=e1200]: R$ 3.200
+              - generic "Condominio" [ref=e1201]:
+                - text: Condomínio
+                - generic [ref=e1202]: R$ 550
+        - link "Apartamento com 2 quartos à venda na Rua José Victor da Rosa, 94, Barreiros, São José por R$ 470.000 strong list Preço" [ref=e1204] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sc-sao-jose-barreiros-72m2-RS470000/id-38144542/
+          - generic [ref=e1206]:
+            - heading "Apartamento com 2 quartos à venda na Rua José Victor da Rosa, 94, Barreiros, São José por R$ 470.000" [level=2] [ref=e1208]
+            - generic "strong" [ref=e1209]:
+              - paragraph [ref=e1210]: Rua José Victor Da Rosa, 94
+              - paragraph [ref=e1211]: Barreiros, São José/SC
+            - generic "list" [ref=e1212]:
+              - paragraph [ref=e1213]:
+                - img [ref=e1214]
+                - text: 72m²
+              - paragraph [ref=e1216]:
+                - img [ref=e1217]
+                - text: "2"
+              - paragraph [ref=e1219]:
+                - img [ref=e1220]
+                - text: "1"
+              - paragraph [ref=e1222]:
+                - img [ref=e1223]
+                - text: "1"
+            - paragraph [ref=e1225]:
+              - generic [ref=e1226]: R$ 470.000
+              - generic "Condominio" [ref=e1227]:
+                - text: Condomínio
+                - generic [ref=e1228]: R$ 500
+        - link "Apartamento Padrão de 3 dormitórios em Alphaville- Tamboré- Santana de Parnaíba- SP strong list Preço" [ref=e1230] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-3-quartos-com-garagem-sp-santana-de-parnaiba-tambore-100m2-RS6550/id-41425251/
+          - generic [ref=e1232]:
+            - heading "Apartamento Padrão de 3 dormitórios em Alphaville- Tamboré- Santana de Parnaíba- SP" [level=2] [ref=e1234]
+            - generic "strong" [ref=e1235]:
+              - paragraph [ref=e1236]: Alameda Terras Altas, 1000
+              - paragraph [ref=e1237]: Tamboré, Santana de Parnaíba/SP
+            - generic "list" [ref=e1238]:
+              - paragraph [ref=e1239]:
+                - img [ref=e1240]
+                - text: 100m²
+              - paragraph [ref=e1242]:
+                - img [ref=e1243]
+                - text: "3"
+              - paragraph [ref=e1245]:
+                - img [ref=e1246]
+                - text: "2"
+              - paragraph [ref=e1248]:
+                - img [ref=e1249]
+                - text: "2"
+            - paragraph [ref=e1251]:
+              - generic [ref=e1252]: R$ 6.550
+              - generic "Condominio" [ref=e1253]:
+                - text: Condomínio
+                - generic [ref=e1254]: R$ 1.250
+        - link "Apartamentos com 1dorm. Belém perto da estação bresser strong list Preço" [ref=e1256] [cursor=pointer]:
+          - /url: /lancamento/apartamentos-com-1dorm-belem-perto-da-estacao-bresser/id-42196188/
+          - generic [ref=e1258]:
+            - heading "Apartamentos com 1dorm. Belém perto da estação bresser" [level=2] [ref=e1260]
+            - generic "strong" [ref=e1261]:
+              - paragraph [ref=e1262]: Rua Joaquim Carlos, 580
+              - paragraph [ref=e1263]: Belém, São Paulo/SP
+            - generic "list" [ref=e1264]:
+              - paragraph [ref=e1265]:
+                - img [ref=e1266]
+                - text: 27m²
+              - paragraph [ref=e1268]:
+                - img [ref=e1269]
+                - text: 1 a 2
+              - paragraph [ref=e1271]:
+                - img [ref=e1272]
+                - text: "1"
+            - paragraph [ref=e1274]:
+              - generic [ref=e1275]: R$ 210.000
+              - generic [ref=e1276]: A partir de
+        - link "Apartamento disponível para venda ou locação no Bairro da Glória em Macaé. strong list Preço" [ref=e1278] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-rj-macae-gloria-58m2-RS2200/id-42007534/
+          - generic [ref=e1280]:
+            - heading "Apartamento disponível para venda ou locação no Bairro da Glória em Macaé." [level=2] [ref=e1282]
+            - generic "strong" [ref=e1283]:
+              - paragraph [ref=e1284]: Rua Sidnei Vasconcelos Aguiar, 1047
+              - paragraph [ref=e1285]: Glória, Macaé/RJ
+            - generic "list" [ref=e1286]:
+              - paragraph [ref=e1287]:
+                - img [ref=e1288]
+                - text: 58m²
+              - paragraph [ref=e1290]:
+                - img [ref=e1291]
+                - text: "2"
+              - paragraph [ref=e1293]:
+                - img [ref=e1294]
+                - text: "2"
+              - paragraph [ref=e1296]:
+                - img [ref=e1297]
+                - text: "1"
+            - paragraph [ref=e1299]:
+              - generic [ref=e1300]: R$ 2.200
+              - generic "Condominio" [ref=e1301]:
+                - text: Condomínio
+                - generic [ref=e1302]: R$ 642
+        - link "Apartamento com 3 quartos à venda na Rua Passo da Pátria, 1678, Bela Aliança, São Paulo strong list Preço" [ref=e1304] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-sao-paulo-bela-alianca-RS2250000/id-20094227/
+          - generic [ref=e1306]:
+            - heading "Apartamento com 3 quartos à venda na Rua Passo da Pátria, 1678, Bela Aliança, São Paulo" [level=2] [ref=e1308]
+            - generic "strong" [ref=e1309]:
+              - paragraph [ref=e1310]: Rua Passo Da Pátria, 1678
+              - paragraph [ref=e1311]: Bela Aliança, São Paulo/SP
+            - generic "list" [ref=e1312]:
+              - paragraph [ref=e1313]:
+                - img [ref=e1314]
+                - text: 222m²
+              - paragraph [ref=e1316]:
+                - img [ref=e1317]
+                - text: "3"
+              - paragraph [ref=e1319]:
+                - img [ref=e1320]
+                - text: "5"
+              - paragraph [ref=e1322]:
+                - img [ref=e1323]
+                - text: "4"
+            - paragraph [ref=e1325]:
+              - generic [ref=e1326]: R$ 2.250.000
+              - generic "Condominio" [ref=e1327]:
+                - text: Condomínio
+                - generic [ref=e1328]: R$ 2.562
+        - link "Apartamento Semi Mobiliado, 2 dormitorio sendo 1 suite no centro! strong list Preço" [ref=e1330] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sc-joinville-centro-90m2-RS2850/id-39280600/
+          - generic [ref=e1332]:
+            - heading "Apartamento Semi Mobiliado, 2 dormitorio sendo 1 suite no centro!" [level=2] [ref=e1334]
+            - generic "strong" [ref=e1335]:
+              - paragraph [ref=e1336]: Rua Max Colin, 707
+              - paragraph [ref=e1337]: Centro, Joinville/SC
+            - generic "list" [ref=e1338]:
+              - paragraph [ref=e1339]:
+                - img [ref=e1340]
+                - text: 70m²
+              - paragraph [ref=e1342]:
+                - img [ref=e1343]
+                - text: "2"
+              - paragraph [ref=e1345]:
+                - img [ref=e1346]
+                - text: "2"
+              - paragraph [ref=e1348]:
+                - img [ref=e1349]
+                - text: "1"
+            - paragraph [ref=e1351]:
+              - generic [ref=e1352]: R$ 2.850
+              - generic "Condominio" [ref=e1353]:
+                - text: Condomínio
+                - generic [ref=e1354]: R$ 430
+        - link "Apartamento com 3 quartos à venda na Avenida Ermanno Dallari, Barra da Tijuca, Rio de Janeiro strong list Preço" [ref=e1356] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-rj-rio-de-janeiro-barra-da-tijuca-181m2-RS3740000/id-8392296/
+          - generic [ref=e1358]:
+            - heading "Apartamento com 3 quartos à venda na Avenida Ermanno Dallari, Barra da Tijuca, Rio de Janeiro" [level=2] [ref=e1360]
+            - generic "strong" [ref=e1361]:
+              - paragraph [ref=e1362]: Avenida Ermanno Dallari
+              - paragraph [ref=e1363]: Barra da Tijuca, Rio de Janeiro/RJ
+            - generic "list" [ref=e1364]:
+              - paragraph [ref=e1365]:
+                - img [ref=e1366]
+                - text: 181m²
+              - paragraph [ref=e1368]:
+                - img [ref=e1369]
+                - text: "3"
+              - paragraph [ref=e1371]:
+                - img [ref=e1372]
+                - text: "5"
+              - paragraph [ref=e1374]:
+                - img [ref=e1375]
+                - text: "2"
+            - paragraph [ref=e1377]:
+              - generic [ref=e1378]: R$ 3.740.000
+              - generic "Condominio" [ref=e1379]:
+                - text: Condomínio
+                - generic [ref=e1380]: R$ 2.700
+        - link "Apartamento com 2 quartos para alugar na Rua Pacheco Gato, 120, Jardim Nove de Julho, São Paulo strong list Preço" [ref=e1382] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-jardim-nove-de-julho-RS1750/id-41948656/
+          - generic [ref=e1384]:
+            - heading "Apartamento com 2 quartos para alugar na Rua Pacheco Gato, 120, Jardim Nove de Julho, São Paulo" [level=2] [ref=e1386]
+            - generic "strong" [ref=e1387]:
+              - paragraph [ref=e1388]: Rua Pacheco Gato, 120
+              - paragraph [ref=e1389]: Jardim Nove de Julho, São Paulo/SP
+            - generic "list" [ref=e1390]:
+              - paragraph [ref=e1391]:
+                - img [ref=e1392]
+                - text: 50m²
+              - paragraph [ref=e1394]:
+                - img [ref=e1395]
+                - text: "2"
+              - paragraph [ref=e1397]:
+                - img [ref=e1398]
+                - text: "1"
+              - paragraph [ref=e1400]:
+                - img [ref=e1401]
+                - text: "1"
+            - paragraph [ref=e1403]:
+              - generic [ref=e1404]: R$ 1.750
+              - generic "Condominio" [ref=e1405]:
+                - text: Condomínio
+                - generic [ref=e1406]: R$ 650
+        - link "Apartamento com 2 quartos para alugar na Rua Bom Sucesso, 1464, Cidade Mãe do Céu, São Paulo strong list Preço" [ref=e1408] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-cidade-mae-do-ceu-81m2-RS7500/id-41392606/
+          - generic [ref=e1410]:
+            - heading "Apartamento com 2 quartos para alugar na Rua Bom Sucesso, 1464, Cidade Mãe do Céu, São Paulo" [level=2] [ref=e1412]
+            - generic "strong" [ref=e1413]:
+              - paragraph [ref=e1414]: Rua Bom Sucesso, 1464
+              - paragraph [ref=e1415]: Cidade Mãe do Céu, São Paulo/SP
+            - generic "list" [ref=e1416]:
+              - paragraph [ref=e1417]:
+                - img [ref=e1418]
+                - text: 81m²
+              - paragraph [ref=e1420]:
+                - img [ref=e1421]
+                - text: "2"
+              - paragraph [ref=e1423]:
+                - img [ref=e1424]
+                - text: "3"
+              - paragraph [ref=e1426]:
+                - img [ref=e1427]
+                - text: "2"
+            - paragraph [ref=e1429]:
+              - generic [ref=e1430]: R$ 7.500
+              - generic "Condominio" [ref=e1431]:
+                - text: Condomínio
+                - generic [ref=e1432]: R$ 800
+        - generic [ref=e1433]:
+          - generic [ref=e1434]:
+            - generic [ref=e1435]:
+              - heading "Imóveis nos estados do Brasil" [level=3] [ref=e1436]
+              - generic [ref=e1438]:
+                - button "Anterior" [disabled] [ref=e1439]:
+                  - generic:
+                    - img
+                - button "Próximo" [ref=e1440] [cursor=pointer]:
+                  - generic:
+                    - img
+            - generic [ref=e1441]:
+              - link "Imóveis em SP" [ref=e1442] [cursor=pointer]:
+                - /url: /imoveis/sp/
+              - link "Imóveis no RS" [ref=e1443] [cursor=pointer]:
+                - /url: /imoveis/rs/
+              - link "Imóveis no PR" [ref=e1444] [cursor=pointer]:
+                - /url: /imoveis/pr/
+              - link "Imóveis em MG" [ref=e1445] [cursor=pointer]:
+                - /url: /imoveis/mg/
+              - link "Imóveis em SC" [ref=e1446] [cursor=pointer]:
+                - /url: /imoveis/sc/
+              - link "Imóveis no RJ" [ref=e1447] [cursor=pointer]:
+                - /url: /imoveis/rj/
+              - link "Imóveis na BA" [ref=e1448] [cursor=pointer]:
+                - /url: /imoveis/ba/
+              - link "Imóveis em GO" [ref=e1449] [cursor=pointer]:
+                - /url: /imoveis/go/
+              - link "Imóveis no MT" [ref=e1450] [cursor=pointer]:
+                - /url: /imoveis/mt/
+              - link "Imóveis em PE" [ref=e1451] [cursor=pointer]:
+                - /url: /imoveis/pe/
+              - link "Imóveis no CE" [ref=e1452] [cursor=pointer]:
+                - /url: /imoveis/ce/
+              - link "Imóveis no RN" [ref=e1453] [cursor=pointer]:
+                - /url: /imoveis/rn/
+              - link "Imóveis na PB" [ref=e1454] [cursor=pointer]:
+                - /url: /imoveis/pb/
+              - link "Imóveis em SE" [ref=e1455] [cursor=pointer]:
+                - /url: /imoveis/se/
+              - link "Imóveis no ES" [ref=e1456] [cursor=pointer]:
+                - /url: /imoveis/es/
+              - link "Imóveis no MS" [ref=e1457] [cursor=pointer]:
+                - /url: /imoveis/ms/
+              - link "Imóveis no PI" [ref=e1458] [cursor=pointer]:
+                - /url: /imoveis/pi/
+              - link "Imóveis no PA" [ref=e1459] [cursor=pointer]:
+                - /url: /imoveis/pa/
+              - link "Imóveis em AL" [ref=e1460] [cursor=pointer]:
+                - /url: /imoveis/al/
+              - link "Imóveis no AM" [ref=e1461] [cursor=pointer]:
+                - /url: /imoveis/am/
+          - generic [ref=e1466]:
+            - list [ref=e1471]:
+              - listitem [ref=e1472]
+            - list [ref=e1482]:
+              - listitem [ref=e1483]
+            - list [ref=e1493]:
+              - listitem [ref=e1494]
+            - list [ref=e1504]:
+              - listitem [ref=e1505]
+            - list [ref=e1515]:
+              - listitem [ref=e1516]
+          - list [ref=e1525]:
+            - listitem [ref=e1526]
+            - listitem [ref=e1543]
+            - listitem [ref=e1560]
+            - listitem [ref=e1577]
+      - generic [ref=e1594]:
+        - generic [ref=e1595]:
+          - link "Apartamentos 366.840 ofertas" [ref=e1596] [cursor=pointer]:
+            - /url: /apartamentos/brasil/?filtro=are:[5,12]
+            - img [ref=e1597]
+            - paragraph [ref=e1599]:
+              - text: Apartamentos
+              - generic [ref=e1600]: 366.840 ofertas
+          - link "Coberturas 19.967 ofertas" [ref=e1601] [cursor=pointer]:
+            - /url: /coberturas/brasil/?filtro=are:[5,12]
+            - img [ref=e1602]
+            - paragraph [ref=e1604]:
+              - text: Coberturas
+              - generic [ref=e1605]: 19.967 ofertas
+          - link "Kitnets 12.066 ofertas" [ref=e1606] [cursor=pointer]:
+            - /url: /kitnet/brasil/?filtro=are:[5,12]
+            - img [ref=e1607]
+            - paragraph [ref=e1609]:
+              - text: Kitnets
+              - generic [ref=e1610]: 12.066 ofertas
+          - link "Flats 11.058 ofertas" [ref=e1611] [cursor=pointer]:
+            - /url: /flat/brasil/?filtro=are:[5,12]
+            - img [ref=e1612]
+            - paragraph [ref=e1614]:
+              - text: Flats
+              - generic [ref=e1615]: 11.058 ofertas
+          - link "Casas e sobrados 2.077 ofertas" [ref=e1616] [cursor=pointer]:
+            - /url: /casas/brasil/?filtro=are:[5,12]
+            - img [ref=e1617]
+            - paragraph [ref=e1619]:
+              - text: Casas e sobrados
+              - generic [ref=e1620]: 2.077 ofertas
+          - link "Casas em condominio 1.630 ofertas" [ref=e1621] [cursor=pointer]:
+            - /url: /casas-em-condominio/brasil/?filtro=are:[5,12]
+            - img [ref=e1622]
+            - paragraph [ref=e1624]:
+              - text: Casas em condominio
+              - generic [ref=e1625]: 1.630 ofertas
+          - link "Prédio 1.036 ofertas" [ref=e1626] [cursor=pointer]:
+            - /url: /predio/brasil/?filtro=are:[5,12]
+            - img [ref=e1627]
+            - paragraph [ref=e1629]:
+              - text: Prédio
+              - generic [ref=e1630]: 1.036 ofertas
+          - link "Lofts 787 ofertas" [ref=e1631] [cursor=pointer]:
+            - /url: /loft/brasil/?filtro=are:[5,12]
+            - img [ref=e1632]
+            - paragraph [ref=e1634]:
+              - text: Lofts
+              - generic [ref=e1635]: 787 ofertas
+          - link "Sala comercial 363 ofertas" [ref=e1636] [cursor=pointer]:
+            - /url: /sala-comercial/brasil/?filtro=are:[5,12]
+            - img [ref=e1637]
+            - paragraph [ref=e1639]:
+              - text: Sala comercial
+              - generic [ref=e1640]: 363 ofertas
+          - link "Terrenos em condomínio 113 ofertas" [ref=e1641] [cursor=pointer]:
+            - /url: /terrenos-em-condominio/brasil/?filtro=are:[5,12]
+            - img [ref=e1642]
+            - paragraph [ref=e1644]:
+              - text: Terrenos em condomínio
+              - generic [ref=e1645]: 113 ofertas
+          - link "Ponto comercial 82 ofertas" [ref=e1646] [cursor=pointer]:
+            - /url: /ponto-comercial/brasil/?filtro=are:[5,12]
+            - img [ref=e1647]
+            - paragraph [ref=e1649]:
+              - text: Ponto comercial
+              - generic [ref=e1650]: 82 ofertas
+          - link "Terrenos 70 ofertas" [ref=e1651] [cursor=pointer]:
+            - /url: /terrenos/brasil/?filtro=are:[5,12]
+            - img [ref=e1652]
+            - paragraph [ref=e1654]:
+              - text: Terrenos
+              - generic [ref=e1655]: 70 ofertas
+          - link "Casa comercial 65 ofertas" [ref=e1656] [cursor=pointer]:
+            - /url: /casa-comercial/brasil/?filtro=are:[5,12]
+            - img [ref=e1657]
+            - paragraph [ref=e1659]:
+              - text: Casa comercial
+              - generic [ref=e1660]: 65 ofertas
+          - link "Chacaras 9 ofertas" [ref=e1661] [cursor=pointer]:
+            - /url: /chacaras/brasil/?filtro=are:[5,12]
+            - img [ref=e1662]
+            - paragraph [ref=e1664]:
+              - text: Chacaras
+              - generic [ref=e1665]: 9 ofertas
+          - link "Garagens 8 ofertas" [ref=e1666] [cursor=pointer]:
+            - /url: /garagem/brasil/?filtro=are:[5,12]
+            - img [ref=e1667]
+            - paragraph [ref=e1669]:
+              - text: Garagens
+              - generic [ref=e1670]: 8 ofertas
+          - link "Galpão 4 ofertas" [ref=e1671] [cursor=pointer]:
+            - /url: /galpao/brasil/?filtro=are:[5,12]
+            - img [ref=e1672]
+            - paragraph [ref=e1674]:
+              - text: Galpão
+              - generic [ref=e1675]: 4 ofertas
+          - link "Terreno comercial 1 ofertas" [ref=e1676] [cursor=pointer]:
+            - /url: /terreno-comercial/brasil/?filtro=are:[5,12]
+            - img [ref=e1677]
+            - paragraph [ref=e1679]:
+              - text: Terreno comercial
+              - generic [ref=e1680]: 1 ofertas
+        - generic:
+          - generic:
+            - button "Anterior" [disabled]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1683] [cursor=pointer]:
+              - generic:
+                - img
+  - generic [ref=e585]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f
+  - alert [ref=e586]

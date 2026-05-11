@@ -1,0 +1,431 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - paragraph [ref=e31]:
+        - img [ref=e32]
+        - text: Filtros
+    - article [ref=e86]:
+      - generic [ref=e88]:
+        - navigation "breadcrumb" [ref=e90]:
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - link "Imóveis" [ref=e93] [cursor=pointer]:
+                - /url: /imoveis/brasil/
+            - listitem [ref=e94]:
+              - img [ref=e95]
+            - listitem [ref=e97]:
+              - link "Em todo Brasil" [disabled] [ref=e98]
+            - listitem [ref=e99]:
+              - link "2 quartos" [disabled] [ref=e100]
+        - heading "522.319 Imóveis com 2 quartos em todo Brasil" [level=1] [ref=e101]:
+          - strong [ref=e102]: 522.319 Imóveis com 2 quartos em todo Brasil
+      - generic [ref=e104]:
+        - link "SOBRADO COM PISCINA, Negociação direto com a construtora. Apenas 20% de entrada SOBRADO COM PISCINA, Negociação direto com a construtora. Apenas 20% de entrada strong list Preço" [ref=e106] [cursor=pointer]:
+          - /url: /lancamento/sobrado-com-piscina-negociacao-direto-com-a-construtora-apenas-20-de-entrada/id-41120411/
+          - img "SOBRADO COM PISCINA, Negociação direto com a construtora. Apenas 20% de entrada" [ref=e109]
+          - generic [ref=e110]:
+            - heading "SOBRADO COM PISCINA, Negociação direto com a construtora. Apenas 20% de entrada" [level=2] [ref=e112]
+            - generic "strong" [ref=e113]:
+              - paragraph [ref=e114]: Rua Barão Do Cerro Azul, 1630
+              - paragraph [ref=e115]: Brejatuba, Guaratuba/PR
+            - generic "list" [ref=e116]:
+              - paragraph [ref=e117]:
+                - img [ref=e118]
+                - text: 97m²
+              - paragraph [ref=e120]:
+                - img [ref=e121]
+                - text: 0 a 3
+            - paragraph [ref=e123]:
+              - generic [ref=e124]: R$ 649.000
+        - link "Apartamento com 2 dormitórios para alugar, 82 m² por R$ 465.000/mês - Stiep - Salvador/BA Apartamento com 2 dormitórios para alugar, 82 m² por R$ 465.000/mês - Stiep - Salvador/BA strong list Preço" [ref=e126] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-ba-salvador-stiep-82m2-RS465000/id-41804299/
+          - img "Apartamento com 2 dormitórios para alugar, 82 m² por R$ 465.000/mês - Stiep - Salvador/BA" [ref=e129]
+          - generic [ref=e130]:
+            - heading "Apartamento com 2 dormitórios para alugar, 82 m² por R$ 465.000/mês - Stiep - Salvador/BA" [level=2] [ref=e132]
+            - generic "strong" [ref=e133]:
+              - paragraph [ref=e134]: Rua Doutor José Peroba
+              - paragraph [ref=e135]: Stiep, Salvador/BA
+            - generic "list" [ref=e136]:
+              - paragraph [ref=e137]:
+                - img [ref=e138]
+                - text: 82m²
+              - paragraph [ref=e140]:
+                - img [ref=e141]
+                - text: "2"
+              - paragraph [ref=e143]:
+                - img [ref=e144]
+                - text: "3"
+              - paragraph [ref=e146]:
+                - img [ref=e147]
+                - text: "1"
+            - paragraph [ref=e149]:
+              - generic [ref=e150]: R$ 465.000
+        - link "Cobertura Duplex Exclusiva na Represa do Damha com 3 Quartos (1 Suíte) e Entrega em 90 Dias Cobertura Duplex Exclusiva na Represa do Damha com 3 Quartos (1 Suíte) e Entrega em 90 Dias strong list Preço" [ref=e152] [cursor=pointer]:
+          - /url: /lancamento/cobertura-duplex-exclusiva-na-represa-do-damha-com-3-quartos-1-suite-e-entrega-em-90-dias/id-40293205/
+          - img "Cobertura Duplex Exclusiva na Represa do Damha com 3 Quartos (1 Suíte) e Entrega em 90 Dias" [ref=e155]
+          - generic [ref=e156]:
+            - heading "Cobertura Duplex Exclusiva na Represa do Damha com 3 Quartos (1 Suíte) e Entrega em 90 Dias" [level=2] [ref=e158]
+            - generic "strong" [ref=e159]:
+              - paragraph [ref=e160]: Rua Fernando Mertittier Pierre, 300
+              - paragraph [ref=e161]: Jardim Primavera, São José do Rio Preto/SP
+            - generic "list" [ref=e162]:
+              - paragraph [ref=e163]:
+                - img [ref=e164]
+                - text: 100m²
+              - paragraph [ref=e166]:
+                - img [ref=e167]
+                - text: 0 a 3
+            - paragraph [ref=e169]:
+              - generic [ref=e170]: R$ 499.900
+        - link "Casa em Condomínio para Locação em Itaboraí, Rio Várzea, 2 dormitórios, 1 banheiro, 1 vaga Casa em Condomínio para Locação em Itaboraí, Rio Várzea, 2 dormitórios, 1 banheiro, 1 vaga strong list Preço" [ref=e172] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-para-alugar-2-quartos-com-garagem-rj-itaborai-rio-varzea-90m2-RS340000/id-41718351/
+          - img "Casa em Condomínio para Locação em Itaboraí, Rio Várzea, 2 dormitórios, 1 banheiro, 1 vaga" [ref=e175]
+          - generic [ref=e176]:
+            - heading "Casa em Condomínio para Locação em Itaboraí, Rio Várzea, 2 dormitórios, 1 banheiro, 1 vaga" [level=2] [ref=e178]
+            - generic "strong" [ref=e179]:
+              - paragraph [ref=e180]: Rua Afonso Mello, 200
+              - paragraph [ref=e181]: Rio Várzea, Itaboraí/RJ
+            - generic "list" [ref=e182]:
+              - paragraph [ref=e183]:
+                - img [ref=e184]
+                - text: 90m²
+              - paragraph [ref=e186]:
+                - img [ref=e187]
+                - text: "2"
+              - paragraph [ref=e189]:
+                - img [ref=e190]
+                - text: "1"
+              - paragraph [ref=e192]:
+                - img [ref=e193]
+                - text: "1"
+            - paragraph [ref=e195]:
+              - generic [ref=e196]: R$ 340.000
+              - generic "Condominio" [ref=e197]:
+                - text: Condomínio
+                - generic [ref=e198]: R$ 425
+        - link "SOBRADO COM PISCINA, 600m da praia central, próximo ao morro do Cristo em Guaratuba. Pagamentos e parcelamento direto com a construtora. strong list Preço" [ref=e200] [cursor=pointer]:
+          - /url: /lancamento/sobrado-com-piscina-600m-da-praia-central-proximo-ao-morro-do-cristo-em-guaratuba-pagamentos-e-parcelamento-direto-com-a-construtora-/id-41120058/
+          - generic [ref=e202]:
+            - heading "SOBRADO COM PISCINA, 600m da praia central, próximo ao morro do Cristo em Guaratuba. Pagamentos e parcelamento direto com a construtora." [level=2] [ref=e204]
+            - generic "strong" [ref=e205]:
+              - paragraph [ref=e206]: Rua Afonso Camargo, 208
+              - paragraph [ref=e207]: Centro, Guaratuba/PR
+            - generic "list" [ref=e208]:
+              - paragraph [ref=e209]:
+                - img [ref=e210]
+                - text: 116m²
+              - paragraph [ref=e212]:
+                - img [ref=e213]
+                - text: 0 a 3
+            - paragraph [ref=e215]:
+              - generic [ref=e216]: R$ 799.000
+        - generic [ref=e221]:
+          - list [ref=e226]:
+            - listitem [ref=e227]
+          - list [ref=e237]:
+            - listitem [ref=e238]
+          - list [ref=e248]:
+            - listitem [ref=e249]
+          - list [ref=e259]:
+            - listitem [ref=e260]
+          - list [ref=e270]:
+            - listitem [ref=e271]
+        - link "Casa com 2 quartos para alugar no Residencial Ouro Verde, Botucatu strong list Preço" [ref=e278] [cursor=pointer]:
+          - /url: /imovel/casa-para-alugar-2-quartos-com-garagem-sp-botucatu-residencial-ouro-verde-125m2-RS395000/id-30566027/
+          - generic [ref=e280]:
+            - heading "Casa com 2 quartos para alugar no Residencial Ouro Verde, Botucatu" [level=2] [ref=e282]
+            - generic "strong" [ref=e283]:
+              - paragraph [ref=e284]: Endereço indisponível
+              - paragraph [ref=e285]: Residencial Ouro Verde, Botucatu/SP
+            - generic "list" [ref=e286]:
+              - paragraph [ref=e287]:
+                - img [ref=e288]
+                - text: 125m²
+              - paragraph [ref=e290]:
+                - img [ref=e291]
+                - text: "2"
+              - paragraph [ref=e293]:
+                - img [ref=e294]
+                - text: "2"
+              - paragraph [ref=e296]:
+                - img [ref=e297]
+                - text: "2"
+            - paragraph [ref=e299]:
+              - generic [ref=e300]: R$ 395.000
+        - link "Linda casa de 3 dormitórios em condomínio fechado na melhor localização de Tremembé! strong list Preço" [ref=e302] [cursor=pointer]:
+          - /url: /lancamento/linda-casa-de-3-dormitorios-em-condominio-fechado-na-melhor-localizacao-de-tremembe-/id-37032374/
+          - generic [ref=e304]:
+            - heading "Linda casa de 3 dormitórios em condomínio fechado na melhor localização de Tremembé!" [level=2] [ref=e306]
+            - generic "strong" [ref=e307]:
+              - paragraph [ref=e308]: Av. Luiz Gonzaga Das Neves, 1825
+              - paragraph [ref=e309]: Caminho Novo, Tremembé/SP
+            - generic "list" [ref=e310]:
+              - paragraph [ref=e311]:
+                - img [ref=e312]
+                - text: 130m²
+              - paragraph [ref=e314]:
+                - img [ref=e315]
+                - text: 0 a 3
+            - paragraph [ref=e317]:
+              - generic [ref=e318]: R$ 691.700
+              - generic [ref=e319]: A partir de
+        - link "Apartamento com 3 quarto(s) no bairro Boa Esperanca em Cuiabá - MT strong list Preço" [ref=e321] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-3-quartos-com-garagem-mt-cuiaba-boa-esperanca-93m2-RS380000/id-22726772/
+          - generic [ref=e323]:
+            - heading "Apartamento com 3 quarto(s) no bairro Boa Esperanca em Cuiabá - MT" [level=2] [ref=e325]
+            - generic "strong" [ref=e326]:
+              - paragraph [ref=e327]: Endereço indisponível
+              - paragraph [ref=e328]: Boa Esperança, Cuiabá/MT
+            - generic "list" [ref=e329]:
+              - paragraph [ref=e330]:
+                - img [ref=e331]
+                - text: 93m²
+              - paragraph [ref=e333]:
+                - img [ref=e334]
+                - text: "3"
+              - paragraph [ref=e336]:
+                - img [ref=e337]
+                - text: "2"
+              - paragraph [ref=e339]:
+                - img [ref=e340]
+                - text: "1"
+            - paragraph [ref=e342]:
+              - generic [ref=e343]: R$ 380.000
+              - generic "Condominio" [ref=e344]:
+                - text: Condomínio
+                - generic [ref=e345]: R$ 1.023
+        - 'link "Entrega em jul/2026: Apartamentos de 1 e 2 dormitórios em torre única de fachada clássica, localização privilegiada e lazer no rooftop. strong list Preço" [ref=e347] [cursor=pointer]':
+          - /url: /lancamento/entrega-em-jul-2026-apartamentos-de-1-e-2-dormitorios-em-torre-unica-de-fachada-classica-localizacao-privilegiada-e-lazer-no-rooftop-/id-37825852/
+          - generic [ref=e349]:
+            - 'heading "Entrega em jul/2026: Apartamentos de 1 e 2 dormitórios em torre única de fachada clássica, localização privilegiada e lazer no rooftop." [level=2] [ref=e351]'
+            - generic "strong" [ref=e352]:
+              - paragraph [ref=e353]: Rua Levon Apovian, 146
+              - paragraph [ref=e354]: Jardim Trussardi, São Paulo/SP
+            - generic "list" [ref=e355]:
+              - paragraph [ref=e356]:
+                - img [ref=e357]
+                - text: 24m²
+              - paragraph [ref=e359]:
+                - img [ref=e360]
+                - text: 1 a 2
+            - paragraph [ref=e362]:
+              - generic [ref=e363]: R$ 435.000
+              - generic [ref=e364]: A partir de
+        - link "Apartamento para Locação em Santo André, Centro, 3 dormitórios, 1 suíte, 3 banheiros, 2 vagas strong list Preço" [ref=e366] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-3-quartos-com-garagem-sp-santo-andre-centro-138m2-RS720000/id-32607185/
+          - generic [ref=e368]:
+            - heading "Apartamento para Locação em Santo André, Centro, 3 dormitórios, 1 suíte, 3 banheiros, 2 vagas" [level=2] [ref=e370]
+            - generic "strong" [ref=e371]:
+              - paragraph [ref=e372]: Endereço indisponível
+              - paragraph [ref=e373]: Centro, Santo André/SP
+            - generic "list" [ref=e374]:
+              - paragraph [ref=e375]:
+                - img [ref=e376]
+                - text: 138m²
+              - paragraph [ref=e378]:
+                - img [ref=e379]
+                - text: "3"
+              - paragraph [ref=e381]:
+                - img [ref=e382]
+                - text: "3"
+              - paragraph [ref=e384]:
+                - img [ref=e385]
+                - text: "2"
+            - paragraph [ref=e387]:
+              - generic [ref=e388]: R$ 720.000
+              - generic "Condominio" [ref=e389]:
+                - text: Condomínio
+                - generic [ref=e390]: R$ 1.305
+        - link "Apartamento alto padrão para venda próximo ao MON strong list Preço" [ref=e392] [cursor=pointer]:
+          - /url: /lancamento/apartamento-alto-padrao-para-venda-proximo-ao-mon/id-32574631/
+          - generic [ref=e394]:
+            - heading "Apartamento alto padrão para venda próximo ao MON" [level=2] [ref=e396]
+            - generic "strong" [ref=e397]:
+              - paragraph [ref=e398]: Rua Celestino Júnior, 527
+              - paragraph [ref=e399]: São Francisco, Curitiba/PR
+            - generic "list" [ref=e400]:
+              - paragraph [ref=e401]:
+                - img [ref=e402]
+                - text: 24m²
+              - paragraph [ref=e404]:
+                - img [ref=e405]
+                - text: 1 a 3
+              - paragraph [ref=e407]:
+                - img [ref=e408]
+                - text: "1"
+              - paragraph [ref=e410]:
+                - img [ref=e411]
+                - text: "1"
+            - paragraph [ref=e413]:
+              - generic [ref=e414]: R$ 409.900
+              - generic [ref=e415]: A partir de
+        - link "Pré lançamento tabela zero ÚLTIMOS DIAS! strong list Preço" [ref=e417] [cursor=pointer]:
+          - /url: /lancamento/pre-lancamento-tabela-zero-ultimos-dias-/id-32637848/
+          - generic [ref=e419]:
+            - heading "Pré lançamento tabela zero ÚLTIMOS DIAS!" [level=2] [ref=e421]
+            - generic "strong" [ref=e422]:
+              - paragraph [ref=e423]: Rua Fernando Amaro, 363
+              - paragraph [ref=e424]: Alto da Rua XV, Curitiba/PR
+            - generic "list" [ref=e425]:
+              - paragraph [ref=e426]:
+                - img [ref=e427]
+                - text: 26m²
+              - paragraph [ref=e429]:
+                - img [ref=e430]
+                - text: 1 a 3
+              - paragraph [ref=e432]:
+                - img [ref=e433]
+                - text: "1"
+              - paragraph [ref=e435]:
+                - img [ref=e436]
+                - text: "1"
+            - paragraph [ref=e438]:
+              - generic [ref=e439]: R$ 322.000
+              - generic [ref=e440]: A partir de
+        - link "Lançamento no centro de Florianópolis - Estúdios e Apartamentos strong list Preço" [ref=e442] [cursor=pointer]:
+          - /url: /lancamento/lancamento-no-centro-de-florianopolis-estudios-e-apartamentos/id-35248663/
+          - generic [ref=e444]:
+            - heading "Lançamento no centro de Florianópolis - Estúdios e Apartamentos" [level=2] [ref=e446]
+            - generic "strong" [ref=e447]:
+              - paragraph [ref=e448]: Rua Crispim Mira, 333
+              - paragraph [ref=e449]: Centro, Florianópolis/SC
+            - generic "list" [ref=e450]:
+              - paragraph [ref=e451]:
+                - img [ref=e452]
+                - text: 31m²
+              - paragraph [ref=e454]:
+                - img [ref=e455]
+                - text: 1 a 2
+              - paragraph [ref=e457]:
+                - img [ref=e458]
+                - text: "1"
+            - paragraph [ref=e460]:
+              - generic [ref=e461]: R$ 349.000
+              - generic [ref=e462]: A partir de
+        - link "Apartamento Garden com 01 e 02 dormitórios com suíte no Bairro Bom Fim strong list Preço" [ref=e464] [cursor=pointer]:
+          - /url: /lancamento/apartamento-garden-com-01-e-02-dormitorios-com-suite-no-bairro-bom-fim/id-42118728/
+          - generic [ref=e466]:
+            - heading "Apartamento Garden com 01 e 02 dormitórios com suíte no Bairro Bom Fim" [level=2] [ref=e468]
+            - generic "strong" [ref=e469]:
+              - paragraph [ref=e470]: Rua Tomaz Flores, 219
+              - paragraph [ref=e471]: Independência, Porto Alegre/RS
+            - generic "list" [ref=e472]:
+              - paragraph [ref=e473]:
+                - img [ref=e474]
+                - text: 33m²
+              - paragraph [ref=e476]:
+                - img [ref=e477]
+                - text: 1 a 2
+              - paragraph [ref=e479]:
+                - img [ref=e480]
+                - text: "1"
+            - paragraph [ref=e482]:
+              - generic [ref=e483]: R$ 385.000
+              - generic [ref=e484]: A partir de
+        - link "Novo Lançamento Bairro de Fátima SoulRio Fátima strong list Preço" [ref=e486] [cursor=pointer]:
+          - /url: /lancamento/novo-lancamento-bairro-de-fatima-soulrio-fatima/id-34512705/
+          - generic [ref=e488]:
+            - heading "Novo Lançamento Bairro de Fátima SoulRio Fátima" [level=2] [ref=e490]
+            - generic "strong" [ref=e491]:
+              - paragraph [ref=e492]: Avenida Nossa Senhora De Fátima, 63
+              - paragraph [ref=e493]: Centro, Rio de Janeiro/RJ
+            - generic "list" [ref=e494]:
+              - paragraph [ref=e495]:
+                - img [ref=e496]
+                - text: 34m²
+              - paragraph [ref=e498]:
+                - img [ref=e499]
+                - text: 1 a 2
+              - paragraph [ref=e501]:
+                - img [ref=e502]
+                - text: "1"
+            - paragraph [ref=e504]:
+              - generic [ref=e505]: R$ 390.000
+        - generic [ref=e506]:
+          - generic [ref=e507]:
+            - generic [ref=e508]:
+              - heading "Imóveis com 2 quartos nos estados do Brasil" [level=3] [ref=e509]
+              - generic [ref=e511]:
+                - button "Anterior" [disabled] [ref=e512]:
+                  - generic:
+                    - img
+                - button "Próximo" [disabled] [ref=e513]:
+                  - generic:
+                    - img
+            - generic [ref=e514]:
+              - link "Imóveis em SP com 2 quartos" [ref=e515] [cursor=pointer]:
+                - /url: /imoveis/sp/2-quartos/
+              - link "Imóveis no RS com 2 quartos" [ref=e516] [cursor=pointer]:
+                - /url: /imoveis/rs/2-quartos/
+              - link "Imóveis no RJ com 2 quartos" [ref=e517] [cursor=pointer]:
+                - /url: /imoveis/rj/2-quartos/
+              - link "Imóveis em SC com 2 quartos" [ref=e518] [cursor=pointer]:
+                - /url: /imoveis/sc/2-quartos/
+              - link "Imóveis no PR com 2 quartos" [ref=e519] [cursor=pointer]:
+                - /url: /imoveis/pr/2-quartos/
+              - link "Imóveis em MG com 2 quartos" [ref=e520] [cursor=pointer]:
+                - /url: /imoveis/mg/2-quartos/
+              - link "Imóveis na BA com 2 quartos" [ref=e521] [cursor=pointer]:
+                - /url: /imoveis/ba/2-quartos/
+              - link "Imóveis em GO com 2 quartos" [ref=e522] [cursor=pointer]:
+                - /url: /imoveis/go/2-quartos/
+              - link "Imóveis em PE com 2 quartos" [ref=e523] [cursor=pointer]:
+                - /url: /imoveis/pe/2-quartos/
+              - link "Imóveis na PB com 2 quartos" [ref=e524] [cursor=pointer]:
+                - /url: /imoveis/pb/2-quartos/
+              - link "Imóveis no CE com 2 quartos" [ref=e525] [cursor=pointer]:
+                - /url: /imoveis/ce/2-quartos/
+              - link "Imóveis no MT com 2 quartos" [ref=e526] [cursor=pointer]:
+                - /url: /imoveis/mt/2-quartos/
+              - link "Imóveis no ES com 2 quartos" [ref=e527] [cursor=pointer]:
+                - /url: /imoveis/es/2-quartos/
+              - link "Imóveis no RN com 2 quartos" [ref=e528] [cursor=pointer]:
+                - /url: /imoveis/rn/2-quartos/
+              - link "Imóveis no MS com 2 quartos" [ref=e529] [cursor=pointer]:
+                - /url: /imoveis/ms/2-quartos/
+              - link "Imóveis em SE com 2 quartos" [ref=e530] [cursor=pointer]:
+                - /url: /imoveis/se/2-quartos/
+              - link "Imóveis em AL com 2 quartos" [ref=e531] [cursor=pointer]:
+                - /url: /imoveis/al/2-quartos/
+              - link "Imóveis no PA com 2 quartos" [ref=e532] [cursor=pointer]:
+                - /url: /imoveis/pa/2-quartos/
+              - link "Imóveis no AM com 2 quartos" [ref=e533] [cursor=pointer]:
+                - /url: /imoveis/am/2-quartos/
+              - link "Imóveis no MA com 2 quartos" [ref=e534] [cursor=pointer]:
+                - /url: /imoveis/ma/2-quartos/
+          - generic [ref=e539]:
+            - list [ref=e544]:
+              - listitem [ref=e545]
+            - list [ref=e555]:
+              - listitem [ref=e556]
+            - list [ref=e566]:
+              - listitem [ref=e567]
+            - list [ref=e577]:
+              - listitem [ref=e578]
+            - list [ref=e588]:
+              - listitem [ref=e589]
+  - generic [ref=e605]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f

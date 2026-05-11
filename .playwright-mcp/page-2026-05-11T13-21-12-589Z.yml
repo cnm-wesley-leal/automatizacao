@@ -1,0 +1,722 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e575] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e576]
+            - text: Favoritos
+          - link "Entrar" [ref=e578] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - generic [ref=e579]:
+        - list [ref=e580]:
+          - listitem [ref=e581]:
+            - button "Filtros" [ref=e582] [cursor=pointer]:
+              - img
+              - text: Filtros
+            - generic [ref=e4840]: + 1
+          - listitem [ref=e583]:
+            - button "Em todo Brasil" [ref=e584] [cursor=pointer]:
+              - img
+              - generic: Em todo Brasil
+              - img
+          - listitem [ref=e585]:
+            - button "Lançamentos novos Todos os imóveis" [ref=e4841] [cursor=pointer]:
+              - generic:
+                - generic: Lançamentos novos
+                - img
+                - text: Todos os imóveis
+              - img
+          - listitem [ref=e587]:
+            - button "Cômodos" [ref=e588] [cursor=pointer]:
+              - img
+              - text: Cômodos
+              - img
+          - listitem [ref=e589]:
+            - button "Preço" [ref=e590] [cursor=pointer]:
+              - img
+              - text: Preço
+              - img
+        - button "Limpar" [ref=e591] [cursor=pointer]:
+          - img
+          - text: Limpar
+    - article [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - navigation "breadcrumb" [ref=e41]:
+            - list [ref=e42]:
+              - listitem [ref=e43]:
+                - link "Lançamento" [ref=e4842] [cursor=pointer]:
+                  - /url: /lancamentos-imoveis/brasil/
+              - listitem [ref=e45]:
+                - img [ref=e46]
+              - listitem [ref=e48]:
+                - link "Em todo Brasil" [disabled] [ref=e49]
+          - heading "344 Lançamentos de imóveis novos, prontos e na planta" [level=1] [ref=e4843]:
+            - strong [ref=e51]: 344 Lançamentos de imóveis novos, prontos e na planta
+        - button "Ordernar por Mais relevantes" [ref=e3993] [cursor=pointer]:
+          - generic: Ordernar por
+          - generic:
+            - generic: Mais relevantes
+          - img
+      - generic [ref=e53]:
+        - generic [ref=e4844]:
+          - link "Studios na Barra nascidos para aluguel short stay (Airbnb) I Fature mais de R$ 10 mil/mês com essa máquina de locação por diária. Studios na Barra nascidos para aluguel short stay (Airbnb) I Fature mais de R$ 10 mil/mês com essa máquina de locação por diária. Studios na Barra nascidos para aluguel short stay (Airbnb) I Fature mais de R$ 10 mil/mês com essa máquina de locação por diária. strong list Preço" [ref=e4845] [cursor=pointer]:
+            - /url: /lancamento/studios-na-barra-nascidos-para-aluguel-short-stay-airbnb-i-fature-mais-de-r-10-mil-mes-com-essa-maquina-de-locacao-por-diaria-/id-37665518/
+            - generic [ref=e4846]:
+              - img "Studios na Barra nascidos para aluguel short stay (Airbnb) I Fature mais de R$ 10 mil/mês com essa máquina de locação por diária." [ref=e4848]
+              - img "Studios na Barra nascidos para aluguel short stay (Airbnb) I Fature mais de R$ 10 mil/mês com essa máquina de locação por diária." [ref=e4850]
+            - generic [ref=e4854]:
+              - heading "Studios na Barra nascidos para aluguel short stay (Airbnb) I Fature mais de R$ 10 mil/mês com essa máquina de locação por diária." [level=2] [ref=e4856]
+              - generic "strong" [ref=e4857]:
+                - paragraph [ref=e4858]: Avenida Vice-presidente José Alencar, 1245
+                - paragraph [ref=e4859]: Barra Olímpica, Rio de Janeiro/RJ
+              - generic "list" [ref=e4860]:
+                - paragraph [ref=e4861]:
+                  - img [ref=e4862]
+                  - text: 32m²
+                - paragraph [ref=e4864]:
+                  - img [ref=e4865]
+                  - text: 1 a 3
+                - paragraph [ref=e4867]:
+                  - img [ref=e4868]
+                  - text: "1"
+              - paragraph [ref=e4870]:
+                - generic [ref=e4871]: R$ 374.000
+          - button "Contatar" [ref=e4872] [cursor=pointer]
+          - button "Favoritar" [ref=e4873] [cursor=pointer]:
+            - img
+          - generic [ref=e4876]:
+            - img [ref=e4877]
+            - text: Na planta
+          - generic [ref=e4879]:
+            - button "Anterior" [disabled] [ref=e4880]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e4881] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e4882]:
+          - link "Green House Residence – Casas Prontas em Condomínio Fechado. Pare de adiar o sonho da casa própria. No Green House Residence, você encontra o equilíbrio perfeito entre segurança, conforto e qualidade Green House Residence – Casas Prontas em Condomínio Fechado. Pare de adiar o sonho da casa própria. No Green House Residence, você encontra o equilíbrio perfeito entre segurança, conforto e qualidade Green House Residence – Casas Prontas em Condomínio Fechado. Pare de adiar o sonho da casa própria. No Green House Residence, você encontra o equilíbrio perfeito entre segurança, conforto e qualidade strong list Preço" [ref=e4883] [cursor=pointer]:
+            - /url: /lancamento/green-house-residence-casas-prontas-em-condominio-fechado-pare-de-adiar-o-sonho-da-casa-propria-no-green-house-residence-voce-encontra-o-equilibrio-perfeito-entre-seguranca-conforto-e-qualidade/id-42141805/
+            - generic [ref=e4884]:
+              - img "Green House Residence – Casas Prontas em Condomínio Fechado. Pare de adiar o sonho da casa própria. No Green House Residence, você encontra o equilíbrio perfeito entre segurança, conforto e qualidade" [ref=e4886]
+              - img "Green House Residence – Casas Prontas em Condomínio Fechado. Pare de adiar o sonho da casa própria. No Green House Residence, você encontra o equilíbrio perfeito entre segurança, conforto e qualidade" [ref=e4888]
+            - generic [ref=e4892]:
+              - heading "Green House Residence – Casas Prontas em Condomínio Fechado. Pare de adiar o sonho da casa própria. No Green House Residence, você encontra o equilíbrio perfeito entre segurança, conforto e qualidade" [level=2] [ref=e4894]
+              - generic "strong" [ref=e4895]:
+                - paragraph [ref=e4896]: Avenida Hilton Souto Maior, s/n
+                - paragraph [ref=e4897]: Portal do Sol, João Pessoa/PB
+              - generic "list" [ref=e4898]:
+                - paragraph [ref=e4899]:
+                  - img [ref=e4900]
+                  - text: 182m²
+                - paragraph [ref=e4902]:
+                  - img [ref=e4903]
+                  - text: 3 a 5
+                - paragraph [ref=e4905]:
+                  - img [ref=e4906]
+                  - text: "4"
+                - paragraph [ref=e4908]:
+                  - img [ref=e4909]
+                  - text: "2"
+              - paragraph [ref=e4911]:
+                - generic [ref=e4912]: R$ 2.185.214
+                - generic [ref=e4913]: A partir de
+          - button "Contatar" [ref=e4914] [cursor=pointer]
+          - button "Favoritar" [ref=e4915] [cursor=pointer]:
+            - img
+          - generic [ref=e4918]:
+            - img [ref=e4919]
+            - text: Em Obras
+          - generic [ref=e4921]:
+            - button "Anterior" [disabled] [ref=e4922]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e4923] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e4924]:
+          - link "Apartamento de 3 dormitórios no Alto Da Boa Vista - Reserva Boa Vista Siena - Apartamento na planta em Sorocaba. Apartamento de 3 dormitórios no Alto Da Boa Vista - Reserva Boa Vista Siena - Apartamento na planta em Sorocaba. Apartamento de 3 dormitórios no Alto Da Boa Vista - Reserva Boa Vista Siena - Apartamento na planta em Sorocaba. strong list Preço" [ref=e4925] [cursor=pointer]:
+            - /url: /lancamento/apartamento-de-3-dormitorios-no-alto-da-boa-vista-reserva-boa-vista-siena-apartamento-na-planta-em-sorocaba-/id-41503049/
+            - generic [ref=e4926]:
+              - img "Apartamento de 3 dormitórios no Alto Da Boa Vista - Reserva Boa Vista Siena - Apartamento na planta em Sorocaba." [ref=e4928]
+              - img "Apartamento de 3 dormitórios no Alto Da Boa Vista - Reserva Boa Vista Siena - Apartamento na planta em Sorocaba." [ref=e4930]
+            - generic [ref=e4934]:
+              - heading "Apartamento de 3 dormitórios no Alto Da Boa Vista - Reserva Boa Vista Siena - Apartamento na planta em Sorocaba." [level=2] [ref=e4936]
+              - generic "strong" [ref=e4937]:
+                - paragraph [ref=e4938]: Av. José Humberto Urban, S/N
+                - paragraph [ref=e4939]: Alto da Boa Vista, Sorocaba/SP
+              - generic "list" [ref=e4940]:
+                - paragraph [ref=e4941]:
+                  - img [ref=e4942]
+                  - text: 72m²
+                - paragraph [ref=e4944]:
+                  - img [ref=e4945]
+                  - text: 2 a 3
+                - paragraph [ref=e4947]:
+                  - img [ref=e4948]
+                  - text: "2"
+                - paragraph [ref=e4950]:
+                  - img [ref=e4951]
+                  - text: "1"
+              - paragraph [ref=e4953]:
+                - generic [ref=e4954]: R$ 695.000
+          - button "Contatar" [ref=e4955] [cursor=pointer]
+          - button "Favoritar" [ref=e4956] [cursor=pointer]:
+            - img
+          - generic [ref=e4959]:
+            - img [ref=e4960]
+            - text: Na planta
+          - generic [ref=e4962]:
+            - button "Anterior" [disabled] [ref=e4963]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e4964] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e4965]:
+          - 'link "Entre Barra e Recreio fique com o melhor dos dois: Barra Olímpica Entre Barra e Recreio fique com o melhor dos dois: Barra Olímpica Entre Barra e Recreio fique com o melhor dos dois: Barra Olímpica strong list Preço" [ref=e4966] [cursor=pointer]':
+            - /url: /lancamento/entre-barra-e-recreio-fique-com-o-melhor-dos-dois-barra-olimpica/id-18844745/
+            - generic [ref=e4967]:
+              - 'img "Entre Barra e Recreio fique com o melhor dos dois: Barra Olímpica" [ref=e4969]'
+              - 'img "Entre Barra e Recreio fique com o melhor dos dois: Barra Olímpica" [ref=e4971]'
+            - generic [ref=e4975]:
+              - 'heading "Entre Barra e Recreio fique com o melhor dos dois: Barra Olímpica" [level=2] [ref=e4977]'
+              - generic "strong" [ref=e4978]:
+                - paragraph [ref=e4979]: Avenida Salvador Allende, 5500
+                - paragraph [ref=e4980]: Recreio dos Bandeirantes, Rio de Janeiro/RJ
+              - generic "list" [ref=e4981]:
+                - paragraph [ref=e4982]:
+                  - img [ref=e4983]
+                  - text: 57m²
+                - paragraph [ref=e4985]:
+                  - img [ref=e4986]
+                  - text: "3"
+                - paragraph [ref=e4988]:
+                  - img [ref=e4989]
+                  - text: "1"
+                - paragraph [ref=e4991]:
+                  - img [ref=e4992]
+                  - text: "1"
+              - paragraph [ref=e4994]:
+                - generic [ref=e4995]: R$ 486.990
+                - generic [ref=e4996]: A partir de
+          - button "Contatar" [ref=e4997] [cursor=pointer]
+          - button "Favoritar" [ref=e4998] [cursor=pointer]:
+            - img
+          - generic [ref=e5001]:
+            - img [ref=e5002]
+            - text: Pronto para morar
+          - generic [ref=e5004]:
+            - button "Anterior" [disabled] [ref=e5005]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e5006] [cursor=pointer]:
+              - generic:
+                - img
+        - link "Apartamentos em construção na praia do Itaguá com sacada gourmet e lazer com piscina a 2 quadras do Mar com 2 ou 3 suítes strong list Preço" [ref=e5008] [cursor=pointer]:
+          - /url: /lancamento/apartamentos-em-construcao-na-praia-do-itagua-com-sacada-gourmet-e-lazer-com-piscina-a-2-quadras-do-mar-com-2-ou-3-suites/id-32290097/
+          - generic [ref=e5010]:
+            - heading "Apartamentos em construção na praia do Itaguá com sacada gourmet e lazer com piscina a 2 quadras do Mar com 2 ou 3 suítes" [level=2] [ref=e5012]
+            - generic "strong" [ref=e5013]:
+              - paragraph [ref=e5014]: Castro Alves, 1
+              - paragraph [ref=e5015]: Itaguá, Ubatuba/SP
+            - generic "list" [ref=e5016]:
+              - paragraph [ref=e5017]:
+                - img [ref=e5018]
+                - text: 65m²
+              - paragraph [ref=e5020]:
+                - img [ref=e5021]
+                - text: 2 a 3
+              - paragraph [ref=e5023]:
+                - img [ref=e5024]
+                - text: "2"
+              - paragraph [ref=e5026]:
+                - img [ref=e5027]
+                - text: "1"
+            - paragraph [ref=e5029]:
+              - generic [ref=e5030]: R$ 720.000
+              - generic [ref=e5031]: A partir de
+        - link "Apartamento à Venda em Osasco – 3 Dorms com Varanda Gourmet! strong list Preço" [ref=e5033] [cursor=pointer]:
+          - /url: /lancamento/apartamento-a-venda-em-osasco-3-dorms-com-varanda-gourmet-/id-28772905/
+          - generic [ref=e5035]:
+            - heading "Apartamento à Venda em Osasco – 3 Dorms com Varanda Gourmet!" [level=2] [ref=e5037]
+            - generic "strong" [ref=e5038]:
+              - paragraph [ref=e5039]: Rua Antônia Bizarro, 333
+              - paragraph [ref=e5040]: Vila Osasco, Osasco/SP
+            - generic "list" [ref=e5041]:
+              - paragraph [ref=e5042]:
+                - img [ref=e5043]
+                - text: 69m²
+              - paragraph [ref=e5045]:
+                - img [ref=e5046]
+                - text: "3"
+              - paragraph [ref=e5048]:
+                - img [ref=e5049]
+                - text: "2"
+              - paragraph [ref=e5051]:
+                - img [ref=e5052]
+                - text: "2"
+            - paragraph [ref=e5054]:
+              - generic [ref=e5055]: R$ 619.900
+              - generic [ref=e5056]: A partir de
+        - link "Apartamento novo com 03 suítes à venda em Balneário Camboriú strong list Preço" [ref=e5058] [cursor=pointer]:
+          - /url: /lancamento/apartamento-novo-com-03-suites-a-venda-em-balneario-camboriu/id-29548777/
+          - generic [ref=e5060]:
+            - heading "Apartamento novo com 03 suítes à venda em Balneário Camboriú" [level=2] [ref=e5062]
+            - generic "strong" [ref=e5063]:
+              - paragraph [ref=e5064]: Rua 1141, 298
+              - paragraph [ref=e5065]: Centro, Balneário Camboriú/SC
+            - generic "list" [ref=e5066]:
+              - paragraph [ref=e5067]:
+                - img [ref=e5068]
+                - text: 115m²
+              - paragraph [ref=e5070]:
+                - img [ref=e5071]
+                - text: "3"
+              - paragraph [ref=e5073]:
+                - img [ref=e5074]
+                - text: "3"
+              - paragraph [ref=e5076]:
+                - img [ref=e5077]
+                - text: "2"
+            - paragraph [ref=e5079]:
+              - generic [ref=e5080]: R$ 2.000.000
+        - link "Opotunidade! Apartamento no centro da cidade de Sorocaba! strong list Preço" [ref=e5082] [cursor=pointer]:
+          - /url: /lancamento/opotunidade-apartamento-no-centro-da-cidade-de-sorocaba-/id-40975698/
+          - generic [ref=e5084]:
+            - heading "Opotunidade! Apartamento no centro da cidade de Sorocaba!" [level=2] [ref=e5086]
+            - generic "strong" [ref=e5087]:
+              - paragraph [ref=e5088]: Rua Doutor Álvaro Soares
+              - paragraph [ref=e5089]: Centro, Sorocaba/SP
+            - generic "list" [ref=e5090]:
+              - paragraph [ref=e5091]:
+                - img [ref=e5092]
+                - text: 40m²
+              - paragraph [ref=e5094]:
+                - img [ref=e5095]
+                - text: 1 a 2
+              - paragraph [ref=e5097]:
+                - img [ref=e5098]
+                - text: "1"
+            - paragraph [ref=e5100]:
+              - generic [ref=e5101]: R$ 285.000
+              - generic [ref=e5102]: A partir de
+        - link "Central Station Sorocaba | Apts 1 e 2 dorms com varanda gourmet e lazer na cobertura strong list Preço" [ref=e5104] [cursor=pointer]:
+          - /url: /lancamento/central-station-sorocaba-apts-1-e-2-dorms-com-varanda-gourmet-e-lazer-na-cobertura/id-37924995/
+          - generic [ref=e5106]:
+            - heading "Central Station Sorocaba | Apts 1 e 2 dorms com varanda gourmet e lazer na cobertura" [level=2] [ref=e5108]
+            - generic "strong" [ref=e5109]:
+              - paragraph [ref=e5110]: Rua Doutor Álvaro Soares, 542
+              - paragraph [ref=e5111]: Centro, Sorocaba/SP
+            - generic "list" [ref=e5112]:
+              - paragraph [ref=e5113]:
+                - img [ref=e5114]
+                - text: 40m²
+              - paragraph [ref=e5116]:
+                - img [ref=e5117]
+                - text: 1 a 2
+              - paragraph [ref=e5119]:
+                - img [ref=e5120]
+                - text: "1"
+              - paragraph [ref=e5122]:
+                - img [ref=e5123]
+                - text: "1"
+            - paragraph [ref=e5125]:
+              - generic [ref=e5126]: R$ 278.050
+        - link "Excelente imóvel de 51,60m² - 31,77m² para moradia ou investimento localizado em Santo Amaro (REGIÃO ESTRATÉGICA) strong list Preço" [ref=e5128] [cursor=pointer]:
+          - /url: /lancamento/excelente-imovel-de-51-60m-31-77m-para-moradia-ou-investimento-localizado-em-santo-amaro-regiao-estrategica-/id-32431143/
+          - generic [ref=e5130]:
+            - heading "Excelente imóvel de 51,60m² - 31,77m² para moradia ou investimento localizado em Santo Amaro (REGIÃO ESTRATÉGICA)" [level=2] [ref=e5132]
+            - generic "strong" [ref=e5133]:
+              - paragraph [ref=e5134]: Rua Dos Missionários, 345
+              - paragraph [ref=e5135]: Santo Amaro, São Paulo/SP
+            - generic "list" [ref=e5136]:
+              - paragraph [ref=e5137]:
+                - img [ref=e5138]
+                - text: 51m²
+              - paragraph [ref=e5140]:
+                - img [ref=e5141]
+                - text: 2 a 3
+              - paragraph [ref=e5143]:
+                - img [ref=e5144]
+                - text: "2"
+              - paragraph [ref=e5146]:
+                - img [ref=e5147]
+                - text: "1"
+            - paragraph [ref=e5149]:
+              - generic [ref=e5150]: R$ 603.000
+              - generic [ref=e5151]: A partir de
+        - link "Apartamento de 2 quartos com suíte e varanda gourmet no Condomínio Rizz Campolim - Sorocaba à partir de R$450.000,00 strong list Preço" [ref=e5153] [cursor=pointer]:
+          - /url: /lancamento/apartamento-de-2-quartos-com-suite-e-varanda-gourmet-no-condominio-rizz-campolim-sorocaba-a-partir-de-r-450-000-00/id-33849530/
+          - generic [ref=e5155]:
+            - heading "Apartamento de 2 quartos com suíte e varanda gourmet no Condomínio Rizz Campolim - Sorocaba à partir de R$450.000,00" [level=2] [ref=e5157]
+            - generic "strong" [ref=e5158]:
+              - paragraph [ref=e5159]: Rua Augusto Lippel, 1691
+              - paragraph [ref=e5160]: Parque Campolim, Sorocaba/SP
+            - generic "list" [ref=e5161]:
+              - paragraph [ref=e5162]:
+                - img [ref=e5163]
+                - text: 60m²
+              - paragraph [ref=e5165]:
+                - img [ref=e5166]
+                - text: "2"
+              - paragraph [ref=e5168]:
+                - img [ref=e5169]
+                - text: "2"
+              - paragraph [ref=e5171]:
+                - img [ref=e5172]
+                - text: "1"
+            - paragraph [ref=e5174]:
+              - generic [ref=e5175]: R$ 450.000
+              - generic [ref=e5176]: A partir de
+        - link "Seu novo apartamento em João Pessoa com área de lazer completa e Entrada facilitada! strong list Preço" [ref=e5178] [cursor=pointer]:
+          - /url: /lancamento/seu-novo-apartamento-em-joao-pessoa-com-area-de-lazer-completa-e-entrada-facilitada-/id-27549731/
+          - generic [ref=e5180]:
+            - heading "Seu novo apartamento em João Pessoa com área de lazer completa e Entrada facilitada!" [level=2] [ref=e5182]
+            - generic "strong" [ref=e5183]:
+              - paragraph [ref=e5184]: Endereço indisponível
+              - paragraph [ref=e5185]: José Américo de Almeida, João Pessoa/PB
+            - generic "list" [ref=e5186]:
+              - paragraph [ref=e5187]:
+                - img [ref=e5188]
+                - text: 50m²
+              - paragraph [ref=e5190]:
+                - img [ref=e5191]
+                - text: 2 a 3
+              - paragraph [ref=e5193]:
+                - img [ref=e5194]
+                - text: "2"
+              - paragraph [ref=e5196]:
+                - img [ref=e5197]
+                - text: "1"
+            - paragraph [ref=e5199]:
+              - generic [ref=e5200]: R$ 255.000
+        - link "Todas Unidades São Frente Mar, Lazer Completo, Apoio ao Trabalho e Vaga Garantida, Mini Market e Lavanderia strong list Preço" [ref=e5202] [cursor=pointer]:
+          - /url: /lancamento/todas-unidades-sao-frente-mar-lazer-completo-apoio-ao-trabalho-e-vaga-garantida-mini-market-e-lavanderia/id-42198176/
+          - generic [ref=e5204]:
+            - heading "Todas Unidades São Frente Mar, Lazer Completo, Apoio ao Trabalho e Vaga Garantida, Mini Market e Lavanderia" [level=2] [ref=e5206]
+            - generic "strong" [ref=e5207]:
+              - paragraph [ref=e5208]: Endereço indisponível
+              - paragraph [ref=e5209]: Praia do Flamengo, Salvador/BA
+            - generic "list" [ref=e5210]:
+              - paragraph [ref=e5211]:
+                - img [ref=e5212]
+                - text: 25.230m²
+              - paragraph [ref=e5214]:
+                - img [ref=e5215]
+                - text: 1 a 2
+              - paragraph [ref=e5217]:
+                - img [ref=e5218]
+                - text: "1"
+              - paragraph [ref=e5220]:
+                - img [ref=e5221]
+                - text: "1"
+            - paragraph [ref=e5223]:
+              - generic [ref=e5224]: R$ 288.305
+              - generic [ref=e5225]: A partir de
+        - link "Apartamento de 3 dormitórios em 84 vezes para pagar ! No Morretes strong list Preço" [ref=e5227] [cursor=pointer]:
+          - /url: /lancamento/apartamento-de-3-dormitorios-em-84-vezes-para-pagar-no-morretes/id-28782401/
+          - generic [ref=e5229]:
+            - heading "Apartamento de 3 dormitórios em 84 vezes para pagar ! No Morretes" [level=2] [ref=e5231]
+            - generic "strong" [ref=e5232]:
+              - paragraph [ref=e5233]: Rua 416, 1
+              - paragraph [ref=e5234]: Morretes, Itapema/SC
+            - generic "list" [ref=e5235]:
+              - paragraph [ref=e5236]:
+                - img [ref=e5237]
+                - text: 70m²
+              - paragraph [ref=e5239]:
+                - img [ref=e5240]
+                - text: "3"
+              - paragraph [ref=e5242]:
+                - img [ref=e5243]
+                - text: "2"
+              - paragraph [ref=e5245]:
+                - img [ref=e5246]
+                - text: "1"
+            - paragraph [ref=e5248]:
+              - generic [ref=e5249]: R$ 699.900
+              - generic [ref=e5250]: A partir de
+        - link "Apartamentos no Vívere Residencial em Indaiatuba Sp!!!!! strong list Preço" [ref=e5252] [cursor=pointer]:
+          - /url: /lancamento/apartamentos-no-vivere-residencial-em-indaiatuba-sp-/id-38034070/
+          - generic [ref=e5254]:
+            - heading "Apartamentos no Vívere Residencial em Indaiatuba Sp!!!!!" [level=2] [ref=e5256]
+            - generic "strong" [ref=e5257]:
+              - paragraph [ref=e5258]: Rua Wagner Borges Da Silva, 05
+              - paragraph [ref=e5259]: Jardins do Império, Indaiatuba/SP
+            - generic "list" [ref=e5260]:
+              - paragraph [ref=e5261]:
+                - img [ref=e5262]
+                - text: 48m²
+              - paragraph [ref=e5264]:
+                - img [ref=e5265]
+                - text: "2"
+              - paragraph [ref=e5267]:
+                - img [ref=e5268]
+                - text: "1"
+              - paragraph [ref=e5270]:
+                - img [ref=e5271]
+                - text: "1"
+            - paragraph [ref=e5273]:
+              - generic [ref=e5274]: R$ 343.154
+        - generic [ref=e5275]:
+          - generic [ref=e5280]:
+            - list [ref=e5285]:
+              - listitem [ref=e5286]
+            - list [ref=e5296]:
+              - listitem [ref=e5297]
+            - list [ref=e5307]:
+              - listitem [ref=e5308]
+            - list [ref=e5318]:
+              - listitem [ref=e5319]
+            - list [ref=e5329]:
+              - listitem [ref=e5330]
+          - list [ref=e5339]:
+            - listitem [ref=e5340]
+            - listitem [ref=e5357]
+            - listitem [ref=e5374]
+            - listitem [ref=e5391]
+      - generic [ref=e5408]:
+        - generic [ref=e5409]:
+          - link "São Paulo 67 novos" [ref=e5410] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-sao-paulo/?filtro=are:[5]
+            - paragraph [ref=e5411]:
+              - text: São Paulo
+              - generic [ref=e5412]: 67 novos
+          - link "Curitiba 29 novos" [ref=e5413] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/pr-curitiba/?filtro=are:[5]
+            - paragraph [ref=e5414]:
+              - text: Curitiba
+              - generic [ref=e5415]: 29 novos
+          - link "Rio de Janeiro 20 novos" [ref=e5416] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/rj-rio-de-janeiro/?filtro=are:[5]
+            - paragraph [ref=e5417]:
+              - text: Rio de Janeiro
+              - generic [ref=e5418]: 20 novos
+          - link "João Pessoa 19 novos" [ref=e5419] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/pb-joao-pessoa/?filtro=are:[5]
+            - paragraph [ref=e5420]:
+              - text: João Pessoa
+              - generic [ref=e5421]: 19 novos
+          - link "Sorocaba 15 novos" [ref=e5422] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-sorocaba/?filtro=are:[5]
+            - paragraph [ref=e5423]:
+              - text: Sorocaba
+              - generic [ref=e5424]: 15 novos
+          - link "Florianópolis 14 novos" [ref=e5425] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sc-florianopolis/?filtro=are:[5]
+            - paragraph [ref=e5426]:
+              - text: Florianópolis
+              - generic [ref=e5427]: 14 novos
+          - link "Salvador 11 novos" [ref=e5428] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/ba-salvador/?filtro=are:[5]
+            - paragraph [ref=e5429]:
+              - text: Salvador
+              - generic [ref=e5430]: 11 novos
+          - link "Santos 11 novos" [ref=e5431] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-santos/?filtro=are:[5]
+            - paragraph [ref=e5432]:
+              - text: Santos
+              - generic [ref=e5433]: 11 novos
+          - link "Ubatuba 10 novos" [ref=e5434] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-ubatuba/?filtro=are:[5]
+            - paragraph [ref=e5435]:
+              - text: Ubatuba
+              - generic [ref=e5436]: 10 novos
+          - link "Fortaleza 8 novos" [ref=e5437] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/ce-fortaleza/?filtro=are:[5]
+            - paragraph [ref=e5438]:
+              - text: Fortaleza
+              - generic [ref=e5439]: 8 novos
+          - link "Niterói 8 novos" [ref=e5440] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/rj-niteroi/?filtro=are:[5]
+            - paragraph [ref=e5441]:
+              - text: Niterói
+              - generic [ref=e5442]: 8 novos
+          - link "Caraguatatuba 7 novos" [ref=e5443] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-caraguatatuba/?filtro=are:[5]
+            - paragraph [ref=e5444]:
+              - text: Caraguatatuba
+              - generic [ref=e5445]: 7 novos
+          - link "Uberlândia 6 novos" [ref=e5446] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/mg-uberlandia/?filtro=are:[5]
+            - paragraph [ref=e5447]:
+              - text: Uberlândia
+              - generic [ref=e5448]: 6 novos
+          - link "Porto Alegre 5 novos" [ref=e5449] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/rs-porto-alegre/?filtro=are:[5]
+            - paragraph [ref=e5450]:
+              - text: Porto Alegre
+              - generic [ref=e5451]: 5 novos
+          - link "Belo Horizonte 4 novos" [ref=e5452] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/mg-belo-horizonte/?filtro=are:[5]
+            - paragraph [ref=e5453]:
+              - text: Belo Horizonte
+              - generic [ref=e5454]: 4 novos
+        - generic:
+          - generic:
+            - button "Anterior" [disabled]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e5457] [cursor=pointer]:
+              - generic:
+                - img
+  - generic [ref=e573]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f
+  - alert [ref=e574]: Lançamentos de imóveis novos, prontos e na planta | Chaves na Mão
+  - generic [ref=e5459]:
+    - generic [ref=e5460]:
+      - button [ref=e5461] [cursor=pointer]:
+        - img
+      - paragraph [ref=e5462]: Filtros
+      - button "Limpar" [ref=e5463] [cursor=pointer]:
+        - img
+        - text: Limpar
+    - generic [ref=e5465]:
+      - generic [ref=e5466]:
+        - button "Comprar" [ref=e5467] [cursor=pointer]
+        - button "Alugar" [ref=e5468] [cursor=pointer]
+        - button "Lançamentos" [ref=e5469] [cursor=pointer]
+      - generic [ref=e5470]:
+        - paragraph [ref=e5471]: Localização
+        - button "Em todo Brasil" [ref=e5472] [cursor=pointer]:
+          - generic:
+            - img
+            - generic: Em todo Brasil
+          - img
+      - generic [ref=e5476]:
+        - generic [ref=e5477]:
+          - paragraph [ref=e5478]: Preço à partir de
+          - textbox "Preço à partir de" [ref=e5479]:
+            - /placeholder: R$ 0
+        - generic [ref=e5480]:
+          - paragraph [ref=e5481]: Até
+          - textbox "Até" [ref=e5482]:
+            - /placeholder: R$ 0
+      - generic [ref=e5483]:
+        - generic [ref=e5484]:
+          - paragraph [ref=e5485]:
+            - generic [ref=e5486]: Quantidade de quartos
+          - generic [ref=e5487]:
+            - button "+ 1" [ref=e5488] [cursor=pointer]
+            - button "+ 2" [ref=e5489] [cursor=pointer]
+            - button "+ 3" [ref=e5490] [cursor=pointer]
+            - button "+ 4" [ref=e5491] [cursor=pointer]
+        - generic [ref=e5492]:
+          - paragraph [ref=e5493]:
+            - generic [ref=e5494]: Banheiros
+          - generic [ref=e5495]:
+            - button "+ 1" [ref=e5496] [cursor=pointer]
+            - button "+ 2" [ref=e5497] [cursor=pointer]
+            - button "+ 3" [ref=e5498] [cursor=pointer]
+            - button "+ 4" [ref=e5499] [cursor=pointer]
+        - generic [ref=e5500]:
+          - paragraph [ref=e5501]:
+            - generic [ref=e5502]: Garagens
+          - generic [ref=e5503]:
+            - button "+ 1" [ref=e5504] [cursor=pointer]
+            - button "+ 2" [ref=e5505] [cursor=pointer]
+            - button "+ 3" [ref=e5506] [cursor=pointer]
+            - button "+ 4" [ref=e5507] [cursor=pointer]
+      - generic [ref=e5510]:
+        - generic [ref=e5511]:
+          - paragraph [ref=e5512]: Área útil (m²) de
+          - textbox "Área útil (m²) de" [ref=e5513]:
+            - /placeholder: 0 m²
+        - generic [ref=e5514]:
+          - paragraph [ref=e5515]: Até
+          - textbox "Até" [ref=e5516]:
+            - /placeholder: 0 m²
+      - generic [ref=e5518]:
+        - generic [ref=e5519] [cursor=pointer]:
+          - paragraph [ref=e5520]:
+            - generic [ref=e5521]: Área de Lazer
+            - generic [ref=e5522]:
+              - button "Remover 1" [ref=e5523]:
+                - text: Remover 1
+                - img [ref=e5524]
+              - img [ref=e5526]
+          - generic [ref=e5528]:
+            - button "Brinquedoteca" [ref=e5529]
+            - button "Churrasqueira" [ref=e5530]
+            - button "Espaço gourmet" [ref=e5531]
+            - button "Piscina" [ref=e5532]
+            - button "Playground" [ref=e5533]
+            - button "Salão de festas" [ref=e5534]
+            - button "Salão de jogos" [ref=e5535]
+        - generic [ref=e5536] [cursor=pointer]:
+          - paragraph [ref=e5537]:
+            - generic [ref=e5538]: Conveniências
+            - img [ref=e5540]
+          - generic [ref=e5542]:
+            - button "Ar-condicionado" [ref=e5543]
+            - button "Armários Planejados" [ref=e5544]
+            - button "Elevador" [ref=e5545]
+            - button "Hidromassagem" [ref=e5546]
+            - button "Jardim" [ref=e5547]
+            - button "Lareira" [ref=e5548]
+            - button "Mobiliado" [ref=e5549]
+            - button "Quintal" [ref=e5550]
+            - button "Sauna" [ref=e5551]
+            - button "Varanda" [ref=e5552]
+        - generic [ref=e5553] [cursor=pointer]:
+          - paragraph [ref=e5554]:
+            - generic [ref=e5555]: Funcional
+            - img [ref=e5557]
+          - generic [ref=e5559]:
+            - button "Área de serviço" [ref=e5560]
+            - button "Ático" [ref=e5561]
+            - button "Closet" [ref=e5562]
+            - button "Dependência de Empregada" [ref=e5563]
+            - button "Edícula" [ref=e5564]
+            - button "Escritório" [ref=e5565]
+            - button "Lavabo" [ref=e5566]
+            - button "Lavanderia" [ref=e5567]
+        - generic [ref=e5568] [cursor=pointer]:
+          - paragraph [ref=e5569]:
+            - generic [ref=e5570]: Segurança
+            - img [ref=e5572]
+          - generic [ref=e5574]:
+            - button "Circuito de segurança" [ref=e5575]
+            - button "Guarita" [ref=e5576]
+            - button "Interfone" [ref=e5577]
+            - button "Portaria" [ref=e5578]
+        - generic [ref=e5579] [cursor=pointer]:
+          - paragraph [ref=e5580]:
+            - generic [ref=e5581]: Tipo de Vendedor
+            - img [ref=e5583]
+          - generic [ref=e5585]:
+            - button "Direto com proprietário" [ref=e5586]
+            - button "Somente Imobiliárias" [ref=e5587]
+    - generic [ref=e5588]:
+      - paragraph [ref=e5593] [cursor=pointer]:
+        - generic [ref=e5594]: Seleção atual
+        - generic [ref=e5595]:
+          - generic [ref=e5596]: 2 Filtros selecionados
+          - img [ref=e5597]
+      - button "Aplicar Filtros" [ref=e5599] [cursor=pointer]:
+        - img
+        - text: Aplicar Filtros

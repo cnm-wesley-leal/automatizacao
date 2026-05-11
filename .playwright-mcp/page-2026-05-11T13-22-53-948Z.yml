@@ -1,0 +1,562 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e575] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e576]
+            - text: Favoritos
+          - link "Entrar" [ref=e578] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - generic [ref=e579]:
+        - list [ref=e580]:
+          - listitem [ref=e581]:
+            - button "Filtros" [ref=e582] [cursor=pointer]:
+              - img
+              - text: Filtros
+            - generic [ref=e6330]: + 1
+          - listitem [ref=e583]:
+            - button "Em todo Brasil" [ref=e584] [cursor=pointer]:
+              - img
+              - generic: Em todo Brasil
+              - img
+          - listitem [ref=e585]:
+            - button "Lançamentos novos Todos os imóveis" [ref=e4841] [cursor=pointer]:
+              - generic:
+                - generic: Lançamentos novos
+                - img
+                - text: Todos os imóveis
+              - img
+          - listitem [ref=e587]:
+            - button "Cômodos" [ref=e588] [cursor=pointer]:
+              - img
+              - text: Cômodos
+              - img
+          - listitem [ref=e589]:
+            - button "Preço" [ref=e590] [cursor=pointer]:
+              - img
+              - text: Preço
+              - img
+        - button "Limpar" [ref=e591] [cursor=pointer]:
+          - img
+          - text: Limpar
+    - article [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - navigation "breadcrumb" [ref=e41]:
+            - list [ref=e42]:
+              - listitem [ref=e43]:
+                - link "Lançamento" [ref=e4842] [cursor=pointer]:
+                  - /url: /lancamentos-imoveis/brasil/
+              - listitem [ref=e45]:
+                - img [ref=e46]
+              - listitem [ref=e48]:
+                - link "Em todo Brasil" [disabled] [ref=e49]
+          - heading "145 Lançamentos de imóveis novos, prontos e na planta" [level=1] [ref=e6331]:
+            - strong [ref=e51]: 145 Lançamentos de imóveis novos, prontos e na planta
+        - button "Ordernar por Mais relevantes" [ref=e3993] [cursor=pointer]:
+          - generic: Ordernar por
+          - generic:
+            - generic: Mais relevantes
+          - img
+      - generic [ref=e53]:
+        - generic [ref=e6332]:
+          - link "AMAN BESSA o seu melhor investimento no Bairro Jardim Oceania ao lado do MAG SHOPPING Tudo Próximo AMAN BESSA o seu melhor investimento no Bairro Jardim Oceania ao lado do MAG SHOPPING Tudo Próximo AMAN BESSA o seu melhor investimento no Bairro Jardim Oceania ao lado do MAG SHOPPING Tudo Próximo strong list Preço" [ref=e6333] [cursor=pointer]:
+            - /url: /lancamento/aman-bessa-o-seu-melhor-investimento-no-bairro-jardim-oceania-ao-lado-do-mag-shopping-tudo-proximo/id-24185604/
+            - generic [ref=e6334]:
+              - img "AMAN BESSA o seu melhor investimento no Bairro Jardim Oceania ao lado do MAG SHOPPING Tudo Próximo" [ref=e6336]
+              - img "AMAN BESSA o seu melhor investimento no Bairro Jardim Oceania ao lado do MAG SHOPPING Tudo Próximo" [ref=e6338]
+            - generic [ref=e6342]:
+              - heading "AMAN BESSA o seu melhor investimento no Bairro Jardim Oceania ao lado do MAG SHOPPING Tudo Próximo" [level=2] [ref=e6344]
+              - generic "strong" [ref=e6345]:
+                - paragraph [ref=e6346]: Endereço indisponível
+                - paragraph [ref=e6347]: Jardim Oceania, João Pessoa/PB
+              - generic "list" [ref=e6348]:
+                - paragraph [ref=e6349]:
+                  - img [ref=e6350]
+                  - text: 21m²
+                - paragraph [ref=e6352]:
+                  - img [ref=e6353]
+                  - text: "1"
+                - paragraph [ref=e6355]:
+                  - img [ref=e6356]
+                  - text: "1"
+                - paragraph [ref=e6358]:
+                  - img [ref=e6359]
+                  - text: "1"
+              - paragraph [ref=e6361]:
+                - generic [ref=e6362]: R$ 351.970
+                - generic [ref=e6363]: A partir de
+          - button "Contatar" [ref=e6364] [cursor=pointer]
+          - button "Favoritar" [ref=e6365] [cursor=pointer]:
+            - img
+          - generic [ref=e6368]:
+            - img [ref=e6369]
+            - text: Na planta
+          - generic [ref=e6371]:
+            - button "Anterior" [disabled] [ref=e6372]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e6373] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e6374]:
+          - 'link "Lançamento na Vila Matilde: único com churrasqueira a carvão na varanda Lançamento na Vila Matilde: único com churrasqueira a carvão na varanda Lançamento na Vila Matilde: único com churrasqueira a carvão na varanda strong list Preço" [ref=e6375] [cursor=pointer]':
+            - /url: /lancamento/lancamento-na-vila-matilde-unico-com-churrasqueira-a-carvao-na-varanda/id-37825402/
+            - generic [ref=e6376]:
+              - 'img "Lançamento na Vila Matilde: único com churrasqueira a carvão na varanda" [ref=e6378]'
+              - 'img "Lançamento na Vila Matilde: único com churrasqueira a carvão na varanda" [ref=e6380]'
+            - generic [ref=e6384]:
+              - 'heading "Lançamento na Vila Matilde: único com churrasqueira a carvão na varanda" [level=2] [ref=e6386]'
+              - generic "strong" [ref=e6387]:
+                - paragraph [ref=e6388]: Rua Gregório Souza, 341
+                - paragraph [ref=e6389]: Vila Nova Savoia, São Paulo/SP
+              - generic "list" [ref=e6390]:
+                - paragraph [ref=e6391]:
+                  - img [ref=e6392]
+                  - text: 22m²
+                - paragraph [ref=e6394]:
+                  - img [ref=e6395]
+                  - text: 1 a 2
+                - paragraph [ref=e6397]:
+                  - img [ref=e6398]
+                  - text: "1"
+              - paragraph [ref=e6400]:
+                - generic [ref=e6401]: R$ 211.500
+                - generic [ref=e6402]: A partir de
+          - button "Contatar" [ref=e6403] [cursor=pointer]
+          - button "Favoritar" [ref=e6404] [cursor=pointer]:
+            - img
+          - generic [ref=e6407]:
+            - img [ref=e6408]
+            - text: Na planta
+          - generic [ref=e6410]:
+            - button "Anterior" [disabled] [ref=e6411]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e6412] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e6413]:
+          - link "Apartamento alto padrão para venda próximo ao MON Apartamento alto padrão para venda próximo ao MON Apartamento alto padrão para venda próximo ao MON strong list Preço" [ref=e6414] [cursor=pointer]:
+            - /url: /lancamento/apartamento-alto-padrao-para-venda-proximo-ao-mon/id-32574631/
+            - generic [ref=e6415]:
+              - img "Apartamento alto padrão para venda próximo ao MON" [ref=e6417]
+              - img "Apartamento alto padrão para venda próximo ao MON" [ref=e6419]
+            - generic [ref=e6423]:
+              - heading "Apartamento alto padrão para venda próximo ao MON" [level=2] [ref=e6425]
+              - generic "strong" [ref=e6426]:
+                - paragraph [ref=e6427]: Rua Celestino Júnior, 527
+                - paragraph [ref=e6428]: São Francisco, Curitiba/PR
+              - generic "list" [ref=e6429]:
+                - paragraph [ref=e6430]:
+                  - img [ref=e6431]
+                  - text: 24m²
+                - paragraph [ref=e6433]:
+                  - img [ref=e6434]
+                  - text: 1 a 3
+                - paragraph [ref=e6436]:
+                  - img [ref=e6437]
+                  - text: "1"
+                - paragraph [ref=e6439]:
+                  - img [ref=e6440]
+                  - text: "1"
+              - paragraph [ref=e6442]:
+                - generic [ref=e6443]: R$ 409.900
+                - generic [ref=e6444]: A partir de
+          - button "Contatar" [ref=e6445] [cursor=pointer]
+          - button "Favoritar" [ref=e6446] [cursor=pointer]:
+            - img
+          - generic [ref=e6449]:
+            - img [ref=e6450]
+            - text: Em Obras
+          - generic [ref=e6452]:
+            - button "Anterior" [disabled] [ref=e6453]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e6454] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e6455]:
+          - 'link "Entrega em jul/2026: Apartamentos de 1 e 2 dormitórios em torre única de fachada clássica, localização privilegiada e lazer no rooftop. Entrega em jul/2026: Apartamentos de 1 e 2 dormitórios em torre única de fachada clássica, localização privilegiada e lazer no rooftop. Entrega em jul/2026: Apartamentos de 1 e 2 dormitórios em torre única de fachada clássica, localização privilegiada e lazer no rooftop. strong list Preço" [ref=e6456] [cursor=pointer]':
+            - /url: /lancamento/entrega-em-jul-2026-apartamentos-de-1-e-2-dormitorios-em-torre-unica-de-fachada-classica-localizacao-privilegiada-e-lazer-no-rooftop-/id-37825852/
+            - generic [ref=e6457]:
+              - 'img "Entrega em jul/2026: Apartamentos de 1 e 2 dormitórios em torre única de fachada clássica, localização privilegiada e lazer no rooftop." [ref=e6459]'
+              - 'img "Entrega em jul/2026: Apartamentos de 1 e 2 dormitórios em torre única de fachada clássica, localização privilegiada e lazer no rooftop." [ref=e6461]'
+            - generic [ref=e6465]:
+              - 'heading "Entrega em jul/2026: Apartamentos de 1 e 2 dormitórios em torre única de fachada clássica, localização privilegiada e lazer no rooftop." [level=2] [ref=e6467]'
+              - generic "strong" [ref=e6468]:
+                - paragraph [ref=e6469]: Rua Levon Apovian, 146
+                - paragraph [ref=e6470]: Jardim Trussardi, São Paulo/SP
+              - generic "list" [ref=e6471]:
+                - paragraph [ref=e6472]:
+                  - img [ref=e6473]
+                  - text: 24m²
+                - paragraph [ref=e6475]:
+                  - img [ref=e6476]
+                  - text: 1 a 2
+              - paragraph [ref=e6478]:
+                - generic [ref=e6479]: R$ 435.000
+                - generic [ref=e6480]: A partir de
+          - button "Contatar" [ref=e6481] [cursor=pointer]
+          - button "Favoritar" [ref=e6482] [cursor=pointer]:
+            - img
+          - generic [ref=e6485]:
+            - img [ref=e6486]
+            - text: Em Obras
+          - generic [ref=e6488]:
+            - button "Anterior" [disabled] [ref=e6489]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e6490] [cursor=pointer]:
+              - generic:
+                - img
+        - link "Novo conceito em moradia na Cachoeira do Bom Jesus strong list Preço" [ref=e6492] [cursor=pointer]:
+          - /url: /lancamento/novo-conceito-em-moradia-na-cachoeira-do-bom-jesus/id-23652656/
+          - generic [ref=e6494]:
+            - heading "Novo conceito em moradia na Cachoeira do Bom Jesus" [level=2] [ref=e6496]
+            - generic "strong" [ref=e6497]:
+              - paragraph [ref=e6498]: Rua Leonel Pereira
+              - paragraph [ref=e6499]: Cachoeira do Bom Jesus, Florianópolis/SC
+            - generic "list" [ref=e6500]:
+              - paragraph [ref=e6501]:
+                - img [ref=e6502]
+                - text: 25m²
+              - paragraph [ref=e6504]:
+                - img [ref=e6505]
+                - text: 1 a 3
+              - paragraph [ref=e6507]:
+                - img [ref=e6508]
+                - text: "1"
+            - paragraph [ref=e6510]:
+              - generic [ref=e6511]: R$ Confira
+        - link "Apartamentos de 1 a 3 quartos no Novo Mundo com lazer completo em Curitiba strong list Preço" [ref=e6513] [cursor=pointer]:
+          - /url: /lancamento/apartamentos-de-1-a-3-quartos-no-novo-mundo-com-lazer-completo-em-curitiba/id-35278882/
+          - generic [ref=e6515]:
+            - heading "Apartamentos de 1 a 3 quartos no Novo Mundo com lazer completo em Curitiba" [level=2] [ref=e6517]
+            - generic "strong" [ref=e6518]:
+              - paragraph [ref=e6519]: Endereço indisponível
+              - paragraph [ref=e6520]: Novo Mundo, Curitiba/PR
+            - generic "list" [ref=e6521]:
+              - paragraph [ref=e6522]:
+                - img [ref=e6523]
+                - text: 26m²
+              - paragraph [ref=e6525]:
+                - img [ref=e6526]
+                - text: 1 a 3
+              - paragraph [ref=e6528]:
+                - img [ref=e6529]
+                - text: "1"
+              - paragraph [ref=e6531]:
+                - img [ref=e6532]
+                - text: "1"
+            - paragraph [ref=e6534]:
+              - generic [ref=e6535]: R$ 289.737
+              - generic [ref=e6536]: A partir de
+        - link "Pré lançamento tabela zero ÚLTIMOS DIAS! strong list Preço" [ref=e6538] [cursor=pointer]:
+          - /url: /lancamento/pre-lancamento-tabela-zero-ultimos-dias-/id-32637848/
+          - generic [ref=e6540]:
+            - heading "Pré lançamento tabela zero ÚLTIMOS DIAS!" [level=2] [ref=e6542]
+            - generic "strong" [ref=e6543]:
+              - paragraph [ref=e6544]: Rua Fernando Amaro, 363
+              - paragraph [ref=e6545]: Alto da Rua XV, Curitiba/PR
+            - generic "list" [ref=e6546]:
+              - paragraph [ref=e6547]:
+                - img [ref=e6548]
+                - text: 26m²
+              - paragraph [ref=e6550]:
+                - img [ref=e6551]
+                - text: 1 a 3
+              - paragraph [ref=e6553]:
+                - img [ref=e6554]
+                - text: "1"
+              - paragraph [ref=e6556]:
+                - img [ref=e6557]
+                - text: "1"
+            - paragraph [ref=e6559]:
+              - generic [ref=e6560]: R$ 322.000
+              - generic [ref=e6561]: A partir de
+        - link "Mundo MOOD SACOMÃ -APTOS 1 e 2 Dorms C/ OPÇAO DE DUAS VARANDAS- Lazer completo strong list Preço" [ref=e6563] [cursor=pointer]:
+          - /url: /lancamento/mundo-mood-sacoma-aptos-1-e-2-dorms-c-opcao-de-duas-varandas-lazer-completo/id-40160810/
+          - generic [ref=e6565]:
+            - heading "Mundo MOOD SACOMÃ -APTOS 1 e 2 Dorms C/ OPÇAO DE DUAS VARANDAS- Lazer completo" [level=2] [ref=e6567]
+            - generic "strong" [ref=e6568]:
+              - paragraph [ref=e6569]: Via Anchieta,700, Sacomã
+              - paragraph [ref=e6570]: Sacomã, São Paulo/SP
+            - generic "list" [ref=e6571]:
+              - paragraph [ref=e6572]:
+                - img [ref=e6573]
+                - text: 27m²
+              - paragraph [ref=e6575]:
+                - img [ref=e6576]
+                - text: 1 a 2
+              - paragraph [ref=e6578]:
+                - img [ref=e6579]
+                - text: "1"
+            - paragraph [ref=e6581]:
+              - generic [ref=e6582]: R$ 270.000
+        - link "Edifício Comercial de Alto Padrão no Boa Vista/Cabral - Salas Disponíveis a Poucos Minutos do Centro Cívico strong list Preço" [ref=e6584] [cursor=pointer]:
+          - /url: /lancamento/edificio-comercial-de-alto-padrao-no-boa-vista-cabral-salas-disponiveis-a-poucos-minutos-do-centro-civico/id-25800607/
+          - generic [ref=e6586]:
+            - heading "Edifício Comercial de Alto Padrão no Boa Vista/Cabral - Salas Disponíveis a Poucos Minutos do Centro Cívico" [level=2] [ref=e6588]
+            - generic "strong" [ref=e6589]:
+              - paragraph [ref=e6590]: Avenida Paraná, 1517
+              - paragraph [ref=e6591]: Bacacheri, Curitiba/PR
+            - generic "list" [ref=e6592]:
+              - paragraph [ref=e6593]:
+                - img [ref=e6594]
+                - text: 29m²
+            - paragraph [ref=e6596]:
+              - generic [ref=e6597]: R$ 302.117
+              - generic [ref=e6598]: A partir de
+        - link "Lançamento no centro de Florianópolis - Estúdios e Apartamentos strong list Preço" [ref=e6600] [cursor=pointer]:
+          - /url: /lancamento/lancamento-no-centro-de-florianopolis-estudios-e-apartamentos/id-35248663/
+          - generic [ref=e6602]:
+            - heading "Lançamento no centro de Florianópolis - Estúdios e Apartamentos" [level=2] [ref=e6604]
+            - generic "strong" [ref=e6605]:
+              - paragraph [ref=e6606]: Rua Crispim Mira, 333
+              - paragraph [ref=e6607]: Centro, Florianópolis/SC
+            - generic "list" [ref=e6608]:
+              - paragraph [ref=e6609]:
+                - img [ref=e6610]
+                - text: 31m²
+              - paragraph [ref=e6612]:
+                - img [ref=e6613]
+                - text: 1 a 2
+              - paragraph [ref=e6615]:
+                - img [ref=e6616]
+                - text: "1"
+            - paragraph [ref=e6618]:
+              - generic [ref=e6619]: R$ 349.000
+              - generic [ref=e6620]: A partir de
+        - link "Apartamento Garden com 01 e 02 dormitórios com suíte no Bairro Bom Fim strong list Preço" [ref=e6622] [cursor=pointer]:
+          - /url: /lancamento/apartamento-garden-com-01-e-02-dormitorios-com-suite-no-bairro-bom-fim/id-42118728/
+          - generic [ref=e6624]:
+            - heading "Apartamento Garden com 01 e 02 dormitórios com suíte no Bairro Bom Fim" [level=2] [ref=e6626]
+            - generic "strong" [ref=e6627]:
+              - paragraph [ref=e6628]: Rua Tomaz Flores, 219
+              - paragraph [ref=e6629]: Independência, Porto Alegre/RS
+            - generic "list" [ref=e6630]:
+              - paragraph [ref=e6631]:
+                - img [ref=e6632]
+                - text: 33m²
+              - paragraph [ref=e6634]:
+                - img [ref=e6635]
+                - text: 1 a 2
+              - paragraph [ref=e6637]:
+                - img [ref=e6638]
+                - text: "1"
+            - paragraph [ref=e6640]:
+              - generic [ref=e6641]: R$ 385.000
+              - generic [ref=e6642]: A partir de
+        - link "Novo Lançamento Bairro de Fátima SoulRio Fátima strong list Preço" [ref=e6644] [cursor=pointer]:
+          - /url: /lancamento/novo-lancamento-bairro-de-fatima-soulrio-fatima/id-34512705/
+          - generic [ref=e6646]:
+            - heading "Novo Lançamento Bairro de Fátima SoulRio Fátima" [level=2] [ref=e6648]
+            - generic "strong" [ref=e6649]:
+              - paragraph [ref=e6650]: Avenida Nossa Senhora De Fátima, 63
+              - paragraph [ref=e6651]: Centro, Rio de Janeiro/RJ
+            - generic "list" [ref=e6652]:
+              - paragraph [ref=e6653]:
+                - img [ref=e6654]
+                - text: 34m²
+              - paragraph [ref=e6656]:
+                - img [ref=e6657]
+                - text: 1 a 2
+              - paragraph [ref=e6659]:
+                - img [ref=e6660]
+                - text: "1"
+            - paragraph [ref=e6662]:
+              - generic [ref=e6663]: R$ 390.000
+        - link "Aquiraz Riviera Ocean Riviera Lançamento apartamentos Venda strong list Preço" [ref=e6665] [cursor=pointer]:
+          - /url: /lancamento/aquiraz-riviera-ocean-riviera-lancamento-apartamentos-venda/id-42372693/
+          - generic [ref=e6667]:
+            - heading "Aquiraz Riviera Ocean Riviera Lançamento apartamentos Venda" [level=2] [ref=e6669]
+            - generic "strong" [ref=e6670]:
+              - paragraph [ref=e6671]: Rua Principal, 1000
+              - paragraph [ref=e6672]: Tapera, Aquiraz/CE
+            - generic "list" [ref=e6673]:
+              - paragraph [ref=e6674]:
+                - img [ref=e6675]
+                - text: 35m²
+              - paragraph [ref=e6677]:
+                - img [ref=e6678]
+                - text: 1 a 3
+              - paragraph [ref=e6680]:
+                - img [ref=e6681]
+                - text: "1"
+              - paragraph [ref=e6683]:
+                - img [ref=e6684]
+                - text: "1"
+            - paragraph [ref=e6686]:
+              - generic [ref=e6687]: R$ 374.000
+              - generic [ref=e6688]: A partir de
+        - link "O melhor Lançamento da Praia do Flamengo strong list Preço" [ref=e6690] [cursor=pointer]:
+          - /url: /lancamento/o-melhor-lancamento-da-praia-do-flamengo/id-42243209/
+          - generic [ref=e6692]:
+            - heading "O melhor Lançamento da Praia do Flamengo" [level=2] [ref=e6694]
+            - generic "strong" [ref=e6695]:
+              - paragraph [ref=e6696]: Rua Ibitiara
+              - paragraph [ref=e6697]: Praia do Flamengo, Salvador/BA
+            - generic "list" [ref=e6698]:
+              - paragraph [ref=e6699]:
+                - img [ref=e6700]
+                - text: 37m²
+              - paragraph [ref=e6702]:
+                - img [ref=e6703]
+                - text: 1 a 2
+              - paragraph [ref=e6705]:
+                - img [ref=e6706]
+                - text: "1"
+              - paragraph [ref=e6708]:
+                - img [ref=e6709]
+                - text: "1"
+            - paragraph [ref=e6711]:
+              - generic [ref=e6712]: R$ 423.000
+              - generic [ref=e6713]: A partir de
+        - link "Upside View Vila Ema, 42 a 92m2, 2 a 3 dorm, com opção de sacada e vaga - ao lado da estação São Lucas strong list Preço" [ref=e6715] [cursor=pointer]:
+          - /url: /lancamento/upside-view-vila-ema-42-a-92m2-2-a-3-dorm-com-opcao-de-sacada-e-vaga-ao-lado-da-estacao-sao-lucas/id-35354894/
+          - generic [ref=e6717]:
+            - heading "Upside View Vila Ema, 42 a 92m2, 2 a 3 dorm, com opção de sacada e vaga - ao lado da estação São Lucas" [level=2] [ref=e6719]
+            - generic "strong" [ref=e6720]:
+              - paragraph [ref=e6721]: Avenida Vila Ema, 3701
+              - paragraph [ref=e6722]: Vila Ema, São Paulo/SP
+            - generic "list" [ref=e6723]:
+              - paragraph [ref=e6724]:
+                - img [ref=e6725]
+                - text: 38m²
+              - paragraph [ref=e6727]:
+                - img [ref=e6728]
+                - text: 2 a 3
+              - paragraph [ref=e6730]:
+                - img [ref=e6731]
+                - text: "1"
+            - paragraph [ref=e6733]:
+              - generic [ref=e6734]: R$ 404.044
+              - generic [ref=e6735]: A partir de
+        - generic [ref=e6736]:
+          - generic [ref=e6741]:
+            - list [ref=e6746]:
+              - listitem [ref=e6747]
+            - list [ref=e6757]:
+              - listitem [ref=e6758]
+            - list [ref=e6768]:
+              - listitem [ref=e6769]
+            - list [ref=e6779]:
+              - listitem [ref=e6780]
+            - list [ref=e6790]:
+              - listitem [ref=e6791]
+          - list [ref=e6800]:
+            - listitem [ref=e6801]
+            - listitem [ref=e6818]
+            - listitem [ref=e6835]
+            - listitem [ref=e6852]
+      - generic [ref=e6869]:
+        - generic [ref=e6870]:
+          - link "Curitiba 25 novos" [ref=e6871] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/pr-curitiba/?filtro=amin:80,amax:150
+            - paragraph [ref=e6872]:
+              - text: Curitiba
+              - generic [ref=e6873]: 25 novos
+          - link "São Paulo 10 novos" [ref=e6874] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-sao-paulo/?filtro=amin:80,amax:150
+            - paragraph [ref=e6875]:
+              - text: São Paulo
+              - generic [ref=e6876]: 10 novos
+          - link "Santos 9 novos" [ref=e6877] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-santos/?filtro=amin:80,amax:150
+            - paragraph [ref=e6878]:
+              - text: Santos
+              - generic [ref=e6879]: 9 novos
+          - link "Rio de Janeiro 8 novos" [ref=e6880] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/rj-rio-de-janeiro/?filtro=amin:80,amax:150
+            - paragraph [ref=e6881]:
+              - text: Rio de Janeiro
+              - generic [ref=e6882]: 8 novos
+          - link "Florianópolis 8 novos" [ref=e6883] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sc-florianopolis/?filtro=amin:80,amax:150
+            - paragraph [ref=e6884]:
+              - text: Florianópolis
+              - generic [ref=e6885]: 8 novos
+          - link "Salvador 6 novos" [ref=e6886] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/ba-salvador/?filtro=amin:80,amax:150
+            - paragraph [ref=e6887]:
+              - text: Salvador
+              - generic [ref=e6888]: 6 novos
+          - link "Caraguatatuba 5 novos" [ref=e6889] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-caraguatatuba/?filtro=amin:80,amax:150
+            - paragraph [ref=e6890]:
+              - text: Caraguatatuba
+              - generic [ref=e6891]: 5 novos
+          - link "Ubatuba 5 novos" [ref=e6892] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-ubatuba/?filtro=amin:80,amax:150
+            - paragraph [ref=e6893]:
+              - text: Ubatuba
+              - generic [ref=e6894]: 5 novos
+          - link "São José 4 novos" [ref=e6895] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sc-sao-jose/?filtro=amin:80,amax:150
+            - paragraph [ref=e6896]:
+              - text: São José
+              - generic [ref=e6897]: 4 novos
+          - link "Sorocaba 4 novos" [ref=e6898] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-sorocaba/?filtro=amin:80,amax:150
+            - paragraph [ref=e6899]:
+              - text: Sorocaba
+              - generic [ref=e6900]: 4 novos
+          - link "Porto Belo 3 novos" [ref=e6901] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sc-porto-belo/?filtro=amin:80,amax:150
+            - paragraph [ref=e6902]:
+              - text: Porto Belo
+              - generic [ref=e6903]: 3 novos
+          - link "Itanhaém 3 novos" [ref=e6904] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-itanhaem/?filtro=amin:80,amax:150
+            - paragraph [ref=e6905]:
+              - text: Itanhaém
+              - generic [ref=e6906]: 3 novos
+          - link "Mogi das Cruzes 3 novos" [ref=e6907] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-mogi-das-cruzes/?filtro=amin:80,amax:150
+            - paragraph [ref=e6908]:
+              - text: Mogi das Cruzes
+              - generic [ref=e6909]: 3 novos
+          - link "Mongaguá 3 novos" [ref=e6910] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/sp-mongagua/?filtro=amin:80,amax:150
+            - paragraph [ref=e6911]:
+              - text: Mongaguá
+              - generic [ref=e6912]: 3 novos
+          - link "Guarapari 2 novos" [ref=e6913] [cursor=pointer]:
+            - /url: /lancamentos-imoveis/es-guarapari/?filtro=amin:80,amax:150
+            - paragraph [ref=e6914]:
+              - text: Guarapari
+              - generic [ref=e6915]: 2 novos
+        - generic:
+          - generic:
+            - button "Anterior" [disabled]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e6918] [cursor=pointer]:
+              - generic:
+                - img
+  - generic [ref=e573]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f
+  - alert [ref=e574]: Lançamentos de imóveis novos, prontos e na planta | Chaves na Mão

@@ -28,6 +28,52 @@ export const SSR_DATA = {
   },
 }
 
+export const REALTY_SEARCH_DATA = {
+  urls: {
+    listings: '/imoveis/brasil/',
+    forRent: '/imoveis-para-alugar/brasil/',
+    forSale: '/imoveis-a-venda/brasil/',
+    launches: '/lancamentos-imoveis/brasil/',
+    apartments: '/apartamentos/brasil/',
+    zeroResults: '/imoveis-para-alugar/brasil/?filtro=pmin:9000000000,pmax:10000000000,ban:4,gar:4',
+    directOwner: '/imoveis-para-alugar-direto-com-o-proprietario/brasil/',
+  },
+  api: {
+    navigationFilters: '/api/realestate/aggregations/navigationFilters/',
+    extraFilters: '/api/realestate/listing/filters/getExtraFilters/',
+  },
+  featureIds: {
+    piscina: 5,
+    elevador: 12,
+    churrasqueira: 3,
+    playground: 6,
+    varanda: 13,
+    interfone: 30,
+  },
+  sortCodes: {
+    relevantes: 'or:0',
+    menorPreco: 'or:1',
+    maiorPreco: 'or:2',
+    menorArea: 'or:3',
+    maiorArea: 'or:4',
+    recentes: 'or:6',
+  },
+  filterPanel: {
+    triggerBtn: 'Filtros',
+    applyBtn: 'Aplicar Filtros',
+    clearBtn: 'Limpar',
+    priceMinId: 'pmin-input',
+    priceMaxId: 'pmax-input',
+    areaMinId: 'amin-input',
+    areaMaxId: 'amax-input',
+  },
+  transactionTypes: {
+    comprar: 'Comprar',
+    alugar: 'Alugar',
+    lancamentos: 'Lançamentos',
+  },
+}
+
 export const TEST_DATA = {
   urls: {
     base: process.env.BASE_URL || 'https://staging.chavesnamao.com.br',

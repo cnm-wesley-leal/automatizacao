@@ -125,7 +125,11 @@ test.describe('Feature Header — Usuário Deslogado', () => {
       } else {
         const overlay = mobilePage.locator('#portal-sidebarMenu [class*="overlay" i]').first()
         if (await overlay.isVisible({ timeout: 1000 }).catch(() => false)) {
-          await overlay.click({ force: true, position: { x: 5, y: 5 } })
+          try {
+            await overlay.click({ force: true, position: { x: 5, y: 5 } })
+          } catch {
+            await hamburger.click({ force: true })
+          }
         } else {
           await hamburger.click({ force: true })
         }
@@ -322,7 +326,7 @@ test.describe('Feature Header — Usuário Logado', () => {
       await expect(hamburger).toBeVisible()
       await hamburger.click()
 
-      const accountEntry = page.getByRole('link', { name: /minha conta|conta|perfil/i }).first()
+      const accountEntry = page.locator('#portal-sidebarMenu').getByRole('link', { name: /minha conta|conta|perfil/i }).first()
       await expect(accountEntry).toBeVisible({ timeout: 8000 })
       await accountEntry.click()
 

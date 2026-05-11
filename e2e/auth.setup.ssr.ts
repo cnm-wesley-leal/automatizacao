@@ -27,7 +27,7 @@ setup('ssr authenticate', async ({ page }, testInfo) => {
   const user = SSR_DATA.users[profile]
   const statePath = getAuthPath(profile, device)
 
-  await page.goto(SSR_DATA.baseUrl, { waitUntil: 'networkidle' })
+  await page.goto(SSR_DATA.baseUrl, { waitUntil: 'domcontentloaded' })
   await dismissCookieConsent(page)
 
   await expect(
@@ -51,7 +51,7 @@ setup('ssr authenticate', async ({ page }, testInfo) => {
 
   await assertAuthenticatedCookies(
     page,
-    25000,
+    30000,
     `[${testInfo.project.name}] Cookie de sessão não encontrado após login (${user.email})`
   )
 

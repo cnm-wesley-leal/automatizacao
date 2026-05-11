@@ -1,0 +1,434 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]
+    - article [ref=e37]:
+      - generic [ref=e39]:
+        - navigation "breadcrumb" [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Imóveis para alugar" [ref=e44] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/brasil/
+            - listitem [ref=e45]:
+              - img [ref=e46]
+            - listitem [ref=e48]:
+              - link "Em todo Brasil" [disabled] [ref=e49]
+        - heading "0 Imóveis para alugar no Brasil" [level=1] [ref=e50]:
+          - strong [ref=e51]: 0 Imóveis para alugar no Brasil
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - img [ref=e56]
+          - paragraph [ref=e60]:
+            - text: + 565326 imóveis similares.
+            - img [ref=e61]
+        - link "Salão Comercial para Locação em Guarulhos, Gopoúva, 1 banheiro, 1 vaga Salão Comercial para Locação em Guarulhos, Gopoúva, 1 banheiro, 1 vaga strong list Preço" [ref=e64] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-com-garagem-sp-guarulhos-gopouva-80m2-RS3000/id-41248396/
+          - img "Salão Comercial para Locação em Guarulhos, Gopoúva, 1 banheiro, 1 vaga" [ref=e67]
+          - generic [ref=e68]:
+            - heading "Salão Comercial para Locação em Guarulhos, Gopoúva, 1 banheiro, 1 vaga" [level=2] [ref=e70]
+            - generic "strong" [ref=e71]:
+              - paragraph [ref=e72]: Rua Cônego Valadão, 559
+              - paragraph [ref=e73]: Gopoúva, Guarulhos/SP
+            - generic "list" [ref=e74]:
+              - paragraph [ref=e75]:
+                - img [ref=e76]
+                - text: 80m²
+              - paragraph [ref=e78]:
+                - img [ref=e79]
+                - text: "1"
+              - paragraph [ref=e81]:
+                - img [ref=e82]
+                - text: "1"
+            - paragraph [ref=e84]:
+              - generic [ref=e85]: R$ 3.000
+        - generic [ref=e86]:
+          - link "Vista Livre, Andar Alto e Lazer de Clube – Apartamento Completo em SP Vista Livre, Andar Alto e Lazer de Clube – Apartamento Completo em SP Vista Livre, Andar Alto e Lazer de Clube – Apartamento Completo em SP strong list Preço" [ref=e87] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-jardim-ivana-67m2-RS2268/id-37741151/
+            - generic [ref=e88]:
+              - img "Vista Livre, Andar Alto e Lazer de Clube – Apartamento Completo em SP" [ref=e90]
+              - img "Vista Livre, Andar Alto e Lazer de Clube – Apartamento Completo em SP" [ref=e92]
+            - generic [ref=e96]:
+              - heading "Vista Livre, Andar Alto e Lazer de Clube – Apartamento Completo em SP" [level=2] [ref=e98]
+              - generic "strong" [ref=e99]:
+                - paragraph [ref=e100]: Avenida José Joaquim Seabra
+                - paragraph [ref=e101]: Jardim Ivana, São Paulo/SP
+              - generic "list" [ref=e102]:
+                - paragraph [ref=e103]:
+                  - img [ref=e104]
+                  - text: 67m²
+                - paragraph [ref=e106]:
+                  - img [ref=e107]
+                  - text: "2"
+                - paragraph [ref=e109]:
+                  - img [ref=e110]
+                  - text: "1"
+                - paragraph [ref=e112]:
+                  - img [ref=e113]
+                  - text: "2"
+              - paragraph [ref=e115]:
+                - generic [ref=e116]: R$ 2.268
+                - generic "Condominio" [ref=e117]:
+                  - text: Condomínio
+                  - generic [ref=e118]: R$ 798
+          - generic [ref=e119]:
+            - button "Anterior" [disabled] [ref=e120]
+            - button "Próximo" [disabled] [ref=e121]
+        - generic [ref=e122]:
+          - link "Apartamento 1/4, mobiliado, vista mar, predio frente para praia Apartamento 1/4, mobiliado, vista mar, predio frente para praia Apartamento 1/4, mobiliado, vista mar, predio frente para praia strong list Preço" [ref=e123] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-1-quarto-com-garagem-ba-salvador-armacao-50m2-RS2300/id-32681677/
+            - generic [ref=e124]:
+              - img "Apartamento 1/4, mobiliado, vista mar, predio frente para praia" [ref=e126]
+              - img "Apartamento 1/4, mobiliado, vista mar, predio frente para praia" [ref=e128]
+            - generic [ref=e132]:
+              - heading "Apartamento 1/4, mobiliado, vista mar, predio frente para praia" [level=2] [ref=e134]
+              - generic "strong" [ref=e135]:
+                - paragraph [ref=e136]: Avenida Octávio Mangabeira, 3551
+                - paragraph [ref=e137]: Armação, Salvador/BA
+              - generic "list" [ref=e138]:
+                - paragraph [ref=e139]:
+                  - img [ref=e140]
+                  - text: 50m²
+                - paragraph [ref=e142]:
+                  - img [ref=e143]
+                  - text: "1"
+                - paragraph [ref=e145]:
+                  - img [ref=e146]
+                  - text: "1"
+                - paragraph [ref=e148]:
+                  - img [ref=e149]
+                  - text: "1"
+              - paragraph [ref=e151]:
+                - generic [ref=e152]: R$ 2.300
+                - generic "IPTU" [ref=e153]:
+                  - text: "Iptu:"
+                  - generic [ref=e154]: R$ 200
+          - generic [ref=e155]:
+            - button "Anterior" [disabled] [ref=e156]
+            - button "Próximo" [disabled] [ref=e157]
+        - generic [ref=e158]:
+          - link "Apartamento com 3 dormitórios para alugar, 91 m² por R$ 5.948,20/mês - Rio 2 - Rio de Janeiro/RJ Apartamento com 3 dormitórios para alugar, 91 m² por R$ 5.948,20/mês - Rio 2 - Rio de Janeiro/RJ Apartamento com 3 dormitórios para alugar, 91 m² por R$ 5.948,20/mês - Rio 2 - Rio de Janeiro/RJ strong list Preço" [ref=e159] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-3-quartos-com-garagem-rj-rio-de-janeiro-barra-da-tijuca-91m2-RS3800/id-42063309/
+            - generic [ref=e160]:
+              - img "Apartamento com 3 dormitórios para alugar, 91 m² por R$ 5.948,20/mês - Rio 2 - Rio de Janeiro/RJ" [ref=e162]
+              - img "Apartamento com 3 dormitórios para alugar, 91 m² por R$ 5.948,20/mês - Rio 2 - Rio de Janeiro/RJ" [ref=e164]
+            - generic [ref=e168]:
+              - heading "Apartamento com 3 dormitórios para alugar, 91 m² por R$ 5.948,20/mês - Rio 2 - Rio de Janeiro/RJ" [level=2] [ref=e170]
+              - generic "strong" [ref=e171]:
+                - paragraph [ref=e172]: Rua Alfredo Ceschiatti, 100
+                - paragraph [ref=e173]: Barra da Tijuca, Rio de Janeiro/RJ
+              - generic "list" [ref=e174]:
+                - paragraph [ref=e175]:
+                  - img [ref=e176]
+                  - text: 91m²
+                - paragraph [ref=e178]:
+                  - img [ref=e179]
+                  - text: "3"
+                - paragraph [ref=e181]:
+                  - img [ref=e182]
+                  - text: "3"
+                - paragraph [ref=e184]:
+                  - img [ref=e185]
+                  - text: "1"
+              - paragraph [ref=e187]:
+                - generic [ref=e188]: R$ 3.800
+                - generic "Condominio" [ref=e189]:
+                  - text: Condomínio
+                  - generic [ref=e190]: R$ 1.890
+          - generic [ref=e191]:
+            - button "Anterior" [disabled] [ref=e192]
+            - button "Próximo" [disabled] [ref=e193]
+        - link "Casa em condomínio para aluguel, 4 quartos, 4 suítes, 6 vagas, Loteamento Village Santa Helena - São José do Rio Preto/SP strong list Preço" [ref=e195] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-para-alugar-4-quartos-com-garagem-sp-sao-jose-do-rio-preto-loteamento-village-santa-helena-904m2-RS17000/id-41342843/
+          - generic [ref=e197]:
+            - heading "Casa em condomínio para aluguel, 4 quartos, 4 suítes, 6 vagas, Loteamento Village Santa Helena - São José do Rio Preto/SP" [level=2] [ref=e199]
+            - generic "strong" [ref=e200]:
+              - paragraph [ref=e201]: Endereço indisponível
+              - paragraph [ref=e202]: Loteamento Village Santa Helena, São José do Rio Preto/SP
+            - generic "list" [ref=e203]:
+              - paragraph [ref=e204]:
+                - img [ref=e205]
+                - text: 610m²
+              - paragraph [ref=e207]:
+                - img [ref=e208]
+                - text: "4"
+              - paragraph [ref=e210]:
+                - img [ref=e211]
+                - text: "6"
+              - paragraph [ref=e213]:
+                - img [ref=e214]
+                - text: "6"
+            - paragraph [ref=e216]:
+              - generic [ref=e217]: R$ 17.000
+              - generic "Condominio" [ref=e218]:
+                - text: Condomínio
+                - generic [ref=e219]: R$ 1.450
+        - generic [ref=e224]:
+          - list [ref=e229]:
+            - listitem [ref=e230]
+          - list [ref=e240]:
+            - listitem [ref=e241]
+          - list [ref=e251]:
+            - listitem [ref=e252]
+          - list [ref=e262]:
+            - listitem [ref=e263]
+          - list [ref=e273]:
+            - listitem [ref=e274]
+        - link "Sala para alugar, 45 m² - Amaral Peixoto - Centro - Niterói/RJ strong list Preço" [ref=e281] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-2-salas-rj-niteroi-centro-RS800/id-40979549/
+          - generic [ref=e283]:
+            - heading "Sala para alugar, 45 m² - Amaral Peixoto - Centro - Niterói/RJ" [level=2] [ref=e285]
+            - generic "strong" [ref=e286]:
+              - paragraph [ref=e287]: Avenida Ernani Do Amaral Peixoto, 334
+              - paragraph [ref=e288]: Centro, Niterói/RJ
+            - generic "list" [ref=e289]:
+              - paragraph [ref=e290]:
+                - img [ref=e291]
+                - text: 45m²
+              - paragraph [ref=e293]:
+                - img [ref=e294]
+                - text: "2"
+              - paragraph [ref=e296]:
+                - img [ref=e297]
+                - text: "1"
+            - paragraph [ref=e299]:
+              - generic [ref=e300]: R$ 800
+              - generic "Condominio" [ref=e301]:
+                - text: Condomínio
+                - generic [ref=e302]: R$ 550
+        - link "Quarto e sala para locação no Centro por R$ 1.500,00 mais taxas. strong list Preço" [ref=e304] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-1-quarto-mg-juiz-de-fora-centro-60m2-RS1500/id-42071577/
+          - generic [ref=e306]:
+            - heading "Quarto e sala para locação no Centro por R$ 1.500,00 mais taxas." [level=2] [ref=e308]
+            - generic "strong" [ref=e309]:
+              - paragraph [ref=e310]: Endereço indisponível
+              - paragraph [ref=e311]: Centro, Juiz de Fora/MG
+            - generic "list" [ref=e312]:
+              - paragraph [ref=e313]:
+                - img [ref=e314]
+                - text: 60m²
+              - paragraph [ref=e316]:
+                - img [ref=e317]
+                - text: "1"
+              - paragraph [ref=e319]:
+                - img [ref=e320]
+                - text: "1"
+            - paragraph [ref=e322]:
+              - generic [ref=e323]: R$ 1.500
+              - generic "Condominio" [ref=e324]:
+                - text: Condomínio
+                - generic [ref=e325]: R$ 388
+        - link "Excelente sala comercial com 27 m²no Macaé Trade Center na Imbetiba strong list Preço" [ref=e327] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-1-sala-com-garagem-rj-macae-imbetiba-40m2-RS1300/id-26074073/
+          - generic [ref=e329]:
+            - heading "Excelente sala comercial com 27 m²no Macaé Trade Center na Imbetiba" [level=2] [ref=e331]
+            - generic "strong" [ref=e332]:
+              - paragraph [ref=e333]: Rua Abílio Moreira De Miranda, 45
+              - paragraph [ref=e334]: Imbetiba, Macaé/RJ
+            - generic "list" [ref=e335]:
+              - paragraph [ref=e336]:
+                - img [ref=e337]
+                - text: 27m²
+              - paragraph [ref=e339]:
+                - img [ref=e340]
+                - text: "1"
+              - paragraph [ref=e342]:
+                - img [ref=e343]
+                - text: "1"
+              - paragraph [ref=e345]:
+                - img [ref=e346]
+                - text: "1"
+            - paragraph [ref=e348]:
+              - generic [ref=e349]: R$ 1.300
+              - generic "Condominio" [ref=e350]:
+                - text: Condomínio
+                - generic [ref=e351]: R$ 656
+        - link "Sala para alugar, 54 m² por R$ 2.086,16/mês - Sé - São Paulo/SP strong list Preço" [ref=e353] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-1-sala-sp-sao-paulo-se-54m2-RS1208/id-39492778/
+          - generic [ref=e355]:
+            - heading "Sala para alugar, 54 m² por R$ 2.086,16/mês - Sé - São Paulo/SP" [level=2] [ref=e357]
+            - generic "strong" [ref=e358]:
+              - paragraph [ref=e359]: Rua José Bonifácio, 209
+              - paragraph [ref=e360]: Sé, São Paulo/SP
+            - generic "list" [ref=e361]:
+              - paragraph [ref=e362]:
+                - img [ref=e363]
+                - text: 54m²
+              - paragraph [ref=e365]:
+                - img [ref=e366]
+                - text: "1"
+              - paragraph [ref=e368]:
+                - img [ref=e369]
+                - text: "1"
+            - paragraph [ref=e371]:
+              - generic [ref=e372]: R$ 1.208
+              - generic "Condominio" [ref=e373]:
+                - text: Condomínio
+                - generic [ref=e374]: R$ 825
+        - link "Barracão para Locação em Limeira, Parque Residencial Roland strong list Preço" [ref=e384] [cursor=pointer]:
+          - /url: /imovel/galpao-para-alugar-sp-limeira-parque-residencial-roland-375m2-RS7000/id-40559081/
+          - generic [ref=e386]:
+            - heading "Barracão para Locação em Limeira, Parque Residencial Roland" [level=2] [ref=e388]
+            - generic "strong" [ref=e389]:
+              - paragraph [ref=e390]: Rua Carolina Roland, 2110
+              - paragraph [ref=e391]: Parque Residencial Roland, Limeira/SP
+            - generic "list" [ref=e392]:
+              - paragraph [ref=e393]:
+                - img [ref=e394]
+                - text: 375m²
+            - paragraph [ref=e396]:
+              - generic [ref=e397]: R$ 7.000
+        - link "Casa comercial 3 quartos para alugar, 408 m² - Jardim Paulista - São Paulo/SP strong list Preço" [ref=e399] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-para-alugar-3-salas-com-garagem-sp-sao-paulo-jardim-paulista-367m2-RS42000/id-29830481/
+          - generic [ref=e401]:
+            - heading "Casa comercial 3 quartos para alugar, 408 m² - Jardim Paulista - São Paulo/SP" [level=2] [ref=e403]
+            - generic "strong" [ref=e404]:
+              - paragraph [ref=e405]: Rua Peixoto Gomide, 305
+              - paragraph [ref=e406]: Jardim Paulista, São Paulo/SP
+            - generic "list" [ref=e407]:
+              - paragraph [ref=e408]:
+                - img [ref=e409]
+                - text: 408m²
+              - paragraph [ref=e411]:
+                - img [ref=e412]
+                - text: "3"
+              - paragraph [ref=e414]:
+                - img [ref=e415]
+                - text: "3"
+              - paragraph [ref=e417]:
+                - img [ref=e418]
+                - text: "10"
+            - paragraph [ref=e420]:
+              - generic [ref=e421]: R$ 42.000
+              - generic "IPTU" [ref=e422]:
+                - text: "Iptu:"
+                - generic [ref=e423]: R$ 6.323
+        - link "Casa em Condomínio para Locação em Bragança Paulista, Condomínio Vale Das águas, 4 dormitórios, 4 suítes, 6 banheiros, 4 vagas strong list Preço" [ref=e425] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-para-alugar-4-quartos-com-garagem-sp-braganca-paulista-condominio-vale-das-aguas-468m2-RS15000/id-41712562/
+          - generic [ref=e427]:
+            - heading "Casa em Condomínio para Locação em Bragança Paulista, Condomínio Vale Das águas, 4 dormitórios, 4 suítes, 6 banheiros, 4 vagas" [level=2] [ref=e429]
+            - generic "strong" [ref=e430]:
+              - paragraph [ref=e431]: Endereço indisponível
+              - paragraph [ref=e432]: Condomínio Vale das Águas, Bragança Paulista/SP
+            - generic "list" [ref=e433]:
+              - paragraph [ref=e434]:
+                - img [ref=e435]
+                - text: 228m²
+              - paragraph [ref=e437]:
+                - img [ref=e438]
+                - text: "4"
+              - paragraph [ref=e440]:
+                - img [ref=e441]
+                - text: "6"
+              - paragraph [ref=e443]:
+                - img [ref=e444]
+                - text: "4"
+            - paragraph [ref=e446]:
+              - generic [ref=e447]: R$ 15.000
+              - generic "Condominio" [ref=e448]:
+                - text: Condomínio
+                - generic [ref=e449]: R$ 726
+        - link "Apartamento para LOCAÇÃO, 51m, 2 Dorm. - R$ 2.300 - Edificio Spazio Firenze - Sorocaba SP strong list Preço" [ref=e451] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sorocaba-jardim-pagliato-51m2-RS2300/id-38085250/
+          - generic [ref=e453]:
+            - heading "Apartamento para LOCAÇÃO, 51m, 2 Dorm. - R$ 2.300 - Edificio Spazio Firenze - Sorocaba SP" [level=2] [ref=e455]
+            - generic "strong" [ref=e456]:
+              - paragraph [ref=e457]: Rua Luiza Matiello Hanser, 200
+              - paragraph [ref=e458]: Jardim Pagliato, Sorocaba/SP
+            - generic "list" [ref=e459]:
+              - paragraph [ref=e460]:
+                - img [ref=e461]
+                - text: 51m²
+              - paragraph [ref=e463]:
+                - img [ref=e464]
+                - text: "2"
+              - paragraph [ref=e466]:
+                - img [ref=e467]
+                - text: "1"
+              - paragraph [ref=e469]:
+                - img [ref=e470]
+                - text: "1"
+            - paragraph [ref=e472]:
+              - generic [ref=e473]: R$ 2.300
+              - generic "Condominio" [ref=e474]:
+                - text: Condomínio
+                - generic [ref=e475]: R$ 529
+        - link "Casa para alugar, 410 m² por R$ 191.290,00/mês - Campeche - Florianópolis/SC strong list Preço" [ref=e477] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-para-alugar-3-quartos-com-garagem-sc-florianopolis-campeche-10000m2-RS19000/id-29730053/
+          - generic [ref=e479]:
+            - heading "Casa para alugar, 410 m² por R$ 191.290,00/mês - Campeche - Florianópolis/SC" [level=2] [ref=e481]
+            - generic "strong" [ref=e482]:
+              - paragraph [ref=e483]: Avenida Pequeno Príncipe
+              - paragraph [ref=e484]: Campeche, Florianópolis/SC
+            - generic "list" [ref=e485]:
+              - paragraph [ref=e486]:
+                - img [ref=e487]
+                - text: 410m²
+              - paragraph [ref=e489]:
+                - img [ref=e490]
+                - text: "3"
+              - paragraph [ref=e492]:
+                - img [ref=e493]
+                - text: "3"
+              - paragraph [ref=e495]:
+                - img [ref=e496]
+                - text: "6"
+            - paragraph [ref=e498]:
+              - generic [ref=e499]: R$ 19.000
+              - generic "Condominio" [ref=e500]:
+                - text: Condomínio
+                - generic [ref=e501]: R$ 290
+        - link "Casa comercial para alugar na Cidade São Francisco, São Paulo strong list Preço" [ref=e503] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-para-alugar-com-garagem-sp-sao-paulo-cidade-sao-francisco-350m2-RS8000/id-36139983/
+          - generic [ref=e505]:
+            - heading "Casa comercial para alugar na Cidade São Francisco, São Paulo" [level=2] [ref=e507]
+            - generic "strong" [ref=e508]:
+              - paragraph [ref=e509]: Endereço indisponível
+              - paragraph [ref=e510]: Cidade São Francisco, São Paulo/SP
+            - generic "list" [ref=e511]:
+              - paragraph [ref=e512]:
+                - img [ref=e513]
+                - text: 350m²
+              - paragraph [ref=e515]:
+                - img [ref=e516]
+                - text: "10"
+              - paragraph [ref=e518]:
+                - img [ref=e519]
+                - text: "2"
+            - paragraph [ref=e521]:
+              - generic [ref=e522]: R$ 8.000
+        - generic [ref=e528]:
+          - list [ref=e533]:
+            - listitem [ref=e534]
+          - list [ref=e544]:
+            - listitem [ref=e545]
+          - list [ref=e555]:
+            - listitem [ref=e556]
+          - list [ref=e566]:
+            - listitem [ref=e567]
+          - list [ref=e577]:
+            - listitem [ref=e578]
+  - generic [ref=e584]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f
+  - alert [ref=e585]

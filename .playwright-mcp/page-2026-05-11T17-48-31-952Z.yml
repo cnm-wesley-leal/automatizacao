@@ -1,0 +1,287 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - paragraph [ref=e31]:
+        - img [ref=e32]
+        - text: Filtros
+    - article [ref=e86]:
+      - generic [ref=e88]:
+        - navigation "breadcrumb" [ref=e90]:
+          - list [ref=e91]:
+            - listitem [ref=e92]:
+              - link "Apartamentos" [ref=e93] [cursor=pointer]:
+                - /url: /apartamentos/brasil/
+            - listitem [ref=e94]:
+              - img [ref=e95]
+            - listitem [ref=e97]:
+              - link "Em todo Brasil" [disabled] [ref=e98]
+            - listitem [ref=e99]:
+              - link "4 quartos" [disabled] [ref=e100]
+        - heading "394 Apartamentos com 4 quartos no Brasil" [level=1] [ref=e101]:
+          - strong [ref=e102]: 394 Apartamentos com 4 quartos no Brasil
+      - generic [ref=e104]:
+        - link "Triplex para Venda em Guarujá, Sítio Paecara (Vicente de Carvalho), 4 dormitórios, 4 banheiros, 2 vagas Triplex para Venda em Guarujá, Sítio Paecara (Vicente de Carvalho), 4 dormitórios, 4 banheiros, 2 vagas strong list Preço" [ref=e106] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-guaruja-sitio-paecara-vicente-de-carvalho-220m2-RS370000/id-28077258/
+          - img "Triplex para Venda em Guarujá, Sítio Paecara (Vicente de Carvalho), 4 dormitórios, 4 banheiros, 2 vagas" [ref=e109]
+          - generic [ref=e110]:
+            - heading "Triplex para Venda em Guarujá, Sítio Paecara (Vicente de Carvalho), 4 dormitórios, 4 banheiros, 2 vagas" [level=2] [ref=e112]
+            - generic "strong" [ref=e113]:
+              - paragraph [ref=e114]: Endereço indisponível
+              - paragraph [ref=e115]: Sítio Paecara (Vicente de Carvalho), Guarujá/SP
+            - generic "list" [ref=e116]:
+              - paragraph [ref=e117]:
+                - img [ref=e118]
+                - text: 220m²
+              - paragraph [ref=e120]:
+                - img [ref=e121]
+                - text: "4"
+              - paragraph [ref=e123]:
+                - img [ref=e124]
+                - text: "4"
+              - paragraph [ref=e126]:
+                - img [ref=e127]
+                - text: "2"
+            - paragraph [ref=e129]:
+              - generic [ref=e130]: R$ 370.000
+        - link "Cobertura com 4 quartos para alugar na Rua Afonso Braz, 251, Vila Nova Conceição, São Paulo por R$ 130.000 Cobertura com 4 quartos para alugar na Rua Afonso Braz, 251, Vila Nova Conceição, São Paulo por R$ 130.000 strong list Preço" [ref=e132] [cursor=pointer]:
+          - /url: /imovel/cobertura-para-alugar-4-quartos-com-garagem-sp-sao-paulo-vila-nova-conceicao-730m2-RS130000/id-30248005/
+          - img "Cobertura com 4 quartos para alugar na Rua Afonso Braz, 251, Vila Nova Conceição, São Paulo por R$ 130.000" [ref=e135]
+          - generic [ref=e136]:
+            - heading "Cobertura com 4 quartos para alugar na Rua Afonso Braz, 251, Vila Nova Conceição, São Paulo por R$ 130.000" [level=2] [ref=e138]
+            - generic "strong" [ref=e139]:
+              - paragraph [ref=e140]: Rua Afonso Braz, 251
+              - paragraph [ref=e141]: Vila Nova Conceição, São Paulo/SP
+            - generic "list" [ref=e142]:
+              - paragraph [ref=e143]:
+                - img [ref=e144]
+                - text: 730m²
+              - paragraph [ref=e146]:
+                - img [ref=e147]
+                - text: "4"
+              - paragraph [ref=e149]:
+                - img [ref=e150]
+                - text: "4"
+              - paragraph [ref=e152]:
+                - img [ref=e153]
+                - text: "8"
+            - paragraph [ref=e155]:
+              - generic [ref=e156]: R$ 130.000
+              - generic "Condominio" [ref=e157]:
+                - text: Condomínio
+                - generic [ref=e158]: R$ 11.600
+        - link "A Venda apartamento contemplado no lance, 132m - Residencial Parque Firenze A Venda apartamento contemplado no lance, 132m - Residencial Parque Firenze strong list Preço" [ref=e160] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-embu-das-artes-parque-esplanada-do-embu-RS380000/id-27518485/
+          - img "A Venda apartamento contemplado no lance, 132m - Residencial Parque Firenze" [ref=e163]
+          - generic [ref=e164]:
+            - heading "A Venda apartamento contemplado no lance, 132m - Residencial Parque Firenze" [level=2] [ref=e166]
+            - generic "strong" [ref=e167]:
+              - paragraph [ref=e168]: Estrada São Judas, 190
+              - paragraph [ref=e169]: Parque Esplanada do Embu, Embu das Artes/SP
+            - generic "list" [ref=e170]:
+              - paragraph [ref=e171]:
+                - img [ref=e172]
+                - text: 132m²
+              - paragraph [ref=e174]:
+                - img [ref=e175]
+                - text: "4"
+              - paragraph [ref=e177]:
+                - img [ref=e178]
+                - text: "4"
+              - paragraph [ref=e180]:
+                - img [ref=e181]
+                - text: "1"
+            - paragraph [ref=e183]:
+              - generic [ref=e184]: R$ 380.000
+              - generic "Condominio" [ref=e185]:
+                - text: Condomínio
+                - generic [ref=e186]: R$ 750
+        - link "Apartamento 5 quartos em Jardin São Paulo SP, apartment in São Paulo Brazil, apartamento de luxo em Jardim América São Paulo, alto padrão em São Paulo Apartamento 5 quartos em Jardin São Paulo SP, apartment in São Paulo Brazil, apartamento de luxo em Jardim América São Paulo, alto padrão em São Paulo strong list Preço" [ref=e188] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-4-quartos-com-garagem-sp-sao-paulo-cerqueira-cesar-753m2-RS155000/id-42449253/
+          - img "Apartamento 5 quartos em Jardin São Paulo SP, apartment in São Paulo Brazil, apartamento de luxo em Jardim América São Paulo, alto padrão em São Paulo" [ref=e191]
+          - generic [ref=e192]:
+            - heading "Apartamento 5 quartos em Jardin São Paulo SP, apartment in São Paulo Brazil, apartamento de luxo em Jardim América São Paulo, alto padrão em São Paulo" [level=2] [ref=e194]
+            - generic "strong" [ref=e195]:
+              - paragraph [ref=e196]: Endereço indisponível
+              - paragraph [ref=e197]: Cerqueira César, São Paulo/SP
+            - generic "list" [ref=e198]:
+              - paragraph [ref=e199]:
+                - img [ref=e200]
+                - text: 753m²
+              - paragraph [ref=e202]:
+                - img [ref=e203]
+                - text: "4"
+              - paragraph [ref=e205]:
+                - img [ref=e206]
+                - text: "5"
+              - paragraph [ref=e208]:
+                - img [ref=e209]
+                - text: "8"
+            - paragraph [ref=e211]:
+              - generic [ref=e212]: R$ 155.000
+              - generic "Condominio" [ref=e213]:
+                - text: Condomínio
+                - generic [ref=e214]: R$ 13.000
+        - link "Candelária, 1 apto. p/andar, 170 m2 área útil, 4 quartos (2 suítes), dois passos do Natal Shopping, UFRN e Arena das Dunas. strong list Preço" [ref=e216] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-rn-natal-candelaria-230m2-RS475000/id-33654124/
+          - generic [ref=e218]:
+            - heading "Candelária, 1 apto. p/andar, 170 m2 área útil, 4 quartos (2 suítes), dois passos do Natal Shopping, UFRN e Arena das Dunas." [level=2] [ref=e220]
+            - generic "strong" [ref=e221]:
+              - paragraph [ref=e222]: Rua João Paulo I, 2151
+              - paragraph [ref=e223]: Candelária, Natal/RN
+            - generic "list" [ref=e224]:
+              - paragraph [ref=e225]:
+                - img [ref=e226]
+                - text: 170m²
+              - paragraph [ref=e228]:
+                - img [ref=e229]
+                - text: "4"
+              - paragraph [ref=e231]:
+                - img [ref=e232]
+                - text: "4"
+              - paragraph [ref=e234]:
+                - img [ref=e235]
+                - text: "2"
+            - paragraph [ref=e237]:
+              - generic [ref=e238]: R$ 475.000
+              - generic "Condominio" [ref=e239]:
+                - text: Condomínio
+                - generic [ref=e240]: R$ 1.100
+        - generic [ref=e245]:
+          - list [ref=e250]:
+            - listitem [ref=e251]
+          - list [ref=e261]:
+            - listitem [ref=e262]
+          - list [ref=e272]:
+            - listitem [ref=e273]
+          - list [ref=e283]:
+            - listitem [ref=e284]
+          - list [ref=e294]:
+            - listitem [ref=e295]
+        - link "Apartamento com 4 quartos para alugar na Rua do Livramento, 251, Vila Mariana, São Paulo por R$ 105.000 strong list Preço" [ref=e302] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-4-quartos-com-garagem-sp-sao-paulo-vila-mariana-RS105000/id-28199930/
+          - generic [ref=e304]:
+            - heading "Apartamento com 4 quartos para alugar na Rua do Livramento, 251, Vila Mariana, São Paulo por R$ 105.000" [level=2] [ref=e306]
+            - generic "strong" [ref=e307]:
+              - paragraph [ref=e308]: Rua Do Livramento, 251
+              - paragraph [ref=e309]: Vila Mariana, São Paulo/SP
+            - generic "list" [ref=e310]:
+              - paragraph [ref=e311]:
+                - img [ref=e312]
+                - text: "4"
+              - paragraph [ref=e314]:
+                - img [ref=e315]
+                - text: "5"
+              - paragraph [ref=e317]:
+                - img [ref=e318]
+                - text: "5"
+            - paragraph [ref=e320]:
+              - generic [ref=e321]: R$ 105.000
+        - link "Apartamento com 4 quartos à venda no Jardim Paulista, Ribeirão Preto strong list Preço" [ref=e323] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-ribeirao-preto-jardim-paulista-139m2-RS410000/id-15523376/
+          - generic [ref=e325]:
+            - heading "Apartamento com 4 quartos à venda no Jardim Paulista, Ribeirão Preto" [level=2] [ref=e327]
+            - generic "strong" [ref=e328]:
+              - paragraph [ref=e329]: Endereço indisponível
+              - paragraph [ref=e330]: Jardim Paulista, Ribeirão Preto/SP
+            - generic "list" [ref=e331]:
+              - paragraph [ref=e332]:
+                - img [ref=e333]
+                - text: 139m²
+              - paragraph [ref=e335]:
+                - img [ref=e336]
+                - text: "4"
+              - paragraph [ref=e338]:
+                - img [ref=e339]
+                - text: "4"
+              - paragraph [ref=e341]:
+                - img [ref=e342]
+                - text: "2"
+            - paragraph [ref=e344]:
+              - generic [ref=e345]: R$ 410.000
+              - generic "Condominio" [ref=e346]:
+                - text: Condomínio
+                - generic [ref=e347]: R$ 190
+        - link "Condomínio The Place Moema Rua Canário, 130 x Rua Inhambu, 97. Apartamento à venda 473m², 4 suítes, andar alto com vista, varanda gourmet, 5 vagas, lazer e segurança no Edifício The Place próximo ao P strong list Preço" [ref=e349] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-4-quartos-com-garagem-sp-sao-paulo-moema-473m2-RS120000/id-27876426/
+          - generic [ref=e351]:
+            - heading "Condomínio The Place Moema Rua Canário, 130 x Rua Inhambu, 97. Apartamento à venda 473m², 4 suítes, andar alto com vista, varanda gourmet, 5 vagas, lazer e segurança no Edifício The Place próximo ao P" [level=2] [ref=e353]
+            - generic "strong" [ref=e354]:
+              - paragraph [ref=e355]: Rua Canário, 130
+              - paragraph [ref=e356]: Moema, São Paulo/SP
+            - generic "list" [ref=e357]:
+              - paragraph [ref=e358]:
+                - img [ref=e359]
+                - text: 473m²
+              - paragraph [ref=e361]:
+                - img [ref=e362]
+                - text: "4"
+              - paragraph [ref=e364]:
+                - img [ref=e365]
+                - text: "5"
+              - paragraph [ref=e367]:
+                - img [ref=e368]
+                - text: "6"
+            - paragraph [ref=e370]:
+              - generic [ref=e371]: R$ 120.000
+              - generic "Condominio" [ref=e372]:
+                - text: Condomínio
+                - generic [ref=e373]: R$ 8.200
+        - link "Apartamento com 4 quartos à venda na Avenida Giovanni Gronchi, 4842, Morumbi, São Paulo strong list Preço" [ref=e375] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-sao-paulo-morumbi-183m2-RS450450/id-36512096/
+          - generic [ref=e377]:
+            - heading "Apartamento com 4 quartos à venda na Avenida Giovanni Gronchi, 4842, Morumbi, São Paulo" [level=2] [ref=e379]
+            - generic "strong" [ref=e380]:
+              - paragraph [ref=e381]: Avenida Giovanni Gronchi, 4842
+              - paragraph [ref=e382]: Morumbi, São Paulo/SP
+            - generic "list" [ref=e383]:
+              - paragraph [ref=e384]:
+                - img [ref=e385]
+                - text: 183m²
+              - paragraph [ref=e387]:
+                - img [ref=e388]
+                - text: "4"
+              - paragraph [ref=e390]:
+                - img [ref=e391]
+                - text: "4"
+              - paragraph [ref=e393]:
+                - img [ref=e394]
+                - text: "2"
+            - paragraph [ref=e396]:
+              - generic [ref=e397]: R$ 450.450
+              - generic "Condominio" [ref=e398]:
+                - text: Condomínio
+                - generic [ref=e399]: R$ 3.500
+        - generic [ref=e404]:
+          - list [ref=e409]:
+            - listitem [ref=e410]
+          - list [ref=e420]:
+            - listitem [ref=e421]
+          - list [ref=e431]:
+            - listitem [ref=e432]
+          - list [ref=e442]:
+            - listitem [ref=e443]
+          - list [ref=e453]:
+            - listitem [ref=e454]
+  - generic [ref=e522]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f

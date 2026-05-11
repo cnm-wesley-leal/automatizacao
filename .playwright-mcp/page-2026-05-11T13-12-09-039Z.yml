@@ -1,0 +1,573 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e579] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e580]
+            - text: Favoritos
+          - link "Entrar" [ref=e582] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - generic [ref=e583]:
+        - list [ref=e584]:
+          - listitem [ref=e585]:
+            - button "Filtros" [ref=e586] [cursor=pointer]:
+              - img
+              - text: Filtros
+            - generic [ref=e936]: + 6
+          - listitem [ref=e587]:
+            - button "Em todo Brasil" [ref=e588] [cursor=pointer]:
+              - img
+              - generic: Em todo Brasil
+              - img
+          - listitem [ref=e589]:
+            - button "Alugar Todos os imóveis" [ref=e937] [cursor=pointer]:
+              - generic:
+                - generic: Alugar
+                - img
+                - text: Todos os imóveis
+              - img
+          - listitem [ref=e591]:
+            - button "2 2 1" [ref=e1825] [cursor=pointer]:
+              - generic:
+                - generic "2 quartos":
+                  - img
+                  - text: "2"
+                - generic "2 banheiros":
+                  - img
+                  - text: "2"
+                - generic "1 garagens":
+                  - img
+                  - text: "1"
+              - img
+          - listitem [ref=e593]:
+            - button "Preço" [ref=e594] [cursor=pointer]:
+              - img
+              - text: Preço
+              - img
+        - button "Limpar" [ref=e595] [cursor=pointer]:
+          - img
+          - text: Limpar
+    - article [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - navigation "breadcrumb" [ref=e41]:
+            - list [ref=e42]:
+              - listitem [ref=e43]:
+                - link "Imóveis para alugar direto com o proprietário" [ref=e2730] [cursor=pointer]:
+                  - /url: /imoveis-para-alugar-direto-com-o-proprietario/brasil/
+              - listitem [ref=e45]:
+                - img [ref=e46]
+              - listitem [ref=e48]:
+                - link "Em todo Brasil" [disabled] [ref=e49]
+              - listitem [ref=e940]:
+                - link "2 quartos" [disabled] [ref=e941]
+          - heading "28 Imóveis direto com o proprietário de 2 quartos para alugar em todo o Brasil" [level=1] [ref=e2731]:
+            - strong [ref=e51]: 28 Imóveis direto com o proprietário de 2 quartos para alugar em todo o Brasil
+        - button "Ordernar por Mais relevantes" [ref=e597] [cursor=pointer]:
+          - generic: Ordernar por
+          - generic:
+            - generic: Mais relevantes
+          - img
+      - generic [ref=e53]:
+        - generic [ref=e2732]:
+          - link "Apartamento no Bella Cintra Eusébio novo e excelente localização. Apartamento no Bella Cintra Eusébio novo e excelente localização. Apartamento no Bella Cintra Eusébio novo e excelente localização. strong list Preço" [ref=e2733] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-ce-eusebio-centro-RS2700/id-40274911/
+            - generic [ref=e2734]:
+              - img "Apartamento no Bella Cintra Eusébio novo e excelente localização." [ref=e2736]
+              - img "Apartamento no Bella Cintra Eusébio novo e excelente localização." [ref=e2738]
+            - generic [ref=e2742]:
+              - heading "Apartamento no Bella Cintra Eusébio novo e excelente localização." [level=2] [ref=e2744]
+              - generic "strong" [ref=e2745]:
+                - paragraph [ref=e2746]: Rua Industrial Amílcar Araújo, 255
+                - paragraph [ref=e2747]: Centro, Eusébio/CE
+              - generic "list" [ref=e2748]:
+                - paragraph [ref=e2749]:
+                  - img [ref=e2750]
+                  - text: 58m²
+                - paragraph [ref=e2752]:
+                  - img [ref=e2753]
+                  - text: "2"
+                - paragraph [ref=e2755]:
+                  - img [ref=e2756]
+                  - text: "2"
+                - paragraph [ref=e2758]:
+                  - img [ref=e2759]
+                  - text: "1"
+              - paragraph [ref=e2761]:
+                - generic [ref=e2762]: R$ 2.700
+                - generic "Condominio" [ref=e2763]:
+                  - text: Condomínio
+                  - generic [ref=e2764]: R$ 450
+          - button "Contatar" [ref=e2765] [cursor=pointer]
+          - button "Favoritar" [ref=e2766] [cursor=pointer]:
+            - img
+          - generic [ref=e2768]:
+            - img [ref=e2769]
+            - text: Direto com o proprietario
+          - generic [ref=e2771]:
+            - button "Anterior" [disabled] [ref=e2772]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e2773] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e2774]:
+          - link "Apartamento com 2 quartos para alugar na Avenida Doutor Paulo Adolfo Bernard, 40, Vivendas do Parque, Campo Grande Apartamento com 2 quartos para alugar na Avenida Doutor Paulo Adolfo Bernard, 40, Vivendas do Parque, Campo Grande Apartamento com 2 quartos para alugar na Avenida Doutor Paulo Adolfo Bernard, 40, Vivendas do Parque, Campo Grande strong list Preço" [ref=e2775] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-ms-campo-grande-vivendas-do-parque-56m2-RS3572/id-23295693/
+            - generic [ref=e2776]:
+              - img "Apartamento com 2 quartos para alugar na Avenida Doutor Paulo Adolfo Bernard, 40, Vivendas do Parque, Campo Grande" [ref=e2778]
+              - img "Apartamento com 2 quartos para alugar na Avenida Doutor Paulo Adolfo Bernard, 40, Vivendas do Parque, Campo Grande" [ref=e2780]
+            - generic [ref=e2784]:
+              - heading "Apartamento com 2 quartos para alugar na Avenida Doutor Paulo Adolfo Bernard, 40, Vivendas do Parque, Campo Grande" [level=2] [ref=e2786]
+              - generic "strong" [ref=e2787]:
+                - paragraph [ref=e2788]: Avenida Doutor Paulo Adolfo Bernard, 40
+                - paragraph [ref=e2789]: Vivendas do Parque, Campo Grande/MS
+              - generic "list" [ref=e2790]:
+                - paragraph [ref=e2791]:
+                  - img [ref=e2792]
+                  - text: 56m²
+                - paragraph [ref=e2794]:
+                  - img [ref=e2795]
+                  - text: "2"
+                - paragraph [ref=e2797]:
+                  - img [ref=e2798]
+                  - text: "2"
+                - paragraph [ref=e2800]:
+                  - img [ref=e2801]
+                  - text: "1"
+              - paragraph [ref=e2803]:
+                - generic [ref=e2804]: R$ 3.572
+                - generic "Condominio" [ref=e2805]:
+                  - text: Condomínio
+                  - generic [ref=e2806]: R$ 389
+          - button "Contatar" [ref=e2807] [cursor=pointer]
+          - button "Favoritar" [ref=e2808] [cursor=pointer]:
+            - img
+          - generic [ref=e2810]:
+            - img [ref=e2811]
+            - text: Direto com o proprietario
+          - generic [ref=e2813]:
+            - button "Anterior" [disabled] [ref=e2814]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e2815] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e2816]:
+          - link "Apartamento Mobiliado,excelente região,acesso a via mangue e Imbiribeira Apartamento Mobiliado,excelente região,acesso a via mangue e Imbiribeira Apartamento Mobiliado,excelente região,acesso a via mangue e Imbiribeira strong list Preço" [ref=e2817] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-pe-recife-boa-viagem-53m2-RS3600/id-40298973/
+            - generic [ref=e2818]:
+              - img "Apartamento Mobiliado,excelente região,acesso a via mangue e Imbiribeira" [ref=e2820]
+              - img "Apartamento Mobiliado,excelente região,acesso a via mangue e Imbiribeira" [ref=e2822]
+            - generic [ref=e2826]:
+              - heading "Apartamento Mobiliado,excelente região,acesso a via mangue e Imbiribeira" [level=2] [ref=e2828]
+              - generic "strong" [ref=e2829]:
+                - paragraph [ref=e2830]: Rua Jorge De Lima, 121
+                - paragraph [ref=e2831]: Boa Viagem, Recife/PE
+              - generic "list" [ref=e2832]:
+                - paragraph [ref=e2833]:
+                  - img [ref=e2834]
+                  - text: 53m²
+                - paragraph [ref=e2836]:
+                  - img [ref=e2837]
+                  - text: "2"
+                - paragraph [ref=e2839]:
+                  - img [ref=e2840]
+                  - text: "2"
+                - paragraph [ref=e2842]:
+                  - img [ref=e2843]
+                  - text: "1"
+              - paragraph [ref=e2845]:
+                - generic [ref=e2846]: R$ 3.600
+          - button "Contatar" [ref=e2847] [cursor=pointer]
+          - button "Favoritar" [ref=e2848] [cursor=pointer]:
+            - img
+          - generic [ref=e2850]:
+            - img [ref=e2851]
+            - text: Direto com o proprietario
+          - generic [ref=e2853]:
+            - button "Anterior" [disabled] [ref=e2854]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e2855] [cursor=pointer]:
+              - generic:
+                - img
+        - generic [ref=e2856]:
+          - link "2Dorms C/Suite 1Vg Lazer Total, Vista ÚInica de São Paulo CRECI 179012 2Dorms C/Suite 1Vg Lazer Total, Vista ÚInica de São Paulo CRECI 179012 2Dorms C/Suite 1Vg Lazer Total, Vista ÚInica de São Paulo CRECI 179012 strong list Preço" [ref=e2857] [cursor=pointer]:
+            - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-sao-paulo-vila-buarque-112m2-RS3230/id-39553545/
+            - generic [ref=e2858]:
+              - img "2Dorms C/Suite 1Vg Lazer Total, Vista ÚInica de São Paulo CRECI 179012" [ref=e2860]
+              - img "2Dorms C/Suite 1Vg Lazer Total, Vista ÚInica de São Paulo CRECI 179012" [ref=e2862]
+            - generic [ref=e2866]:
+              - heading "2Dorms C/Suite 1Vg Lazer Total, Vista ÚInica de São Paulo CRECI 179012" [level=2] [ref=e2868]
+              - generic "strong" [ref=e2869]:
+                - paragraph [ref=e2870]: Rua Major Sertório, 321
+                - paragraph [ref=e2871]: Vila Buarque, São Paulo/SP
+              - generic "list" [ref=e2872]:
+                - paragraph [ref=e2873]:
+                  - img [ref=e2874]
+                  - text: 60m²
+                - paragraph [ref=e2876]:
+                  - img [ref=e2877]
+                  - text: "2"
+                - paragraph [ref=e2879]:
+                  - img [ref=e2880]
+                  - text: "2"
+                - paragraph [ref=e2882]:
+                  - img [ref=e2883]
+                  - text: "1"
+              - paragraph [ref=e2885]:
+                - generic [ref=e2886]: R$ 3.230
+                - generic "Condominio" [ref=e2887]:
+                  - text: Condomínio
+                  - generic [ref=e2888]: R$ 760
+          - button "Contatar" [ref=e2889] [cursor=pointer]
+          - button "Favoritar" [ref=e2890] [cursor=pointer]:
+            - img
+          - generic [ref=e2892]:
+            - img [ref=e2893]
+            - text: Direto com o proprietario
+          - generic [ref=e2895]:
+            - button "Anterior" [disabled] [ref=e2896]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e2897] [cursor=pointer]:
+              - generic:
+                - img
+        - link "Apartamento em Fortaleza à beira-mar em excelente localização strong list Preço" [ref=e2899] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-ce-fortaleza-praia-do-futuro-ii-RS2700/id-39599062/
+          - generic [ref=e2901]:
+            - heading "Apartamento em Fortaleza à beira-mar em excelente localização" [level=2] [ref=e2903]
+            - generic "strong" [ref=e2904]:
+              - paragraph [ref=e2905]: Rua Antônio Atualpa Rodrigues
+              - paragraph [ref=e2906]: Praia do Futuro II, Fortaleza/CE
+            - generic "list" [ref=e2907]:
+              - paragraph [ref=e2908]:
+                - img [ref=e2909]
+                - text: 60m²
+              - paragraph [ref=e2911]:
+                - img [ref=e2912]
+                - text: "2"
+              - paragraph [ref=e2914]:
+                - img [ref=e2915]
+                - text: "2"
+              - paragraph [ref=e2917]:
+                - img [ref=e2918]
+                - text: "1"
+            - paragraph [ref=e2920]:
+              - generic [ref=e2921]: R$ 2.700
+              - generic "Condominio" [ref=e2922]:
+                - text: Condomínio
+                - generic [ref=e2923]: R$ 950
+        - generic [ref=e2928]:
+          - list [ref=e2933]:
+            - listitem [ref=e2934]
+          - list [ref=e2944]:
+            - listitem [ref=e2945]
+          - list [ref=e2955]:
+            - listitem [ref=e2956]
+          - list [ref=e2966]:
+            - listitem [ref=e2967]
+          - list [ref=e2977]:
+            - listitem [ref=e2978]
+        - link "Apartamento 2 Quartos Horto Bela Vista, estrutura completa strong list Preço" [ref=e2985] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-ba-salvador-horto-bela-vista-RS3480/id-41569818/
+          - generic [ref=e2987]:
+            - heading "Apartamento 2 Quartos Horto Bela Vista, estrutura completa" [level=2] [ref=e2989]
+            - generic "strong" [ref=e2990]:
+              - paragraph [ref=e2991]: Alameda Horto Bela Vista, 808
+              - paragraph [ref=e2992]: Horto Bela Vista, Salvador/BA
+            - generic "list" [ref=e2993]:
+              - paragraph [ref=e2994]:
+                - img [ref=e2995]
+                - text: 62m²
+              - paragraph [ref=e2997]:
+                - img [ref=e2998]
+                - text: "2"
+              - paragraph [ref=e3000]:
+                - img [ref=e3001]
+                - text: "2"
+              - paragraph [ref=e3003]:
+                - img [ref=e3004]
+                - text: "1"
+            - paragraph [ref=e3006]:
+              - generic [ref=e3007]: R$ 3.480
+        - link "Belíssimo e Aconchegante Apartamento com Vista Mar em Ponta Negra. strong list Preço" [ref=e3009] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-rn-natal-ponta-negra-RS2500/id-41992066/
+          - generic [ref=e3011]:
+            - heading "Belíssimo e Aconchegante Apartamento com Vista Mar em Ponta Negra." [level=2] [ref=e3013]
+            - generic "strong" [ref=e3014]:
+              - paragraph [ref=e3015]: Rua Brisa Do Mar, 205
+              - paragraph [ref=e3016]: Ponta Negra, Natal/RN
+            - generic "list" [ref=e3017]:
+              - paragraph [ref=e3018]:
+                - img [ref=e3019]
+                - text: 60m²
+              - paragraph [ref=e3021]:
+                - img [ref=e3022]
+                - text: "2"
+              - paragraph [ref=e3024]:
+                - img [ref=e3025]
+                - text: "2"
+              - paragraph [ref=e3027]:
+                - img [ref=e3028]
+                - text: "1"
+            - paragraph [ref=e3030]:
+              - generic [ref=e3031]: R$ 2.500
+        - link "Barra da Tijuca ,Rio 2 , Apartamento 2 quartos sendo 1 suítes , sala em 2 ambientes , cozinha grande e iluminada ,Barra da Tijuca, Rio de Janeiro strong list Preço" [ref=e3033] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-rj-rio-de-janeiro-jacarepagua-120m2-RS3400/id-37107957/
+          - generic [ref=e3035]:
+            - heading "Barra da Tijuca ,Rio 2 , Apartamento 2 quartos sendo 1 suítes , sala em 2 ambientes , cozinha grande e iluminada ,Barra da Tijuca, Rio de Janeiro" [level=2] [ref=e3037]
+            - generic "strong" [ref=e3038]:
+              - paragraph [ref=e3039]: Rua Alfredo Ceschiatti, 10
+              - paragraph [ref=e3040]: Jacarepaguá, Rio de Janeiro/RJ
+            - generic "list" [ref=e3041]:
+              - paragraph [ref=e3042]:
+                - img [ref=e3043]
+                - text: 74m²
+              - paragraph [ref=e3045]:
+                - img [ref=e3046]
+                - text: "2"
+              - paragraph [ref=e3048]:
+                - img [ref=e3049]
+                - text: "2"
+              - paragraph [ref=e3051]:
+                - img [ref=e3052]
+                - text: "1"
+            - paragraph [ref=e3054]:
+              - generic [ref=e3055]: R$ 3.400
+              - generic "Condominio" [ref=e3056]:
+                - text: Condomínio
+                - generic [ref=e3057]: R$ 1.650
+        - link "Apartamento com 2 quartos para alugar na Rua Santa Mônica, 479, Jardim Oriental, Ourinhos strong list Preço" [ref=e3059] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-ourinhos-jardim-oriental-58m2-RS1500/id-42138199/
+          - generic [ref=e3061]:
+            - heading "Apartamento com 2 quartos para alugar na Rua Santa Mônica, 479, Jardim Oriental, Ourinhos" [level=2] [ref=e3063]
+            - generic "strong" [ref=e3064]:
+              - paragraph [ref=e3065]: Rua Santa Mônica, 479
+              - paragraph [ref=e3066]: Jardim Oriental, Ourinhos/SP
+            - generic "list" [ref=e3067]:
+              - paragraph [ref=e3068]:
+                - img [ref=e3069]
+                - text: 58m²
+              - paragraph [ref=e3071]:
+                - img [ref=e3072]
+                - text: "2"
+              - paragraph [ref=e3074]:
+                - img [ref=e3075]
+                - text: "2"
+              - paragraph [ref=e3077]:
+                - img [ref=e3078]
+                - text: "1"
+            - paragraph [ref=e3080]:
+              - generic [ref=e3081]: R$ 1.500
+              - generic "Condominio" [ref=e3082]:
+                - text: Condomínio
+                - generic [ref=e3083]: R$ 350
+        - link "Aluguel/venda em um condomínio clube, totalmente mobiliado no Ecoville strong list Preço" [ref=e3085] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-ecoville-89m2-RS5500/id-41771153/
+          - generic [ref=e3087]:
+            - heading "Aluguel/venda em um condomínio clube, totalmente mobiliado no Ecoville" [level=2] [ref=e3089]
+            - generic "strong" [ref=e3090]:
+              - paragraph [ref=e3091]: Rua Monsenhor Ivo Zanlorenzi, 00000
+              - paragraph [ref=e3092]: Ecoville, Curitiba/PR
+            - generic "list" [ref=e3093]:
+              - paragraph [ref=e3094]:
+                - img [ref=e3095]
+                - text: 89m²
+              - paragraph [ref=e3097]:
+                - img [ref=e3098]
+                - text: "2"
+              - paragraph [ref=e3100]:
+                - img [ref=e3101]
+                - text: "2"
+              - paragraph [ref=e3103]:
+                - img [ref=e3104]
+                - text: "2"
+            - paragraph [ref=e3106]:
+              - generic [ref=e3107]: R$ 5.500
+              - generic "Condominio" [ref=e3108]:
+                - text: Condomínio
+                - generic [ref=e3109]: R$ 750
+        - link "Apartamento com 2 quartos para alugar na Rua Suécia, 300, Praia Brava, Itajaí strong list Preço" [ref=e3111] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sc-itajai-praia-brava-69m2-RS4700/id-24333818/
+          - generic [ref=e3113]:
+            - heading "Apartamento com 2 quartos para alugar na Rua Suécia, 300, Praia Brava, Itajaí" [level=2] [ref=e3115]
+            - generic "strong" [ref=e3116]:
+              - paragraph [ref=e3117]: Rua Suécia, 300
+              - paragraph [ref=e3118]: Praia Brava, Itajaí/SC
+            - generic "list" [ref=e3119]:
+              - paragraph [ref=e3120]:
+                - img [ref=e3121]
+                - text: 69m²
+              - paragraph [ref=e3123]:
+                - img [ref=e3124]
+                - text: "2"
+              - paragraph [ref=e3126]:
+                - img [ref=e3127]
+                - text: "2"
+              - paragraph [ref=e3129]:
+                - img [ref=e3130]
+                - text: "2"
+            - paragraph [ref=e3132]:
+              - generic [ref=e3133]: R$ 4.700
+              - generic "Condominio" [ref=e3134]:
+                - text: Condomínio
+                - generic [ref=e3135]: R$ 668
+        - link "Vista mar, ótima localização, mobília completa, moveis rústicos e 2 vagas de garagem strong list Preço" [ref=e3137] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sc-itapema-meia-praia-102m2-RS3300/id-38623268/
+          - generic [ref=e3139]:
+            - heading "Vista mar, ótima localização, mobília completa, moveis rústicos e 2 vagas de garagem" [level=2] [ref=e3141]
+            - generic "strong" [ref=e3142]:
+              - paragraph [ref=e3143]: Rua 422, 15
+              - paragraph [ref=e3144]: Meia Praia, Itapema/SC
+            - generic "list" [ref=e3145]:
+              - paragraph [ref=e3146]:
+                - img [ref=e3147]
+                - text: 102m²
+              - paragraph [ref=e3149]:
+                - img [ref=e3150]
+                - text: "2"
+              - paragraph [ref=e3152]:
+                - img [ref=e3153]
+                - text: "2"
+              - paragraph [ref=e3155]:
+                - img [ref=e3156]
+                - text: "2"
+            - paragraph [ref=e3158]:
+              - generic [ref=e3159]: R$ 3.300
+              - generic "Condominio" [ref=e3160]:
+                - text: Condomínio
+                - generic [ref=e3161]: R$ 700
+        - link "Apartamento com 2 quartos para alugar na Avenida Dioguinho, 4740, Praia do Futuro II, Fortaleza strong list Preço" [ref=e3163] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-ce-fortaleza-praia-do-futuro-ii-68m2-RS2900/id-18577419/
+          - generic [ref=e3165]:
+            - heading "Apartamento com 2 quartos para alugar na Avenida Dioguinho, 4740, Praia do Futuro II, Fortaleza" [level=2] [ref=e3167]
+            - generic "strong" [ref=e3168]:
+              - paragraph [ref=e3169]: Avenida Dioguinho, 4740
+              - paragraph [ref=e3170]: Praia do Futuro II, Fortaleza/CE
+            - generic "list" [ref=e3171]:
+              - paragraph [ref=e3172]:
+                - img [ref=e3173]
+                - text: 68m²
+              - paragraph [ref=e3175]:
+                - img [ref=e3176]
+                - text: "2"
+              - paragraph [ref=e3178]:
+                - img [ref=e3179]
+                - text: "2"
+              - paragraph [ref=e3181]:
+                - img [ref=e3182]
+                - text: "2"
+            - paragraph [ref=e3184]:
+              - generic [ref=e3185]: R$ 2.900
+              - generic "Condominio" [ref=e3186]:
+                - text: Condomínio
+                - generic [ref=e3187]: R$ 814
+        - link "Apartamento com 2 quartos para alugar na Rua Desembargador Westphalen, 499, Rebouças, Curitiba strong list Preço" [ref=e3189] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-reboucas-90m2-RS5000/id-40821173/
+          - generic [ref=e3191]:
+            - heading "Apartamento com 2 quartos para alugar na Rua Desembargador Westphalen, 499, Rebouças, Curitiba" [level=2] [ref=e3193]
+            - generic "strong" [ref=e3194]:
+              - paragraph [ref=e3195]: Rua Desembargador Westphalen, 499
+              - paragraph [ref=e3196]: Rebouças, Curitiba/PR
+            - generic "list" [ref=e3197]:
+              - paragraph [ref=e3198]:
+                - img [ref=e3199]
+                - text: 70m²
+              - paragraph [ref=e3201]:
+                - img [ref=e3202]
+                - text: "2"
+              - paragraph [ref=e3204]:
+                - img [ref=e3205]
+                - text: "2"
+              - paragraph [ref=e3207]:
+                - img [ref=e3208]
+                - text: "2"
+            - paragraph [ref=e3210]:
+              - generic [ref=e3211]: R$ 5.000
+              - generic "Condominio" [ref=e3212]:
+                - text: Condomínio
+                - generic [ref=e3213]: R$ 1.200
+        - link "Apartamento 3 Quartos Mobiliado, no Cristo Rei - Próx Jardim Botânico strong list Preço" [ref=e3215] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-pr-curitiba-cristo-rei-146m2-RS8000/id-41889322/
+          - generic [ref=e3217]:
+            - heading "Apartamento 3 Quartos Mobiliado, no Cristo Rei - Próx Jardim Botânico" [level=2] [ref=e3219]
+            - generic "strong" [ref=e3220]:
+              - paragraph [ref=e3221]: Rua Sanito Rocha, 103
+              - paragraph [ref=e3222]: Cristo Rei, Curitiba/PR
+            - generic "list" [ref=e3223]:
+              - paragraph [ref=e3224]:
+                - img [ref=e3225]
+                - text: 103m²
+              - paragraph [ref=e3227]:
+                - img [ref=e3228]
+                - text: "2"
+              - paragraph [ref=e3230]:
+                - img [ref=e3231]
+                - text: "3"
+              - paragraph [ref=e3233]:
+                - img [ref=e3234]
+                - text: "2"
+            - paragraph [ref=e3236]:
+              - generic [ref=e3237]: R$ 8.000
+              - generic "Condominio" [ref=e3238]:
+                - text: Condomínio
+                - generic [ref=e3239]: R$ 650
+        - generic [ref=e3240]:
+          - generic [ref=e3245]:
+            - list [ref=e3250]:
+              - listitem [ref=e3251]
+            - list [ref=e3261]:
+              - listitem [ref=e3262]
+            - list [ref=e3272]:
+              - listitem [ref=e3273]
+            - list [ref=e3283]:
+              - listitem [ref=e3284]
+            - list [ref=e3294]:
+              - listitem [ref=e3295]
+          - list [ref=e3304]:
+            - listitem [ref=e3305]
+            - listitem [ref=e3322]
+            - listitem [ref=e3339]
+            - listitem [ref=e3356]
+      - generic [ref=e3373]:
+        - link "Apartamentos p/ alugar" [ref=e3375] [cursor=pointer]:
+          - /url: /apartamentos-para-alugar/brasil/2-quartos/?filtro=ban:2,gar:1,are:[5,12],tve:[0]
+          - img [ref=e3376]
+          - paragraph [ref=e3378]:
+            - text: Apartamentos
+            - generic [ref=e3379]: p/ alugar
+        - generic:
+          - generic:
+            - button "Anterior" [disabled]:
+              - generic:
+                - img
+            - button "Próximo" [disabled]:
+              - generic:
+                - img
+  - generic [ref=e577]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f
+  - alert [ref=e578]: Imóveis direto com o proprietário de 2 quartos para alugar em todo o Brasil | Chaves na Mão

@@ -90,7 +90,7 @@ async function runSocialLoginWithMock(
       await page.context().clearCookies()
     }
 
-    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' })
+    await page.goto(TEST_DATA.urls.base, { waitUntil: 'load' })
     await assertSessionState(page, outcome === 'success')
   } finally {
     await page.context().unroute(provider.oauthSignalRegex, mockHandler)

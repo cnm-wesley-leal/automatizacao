@@ -1,0 +1,360 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - complementary [ref=e28]
+    - article [ref=e37]:
+      - generic [ref=e39]:
+        - navigation "breadcrumb" [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Garagens" [ref=e44] [cursor=pointer]:
+                - /url: /garagem/brasil/
+            - listitem [ref=e45]:
+              - img [ref=e46]
+            - listitem [ref=e48]:
+              - link "Em todo Brasil" [disabled] [ref=e49]
+        - heading "969 Garagens em todo o Brasil" [level=1] [ref=e50]:
+          - strong [ref=e51]: 969 Garagens em todo o Brasil
+      - generic [ref=e53]:
+        - link "Garagem à venda na Rua Dom Pedro II, 1240, Higienópolis, Porto Alegre, 12 m2 por R$ 48.000 Garagem à venda na Rua Dom Pedro II, 1240, Higienópolis, Porto Alegre, 12 m2 por R$ 48.000 strong list Preço" [ref=e55] [cursor=pointer]:
+          - /url: /imovel/garagem-a-venda-com-garagem-rs-porto-alegre-higienopolis-23m2-RS48000/id-34204899/
+          - img "Garagem à venda na Rua Dom Pedro II, 1240, Higienópolis, Porto Alegre, 12 m2 por R$ 48.000" [ref=e58]
+          - generic [ref=e59]:
+            - heading "Garagem à venda na Rua Dom Pedro II, 1240, Higienópolis, Porto Alegre, 12 m2 por R$ 48.000" [level=2] [ref=e61]
+            - generic "strong" [ref=e62]:
+              - paragraph [ref=e63]: Rua Dom Pedro Ii, 1240
+              - paragraph [ref=e64]: Higienópolis, Porto Alegre/RS
+            - generic "list" [ref=e65]:
+              - paragraph [ref=e66]:
+                - img [ref=e67]
+                - text: 12m²
+              - paragraph [ref=e69]:
+                - img [ref=e70]
+                - text: "1"
+              - paragraph [ref=e72]:
+                - img [ref=e73]
+                - text: "1"
+            - paragraph [ref=e75]:
+              - generic [ref=e76]: R$ 48.000
+              - generic "Condominio" [ref=e77]:
+                - text: Condomínio
+                - generic [ref=e78]: R$ 180
+        - generic [ref=e79]:
+          - link "Box para alugar por R$ 1.200/mês - Jundiapeba - Mogi das Cruzes/SP Box para alugar por R$ 1.200/mês - Jundiapeba - Mogi das Cruzes/SP Box para alugar por R$ 1.200/mês - Jundiapeba - Mogi das Cruzes/SP strong list Preço" [ref=e80] [cursor=pointer]:
+            - /url: /imovel/garagem-para-alugar-com-garagem-sp-mogi-das-cruzes-jundiapeba-30m2-RS1200/id-38883638/
+            - generic [ref=e81]:
+              - img "Box para alugar por R$ 1.200/mês - Jundiapeba - Mogi das Cruzes/SP" [ref=e83]
+              - img "Box para alugar por R$ 1.200/mês - Jundiapeba - Mogi das Cruzes/SP" [ref=e85]
+            - generic [ref=e89]:
+              - heading "Box para alugar por R$ 1.200/mês - Jundiapeba - Mogi das Cruzes/SP" [level=2] [ref=e91]
+              - generic "strong" [ref=e92]:
+                - paragraph [ref=e93]: Rua Adriano Pereira
+                - paragraph [ref=e94]: Jundiapeba, Mogi das Cruzes/SP
+              - generic "list" [ref=e95]:
+                - paragraph [ref=e96]:
+                  - img [ref=e97]
+                  - text: 30m²
+                - paragraph [ref=e99]:
+                  - img [ref=e100]
+                  - text: "10"
+              - paragraph [ref=e102]:
+                - generic [ref=e103]: R$ 1.200
+          - generic [ref=e104]:
+            - button "Anterior" [disabled] [ref=e105]
+            - button "Próximo" [disabled] [ref=e106]
+        - generic [ref=e107]:
+          - link "Garagem à venda na Rua 1650, 51, Centro, Balneário Camboriú Garagem à venda na Rua 1650, 51, Centro, Balneário Camboriú Garagem à venda na Rua 1650, 51, Centro, Balneário Camboriú strong list Preço" [ref=e108] [cursor=pointer]:
+            - /url: /imovel/garagem-a-venda-sc-balneario-camboriu-centro-20m2-RS190000/id-40474744/
+            - generic [ref=e109]:
+              - img "Garagem à venda na Rua 1650, 51, Centro, Balneário Camboriú" [ref=e111]
+              - img "Garagem à venda na Rua 1650, 51, Centro, Balneário Camboriú" [ref=e113]
+            - generic [ref=e117]:
+              - heading "Garagem à venda na Rua 1650, 51, Centro, Balneário Camboriú" [level=2] [ref=e119]
+              - generic "strong" [ref=e120]:
+                - paragraph [ref=e121]: Rua 1650, 51
+                - paragraph [ref=e122]: Centro, Balneário Camboriú/SC
+              - generic "list" [ref=e123]:
+                - paragraph [ref=e124]:
+                  - img [ref=e125]
+                  - text: 15m²
+              - paragraph [ref=e127]:
+                - generic [ref=e128]: R$ 190.000
+                - generic "Condominio" [ref=e129]:
+                  - text: Condomínio
+                  - generic [ref=e130]: R$ 120
+          - generic [ref=e131]:
+            - button "Anterior" [disabled] [ref=e132]
+            - button "Próximo" [disabled] [ref=e133]
+        - link "Garagem para alugar na Rua Sete de Setembro, 656, Centro Histórico, Porto Alegre por R$ 280 Garagem para alugar na Rua Sete de Setembro, 656, Centro Histórico, Porto Alegre por R$ 280 strong list Preço" [ref=e135] [cursor=pointer]:
+          - /url: /imovel/garagem-para-alugar-rs-porto-alegre-centro-historico-15m2-RS280/id-37949893/
+          - img "Garagem para alugar na Rua Sete de Setembro, 656, Centro Histórico, Porto Alegre por R$ 280" [ref=e138]
+          - generic [ref=e139]:
+            - heading "Garagem para alugar na Rua Sete de Setembro, 656, Centro Histórico, Porto Alegre por R$ 280" [level=2] [ref=e141]
+            - generic "strong" [ref=e142]:
+              - paragraph [ref=e143]: Rua Sete De Setembro, 656
+              - paragraph [ref=e144]: Centro Histórico, Porto Alegre/RS
+            - generic "list" [ref=e145]:
+              - paragraph [ref=e146]:
+                - img [ref=e147]
+                - text: 15m²
+              - paragraph [ref=e149]:
+                - img [ref=e150]
+                - text: "1"
+            - paragraph [ref=e152]:
+              - generic [ref=e153]: R$ 280
+              - generic "Condominio" [ref=e154]:
+                - text: Condomínio
+                - generic [ref=e155]: R$ 275
+        - link "Garagem à venda na Rua Dom Pedro Ii, 56, Centro, Canela strong list Preço" [ref=e157] [cursor=pointer]:
+          - /url: /imovel/garagem-a-venda-com-garagem-rs-canela-centro-14m2-RS47259/id-20822520/
+          - generic [ref=e159]:
+            - heading "Garagem à venda na Rua Dom Pedro Ii, 56, Centro, Canela" [level=2] [ref=e161]
+            - generic "strong" [ref=e162]:
+              - paragraph [ref=e163]: Rua Dom Pedro Ii, 56
+              - paragraph [ref=e164]: Centro, Canela/RS
+            - generic "list" [ref=e165]:
+              - paragraph [ref=e166]:
+                - img [ref=e167]
+                - text: 14m²
+              - paragraph [ref=e169]:
+                - img [ref=e170]
+                - text: "1"
+            - paragraph [ref=e172]:
+              - generic [ref=e173]: R$ 47.259
+        - generic [ref=e178]:
+          - list [ref=e183]:
+            - listitem [ref=e184]
+          - list [ref=e194]:
+            - listitem [ref=e195]
+          - list [ref=e205]:
+            - listitem [ref=e206]
+          - list [ref=e216]:
+            - listitem [ref=e217]
+          - list [ref=e227]:
+            - listitem [ref=e228]
+        - link "Garagem com 1 sala para alugar em Jaraguá, São Paulo strong list Preço" [ref=e235] [cursor=pointer]:
+          - /url: /imovel/garagem-para-alugar-1-sala-sp-sao-paulo-jaragua-130m2-RS4100/id-34098626/
+          - generic [ref=e237]:
+            - heading "Garagem com 1 sala para alugar em Jaraguá, São Paulo" [level=2] [ref=e239]
+            - generic "strong" [ref=e240]:
+              - paragraph [ref=e241]: Endereço indisponível
+              - paragraph [ref=e242]: Jaraguá, São Paulo/SP
+            - generic "list" [ref=e243]:
+              - paragraph [ref=e244]:
+                - img [ref=e245]
+                - text: 130m²
+              - paragraph [ref=e247]:
+                - img [ref=e248]
+                - text: "1"
+              - paragraph [ref=e250]:
+                - img [ref=e251]
+                - text: "3"
+            - paragraph [ref=e253]:
+              - generic [ref=e254]: R$ 4.100
+              - generic "IPTU" [ref=e255]:
+                - text: "Iptu:"
+                - generic [ref=e256]: R$ 135
+        - link "Garagem à venda na Rua Marechal Deodoro, Vila Pantaleão, Caçapava strong list Preço" [ref=e258] [cursor=pointer]:
+          - /url: /imovel/garagem-a-venda-com-garagem-sp-cacapava-vila-pantaleao-254m2-RS400000/id-37349053/
+          - generic [ref=e260]:
+            - heading "Garagem à venda na Rua Marechal Deodoro, Vila Pantaleão, Caçapava" [level=2] [ref=e262]
+            - generic "strong" [ref=e263]:
+              - paragraph [ref=e264]: Rua Marechal Deodoro
+              - paragraph [ref=e265]: Vila Pantaleão, Caçapava/SP
+            - generic "list" [ref=e266]:
+              - paragraph [ref=e267]:
+                - img [ref=e268]
+                - text: 254m²
+              - paragraph [ref=e270]:
+                - img [ref=e271]
+                - text: "6"
+            - paragraph [ref=e273]:
+              - generic [ref=e274]: R$ 400.000
+        - link "Garagem para alugar na Avenida Celso Garcia, Brás, São Paulo strong list Preço" [ref=e276] [cursor=pointer]:
+          - /url: /imovel/garagem-para-alugar-sp-sao-paulo-bras-20m2-RS2200/id-30723907/
+          - generic [ref=e278]:
+            - heading "Garagem para alugar na Avenida Celso Garcia, Brás, São Paulo" [level=2] [ref=e280]
+            - generic "strong" [ref=e281]:
+              - paragraph [ref=e282]: Avenida Celso Garcia
+              - paragraph [ref=e283]: Brás, São Paulo/SP
+            - generic "list" [ref=e284]:
+              - paragraph [ref=e285]:
+                - img [ref=e286]
+                - text: 20m²
+            - paragraph [ref=e288]:
+              - generic [ref=e289]: R$ 2.200
+              - generic "Condominio" [ref=e290]:
+                - text: Condomínio
+                - generic [ref=e291]: R$ 120
+        - link "Garagem com 1 sala à venda na Avenida Carmo Fiorillo, 290, Vila Santana, Araraquara, 47 m2 por R$ 270.000 strong list Preço" [ref=e293] [cursor=pointer]:
+          - /url: /imovel/garagem-a-venda-1-sala-com-garagem-sp-araraquara-vila-santana-122m2-RS270000/id-37216952/
+          - generic [ref=e295]:
+            - heading "Garagem com 1 sala à venda na Avenida Carmo Fiorillo, 290, Vila Santana, Araraquara, 47 m2 por R$ 270.000" [level=2] [ref=e297]
+            - generic "strong" [ref=e298]:
+              - paragraph [ref=e299]: Avenida Carmo Fiorillo, 290
+              - paragraph [ref=e300]: Vila Santana, Araraquara/SP
+            - generic "list" [ref=e301]:
+              - paragraph [ref=e302]:
+                - img [ref=e303]
+                - text: 47m²
+              - paragraph [ref=e305]:
+                - img [ref=e306]
+                - text: "1"
+              - paragraph [ref=e308]:
+                - img [ref=e309]
+                - text: "2"
+              - paragraph [ref=e311]:
+                - img [ref=e312]
+                - text: "2"
+            - paragraph [ref=e314]:
+              - generic [ref=e315]: R$ 270.000
+        - link "Oportunidade Única no Coração de Santo André! Alugue Seu Espaço Comercial strong list Preço" [ref=e325] [cursor=pointer]:
+          - /url: /imovel/garagem-para-alugar-com-garagem-sp-santo-andre-centro-400m2-RS9500/id-36393511/
+          - generic [ref=e327]:
+            - heading "Oportunidade Única no Coração de Santo André! Alugue Seu Espaço Comercial" [level=2] [ref=e329]
+            - generic "strong" [ref=e330]:
+              - paragraph [ref=e331]: Rua Álvares De Azevedo
+              - paragraph [ref=e332]: Centro, Santo André/SP
+            - generic "list" [ref=e333]:
+              - paragraph [ref=e334]:
+                - img [ref=e335]
+                - text: 400m²
+              - paragraph [ref=e337]:
+                - img [ref=e338]
+                - text: "20"
+            - paragraph [ref=e340]:
+              - generic [ref=e341]: R$ 9.500
+              - generic "IPTU" [ref=e342]:
+                - text: "Iptu:"
+                - generic [ref=e343]: R$ 1.900
+        - link "Box/Garagem à venda por R$ 53.900,00 - Centro - Rio de Janeiro/RJ strong list Preço" [ref=e345] [cursor=pointer]:
+          - /url: /imovel/garagem-a-venda-com-garagem-rj-rio-de-janeiro-centro-22m2-RS53900/id-28678255/
+          - generic [ref=e347]:
+            - heading "Box/Garagem à venda por R$ 53.900,00 - Centro - Rio de Janeiro/RJ" [level=2] [ref=e349]
+            - generic "strong" [ref=e350]:
+              - paragraph [ref=e351]: Rua São José
+              - paragraph [ref=e352]: Centro, Rio de Janeiro/RJ
+            - generic "list" [ref=e353]:
+              - paragraph [ref=e354]:
+                - img [ref=e355]
+                - text: 22m²
+              - paragraph [ref=e357]:
+                - img [ref=e358]
+                - text: "1"
+            - paragraph [ref=e360]:
+              - generic [ref=e361]: R$ 53.900
+              - generic "Condominio" [ref=e362]:
+                - text: Condomínio
+                - generic [ref=e363]: R$ 740
+        - link "Box/Garagem para alugar por R$ 2.713,72/mês - Nova Arujá - Arujá/SP strong list Preço" [ref=e365] [cursor=pointer]:
+          - /url: /imovel/garagem-para-alugar-com-garagem-sp-aruja-nova-aruja-32m2-RS2400/id-35554380/
+          - generic [ref=e367]:
+            - heading "Box/Garagem para alugar por R$ 2.713,72/mês - Nova Arujá - Arujá/SP" [level=2] [ref=e369]
+            - generic "strong" [ref=e370]:
+              - paragraph [ref=e371]: Alameda Das Violetas, 100
+              - paragraph [ref=e372]: Nova Arujá, Arujá/SP
+            - generic "list" [ref=e373]:
+              - paragraph [ref=e374]:
+                - img [ref=e375]
+                - text: 32m²
+              - paragraph [ref=e377]:
+                - img [ref=e378]
+                - text: "1"
+            - paragraph [ref=e380]:
+              - generic [ref=e381]: R$ 2.400
+              - generic "Condominio" [ref=e382]:
+                - text: Condomínio
+                - generic [ref=e383]: R$ 222
+        - link "Garagem à venda no Centro, Caxias do Sul strong list Preço" [ref=e385] [cursor=pointer]:
+          - /url: /imovel/garagem-a-venda-rs-caxias-do-sul-centro-12m2-RS32000/id-25431121/
+          - generic [ref=e387]:
+            - heading "Garagem à venda no Centro, Caxias do Sul" [level=2] [ref=e389]
+            - generic "strong" [ref=e390]:
+              - paragraph [ref=e391]: Endereço indisponível
+              - paragraph [ref=e392]: Centro, Caxias do Sul/RS
+            - generic "list" [ref=e393]:
+              - paragraph [ref=e394]:
+                - img [ref=e395]
+                - text: 12m²
+            - paragraph [ref=e397]:
+              - generic [ref=e398]: R$ 32.000
+              - generic "Condominio" [ref=e399]:
+                - text: Condomínio
+                - generic [ref=e400]: R$ 100
+        - link "Garagem para alugar na Rua Santa Cruz, Centro, Pelotas strong list Preço" [ref=e402] [cursor=pointer]:
+          - /url: /imovel/garagem-para-alugar-rs-pelotas-centro-14m2-RS250/id-25537175/
+          - generic [ref=e404]:
+            - heading "Garagem para alugar na Rua Santa Cruz, Centro, Pelotas" [level=2] [ref=e406]
+            - generic "strong" [ref=e407]:
+              - paragraph [ref=e408]: Rua Santa Cruz
+              - paragraph [ref=e409]: Centro, Pelotas/RS
+            - generic "list" [ref=e410]:
+              - paragraph [ref=e411]:
+                - img [ref=e412]
+                - text: 14m²
+            - paragraph [ref=e414]:
+              - generic [ref=e415]: R$ 250
+        - link "Garagem com 1 sala para alugar na Rua Capitão Jesus, 76, Cachambi, Rio de Janeiro strong list Preço" [ref=e417] [cursor=pointer]:
+          - /url: /imovel/garagem-para-alugar-1-sala-com-garagem-rj-rio-de-janeiro-cachambi-960m2-RS15000/id-40972608/
+          - generic [ref=e419]:
+            - heading "Garagem com 1 sala para alugar na Rua Capitão Jesus, 76, Cachambi, Rio de Janeiro" [level=2] [ref=e421]
+            - generic "strong" [ref=e422]:
+              - paragraph [ref=e423]: Rua Capitão Jesus, 76
+              - paragraph [ref=e424]: Cachambi, Rio de Janeiro/RJ
+            - generic "list" [ref=e425]:
+              - paragraph [ref=e426]:
+                - img [ref=e427]
+                - text: 960m²
+              - paragraph [ref=e429]:
+                - img [ref=e430]
+                - text: "1"
+              - paragraph [ref=e432]:
+                - img [ref=e433]
+                - text: "2"
+              - paragraph [ref=e435]:
+                - img [ref=e436]
+                - text: "150"
+            - paragraph [ref=e438]:
+              - generic [ref=e439]: R$ 15.000
+              - generic "IPTU" [ref=e440]:
+                - text: "Iptu:"
+                - generic [ref=e441]: R$ 1.492
+        - generic [ref=e442]:
+          - generic [ref=e447]:
+            - list [ref=e452]:
+              - listitem [ref=e453]
+            - list [ref=e463]:
+              - listitem [ref=e464]
+            - list [ref=e474]:
+              - listitem [ref=e475]
+            - list [ref=e485]:
+              - listitem [ref=e486]
+            - list [ref=e496]:
+              - listitem [ref=e497]
+          - link "Página 2" [ref=e504] [cursor=pointer]:
+            - /url: /garagem/brasil/?pg=2
+  - generic [ref=e515]: Staging Environment - c2ca03d6696a956309c5e22c717f1b60dbdee75f
+  - alert [ref=e516]

@@ -1,0 +1,4049 @@
+{
+  "config": {
+    "configFile": "C:\\Automatização\\playwright.fuzz.config.ts",
+    "rootDir": "C:/Automatização/e2e/fuzz",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 8
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Automatização/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "setup-chromium",
+        "name": "setup-chromium",
+        "testDir": "C:/Automatização/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "/auth\\.setup\\.ts/"
+        ],
+        "timeout": 120000
+      },
+      {
+        "outputDir": "C:/Automatização/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 8
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Automatização/e2e/fuzz",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report-fuzz"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-results-fuzz.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "..\\auth.setup.ts",
+      "file": "../auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "authenticate as WebUser",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "info",
+                  "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "setup-chromium",
+              "projectName": "setup-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9025,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-11T17:57:50.305Z",
+                  "annotations": [
+                    {
+                      "type": "info",
+                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-88de4bc032eb87c9dfe7",
+          "file": "../auth.setup.ts",
+          "line": 12,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "RealtySearchFuzz.spec.ts",
+      "file": "RealtySearchFuzz.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "RealtySearch — Fuzz de Combinações Aleatórias",
+          "file": "RealtySearchFuzz.spec.ts",
+          "line": 172,
+          "column": 6,
+          "specs": [
+            {
+              "title": "FUZZ-01 — imoveis+1-quarto",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7732,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-01] seed=7 url=/imoveis/brasil/1-quarto/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:01.072Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-c4355975c7a33a981e99",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-02 — apartamentos+1-quarto+gar2+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7710,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-02] seed=7 url=/apartamentos/brasil/1-quarto/?filtro=gar:2,amin:150,amax:500\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:01.080Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-b55940d1d38eccdfa07d",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-03 — venda+4-quartos+preco+or1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7653,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-03] seed=7 url=/imoveis-a-venda/brasil/4-quartos/?filtro=pmin:500000,pmax:2000000,or:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:01.053Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-8d5e62835fa57942dbc4",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-04 — lancamentos+ban3+preco+or0",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7428,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-04] seed=7 url=/lancamentos-imoveis/brasil/?filtro=ban:3,pmin:200000,pmax:800000,or:0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:01.137Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-864b1b590337b838e54a",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-05 — venda+4-quartos+area+feat30",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 7512,
+                      "error": {
+                        "message": "Error: Erros de JS — /imoveis-a-venda/brasil/4-quartos/?filtro=amin:150,amax:500,are:[30]\nMinified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\"]\u001b[39m",
+                        "stack": "Error: Erros de JS — /imoveis-a-venda/brasil/4-quartos/?filtro=amin:150,amax:500,are:[30]\nMinified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\"]\u001b[39m\n    at C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts:211:9",
+                        "location": {
+                          "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                          "column": 9,
+                          "line": 211
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 209 |\u001b[39m         jsErrors\u001b[33m,\u001b[39m\n \u001b[90m 210 |\u001b[39m         \u001b[32m`Erros de JS — ${scenario.url}\\n${jsErrors.join('\\n')}`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 211 |\u001b[39m       )\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 212 |\u001b[39m     })\n \u001b[90m 213 |\u001b[39m   })\n \u001b[90m 214 |\u001b[39m })\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                            "column": 9,
+                            "line": 211
+                          },
+                          "message": "Error: Erros de JS — /imoveis-a-venda/brasil/4-quartos/?filtro=amin:150,amax:500,are:[30]\nMinified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\"]\u001b[39m\n\n  209 |         jsErrors,\n  210 |         `Erros de JS — ${scenario.url}\\n${jsErrors.join('\\n')}`,\n> 211 |       ).toHaveLength(0)\n      |         ^\n  212 |     })\n  213 |   })\n  214 | })\n    at C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts:211:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-05] seed=7 url=/imoveis-a-venda/brasil/4-quartos/?filtro=amin:150,amax:500,are:[30]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:01.103Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Automatização\\test-results\\RealtySearchFuzz-RealtySea-d29b9-venda-4-quartos-area-feat30-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                        "column": 9,
+                        "line": 211
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "531673278460cddfc59f-cd15ec3bf142dae6239c",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-06 — proprietario+ban4+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 7480,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-06] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=ban:4,pmin:1000000,pmax:5000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:01.096Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-6512435a707f6694bf07",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-07 — venda+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 7386,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-07] seed=7 url=/imoveis-a-venda/brasil/?filtro=amin:80,amax:200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:01.120Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-094842e004fde81396b3",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-08 — lancamentos+ban2+gar1+or6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 7413,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-08] seed=7 url=/lancamentos-imoveis/brasil/?filtro=ban:2,gar:1,or:6\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:01.087Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-f3cde820fba65c69e3e4",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-09 — alugar+ban1+gar2+or3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6674,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-09] seed=7 url=/imoveis-para-alugar/brasil/?filtro=ban:1,gar:2,or:3\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:08.782Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-c2f85096fa26068e1437",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-10 — apartamentos+ban1+gar1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6763,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-10] seed=7 url=/apartamentos/brasil/?filtro=ban:1,gar:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:08.859Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-f077a61744b19404aaa7",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-11 — imoveis+2-quartos+gar2+or1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 6688,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-11] seed=7 url=/imoveis/brasil/2-quartos/?filtro=gar:2,or:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:08.870Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-f1e07916cbb2df2eecb9",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-12 — venda+1-quarto+gar2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6600,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-12] seed=7 url=/imoveis-a-venda/brasil/1-quarto/?filtro=gar:2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:08.902Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-881e94402900655ddda0",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-13 — alugar+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5773,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-13] seed=7 url=/imoveis-para-alugar/brasil/?filtro=pmin:800000,pmax:3000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:08.992Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-2ff5f359c546f9209a2d",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-14 — venda+4-quartos+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5860,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-14] seed=7 url=/imoveis-a-venda/brasil/4-quartos/?filtro=pmin:1000000,pmax:5000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:09.078Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-c6e62b52546e4bd98177",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-15 — venda+gar2+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6571,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-15] seed=7 url=/imoveis-a-venda/brasil/?filtro=gar:2,pmin:100000,pmax:500000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:09.100Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-eb2b65e1de765c93d6ee",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-16 — proprietario",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 6040,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-16] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:11.169Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-003028cbcb425aec6ab1",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-17 — apartamentos+2-quartos+ban2+feat13",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6119,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-17] seed=7 url=/apartamentos/brasil/2-quartos/?filtro=ban:2,are:[13]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:14.784Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-1a7459694c57aef70953",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-18 — lancamentos+ban4+preco+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5912,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-18] seed=7 url=/lancamentos-imoveis/brasil/?filtro=ban:4,pmin:100000,pmax:500000,amin:100,amax:300\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:14.950Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-65288d5aba73eb2869fa",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-19 — alugar+ban1+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6103,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-19] seed=7 url=/imoveis-para-alugar/brasil/?filtro=ban:1,amin:30,amax:100\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:15.468Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-6bb3ac0f6df3aa59ba89",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-20 — proprietario+4-quartos+area+feat3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6173,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-20] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/4-quartos/?filtro=amin:150,amax:500,are:[3]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:15.516Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-005b7cbecf0149cc2613",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-21 — apartamentos+preco+feat13",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 30403,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://staging.chavesnamao.com.br/apartamentos/brasil/?filtro=pmin:1000000,pmax:5000000,are:[13]\", waiting until \"load\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://staging.chavesnamao.com.br/apartamentos/brasil/?filtro=pmin:1000000,pmax:5000000,are:[13]\", waiting until \"load\"\u001b[22m\n\n    at C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts:182:18",
+                        "location": {
+                          "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                          "column": 18,
+                          "line": 182
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 180 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`[FUZZ-${id}] seed=${SEED} url=${scenario.url}`\u001b[39m)\n \u001b[90m 181 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 182 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(scenario\u001b[33m.\u001b[39murl)\n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 183 |\u001b[39m       \u001b[36mawait\u001b[39m dismissCookieConsent(page)\n \u001b[90m 184 |\u001b[39m\n \u001b[90m 185 |\u001b[39m       \u001b[90m// Página deve renderizar — \"0 Imóveis\" é resultado válido, erro 500 não é\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                            "column": 18,
+                            "line": 182
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://staging.chavesnamao.com.br/apartamentos/brasil/?filtro=pmin:1000000,pmax:5000000,are:[13]\", waiting until \"load\"\u001b[22m\n\n\n  180 |       console.log(`[FUZZ-${id}] seed=${SEED} url=${scenario.url}`)\n  181 |\n> 182 |       await page.goto(scenario.url)\n      |                  ^\n  183 |       await dismissCookieConsent(page)\n  184 |\n  185 |       // Página deve renderizar — \"0 Imóveis\" é resultado válido, erro 500 não é\n    at C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts:182:18"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-21] seed=7 url=/apartamentos/brasil/?filtro=pmin:1000000,pmax:5000000,are:[13]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:15.575Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Automatização\\test-results\\RealtySearchFuzz-RealtySea-b72f4-—-apartamentos-preco-feat13-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                        "column": 18,
+                        "line": 182
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "531673278460cddfc59f-26574fbe08f211e32ab6",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-22 — venda+3-quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6009,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-22] seed=7 url=/imoveis-a-venda/brasil/3-quartos/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:15.641Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-f87513241be22ef37f0d",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-23 — venda+ban1+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6115,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-23] seed=7 url=/imoveis-a-venda/brasil/?filtro=ban:1,pmin:200000,pmax:800000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:15.692Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-573eeece3ede6777c8d9",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-24 — alugar+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5871,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-24] seed=7 url=/imoveis-para-alugar/brasil/?filtro=pmin:800000,pmax:3000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:17.505Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-8e0394eaebff25ec45e2",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-25 — alugar+1-quarto+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5713,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-25] seed=7 url=/imoveis-para-alugar/brasil/1-quarto/?filtro=amin:80,amax:200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:20.899Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-b727a7841dc1bf5379f6",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-26 — alugar+3-quartos+gar3+area+feat30+or4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5904,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-26] seed=7 url=/imoveis-para-alugar/brasil/3-quartos/?filtro=gar:3,amin:50,amax:150,are:[30],or:4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:20.920Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-371675a54ed454d6b592",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-27 — venda+3-quartos+ban3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6056,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-27] seed=7 url=/imoveis-a-venda/brasil/3-quartos/?filtro=ban:3\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:21.581Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-ce7544d29c7e4fbaf4b4",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-28 — alugar+1-quarto+ban4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6073,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-28] seed=7 url=/imoveis-para-alugar/brasil/1-quarto/?filtro=ban:4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:21.670Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-490a74c39e79c0956b1f",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-29 — venda+3-quartos+preco+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5865,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-29] seed=7 url=/imoveis-a-venda/brasil/3-quartos/?filtro=pmin:800000,pmax:3000000,amin:80,amax:200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:21.710Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-16dd7833ebbfcbc66bfc",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-30 — imoveis",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5815,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-30] seed=7 url=/imoveis/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:21.829Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-37e077bdf61b849c49ba",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-31 — apartamentos+area+or6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5822,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-31] seed=7 url=/apartamentos/brasil/?filtro=amin:150,amax:500,or:6\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:23.398Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-ebe9a6d7d2d6f2b5b466",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-32 — imoveis+gar3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5916,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-32] seed=7 url=/imoveis/brasil/?filtro=gar:3\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:26.627Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-51a397f00301ef06a612",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-33 — imoveis+ban3+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6026,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-33] seed=7 url=/imoveis/brasil/?filtro=ban:3,pmin:500000,pmax:2000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:26.841Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-823fa9b7f36d9861a89e",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-34 — lancamentos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6018,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-34] seed=7 url=/lancamentos-imoveis/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:27.587Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-8bfcc819921d73574c14",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-35 — imoveis+gar1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6291,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-35] seed=7 url=/imoveis/brasil/?filtro=gar:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:27.649Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-806db9dea36b9a1ff017",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-36 — lancamentos+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5985,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-36] seed=7 url=/lancamentos-imoveis/brasil/?filtro=amin:50,amax:150\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:27.661Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-d840b4a59b01a0bcc5be",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-37 — proprietario+feat13+or0",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6019,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-37] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=are:[13],or:0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:27.758Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-bf3715b304d627a0f8d2",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-38 — venda+ban1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5871,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-38] seed=7 url=/imoveis-a-venda/brasil/?filtro=ban:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:29.234Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-c599e8fbd81672c01dbe",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-39 — alugar+ban4+preco+or6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5714,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-39] seed=7 url=/imoveis-para-alugar/brasil/?filtro=ban:4,pmin:100000,pmax:500000,or:6\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:32.564Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-b8144c511b7d55d197da",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-40 — apartamentos+gar2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5907,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-40] seed=7 url=/apartamentos/brasil/?filtro=gar:2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:32.883Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-23f0aec24e5c80a7b245",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-41 — alugar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6168,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-41] seed=7 url=/imoveis-para-alugar/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:33.616Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-5b00a398db4556bb2e38",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-42 — proprietario+ban3+preco+feat12",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6078,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-42] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=ban:3,pmin:100000,pmax:500000,are:[12]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:33.665Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-f31aa152019b9f448518",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-43 — venda+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6103,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-43] seed=7 url=/imoveis-a-venda/brasil/?filtro=amin:150,amax:500\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:33.788Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-1a61866e6081cdd70d0a",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-44 — proprietario+2-quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 5778,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-44] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/2-quartos/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:33.958Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-f8f9f1b1797b62352f0a",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-45 — apartamentos+2-quartos+preco+area+or3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 6018,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-45] seed=7 url=/apartamentos/brasil/2-quartos/?filtro=pmin:500000,pmax:2000000,amin:80,amax:200,or:3\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:35.128Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-3d065d0d0c706eff7f8b",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-46 — imoveis+feat13",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5793,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-46] seed=7 url=/imoveis/brasil/?filtro=are:[13]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:38.305Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-36732e0a5ff5b7819290",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-47 — venda+2-quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5848,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-47] seed=7 url=/imoveis-a-venda/brasil/2-quartos/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:38.817Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-e0688ef5291abcb5cae1",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-48 — alugar+gar3+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6085,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-48] seed=7 url=/imoveis-para-alugar/brasil/?filtro=gar:3,amin:80,amax:200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:39.755Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-7d6e5122d4e28b0f1004",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-49 — apartamentos+3-quartos+ban3+gar2+area+feat12",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6207,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-49] seed=7 url=/apartamentos/brasil/3-quartos/?filtro=ban:3,gar:2,amin:50,amax:150,are:[12]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:39.760Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-d1b8e504dfbae5a574cd",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-50 — alugar+ban3+preco+or6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6011,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-50] seed=7 url=/imoveis-para-alugar/brasil/?filtro=ban:3,pmin:300000,pmax:1000000,or:6\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:39.803Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-71ad747303bf251d0464",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-51 — alugar+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6020,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-51] seed=7 url=/imoveis-para-alugar/brasil/?filtro=pmin:1000000,pmax:5000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:39.909Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-e5ce6124129bdcb08e46",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-52 — venda+3-quartos+ban1+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5960,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-52] seed=7 url=/imoveis-a-venda/brasil/3-quartos/?filtro=ban:1,pmin:300000,pmax:1000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:41.166Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-3fe85b933c562d04b019",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-53 — lancamentos+ban4+gar1+preco+area+or0",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5754,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-53] seed=7 url=/lancamentos-imoveis/brasil/?filtro=ban:4,gar:1,pmin:500000,pmax:2000000,amin:50,amax:150,or:0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:44.129Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-03d2ebe706296b9f3055",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-54 — proprietario+area+or2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5908,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-54] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=amin:50,amax:150,or:2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:44.682Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-45ae0a5bb3113a7095b5",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-55 — proprietario+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5869,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-55] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=pmin:500000,pmax:2000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:45.838Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-29a2fd65cdbb11e7aa4c",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-56 — alugar+3-quartos+gar1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6314,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-56] seed=7 url=/imoveis-para-alugar/brasil/3-quartos/?filtro=gar:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:45.863Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-2d27a480ef8563079cd2",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-57 — venda+3-quartos+ban4+gar1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6209,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-57] seed=7 url=/imoveis-a-venda/brasil/3-quartos/?filtro=ban:4,gar:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:45.947Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-b879e5df5e502ea14a62",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-58 — alugar+preco+or2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6020,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-58] seed=7 url=/imoveis-para-alugar/brasil/?filtro=pmin:300000,pmax:1000000,or:2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:45.984Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-72b5c66e9c27e9921dd7",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-59 — apartamentos+4-quartos+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 6057,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-59] seed=7 url=/apartamentos/brasil/4-quartos/?filtro=pmin:200000,pmax:800000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:47.825Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-cb8c32322778dd530453",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-60 — venda+3-quartos+gar3+feat30",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5966,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-60] seed=7 url=/imoveis-a-venda/brasil/3-quartos/?filtro=gar:3,are:[30]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:47.146Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-78c7204db24a16bab3a2",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-61 — proprietario+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5740,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-61] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=pmin:300000,pmax:1000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:49.906Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-7166af05d46064aa308f",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-62 — lancamentos+ban3+or3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5678,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-62] seed=7 url=/lancamentos-imoveis/brasil/?filtro=ban:3,or:3\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:50.601Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-c12b64edac44723ed718",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-63 — apartamentos+preco+or4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5853,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-63] seed=7 url=/apartamentos/brasil/?filtro=pmin:100000,pmax:500000,or:4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:51.738Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-bb4b9c78636b8fce7e93",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-64 — apartamentos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5913,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-64] seed=7 url=/apartamentos/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:52.016Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-0c953aadfd03ecb6a97d",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-65 — venda+ban4+preco+or6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 5958,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-65] seed=7 url=/imoveis-a-venda/brasil/?filtro=ban:4,pmin:800000,pmax:3000000,or:6\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:52.172Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-8804b5b5d1625904027e",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-66 — alugar+1-quarto+ban4+area+or2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 5869,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-66] seed=7 url=/imoveis-para-alugar/brasil/1-quarto/?filtro=ban:4,amin:100,amax:300,or:2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:52.192Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-b3594657542c4dc90f87",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-67 — apartamentos+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 6153,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-67] seed=7 url=/apartamentos/brasil/?filtro=pmin:300000,pmax:1000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:53.146Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-10a24956400d0e722a0c",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-68 — proprietario+gar1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 5863,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-68] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=gar:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:54.057Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-42563b746484d28d6e09",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-69 — apartamentos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6023,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-69] seed=7 url=/apartamentos/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:55.663Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-064c5cd0837fed79aacb",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-70 — proprietario+1-quarto+gar3+preco+feat30",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5823,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-70] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/1-quarto/?filtro=gar:3,pmin:1000000,pmax:5000000,are:[30]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:56.291Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-5b30fc47b50ca1b5400d",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-71 — proprietario+ban1+gar2+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5826,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-71] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=ban:1,gar:2,amin:80,amax:200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:57.606Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-d5adf5a22c2acc22fd0d",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-72 — lancamentos+gar1+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6127,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-72] seed=7 url=/lancamentos-imoveis/brasil/?filtro=gar:1,amin:80,amax:200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:57.941Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-3b22984b28faf9ec17df",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-73 — proprietario+4-quartos+ban4+area+or0",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6146,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-73] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/4-quartos/?filtro=ban:4,amin:80,amax:200,or:0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:58.075Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-d592eed64b0bd4dbc86f",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-74 — proprietario+ban2+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6003,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-74] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=ban:2,amin:30,amax:100\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:58.143Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-cd7a80e56e62049068e1",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-75 — proprietario+ban4+feat5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 6040,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-75] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=ban:4,are:[5]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:59.323Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-8fecacecf72672db7478",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-76 — imoveis+ban1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 5676,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-76] seed=7 url=/imoveis/brasil/?filtro=ban:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:58:59.939Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-3d11ca94ad855547cef5",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-77 — venda+feat6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5949,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-77] seed=7 url=/imoveis-a-venda/brasil/?filtro=are:[6]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:01.698Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-c21b24ebc3fb3eca0a62",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-78 — apartamentos+ban2+or2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5862,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-78] seed=7 url=/apartamentos/brasil/?filtro=ban:2,or:2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:02.127Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-3c18d006f4873b6b66e3",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-79 — proprietario+1-quarto+ban4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5826,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-79] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/1-quarto/?filtro=ban:4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:03.453Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-c8026be6032237fbb35e",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-80 — alugar+or1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5980,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-80] seed=7 url=/imoveis-para-alugar/brasil/?filtro=or:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:04.081Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-beb19f616568fac04e28",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-81 — imoveis",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 5833,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-81] seed=7 url=/imoveis/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:04.160Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-1f7ca8e30eb7f02c09df",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-82 — imoveis+or2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 5760,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-82] seed=7 url=/imoveis/brasil/?filtro=or:2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:04.236Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-e09c2d2acd70abd8057f",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-83 — apartamentos+2-quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5839,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-83] seed=7 url=/apartamentos/brasil/2-quartos/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:05.381Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-e1444e3f27c916593b06",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-84 — venda+ban1+gar3+feat5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 5845,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-84] seed=7 url=/imoveis-a-venda/brasil/?filtro=ban:1,gar:3,are:[5]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:05.632Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-4642055044797b249c89",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-85 — alugar+gar2+preco+or0",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5772,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-85] seed=7 url=/imoveis-para-alugar/brasil/?filtro=gar:2,pmin:1000000,pmax:5000000,or:0\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:07.659Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-087184c3a18f319f9916",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-86 — proprietario+gar3+or4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5802,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-86] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/?filtro=gar:3,or:4\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:08.003Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-0af698829a4215c43e36",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-87 — alugar+2-quartos+preco",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5781,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-87] seed=7 url=/imoveis-para-alugar/brasil/2-quartos/?filtro=pmin:500000,pmax:2000000\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:09.292Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-6b64ac1aad563fe4a4dd",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-88 — alugar+3-quartos+preco+feat13",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6076,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-88] seed=7 url=/imoveis-para-alugar/brasil/3-quartos/?filtro=pmin:300000,pmax:1000000,are:[13]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:10.009Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-04f3b1cb8b7be71a80b0",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-89 — venda+or6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 6070,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-89] seed=7 url=/imoveis-a-venda/brasil/?filtro=or:6\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:10.015Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-d65f4fe74a0fc940e833",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-90 — proprietario",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5709,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-90] seed=7 url=/imoveis-para-alugar-direto-com-o-proprietario/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:10.070Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-3e8038dd04165f9f5df4",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-91 — lancamentos+preco+area+or1",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 5943,
+                      "error": {
+                        "message": "Error: Erros de JS — /lancamentos-imoveis/brasil/?filtro=pmin:200000,pmax:800000,amin:30,amax:100,or:1\nMinified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\"]\u001b[39m",
+                        "stack": "Error: Erros de JS — /lancamentos-imoveis/brasil/?filtro=pmin:200000,pmax:800000,amin:30,amax:100,or:1\nMinified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\"]\u001b[39m\n    at C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts:211:9",
+                        "location": {
+                          "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                          "column": 9,
+                          "line": 211
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 209 |\u001b[39m         jsErrors\u001b[33m,\u001b[39m\n \u001b[90m 210 |\u001b[39m         \u001b[32m`Erros de JS — ${scenario.url}\\n${jsErrors.join('\\n')}`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 211 |\u001b[39m       )\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 212 |\u001b[39m     })\n \u001b[90m 213 |\u001b[39m   })\n \u001b[90m 214 |\u001b[39m })\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                            "column": 9,
+                            "line": 211
+                          },
+                          "message": "Error: Erros de JS — /lancamentos-imoveis/brasil/?filtro=pmin:200000,pmax:800000,amin:30,amax:100,or:1\nMinified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m1\u001b[39m\nReceived array:  \u001b[31m[\"Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\"]\u001b[39m\n\n  209 |         jsErrors,\n  210 |         `Erros de JS — ${scenario.url}\\n${jsErrors.join('\\n')}`,\n> 211 |       ).toHaveLength(0)\n      |         ^\n  212 |     })\n  213 |   })\n  214 | })\n    at C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts:211:9"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-91] seed=7 url=/lancamentos-imoveis/brasil/?filtro=pmin:200000,pmax:800000,amin:30,amax:100,or:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:11.246Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Automatização\\test-results\\RealtySearchFuzz-RealtySea-0f25a--lancamentos-preco-area-or1-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Automatização\\e2e\\fuzz\\RealtySearchFuzz.spec.ts",
+                        "column": 9,
+                        "line": 211
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "531673278460cddfc59f-592bd21bcafa672b30c8",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-92 — apartamentos+gar3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 5765,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-92] seed=7 url=/apartamentos/brasil/?filtro=gar:3\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:11.498Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-efef4ddf0cb799b3a87f",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-93 — venda+ban3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5784,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-93] seed=7 url=/imoveis-a-venda/brasil/?filtro=ban:3\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:13.443Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-240cc4e0da1977e0e71f",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-94 — alugar+ban3+area",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5796,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-94] seed=7 url=/imoveis-para-alugar/brasil/?filtro=ban:3,amin:100,amax:300\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:13.817Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-026b372a2771a2b70a62",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-95 — lancamentos+ban2+preco+or1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5671,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-95] seed=7 url=/lancamentos-imoveis/brasil/?filtro=ban:2,pmin:500000,pmax:2000000,or:1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:15.087Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-ccb97897f99424147236",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-96 — imoveis+ban3+area+or6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5824,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-96] seed=7 url=/imoveis/brasil/?filtro=ban:3,amin:30,amax:100,or:6\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:15.791Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-d4212df1a5a9c6890d97",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-97 — lancamentos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 5744,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-97] seed=7 url=/lancamentos-imoveis/brasil/\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:16.095Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-4ba2942409486363f9b2",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-98 — imoveis+preco+feat3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 5982,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-98] seed=7 url=/imoveis/brasil/?filtro=pmin:300000,pmax:1000000,are:[3]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:16.096Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-b75cebc42ddd08728b24",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-99 — alugar+ban2+gar3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 5942,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-99] seed=7 url=/imoveis-para-alugar/brasil/?filtro=ban:2,gar:3\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:17.276Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-a9995ba68443c511e5d3",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            },
+            {
+              "title": "FUZZ-100 — lancamentos+gar1+or2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5830,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[FUZZ-100] seed=7 url=/lancamentos-imoveis/brasil/?filtro=gar:1,or:2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-11T17:59:18.880Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "531673278460cddfc59f-f551c5ead221554baa13",
+              "file": "RealtySearchFuzz.spec.ts",
+              "line": 176,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-11T17:57:49.104Z",
+    "duration": 95894.597,
+    "expected": 98,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
