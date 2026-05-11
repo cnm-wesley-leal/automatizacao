@@ -2,6 +2,11 @@ import { test, expect, devices } from '@playwright/test'
 import { TEST_DATA } from '../utils/test-data'
 import { HeaderPage } from '../pages/HeaderPage'
 import { dismissCookieConsent, hasAuthenticatedCookies } from '../utils/helpers'
+import { TIMEOUTS } from '../utils/config'
+
+// defaultBrowserType força novo worker e não pode ser usado dentro de describe
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const { defaultBrowserType: _dbt, ...iPhoneDevice } = devices['iPhone 14']
 
 /**
  * Suite: Feature Header — Validação E2E
@@ -16,53 +21,19 @@ import { dismissCookieConsent, hasAuthenticatedCookies } from '../utils/helpers'
  *   o dropdown de conta NÃO deve estar disponível simultaneamente.
  */
 
-// ── Helpers ──────────────────────────────────────────────────────────────────
+// ── Suite Deslogado — Desktop ─────────────────────────────────────────────────
 
-function mobileMenuTrigger(page: import('@playwright/test').Page) {
-  return page.locator('header button[aria-label*="menu" i], header [role="button"][aria-label*="menu" i]').first()
-}
-
-async function isMobileLayout(page: import('@playwright/test').Page) {
-  return mobileMenuTrigger(page).isVisible({ timeout: 2000 }).catch(() => false)
-}
-
-async function withMobilePage(
-  browser: import('@playwright/test').Browser,
-  storageState: any,
-  run: (page: import('@playwright/test').Page) => Promise<void>
-) {
-  const context = await browser.newContext({ ...devices['iPhone 14'], storageState })
-  const page = await context.newPage()
-  try {
-    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' })
-    await dismissCookieConsent(page)
-    await run(page)
-  } finally {
-    await context.close()
-  }
-}
-
-// ── Suite deslogado ───────────────────────────────────────────────────────────
-
-test.describe('Feature Header — Usuário Deslogado', () => {
+test.describe('Feature Header — Deslogado (Desktop)', () => {
+  test.skip(({ isMobile }) => isMobile, 'Suíte Desktop não executada em dispositivos móveis.')
   test.use({ storageState: { cookies: [], origins: [] } })
 
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async ({ page }, testInfo) => {
     await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' })
-    await dismissCookieConsent(page)
+    await dismissCookieConsent(page, testInfo)
   })
 
   test('CT01 - deve renderizar o header corretamente em desktop (deslogado)', async ({ page }) => {
     const header = new HeaderPage(page)
-    const mobileLayout = await isMobileLayout(page)
-
-    if (mobileLayout) {
-      await header.assertLogoVisible()
-      await expect(mobileMenuTrigger(page)).toBeVisible()
-      await header.assertEntrarLinkVisible()
-      return
-    }
-
     await header.assertLogoVisible()
     await header.assertMainNavLinksVisible()
     await expect(header.navFavoritos).toBeVisible()
@@ -70,79 +41,8 @@ test.describe('Feature Header — Usuário Deslogado', () => {
     await header.assertAuthPanelClosed()
   })
 
-  test('CT03 - deve abrir o menu lateral ao clicar no hambúrguer (mobile)', async ({ browser }) => {
-    await withMobilePage(browser, { cookies: [], origins: [] }, async mobilePage => {
-      const header = new HeaderPage(mobilePage)
-
-      await header.assertLogoVisible()
-
-      const hamburger = mobileMenuTrigger(mobilePage)
-      const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false)
-      test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile com emulação isMobile.')
-
-      await hamburger.click()
-
-      const anyNavLink = mobilePage.getByRole('link', { name: /imóveis|veículos|anuncie/i }).first()
-      await expect(anyNavLink).toBeVisible({ timeout: 5000 })
-    })
-  })
-
-  test('CT04 - deve fechar o menu lateral (hambúrguer) com Escape ou botão fechar', async ({ browser }, testInfo) => {
-    await withMobilePage(browser, { cookies: [], origins: [] }, async mobilePage => {
-      const header = new HeaderPage(mobilePage)
-      const hamburger = mobileMenuTrigger(mobilePage)
-      const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false)
-      test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile com emulação isMobile.')
-
-      await hamburger.click()
-      const sideMenu = header.sideMenu
-      const sideMenuPortal = mobilePage.locator('#portal-sidebarMenu').first()
-      const sideMenuVisibleOnOpen = await sideMenu.isVisible({ timeout: 5000 }).catch(() => false)
-      const portalVisibleOnOpen = await sideMenuPortal.isVisible({ timeout: 5000 }).catch(() => false)
-
-      await mobilePage.keyboard.press('Escape')
-      const sideMenuVisibleAfterEscape = await sideMenu.isVisible({ timeout: 1500 }).catch(() => false)
-      const portalVisibleAfterEscape = await sideMenuPortal.isVisible({ timeout: 1500 }).catch(() => false)
-      const isIosProject = /ios-safari-iphone-14/i.test(testInfo.project.name)
-
-      if (sideMenuVisibleOnOpen && !isIosProject) expect(sideMenuVisibleAfterEscape).toBe(false)
-      if (portalVisibleOnOpen && !isIosProject) expect(portalVisibleAfterEscape).toBe(false)
-
-      if (isIosProject && (sideMenuVisibleAfterEscape || portalVisibleAfterEscape)) {
-        test.info().annotations.push({
-          type: 'info',
-          description: 'Projeto iOS não possui Escape físico; fechamento por Escape não foi aplicado neste contexto touch.',
-        })
-      }
-
-      if (!sideMenuVisibleAfterEscape && !portalVisibleAfterEscape) {
-        await hamburger.click({ force: true })
-      }
-
-      const explicitCloseBtn = mobilePage.getByRole('button', { name: /fechar|close/i }).first()
-      if (await explicitCloseBtn.isVisible({ timeout: 1500 }).catch(() => false)) {
-        await explicitCloseBtn.click({ force: true })
-      } else {
-        const overlay = mobilePage.locator('#portal-sidebarMenu [class*="overlay" i]').first()
-        if (await overlay.isVisible({ timeout: 1000 }).catch(() => false)) {
-          try {
-            await overlay.click({ force: true, position: { x: 5, y: 5 } })
-          } catch {
-            await hamburger.click({ force: true })
-          }
-        } else {
-          await hamburger.click({ force: true })
-        }
-      }
-
-      if (sideMenuVisibleOnOpen) await expect(sideMenu).toBeHidden({ timeout: 4000 })
-      if (portalVisibleOnOpen) await expect(sideMenuPortal).toBeHidden({ timeout: 4000 })
-    })
-  })
-
   test('CT06 - deve abrir o painel de conta ao clicar em "Entrar" (deslogado)', async ({ page }) => {
     const header = new HeaderPage(page)
-
     await header.assertEntrarLinkVisible()
     await header.openAuthPanel()
     await header.assertAuthPanelOpen()
@@ -151,53 +51,33 @@ test.describe('Feature Header — Usuário Deslogado', () => {
 
   test('CT07 - deve fechar o painel de conta pressionando Escape', async ({ page }, testInfo) => {
     const header = new HeaderPage(page)
-
     await header.openAuthPanel()
     await header.assertAuthPanelOpen()
-    await page.keyboard.press('Escape')
 
-    let panelStillVisible = await header.authPanel.isVisible().catch(() => false)
-
-    if (panelStillVisible) {
-      const closeBtn = page.getByRole('button', { name: /fechar|close/i }).first()
-      if (await closeBtn.isVisible({ timeout: 1000 }).catch(() => false)) {
-        await closeBtn.click()
-        panelStillVisible = await header.authPanel.isVisible().catch(() => false)
-      }
-    }
-
-    if (panelStillVisible) {
-      await page.mouse.click(10, 10)
-      panelStillVisible = await header.authPanel.isVisible().catch(() => false)
-    }
-
-    if (panelStillVisible) {
-      await header.entrarLink.click()
-      panelStillVisible = await header.authPanel.isVisible().catch(() => false)
-    }
-
-    const isIosProject = /ios-safari-iphone-14/i.test(testInfo.project.name)
-    if (isIosProject && panelStillVisible) {
+    const isIos = /ios-safari/i.test(testInfo.project.name)
+    if (isIos) {
+      // iOS touch: Escape não disponível nativamente
       testInfo.annotations.push({
         type: 'info',
-        description: 'iOS touch não oferece tecla Escape nativa; painel permaneceu aberto após tentativas de fechamento por fallback.',
+        description: 'iOS touch não oferece tecla Escape nativa; painel permanece aberto.',
       })
-      expect(panelStillVisible).toBe(true)
+      await expect(header.authPanel).toBeVisible()
       return
     }
 
-    expect(panelStillVisible).toBe(false)
+    await page.keyboard.press('Escape')
+    // Fallback: se o portal ignorar Escape, clicar fora do painel fecha o overlay
+    const stillOpen = await header.authPanel.isVisible({ timeout: 500 }).catch(() => false)
+    if (stillOpen) {
+      await page.mouse.click(10, 10)
+    }
+
+    await expect(header.authPanel).toBeHidden({ timeout: TIMEOUTS.authPanel })
     await header.assertEntrarLinkVisible()
   })
 
   test('CT08 - deve navegar para listagem de imóveis ao clicar em "Imóveis"', async ({ page }) => {
     const header = new HeaderPage(page)
-
-    if (!(await header.navImoveis.isVisible().catch(() => false))) {
-      const hamburger = mobileMenuTrigger(page)
-      if (await hamburger.isVisible({ timeout: 2000 }).catch(() => false)) await hamburger.click()
-    }
-
     await expect(header.navImoveis).toBeVisible()
     await header.navImoveis.click()
     await expect(page).toHaveURL(/\/(imoveis|imoveis-a-venda)\//i)
@@ -205,22 +85,15 @@ test.describe('Feature Header — Usuário Deslogado', () => {
   })
 
   test('CT09 - deve navegar para listagem de veículos ao clicar em "Veículos"', async ({ page }) => {
-    const veiculosLink = page.getByRole('link', { name: /ve[ií]culos|carros/i }).first()
-
-    if (!(await veiculosLink.isVisible().catch(() => false))) {
-      const hamburger = mobileMenuTrigger(page)
-      if (await hamburger.isVisible({ timeout: 2000 }).catch(() => false)) await hamburger.click()
-    }
-
-    await expect(veiculosLink).toBeVisible()
-    await veiculosLink.click()
+    const header = new HeaderPage(page)
+    await expect(header.navVeiculos).toBeVisible()
+    await header.navVeiculos.click()
     await expect(page).toHaveURL(/\/(carros-usados|veiculos|carros-a-venda)\//i)
     await expect(page).not.toHaveTitle(/404|not found|erro/i)
   })
 
   test('CT10 - deve navegar para a página de anúncios ao clicar em "Anuncie"', async ({ page }) => {
     const header = new HeaderPage(page)
-
     await expect(header.navAnuncie).toBeVisible()
     await header.navAnuncie.click()
     await expect(page).toHaveURL(/anunciar/i)
@@ -229,28 +102,24 @@ test.describe('Feature Header — Usuário Deslogado', () => {
 
   test('CT11 - deve redirecionar para login ao acessar "Favoritos" sem autenticação', async ({ page }) => {
     const header = new HeaderPage(page)
-
     await expect(header.navFavoritos).toBeVisible()
     await header.navFavoritos.click()
 
     const redirectedToLogin = await page
-      .waitForURL(/\/(entrar|login)/, { timeout: 8000 })
+      .waitForURL(/\/(entrar|login)/, { timeout: TIMEOUTS.authPanel })
       .then(() => true)
       .catch(() => false)
 
     const authPanelOpened = await page
       .getByRole('heading', { name: /acesse ou crie sua conta/i })
-      .isVisible({ timeout: 3000 })
+      .isVisible({ timeout: TIMEOUTS.authPanel })
       .catch(() => false)
 
     expect(redirectedToLogin || authPanelOpened).toBe(true)
   })
 
-  test('CT15 - desktop: ao clicar na logo fora da Home deve redirecionar para a Home', async ({ page }) => {
-    test.skip(await isMobileLayout(page), 'Cenário desktop não aplicável em layout mobile.')
-
+  test('CT15 - deve redirecionar para a Home ao clicar na logo fora da Home', async ({ page }) => {
     const header = new HeaderPage(page)
-
     await expect(header.navImoveis).toBeVisible()
     await header.navImoveis.click()
     await expect(page).toHaveURL(/\/(imoveis|imoveis-a-venda)\//i)
@@ -258,127 +127,164 @@ test.describe('Feature Header — Usuário Deslogado', () => {
     await header.logo.click()
     await expect(page).toHaveURL(url => url.pathname === '/')
   })
+})
 
-  test('CT16 - mobile: ao clicar na logo fora da Home deve redirecionar para a Home', async ({ browser }) => {
-    await withMobilePage(browser, { cookies: [], origins: [] }, async mobilePage => {
-      const header = new HeaderPage(mobilePage)
-      const hamburger = mobileMenuTrigger(mobilePage)
+// ── Suite Deslogado — Mobile ──────────────────────────────────────────────────
 
-      if (await hamburger.isVisible({ timeout: 2000 }).catch(() => false)) await hamburger.click()
+test.describe('Feature Header — Deslogado (Mobile)', () => {
+  test.use({ storageState: { cookies: [], origins: [] }, ...iPhoneDevice })
 
-      await expect(header.navImoveis).toBeVisible({ timeout: 8000 })
-      await header.navImoveis.click()
-      await expect(mobilePage).toHaveURL(/\/(imoveis|imoveis-a-venda)\//i)
+  test.beforeEach(async ({ page }, testInfo) => {
+    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' })
+    await dismissCookieConsent(page, testInfo)
+  })
 
-      await header.logo.click()
-      await expect(mobilePage).toHaveURL(url => url.pathname === '/')
-    })
+  test('CT02 - deve renderizar o header corretamente em mobile (deslogado)', async ({ page }) => {
+    const header = new HeaderPage(page)
+    await header.assertLogoVisible()
+    await expect(header.hamburgerButton).toBeVisible()
+    await header.assertEntrarLinkVisible()
+  })
+
+  test('CT03 - deve abrir o menu lateral ao clicar no hambúrguer', async ({ page }) => {
+    const header = new HeaderPage(page)
+    await header.assertLogoVisible()
+
+    const hasHamburger = await header.hamburgerButton.isVisible({ timeout: TIMEOUTS.hamburgerMenu }).catch(() => false)
+    test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile.')
+
+    await header.hamburgerButton.click()
+
+    const anyNavLink = page.getByRole('link', { name: /imóveis|veículos|anuncie/i }).first()
+    await expect(anyNavLink).toBeVisible({ timeout: TIMEOUTS.navLink })
+  })
+
+  test('CT04 - deve fechar o menu lateral com Escape ou botão fechar', async ({ page }, testInfo) => {
+    const header = new HeaderPage(page)
+
+    const hasHamburger = await header.hamburgerButton.isVisible({ timeout: TIMEOUTS.hamburgerMenu }).catch(() => false)
+    test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile.')
+
+    await header.hamburgerButton.click()
+    await expect(header.sideMenu).toBeVisible({ timeout: TIMEOUTS.hamburgerMenu })
+
+    const isIos = /ios-safari/i.test(testInfo.project.name)
+    if (isIos) {
+      // iOS: Escape via WebKit; fallback — clicar no overlay fora do drawer lateral esquerdo
+      await page.keyboard.press('Escape')
+      const stillOpen = await header.sideMenu.isVisible({ timeout: 1000 }).catch(() => false)
+      if (stillOpen) {
+        await page.mouse.click(380, 400)
+      }
+    } else {
+      await page.keyboard.press('Escape')
+    }
+
+    await expect(header.sideMenu).toBeHidden({ timeout: TIMEOUTS.hamburgerMenu })
+  })
+
+  test('CT16 - deve redirecionar para a Home ao clicar na logo fora da Home (mobile)', async ({ page }) => {
+    const header = new HeaderPage(page)
+
+    const hasHamburger = await header.hamburgerButton.isVisible({ timeout: TIMEOUTS.hamburgerMenu }).catch(() => false)
+    if (hasHamburger) {
+      await header.hamburgerButton.click()
+      await expect(header.navImoveis).toBeVisible({ timeout: TIMEOUTS.navLink })
+    }
+
+    await header.navImoveis.click()
+    await expect(page).toHaveURL(/\/(imoveis|imoveis-a-venda)\//i)
+
+    await header.logo.click()
+    await expect(page).toHaveURL(url => url.pathname === '/')
   })
 })
 
-// ── Suite logado ──────────────────────────────────────────────────────────────
+// ── Suite Logado — Desktop ────────────────────────────────────────────────────
 
-test.describe('Feature Header — Usuário Logado', () => {
-  test.beforeEach(async ({ page }) => {
+test.describe('Feature Header — Logado (Desktop)', () => {
+  test.skip(({ isMobile }) => isMobile, 'Suíte Desktop não executada em dispositivos móveis.')
+  // storageState herdado do projeto (playwright.config.ts)
+
+  test.beforeEach(async ({ page }, testInfo) => {
     await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' })
-    await dismissCookieConsent(page)
+    await dismissCookieConsent(page, testInfo)
   })
 
   test('CT12 - deve exibir nome/avatar do usuário logado e ocultar "Entrar"', async ({ page }) => {
     test.skip(!process.env.USER_EMAIL_WEBUSER, 'Defina USER_EMAIL_WEBUSER para executar CT12.')
 
-    const mobileLayout = await isMobileLayout(page)
     const header = new HeaderPage(page)
-
-    if (mobileLayout) {
-      await expect
-        .poll(() => hasAuthenticatedCookies(page), {
-          timeout: 10000,
-          message: 'Sessão autenticada não detectada no layout mobile.',
-        })
-        .toBe(true)
-
-      const hamburger = mobileMenuTrigger(page)
-      if (await hamburger.isVisible({ timeout: 2000 }).catch(() => false)) {
-        await hamburger.click()
-        await expect(page.getByRole('link', { name: /minha conta|conta|perfil/i }).first()).toBeVisible()
-      }
-      return
-    }
-
     await header.assertEntrarLinkHidden()
 
-    const userEmail = process.env.USER_EMAIL_WEBUSER!
-    const userIdentifier = page
-      .locator('header')
-      .getByText(userEmail)
-      .or(page.locator('header').getByRole('img', { name: /avatar|perfil|usuário/i }))
-      .or(page.locator('header [class*="avatar"], header [class*="Avatar"]'))
-
-    await expect(userIdentifier.first()).toBeVisible({ timeout: 8000 })
+    // Portal exibe iniciais + primeiro nome como link para /conta/ (ex: "WL Wesley"), não o email
+    const userIdentifier = page.locator('header a[href="/conta/"]').first()
+    await expect(userIdentifier).toBeVisible({ timeout: TIMEOUTS.authLink })
   })
 
   test('CT13 - deve permitir acesso ao menu/área de conta ao clicar no avatar/nome (logado)', async ({ page }) => {
     test.skip(!process.env.USER_EMAIL_WEBUSER, 'Defina USER_EMAIL_WEBUSER para executar CT13.')
 
-    if (await isMobileLayout(page)) {
-      const hamburger = mobileMenuTrigger(page)
-      await expect(hamburger).toBeVisible()
-      await hamburger.click()
+    await expect.poll(() => hasAuthenticatedCookies(page), {
+      timeout: TIMEOUTS.authCookies,
+      message: 'Sessão autenticada não detectada.',
+    }).toBe(true)
 
-      const accountEntry = page.locator('#portal-sidebarMenu').getByRole('link', { name: /minha conta|conta|perfil/i }).first()
-      await expect(accountEntry).toBeVisible({ timeout: 8000 })
-      await accountEntry.click()
+    // Portal exibe iniciais + primeiro nome como link para /conta/ (ex: "WL Wesley")
+    const accountTrigger = page.locator('header a[href="/conta/"]').first()
 
-      await expect(page).toHaveURL(/\/conta\/?/i)
-      return
-    }
-
-    const accountTrigger = page
-      .locator('header')
-      .getByRole('link', { name: /minha conta|conta|perfil|wl|wesley/i })
-      .first()
-
-    await expect(accountTrigger).toBeVisible({ timeout: 8000 })
-    const accountHref = await accountTrigger.getAttribute('href')
+    await expect(accountTrigger).toBeVisible({ timeout: TIMEOUTS.authLink })
     await accountTrigger.click()
 
-    const hasComplementary = await page.locator('header [role="complementary"]').first().isVisible({ timeout: 3000 }).catch(() => false)
-    const hasLogoutAction = await page.locator('header').getByRole('button', { name: /sair|logout/i }).first().isVisible({ timeout: 3000 }).catch(() => false)
-    const hasMinhaContaOption = await page.locator('header').getByRole('link', { name: /minha conta|perfil/i }).first().isVisible({ timeout: 3000 }).catch(() => false)
-    const redirectedToAccount = await page.waitForURL(/\/conta\/?/i, { timeout: 3000 }).then(() => true).catch(() => false)
-    const hasAccountHref = Boolean(accountHref && /\/conta\/?/i.test(accountHref))
+    // Portal pode abrir dropdown com menu de conta ou navegar diretamente para /conta/
+    const dropdownOpened = await expect(page.locator('header').getByRole('complementary').first())
+      .toBeVisible({ timeout: TIMEOUTS.authPanel })
+      .then(() => true)
+      .catch(() => false)
 
-    expect(hasComplementary || hasLogoutAction || hasMinhaContaOption || redirectedToAccount || hasAccountHref).toBe(true)
+    const redirectedToAccount = !dropdownOpened &&
+      await page.waitForURL(/\/conta\/?/i, { timeout: TIMEOUTS.authPanel }).then(() => true).catch(() => false)
+
+    expect(dropdownOpened || redirectedToAccount).toBe(true)
+  })
+})
+
+// ── Suite Logado — Mobile ─────────────────────────────────────────────────────
+
+test.describe('Feature Header — Logado (Mobile)', () => {
+  test.use({ ...iPhoneDevice })
+
+  test.beforeEach(async ({ page }, testInfo) => {
+    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' })
+    await dismissCookieConsent(page, testInfo)
   })
 
-  test('CT14 - usuário logado: menu lateral mobile não deve exibir dropdown de conta simultaneamente', async ({ browser }) => {
+  test('CT14 - menu lateral mobile não deve exibir dropdown de conta simultaneamente', async ({ page }) => {
     test.skip(!process.env.USER_EMAIL_WEBUSER, 'Defina USER_EMAIL_WEBUSER para executar CT14.')
 
-    await withMobilePage(browser, TEST_DATA.auth.statePath, async mobilePage => {
-      const hamburger = mobileMenuTrigger(mobilePage)
-      const hasHamburger = await hamburger.isVisible({ timeout: 3000 }).catch(() => false)
-      test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile com emulação isMobile.')
+    const header = new HeaderPage(page)
+    const hasHamburger = await header.hamburgerButton.isVisible({ timeout: TIMEOUTS.hamburgerMenu }).catch(() => false)
+    test.skip(!hasHamburger, 'Hambúrguer não exibido neste build/layout mobile.')
 
-      await hamburger.click()
+    await header.hamburgerButton.click()
 
-      const minhaContaLink = mobilePage.getByRole('link', { name: /minha conta/i })
-      const hasMinhaContaInSideMenu = await minhaContaLink.isVisible({ timeout: 4000 }).catch(() => false)
+    const hasMinhaContaInSideMenu = await page
+      .getByRole('link', { name: /minha conta/i })
+      .isVisible({ timeout: TIMEOUTS.navLink })
+      .catch(() => false)
 
-      if (hasMinhaContaInSideMenu) {
-        const dropdownMenu = mobilePage
-          .locator('[class*="dropdown"], [class*="Dropdown"]')
-          .filter({ has: mobilePage.getByRole('link', { name: /sair|logout/i }) })
-
-        const dropdownVisible = await dropdownMenu.first().isVisible({ timeout: 2000 }).catch(() => false)
-        expect(dropdownVisible).toBe(false)
-      } else {
-        test.info().annotations.push({
-          type: 'info',
-          description: 'Menu lateral não exibiu "Minha conta" logado. CT14 é N/A para este estado.',
-        })
-        expect(true).toBe(true)
-      }
-    })
+    if (hasMinhaContaInSideMenu) {
+      const dropdownMenu = page.locator('header').getByRole('menu')
+      const dropdownVisible = await dropdownMenu.first().isVisible({ timeout: TIMEOUTS.authPanel }).catch(() => false)
+      expect(dropdownVisible).toBe(false)
+    } else {
+      test.info().annotations.push({
+        type: 'info',
+        description: 'Menu lateral não exibiu "Minha conta" logado. CT14 é N/A para este estado.',
+      })
+      expect(true).toBe(true)
+    }
   })
+
+  // CT05: reservado — cobertura do dropdown de conta em mobile (logado/deslogado) fora do escopo [T2]
 })
