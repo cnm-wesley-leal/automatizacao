@@ -74,6 +74,52 @@ export const REALTY_SEARCH_DATA = {
   },
 }
 
+export const HOME_DATA = {
+  h1: 'Encontre milhões de imóveis, carros e motos',
+  tabs: {
+    realty: '/?segment=realty',
+    vehicle: '/?segment=vehicle',
+  },
+  realty: {
+    locationInputId: 'locationInput-input',
+    locationPlaceholder: 'Digite cidade, bairro ou rua',
+    buscarHref: '/imoveis/brasil/',
+    redirectPattern: /\/imoveis\//,
+  },
+  vehicle: {
+    brandInputId: 'bmv-select-input-d-i-input',
+    brandPlaceholder: 'Digite marca ou modelo',
+    cityInputId: 'cityInput-input',
+    cityPlaceholder: 'Digite uma cidade',
+    buscarHref: '/carros-usados/brasil/',
+    redirectPattern: /\/carros-usados\//,
+  },
+  sections: {
+    realtyH2: /próximo imóvel/i,
+    realtyH3Type: /procure por tipo de imóvel/i,
+    realtyH3Amenity: /comodidade que mais importa/i,
+    vehicleH2: /carros, motos e utilitários/i,
+    vehicleH3Type: /procure por tipo de carroceria/i,
+  },
+  navLinks: {
+    forRent: '/imoveis-para-alugar/brasil/',
+    forSale: '/imoveis-a-venda/brasil/',
+    vehicles: '/carros-usados/brasil/',
+    motorcycles: '/motos-usadas/brasil/',
+    advertise: '/anunciar-imoveis-carros-e-motos/',
+  },
+  quickLinks: {
+    realty: {
+      apartment: '/apartamentos/brasil/',
+      house: '/casas/brasil/',
+    },
+    vehicle: {
+      sedan: '/carros-sedas/brasil/?filtro=car:[6]',
+      hatchback: '/carros-hatchback/brasil/?filtro=car:[4]',
+    },
+  },
+}
+
 export const TEST_DATA = {
   urls: {
     base: process.env.BASE_URL || 'https://staging.chavesnamao.com.br',
