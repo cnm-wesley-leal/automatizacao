@@ -6,7 +6,8 @@ import {
   dismissCookieConsent,
   assertAuthenticatedCookies,
   assertNoAuthenticatedCookies,
-  setMockSocialSession,
+  runSocialLoginWithMock,
+  socialProviders,
 } from '../utils/helpers'
 import { TIMEOUTS } from '../utils/config'
 
@@ -59,7 +60,7 @@ test.describe('Feature Auth - Cadastro de Usuários', () => {
   test.use({ storageState: { cookies: [], origins: [] } })
 
   test.beforeEach(async ({ page }, testInfo) => {
-    await page.goto(TEST_DATA.urls.base)
+    await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' })
     await dismissCookieConsent(page, testInfo)
     await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeVisible()
   })
@@ -146,10 +147,16 @@ test.describe('Feature Auth - Cadastro de Usuários', () => {
 
     await registerPage.submitRegistration()
 
+    const submitButton = page.getByRole('button', { name: TEST_DATA.locators.login.criarContaBtn })
     const weakPasswordError = page.getByText(/senha fraca|senha [aá] fraca|senha deve|requisitos de senha/i)
-    const buttonDisabled = await page.getByRole('button', { name: TEST_DATA.locators.login.criarContaBtn }).isDisabled()
-    const hasError = await weakPasswordError.isVisible().catch(() => false)
-    expect(hasError || buttonDisabled).toBe(true)
+    await expect.poll(
+      async () => {
+        const hasError = await weakPasswordError.isVisible()
+        const isDisabled = await submitButton.isDisabled()
+        return hasError || isDisabled
+      },
+      { message: 'Esperado: erro de senha fraca visível ou botão desabilitado' }
+    ).toBe(true)
     await assertNoAuthenticatedCookies(page)
   })
 
@@ -170,16 +177,14 @@ test.describe('Feature Auth - Cadastro de Usuários', () => {
       .fill(`${fakeUser.password}Different`)
 
     const submitButton = page.getByRole('button', { name: TEST_DATA.locators.login.criarContaBtn })
-    const isButtonDisabled = await submitButton.isDisabled()
+    const mismatchError = page.getByText(/senhas n[aã]o coincidem|as senhas n[aã]o s[aã]o iguais|senha n[aã]o/i)
 
-    if (!isButtonDisabled) {
-      await submitButton.click()
-      const mismatchError = page.getByText(/senhas n[aã]o coincidem|as senhas n[aã]o s[aã]o iguais|senha n[aã]o/i)
-      const hasError = await mismatchError.isVisible().catch(() => false)
-      const stillOnForm = await submitButton.isVisible()
-      expect(hasError || stillOnForm).toBe(true)
+    const isDisabled = await submitButton.isDisabled()
+    if (isDisabled) {
+      await expect(submitButton).toBeDisabled()
     } else {
-      expect(isButtonDisabled).toBe(true)
+      await submitButton.click()
+      await expect(mismatchError.or(submitButton)).toBeVisible()
     }
     await assertNoAuthenticatedCookies(page)
   })
@@ -203,38 +208,8 @@ test.describe('Feature Auth - Cadastro de Usuários', () => {
   })
 
   test('CT17 - deve permitir login social com novo registro automático', async ({ page }) => {
-    const oauthSignalRegex = /(accounts\.google\.com|oauth|social\/google|auth\/google)/i
-
-    const mockHandler = async (route: import('@playwright/test').Route) => {
-      const request = route.request()
-      if (request.isNavigationRequest()) {
-        await route.fulfill({ status: 200, contentType: 'text/html', body: '<html><body>mock social success</body></html>' })
-        return
-      }
-      await route.fulfill({
-        status: 200,
-        contentType: 'application/json',
-        headers: { 'access-control-allow-origin': '*' },
-        body: JSON.stringify({ success: true, provider: 'Google', message: 'Google mock social signup success' }),
-      })
-    }
-
-    await page.context().route(oauthSignalRegex, mockHandler)
-
-    try {
-      await page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink }).click()
-      const googleSocialButton = page.getByRole('button', { name: TEST_DATA.locators.login.entrarComGoogleBtn })
-      await expect(googleSocialButton).toBeVisible()
-
-      await googleSocialButton.click()
-      await setMockSocialSession(page)
-
-      await page.goto(TEST_DATA.urls.base, { waitUntil: 'domcontentloaded' })
-      await assertAuthenticatedCookies(page)
-      await expect(page).not.toHaveURL(/\/(entrar|login|cadastrar)/i)
-      await expect(page.getByRole('heading', { name: /acesse ou crie sua conta/i })).toBeHidden()
-    } finally {
-      await page.context().unroute(oauthSignalRegex, mockHandler)
-    }
+    await runSocialLoginWithMock(page, socialProviders[0], 'success')
+    await expect(page).not.toHaveURL(/\/(entrar|login|cadastrar)/i)
+    await expect(page.getByRole('heading', { name: /acesse ou crie sua conta/i })).toBeHidden()
   })
 })

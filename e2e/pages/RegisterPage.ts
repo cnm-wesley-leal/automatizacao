@@ -1,5 +1,6 @@
 import { Page, expect } from '@playwright/test';
 import { TEST_DATA } from '../utils/test-data';
+import { TIMEOUTS } from '../utils/config';
 
 /**
  * Page Object Model para o formulário de Cadastro/Registro
@@ -12,7 +13,8 @@ export class RegisterPage {
    * Navega até o formulário de cadastro via fluxo de login
    */
   async navigateToRegisterForm() {
-    // Clica no link de entrada
+    // Aguarda estabilização pós-hidratação React — o link ganha id="avatar-container" após hidratar
+    await this.page.locator('#avatar-container').waitFor({ state: 'visible', timeout: TIMEOUTS.authLink }).catch(() => {})
     await this.page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink }).click();
     
     // Aguarda modal de autenticação

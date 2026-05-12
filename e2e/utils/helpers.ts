@@ -1,7 +1,90 @@
 import { faker } from '@faker-js/faker'
-import { Locator, Page, TestInfo, expect } from '@playwright/test'
+import { Locator, Page, Route, TestInfo, expect } from '@playwright/test'
 import { TEST_DATA } from './test-data'
 import { TIMEOUTS } from './config'
+
+export type SocialOutcome = 'success' | 'error'
+
+export type SocialProvider = {
+  name: 'Google' | 'Facebook' | 'Apple'
+  buttonName: string
+  oauthSignalRegex: RegExp
+}
+
+export const socialProviders: SocialProvider[] = [
+  {
+    name: 'Google',
+    buttonName: TEST_DATA.locators.login.entrarComGoogleBtn,
+    oauthSignalRegex: /(accounts\.google\.com|oauth|social\/google|auth\/google)/i,
+  },
+  {
+    name: 'Facebook',
+    buttonName: TEST_DATA.locators.login.entrarComFacebookBtn,
+    oauthSignalRegex: /(facebook\.com|oauth|social\/facebook|auth\/facebook)/i,
+  },
+  {
+    name: 'Apple',
+    buttonName: TEST_DATA.locators.login.entrarComAppleBtn,
+    oauthSignalRegex: /(appleid\.apple\.com|oauth|social\/apple|auth\/apple)/i,
+  },
+]
+
+export async function runSocialLoginWithMock(
+  page: Page,
+  provider: SocialProvider,
+  outcome: SocialOutcome
+): Promise<void> {
+  const mockHandler = async (route: Route) => {
+    const request = route.request()
+    if (request.isNavigationRequest()) {
+      await route.fulfill({
+        status: outcome === 'success' ? 200 : 401,
+        contentType: 'text/html',
+        body:
+          outcome === 'success'
+            ? '<html><body>mock social success</body></html>'
+            : '<html><body>mock social error</body></html>',
+      })
+      return
+    }
+    await route.fulfill({
+      status: outcome === 'success' ? 200 : 401,
+      contentType: 'application/json',
+      headers: { 'access-control-allow-origin': '*' },
+      body: JSON.stringify({
+        success: outcome === 'success',
+        provider: provider.name,
+        message:
+          outcome === 'success'
+            ? `${provider.name} mock login success`
+            : `${provider.name} mock login error`,
+      }),
+    })
+  }
+  await page.context().route(provider.oauthSignalRegex, mockHandler)
+
+  try {
+    await openAuthPanel(page)
+
+    const socialButton = page.getByRole('button', { name: provider.buttonName })
+    await expect(socialButton).toBeVisible()
+    await socialButton.click()
+
+    if (outcome === 'success') {
+      await setMockSocialSession(page)
+    } else {
+      await page.context().clearCookies()
+    }
+
+    await page.goto(TEST_DATA.urls.base, { waitUntil: 'load' })
+    await expect.poll(() => hasAuthenticatedCookies(page)).toBe(outcome === 'success')
+    if (outcome === 'error') {
+      await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeVisible()
+    }
+  } finally {
+    await page.context().unroute(provider.oauthSignalRegex, mockHandler)
+  }
+}
 
 export function fakePhone(): string {
   const ddd = faker.number.int({ min: 11, max: 99 })
@@ -76,6 +159,8 @@ export async function setMockSocialSession(page: Page, baseUrl = TEST_DATA.urls.
 export async function openAuthPanel(page: Page): Promise<void> {
   const entrarLink = page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })
   await expect(entrarLink).toBeVisible()
+  // Aguarda estabilização pós-hidratação React — o link ganha id="avatar-container" após hidratar
+  await page.locator('#avatar-container').waitFor({ state: 'visible', timeout: TIMEOUTS.authLink }).catch(() => {})
   await entrarLink.click()
   await expect(page.getByRole('heading', { name: /acesse ou crie sua conta/i })).toBeVisible()
 }
