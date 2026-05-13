@@ -72,6 +72,61 @@ export const REALTY_SEARCH_DATA = {
     alugar: 'Alugar',
     lancamentos: 'Lançamentos',
   },
+
+  // ── Busca por endereço ─────────────────────────────────────────────────────
+  locationSearch: {
+    urls: {
+      campinas:        '/imoveis/sp-campinas/',
+      campinasRent:    '/imoveis-para-alugar/sp-campinas/',
+      campinasLaunches:'/lancamentos-imoveis/sp-campinas/',
+      // URL que produz zero resultados dentro de uma cidade para CT40
+      zeroResultsCity: '/imoveis/sp-campinas/?filtro=pmin:9000000000,pmax:10000000000,ban:4,gar:4',
+    },
+
+    // Cidade-alvo usada nos testes de integração
+    city: {
+      name:        'Campinas',
+      state:       'SP',
+      slug:        'sp-campinas',
+      slugPattern: /sp-campinas/,
+      h1Pattern:   /campinas/i,
+    },
+
+    // Dados para desambiguação (CT43): termo ambíguo + padrões de match exato e parcial
+    disambig: {
+      searchTerm:           'Santos',
+      exactMatchPattern:    /^santos[\s,\-–]/i,
+      partialMatchPatterns: [/santos dumont/i, /santo andr/i],
+    },
+
+    // Dados para normalização de acentos (CT45)
+    accentTest: {
+      typedValue:      'sao paulo',
+      expectedPattern: /são paulo/i,
+    },
+
+    // Pools de dados para o fuzz de endereço (CT54)
+    fuzz: {
+      cities: [
+        'sp-sao-paulo',
+        'rj-rio-de-janeiro',
+        'sp-campinas',
+        'pr-curitiba',
+        'mg-belo-horizonte',
+        'ce-fortaleza',
+        'ba-salvador',
+        'df-brasilia',
+        'go-goiania',
+        'pe-recife',
+      ],
+      transactionPrefixes: [
+        '/imoveis/',
+        '/imoveis-para-alugar/',
+        '/imoveis-a-venda/',
+        '/lancamentos-imoveis/',
+      ],
+    },
+  },
 }
 
 export const HOME_DATA = {

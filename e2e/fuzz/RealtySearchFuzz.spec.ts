@@ -212,3 +212,119 @@ test.describe('RealtySearch — Fuzz de Combinações Aleatórias', () => {
     })
   })
 })
+
+// ─────────────────────────────────────────────────────────────────────────────
+// CT54 — Fuzz de Busca por Endereço (cidade × tipo de transação)
+//
+// Valida que combinações aleatórias de cidade + tipo de transação não quebram
+// a página (h1 visível, URL correta, sem erros de JS).
+//
+// Configuração:
+//   FUZZ_ITERATIONS=20  – controla o número de cenários (compartilhado com a suite principal)
+//   FUZZ_SEED=42        – semente do PRNG (offset determinístico para independência)
+// ─────────────────────────────────────────────────────────────────────────────
+
+// PRNG independente com offset para não corromper a seed do fuzz principal
+let _addrSeed = ((SEED * 31_337 + 1) | 0) || 1
+
+function randAddr(): number {
+  _addrSeed ^= _addrSeed << 13
+  _addrSeed ^= _addrSeed >> 17
+  _addrSeed ^= _addrSeed << 5
+  return Math.abs(_addrSeed) / 2_147_483_648
+}
+
+function pickAddr<T>(arr: T[]): T {
+  return arr[Math.floor(randAddr() * arr.length)]
+}
+
+// Cidades reais do ambiente de staging (slugs validados)
+const FUZZ_CITIES = [
+  'sp-sao-paulo',
+  'rj-rio-de-janeiro',
+  'sp-campinas',
+  'pr-curitiba',
+  'mg-belo-horizonte',
+  'ce-fortaleza',
+  'ba-salvador',
+  'df-brasilia',
+  'go-goiania',
+  'pe-recife',
+  'rs-porto-alegre',
+  'es-vitoria',
+]
+
+const FUZZ_TRANSACTION_PREFIXES = [
+  '/imoveis/',
+  '/imoveis-para-alugar/',
+  '/imoveis-a-venda/',
+  '/lancamentos-imoveis/',
+]
+
+interface AddressScenario {
+  url:    string
+  label:  string
+  city:   string
+  prefix: string
+}
+
+function buildAddressScenario(): AddressScenario {
+  const city   = pickAddr(FUZZ_CITIES)
+  const prefix = pickAddr(FUZZ_TRANSACTION_PREFIXES)
+  const txLabel = prefix.replace(/\//g, '').replace(/-/g, '_') || 'imoveis'
+  return {
+    url:    `${prefix}${city}/`,
+    label:  `${txLabel}+${city}`,
+    city,
+    prefix,
+  }
+}
+
+// Gera cenários com a mesma quantidade da suite principal para consistência de relatório
+const addressScenarios: AddressScenario[] = Array.from(
+  { length: ITERATIONS },
+  buildAddressScenario,
+)
+
+test.describe('RealtySearch — Fuzz de Busca por Endereço', () => {
+  addressScenarios.forEach((scenario, index) => {
+    const id = String(index + 1).padStart(2, '0')
+
+    test(`CT54-FUZZ-${id} — ${scenario.label}`, async ({ page }) => {
+      const jsErrors: string[] = []
+      page.on('pageerror', err => jsErrors.push(err.message))
+
+      console.log(`[CT54-FUZZ-${id}] seed=${SEED} url=${scenario.url}`)
+
+      await page.goto(scenario.url)
+      await dismissCookieConsent(page)
+
+      // Página deve renderizar sem erro (h1 visível; "0 Imóveis" é resultado válido)
+      await expect(
+        page.getByRole('heading', { level: 1 }),
+        `h1 não encontrado — ${scenario.url}`,
+      ).toBeVisible({ timeout: 15_000 })
+
+      // URL deve preservar o slug da cidade
+      await expect(
+        page,
+        `Slug da cidade "${scenario.city}" perdido na URL — ${scenario.url}`,
+      ).toHaveURL(new RegExp(escapeRegExp(scenario.city)))
+
+      // URL deve preservar o tipo de transação (ex: /imoveis-para-alugar/)
+      const txSegment = scenario.prefix.replace(/\//g, '')
+      if (txSegment) {
+        await expect(
+          page,
+          `Tipo de transação "${txSegment}" perdido na URL — ${scenario.url}`,
+        ).toHaveURL(new RegExp(escapeRegExp(txSegment)))
+      }
+
+      // Nenhum erro de JavaScript não capturado
+      expect(
+        jsErrors,
+        `Erros de JS — ${scenario.url}\n${jsErrors.join('\n')}`,
+      ).toHaveLength(0)
+    })
+  })
+})

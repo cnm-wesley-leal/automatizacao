@@ -1,0 +1,561 @@
+﻿
+Running 54 tests using 8 workers
+
+[1A[2K[1/54] [setup-chromium] ÔÇ║ e2e\auth.setup.ts:12:6 ÔÇ║ authenticate as WebUser
+[1A[2K[2/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:48:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT06 - deve filtrar por quartos via painel de filtros
+[1A[2K[3/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:22:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT02 - deve exibir im├│veis ├á venda ao navegar para /imoveis-a-venda/
+[1A[2K[4/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:15:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT01 - deve exibir im├│veis para alugar ao navegar para /imoveis-para-alugar/
+[1A[2K[5/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:36:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT04 - deve exibir contagem de apartamentos ao navegar para /apartamentos/
+[1A[2K[6/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:65:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT08 - deve aplicar filtros de banheiros e garagens via URL
+[1A[2K[7/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:43:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT05 - deve filtrar por 3 quartos via URL
+[1A[2K[8/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:27:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT03 - deve exibir lan├ºamentos ao navegar para /lancamentos-imoveis/
+[1A[2K[9/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:55:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT07 - deve reidratar bot├úo de quartos ao abrir URL com /2-quartos/
+[1A[2K[10/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:72:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT09 - deve aplicar filtro de pre├ºo via painel de filtros
+[1A[2K[11/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:83:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT10 - deve aplicar filtro de pre├ºo via URL
+[1A[2K[12/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:89:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT11 - deve reidratar inputs de pre├ºo ao abrir URL com pmin/pmax
+[1A[2K[13/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:99:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT12 - deve aplicar filtro de ├írea ├║til via painel de filtros
+[1A[2K[14/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:108:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT13 - deve reidratar inputs de ├írea ao abrir URL com amin/amax
+[1A[2K[15/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:118:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT14 - deve aplicar filtro de feature (Piscina) via URL
+[1A[2K[16/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:124:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT15 - deve marcar feature no painel ao abrir URL com are: aplicado
+[1A[2K[17/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:134:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT16 - deve aplicar ordena├º├úo "Mais recentes" via UI
+[1A[2K[18/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:141:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT17 - deve aplicar ordena├º├úo "Menor pre├ºo" via UI
+[1A[2K[19/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:148:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT18 - deve aplicar ordena├º├úo "Maior pre├ºo" via UI
+[1A[2K[20/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:156:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT19 - deve navegar para p├ígina 2
+[1A[2K[21/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:162:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT20 - deve exibir link para pr├│xima p├ígina
+[1A[2K[22/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:168:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT21 - deve exibir im├│veis direto com propriet├írio
+[1A[2K[23/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:174:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT22 - deve navegar para lan├ºamentos ao selecionar no painel
+[1A[2K[24/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:187:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT24 - deve exibir listagens sugeridas mesmo com 0 resultados
+[1A[2K[25/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:182:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT23 - deve exibir 0 im├│veis com filtros imposs├¡veis
+[1A[2K[26/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:194:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT25 - deve exibir bot├úo Limpar quando h├í filtros aplicados
+[1A[2K[27/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:201:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT26 - navigationFilters API deve retornar lista de tipos com contagens
+[1A[2K[28/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:214:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT27 - extraFilters API deve retornar lista de features com IDs
+[1A[2K[29/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:225:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT28 - deve aplicar filtros combinados via URL e preservar na navega├º├úo
+[1A[2K[30/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:235:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT29 - deve limpar filtros ao clicar em Limpar
+[1A[2K[31/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:243:7 ÔÇ║ Busca de Im├│veis ÔÇö Filtros e Resultados ÔÇ║ CT30 - deve atualizar contagem no h1 ao aplicar filtro de quartos
+[1A[2K[32/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:281:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT31 - deve exibir lista de cidades com n├║mero de an├║ncios ao clicar no input de localiza├º├úo
+[1A[2K[33/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:291:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT32 - ao selecionar uma cidade o dropdown deve exibir bairros com an├║ncios
+[1A[2K[34/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:303:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT33 - ao digitar no input a lista deve filtrar para cidades correspondentes
+[1A[2K[35/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:316:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT34 - contagem exibida na lista de cidades deve ser igual ├á contagem no h1 ap├│s sele├º├úo
+[1A[2K[36/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:339:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT35 - contagem exibida na lista de bairros deve ser igual ├á contagem no h1 ap├│s sele├º├úo do bairro
+[1A[2K[37/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:366:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT36 - todos os cards de im├│vel devem pertencer ├á cidade selecionada
+[1A[2K[38/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:385:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT37 - todos os cards de im├│vel devem pertencer ao bairro selecionado
+[1A[2K[39/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:414:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT40 - busca sem resultados deve exibir feedback e se├º├úo de im├│veis pr├│ximos recomendados
+[1A[2K  1) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:291:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT32 - ao selecionar uma cidade o dropdown deve exibir bairros com an├║ncios 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[role="option"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('[role="option"]').first()[22m
+
+
+      291 |   test('CT32 - ao selecionar uma cidade o dropdown deve exibir bairros com an├║ncios', async ({ page }) => {
+      292 |     await loc.openLocationDropdown()
+    > 293 |     await expect(loc.getCityItems().first()).toBeVisible()
+          |                                              ^
+      294 |     // Seleciona a primeira cidade da lista
+      295 |     await loc.getCityItems().first().click()
+      296 |     // Dropdown deve reabrir no contexto de bairros (itens devem permanecer vis├¡veis)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:293:46
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-355c7-exibir-bairros-com-an├║ncios-chromium\error-context.md
+
+
+[1A[2K  2) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:281:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT31 - deve exibir lista de cidades com n├║mero de an├║ncios ao clicar no input de localiza├º├úo 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[role="option"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('[role="option"]').first()[22m
+
+
+      282 |     await loc.openLocationDropdown()
+      283 |     const items = loc.getCityItems()
+    > 284 |     await expect(items.first()).toBeVisible()
+          |                                 ^
+      285 |     // Cada item deve exibir um n├║mero (contagem de an├║ncios)
+      286 |     const firstText = await items.first().textContent()
+      287 |     expect(firstText, 'Item do dropdown deve conter n├║mero de an├║ncios').toMatch(/\d/)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:284:33
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-9ef20-car-no-input-de-localiza├º├úo-chromium\error-context.md
+
+
+[1A[2K[40/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:426:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT41 - chips de categoria devem incluir o qualificador da cidade ap├│s sele├º├úo
+[1A[2K[41/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:445:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT42 - na aba Lan├ºamentos a ├írea de chips deve listar cidades e n├úo tipos de im├│vel
+[1A[2K  3) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:303:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT33 - ao digitar no input a lista deve filtrar para cidades correspondentes 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[role="option"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('[role="option"]').first()[22m
+
+
+      305 |     await loc.typeLocation('Campinas')
+      306 |     const items = loc.getCityItems()
+    > 307 |     await expect(items.first()).toBeVisible()
+          |                                 ^
+      308 |     // Todos os itens vis├¡veis devem conter o texto digitado
+      309 |     const allTexts = await items.allTextContents()
+      310 |     for (const text of allTexts.slice(0, 5)) {
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:307:33
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-aa9f8-ara-cidades-correspondentes-chromium\error-context.md
+
+
+[1A[2K  4) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:316:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT34 - contagem exibida na lista de cidades deve ser igual ├á contagem no h1 ap├│s sele├º├úo 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[role="option"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('[role="option"]').first()[22m
+
+
+      318 |     await loc.typeLocation(L.city.name)
+      319 |     const items = loc.getCityItems()
+    > 320 |     await expect(items.first()).toBeVisible()
+          |                                 ^
+      321 |
+      322 |     // Captura contagem do dropdown antes de clicar
+      323 |     const dropdownText = await items.first().textContent()
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:320:33
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-a5076-contagem-no-h1-ap├│s-sele├º├úo-chromium\error-context.md
+
+
+[1A[2K[42/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:471:7 ÔÇ║ Busca por Endere├ºo ÔÇö Geolocaliza├º├úo ÔÇ║ CT38 - deve solicitar permiss├úo de geolocaliza├º├úo ao clicar em Perto de mim
+[1A[2K[43/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:499:7 ÔÇ║ Busca por Endere├ºo ÔÇö Geolocaliza├º├úo ÔÇ║ CT39 - sem permiss├úo de geolocaliza├º├úo Perto de mim deve exibir mensagem de erro
+[1A[2K  5) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:339:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT35 - contagem exibida na lista de bairros deve ser igual ├á contagem no h1 ap├│s sele├º├úo do bairro 
+
+    TimeoutError: locator.click: Timeout 10000ms exceeded.
+    Call log:
+    [2m  - waiting for getByPlaceholder(/bairro|cidade|rua/i)[22m
+
+
+       at pages\LocationSearchPage.ts:34
+
+      32 |   /** Abre o dropdown clicando no input de localiza├º├úo */
+      33 |   async openLocationDropdown(): Promise<void> {
+    > 34 |     await this.locationInput.click()
+         |                              ^
+      35 |   }
+      36 |
+      37 |   /**
+        at LocationSearchPage.openLocationDropdown (C:\Automatiza├º├úo\e2e\pages\LocationSearchPage.ts:34:30)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:345:15
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-56000-o-h1-ap├│s-sele├º├úo-do-bairro-chromium\error-context.md
+
+
+[1A[2K  6) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:366:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT36 - todos os cards de im├│vel devem pertencer ├á cidade selecionada 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: getByRole('heading', { level: 1 })
+    Expected pattern: [32m/campinas/i[39m
+    Received string:  [31m"Opss!"[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('heading', { level: 1 })[22m
+    [2m    13 ├ù locator resolved to <h1>Opss!</h1>[22m
+    [2m       - unexpected value "Opss!"[22m
+
+
+      370 |
+      371 |     // h1 deve confirmar a cidade
+    > 372 |     await expect(page.getByRole('heading', { level: 1 })).toContainText(L.city.h1Pattern)
+          |                                                           ^
+      373 |
+      374 |     // Hrefs dos cards devem conter o slug da cidade
+      375 |     const hrefs = await loc.getListingCardHrefs(10)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:372:59
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-f0a6a-tencer-├á-cidade-selecionada-chromium\error-context.md
+
+
+[1A[2K  7) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:385:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT37 - todos os cards de im├│vel devem pertencer ao bairro selecionado 
+
+    TimeoutError: locator.click: Timeout 10000ms exceeded.
+    Call log:
+    [2m  - waiting for getByPlaceholder(/bairro|cidade|rua/i)[22m
+
+
+       at pages\LocationSearchPage.ts:34
+
+      32 |   /** Abre o dropdown clicando no input de localiza├º├úo */
+      33 |   async openLocationDropdown(): Promise<void> {
+    > 34 |     await this.locationInput.click()
+         |                              ^
+      35 |   }
+      36 |
+      37 |   /**
+        at LocationSearchPage.openLocationDropdown (C:\Automatiza├º├úo\e2e\pages\LocationSearchPage.ts:34:30)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:391:15
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-8f655-encer-ao-bairro-selecionado-chromium\error-context.md
+
+
+[1A[2K[44/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:523:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT43 - busca por nome exato deve priorizar o match exato antes dos similares
+[1A[2K[45/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:556:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT44 - bairro hom├┤nimo deve exibir qualificador de cidade para evitar ambiguidade
+[1A[2K[46/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:600:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT46 - limpar o input de localiza├º├úo deve reverter a URL para listagem base
+[1A[2K[47/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:615:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT47 - acessar URL com slug de cidade deve pr├®-preencher o input de localiza├º├úo
+[1A[2K[48/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:581:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT45 - busca sem acento deve retornar sugest├Áes com acento normalizado
+[1A[2K  8) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:414:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT40 - busca sem resultados deve exibir feedback e se├º├úo de im├│veis pr├│ximos recomendados 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: getByRole('heading', { level: 1 })
+    Expected pattern: [32m/0\s*im├│veis|nenhum im├│vel/i[39m
+    Received string:  [31m"Opss!"[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('heading', { level: 1 })[22m
+    [2m    13 ├ù locator resolved to <h1>Opss!</h1>[22m
+    [2m       - unexpected value "Opss!"[22m
+
+
+      417 |
+      418 |     // h1 deve indicar 0 resultados
+    > 419 |     await expect(page.getByRole('heading', { level: 1 })).toContainText(/0\s*im├│veis|nenhum im├│vel/i)
+          |                                                           ^
+      420 |
+      421 |     // Mesmo com zero resultados, cards de fallback (recomenda├º├Áes) devem ser vis├¡veis
+      422 |     await expect(page.locator('a[href*="/imovel/"]').first()).toBeVisible()
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:419:59
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-fecac-├│veis-pr├│ximos-recomendados-chromium\error-context.md
+
+
+[1A[2K[49/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:630:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT48 - deep-link de aluguel em cidade deve preservar sele├º├úo de localiza├º├úo no input
+[1A[2K  9) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:426:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT41 - chips de categoria devem incluir o qualificador da cidade ap├│s sele├º├úo 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('a[href*="/apartamentos/sp+campinas/"]').or(locator('a[href*="sp+campinas"]').filter({ hasText: /apartamento|casa|terreno/i })).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('a[href*="/apartamentos/sp+campinas/"]').or(locator('a[href*="sp+campinas"]').filter({ hasText: /apartamento|casa|terreno/i })).first()[22m
+
+
+      439 |     const chipsCidade = page.locator(`a[href*="/apartamentos/${L.city.slug}/"]`)
+      440 |       .or(page.locator(`a[href*="${L.city.slug}"]`).filter({ hasText: /apartamento|casa|terreno/i }))
+    > 441 |     await expect(chipsCidade.first()).toBeVisible()
+          |                                       ^
+      442 |   })
+      443 |
+      444 |   // ÔöÇÔöÇ CT42: Lan├ºamentos ÔÇö chips listam cidades, n├úo tipos de im├│vel ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:441:39
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-af8dc-ador-da-cidade-ap├│s-sele├º├úo-chromium\error-context.md
+
+
+[1A[2K  10) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:445:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT42 - na aba Lan├ºamentos a ├írea de chips deve listar cidades e n├úo tipos de im├│vel 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('a[href*="/lancamentos-imoveis/"]').or(locator('a[href*="/lancamento/"]')).first()
+    Expected: visible
+    Received: hidden
+    Timeout:  10000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('a[href*="/lancamentos-imoveis/"]').or(locator('a[href*="/lancamento/"]')).first()[22m
+    [2m    13 ├ù locator resolved to <a aria-hidden="true" title="Lan├ºamentos" href="/lancamentos-imoveis/brasil/" class="link_rawLink__Tabnf undefined">Lan├ºamentos</a>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      457 |     const launchLinks = page.locator('a[href*="/lancamentos-imoveis/"]')
+      458 |       .or(page.locator('a[href*="/lancamento/"]'))
+    > 459 |     await expect(launchLinks.first()).toBeVisible()
+          |                                       ^
+      460 |   })
+      461 | })
+      462 |
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:459:39
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-89bef-dades-e-n├úo-tipos-de-im├│vel-chromium\error-context.md
+
+
+[1A[2K[50/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:645:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT49 - deve suportar navega├º├úo por teclado no dropdown de localiza├º├úo
+[1A[2K[51/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:671:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT50 - com permiss├úo de geolocaliza├º├úo concedida Perto de mim deve navegar com contexto local
+[1A[2K  11) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:556:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT44 - bairro hom├┤nimo deve exibir qualificador de cidade para evitar ambiguidade 
+
+    TimeoutError: locator.click: Timeout 10000ms exceeded.
+    Call log:
+    [2m  - waiting for getByPlaceholder(/bairro|cidade|rua/i)[22m
+
+
+       at pages\LocationSearchPage.ts:34
+
+      32 |   /** Abre o dropdown clicando no input de localiza├º├úo */
+      33 |   async openLocationDropdown(): Promise<void> {
+    > 34 |     await this.locationInput.click()
+         |                              ^
+      35 |   }
+      36 |
+      37 |   /**
+        at LocationSearchPage.openLocationDropdown (C:\Automatiza├º├úo\e2e\pages\LocationSearchPage.ts:34:30)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:561:15
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-ab454-ade-para-evitar-ambiguidade-chromium\error-context.md
+
+
+[1A[2K  12) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:600:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT46 - limpar o input de localiza├º├úo deve reverter a URL para listagem base 
+
+    TimeoutError: locator.clear: Timeout 10000ms exceeded.
+    Call log:
+    [2m  - waiting for getByPlaceholder(/bairro|cidade|rua/i)[22m
+
+
+       at pages\LocationSearchPage.ts:94
+
+      92 |   /** Limpa o input e fecha o dropdown */
+      93 |   async clearLocationInput(): Promise<void> {
+    > 94 |     await this.locationInput.clear()
+         |                              ^
+      95 |     await this.locationInput.press('Escape')
+      96 |   }
+      97 |
+        at LocationSearchPage.clearLocationInput (C:\Automatiza├º├úo\e2e\pages\LocationSearchPage.ts:94:30)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:607:15
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-0335e-er-a-URL-para-listagem-base-chromium\error-context.md
+
+
+[1A[2K  13) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:615:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT47 - acessar URL com slug de cidade deve pr├®-preencher o input de localiza├º├úo 
+
+    TimeoutError: locator.inputValue: Timeout 10000ms exceeded.
+    Call log:
+    [2m  - waiting for getByPlaceholder(/bairro|cidade|rua/i)[22m
+
+
+       at pages\LocationSearchPage.ts:89
+
+      87 |   /** Retorna o valor atual do input de localiza├º├úo */
+      88 |   async getSelectedLocationText(): Promise<string> {
+    > 89 |     return (await this.locationInput.inputValue()) || ''
+         |                                      ^
+      90 |   }
+      91 |
+      92 |   /** Limpa o input e fecha o dropdown */
+        at LocationSearchPage.getSelectedLocationText (C:\Automatiza├º├úo\e2e\pages\LocationSearchPage.ts:89:38)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:620:34
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-c936d-cher-o-input-de-localiza├º├úo-chromium\error-context.md
+
+
+[1A[2K  14) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:523:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT43 - busca por nome exato deve priorizar o match exato antes dos similares 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[role="option"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('[role="option"]').first()[22m
+
+
+      530 |
+      531 |     const items = loc.getCityItems()
+    > 532 |     await expect(items.first()).toBeVisible()
+          |                                 ^
+      533 |
+      534 |     const allTexts = await items.allTextContents()
+      535 |     const visible = allTexts.slice(0, 8)
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:532:33
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-202b9-h-exato-antes-dos-similares-chromium\error-context.md
+
+
+[1A[2K  15) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:581:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT45 - busca sem acento deve retornar sugest├Áes com acento normalizado 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[role="option"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('[role="option"]').first()[22m
+
+
+      589 |
+      590 |     const items = loc.getCityItems()
+    > 591 |     await expect(items.first()).toBeVisible()
+          |                                 ^
+      592 |
+      593 |     // Ao menos um item deve conter "S├úo Paulo" (com acentua├º├úo correta)
+      594 |     const allTexts = await items.allTextContents()
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:591:33
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-30c69-t├Áes-com-acento-normalizado-chromium\error-context.md
+
+
+[1A[2K[52/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:694:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT51 - no mobile o input de localiza├º├úo deve abrir um modal de busca
+[1A[2K[53/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:719:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT52 - breadcrumb deve refletir cidade e bairro selecionados com links funcionais
+[1A[2K[54/54] [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:740:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT53 - cidades no dropdown devem estar ordenadas do maior para o menor n├║mero de an├║ncios
+[1A[2K  16) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:630:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT48 - deep-link de aluguel em cidade deve preservar sele├º├úo de localiza├º├úo no input 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: getByRole('heading', { level: 1 })
+    Expected pattern: [32m/campinas/i[39m
+    Received string:  [31m"Opss!"[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for getByRole('heading', { level: 1 })[22m
+    [2m    13 ├ù locator resolved to <h1>Opss!</h1>[22m
+    [2m       - unexpected value "Opss!"[22m
+
+
+      633 |
+      634 |     // h1 deve combinar tipo de neg├│cio + cidade
+    > 635 |     await expect(page.getByRole('heading', { level: 1 })).toContainText(/campinas/i)
+          |                                                           ^
+      636 |     await expect(page.getByRole('heading', { level: 1 })).toContainText(/alugar/i)
+      637 |
+      638 |     // Input de localiza├º├úo deve exibir a cidade
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:635:59
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-a49fe-├º├úo-de-localiza├º├úo-no-input-chromium\error-context.md
+
+
+[1A[2K  17) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:645:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT49 - deve suportar navega├º├úo por teclado no dropdown de localiza├º├úo 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[role="option"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('[role="option"]').first()[22m
+
+
+      649 |     const loc = new LocationSearchPage(page)
+      650 |     await loc.openLocationDropdown()
+    > 651 |     await expect(loc.getCityItems().first()).toBeVisible()
+          |                                              ^
+      652 |
+      653 |     // ArrowDown deve mover o foco dentro do dropdown
+      654 |     await page.keyboard.press('ArrowDown')
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:651:46
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-30f30--no-dropdown-de-localiza├º├úo-chromium\error-context.md
+
+
+[1A[2K  18) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:719:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT52 - breadcrumb deve refletir cidade e bairro selecionados com links funcionais 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('nav[aria-label*="readcrumb"], [class*="breadcrumb"], [aria-label*="bread"]').or(locator('ol, ul').filter({ has: locator('a[href*="/imoveis/"]') })).first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('nav[aria-label*="readcrumb"], [class*="breadcrumb"], [aria-label*="bread"]').or(locator('ol, ul').filter({ has: locator('a[href*="/imoveis/"]') })).first()[22m
+
+
+      726 |       .or(page.locator('ol, ul').filter({ has: page.locator('a[href*="/imoveis/"]') }))
+      727 |
+    > 728 |     await expect(breadcrumb.first()).toBeVisible()
+          |                                      ^
+      729 |
+      730 |     // Deve conter um link para a listagem geral de im├│veis
+      731 |     const breadcrumbLinks = breadcrumb.first().locator('a')
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:728:38
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-dd03d-onados-com-links-funcionais-chromium\error-context.md
+
+
+[1A[2K  19) [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:740:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT53 - cidades no dropdown devem estar ordenadas do maior para o menor n├║mero de an├║ncios 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('[role="option"]').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 10000ms[22m
+    [2m  - waiting for locator('[role="option"]').first()[22m
+
+
+      745 |     await loc.openLocationDropdown()
+      746 |     const items = loc.getCityItems()
+    > 747 |     await expect(items.first()).toBeVisible()
+          |                                 ^
+      748 |
+      749 |     // Extrai contagem dos primeiros 5 itens e verifica ordem decrescente
+      750 |     const count = await items.count()
+        at C:\Automatiza├º├úo\e2e\tests\RealtySearch.spec.ts:747:33
+
+    Error Context: test-results\tests-RealtySearch-Busca-p-e566f--o-menor-n├║mero-de-an├║ncios-chromium\error-context.md
+
+
+[1A[2K  19 failed
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:281:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT31 - deve exibir lista de cidades com n├║mero de an├║ncios ao clicar no input de localiza├º├úo 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:291:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT32 - ao selecionar uma cidade o dropdown deve exibir bairros com an├║ncios 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:303:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT33 - ao digitar no input a lista deve filtrar para cidades correspondentes 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:316:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT34 - contagem exibida na lista de cidades deve ser igual ├á contagem no h1 ap├│s sele├º├úo 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:339:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT35 - contagem exibida na lista de bairros deve ser igual ├á contagem no h1 ap├│s sele├º├úo do bairro 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:366:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT36 - todos os cards de im├│vel devem pertencer ├á cidade selecionada 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:385:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT37 - todos os cards de im├│vel devem pertencer ao bairro selecionado 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:414:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT40 - busca sem resultados deve exibir feedback e se├º├úo de im├│veis pr├│ximos recomendados 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:426:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT41 - chips de categoria devem incluir o qualificador da cidade ap├│s sele├º├úo 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:445:7 ÔÇ║ Busca por Endere├ºo ÔÇö Localiza├º├úo e Ranking ÔÇ║ CT42 - na aba Lan├ºamentos a ├írea de chips deve listar cidades e n├úo tipos de im├│vel 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:523:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT43 - busca por nome exato deve priorizar o match exato antes dos similares 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:556:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT44 - bairro hom├┤nimo deve exibir qualificador de cidade para evitar ambiguidade 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:581:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT45 - busca sem acento deve retornar sugest├Áes com acento normalizado 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:600:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT46 - limpar o input de localiza├º├úo deve reverter a URL para listagem base 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:615:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT47 - acessar URL com slug de cidade deve pr├®-preencher o input de localiza├º├úo 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:630:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT48 - deep-link de aluguel em cidade deve preservar sele├º├úo de localiza├º├úo no input 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:645:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT49 - deve suportar navega├º├úo por teclado no dropdown de localiza├º├úo 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:719:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT52 - breadcrumb deve refletir cidade e bairro selecionados com links funcionais 
+    [chromium] ÔÇ║ e2e\tests\RealtySearch.spec.ts:740:7 ÔÇ║ Busca por Endere├ºo ÔÇö Desambigua├º├úo e Robustez ÔÇ║ CT53 - cidades no dropdown devem estar ordenadas do maior para o menor n├║mero de an├║ncios 
+  1 skipped
+  34 passed (1.6m)

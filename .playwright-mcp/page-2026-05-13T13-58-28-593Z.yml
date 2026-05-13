@@ -1,0 +1,830 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - generic [ref=e20]:
+          - link "Favoritos" [ref=e648] [cursor=pointer]:
+            - /url: /favoritos/?segment=REALTY
+            - img [ref=e649]
+            - text: Favoritos
+          - link "Entrar" [ref=e651] [cursor=pointer]:
+            - /url: /entrar/
+            - img
+            - generic: Entrar
+  - main [ref=e27]:
+    - complementary [ref=e28]:
+      - generic [ref=e652]:
+        - generic [ref=e653]:
+          - paragraph [ref=e654]:
+            - img [ref=e655]
+            - text: Filtros
+          - button "Limpar tudo" [ref=e657] [cursor=pointer]:
+            - img
+            - text: Limpar tudo
+        - paragraph [ref=e662] [cursor=pointer]:
+          - generic [ref=e663]: Seleção atual
+          - generic [ref=e664]:
+            - generic [ref=e665]: Nenhum filtro
+            - img [ref=e666]
+        - generic [ref=e669]:
+          - generic [ref=e670]:
+            - button "Comprar" [ref=e671] [cursor=pointer]
+            - button "Alugar" [ref=e672] [cursor=pointer]
+            - button "Lançamentos" [ref=e673] [cursor=pointer]
+          - generic [ref=e675]:
+            - generic [ref=e676]:
+              - paragraph [ref=e677]: Localização
+              - button "Perto de mim" [ref=e678] [cursor=pointer]:
+                - img
+                - text: Perto de mim
+            - generic [ref=e679]:
+              - generic [ref=e680]:
+                - searchbox [active] [ref=e681]
+                - img [ref=e682]
+              - generic [ref=e687]:
+                - heading "Principais Cidades" [level=4] [ref=e688]:
+                  - generic [ref=e689]: Principais Cidades
+                - paragraph [ref=e690] [cursor=pointer]:
+                  - generic [ref=e691]: São Paulo, SP
+                  - generic [ref=e693]: 1.137.904
+                - paragraph [ref=e694] [cursor=pointer]:
+                  - generic [ref=e695]: Porto Alegre, RS
+                  - generic [ref=e697]: "253.889"
+                - paragraph [ref=e698] [cursor=pointer]:
+                  - generic [ref=e699]: Campinas, SP
+                  - generic [ref=e701]: "157.995"
+                - paragraph [ref=e702] [cursor=pointer]:
+                  - generic [ref=e703]: Rio de Janeiro, RJ
+                  - generic [ref=e705]: "148.965"
+                - paragraph [ref=e706] [cursor=pointer]:
+                  - generic [ref=e707]: Santo André, SP
+                  - generic [ref=e709]: "126.585"
+                - paragraph [ref=e710] [cursor=pointer]:
+                  - generic [ref=e711]: Ribeirão Preto, SP
+                  - generic [ref=e713]: "111.385"
+                - paragraph [ref=e714] [cursor=pointer]:
+                  - generic [ref=e715]: São Bernardo do Campo, SP
+                  - generic [ref=e717]: "91.344"
+                - paragraph [ref=e718] [cursor=pointer]:
+                  - generic [ref=e719]: Curitiba, PR
+                  - generic [ref=e721]: "82.437"
+                - paragraph [ref=e722] [cursor=pointer]:
+                  - generic [ref=e723]: São José dos Campos, SP
+                  - generic [ref=e725]: "73.154"
+          - generic [ref=e727]:
+            - paragraph [ref=e728]: Tipos de imóveis
+            - generic [ref=e730]:
+              - button "Apartamento" [ref=e731] [cursor=pointer]:
+                - img
+                - text: Apartamento
+              - button "Casas & Sobrados" [ref=e732] [cursor=pointer]:
+                - img
+                - text: Casas & Sobrados
+              - button "Kitnets & Stúdios" [ref=e733] [cursor=pointer]:
+                - img
+                - text: Kitnets & Stúdios
+            - button "Mais tipos de imóveis" [ref=e734] [cursor=pointer]:
+              - img
+              - text: Mais tipos de imóveis
+          - generic [ref=e738]:
+            - generic [ref=e739]:
+              - paragraph [ref=e740]: Preço à partir de
+              - textbox "Preço à partir de" [ref=e741]:
+                - /placeholder: R$ 0
+            - generic [ref=e742]:
+              - paragraph [ref=e743]: Até
+              - textbox "Até" [ref=e744]:
+                - /placeholder: R$ 0
+          - generic [ref=e745]:
+            - generic [ref=e746]:
+              - paragraph [ref=e747]:
+                - generic [ref=e748]: Quantidade de quartos
+              - generic [ref=e749]:
+                - button "+ 1" [ref=e750] [cursor=pointer]
+                - button "+ 2" [ref=e751] [cursor=pointer]
+                - button "+ 3" [ref=e752] [cursor=pointer]
+                - button "+ 4" [ref=e753] [cursor=pointer]
+            - generic [ref=e754]:
+              - paragraph [ref=e755]:
+                - generic [ref=e756]: Banheiros
+              - generic [ref=e757]:
+                - button "+ 1" [ref=e758] [cursor=pointer]
+                - button "+ 2" [ref=e759] [cursor=pointer]
+                - button "+ 3" [ref=e760] [cursor=pointer]
+                - button "+ 4" [ref=e761] [cursor=pointer]
+            - generic [ref=e762]:
+              - paragraph [ref=e763]:
+                - generic [ref=e764]: Garagens
+              - generic [ref=e765]:
+                - button "+ 1" [ref=e766] [cursor=pointer]
+                - button "+ 2" [ref=e767] [cursor=pointer]
+                - button "+ 3" [ref=e768] [cursor=pointer]
+                - button "+ 4" [ref=e769] [cursor=pointer]
+          - generic [ref=e772]:
+            - generic [ref=e773]:
+              - paragraph [ref=e774]: Área útil (m²) de
+              - textbox "Área útil (m²) de" [ref=e775]:
+                - /placeholder: 0 m²
+            - generic [ref=e776]:
+              - paragraph [ref=e777]: Até
+              - textbox "Até" [ref=e778]:
+                - /placeholder: 0 m²
+          - generic [ref=e780]:
+            - generic [ref=e781] [cursor=pointer]:
+              - paragraph [ref=e782]:
+                - generic [ref=e783]: Área de Lazer
+                - img [ref=e785]
+              - generic [ref=e787]:
+                - button "Brinquedoteca" [ref=e788]
+                - button "Churrasqueira" [ref=e789]
+                - button "Espaço gourmet" [ref=e790]
+                - button "Piscina" [ref=e791]
+                - button "Playground" [ref=e792]
+                - button "Salão de festas" [ref=e793]
+                - button "Salão de jogos" [ref=e794]
+            - generic [ref=e795] [cursor=pointer]:
+              - paragraph [ref=e796]:
+                - generic [ref=e797]: Conveniências
+                - img [ref=e799]
+              - generic [ref=e801]:
+                - button "Ar-condicionado" [ref=e802]
+                - button "Armários Planejados" [ref=e803]
+                - button "Elevador" [ref=e804]
+                - button "Hidromassagem" [ref=e805]
+                - button "Jardim" [ref=e806]
+                - button "Lareira" [ref=e807]
+                - button "Mobiliado" [ref=e808]
+                - button "Quintal" [ref=e809]
+                - button "Sauna" [ref=e810]
+                - button "Varanda" [ref=e811]
+            - generic [ref=e812] [cursor=pointer]:
+              - paragraph [ref=e813]:
+                - generic [ref=e814]: Funcional
+                - img [ref=e816]
+              - generic [ref=e818]:
+                - button "Área de serviço" [ref=e819]
+                - button "Ático" [ref=e820]
+                - button "Closet" [ref=e821]
+                - button "Dependência de Empregada" [ref=e822]
+                - button "Edícula" [ref=e823]
+                - button "Escritório" [ref=e824]
+                - button "Lavabo" [ref=e825]
+                - button "Lavanderia" [ref=e826]
+            - generic [ref=e827] [cursor=pointer]:
+              - paragraph [ref=e828]:
+                - generic [ref=e829]: Segurança
+                - img [ref=e831]
+              - generic [ref=e833]:
+                - button "Circuito de segurança" [ref=e834]
+                - button "Guarita" [ref=e835]
+                - button "Interfone" [ref=e836]
+                - button "Portaria" [ref=e837]
+            - generic [ref=e838] [cursor=pointer]:
+              - paragraph [ref=e839]:
+                - generic [ref=e840]: Tipo de Vendedor
+                - img [ref=e842]
+              - generic [ref=e844]:
+                - button "Direto com proprietário" [ref=e845]
+                - button "Somente Imobiliárias" [ref=e846]
+    - article [ref=e86]:
+      - generic [ref=e87]:
+        - generic [ref=e88]:
+          - navigation "breadcrumb" [ref=e90]:
+            - list [ref=e91]:
+              - listitem [ref=e92]:
+                - link "Imóveis" [ref=e93] [cursor=pointer]:
+                  - /url: /imoveis/brasil/
+              - listitem [ref=e94]:
+                - img [ref=e95]
+              - listitem [ref=e97]:
+                - link "Em todo Brasil" [disabled] [ref=e98]
+          - heading "4.538.286 Imóveis em todo Brasil" [level=1] [ref=e99]:
+            - strong [ref=e100]: 4.538.286 Imóveis em todo Brasil
+        - button "Ordernar por Mais relevantes" [ref=e848] [cursor=pointer]:
+          - generic: Ordernar por
+          - generic:
+            - generic: Mais relevantes
+          - img
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - link "Casa em condomínio fechado com 4 quartos à venda na Alameda Espanha, 544, Terras Alpha Residencial 1, Senador Canedo por R$ 1.400.000 Casa em condomínio fechado com 4 quartos à venda na Alameda Espanha, 544, Terras Alpha Residencial 1, Senador Canedo por R$ 1.400.000 Casa em condomínio fechado com 4 quartos à venda na Alameda Espanha, 544, Terras Alpha Residencial 1, Senador Canedo por R$ 1.400.000 strong list Preço" [ref=e849] [cursor=pointer]:
+            - /url: /imovel/casa-em-condominio-a-venda-4-quartos-com-garagem-go-senador-canedo-terras-alpha-residencial-1-360m2-RS1400000/id-36490362/
+            - generic [ref=e105]:
+              - img "Casa em condomínio fechado com 4 quartos à venda na Alameda Espanha, 544, Terras Alpha Residencial 1, Senador Canedo por R$ 1.400.000" [ref=e107]
+              - img "Casa em condomínio fechado com 4 quartos à venda na Alameda Espanha, 544, Terras Alpha Residencial 1, Senador Canedo por R$ 1.400.000" [ref=e851]
+            - generic [ref=e108]:
+              - heading "Casa em condomínio fechado com 4 quartos à venda na Alameda Espanha, 544, Terras Alpha Residencial 1, Senador Canedo por R$ 1.400.000" [level=2] [ref=e110]
+              - generic "strong" [ref=e111]:
+                - paragraph [ref=e112]: Alameda Espanha, 544
+                - paragraph [ref=e113]: Terras Alpha Residencial 1, Senador Canedo/GO
+              - generic "list" [ref=e114]:
+                - paragraph [ref=e115]:
+                  - img [ref=e116]
+                  - text: 360m²
+                - paragraph [ref=e118]:
+                  - img [ref=e119]
+                  - text: "4"
+                - paragraph [ref=e121]:
+                  - img [ref=e122]
+                  - text: "5"
+                - paragraph [ref=e124]:
+                  - img [ref=e125]
+                  - text: "2"
+              - paragraph [ref=e127]:
+                - generic [ref=e128]: R$ 1.400.000
+                - generic "Condominio" [ref=e129]:
+                  - text: Condomínio
+                  - generic [ref=e130]: R$ 797
+          - generic [ref=e855]:
+            - button "Anterior" [disabled] [ref=e856]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e857] [cursor=pointer]:
+              - generic:
+                - img
+          - button "Contatar" [ref=e858] [cursor=pointer]
+          - button "Favoritar" [ref=e859] [cursor=pointer]:
+            - img
+        - generic [ref=e131]:
+          - link "Casa com 4 quartos para alugar na Rua Professora Cremilde de Oliveira, 192, Jardim Atlântico, Florianópolis, 300 m2 por R$ 6.500 Casa com 4 quartos para alugar na Rua Professora Cremilde de Oliveira, 192, Jardim Atlântico, Florianópolis, 300 m2 por R$ 6.500 Casa com 4 quartos para alugar na Rua Professora Cremilde de Oliveira, 192, Jardim Atlântico, Florianópolis, 300 m2 por R$ 6.500 strong list Preço" [ref=e860] [cursor=pointer]:
+            - /url: /imovel/casa-para-alugar-4-quartos-com-garagem-sc-florianopolis-jardim-atlantico-300m2-RS6500/id-36363235/
+            - generic [ref=e133]:
+              - img "Casa com 4 quartos para alugar na Rua Professora Cremilde de Oliveira, 192, Jardim Atlântico, Florianópolis, 300 m2 por R$ 6.500" [ref=e135]
+              - img "Casa com 4 quartos para alugar na Rua Professora Cremilde de Oliveira, 192, Jardim Atlântico, Florianópolis, 300 m2 por R$ 6.500" [ref=e862]
+            - generic [ref=e136]:
+              - heading "Casa com 4 quartos para alugar na Rua Professora Cremilde de Oliveira, 192, Jardim Atlântico, Florianópolis, 300 m2 por R$ 6.500" [level=2] [ref=e138]
+              - generic "strong" [ref=e139]:
+                - paragraph [ref=e140]: Rua Professora Cremilde De Oliveira, 192
+                - paragraph [ref=e141]: Jardim Atlântico, Florianópolis/SC
+              - generic "list" [ref=e142]:
+                - paragraph [ref=e143]:
+                  - img [ref=e144]
+                  - text: 300m²
+                - paragraph [ref=e146]:
+                  - img [ref=e147]
+                  - text: "4"
+                - paragraph [ref=e149]:
+                  - img [ref=e150]
+                  - text: "6"
+                - paragraph [ref=e152]:
+                  - img [ref=e153]
+                  - text: "3"
+              - paragraph [ref=e155]:
+                - generic [ref=e156]: R$ 6.500
+          - generic [ref=e866]:
+            - button "Anterior" [disabled] [ref=e867]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e868] [cursor=pointer]:
+              - generic:
+                - img
+          - button "Contatar" [ref=e869] [cursor=pointer]
+          - button "Favoritar" [ref=e870] [cursor=pointer]:
+            - img
+        - generic [ref=e157]:
+          - link "Apartamento à venda no condomínio vila flor - jardim tulipas - jundiaí/sp Apartamento à venda no condomínio vila flor - jardim tulipas - jundiaí/sp Apartamento à venda no condomínio vila flor - jardim tulipas - jundiaí/sp strong list Preço" [ref=e871] [cursor=pointer]:
+            - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-jundiai-parque-residencial-lorenconi-57m2-RS430000/id-34633725/
+            - generic [ref=e159]:
+              - img "Apartamento à venda no condomínio vila flor - jardim tulipas - jundiaí/sp" [ref=e161]
+              - img "Apartamento à venda no condomínio vila flor - jardim tulipas - jundiaí/sp" [ref=e873]
+            - generic [ref=e162]:
+              - heading "Apartamento à venda no condomínio vila flor - jardim tulipas - jundiaí/sp" [level=2] [ref=e164]
+              - generic "strong" [ref=e165]:
+                - paragraph [ref=e166]: Rua Décio Luiz Piovesan Junior, --
+                - paragraph [ref=e167]: Parque Residencial Lorençoni, Jundiaí/SP
+              - generic "list" [ref=e168]:
+                - paragraph [ref=e169]:
+                  - img [ref=e170]
+                  - text: 57m²
+                - paragraph [ref=e172]:
+                  - img [ref=e173]
+                  - text: "2"
+                - paragraph [ref=e175]:
+                  - img [ref=e176]
+                  - text: "2"
+                - paragraph [ref=e178]:
+                  - img [ref=e179]
+                  - text: "1"
+              - paragraph [ref=e181]:
+                - generic [ref=e182]: R$ 430.000
+                - generic "Condominio" [ref=e183]:
+                  - text: Condomínio
+                  - generic [ref=e184]: R$ 500
+          - generic [ref=e877]:
+            - button "Anterior" [disabled] [ref=e878]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e879] [cursor=pointer]:
+              - generic:
+                - img
+          - button "Contatar" [ref=e880] [cursor=pointer]
+          - button "Favoritar" [ref=e881] [cursor=pointer]:
+            - img
+        - generic [ref=e185]:
+          - link "Sala Comercial Edifício Avant Edifício Avant Garde Business, Santa Rosa Cuiabá/MT. Sala Comercial Edifício Avant Edifício Avant Garde Business, Santa Rosa Cuiabá/MT. Sala Comercial Edifício Avant Edifício Avant Garde Business, Santa Rosa Cuiabá/MT. strong list Preço" [ref=e882] [cursor=pointer]:
+            - /url: /imovel/sala-comercial-para-alugar-com-garagem-mt-cuiaba-santa-rosa-52m2-RS5000/id-41428482/
+            - generic [ref=e187]:
+              - img "Sala Comercial Edifício Avant Edifício Avant Garde Business, Santa Rosa Cuiabá/MT." [ref=e189]
+              - img "Sala Comercial Edifício Avant Edifício Avant Garde Business, Santa Rosa Cuiabá/MT." [ref=e884]
+            - generic [ref=e190]:
+              - heading "Sala Comercial Edifício Avant Edifício Avant Garde Business, Santa Rosa Cuiabá/MT." [level=2] [ref=e192]
+              - generic "strong" [ref=e193]:
+                - paragraph [ref=e194]: Avenida Miguel Sutil, 8388
+                - paragraph [ref=e195]: Santa Rosa, Cuiabá/MT
+              - generic "list" [ref=e196]:
+                - paragraph [ref=e197]:
+                  - img [ref=e198]
+                  - text: 52m²
+                - paragraph [ref=e200]:
+                  - img [ref=e201]
+                  - text: "1"
+              - paragraph [ref=e203]:
+                - generic [ref=e204]: R$ 5.000
+                - generic "Condominio" [ref=e205]:
+                  - text: Condomínio
+                  - generic [ref=e206]: R$ 680
+          - generic [ref=e888]:
+            - button "Anterior" [disabled] [ref=e889]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e890] [cursor=pointer]:
+              - generic:
+                - img
+          - button "Contatar" [ref=e891] [cursor=pointer]
+          - button "Favoritar" [ref=e892] [cursor=pointer]:
+            - img
+        - link "Lindo Apartamento MOBILIADO à Venda, 62 m², 02 dormitorios por R$ 900.000 strong list Preço" [ref=e208] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-barueri-alphaville-empresarial-RS898000/id-37441843/
+          - generic [ref=e210]:
+            - heading "Lindo Apartamento MOBILIADO à Venda, 62 m², 02 dormitorios por R$ 900.000" [level=2] [ref=e212]
+            - generic "strong" [ref=e213]:
+              - paragraph [ref=e214]: Avenida Delmar, 277
+              - paragraph [ref=e215]: Alphaville Empresarial, Barueri/SP
+            - generic "list" [ref=e216]:
+              - paragraph [ref=e217]:
+                - img [ref=e218]
+                - text: 62m²
+              - paragraph [ref=e220]:
+                - img [ref=e221]
+                - text: "2"
+              - paragraph [ref=e223]:
+                - img [ref=e224]
+                - text: "2"
+              - paragraph [ref=e226]:
+                - img [ref=e227]
+                - text: "1"
+            - paragraph [ref=e229]:
+              - generic [ref=e230]: R$ 898.000
+              - generic "Condominio" [ref=e231]:
+                - text: Condomínio
+                - generic [ref=e232]: R$ 472
+        - generic [ref=e237]:
+          - list [ref=e242]:
+            - listitem [ref=e243]
+          - list [ref=e253]:
+            - listitem [ref=e254]
+          - list [ref=e264]:
+            - listitem [ref=e265]
+          - list [ref=e275]:
+            - listitem [ref=e276]
+          - list [ref=e286]:
+            - listitem [ref=e287]
+        - link "Sala comercial com 8 salas para alugar em Boa Viagem, Belo Horizonte , 684 m2 por R$ 75.000 strong list Preço" [ref=e294] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-8-salas-com-garagem-mg-belo-horizonte-boa-viagem-RS75000/id-39947274/
+          - generic [ref=e296]:
+            - heading "Sala comercial com 8 salas para alugar em Boa Viagem, Belo Horizonte , 684 m2 por R$ 75.000" [level=2] [ref=e298]
+            - generic "strong" [ref=e299]:
+              - paragraph [ref=e300]: Endereço indisponível
+              - paragraph [ref=e301]: Boa Viagem, Belo Horizonte/MG
+            - generic "list" [ref=e302]:
+              - paragraph [ref=e303]:
+                - img [ref=e304]
+                - text: 684m²
+              - paragraph [ref=e306]:
+                - img [ref=e307]
+                - text: "8"
+              - paragraph [ref=e309]:
+                - img [ref=e310]
+                - text: "3"
+              - paragraph [ref=e312]:
+                - img [ref=e313]
+                - text: "11"
+            - paragraph [ref=e315]:
+              - generic [ref=e316]: R$ 75.000
+              - generic "Condominio" [ref=e317]:
+                - text: Condomínio
+                - generic [ref=e318]: R$ 10.116
+        - link "Cobertura com 3 quartos à venda na Cidade Nova, Ilhéus , 154 m2 por R$ 1.100.000 strong list Preço" [ref=e320] [cursor=pointer]:
+          - /url: /imovel/cobertura-a-venda-3-quartos-com-garagem-ba-ilheus-cidade-nova-156m2-RS1100000/id-34129236/
+          - generic [ref=e322]:
+            - heading "Cobertura com 3 quartos à venda na Cidade Nova, Ilhéus , 154 m2 por R$ 1.100.000" [level=2] [ref=e324]
+            - generic "strong" [ref=e325]:
+              - paragraph [ref=e326]: Endereço indisponível
+              - paragraph [ref=e327]: Cidade Nova, Ilhéus/BA
+            - generic "list" [ref=e328]:
+              - paragraph [ref=e329]:
+                - img [ref=e330]
+                - text: 154m²
+              - paragraph [ref=e332]:
+                - img [ref=e333]
+                - text: "3"
+              - paragraph [ref=e335]:
+                - img [ref=e336]
+                - text: "4"
+              - paragraph [ref=e338]:
+                - img [ref=e339]
+                - text: "2"
+            - paragraph [ref=e341]:
+              - generic [ref=e342]: R$ 1.100.000
+              - generic "Condominio" [ref=e343]:
+                - text: Condomínio
+                - generic [ref=e344]: R$ 1.600
+        - link "Gonzaga - locação - 2 dormitórios – serviços diários - mobiliado – lazer, strong list Preço" [ref=e346] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-santos-gonzaga-110m2-RS4400/id-28005238/
+          - generic [ref=e348]:
+            - heading "Gonzaga - locação - 2 dormitórios – serviços diários - mobiliado – lazer," [level=2] [ref=e350]
+            - generic "strong" [ref=e351]:
+              - paragraph [ref=e352]: Endereço indisponível
+              - paragraph [ref=e353]: Gonzaga, Santos/SP
+            - generic "list" [ref=e354]:
+              - paragraph [ref=e355]:
+                - img [ref=e356]
+                - text: 79m²
+              - paragraph [ref=e358]:
+                - img [ref=e359]
+                - text: "2"
+              - paragraph [ref=e361]:
+                - img [ref=e362]
+                - text: "2"
+              - paragraph [ref=e364]:
+                - img [ref=e365]
+                - text: "1"
+            - paragraph [ref=e367]:
+              - generic [ref=e368]: R$ 4.400
+              - generic "Condominio" [ref=e369]:
+                - text: Condomínio
+                - generic [ref=e370]: R$ 1.300
+        - link "Apartamento com 2 quartos à venda na Rua Gregório de Matos, 630, São Lourenço, Curitiba, 66 m2 por R$ 350.000 strong list Preço" [ref=e372] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-pr-curitiba-sao-lourenco-72m2-RS350000/id-39565026/
+          - generic [ref=e374]:
+            - heading "Apartamento com 2 quartos à venda na Rua Gregório de Matos, 630, São Lourenço, Curitiba, 66 m2 por R$ 350.000" [level=2] [ref=e376]
+            - generic "strong" [ref=e377]:
+              - paragraph [ref=e378]: Rua Gregório De Matos, 630
+              - paragraph [ref=e379]: São Lourenço, Curitiba/PR
+            - generic "list" [ref=e380]:
+              - paragraph [ref=e381]:
+                - img [ref=e382]
+                - text: 66m²
+              - paragraph [ref=e384]:
+                - img [ref=e385]
+                - text: "2"
+              - paragraph [ref=e387]:
+                - img [ref=e388]
+                - text: "2"
+              - paragraph [ref=e390]:
+                - img [ref=e391]
+                - text: "1"
+            - paragraph [ref=e393]:
+              - generic [ref=e394]: R$ 350.000
+              - generic "Condominio" [ref=e395]:
+                - text: Condomínio
+                - generic [ref=e396]: R$ 613
+        - link "Está disponível para aluguel uma kitnet aconchegante por R$900,00, ideal para quem busca praticidade e conforto strong list Preço" [ref=e406] [cursor=pointer]:
+          - /url: /imovel/kitnet-para-alugar-sp-sao-jose-dos-campos-jardim-sao-vicente-RS900/id-39920035/
+          - generic [ref=e408]:
+            - heading "Está disponível para aluguel uma kitnet aconchegante por R$900,00, ideal para quem busca praticidade e conforto" [level=2] [ref=e410]
+            - generic "strong" [ref=e411]:
+              - paragraph [ref=e412]: Rua Mohabe Anisse Cury, 555
+              - paragraph [ref=e413]: Jardim São Vicente, São José dos Campos/SP
+            - generic "list" [ref=e414]:
+              - paragraph [ref=e415]:
+                - img [ref=e416]
+                - text: 40m²
+              - paragraph [ref=e418]:
+                - img [ref=e419]
+                - text: "1"
+              - paragraph [ref=e421]:
+                - img [ref=e422]
+                - text: "1"
+            - paragraph [ref=e424]:
+              - generic [ref=e425]: R$ 900
+        - link "Apartamento com 2 quartos à venda no Centro, Mongaguá strong list Preço" [ref=e427] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-2-quartos-com-garagem-sp-mongagua-centro-RS460000/id-9703786/
+          - generic [ref=e429]:
+            - heading "Apartamento com 2 quartos à venda no Centro, Mongaguá" [level=2] [ref=e431]
+            - generic "strong" [ref=e432]:
+              - paragraph [ref=e433]: Endereço indisponível
+              - paragraph [ref=e434]: Centro, Mongaguá/SP
+            - generic "list" [ref=e435]:
+              - paragraph [ref=e436]:
+                - img [ref=e437]
+                - text: 83m²
+              - paragraph [ref=e439]:
+                - img [ref=e440]
+                - text: "2"
+              - paragraph [ref=e442]:
+                - img [ref=e443]
+                - text: "2"
+              - paragraph [ref=e445]:
+                - img [ref=e446]
+                - text: "1"
+            - paragraph [ref=e448]:
+              - generic [ref=e449]: R$ 460.000
+        - link "Apartamento com 1 quarto para alugar na Rua Colorado, 312, Vila Carioca, São Paulo strong list Preço" [ref=e451] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-1-quarto-sp-sao-paulo-vila-carioca-36m2-RS1550/id-38480193/
+          - generic [ref=e453]:
+            - heading "Apartamento com 1 quarto para alugar na Rua Colorado, 312, Vila Carioca, São Paulo" [level=2] [ref=e455]
+            - generic "strong" [ref=e456]:
+              - paragraph [ref=e457]: Rua Colorado, 312
+              - paragraph [ref=e458]: Vila Carioca, São Paulo/SP
+            - generic "list" [ref=e459]:
+              - paragraph [ref=e460]:
+                - img [ref=e461]
+                - text: 36m²
+              - paragraph [ref=e463]:
+                - img [ref=e464]
+                - text: "1"
+              - paragraph [ref=e466]:
+                - img [ref=e467]
+                - text: "1"
+            - paragraph [ref=e469]:
+              - generic [ref=e470]: R$ 1.550
+              - generic "IPTU" [ref=e471]:
+                - text: "Iptu:"
+                - generic [ref=e472]: R$ 9
+        - link "Apartamento de 01 Dormitório com Garagem à 150 Metros da Praia na GUILHERMINA - Praia Grande/SP strong list Preço" [ref=e474] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-1-quarto-com-garagem-sp-praia-grande-guilhermina-RS265000/id-41269908/
+          - generic [ref=e476]:
+            - heading "Apartamento de 01 Dormitório com Garagem à 150 Metros da Praia na GUILHERMINA - Praia Grande/SP" [level=2] [ref=e478]
+            - generic "strong" [ref=e479]:
+              - paragraph [ref=e480]: Endereço indisponível
+              - paragraph [ref=e481]: Guilhermina, Praia Grande/SP
+            - generic "list" [ref=e482]:
+              - paragraph [ref=e483]:
+                - img [ref=e484]
+                - text: 35m²
+              - paragraph [ref=e486]:
+                - img [ref=e487]
+                - text: "1"
+              - paragraph [ref=e489]:
+                - img [ref=e490]
+                - text: "1"
+              - paragraph [ref=e492]:
+                - img [ref=e493]
+                - text: "1"
+            - paragraph [ref=e495]:
+              - generic [ref=e496]: R$ 265.000
+              - generic "Condominio" [ref=e497]:
+                - text: Condomínio
+                - generic [ref=e498]: R$ 491
+        - link "Casa com 2 quartos para alugar no Parque dos Lagos, Ribeirão Preto strong list Preço" [ref=e500] [cursor=pointer]:
+          - /url: /imovel/casa-para-alugar-2-quartos-com-garagem-sp-ribeirao-preto-parque-dos-lagos-134m2-RS3300/id-12247174/
+          - generic [ref=e502]:
+            - heading "Casa com 2 quartos para alugar no Parque dos Lagos, Ribeirão Preto" [level=2] [ref=e504]
+            - generic "strong" [ref=e505]:
+              - paragraph [ref=e506]: Endereço indisponível
+              - paragraph [ref=e507]: Parque dos Lagos, Ribeirão Preto/SP
+            - generic "list" [ref=e508]:
+              - paragraph [ref=e509]:
+                - img [ref=e510]
+                - text: 134m²
+              - paragraph [ref=e512]:
+                - img [ref=e513]
+                - text: "2"
+              - paragraph [ref=e515]:
+                - img [ref=e516]
+                - text: "2"
+              - paragraph [ref=e518]:
+                - img [ref=e519]
+                - text: "2"
+            - paragraph [ref=e521]:
+              - generic [ref=e522]: R$ 3.300
+              - generic "Condominio" [ref=e523]:
+                - text: Condomínio
+                - generic [ref=e524]: R$ 722
+        - link "Sala comercial para alugar na Rua Francesco Coppini, 83, Nova Gerty, São Caetano do Sul, 28 m2 por R$ 1.775 strong list Preço" [ref=e526] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-sp-sao-caetano-do-sul-nova-gerty-34m2-RS1775/id-29655524/
+          - generic [ref=e528]:
+            - heading "Sala comercial para alugar na Rua Francesco Coppini, 83, Nova Gerty, São Caetano do Sul, 28 m2 por R$ 1.775" [level=2] [ref=e530]
+            - generic "strong" [ref=e531]:
+              - paragraph [ref=e532]: Rua Francesco Coppini, 83
+              - paragraph [ref=e533]: Nova Gerty, São Caetano do Sul/SP
+            - generic "list" [ref=e534]:
+              - paragraph [ref=e535]:
+                - img [ref=e536]
+                - text: 28m²
+              - paragraph [ref=e538]:
+                - img [ref=e539]
+                - text: "1"
+            - paragraph [ref=e541]:
+              - generic [ref=e542]: R$ 1.775
+              - generic "Condominio" [ref=e543]:
+                - text: Condomínio
+                - generic [ref=e544]: R$ 290
+        - generic [ref=e545]:
+          - generic [ref=e546]:
+            - generic [ref=e547]:
+              - heading "Imóveis nos estados do Brasil" [level=3] [ref=e548]
+              - generic [ref=e550]:
+                - button "Anterior" [disabled] [ref=e551]:
+                  - generic:
+                    - img
+                - button "Próximo" [ref=e552] [cursor=pointer]:
+                  - generic:
+                    - img
+            - generic [ref=e553]:
+              - link "Imóveis em SP" [ref=e554] [cursor=pointer]:
+                - /url: /imoveis/sp/
+              - link "Imóveis no RS" [ref=e555] [cursor=pointer]:
+                - /url: /imoveis/rs/
+              - link "Imóveis no PR" [ref=e556] [cursor=pointer]:
+                - /url: /imoveis/pr/
+              - link "Imóveis em MG" [ref=e557] [cursor=pointer]:
+                - /url: /imoveis/mg/
+              - link "Imóveis em SC" [ref=e558] [cursor=pointer]:
+                - /url: /imoveis/sc/
+              - link "Imóveis no RJ" [ref=e559] [cursor=pointer]:
+                - /url: /imoveis/rj/
+              - link "Imóveis na BA" [ref=e560] [cursor=pointer]:
+                - /url: /imoveis/ba/
+              - link "Imóveis em GO" [ref=e561] [cursor=pointer]:
+                - /url: /imoveis/go/
+              - link "Imóveis no MT" [ref=e562] [cursor=pointer]:
+                - /url: /imoveis/mt/
+              - link "Imóveis em PE" [ref=e563] [cursor=pointer]:
+                - /url: /imoveis/pe/
+              - link "Imóveis no CE" [ref=e564] [cursor=pointer]:
+                - /url: /imoveis/ce/
+              - link "Imóveis no RN" [ref=e565] [cursor=pointer]:
+                - /url: /imoveis/rn/
+              - link "Imóveis na PB" [ref=e566] [cursor=pointer]:
+                - /url: /imoveis/pb/
+              - link "Imóveis em SE" [ref=e567] [cursor=pointer]:
+                - /url: /imoveis/se/
+              - link "Imóveis no ES" [ref=e568] [cursor=pointer]:
+                - /url: /imoveis/es/
+              - link "Imóveis no MS" [ref=e569] [cursor=pointer]:
+                - /url: /imoveis/ms/
+              - link "Imóveis no PA" [ref=e570] [cursor=pointer]:
+                - /url: /imoveis/pa/
+              - link "Imóveis no PI" [ref=e571] [cursor=pointer]:
+                - /url: /imoveis/pi/
+              - link "Imóveis em AL" [ref=e572] [cursor=pointer]:
+                - /url: /imoveis/al/
+              - link "Imóveis no AM" [ref=e573] [cursor=pointer]:
+                - /url: /imoveis/am/
+          - generic [ref=e578]:
+            - list [ref=e583]:
+              - listitem [ref=e584]
+            - list [ref=e594]:
+              - listitem [ref=e595]
+            - list [ref=e605]:
+              - listitem [ref=e606]
+            - list [ref=e616]:
+              - listitem [ref=e617]
+            - list [ref=e627]:
+              - listitem [ref=e628]
+          - link "Página 2" [ref=e635] [cursor=pointer]:
+            - /url: /imoveis/brasil/?pg=2
+          - list [ref=e896]:
+            - listitem [ref=e897]
+            - listitem [ref=e914]
+            - listitem [ref=e931]
+            - listitem [ref=e948]
+      - generic [ref=e965]:
+        - generic [ref=e966]:
+          - link "Apartamentos 1.968.881 ofertas" [ref=e967] [cursor=pointer]:
+            - /url: /apartamentos/brasil/
+            - img [ref=e968]
+            - paragraph [ref=e970]:
+              - text: Apartamentos
+              - generic [ref=e971]: 1.968.881 ofertas
+          - link "Casas e sobrados 1.075.213 ofertas" [ref=e972] [cursor=pointer]:
+            - /url: /casas/brasil/
+            - img [ref=e973]
+            - paragraph [ref=e975]:
+              - text: Casas e sobrados
+              - generic [ref=e976]: 1.075.213 ofertas
+          - link "Casas em condominio 377.018 ofertas" [ref=e977] [cursor=pointer]:
+            - /url: /casas-em-condominio/brasil/
+            - img [ref=e978]
+            - paragraph [ref=e980]:
+              - text: Casas em condominio
+              - generic [ref=e981]: 377.018 ofertas
+          - link "Terrenos 238.205 ofertas" [ref=e982] [cursor=pointer]:
+            - /url: /terrenos/brasil/
+            - img [ref=e983]
+            - paragraph [ref=e985]:
+              - text: Terrenos
+              - generic [ref=e986]: 238.205 ofertas
+          - link "Sala comercial 179.420 ofertas" [ref=e987] [cursor=pointer]:
+            - /url: /sala-comercial/brasil/
+            - img [ref=e988]
+            - paragraph [ref=e990]:
+              - text: Sala comercial
+              - generic [ref=e991]: 179.420 ofertas
+          - link "Coberturas 114.190 ofertas" [ref=e992] [cursor=pointer]:
+            - /url: /coberturas/brasil/
+            - img [ref=e993]
+            - paragraph [ref=e995]:
+              - text: Coberturas
+              - generic [ref=e996]: 114.190 ofertas
+          - link "Terrenos em condomínio 97.596 ofertas" [ref=e997] [cursor=pointer]:
+            - /url: /terrenos-em-condominio/brasil/
+            - img [ref=e998]
+            - paragraph [ref=e1000]:
+              - text: Terrenos em condomínio
+              - generic [ref=e1001]: 97.596 ofertas
+          - link "Galpão 76.890 ofertas" [ref=e1002] [cursor=pointer]:
+            - /url: /galpao/brasil/
+            - img [ref=e1003]
+            - paragraph [ref=e1005]:
+              - text: Galpão
+              - generic [ref=e1006]: 76.890 ofertas
+          - link "Ponto comercial 75.618 ofertas" [ref=e1007] [cursor=pointer]:
+            - /url: /ponto-comercial/brasil/
+            - img [ref=e1008]
+            - paragraph [ref=e1010]:
+              - text: Ponto comercial
+              - generic [ref=e1011]: 75.618 ofertas
+          - link "Kitnets 68.072 ofertas" [ref=e1012] [cursor=pointer]:
+            - /url: /kitnet/brasil/
+            - img [ref=e1013]
+            - paragraph [ref=e1015]:
+              - text: Kitnets
+              - generic [ref=e1016]: 68.072 ofertas
+          - link "Chacaras 66.117 ofertas" [ref=e1017] [cursor=pointer]:
+            - /url: /chacaras/brasil/
+            - img [ref=e1018]
+            - paragraph [ref=e1020]:
+              - text: Chacaras
+              - generic [ref=e1021]: 66.117 ofertas
+          - link "Casa comercial 62.044 ofertas" [ref=e1022] [cursor=pointer]:
+            - /url: /casa-comercial/brasil/
+            - img [ref=e1023]
+            - paragraph [ref=e1025]:
+              - text: Casa comercial
+              - generic [ref=e1026]: 62.044 ofertas
+          - link "Prédio 52.411 ofertas" [ref=e1027] [cursor=pointer]:
+            - /url: /predio/brasil/
+            - img [ref=e1028]
+            - paragraph [ref=e1030]:
+              - text: Prédio
+              - generic [ref=e1031]: 52.411 ofertas
+          - link "Terreno comercial 43.868 ofertas" [ref=e1032] [cursor=pointer]:
+            - /url: /terreno-comercial/brasil/
+            - img [ref=e1033]
+            - paragraph [ref=e1035]:
+              - text: Terreno comercial
+              - generic [ref=e1036]: 43.868 ofertas
+          - link "Flats 26.172 ofertas" [ref=e1037] [cursor=pointer]:
+            - /url: /flat/brasil/
+            - img [ref=e1038]
+            - paragraph [ref=e1040]:
+              - text: Flats
+              - generic [ref=e1041]: 26.172 ofertas
+          - link "Fazendas 10.317 ofertas" [ref=e1042] [cursor=pointer]:
+            - /url: /fazendas/brasil/
+            - img [ref=e1043]
+            - paragraph [ref=e1045]:
+              - text: Fazendas
+              - generic [ref=e1046]: 10.317 ofertas
+          - link "Lofts 5.286 ofertas" [ref=e1047] [cursor=pointer]:
+            - /url: /loft/brasil/
+            - img [ref=e1048]
+            - paragraph [ref=e1050]:
+              - text: Lofts
+              - generic [ref=e1051]: 5.286 ofertas
+          - link "Garagens 971 ofertas" [ref=e1052] [cursor=pointer]:
+            - /url: /garagem/brasil/
+            - img [ref=e1053]
+            - paragraph [ref=e1055]:
+              - text: Garagens
+              - generic [ref=e1056]: 971 ofertas
+        - generic:
+          - generic:
+            - button "Anterior" [disabled]:
+              - generic:
+                - img
+            - button "Próximo" [ref=e1059] [cursor=pointer]:
+              - generic:
+                - img
+  - generic [ref=e646]: Staging Environment - f3b9c88b065f4b65bb10cb7f8ddd9efa7bd28be7
+  - alert [ref=e647]

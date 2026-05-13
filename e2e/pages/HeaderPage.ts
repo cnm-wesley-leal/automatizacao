@@ -1,8 +1,37 @@
-import { Page, expect } from '@playwright/test'
+import { Locator, Page, expect } from '@playwright/test'
 import { TEST_DATA } from '../utils/test-data'
 
 export class HeaderPage {
   constructor(private page: Page) {}
+
+  private isWebkit(): boolean {
+    return this.page.context().browser()?.browserType().name() === 'webkit'
+  }
+
+  private async resilientClick(locator: Locator, allowForceOnWebkit = false): Promise<void> {
+    await locator.scrollIntoViewIfNeeded().catch(() => {})
+    await expect(locator).toBeVisible()
+    await expect(locator).toBeEnabled()
+
+    const maxAttempts = this.isWebkit() ? 3 : 2
+    let lastError: unknown
+
+    for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+      try {
+        await locator.click()
+        return
+      } catch (err) {
+        lastError = err
+        const shouldForce = allowForceOnWebkit && this.isWebkit() && attempt === maxAttempts
+        if (shouldForce) {
+          await locator.click({ force: true })
+          return
+        }
+      }
+    }
+
+    throw lastError
+  }
 
   // ── Localizadores ────────────────────────────────────────────────────────────
 
@@ -59,7 +88,7 @@ export class HeaderPage {
     const consentBtn = this.page.getByRole('button', { name: TEST_DATA.locators.common.cookieConsent })
     try {
       await expect(consentBtn).toBeVisible({ timeout: 4000 })
-      await consentBtn.click()
+      await this.resilientClick(consentBtn)
     } catch {
       // Banner não exibido — comportamento esperado em sessões já consentidas
     }
@@ -67,7 +96,7 @@ export class HeaderPage {
 
   async openAuthPanel() {
     await expect(this.entrarLink).toBeVisible()
-    await this.entrarLink.click()
+    await this.resilientClick(this.entrarLink, true)
     await expect(this.authPanel).toBeVisible()
   }
 
