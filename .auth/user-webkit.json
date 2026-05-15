@@ -2,50 +2,50 @@
   "cookies": [
     {
       "name": "__cf_bm",
-      "value": "wDLhHXPa3JJbMYuo4ICIFn6B7ENKyJ1aA94.TjZJA40-1778691422.9020514-1.0.1.1-Irxf6p_uYc6ZQZYBZbQ_tfcxskDeZsp6LW_NLv0NlI4tjvm1GDX6EsNyYNVqJdmU.B084DcrP10SwEixpO25DE.baYt4RujX720KPweSYIYuS2rLRtnfCg_cPkPu6y4n",
+      "value": "mwoMqyltT..42EXBo4bf7T2Qpd9uendfyDV0fjoCHLw-1778850174.0936577-1.0.1.1-9dzjErx61tdYTwJ2bnaymGJmK7Nf0mFyhbyqnqtNUSN.4EKk16MsamDEszw7OFfz1Kiseb5e05NvITrWABWJNu6zq0xCXIRQ_UmrQNg6imlX8ks04gcoofkOmERulRbR",
       "domain": ".chavesnamao.com.br",
       "path": "/",
-      "expires": 1778693223,
+      "expires": 1778851974,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.1387886903.1778691426",
+      "value": "GA1.1.1991630015.1778850182",
       "domain": ".chavesnamao.com.br",
       "path": "/",
-      "expires": 1841763425,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "_ga_T3BPD6LBLF",
-      "value": "GS2.1.s1778691425$o1$g0$t1778691433$j52$l0$h607877924",
-      "domain": ".chavesnamao.com.br",
-      "path": "/",
-      "expires": 1841763433,
+      "expires": 1841922181,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "_gcl_au",
-      "value": "1.1.1956963272.1778691425.1037938384.1778691433.1778691433",
+      "value": "1.1.1379785587.1778850181.41543952.1778850190.1778850189",
       "domain": ".chavesnamao.com.br",
       "path": "/",
-      "expires": 1786467425,
+      "expires": 1786626181,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_T3BPD6LBLF",
+      "value": "GS2.1.s1778850181$o1$g0$t1778850189$j52$l0$h2144141176",
+      "domain": ".chavesnamao.com.br",
+      "path": "/",
+      "expires": 1841922189,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "PHPSESSID",
-      "value": "59vm24b8b92oe4ev5e203v5kr1",
+      "value": "of04knu2l2tns9vpiaphghtas5",
       "domain": ".chavesnamao.com.br",
       "path": "/",
-      "expires": 1779987433,
+      "expires": 1780146190,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -55,17 +55,17 @@
       "value": "on",
       "domain": ".chavesnamao.com.br",
       "path": "/",
-      "expires": 1781283433,
+      "expires": 1781442190,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "__Secure-cnm_session_id",
-      "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMUtFRkpQWEo0RzlRSDA0SERWME5RUkFSNCIsImRhdGEiOnsicGhvbmUiOiIrNTU2NTk3NjAzNjg0MSIsImRlcGVuZGVuY2llcyI6W10sImdvb2dsZUlkIjoiMTA5MTk1MzM4Mzk5NzMzMjkzMDMyIiwiYmlydGhEYXRlIjoiMTk5Ny0wNS0yNiIsIm90cERhdGEiOm51bGwsImFkZHJlc3MiOnsiemlwQ29kZSI6IjgzNDMwLTI4OCIsIm51bWJlciI6IjAwIiwibmVpZ2hib3Job29kIjoiw4FndWEgVmVyZGUiLCJjb21wbGVtZW50IjoiIiwiY2l0eSI6eyJpZCI6NjAxNX0sInN0cmVldCI6IlJ1YSB0ZXN0ZSJ9LCJpZCI6IjAxS0VGSlBYSjRHOVFIMDRIRFYwTlFSQVI0IiwiZG9jdW1lbnQiOiIzNDYuMzM0LjY2Ni00MCIsImFwcGxlSWQiOm51bGwsImZhY2Vib29rSWQiOm51bGwsInBpY3R1cmVVcmwiOm51bGwsIm5hbWUiOiJXZXNsZXkgTGVhbCBkb3MgU2FudG9zIiwiZW1haWxWZXJpZmllZEF0IjoiIiwidXNlclR5cGUiOiJXRUJVU0VSIiwiZW1haWwiOiJ3ZXNsZXkubGVhbEBjaGF2ZXNuYW1hby5jb20uYnIiLCJwaHBzc2lkIjoiNTl2bTI0YjhiOTJvZTRldjVlMjAzdjVrcjEiLCJsYXN0QWNjZXNzIjp7ImRhdGUiOiIyMDI2LTA1LTEzVDEzOjU3OjEzLjQyNy0wMzowMCIsInVzZXJBZ2VudCI6Ik1vemlsbGEvNS4wIChpUGhvbmU7IENQVSBpUGhvbmUgT1MgMTZfMCBsaWtlIE1hYyBPUyBYKSBBcHBsZVdlYktpdC82MDUuMS4xNSAoS0hUTUwsIGxpa2UgR2Vja28pIFZlcnNpb24vMjYuMCBNb2JpbGUvMTVFMTQ4IFNhZmFyaS82MDQuMSIsImlwIjoiMjAwLjIzNy4xNzguMTIyLCAxNzIuNjkuMTM4LjE1OSJ9fSwiaWF0IjoxNzc4NjkxNDMzLCJleHAiOjE3ODY0Njc0MzN9.xbvQCf_NYEomAOZhqHv8paPq_0WHSrhhxZP1tF1GGEE",
+      "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMUtFRkpQWEo0RzlRSDA0SERWME5RUkFSNCIsImRhdGEiOnsidXNlclR5cGUiOiJXRUJVU0VSIiwiZW1haWwiOiJ3ZXNsZXkubGVhbEBjaGF2ZXNuYW1hby5jb20uYnIiLCJlbWFpbFZlcmlmaWVkQXQiOiIiLCJkb2N1bWVudCI6IjM0Ni4zMzQuNjY2LTQwIiwiZmFjZWJvb2tJZCI6bnVsbCwicGljdHVyZVVybCI6bnVsbCwiaWQiOiIwMUtFRkpQWEo0RzlRSDA0SERWME5RUkFSNCIsInBob25lIjoiKzU1NjU5NzYwMzY4NDEiLCJnb29nbGVJZCI6IjEwOTE5NTMzODM5OTczMzI5MzAzMiIsImFwcGxlSWQiOm51bGwsImFkZHJlc3MiOnsiemlwQ29kZSI6IjgzNDMwLTI4OCIsIm51bWJlciI6IjAwIiwibmVpZ2hib3Job29kIjoiw4FndWEgVmVyZGUiLCJjb21wbGVtZW50IjoiIiwiY2l0eSI6eyJpZCI6NjAxNX0sInN0cmVldCI6IlJ1YSB0ZXN0ZSJ9LCJkZXBlbmRlbmNpZXMiOltdLCJvdHBEYXRhIjpudWxsLCJuYW1lIjoiV2VzbGV5IExlYWwgZG9zIFNhbnRvcyIsImJpcnRoRGF0ZSI6IjE5OTctMDUtMjYiLCJwaHBzc2lkIjoib2YwNGtudTJsMnRuczl2cGlhcGhnaHRhczUiLCJsYXN0QWNjZXNzIjp7ImRhdGUiOiIyMDI2LTA1LTE1VDEwOjAzOjA5Ljg2MC0wMzowMCIsInVzZXJBZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIEhlYWRsZXNzQ2hyb21lLzE0NS4wLjc2MzIuNiBTYWZhcmkvNTM3LjM2IiwiaXAiOiIyMDAuMjM3LjE3OC4xMjIsIDEwNC4yMy4yNTQuMzgifX0sImlhdCI6MTc3ODg1MDE5MCwiZXhwIjoxNzg2NjI2MTkwfQ.edlMpPeNak-TjJN5tT6WjEt_xSfZGYZLs8XQAHen41A",
       "domain": ".chavesnamao.com.br",
       "path": "/",
-      "expires": 1779987433,
+      "expires": 1780146190,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -75,7 +75,7 @@
       "value": "{\"userType\":\"WEBUSER\",\"email\":\"wesley.leal@chavesnamao.com.br\",\"hasPassword\":true}",
       "domain": ".chavesnamao.com.br",
       "path": "/",
-      "expires": 1781283434,
+      "expires": 1781442190,
       "httpOnly": false,
       "secure": true,
       "sameSite": "None"
@@ -87,11 +87,11 @@
       "localStorage": [
         {
           "name": "_gcl_ls",
-          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1778691425020},\"expires\":1786467425020}}"
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1778850181077},\"expires\":1786626181077}}"
         },
         {
           "name": "accountInfo",
-          "value": "{\"sphinxId\":\"01KEFJPXJ4G9QH04HDV0NQRAR4\",\"sphinxName\":\"Wesley Leal dos Santos\",\"sphinxEmail\":\"wesley.leal@chavesnamao.com.br\",\"sphinxPhone\":\"(65) 97603-6841\",\"sphinxAddress\":{\"city\":{\"id\":6015,\"name\":\"Curitiba\"},\"state\":{\"id\":18,\"name\":\"Paraná\"},\"complement\":null,\"neighborhood\":\"Água Verde\",\"number\":\"00\",\"street\":\"Rua teste\",\"zipCode\":\"83430-288\"},\"sphinxBirthDate\":\"1997-05-26\",\"sphinxDocument\":\"346.334.666-40\",\"userType\":\"WEBUSER\",\"lastAccess\":{\"date\":\"2026-05-13T13:57:13.427-03:00\",\"userAgent\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Mobile/15E148 Safari/604.1\",\"ip\":\"200.237.178.122, 172.69.138.159\"},\"customer\":{\"id\":1135033,\"cpfCnpj\":\"346.334.666-40\",\"personType\":\"PF\",\"name\":\"Wesley Leal dos Santos\",\"suspended\":false,\"birthDate\":\"26/05/1997\",\"address\":{\"street\":{\"id\":null,\"name\":\"Rua teste\"},\"number\":\"00\",\"complement\":\"\",\"neighborhood\":{\"id\":null,\"name\":\"Água Verde\",\"url\":\"\"},\"city\":{\"id\":6015,\"name\":\"Curitiba\",\"lat\":\"\",\"lon\":\"\"},\"state\":{\"id\":18,\"name\":\"Paraná\"},\"zipCode\":\"83430-288\",\"shareAddress\":true,\"coordinates\":{\"lat\":\"\",\"lon\":\"\"}},\"phoneBusinessNumber\":null,\"phoneLandlineNumber\":null,\"phoneMobileNumber\":\"(65) 97603-6841\"},\"scheduledDeletionDate\":null,\"hasPassword\":true}"
+          "value": "{\"sphinxId\":\"01KEFJPXJ4G9QH04HDV0NQRAR4\",\"sphinxName\":\"Wesley Leal dos Santos\",\"sphinxEmail\":\"wesley.leal@chavesnamao.com.br\",\"sphinxPhone\":\"(65) 97603-6841\",\"sphinxAddress\":{\"city\":{\"id\":6015,\"name\":\"Curitiba\"},\"state\":{\"id\":18,\"name\":\"Paraná\"},\"complement\":null,\"neighborhood\":\"Água Verde\",\"number\":\"00\",\"street\":\"Rua teste\",\"zipCode\":\"83430-288\"},\"sphinxBirthDate\":\"1997-05-26\",\"sphinxDocument\":\"346.334.666-40\",\"userType\":\"WEBUSER\",\"lastAccess\":{\"date\":\"2026-05-15T10:03:09.860-03:00\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36\",\"ip\":\"200.237.178.122, 104.23.254.38\"},\"customer\":{\"id\":1135033,\"cpfCnpj\":\"346.334.666-40\",\"personType\":\"PF\",\"name\":\"Wesley Leal dos Santos\",\"suspended\":false,\"birthDate\":\"26/05/1997\",\"address\":{\"street\":{\"id\":null,\"name\":\"Rua teste\"},\"number\":\"00\",\"complement\":\"\",\"neighborhood\":{\"id\":null,\"name\":\"Água Verde\",\"url\":\"\"},\"city\":{\"id\":6015,\"name\":\"Curitiba\",\"lat\":\"\",\"lon\":\"\"},\"state\":{\"id\":18,\"name\":\"Paraná\"},\"zipCode\":\"83430-288\",\"shareAddress\":true,\"coordinates\":{\"lat\":\"\",\"lon\":\"\"}},\"phoneBusinessNumber\":null,\"phoneLandlineNumber\":null,\"phoneMobileNumber\":\"(65) 97603-6841\"},\"scheduledDeletionDate\":null,\"hasPassword\":true}"
         },
         {
           "name": "userInformationRefresh",

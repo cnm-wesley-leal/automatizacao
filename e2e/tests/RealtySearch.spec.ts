@@ -759,24 +759,23 @@ test.describe('Busca por Endereço — Desambiguação e Robustez', () => {
     page,
     isMobile,
   }) => {
-    test.skip(true, 'CT51: seletor do input mobile ainda não mapeado — #locInp-input ausente no layout iOS')
+    test.skip(!isMobile, 'CT51: modal de localização é exclusivo do layout mobile')
 
     await page.goto(D.urls.listings, { waitUntil: 'domcontentloaded' })
     await dismissCookieConsent(page)
 
-    const loc = new LocationSearchPage(page)
-    await loc.openLocationDropdown()
+    // No mobile não existe #locInp-input — o trigger é o botão "Em todo Brasil"
+    // na barra de filtros, que abre um slide portal de busca fullscreen
+    const locationButton = page.locator('button').filter({ hasText: /em todo brasil/i })
+    await expect(locationButton).toBeVisible()
+    await locationButton.click()
 
-    // Em mobile esperamos um modal fullscreen ao invés de dropdown inline
-    // O modal geralmente tem role="dialog" ou uma classe fullscreen
-    const modal = page
-      .locator('[role="dialog"]')
-      .or(page.locator('[class*="modal"], [class*="fullscreen"]'))
+    // Slide portal de localização mobile: #portal-filter-location
+    const modal = page.locator('#portal-filter-location')
     await expect(modal).toBeVisible()
 
-    // Dentro do modal deve haver um input de busca funcional
-    const modalInput = modal.locator('input')
-    await expect(modalInput.first()).toBeVisible()
+    // Dentro do modal deve haver o input de busca por bairro/cidade
+    await expect(page.locator('#sl-ipt-input')).toBeVisible()
   })
 
   // ── CT52: Breadcrumb após seleção de cidade + bairro ─────────────────────

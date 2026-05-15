@@ -13,9 +13,10 @@ export class RegisterPage {
    * Navega até o formulário de cadastro via fluxo de login
    */
   async navigateToRegisterForm() {
-    // Aguarda estabilização pós-hidratação React — o link ganha id="avatar-container" após hidratar
-    await this.page.locator('#avatar-container').waitFor({ state: 'visible', timeout: TIMEOUTS.authLink }).catch(() => {})
-    await this.page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink }).click();
+    // Aguarda estabilização pós-hidratação React — garante que o link está interativo antes do clique
+    const entrarLink = this.page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })
+    await entrarLink.waitFor({ state: 'visible', timeout: TIMEOUTS.authLink }).catch(() => {})
+    await entrarLink.click();
     
     // Aguarda modal de autenticação
     await expect(

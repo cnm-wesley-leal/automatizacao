@@ -323,3 +323,260 @@
 | **Passos** | 1. Capturar texto do h1 sem filtro; 2. Navegar com filtro de 4 quartos; 3. Comparar h1 |
 | **Resultado esperado** | h1 contém "4 quartos"; texto difere do estado inicial |
 | **Critério de aceite** | A contagem de resultados reflete o estado do filtro ativo |
+
+---
+
+## CT31 — Dropdown de cidades ao abrir o input de localização
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que ao clicar no input de localização é exibida lista de cidades com contagem de anúncios |
+| **Plataformas** | Desktop (skip iOS — dropdown não disponível no layout mobile) |
+| **Pré-condições** | Usuário na listagem geral `/imoveis/brasil/` |
+| **Passos** | 1. Clicar no input de localização; 2. Aguardar dropdown aparecer |
+| **Resultado esperado** | Lista de cidades visível; cada item contém ao menos um número (contagem de anúncios) |
+
+---
+
+## CT32 — Selecionar cidade navega para a página da cidade
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que clicar em uma cidade no dropdown navega para a página de listagem da cidade |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown de localização; 2. Clicar na primeira cidade da lista; 3. Aguardar carregamento |
+| **Resultado esperado** | URL muda da listagem `/imoveis/brasil/`; h1 exibe contagem de imóveis na cidade selecionada |
+
+---
+
+## CT33 — Filtrar cidades ao digitar no input
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que digitar no input de localização filtra as sugestões do dropdown |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown; 2. Digitar "Campinas" |
+| **Resultado esperado** | Ao menos um item do dropdown contém "Campinas" |
+
+---
+
+## CT34 — Consistência da contagem entre dropdown e h1 (cidade)
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que a contagem exibida na lista de cidades é consistente com a contagem no h1 após seleção |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown; 2. Digitar "Campinas"; 3. Capturar contagem do item no dropdown; 4. Clicar na cidade; 5. Verificar número no h1 |
+| **Resultado esperado** | Contagem do dropdown e contagem no h1 são ambas números positivos |
+| **Critério de aceite** | Ambos os valores são > 0 (podem divergir levemente por dados em tempo real) |
+
+---
+
+## CT35 — Consistência da contagem entre dropdown e h1 (bairro)
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que a contagem exibida na lista de bairros é consistente com o h1 após seleção do bairro |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown; 2. Digitar "Campinas"; 3. Capturar contagem do primeiro bairro; 4. Clicar no bairro; 5. Verificar h1 |
+| **Resultado esperado** | Contagem do bairro no dropdown e h1 são números positivos; URL saiu de `/imoveis/brasil/` |
+
+---
+
+## CT36 — Cards de imóvel pertencem à cidade selecionada
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que todos os cards de imóvel na listagem pertencem à cidade selecionada |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Navegar para `/imoveis/campinas-sp/`; 2. Inspecionar hrefs dos cards |
+| **Resultado esperado** | h1 contém "Campinas"; todos os hrefs dos cards contêm o slug da cidade |
+
+---
+
+## CT37 — Cards de imóvel pertencem ao bairro selecionado
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que todos os cards de imóvel na listagem pertencem ao bairro selecionado |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Navegar para página de Campinas; 2. Selecionar primeiro bairro no dropdown; 3. Inspecionar hrefs dos cards |
+| **Resultado esperado** | URL contém slug de cidade/bairro; cards têm href com slug da cidade |
+
+---
+
+## CT38 — "Perto de mim" aciona API de geolocalização
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que clicar em "Perto de mim" invoca `navigator.geolocation.getCurrentPosition` |
+| **Plataformas** | Desktop (botão "Perto de mim" não disponível no layout mobile iOS) |
+| **Passos** | 1. Navegar para `/imoveis/brasil/`; 2. Clicar em "Perto de mim" |
+| **Resultado esperado** | `navigator.geolocation.getCurrentPosition` é chamado |
+
+---
+
+## CT39 — Sem permissão de geo → mensagem de erro
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que "Perto de mim" exibe feedback de erro quando a permissão é negada |
+| **Plataformas** | Desktop |
+| **Pré-condições** | Permissão de geolocalização revogada no contexto do browser |
+| **Passos** | 1. Navegar para `/imoveis/brasil/`; 2. Clicar em "Perto de mim" |
+| **Resultado esperado** | Elemento de feedback de erro de geolocalização visível na UI |
+
+---
+
+## CT40 — Zero resultados em cidade → feedback e imóveis recomendados
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que busca sem resultados exibe seção de fallback com imóveis próximos recomendados |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Navegar para URL de cidade com 0 resultados |
+| **Resultado esperado** | h1 contém "0 imóveis" ou "nenhum imóvel"; ao menos um card de fallback visível |
+
+---
+
+## CT41 — Chips de categoria incluem qualificador de cidade após seleção
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que os chips de tipo de imóvel passam a incluir o nome da cidade após seleção |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Verificar chips genéricos na listagem geral; 2. Navegar para cidade (Campinas); 3. Verificar chips |
+| **Resultado esperado** | Links de chips contêm o slug da cidade no href |
+
+---
+
+## CT42 — Aba Lançamentos exibe chips de cidades (não tipos de imóvel)
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que na aba de Lançamentos os chips listam cidades e não tipos genéricos de imóvel |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Navegar para `/lancamentos-imoveis/brasil/` |
+| **Resultado esperado** | Não há chip genérico "Apartamentos" sem qualificador de cidade; links de lançamentos visíveis |
+
+---
+
+## CT43 — Match exato precede matches parciais no dropdown
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que a busca por nome exato prioriza o match exato antes dos similares |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown; 2. Digitar "Santos"; 3. Observar ordem dos itens |
+| **Resultado esperado** | "Santos" (match exato) aparece antes de "Santos Dumont", "Santo André" etc. |
+
+---
+
+## CT44 — Bairro homônimo exibe qualificador de cidade
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que bairros com nomes repetidos exibem qualificador de cidade para evitar ambiguidade |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown; 2. Digitar "Centro" |
+| **Resultado esperado** | Cada item de bairro contém vírgula, traço ou parênteses com identificador de cidade/estado |
+
+---
+
+## CT45 — Busca sem acento retorna sugestões normalizadas
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que digitar sem acento retorna sugestões com acento normalizado |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown; 2. Digitar "sao paulo" (sem acento, minúsculo) |
+| **Resultado esperado** | Dropdown retorna sugestões; ao menos uma contém "paulo" ou "São Paulo" |
+
+---
+
+## CT46 — Limpar localização reverte URL para listagem base
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que remover a localização selecionada reverte a URL para a listagem geral |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Selecionar uma cidade; 2. Clicar no botão de remoção do chip de localização ou link do breadcrumb |
+| **Resultado esperado** | URL não contém mais slug da cidade; URL contém `/imoveis/` |
+
+---
+
+## CT47 — Deep-link por slug de cidade pré-preenche o input de localização
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que acessar diretamente a URL de uma cidade pré-preenche o contexto de localização |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Navegar diretamente para `/imoveis/campinas-sp/` |
+| **Resultado esperado** | URL e h1 confirmam cidade; input de localização exibe a cidade OU contexto preservado via URL |
+
+---
+
+## CT48 — Deep-link de aluguel em cidade preserva localização no input
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que URL de aluguel em cidade específica preserva o contexto de localização |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Navegar para `/imoveis-para-alugar/campinas-sp/` |
+| **Resultado esperado** | h1 contém "Campinas" e "alugar"; URL contém slug da cidade; input pode exibir "Campinas" |
+
+---
+
+## CT49 — Navegação por teclado no dropdown de localização
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que o dropdown de localização suporta navegação por teclado (ArrowDown, Escape, Enter) |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown; 2. Pressionar ArrowDown; 3. Pressionar Escape; 4. Reabrir e clicar via Enter |
+| **Resultado esperado** | Dropdown permanece funcional após ArrowDown; Escape não causa erro; clicar no item navega |
+
+---
+
+## CT50 — Geolocalização concedida navega com contexto local
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que "Perto de mim" com permissão concedida navega para listagem com contexto geográfico |
+| **Plataformas** | Desktop (botão não disponível no layout mobile iOS) |
+| **Pré-condições** | Permissão de geolocalização concedida; coordenadas mockadas (São Paulo: -23.55, -46.63) |
+| **Passos** | 1. Conceder permissão; 2. Navegar para `/imoveis/brasil/`; 3. Clicar em "Perto de mim" |
+| **Resultado esperado** | URL muda da listagem `/brasil/`; h1 exibe nome de cidade |
+
+---
+
+## CT51 — Mobile: input de localização abre modal de busca
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que no layout mobile o trigger de localização abre um modal fullscreen em vez de dropdown inline |
+| **Plataformas** | Mobile (iOS — skip desktop) |
+| **Passos** | 1. Navegar para `/imoveis/brasil/`; 2. Clicar no botão "Em todo Brasil" na barra de filtros |
+| **Resultado esperado** | Modal `#portal-filter-location` visível; input `#sl-ipt-input` disponível dentro do modal |
+
+---
+
+## CT52 — Breadcrumb reflete cidade e bairro com links funcionais
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que o breadcrumb exibe cidade e bairro selecionados com links funcionais |
+| **Plataformas** | Desktop (breadcrumb diverge no layout mobile) |
+| **Passos** | 1. Navegar para `/imoveis/campinas-sp/`; 2. Verificar breadcrumb |
+| **Resultado esperado** | Breadcrumb visível; contém ao menos um link; texto inclui "campinas" |
+
+---
+
+## CT53 — Cidades no dropdown ordenadas por número de anúncios (desc)
+
+| Campo | Descrição |
+|---|---|
+| **Objetivo** | Verificar que a lista de cidades no dropdown está ordenada do maior para o menor número de anúncios |
+| **Plataformas** | Desktop |
+| **Passos** | 1. Abrir dropdown de localização; 2. Extrair contagem dos primeiros 5 itens |
+| **Resultado esperado** | Sequência de contagens é não-crescente (ordem decrescente de anúncios) |

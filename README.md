@@ -152,7 +152,7 @@ npx playwright test --reporter=json > results.json
 | CT09 | Apple — mock sucesso | ✅ |
 | CT10 | Apple — mock erro | ✅ |
 
-### Suite 3 — Cadastro de Usuários (7 testes)
+### Suite 3 — Cadastro de Usuários (6 testes)
 | ID | Caso de Teste | Status |
 |---|---|---|
 | CT03 | Abrir fluxo de cadastro | ✅ |
@@ -160,8 +160,7 @@ npx playwright test --reporter=json > results.json
 | CT12 | Erro com email duplicado | ✅ |
 | CT13 | Validação de força de senha | ✅ |
 | CT14 | Senhas não coincidentes | ✅ |
-| CT15 | Validação de formato de email | ❌ |
-| CT16 | Consentimento de Termos | ✅ |
+| CT15 | Validação de formato de email | ✅ |
 
 ### Suite 4 — Verificação de Autenticação (1 teste)
 | Caso de Teste | Status |

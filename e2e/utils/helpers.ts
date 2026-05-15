@@ -207,8 +207,8 @@ export async function setMockSocialSession(page: Page, baseUrl = TEST_DATA.urls.
 export async function openAuthPanel(page: Page): Promise<void> {
   const entrarLink = page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })
   await expect(entrarLink).toBeVisible()
-  // Aguarda estabilização pós-hidratação React — o link ganha id="avatar-container" após hidratar
-  await page.locator('#avatar-container').waitFor({ state: 'visible', timeout: TIMEOUTS.authLink }).catch(() => {})
+  // Aguarda estabilização pós-hidratação React — garante que o link está interativo antes do clique
+  await entrarLink.waitFor({ state: 'visible', timeout: TIMEOUTS.authLink }).catch(() => {})
   await resilientClick(page, entrarLink, true)
 
   const loginModalTitle = page.getByRole('heading', { name: /acesse ou crie sua conta/i })
