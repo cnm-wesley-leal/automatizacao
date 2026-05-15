@@ -1,3 +1,0 @@
-[     117ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://staging.chavesnamao.com.br/imoveis/apartamentos/sp-sao-paulo/:0
-[     257ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://staging.chavesnamao.com.br/manifest.json:0
-[     257ms] [ERROR] Manifest fetch from https://staging.chavesnamao.com.br/manifest.json failed, code 502 @ https://staging.chavesnamao.com.br/imoveis/apartamentos/sp-sao-paulo/:0
