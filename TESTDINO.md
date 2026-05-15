@@ -29,19 +29,28 @@ Envio automático de resultados Playwright para o dashboard [TestDino](https://a
 Adicione ao arquivo `.env`:
 
 ```env
-TESTDINO_URL=https://app.testdino.com
+# Obrigatória
 TESTDINO_API_KEY=sk_test_COLE_SUA_CHAVE_AQUI
+
+# Opcionais (usadas pelo script send-to-testdino.ts)
+TESTDINO_TARGET_ENV=staging          # padrão: staging
+TESTDINO_RUN_TAGS=e2e,staging        # padrão: e2e,staging
+
+# Referência (não lidas pelo script, mas úteis para o .env.example)
+TESTDINO_URL=https://app.testdino.com
 TESTDINO_PROJECT_ID=project_69f8d13e2ddbbf162897e7c9
 TESTDINO_ORG_ID=org_69f8d13c2ddbbf162897e7ae
 ```
 
 > Onde encontrar cada valor:
 >
-> | Variável | Onde encontrar |
-> |---|---|
-> | `TESTDINO_API_KEY` | Settings → API Keys → Generate New |
-> | `TESTDINO_PROJECT_ID` | Project Settings → Identificador |
-> | `TESTDINO_ORG_ID` | Organization Settings → ID |
+> | Variável | Obrigatória | Onde encontrar |
+> |---|---|---|
+> | `TESTDINO_API_KEY` | ✅ Sim | Settings → API Keys → Generate New |
+> | `TESTDINO_TARGET_ENV` | ❌ Não | Definir conforme o ambiente alvo |
+> | `TESTDINO_RUN_TAGS` | ❌ Não | Tags livres separadas por vírgula |
+> | `TESTDINO_PROJECT_ID` | ❌ Não | Project Settings → Identificador |
+> | `TESTDINO_ORG_ID` | ❌ Não | Organization Settings → ID |
 
 ---
 
@@ -50,6 +59,8 @@ TESTDINO_ORG_ID=org_69f8d13c2ddbbf162897e7ae
 ### Executar testes e enviar automaticamente
 ```bash
 npm run test:with-testdino
+# ou equivalente:
+npm run testdino:sync
 ```
 
 ### Enviar resultados de uma execução anterior
@@ -63,24 +74,25 @@ npm test
 npx ts-node scripts/send-to-testdino.ts
 ```
 
+> O script invoca `npx tdpw upload` internamente, enviando o HTML report (`playwright-report/`) e o JSON report (`playwright-results.json`) para o TestDino.
+
 ---
 
 ## 📊 O Que É Enviado
 
-```json
-{
-  "project_id": "project_69f8d13e2ddbbf162897e7c9",
-  "test_suite": "Chaves na Mão - Login e Cadastro",
-  "environment": "staging",
-  "total_tests": 19,
-  "passed": 14,
-  "failed": 3,
-  "skipped": 2,
-  "results": [
-    { "title": "CT01 - Login com credenciais válidas", "status": "passed" },
-    { "title": "CT02 - Erro ao tentar login", "status": "passed" }
-  ]
-}
+O upload é feito pela CLI `tdpw` (pacote [`tdpw`](https://www.npmjs.com/package/tdpw)), que lê e envia automaticamente:
+
+| Artefato | Caminho |
+|---|---|
+| HTML Report | `playwright-report/` |
+| JSON Report | `playwright-results.json` |
+
+Parâmetros adicionais passados pelo script:
+
+```
+--token          TESTDINO_API_KEY
+--environment    TESTDINO_TARGET_ENV  (padrão: staging)
+--tag            TESTDINO_RUN_TAGS    (padrão: e2e,staging)
 ```
 
 ---
@@ -110,9 +122,9 @@ O dashboard mostra:
 
 ### Verificar variáveis (Windows)
 ```bash
-echo %TESTDINO_URL%
 echo %TESTDINO_API_KEY%
-echo %TESTDINO_PROJECT_ID%
+echo %TESTDINO_TARGET_ENV%
+echo %TESTDINO_RUN_TAGS%
 ```
 
 ---
