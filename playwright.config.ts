@@ -32,14 +32,12 @@ export default defineConfig({
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'], storageState: '.auth/user.json' },
-      dependencies: ['setup-chromium'],      // AnunciarPfFlow runs in its own project (chromium-pf-flow) AFTER this one
-      // because AnunciarPfFlow advances WebUser's server-side ad to escolha-plano,
-      // which would break IDwall tests that depend on finding no active ad.
+      dependencies: ['setup-chromium'],
       testIgnore: '**/AnunciarPfFlow.spec.ts',
     },
     {
-      // AnunciarPfFlow runs AFTER the main chromium project so that IDwall tests
-      // (which need WebUser to have no in-progress ad at escolha-plano) run first.
+      // AnunciarPfFlow runs AFTER the main chromium project to avoid
+      // interfering with other tests that share WebUser's server-side ad state.
       name: 'chromium-pf-flow',
       use: { ...devices['Desktop Chrome'], storageState: '.auth/user.json' },
       dependencies: ['chromium'],

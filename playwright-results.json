@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 6
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "setup-chromium",
         "name": "setup-chromium",
@@ -38,7 +38,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "setup-webkit",
         "name": "setup-webkit",
@@ -56,7 +56,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "setup-ios",
         "name": "setup-ios",
@@ -74,7 +74,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "chromium",
         "name": "chromium",
@@ -92,7 +92,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "chromium-pf-flow",
         "name": "chromium-pf-flow",
@@ -110,7 +110,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "webkit-safari",
         "name": "webkit-safari",
@@ -128,7 +128,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 6
         },
         "id": "ios-safari-iphone-14",
         "name": "ios-safari-iphone-14",
@@ -196,12 +196,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14457,
+                  "duration": 12349,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-21T12:37:46.361Z",
+                  "startTime": "2026-05-26T15:32:08.016Z",
                   "annotations": [
                     {
                       "type": "info",
@@ -222,26 +222,31 @@
       ]
     },
     {
-      "title": "tests\\IDwallVerification.spec.ts",
-      "file": "tests/IDwallVerification.spec.ts",
+      "title": "tests\\Register.spec.ts",
+      "file": "tests/Register.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Verificação de Identidade IDwall — Jornada Anuncie PF",
-          "file": "tests/IDwallVerification.spec.ts",
-          "line": 351,
+          "title": "Feature Auth - Cadastro de Usuários",
+          "file": "tests/Register.spec.ts",
+          "line": 59,
           "column": 6,
           "specs": [
             {
-              "title": "CT03 - dados pessoais válidos com CEP pessoal avançam para verificacao-identidade",
-              "ok": false,
+              "title": "CT11 - deve realizar cadastro com dados válidos (email novo)",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [],
+                  "annotations": [
+                    {
+                      "type": "info",
+                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                    }
+                  ],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
@@ -249,541 +254,32 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 63419,
-                      "error": {
-                        "message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================",
-                        "stack": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at gotoPersonalDataStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:322:14)\n    at C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:355:5",
-                        "location": {
-                          "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                          "column": 14,
-                          "line": 322
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 320 |\u001b[39m   }\n \u001b[90m 321 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 322 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/etapa=dados-pessoais/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\n \u001b[90m     |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 323 |\u001b[39m }\n \u001b[90m 324 |\u001b[39m\n \u001b[90m 325 |\u001b[39m \u001b[90m/**\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                            "column": 14,
-                            "line": 322
-                          },
-                          "message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n  320 |   }\n  321 |\n> 322 |   await page.waitForURL(/etapa=dados-pessoais/, { timeout: 15000 })\n      |              ^\n  323 | }\n  324 |\n  325 | /**\n    at gotoPersonalDataStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:322:14)\n    at C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:355:5"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:38:02.267Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Automatização\\test-results\\tests-IDwallVerification-V-666ab-para-verificacao-identidade-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "column": 14,
-                        "line": 322
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-cd760a4975698470862d",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 354,
-              "column": 7
-            },
-            {
-              "title": "CT04 - CPF com dígitos repetidos exibe mensagem de validação",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "status": "passed",
+                      "duration": 12230,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.992Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-c85c297293c6da098a1c",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 363,
-              "column": 7
-            },
-            {
-              "title": "CT05 - data de nascimento futura exibe mensagem de validação",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.992Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-b1138cdfee129f3bcabd",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 378,
-              "column": 7
-            },
-            {
-              "title": "CT27 - ausência de CEP pessoal bloqueia avanço em dados-pessoais",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.992Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-ea90e2fd161edc14fa55",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 394,
-              "column": 7
-            },
-            {
-              "title": "CT06 - tela de verificação exibe título, instruções, checkbox e botão desabilitado",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.992Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-dd23d65e8a6e53f65ec2",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 404,
-              "column": 7
-            },
-            {
-              "title": "CT07 - marcar checkbox de consentimento habilita o botão \"Tirar foto agora\"",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.992Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-a7c6bbeb910ecba6dd8d",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 430,
-              "column": 7
-            },
-            {
-              "title": "CT08 - clique em \"Tirar foto agora\" dispara POST /account/identity-verification/start",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.992Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-c9fa6c9219080c511bf2",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 440,
-              "column": 7
-            },
-            {
-              "title": "CT09 - status VALID da verificação habilita botão Continuar para Etapa 12",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-3ac6e86f89ec3380c3f6",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 466,
-              "column": 7
-            },
-            {
-              "title": "CT10 - status INVALID bloqueia fluxo e exibe mensagem de verificação reprovada",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-702b1cb8db57f7fe1f7c",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 500,
-              "column": 7
-            },
-            {
-              "title": "CT11 - status MANUAL_APPROVAL exibe estado \"em análise\" e preserva fluxo",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-b4151e22a072df758b86",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 532,
-              "column": 7
-            },
-            {
-              "title": "CT25 - acesso direto à URL verificacao-identidade sem estado de fluxo redireciona",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-6f3b50241195ed0707be",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 565,
-              "column": 7
-            },
-            {
-              "title": "CT26 - abandono e retorno ao fluxo preserva estado da verificação",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-3e99dff15119354fbfa5",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 586,
-              "column": 7
-            }
-          ]
-        },
-        {
-          "title": "IDwall — Contrato de API (mockado)",
-          "file": "tests/IDwallVerification.spec.ts",
-          "line": 610,
-          "column": 6,
-          "specs": [
-            {
-              "title": "CT28 - 401 no /start exibe estado de erro de autenticação na tela",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "fail",
-                      "description": "[GAP-UI] Retorno 401 de /start não gera mensagem de erro visível ao usuário",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 617,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "failed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 65711,
-                      "error": {
-                        "message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================",
-                        "stack": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at gotoPersonalDataStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:322:14)\n    at gotoVerificationStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:330:3)\n    at C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:619:5",
-                        "location": {
-                          "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                          "column": 14,
-                          "line": 322
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 320 |\u001b[39m   }\n \u001b[90m 321 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 322 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/etapa=dados-pessoais/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\n \u001b[90m     |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 323 |\u001b[39m }\n \u001b[90m 324 |\u001b[39m\n \u001b[90m 325 |\u001b[39m \u001b[90m/**\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                            "column": 14,
-                            "line": 322
-                          },
-                          "message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n  320 |   }\n  321 |\n> 322 |   await page.waitForURL(/etapa=dados-pessoais/, { timeout: 15000 })\n      |              ^\n  323 | }\n  324 |\n  325 | /**\n    at gotoPersonalDataStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:322:14)\n    at gotoVerificationStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:330:3)\n    at C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:619:5"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:39:07.427Z",
+                      "startTime": "2026-05-26T15:32:21.955Z",
                       "annotations": [
                         {
-                          "type": "fail",
-                          "description": "[GAP-UI] Retorno 401 de /start não gera mensagem de erro visível ao usuário",
-                          "location": {
-                            "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                            "line": 617,
-                            "column": 10
-                          }
+                          "type": "info",
+                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
                         }
                       ],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Automatização\\test-results\\tests-IDwallVerification-I-9696f-rro-de-autenticação-na-tela-chromium-retry1\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Automatização\\test-results\\tests-IDwallVerification-I-9696f-rro-de-autenticação-na-tela-chromium-retry1\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "column": 14,
-                        "line": 322
-                      }
+                      "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "2927053b486af9cbcee4-2410658b64b7d7be693e",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 614,
+              "id": "de3567b02077f035b1b8-b6484802c0680fa63bf3",
+              "file": "tests/Register.spec.ts",
+              "line": 68,
               "column": 7
             },
             {
-              "title": "CT29 - 400 com dados inválidos no /start exibe mensagem de erro ao usuário",
+              "title": "CT12 - deve exibir erro ao tentar cadastro com email duplicado",
               "ok": true,
               "tags": [],
               "tests": [
@@ -791,915 +287,215 @@
                   "timeout": 120000,
                   "annotations": [
                     {
-                      "type": "fail",
-                      "description": "[GAP-UI] Retorno 400 de /start não gera mensagem de erro visível ao usuário",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 640,
-                        "column": 10
-                      }
+                      "type": "info",
+                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
                     }
                   ],
-                  "expectedStatus": "failed",
+                  "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 9498,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 64973,
-                      "error": {
-                        "message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================",
-                        "stack": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at gotoPersonalDataStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:322:14)\n    at gotoVerificationStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:330:3)\n    at C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:642:5",
-                        "location": {
-                          "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                          "column": 14,
-                          "line": 322
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 320 |\u001b[39m   }\n \u001b[90m 321 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 322 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/etapa=dados-pessoais/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\n \u001b[90m     |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 323 |\u001b[39m }\n \u001b[90m 324 |\u001b[39m\n \u001b[90m 325 |\u001b[39m \u001b[90m/**\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                            "column": 14,
-                            "line": 322
-                          },
-                          "message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n  320 |   }\n  321 |\n> 322 |   await page.waitForURL(/etapa=dados-pessoais/, { timeout: 15000 })\n      |              ^\n  323 | }\n  324 |\n  325 | /**\n    at gotoPersonalDataStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:322:14)\n    at gotoVerificationStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:330:3)\n    at C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:642:5"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:40:13.871Z",
+                      "startTime": "2026-05-26T15:32:21.955Z",
                       "annotations": [
                         {
-                          "type": "fail",
-                          "description": "[GAP-UI] Retorno 400 de /start não gera mensagem de erro visível ao usuário",
-                          "location": {
-                            "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                            "line": 640,
-                            "column": 10
-                          }
+                          "type": "info",
+                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
                         }
                       ],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Automatização\\test-results\\tests-IDwallVerification-I-1a6e5-mensagem-de-erro-ao-usuário-chromium-retry1\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Automatização\\test-results\\tests-IDwallVerification-I-1a6e5-mensagem-de-erro-ao-usuário-chromium-retry1\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "column": 14,
-                        "line": 322
-                      }
+                      "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "2927053b486af9cbcee4-50e13f7827826f1c230f",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 637,
+              "id": "de3567b02077f035b1b8-56ed8d9662e095c0819b",
+              "file": "tests/Register.spec.ts",
+              "line": 116,
               "column": 7
             },
             {
-              "title": "CT30 - /start retorna protocolo e token SDK não fica exposto no DOM visível",
-              "ok": false,
+              "title": "CT13 - deve validar força de senha durante o cadastro",
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [],
+                  "annotations": [
+                    {
+                      "type": "info",
+                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                    }
+                  ],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 9133,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 65797,
-                      "error": {
-                        "message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================",
-                        "stack": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at gotoPersonalDataStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:322:14)\n    at gotoVerificationStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:330:3)\n    at C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:671:5",
-                        "location": {
-                          "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                          "column": 14,
-                          "line": 322
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 320 |\u001b[39m   }\n \u001b[90m 321 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 322 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/etapa=dados-pessoais/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m15000\u001b[39m })\n \u001b[90m     |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 323 |\u001b[39m }\n \u001b[90m 324 |\u001b[39m\n \u001b[90m 325 |\u001b[39m \u001b[90m/**\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
+                      "startTime": "2026-05-26T15:32:21.944Z",
+                      "annotations": [
                         {
-                          "location": {
-                            "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                            "column": 14,
-                            "line": 322
-                          },
-                          "message": "TimeoutError: page.waitForURL: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n  320 |   }\n  321 |\n> 322 |   await page.waitForURL(/etapa=dados-pessoais/, { timeout: 15000 })\n      |              ^\n  323 | }\n  324 |\n  325 | /**\n    at gotoPersonalDataStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:322:14)\n    at gotoVerificationStep (C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:330:3)\n    at C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts:671:5"
+                          "type": "info",
+                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
                         }
                       ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "de3567b02077f035b1b8-b64965066f24719014f3",
+              "file": "tests/Register.spec.ts",
+              "line": 136,
+              "column": 7
+            },
+            {
+              "title": "CT14 - deve validar senhas não coincidentes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "info",
+                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8829,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:41:19.436Z",
-                      "annotations": [],
-                      "attachments": [
+                      "retry": 0,
+                      "startTime": "2026-05-26T15:32:21.985Z",
+                      "annotations": [
                         {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Automatização\\test-results\\tests-IDwallVerification-I-b3deb-fica-exposto-no-DOM-visível-chromium-retry1\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Automatização\\test-results\\tests-IDwallVerification-I-b3deb-fica-exposto-no-DOM-visível-chromium-retry1\\trace.zip"
+                          "type": "info",
+                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
                         }
                       ],
-                      "errorLocation": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "column": 14,
-                        "line": 322
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "2927053b486af9cbcee4-2750163d9ceb37c0538a",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 660,
+              "id": "de3567b02077f035b1b8-e8eeead1a2b2891a18ba",
+              "file": "tests/Register.spec.ts",
+              "line": 163,
               "column": 7
             },
             {
-              "title": "CT31 - polling EM_ANALISE → APPROVED habilita botão Continuar após aprovação",
+              "title": "CT15 - deve validar formato de email inválido",
               "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [],
+                  "annotations": [
+                    {
+                      "type": "info",
+                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                    }
+                  ],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 8068,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.993Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:42:25.524Z",
-                      "annotations": [],
+                      "startTime": "2026-05-26T15:32:21.990Z",
+                      "annotations": [
+                        {
+                          "type": "info",
+                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                        }
+                      ],
                       "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
-              "id": "2927053b486af9cbcee4-1365eae11349332b0834",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 681,
+              "id": "de3567b02077f035b1b8-3dda30d3adc52c2ba8a6",
+              "file": "tests/Register.spec.ts",
+              "line": 192,
               "column": 7
-            }
-          ]
-        },
-        {
-          "title": "IDwall — Casos de Borda e Negativos",
-          "file": "tests/IDwallVerification.spec.ts",
-          "line": 722,
-          "column": 6,
-          "specs": [
+            },
             {
-              "title": "CT32 - cliques duplos em \"Tirar foto agora\" disparam somente uma requisição (idempotência)",
+              "title": "CT17 - deve permitir login social com novo registro automático",
               "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [],
+                  "annotations": [
+                    {
+                      "type": "info",
+                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                    }
+                  ],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 8010,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:42:25.524Z",
-                      "annotations": [],
+                      "startTime": "2026-05-26T15:32:22.027Z",
+                      "annotations": [
+                        {
+                          "type": "info",
+                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                        }
+                      ],
                       "attachments": []
                     }
                   ],
-                  "status": "skipped"
+                  "status": "expected"
                 }
               ],
-              "id": "2927053b486af9cbcee4-4b74a67aaba7f67f4ff5",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 724,
-              "column": 7
-            },
-            {
-              "title": "CT33 - timeout/abort no /start exibe mensagem de erro e mantém tela interativa",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:42:25.524Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-1a595c8122263ee43225",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 753,
-              "column": 7
-            },
-            {
-              "title": "CT34 - payload XSS em campo de texto em dados-pessoais não é injetado como HTML",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:42:25.524Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-a54ef0b96cf92f5129c6",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 776,
-              "column": 7
-            }
-          ]
-        },
-        {
-          "title": "IDwall — Segurança",
-          "file": "tests/IDwallVerification.spec.ts",
-          "line": 805,
-          "column": 6,
-          "specs": [
-            {
-              "title": "CT35 - nenhuma chave de token bruto é armazenada em localStorage",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:42:25.524Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-8c6f95e3cac637ccd54d",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 807,
-              "column": 7
-            },
-            {
-              "title": "CT36 - CPF do usuário não é emitido em mensagens de console do navegador",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    },
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-21T12:42:25.524Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-f10a37f296458764c785",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 820,
-              "column": 7
-            }
-          ]
-        },
-        {
-          "title": "IDwall — Recursos com SDK Real (requerem câmera/biometria)",
-          "file": "tests/IDwallVerification.spec.ts",
-          "line": 851,
-          "column": 15,
-          "specs": [
-            {
-              "title": "CT37 - OCR RG legível extrai nome, CPF e data de nascimento corretamente",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-16c42dd125417688be76",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 852,
-              "column": 7
-            },
-            {
-              "title": "CT38 - OCR imagem borrada ou com baixa iluminação retorna erro de qualidade",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-e47e54136447bb17e22e",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 856,
-              "column": 7
-            },
-            {
-              "title": "CT39 - Face Match selfie + documento da mesma pessoa aprova verificação",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-a8a857ded9aa934469e8",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 860,
-              "column": 7
-            },
-            {
-              "title": "CT40 - Face Match selfie de pessoa diferente do documento reprova verificação",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-5849ad988c1806cacb43",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 864,
-              "column": 7
-            },
-            {
-              "title": "CT41 - Liveness passivo com selfie real é aprovado pela IA",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-35ff343ab84623492801",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 868,
-              "column": 7
-            },
-            {
-              "title": "CT42 - Liveness bloqueia foto impressa ou de tela (anti-spoofing)",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-8b67a48a88b801b7c95a",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 872,
-              "column": 7
-            },
-            {
-              "title": "CT43 - Documentoscopia aprova documento autêntico",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-38aad116c180e0167414",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 876,
-              "column": 7
-            },
-            {
-              "title": "CT44 - Documentoscopia detecta e reprova imagem adulterada",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-7c596e86ac559d3ca4ef",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 880,
-              "column": 7
-            },
-            {
-              "title": "CT45 - CPF válido na Receita Federal retorna situação Regular",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.994Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-96cbcca1041b9212e0f8",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 884,
-              "column": 7
-            },
-            {
-              "title": "CT46 - CPF suspenso ou cancelado na Receita Federal retorna situação correta",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "skip",
-                      "location": {
-                        "file": "C:\\Automatização\\e2e\\tests\\IDwallVerification.spec.ts",
-                        "line": 851,
-                        "column": 15
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-21T12:39:05.995Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "2927053b486af9cbcee4-fbb8a261e1ed2a39dca1",
-              "file": "tests/IDwallVerification.spec.ts",
-              "line": 888,
+              "id": "de3567b02077f035b1b8-ce2fc8fd4879f302270b",
+              "file": "tests/Register.spec.ts",
+              "line": 210,
               "column": 7
             }
           ]
@@ -1709,11 +505,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-21T12:37:45.048Z",
-    "duration": 280519.05,
-    "expected": 3,
-    "skipped": 27,
-    "unexpected": 2,
+    "startTime": "2026-05-26T15:32:06.751Z",
+    "duration": 27677.997,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
     "flaky": 0
   }
 }
