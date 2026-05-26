@@ -103,16 +103,16 @@ test.describe('Feature Header — Deslogado (Desktop)', () => {
   test('CT11 - deve redirecionar para login ao acessar "Favoritos" sem autenticação', async ({ page }) => {
     const header = new HeaderPage(page)
     await expect(header.navFavoritos).toBeVisible()
-    await header.navFavoritos.click()
+    await header.clickFavoritos()
 
     const redirectedToLogin = await page
-      .waitForURL(/\/(entrar|login)/, { timeout: TIMEOUTS.authPanel })
+      .waitForURL(/\/(entrar|login)/, { timeout: TIMEOUTS.authLink })
       .then(() => true)
       .catch(() => false)
 
     const authPanelOpened = await page
       .getByRole('heading', { name: /acesse ou crie sua conta/i })
-      .isVisible({ timeout: TIMEOUTS.authPanel })
+      .isVisible({ timeout: TIMEOUTS.authLink })
       .catch(() => false)
 
     expect(redirectedToLogin || authPanelOpened).toBe(true)

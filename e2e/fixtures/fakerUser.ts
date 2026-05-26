@@ -13,12 +13,13 @@ export type User = {
 export function createUserFake(): User {
   const firstName = faker.person.firstName();
   const lastName = faker.person.lastName();
+  const localPart = faker.internet.email({ firstName, lastName }).split('@')[0];
 
   const user: User = {
     firstName,
     lastName,
     fullName: `${firstName} ${lastName}`,
-    email: faker.internet.email({ firstName, lastName }).toLowerCase(),
+    email: `${localPart}.${Date.now()}@qa-test.com`.toLowerCase(),
     phone: fakePhone(),
     password: faker.internet.password({
       length: 8,

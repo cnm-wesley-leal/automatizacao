@@ -1,0 +1,655 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Chaves na Mão" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+      - navigation [ref=e11]:
+        - generic [ref=e12]:
+          - link "Imóveis" [ref=e14] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - img
+            - text: Imóveis
+          - link "Veículos" [ref=e16] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - img
+            - text: Veículos
+          - link "Anuncie" [ref=e18] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - img
+            - text: Anuncie
+      - navigation [ref=e19]:
+        - link "Favoritos" [ref=e22] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e23]
+          - text: Favoritos
+  - main [ref=e27]:
+    - generic [ref=e28]:
+      - article [ref=e29]:
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - img "Anuncie seu imóvel" [ref=e33]
+            - generic [ref=e34]:
+              - heading "Venda ou alugue seus imóveis de forma rápida e descomplicada!" [level=1] [ref=e35]:
+                - text: Venda ou alugue
+                - text: seus imóveis de forma rápida e descomplicada!
+              - paragraph [ref=e36]:
+                - text: Feito para
+                - generic [ref=e37]: proprietários de imóveis
+                - text: ", que querem facilidade para vender/alugar."
+              - button "Anunciar agora" [ref=e38] [cursor=pointer]
+          - list [ref=e39]:
+            - listitem [ref=e40]:
+              - img [ref=e42]
+              - paragraph [ref=e44]: Milhões de oportunidades de negócio todos os dias
+            - listitem [ref=e45]:
+              - img [ref=e47]
+              - paragraph [ref=e49]: Anuncie rápido e vire a chave para novas conquistas
+            - listitem [ref=e50]:
+              - img [ref=e52]
+              - paragraph [ref=e54]: Plataforma simples e intuitiva
+          - navigation "breadcrumb" [ref=e55]:
+            - list [ref=e56]:
+              - listitem [ref=e57]:
+                - link "Anuncie" [ref=e58] [cursor=pointer]:
+                  - /url: https://www.chavesnamao.com.br/anunciar-imoveis-carros-e-motos/
+              - listitem [ref=e59]:
+                - img [ref=e60]
+              - listitem [ref=e62]:
+                - link "Imóveis" [ref=e63] [cursor=pointer]:
+                  - /url: https://www.chavesnamao.com.br/anunciar-gratis-imoveis-casas-apartamentos/
+              - listitem [ref=e64]:
+                - img [ref=e65]
+              - listitem [ref=e67]:
+                - link "Direto com proprietário" [disabled] [ref=e68]
+      - generic [ref=e69]:
+        - paragraph [ref=e70]: Perguntas Frequentes
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - heading "Como vou receber contatos de pessoas interessadas no meu imóvel?" [level=2] [ref=e73] [cursor=pointer]:
+              - generic [ref=e74]: Como vou receber contatos de pessoas interessadas no meu imóvel?
+              - img [ref=e76]
+            - paragraph [ref=e78] [cursor=pointer]: No Chaves na Mão, temos múltiplos pontos de conversão no site, o que aumenta suas chances de receber mais leads. Quando alguém se interessar pelo seu imóvel, você será notificado via WhatsApp/ e-mail. Isso permite que você não perca nenhuma oportunidade de conexão com potenciais compradores ou locatários.
+          - generic [ref=e79]:
+            - heading "Como aumentar a visibilidade do meu imóvel?" [level=2] [ref=e80] [cursor=pointer]:
+              - generic [ref=e81]: Como aumentar a visibilidade do meu imóvel?
+              - img [ref=e83]
+            - paragraph [ref=e85] [cursor=pointer]: Para que seu imóvel seja visto por mais pessoas, é importante preencher todos os detalhes relevantes e adicionar o máximo de informações possível ao seu anúncio. Além disso, invista em fotos de alta qualidade e quantidade adequada, destacando os melhores ângulos e características do imóvel. Quanto mais completo e atrativo for o seu anúncio, mais chances ele terá de ser visto por potenciais compradores ou locatários, aumentando as chances de fechar negócio rapidamente. Você também pode optar por entrar em contato com nossa equipe de atendimento para contratar destaques e potencializar ainda mais seus resultados.
+          - generic [ref=e86]:
+            - heading "O Chaves na Mão intermedeia a venda ou aluguel do meu imóvel?" [level=2] [ref=e87] [cursor=pointer]:
+              - generic [ref=e88]: O Chaves na Mão intermedeia a venda ou aluguel do meu imóvel?
+              - img [ref=e90]
+            - paragraph [ref=e92] [cursor=pointer]: Não, o Chaves na Mão não realiza intermediações, nem oferece serviços de consultoria. Somos uma plataforma online que permite que você publique anúncios diretamente. Nosso objetivo é conectar você a potenciais compradores ou locatários, facilitando a visibilidade do seu imóvel. A negociação, comunicação e formalização do negócio ficam totalmente sob responsabilidade do anunciante e dos interessados.
+          - generic [ref=e93]:
+            - heading "Quais são as dicas de segurança do Chaves na Mão?" [level=2] [ref=e94] [cursor=pointer]:
+              - generic [ref=e95]: Quais são as dicas de segurança do Chaves na Mão?
+              - img [ref=e97]
+            - paragraph [ref=e99] [cursor=pointer]:
+              - text: "Sua segurança é prioridade no Chaves na Mão. Confira nossas recomendações:"
+              - generic [ref=e100]:
+                - generic [ref=e101]:
+                  - strong [ref=e102]: "° Proteção de dados:"
+                  - text: Nunca solicitamos PINs, senhas ou códigos de confirmação. Se alguém entrar em contato alegando ser do portal, desconfie.
+                - generic [ref=e103]:
+                  - strong [ref=e104]: "° Negociações seguras:"
+                  - text: Evite pagamentos antecipados e desconfie de ofertas com valores muito abaixo do mercado.
+                - generic [ref=e105]:
+                  - strong [ref=e106]: "° Verificação de informações:"
+                  - text: Antes de fechar negócios, ligue para o anunciante e revise a documentação cuidadosamente.
+                - generic [ref=e107]:
+                  - strong [ref=e108]: "° Plataforma de classificados:"
+                  - text: Somos um portal para conectar compradores e vendedores. Não realizamos consultoria ou intermediações diretas.
+              - text: Adote essas práticas para uma experiência segura e confiável!
+      - heading "Imóveis à venda" [level=3] [ref=e109]:
+        - link "Imóveis à venda" [ref=e110] [cursor=pointer]:
+          - /url: https://staging.chavesnamao.com.br/imoveis-a-venda/brasil/
+      - list [ref=e111]:
+        - listitem [ref=e112]:
+          - link "Apartamentos à venda no Rio de Janeiro" [ref=e113] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/rj-rio-de-janeiro/
+            - paragraph: Apartamentos à venda no Rio de Janeiro
+        - listitem [ref=e114]:
+          - link "Apartamentos à venda em Curitiba" [ref=e115] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/pr-curitiba/
+            - paragraph: Apartamentos à venda em Curitiba
+        - listitem [ref=e116]:
+          - link "Apartamentos à venda em Porto Alegre" [ref=e117] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/rs-porto-alegre/
+            - paragraph: Apartamentos à venda em Porto Alegre
+        - listitem [ref=e118]:
+          - link "Apartamentos à venda em Florianópolis" [ref=e119] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sc-florianopolis/
+            - paragraph: Apartamentos à venda em Florianópolis
+        - listitem [ref=e120]:
+          - link "Apartamentos à venda em Balneário Camboriú" [ref=e121] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sc-balneario-camboriu/
+            - paragraph: Apartamentos à venda em Balneário Camboriú
+        - listitem [ref=e122]:
+          - link "Apartamentos à venda em Praia Grande" [ref=e123] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sp-praia-grande/
+            - paragraph: Apartamentos à venda em Praia Grande
+        - listitem [ref=e124]:
+          - link "Apartamentos à venda em Ribeirão Preto" [ref=e125] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sp-ribeirao-preto/
+            - paragraph: Apartamentos à venda em Ribeirão Preto
+        - listitem [ref=e126]:
+          - link "Apartamentos à venda em Santo André" [ref=e127] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sp-santo-andre/
+            - paragraph: Apartamentos à venda em Santo André
+        - listitem [ref=e128]:
+          - link "Apartamentos à venda em Joinville" [ref=e129] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sc-joinville/
+            - paragraph: Apartamentos à venda em Joinville
+        - listitem [ref=e130]:
+          - link "Apartamentos à venda em Londrina" [ref=e131] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/pr-londrina/
+            - paragraph: Apartamentos à venda em Londrina
+        - listitem [ref=e132]:
+          - link "Apartamentos à venda em São José dos Campos" [ref=e133] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sp-sao-jose-dos-campos/
+            - paragraph: Apartamentos à venda em São José dos Campos
+        - listitem [ref=e134]:
+          - link "Apartamentos à venda em Santos" [ref=e135] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sp-santos/
+            - paragraph: Apartamentos à venda em Santos
+        - listitem [ref=e136]:
+          - link "Apartamentos à venda em Campinas" [ref=e137] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sp-campinas/
+            - paragraph: Apartamentos à venda em Campinas
+        - listitem [ref=e138]:
+          - link "Apartamentos à venda em Salvador" [ref=e139] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/ba-salvador/
+            - paragraph: Apartamentos à venda em Salvador
+        - listitem [ref=e140]:
+          - link "Apartamentos à venda em Itapema" [ref=e141] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sc-itapema/
+            - paragraph: Apartamentos à venda em Itapema
+        - listitem [ref=e142]:
+          - link "Apartamentos à venda em Belo Horizonte" [ref=e143] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/mg-belo-horizonte/
+            - paragraph: Apartamentos à venda em Belo Horizonte
+        - listitem [ref=e144]:
+          - link "Apartamentos à venda em João Pessoa" [ref=e145] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/pb-joao-pessoa/
+            - paragraph: Apartamentos à venda em João Pessoa
+        - listitem [ref=e146]:
+          - link "Apartamentos à venda em Guarulhos" [ref=e147] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sp-guarulhos/
+            - paragraph: Apartamentos à venda em Guarulhos
+        - listitem [ref=e148]:
+          - link "Casas à venda em São Paulo" [ref=e149] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-sao-paulo/
+            - paragraph: Casas à venda em São Paulo
+        - listitem [ref=e150]:
+          - link "Casas à venda no Rio de Janeiro" [ref=e151] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/rj-rio-de-janeiro/
+            - paragraph: Casas à venda no Rio de Janeiro
+        - listitem [ref=e152]:
+          - link "Casas à venda em Curitiba" [ref=e153] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/pr-curitiba/
+            - paragraph: Casas à venda em Curitiba
+        - listitem [ref=e154]:
+          - link "Casas à venda em Porto Alegre" [ref=e155] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/rs-porto-alegre/
+            - paragraph: Casas à venda em Porto Alegre
+        - listitem [ref=e156]:
+          - link "Casas à venda em Florianópolis" [ref=e157] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sc-florianopolis/
+            - paragraph: Casas à venda em Florianópolis
+        - listitem [ref=e158]:
+          - link "Casas à venda em São José dos Pinhais" [ref=e159] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/pr-sao-jose-dos-pinhais/
+            - paragraph: Casas à venda em São José dos Pinhais
+        - listitem [ref=e160]:
+          - link "Casas à venda em Praia Grande" [ref=e161] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-praia-grande/
+            - paragraph: Casas à venda em Praia Grande
+        - listitem [ref=e162]:
+          - link "Casas à venda em Ribeirão Preto" [ref=e163] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-ribeirao-preto/
+            - paragraph: Casas à venda em Ribeirão Preto
+        - listitem [ref=e164]:
+          - link "Casas à venda em Santo André" [ref=e165] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-santo-andre/
+            - paragraph: Casas à venda em Santo André
+        - listitem [ref=e166]:
+          - link "Casas à venda em Joinville" [ref=e167] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-a-venda/sc-joinville/
+            - paragraph: Casas à venda em Joinville
+        - listitem [ref=e168]:
+          - link "Casas à venda em Londrina" [ref=e169] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/pr-londrina/
+            - paragraph: Casas à venda em Londrina
+        - listitem [ref=e170]:
+          - link "Casas à venda em São José dos Campos" [ref=e171] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-sao-jose-dos-campos/
+            - paragraph: Casas à venda em São José dos Campos
+        - listitem [ref=e172]:
+          - link "Casas à venda em Santos" [ref=e173] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-santos/
+            - paragraph: Casas à venda em Santos
+        - listitem [ref=e174]:
+          - link "Casas à venda em Campinas" [ref=e175] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-campinas/
+            - paragraph: Casas à venda em Campinas
+        - listitem [ref=e176]:
+          - link "Casas à venda em São José" [ref=e177] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sc-sao-jose/
+            - paragraph: Casas à venda em São José
+        - listitem [ref=e178]:
+          - link "Casas à venda em Niterói" [ref=e179] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/rj-niteroi/
+            - paragraph: Casas à venda em Niterói
+        - listitem [ref=e180]:
+          - link "Casas à venda em Sorocaba" [ref=e181] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-sorocaba/
+            - paragraph: Casas à venda em Sorocaba
+        - listitem [ref=e182]:
+          - link "Casas à venda em João Pessoa" [ref=e183] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/pb-joao-pessoa/
+            - paragraph: Casas à venda em João Pessoa
+        - listitem [ref=e184]:
+          - link "Casas à venda em Itanhaém" [ref=e185] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-a-venda/sp-itanhaem/
+            - paragraph: Casas à venda em Itanhaém
+      - heading "Imóveis para alugar" [level=3] [ref=e186]:
+        - link "Imóveis para alugar" [ref=e187] [cursor=pointer]:
+          - /url: https://staging.chavesnamao.com.br/imoveis-a-venda/brasil/
+      - list [ref=e188]:
+        - listitem [ref=e189]:
+          - link "Apartamentos para alugar em São Paulo" [ref=e190] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sp-sao-paulo/
+            - paragraph: Apartamentos para alugar em São Paulo
+        - listitem [ref=e191]:
+          - link "Apartamentos para alugar no Rio de Janeiro" [ref=e192] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/rj-rio-de-janeiro/
+            - paragraph: Apartamentos para alugar no Rio de Janeiro
+        - listitem [ref=e193]:
+          - link "Apartamentos para alugar em Curitiba" [ref=e194] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/pr-curitiba/
+            - paragraph: Apartamentos para alugar em Curitiba
+        - listitem [ref=e195]:
+          - link "Apartamentos para alugar em Porto Alegre" [ref=e196] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/rs-porto-alegre/
+            - paragraph: Apartamentos para alugar em Porto Alegre
+        - listitem [ref=e197]:
+          - link "Apartamentos para alugar em Florianópolis" [ref=e198] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sc-florianopolis/
+            - paragraph: Apartamentos para alugar em Florianópolis
+        - listitem [ref=e199]:
+          - link "Apartamentos para alugar em Balneário Camboriú" [ref=e200] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sc-balneario-camboriu/
+            - paragraph: Apartamentos para alugar em Balneário Camboriú
+        - listitem [ref=e201]:
+          - link "Apartamentos para alugar em Praia Grande" [ref=e202] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sp-praia-grande/
+            - paragraph: Apartamentos para alugar em Praia Grande
+        - listitem [ref=e203]:
+          - link "Apartamentos para alugar em Ribeirão Preto" [ref=e204] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sp-ribeirao-preto/
+            - paragraph: Apartamentos para alugar em Ribeirão Preto
+        - listitem [ref=e205]:
+          - link "Apartamentos para alugar em Santo André" [ref=e206] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sp-santo-andre/
+            - paragraph: Apartamentos para alugar em Santo André
+        - listitem [ref=e207]:
+          - link "Apartamentos para alugar em Joinville" [ref=e208] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sc-joinville/
+            - paragraph: Apartamentos para alugar em Joinville
+        - listitem [ref=e209]:
+          - link "Apartamentos para alugar em Londrina" [ref=e210] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/pr-londrina/
+            - paragraph: Apartamentos para alugar em Londrina
+        - listitem [ref=e211]:
+          - link "Apartamentos para alugar em São José dos Campos" [ref=e212] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sp-sao-jose-dos-campos/
+            - paragraph: Apartamentos para alugar em São José dos Campos
+        - listitem [ref=e213]:
+          - link "Apartamentos para alugar em Santos" [ref=e214] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sp-santos/
+            - paragraph: Apartamentos para alugar em Santos
+        - listitem [ref=e215]:
+          - link "Apartamentos para alugar em Campinas" [ref=e216] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sp-campinas/
+            - paragraph: Apartamentos para alugar em Campinas
+        - listitem [ref=e217]:
+          - link "Apartamentos para alugar em Salvador" [ref=e218] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/ba-salvador/
+            - paragraph: Apartamentos para alugar em Salvador
+        - listitem [ref=e219]:
+          - link "Apartamentos para alugar em Itapema" [ref=e220] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sc-itapema/
+            - paragraph: Apartamentos para alugar em Itapema
+        - listitem [ref=e221]:
+          - link "Apartamentos para alugar em Belo Horizonte" [ref=e222] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/mg-belo-horizonte/
+            - paragraph: Apartamentos para alugar em Belo Horizonte
+        - listitem [ref=e223]:
+          - link "Apartamentos para alugar em João Pessoa" [ref=e224] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/pb-joao-pessoa/
+            - paragraph: Apartamentos para alugar em João Pessoa
+        - listitem [ref=e225]:
+          - link "Apartamentos para alugar em Guarulhos" [ref=e226] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/apartamentos-para-alugar/sp-guarulhos/
+            - paragraph: Apartamentos para alugar em Guarulhos
+        - listitem [ref=e227]:
+          - link "Casas para alugar em São Paulo" [ref=e228] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-sao-paulo/
+            - paragraph: Casas para alugar em São Paulo
+        - listitem [ref=e229]:
+          - link "Casas para alugar no Rio de Janeiro" [ref=e230] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/rj-rio-de-janeiro/
+            - paragraph: Casas para alugar no Rio de Janeiro
+        - listitem [ref=e231]:
+          - link "Casas para alugar em Curitiba" [ref=e232] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/pr-curitiba/
+            - paragraph: Casas para alugar em Curitiba
+        - listitem [ref=e233]:
+          - link "Casas para alugar em Porto Alegre" [ref=e234] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/rs-porto-alegre/
+            - paragraph: Casas para alugar em Porto Alegre
+        - listitem [ref=e235]:
+          - link "Casas para alugar em Florianópolis" [ref=e236] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sc-florianopolis/
+            - paragraph: Casas para alugar em Florianópolis
+        - listitem [ref=e237]:
+          - link "Casas para alugar em Praia Grande" [ref=e238] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-praia-grande/
+            - paragraph: Casas para alugar em Praia Grande
+        - listitem [ref=e239]:
+          - link "Casas para alugar em Ribeirão Preto" [ref=e240] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-ribeirao-preto/
+            - paragraph: Casas para alugar em Ribeirão Preto
+        - listitem [ref=e241]:
+          - link "Casas para alugar em Santo André" [ref=e242] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-santo-andre/
+            - paragraph: Casas para alugar em Santo André
+        - listitem [ref=e243]:
+          - link "Casas para alugar em Londrina" [ref=e244] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/pr-londrina/
+            - paragraph: Casas para alugar em Londrina
+        - listitem [ref=e245]:
+          - link "Casas para alugar em São José dos Campos" [ref=e246] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-sao-jose-dos-campos/
+            - paragraph: Casas para alugar em São José dos Campos
+        - listitem [ref=e247]:
+          - link "Casas para alugar em Itanhaém" [ref=e248] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-itanhaem/
+            - paragraph: Casas para alugar em Itanhaém
+        - listitem [ref=e249]:
+          - link "Casas para alugar em Santos" [ref=e250] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-santos/
+            - paragraph: Casas para alugar em Santos
+        - listitem [ref=e251]:
+          - link "Casas para alugar em Campinas" [ref=e252] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-campinas/
+            - paragraph: Casas para alugar em Campinas
+        - listitem [ref=e253]:
+          - link "Casas para alugar em Belo Horizonte" [ref=e254] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/mg-belo-horizonte/
+            - paragraph: Casas para alugar em Belo Horizonte
+        - listitem [ref=e255]:
+          - link "Casas para alugar em Guarulhos" [ref=e256] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-guarulhos/
+            - paragraph: Casas para alugar em Guarulhos
+        - listitem [ref=e257]:
+          - link "Casas para alugar em Balneário Camboriú" [ref=e258] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sc-balneario-camboriu/
+            - paragraph: Casas para alugar em Balneário Camboriú
+        - listitem [ref=e259]:
+          - link "Casas para alugar em Guarujá" [ref=e260] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-guaruja/
+            - paragraph: Casas para alugar em Guarujá
+        - listitem [ref=e261]:
+          - link "Casas para alugar em São Bernardo do Campo" [ref=e262] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-sao-bernardo-do-campo/
+            - paragraph: Casas para alugar em São Bernardo do Campo
+        - listitem [ref=e263]:
+          - link "Casas para alugar em Osasco" [ref=e264] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/casas-para-alugar/sp-osasco/
+            - paragraph: Casas para alugar em Osasco
+      - heading "Cidades" [level=3] [ref=e265]:
+        - link "Cidades" [ref=e266] [cursor=pointer]:
+          - /url: https://staging.chavesnamao.com.br/imoveis-a-venda/brasil/
+      - list [ref=e267]:
+        - listitem [ref=e268]:
+          - link "Curitiba" [ref=e269] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/pr-curitiba/
+            - paragraph: Curitiba
+        - listitem [ref=e270]:
+          - link "São Paulo" [ref=e271] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sp-sao-paulo/
+            - paragraph: São Paulo
+        - listitem [ref=e272]:
+          - link "Porto Alegre" [ref=e273] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/rs-porto-alegre/
+            - paragraph: Porto Alegre
+        - listitem [ref=e274]:
+          - link "Florianópolis" [ref=e275] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sc-florianopolis/
+            - paragraph: Florianópolis
+        - listitem [ref=e276]:
+          - link "Praia Grande" [ref=e277] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sp-praia-grande/
+            - paragraph: Praia Grande
+        - listitem [ref=e278]:
+          - link "Campinas" [ref=e279] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sp-campinas/
+            - paragraph: Campinas
+        - listitem [ref=e280]:
+          - link "Rio de Janeiro" [ref=e281] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/rj-rio-de-janeiro/
+            - paragraph: Rio de Janeiro
+        - listitem [ref=e282]:
+          - link "Balneário Camboriú" [ref=e283] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sc-balneario-camboriu/
+            - paragraph: Balneário Camboriú
+        - listitem [ref=e284]:
+          - link "Joinville" [ref=e285] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sc-joinville/
+            - paragraph: Joinville
+        - listitem [ref=e286]:
+          - link "Londrina" [ref=e287] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/pr-londrina/
+            - paragraph: Londrina
+        - listitem [ref=e288]:
+          - link "Ribeirão Preto" [ref=e289] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sp-ribeirao-preto/
+            - paragraph: Ribeirão Preto
+        - listitem [ref=e290]:
+          - link "São José dos Campos" [ref=e291] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sp-sao-jose-dos-campos/
+            - paragraph: São José dos Campos
+        - listitem [ref=e292]:
+          - link "Santos" [ref=e293] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sp-santos/
+            - paragraph: Santos
+        - listitem [ref=e294]:
+          - link "Salvador" [ref=e295] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/ba-salvador/
+            - paragraph: Salvador
+        - listitem [ref=e296]:
+          - link "Santo André" [ref=e297] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sp-santo-andre/
+            - paragraph: Santo André
+        - listitem [ref=e298]:
+          - link "Belo Horizonte" [ref=e299] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/mg-belo-horizonte/
+            - paragraph: Belo Horizonte
+        - listitem [ref=e300]:
+          - link "João Pessoa" [ref=e301] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/pb-joao-pessoa/
+            - paragraph: João Pessoa
+        - listitem [ref=e302]:
+          - link "Itapema" [ref=e303] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sc-itapema/
+            - paragraph: Itapema
+        - listitem [ref=e304]:
+          - link "Niterói" [ref=e305] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/rj-niteroi/
+            - paragraph: Niterói
+        - listitem [ref=e306]:
+          - link "Guarulhos" [ref=e307] [cursor=pointer]:
+            - /url: https://staging.chavesnamao.com.br/imoveis/sp-guarulhos/
+            - paragraph: Guarulhos
+  - navigation [ref=e308]:
+    - list [ref=e309]:
+      - listitem [ref=e310]:
+        - paragraph [ref=e311]: Institucional
+      - listitem [ref=e312]:
+        - link [ref=e313] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/quem-somos/
+          - text: Quem somos
+      - listitem [ref=e314]:
+        - link [ref=e315] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/fale-conosco/
+          - text: Fale conosco
+      - listitem [ref=e316]:
+        - link [ref=e317] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/integradores-parceiros/
+          - text: Integradores parceiros
+      - listitem [ref=e318]:
+        - link [ref=e319] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/trabalhe-conosco/
+          - text: Trabalhe conosco
+      - listitem [ref=e320]:
+        - link [ref=e321] [cursor=pointer]:
+          - /url: http://www.planalto.gov.br/ccivil_03/leis/L8078.htm
+          - text: Cod. defesa do consumidor
+    - list [ref=e322]:
+      - listitem [ref=e323]:
+        - paragraph [ref=e324]: Imóveis
+      - listitem [ref=e325]:
+        - link [ref=e326] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/lancamentos-imoveis/brasil/
+          - paragraph [ref=e327]: Imóveis novos
+      - listitem [ref=e328]:
+        - link [ref=e329] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/imoveis-a-venda/brasil/
+          - paragraph [ref=e330]: Comprar imóveis
+      - listitem [ref=e331]:
+        - link [ref=e332] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/imoveis-para-alugar/brasil/
+          - paragraph [ref=e333]: Alugar imóveis
+      - listitem [ref=e334]:
+        - link [ref=e335] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/anunciar-gratis-imoveis-casas-apartamentos/
+          - paragraph [ref=e336]: Anunciar imóvel
+    - list [ref=e337]:
+      - listitem [ref=e338]:
+        - paragraph [ref=e339]: Veículos
+      - listitem [ref=e340]:
+        - link [ref=e341] [cursor=pointer]:
+          - /url: /carros-usados/brasil/
+          - paragraph [ref=e342]: Comprar carros
+      - listitem [ref=e343]:
+        - link [ref=e344] [cursor=pointer]:
+          - /url: /motos-usadas/brasil/
+          - paragraph [ref=e345]: Comprar motos
+      - listitem [ref=e346]:
+        - link [ref=e347] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/anunciar-gratis-carros-e-motos/
+          - paragraph [ref=e348]: Anunciar veículos
+      - listitem [ref=e349]:
+        - link [ref=e350] [cursor=pointer]:
+          - /url: /tabela-fipe/
+          - paragraph [ref=e351]: Tabela FIPE
+    - list [ref=e352]:
+      - listitem [ref=e353]:
+        - paragraph [ref=e354]: Blog de Imóveis
+      - listitem [ref=e355]:
+        - link [ref=e356] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/decoracao/
+          - paragraph [ref=e357]: Decoração
+      - listitem [ref=e358]:
+        - link [ref=e359] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/dicas-e-reformas/
+          - paragraph [ref=e360]: Dicas e Reformas
+      - listitem [ref=e361]:
+        - link [ref=e362] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/guias/
+          - paragraph [ref=e363]: Guias
+      - listitem [ref=e364]:
+        - link [ref=e365] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/melhores-bairros/
+          - paragraph [ref=e366]: Melhores Bairros
+      - listitem [ref=e367]:
+        - link [ref=e368] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/mercado-imobiliario/
+          - paragraph [ref=e369]: Mercado Imobiliário
+    - list [ref=e370]:
+      - listitem [ref=e371]:
+        - paragraph [ref=e372]: Blog de Veículos
+      - listitem [ref=e373]:
+        - link [ref=e374] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/guia-compra-carros/
+          - paragraph [ref=e375]: Guia de Carros
+      - listitem [ref=e376]:
+        - link [ref=e377] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/guia-compra-motos/
+          - paragraph [ref=e378]: Guia de Motos
+      - listitem [ref=e379]:
+        - link [ref=e380] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/avaliacao/
+          - paragraph [ref=e381]: Avaliações
+      - listitem [ref=e382]:
+        - link [ref=e383] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/noticias-automotivas/
+          - paragraph [ref=e384]: Notícias
+    - list [ref=e385]:
+      - listitem [ref=e386]: Precisa de ajuda?
+      - listitem [ref=e387]:
+        - link [ref=e388] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/central-de-ajuda/
+          - text: Central de ajuda
+  - generic [ref=e389]:
+    - paragraph [ref=e390]: "Aplicativo disponivel em:"
+    - generic [ref=e391]:
+      - link [ref=e392] [cursor=pointer]:
+        - /url: https://play.google.com/store/apps/details?id=br.com.chavesnamao.www&utm_source=portal
+        - img [ref=e393]
+      - link [ref=e394] [cursor=pointer]:
+        - /url: https://apps.apple.com/br/app/chaves-na-m%C3%A3o/id6443436581?platform=iphone&pt=footer-cnm&ct=portal
+        - img [ref=e395]
+  - list [ref=e396]:
+    - listitem [ref=e397]:
+      - link [ref=e398] [cursor=pointer]:
+        - /url: http://www.facebook.com/ChavesNaMao
+        - img [ref=e399]
+    - listitem [ref=e401]:
+      - link [ref=e402] [cursor=pointer]:
+        - /url: https://www.youtube.com/ChavesNaMao
+        - img [ref=e403]
+    - listitem [ref=e405]:
+      - link [ref=e406] [cursor=pointer]:
+        - /url: https://www.tiktok.com/@portalchavesnamao
+        - img [ref=e407]
+    - listitem [ref=e410]:
+      - link [ref=e411] [cursor=pointer]:
+        - /url: https://instagram.com/chavesnamao/
+        - img [ref=e412]
+    - listitem [ref=e414]:
+      - link [ref=e415] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/chavesnamao/
+        - img [ref=e416]
+    - listitem [ref=e418]:
+      - link [ref=e419] [cursor=pointer]:
+        - /url: https://br.pinterest.com/chavesnamao/
+        - img [ref=e420]
+  - generic [ref=e422]:
+    - paragraph [ref=e423]: Há uma história por trás de toda virada de chave. Quem procura, vira a chave para o seu sonho.
+    - generic [ref=e424]: Chaves na Mão. Procurou, virou.
+  - generic [ref=e425]:
+    - link [ref=e426] [cursor=pointer]:
+      - /url: /
+    - paragraph [ref=e428]:
+      - text: © 2013 Chaves na Mão. Todos os direitos reservados.
+      - generic [ref=e429]:
+        - link [ref=e430] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/termos-de-uso/
+          - text: Termos de uso
+        - text: "|"
+        - link [ref=e431] [cursor=pointer]:
+          - /url: https://www.chavesnamao.com.br/politicas-de-privacidade/
+          - text: Políticas de privacidade
+  - generic [ref=e432]: Staging Environment - 0e124bf11edfaadfe85311c1a2bffe0bf4214e20

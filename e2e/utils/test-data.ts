@@ -175,6 +175,34 @@ export const HOME_DATA = {
   },
 }
 
+export const IDWALL_DATA = {
+  urls: {
+    createFlowPf: '/anunciar-gratis-imoveis-casas-apartamentos/pessoa-fisica/?started=true',
+    steps: {
+      informacoes: '?etapa=informacoes',
+      escolhaPlano: '?etapa=escolha-plano',
+      preco: '?etapa=preco',
+      caracteristicas: '?etapa=caracteristicas',
+      areaCondominio: '?etapa=area-condominio',
+      fotosVideo: '?etapa=fotos-e-video',
+      tituloDescricao: '?etapa=titulo-e-descricao',
+      contato: '?etapa=contato',
+      dadosPessoais: '?etapa=dados-pessoais',
+      verificacaoIdentidade: '?etapa=verificacao-identidade',
+    },
+  },
+  api: {
+    identityStart: '**/account/identity-verification/start',
+    identityStatus: '**/account/identity-verification/status**',
+  },
+  locators: {
+    consentCheckboxText: /autorizo|consentimento|uso da minha imagem/i,
+    photoBtn: /tirar foto/i,
+    continuarBtn: 'Continuar',
+    voltarBtn: 'Voltar',
+  },
+}
+
 export const TEST_DATA = {
   urls: {
     base: process.env.BASE_URL || 'https://staging.chavesnamao.com.br',

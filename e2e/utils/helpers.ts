@@ -136,9 +136,9 @@ export async function runSocialLoginWithMock(
 
 export function fakePhone(): string {
   const ddd = faker.number.int({ min: 11, max: 99 })
-  const prefix = faker.number.int({ min: 1000, max: 9999 })
-  const suffix = faker.number.int({ min: 1000, max: 9999 })
-  return `(${ddd}) 9${prefix}-${suffix}`
+  // Usa timestamp para garantir unicidade entre runs (evita "Telefone já cadastrado")
+  const ts = Date.now().toString().slice(-8)
+  return `(${ddd}) 9${ts.slice(0, 4)}-${ts.slice(4, 8)}`
 }
 
 export async function dismissCookieConsent(page: Page, testInfo?: TestInfo): Promise<void> {

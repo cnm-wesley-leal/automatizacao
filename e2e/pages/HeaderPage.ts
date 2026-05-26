@@ -100,6 +100,10 @@ export class HeaderPage {
     await expect(this.authPanel).toBeVisible()
   }
 
+  async clickFavoritos(): Promise<void> {
+    await this.resilientClick(this.navFavoritos, true)
+  }
+
   // ── Asserções ────────────────────────────────────────────────────────────────
 
   async assertLogoVisible() {
