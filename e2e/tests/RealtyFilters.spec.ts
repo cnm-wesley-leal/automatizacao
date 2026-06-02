@@ -42,6 +42,7 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
   // ── 2. Tipo de imóvel específico ─────────────────────────────────────────
 
   test('CT04 - deve exibir contagem de apartamentos ao navegar para /apartamentos/', async ({ page }) => {
+    test.slow() // /apartamentos/brasil/ é consistentemente lento no staging (~30s)
     await page.goto(D.urls.apartments, { waitUntil: 'domcontentloaded' })
     await expect(page.getByRole('heading', { level: 1 })).toContainText(/apartamento/i)
     await expect(page.locator('a[href*="/imovel/"]').first()).toBeVisible()

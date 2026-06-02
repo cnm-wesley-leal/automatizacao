@@ -1,0 +1,2204 @@
+# Casos de Teste — Criar Alerta de Anúncio
+
+**Feature:** Alertas de novos anúncios — Chaves na Mão  
+**Domínio:** Imóveis (v1.0)  
+**Status:** 📋 Em Planejamento (não implementado em automação E2E)  
+**Total de Casos de Teste:** 39 CTs (35 core + 4 gaps)  
+**Cobertura:** ✅ 100% da especificação (26 regras + heurísticas)  
+**Referências:**
+- `01_Specs/00-especificacao-alertas-geral.docx` (v1.0 — 30/04/2026)
+- `01_Specs/01-anexo-imoveis.docx` (v1.0 — 30/04/2026)
+- [Monday — US: Criar Alerta](https://chavesnamao-team.monday.com/boards/18275745042/pulses/11082808077)
+- [Monday — QA Test Plan](https://chavesnamao-team.monday.com/boards/18275745042/pulses/11914193171)
+- [Test Plan — Execução Automatizada vs Manual](TEST_PLAN_CRIAR_ALERTA.md)
+
+**Última atualização:** 28/05/2026  
+**Responsável QA:** Wesley Leal
+
+> ⚠️ **Nota:** Este documento está em planejamento. Os 35 casos de teste originais definem o escopo da especificação. Os 4 CTs adicionais (CT08_SEC, CT15B, CT11C, CT08B) cobrem gaps identificados em segurança, confiabilidade e UX. Consulte a suite de [Busca de Imóveis (RealtySearch.md)](RealtySearch.md) para testes E2E implementados.
+
+---
+
+## Índice de Módulos
+
+| Módulo | Descrição | CTs |
+|--------|-----------|-----|
+| M1 | Acesso e pré-condições de criação | CT01–CT04 |
+| M2 | Validação de critérios obrigatórios (Imóveis) | CT05–CT08 |
+| M2B | Validação de segurança (Proteção contra XSS) | CT08_SEC |
+| M2C | Critérios sugeridos (UX & Matriz de Imóveis) | CT08B |
+| M3 | Regras de negócio: limite e duplicidade | CT09–CT10 |
+| M4 | Fluxo de criação e confirmação | CT11–CT13 |
+| M4B | Fluxo avançado (Prevenção de Double-Click) | CT11C |
+| M5 | Configuração de canais (Push & E-mail) | CT14–CT17 |
+| M5B | Configuração avançada (Persistência de Ofertas) | CT15B |
+| M6 | Gerenciamento de alertas (área logada) | CT18–CT24 |
+| M7 | Disparo por Push Notification | CT25–CT30 |
+| M8 | Disparo por E-mail (Digest) | CT31–CT35 |
+| **TOTAL** | **39 Casos de Teste** | **CT01–CT35 + 4 Gaps** |
+
+---
+
+## M1 — Acesso e Pré-condições de Criação
+
+---
+
+### CT01 — Usuário logado com filtros visualiza botão "Criar Alerta"
+
+#### Objetivo
+Validar que o botão "Criar Alerta" é exibido na tela de listagem de anúncios de imóveis quando o usuário está autenticado e possui filtros aplicados.
+
+#### Pré-Condições
+- Usuário cadastrado e autenticado
+- Acesso à tela de listagem de imóveis
+- Ao menos um filtro aplicado na busca (finalidade + tipo + localização)
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a página de listagem de imóveis com filtros aplicados (ex.: Apartamentos > Comprar > Curitiba) | A listagem é exibida com os resultados correspondentes |
+| 2 | Observar o cabeçalho/heading da listagem em desktop, ou o botão flutuante acima da bottom-nav em mobile | O botão "Criar Alerta" é exibido e está habilitado |
+| 3 | Verificar o estado visual do botão | Botão apresenta texto "Criar Alerta" e está clicável |
+
+#### Resultados Esperados
+- Botão "Criar Alerta" visível e habilitado na listagem de imóveis com filtros preenchidos.
+
+#### Critérios de Aceitação
+- Em desktop: botão presente no heading da listagem de busca.
+- Em mobile: botão flutuante visível acima da bottom-nav.
+- Botão habilitado apenas quando critérios obrigatórios (finalidade, tipo, localização) estão preenchidos.
+
+---
+
+### CT02 — Usuário não logado clica em "Criar Alerta" (redirecionamento para login)
+
+#### Objetivo
+Validar que usuário não autenticado é redirecionado para a tela de login ao tentar criar um alerta.
+
+#### Pré-Condições
+- Usuário não autenticado (sessão encerrada ou sem conta)
+- Acesso à tela de listagem de imóveis com filtros aplicados
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a listagem de imóveis sem estar logado, com filtros (finalidade + tipo + localização) | Listagem exibida normalmente |
+| 2 | Clicar no botão "Criar Alerta" | Sistema redireciona o usuário para a tela de login |
+| 3 | Realizar o login com credenciais válidas | Usuário é redirecionado de volta para a tela de criação de alerta com os mesmos critérios preservados (sem perda de contexto) |
+
+#### Resultados Esperados
+- Redirecionamento para login ao clicar em "Criar Alerta" sem autenticação.
+- Após autenticação, o fluxo de criação é retomado com os critérios originais intactos.
+
+#### Critérios de Aceitação
+- Nenhum dado de filtro é perdido após o processo de login.
+- Usuário não precisa reaplicar filtros manualmente após autenticar.
+
+---
+
+### CT03 — Usuário sem filtros obrigatórios preenchidos clica em "Criar Alerta"
+
+#### Objetivo
+Validar que o sistema bloqueia ou orienta o usuário quando nenhum filtro obrigatório está preenchido ao tentar criar um alerta.
+
+#### Pré-Condições
+- Usuário autenticado
+- Tela de listagem de imóveis sem nenhum filtro aplicado (estado inicial)
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a listagem de imóveis sem aplicar nenhum filtro | Listagem exibe todos os imóveis disponíveis |
+| 2 | Tentar clicar no botão "Criar Alerta" (se visível) | Botão exibido como desabilitado, OU o sistema exibe uma tela/aviso informando que filtros obrigatórios são necessários |
+| 3 | Ler a mensagem de orientação exibida | Mensagem específica indica quais critérios obrigatórios estão faltando (finalidade, tipo de imóvel, localização) |
+
+#### Resultados Esperados
+- Criação do alerta impedida quando nenhum critério obrigatório está preenchido.
+- Sistema exibe orientação clara sobre quais critérios são necessários.
+
+#### Critérios de Aceitação
+- Botão "Criar Alerta" desabilitado ou a ação bloqueada sem critérios obrigatórios.
+- Mensagem de orientação específica (Regra 1.7 da spec geral).
+
+---
+
+### CT04 — CTA de criação de alerta exibido no fim de resultados ou em página sem conteúdo
+
+#### Objetivo
+Validar que o CTA de "Criar Alerta" é apresentado ao final da listagem ou em páginas de estado vazio.
+
+#### Pré-Condições
+- Usuário autenticado
+- Busca com critérios que retornam poucos ou nenhum resultado
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Realizar busca de imóveis com filtros que resultem em zero ou poucos anúncios | Tela exibe estado vazio ou fim da listagem |
+| 2 | Observar a tela de estado vazio ou o final da listagem | CTA "Criar Alerta" é exibido como opção de ação disponível |
+| 3 | Clicar no CTA | Sistema direciona para o fluxo de criação de alerta com os filtros atuais |
+
+#### Resultados Esperados
+- CTA visível em cenários de zero resultado ou fim da listagem.
+- Navegação para o fluxo de criação funciona normalmente a partir do CTA.
+
+#### Critérios de Aceitação
+- CTA aparece consistentemente em estados de zero resultados com filtros obrigatórios preenchidos.
+
+---
+
+## M2 — Validação de Critérios Obrigatórios (Imóveis)
+
+---
+
+### CT05 — Bloquear criação de alerta sem "Finalidade" selecionada
+
+#### Objetivo
+Validar que o sistema exige a seleção de Finalidade (Comprar ou Alugar) como critério obrigatório para criar alerta de imóvel.
+
+#### Pré-Condições
+- Usuário autenticado
+- Filtros aplicados: Tipo de imóvel e Localização preenchidos, **Finalidade ausente**
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a listagem de imóveis com Tipo e Localização preenchidos, mas sem selecionar Finalidade | Listagem exibida |
+| 2 | Clicar em "Criar Alerta" | Sistema bloqueia a ação e exibe mensagem informando que Finalidade é obrigatória |
+| 3 | Verificar a mensagem exibida | Mensagem específica identifica "Finalidade" como critério faltante |
+
+#### Resultados Esperados
+- Criação bloqueada sem Finalidade.
+- Feedback claro ao usuário sobre o critério faltante.
+
+#### Critérios de Aceitação
+- Sistema identifica especificamente "Finalidade" como campo obrigatório ausente (Regra 1.7).
+
+---
+
+### CT06 — Bloquear criação de alerta sem "Tipo de Imóvel" selecionado
+
+#### Objetivo
+Validar que o sistema exige ao menos um Tipo de imóvel selecionado para habilitar a criação do alerta.
+
+#### Pré-Condições
+- Usuário autenticado
+- Filtros aplicados: Finalidade e Localização preenchidos, **Tipo de Imóvel ausente**
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a listagem com Finalidade e Localização preenchidos, sem Tipo de Imóvel | Listagem exibida |
+| 2 | Clicar em "Criar Alerta" | Sistema bloqueia e informa que Tipo de Imóvel é obrigatório |
+| 3 | Verificar a mensagem exibida | Mensagem identifica "Tipo de Imóvel" como critério faltante |
+
+#### Resultados Esperados
+- Criação bloqueada sem Tipo de Imóvel.
+
+#### Critérios de Aceitação
+- Sistema identifica especificamente "Tipo de Imóvel" como obrigatório (Regra 1.7).
+- Pelo menos um tipo deve estar selecionado.
+
+---
+
+### CT07 — Bloquear criação de alerta sem "Localização" preenchida
+
+#### Objetivo
+Validar que o sistema exige ao menos um bairro ou cidade como critério de Localização para criar alerta.
+
+#### Pré-Condições
+- Usuário autenticado
+- Filtros aplicados: Finalidade e Tipo de Imóvel preenchidos, **Localização ausente**
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a listagem com Finalidade e Tipo preenchidos, sem Localização | Listagem exibida |
+| 2 | Clicar em "Criar Alerta" | Sistema bloqueia e informa que Localização é obrigatória |
+| 3 | Verificar a mensagem exibida | Mensagem identifica "Localização" como critério faltante |
+
+#### Resultados Esperados
+- Criação bloqueada sem Localização.
+
+#### Critérios de Aceitação
+- Ao menos um bairro ou cidade inteira deve estar selecionado (Regra 1.4 + Anexo Imóveis §3).
+
+---
+
+### CT08 — Criar alerta com critérios opcionais (sugeridos) adicionados
+
+#### Objetivo
+Validar que o sistema aceita e salva critérios sugeridos opcionais (quartos, preço, área etc.) além dos obrigatórios.
+
+#### Pré-Condições
+- Usuário autenticado
+- Filtros obrigatórios preenchidos: Finalidade + Tipo de Imóvel + Localização
+- Filtros opcionais adicionados: Quartos (2+), Faixa de Preço (R$200k–R$500k), Garagens (1+)
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aplicar filtros obrigatórios + opcionais na busca | Listagem refinada exibida |
+| 2 | Clicar em "Criar Alerta" | Modal/tela de "Alerta de novos imóveis" é exibida |
+| 3 | Verificar os critérios exibidos no modal (modo read-only) | Todos os critérios aplicados (obrigatórios + opcionais) estão listados corretamente |
+| 4 | Clicar em "Salvar alerta" | Alerta criado com sucesso; tela de confirmação é apresentada |
+| 5 | Verificar o nome gerado automaticamente | Nome do alerta segue padrão: "[Tipo] para [Finalidade] em [Localização]" (ex.: "Apartamentos para comprar no Batel") |
+
+#### Resultados Esperados
+- Alerta criado com todos os critérios opcionais salvos.
+- Nome do alerta gerado automaticamente pelo sistema.
+
+#### Critérios de Aceitação
+- Critérios opcionais preservados no alerta sem intervenção manual do usuário.
+- Nome automático correto (Regra 1.16 + Anexo Imóveis §5).
+
+---
+
+## M3 — Regras de Negócio: Limite e Duplicidade
+
+---
+
+### CT09 — Bloquear criação do 6º alerta (limite de 5 alertas ativos)
+
+#### Objetivo
+Validar que o sistema impede a criação de um sexto alerta quando o usuário já possui 5 alertas ativos, exibindo orientação para excluir um existente.
+
+#### Pré-Condições
+- Usuário autenticado com exatamente 5 alertas ativos criados (qualquer domínio)
+- Filtros obrigatórios preenchidos na busca de imóveis
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a listagem de imóveis com filtros obrigatórios preenchidos | Listagem exibida com botão "Criar Alerta" |
+| 2 | Clicar em "Criar Alerta" | Sistema bloqueia a criação e exibe mensagem informando que o limite de 5 alertas foi atingido |
+| 3 | Verificar a mensagem e as opções disponíveis | Mensagem orienta o usuário a excluir um alerta existente para criar um novo |
+| 4 | Verificar se há atalho para a área de gerenciamento de alertas | Link ou botão direcionando para "/alertas-de-busca/" é apresentado |
+
+#### Resultados Esperados
+- 6º alerta não é criado.
+- Sistema exibe mensagem de bloqueio com orientação clara (Regra 1.8).
+
+#### Critérios de Aceitação
+- Criação bloqueada ao atingir 5 alertas ativos (contagem cross-domínio: imóveis + veículos).
+- Mensagem de orientação exibida com caminho para gerenciar/excluir alertas existentes.
+
+---
+
+### CT10 — Bloquear criação de alerta duplicado
+
+#### Objetivo
+Validar que o sistema bloqueia a criação de um alerta com os mesmos critérios exatos de um alerta já existente, oferecendo atalho para visualizá-lo.
+
+#### Pré-Condições
+- Usuário autenticado
+- Já existe um alerta ativo com os critérios: Comprar + Apartamento + Batel (Curitiba)
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aplicar os mesmos filtros da busca: Comprar + Apartamento + Batel | Listagem exibida com os mesmos critérios |
+| 2 | Clicar em "Criar Alerta" | Sistema detecta duplicidade e bloqueia a criação |
+| 3 | Verificar a mensagem exibida | Sistema informa que já existe um alerta com esses critérios |
+| 4 | Verificar o atalho disponível | Opção/link para visualizar o alerta existente é apresentada |
+
+#### Resultados Esperados
+- Alerta duplicado não é criado.
+- Atalho para o alerta existente é exibido (Regra 1.9).
+
+#### Critérios de Aceitação
+- Duplicidade identificada por correspondência exata de todos os critérios preenchidos.
+- Atalho funcional direcionando para o alerta existente.
+
+---
+
+## M4 — Fluxo de Criação e Confirmação
+
+---
+
+### CT11 — Criar alerta com sucesso (fluxo completo — happy path)
+
+#### Objetivo
+Validar o fluxo completo e bem-sucedido de criação de alerta de imóvel por usuário autenticado com critérios obrigatórios preenchidos.
+
+#### Pré-Condições
+- Usuário autenticado com menos de 5 alertas ativos
+- Filtros aplicados: Comprar + Apartamento + Curitiba/Batel
+- Nenhum alerta com os mesmos critérios já existe
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a listagem de imóveis com os filtros aplicados | Botão "Criar Alerta" exibido e habilitado |
+| 2 | Clicar em "Criar Alerta" | Modal/tela "Alerta de novos imóveis" é aberta |
+| 3 | Verificar os critérios exibidos no modal (somente leitura) | Critérios aplicados na busca estão refletidos corretamente no modal |
+| 4 | Verificar o nome do alerta gerado automaticamente | Nome exibido segue padrão (ex.: "Apartamentos para comprar em Curitiba") |
+| 5 | Clicar em "Salvar alerta" | Alerta criado com sucesso |
+| 6 | Verificar a tela de confirmação (sucesso) | Tela de sucesso é apresentada com confirmação da criação |
+| 7 | Verificar as opções na tela de sucesso | Botões "Gerenciar Alertas" e "Fechar" são exibidos |
+
+#### Resultados Esperados
+- Alerta criado e salvo com todos os critérios da busca.
+- Tela de sucesso exibida após confirmação (Regra 1.15).
+
+#### Critérios de Aceitação
+- Alerta aparece na lista de alertas do usuário após a criação.
+- Nome gerado automaticamente sem intervenção do usuário (Regra 1.16).
+- Canais (push e e-mail) configurados automaticamente conforme permissões.
+
+---
+
+### CT12 — Fechar modal de criação sem salvar (botão "Fechar" / ícone X)
+
+#### Objetivo
+Validar que ao fechar o modal de criação de alerta, o usuário é retornado para a listagem sem que nenhum alerta seja criado.
+
+#### Pré-Condições
+- Usuário autenticado
+- Modal "Alerta de novos imóveis" aberto após clicar em "Criar Alerta"
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Com o modal de criação aberto, clicar no botão "Fechar" ou no ícone "X" | Modal é fechado |
+| 2 | Verificar a tela exibida após o fechamento | Usuário retorna para a listagem de anúncios com os filtros preservados |
+| 3 | Verificar se algum alerta foi criado | Nenhum alerta novo consta na área de gerenciamento |
+
+#### Resultados Esperados
+- Nenhum alerta criado ao fechar o modal.
+- Usuário retorna para a listagem de anúncios.
+
+#### Critérios de Aceitação
+- Estado da listagem preservado (filtros aplicados permanecem).
+- Nenhum registro de alerta criado no sistema.
+
+---
+
+### CT13 — Navegar para gerenciamento de alertas pela tela de sucesso
+
+#### Objetivo
+Validar que o botão "Gerenciar Alertas" na tela de sucesso redireciona corretamente para a área logada de alertas.
+
+#### Pré-Condições
+- Usuário autenticado
+- Alerta recém-criado com sucesso; tela de confirmação exibida
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Na tela de sucesso de criação, clicar em "Gerenciar Alertas" | Sistema redireciona para a rota "/alertas-de-busca/" |
+| 2 | Verificar se o alerta recém-criado aparece na lista | O novo alerta está listado com nome, critérios e canais configurados |
+
+#### Resultados Esperados
+- Redirecionamento correto para a área de gerenciamento de alertas.
+- Alerta criado visível na lista.
+
+#### Critérios de Aceitação
+- Rota "/alertas-de-busca/" acessível apenas por usuários autenticados.
+- Alerta criado consta na listagem imediatamente.
+
+---
+
+## M5 — Configuração de Canais (Push & E-mail)
+
+---
+
+### CT14 — Criar alerta com permissão de push já concedida
+
+#### Objetivo
+Validar que o alerta é criado com canais push e e-mail ativos automaticamente quando a permissão de push já foi concedida pelo usuário no SO.
+
+#### Pré-Condições
+- Usuário autenticado com permissão de push concedida no dispositivo/navegador
+- Filtros obrigatórios preenchidos
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Clicar em "Criar Alerta" e prosseguir com "Salvar alerta" | Alerta criado com sucesso |
+| 2 | Acessar os detalhes do alerta em "/alertas-de-busca/" | Push: ativo; E-mail: ativo |
+| 3 | Verificar que não foi exibida oferta de ativação de push | Nenhuma tela/modal de solicitação de permissão aparece (permissão já concedida) |
+
+#### Resultados Esperados
+- Push e e-mail ativos por padrão quando permissão já foi concedida (Regra 1.10).
+
+#### Critérios de Aceitação
+- Canais configurados automaticamente sem necessidade de ação adicional do usuário.
+
+---
+
+### CT15 — Oferta de ativação de push após criação (permissão ainda não concedida)
+
+#### Objetivo
+Validar que o sistema oferece a ativação do canal push imediatamente após a criação do alerta quando a permissão não foi concedida, sem bloquear o alerta.
+
+#### Pré-Condições
+- Usuário autenticado sem permissão de push concedida no dispositivo
+- Filtros obrigatórios preenchidos
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Criar o alerta clicando em "Salvar alerta" | Alerta criado com sucesso |
+| 2 | Verificar o que é exibido após a confirmação | Sistema exibe oferta para ativar notificações push (após tela de sucesso) |
+| 3 | Aceitar a solicitação de permissão de push | Permissão concedida; push ativado para o alerta |
+| 4 | Verificar os detalhes do alerta | Push: ativo; E-mail: ativo |
+
+#### Resultados Esperados
+- Alerta criado mesmo sem permissão de push.
+- Oferta de ativação de push apresentada após confirmação (Regra 1.11).
+
+#### Critérios de Aceitação
+- Recusa da permissão push não cancela o alerta; alerta persiste com e-mail ativo (Regra 1.14).
+- Oferta de push apresentada a cada nova criação enquanto permissão não concedida (Regra 1.12).
+
+---
+
+### CT16 — Recusar ativação de push mantém alerta ativo por e-mail
+
+#### Objetivo
+Validar que ao recusar a permissão de push após a criação do alerta, o alerta permanece ativo com canal de e-mail funcional.
+
+#### Pré-Condições
+- Usuário autenticado sem permissão de push concedida
+- Alerta recém-criado com oferta de push exibida
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Na oferta de ativação de push, clicar em "Não" ou "Recusar" | Oferta é dispensada sem erro |
+| 2 | Verificar os detalhes do alerta em "/alertas-de-busca/" | Push: desligado; E-mail: ativo |
+| 3 | Confirmar que o alerta está salvo e funcional | Alerta listado normalmente com e-mail como canal ativo |
+
+#### Resultados Esperados
+- Alerta ativo exclusivamente por e-mail após recusa de push (Regra 1.14).
+
+#### Critérios de Aceitação
+- E-mail sempre ativo por padrão (Regra 1.10).
+- Push desligado por padrão quando permissão não concedida.
+
+---
+
+### CT17 — Orientação ao usuário com push bloqueado no nível do SO
+
+#### Objetivo
+Validar que quando a permissão de push foi negada no SO (bloqueio permanente), o sistema orienta o usuário a habilitá-la nas configurações do dispositivo.
+
+#### Pré-Condições
+- Usuário autenticado com permissão de push **bloqueada** nas configurações do SO/navegador
+- Alerta criado ou tentativa de ativar push na área de gerenciamento
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Ao exibir oferta de push (ou ao tentar ativar push na área de gerenciamento), verificar a mensagem exibida | Sistema não apresenta o prompt nativo do navegador (pois já foi bloqueado) |
+| 2 | Verificar a orientação exibida ao usuário | Mensagem instrui o usuário a habilitar notificações nas configurações do dispositivo/navegador |
+
+#### Resultados Esperados
+- Usuário orientado corretamente quando push está bloqueado no SO (Regra 1.13).
+
+#### Critérios de Aceitação
+- Sem tentativa de prompt nativo ao usuário que bloqueou a permissão.
+- Mensagem de orientação clara sobre como habilitar nas configurações.
+
+---
+
+## M6 — Gerenciamento de Alertas (Área Logada)
+
+---
+
+### CT18 — Visualizar lista de alertas na área logada
+
+#### Objetivo
+Validar que o usuário autenticado pode visualizar todos os seus alertas ativos na rota "/alertas-de-busca/", com as informações corretas exibidas.
+
+#### Pré-Condições
+- Usuário autenticado com ao menos 1 alerta ativo criado
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Acessar a rota "/alertas-de-busca/" | Página de alertas carregada |
+| 2 | Verificar os alertas listados | Lista exibe todos os alertas ativos do usuário (imóveis e veículos) |
+| 3 | Verificar as informações de cada card de alerta | Exibidos: tag de domínio, nome do alerta, resumo dos critérios principais e ações disponíveis |
+| 4 | Verificar as ações disponíveis por alerta | Botões/ícones: "Ver resultados", "Configurar canais", "Excluir" presentes |
+
+#### Resultados Esperados
+- Lista de alertas exibida com informações completas (Regra 3.2).
+
+#### Critérios de Aceitação
+- Todos os alertas do usuário (cross-domínio) listados juntos com identificação visual de domínio.
+- Critérios principais resumidos no card.
+
+---
+
+### CT19 — Visualizar detalhes (parâmetros de busca) de um alerta
+
+#### Objetivo
+Validar que o usuário pode expandir/acessar a tela de detalhes de um alerta para visualizar todos os critérios salvos em modo somente leitura.
+
+#### Pré-Condições
+- Usuário autenticado com ao menos 1 alerta ativo
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Na área de alertas, clicar no ícone "Ver parâmetros de busca" de um alerta | Tela de detalhes do alerta é aberta |
+| 2 | Verificar os critérios exibidos | Todos os critérios salvos (obrigatórios + opcionais) são exibidos em modo somente leitura |
+| 3 | Verificar que não há campos editáveis | Nenhum campo pode ser modificado diretamente na tela de detalhes |
+
+#### Resultados Esperados
+- Detalhes do alerta exibidos corretamente em modo read-only (Regras 3.3 e 3.4).
+
+#### Critérios de Aceitação
+- Sem campos de edição disponíveis na tela de detalhes.
+- Todos os critérios do alerta exibidos fielmente ao que foi salvo.
+
+---
+
+### CT20 — Navegar para listagem de busca a partir dos resultados do alerta
+
+#### Objetivo
+Validar que o botão "Ver resultados de busca" na tela de detalhes do alerta direciona para a listagem com os filtros do alerta aplicados.
+
+#### Pré-Condições
+- Usuário autenticado
+- Tela de detalhes de alerta aberta (critérios: Apartamentos para comprar em Curitiba)
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Na tela de detalhes do alerta, clicar em "Ver resultados de busca" | Sistema redireciona para a listagem de imóveis |
+| 2 | Verificar os filtros aplicados na listagem | Filtros correspondem exatamente aos critérios do alerta (Comprar + Apartamento + Curitiba) |
+
+#### Resultados Esperados
+- Listagem abre com os filtros do alerta pré-aplicados.
+
+#### Critérios de Aceitação
+- URL ou estado da busca reflete os critérios do alerta.
+- Ordenação padrão exibida normalmente.
+
+---
+
+### CT21 — Excluir alerta individualmente com confirmação
+
+#### Objetivo
+Validar que o usuário pode excluir um alerta individual após confirmação explícita, e que o alerta é removido permanentemente.
+
+#### Pré-Condições
+- Usuário autenticado com ao menos 2 alertas ativos (para confirmar que apenas 1 é excluído)
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Na área de alertas, clicar no ícone "Lixeira" de um alerta específico | Modal de confirmação de exclusão é exibido |
+| 2 | Verificar o conteúdo do modal | Modal solicita confirmação; exibe nome do alerta a ser excluído |
+| 3 | Clicar em "Sim" no modal de confirmação | Alerta excluído; lista atualizada sem o alerta removido |
+| 4 | Verificar que os demais alertas permanecem | Outros alertas continuam listados normalmente |
+
+#### Resultados Esperados
+- Alerta excluído permanentemente após confirmação (Regra 3.5).
+- Demais alertas não afetados.
+
+#### Critérios de Aceitação
+- Exclusão irreversível — alerta não aparece mais na lista.
+- Confirmação explícita obrigatória antes da exclusão.
+
+---
+
+### CT22 — Cancelar exclusão de alerta (fechar modal de confirmação)
+
+#### Objetivo
+Validar que ao cancelar o modal de confirmação de exclusão, o alerta não é removido.
+
+#### Pré-Condições
+- Usuário autenticado
+- Modal de confirmação de exclusão aberto para um alerta específico
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Com o modal de confirmação aberto, clicar em "Não" ou fechar o modal | Modal é fechado sem ação |
+| 2 | Verificar a lista de alertas | Alerta permanece listado normalmente |
+
+#### Resultados Esperados
+- Nenhum alerta excluído ao cancelar a confirmação.
+
+#### Critérios de Aceitação
+- Estado da lista de alertas preservado após cancelamento.
+
+---
+
+### CT23 — Limpar todos os alertas com confirmação
+
+#### Objetivo
+Validar que a ação "Limpar alertas" remove todos os alertas do usuário após confirmação, exibindo o estado vazio.
+
+#### Pré-Condições
+- Usuário autenticado com 2 ou mais alertas ativos
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Na área de alertas, clicar no ícone "Limpar alertas" | Modal de confirmação de exclusão em massa é exibido |
+| 2 | Clicar em "Sim" para confirmar | Todos os alertas do usuário são excluídos |
+| 3 | Verificar a tela após a exclusão | Tela de estado vazio é apresentada |
+
+#### Resultados Esperados
+- Todos os alertas excluídos; tela de estado vazio exibida.
+
+#### Critérios de Aceitação
+- Nenhum alerta permanece após confirmação de limpeza.
+- Estado vazio apresentado de forma adequada ao usuário.
+
+---
+
+### CT24 — Acesso a "/alertas-de-busca/" sem autenticação (rota protegida)
+
+#### Objetivo
+Validar que a rota "/alertas-de-busca/" é protegida e exige autenticação para acesso.
+
+#### Pré-Condições
+- Usuário não autenticado
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Tentar acessar diretamente a URL "/alertas-de-busca/" sem estar logado | Sistema redireciona para a tela de login |
+| 2 | Realizar login com credenciais válidas | Usuário é redirecionado para "/alertas-de-busca/" após autenticação |
+
+#### Resultados Esperados
+- Rota protegida; acesso negado sem autenticação.
+
+#### Critérios de Aceitação
+- Redirecionamento para login ao acessar rota autenticada sem sessão ativa.
+- Após login, retorno correto à rota solicitada.
+
+---
+
+## M7 — Disparo por Push Notification
+
+---
+
+### CT25 — Push disparado dentro da janela horária (7h–21h) com anúncio compatível
+
+#### Objetivo
+Validar que a notificação push é enviada quando há novo anúncio compatível com o alerta e o ciclo de verificação ocorre dentro da janela 7h–21h (Brasília).
+
+#### Pré-Condições
+- Usuário autenticado com alerta ativo (push: ligado, permissão concedida)
+- Horário atual: entre 7h01 e 20h59 (Brasília)
+- Novo anúncio compatível com os critérios do alerta publicado no portal
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aguardar o ciclo de verificação horária executar (ou simular via ambiente de teste) | Sistema verifica anúncios novos compatíveis |
+| 2 | Verificar o recebimento da notificação push no dispositivo do usuário | Push recebido com: Título identificando o alerta, Corpo com quantidade de novos anúncios |
+| 3 | Tocar na notificação push | Sistema redireciona para a listagem de busca com os critérios do alerta, ordenada pelos mais recentes, com destaque para os novos anúncios |
+
+#### Resultados Esperados
+- Push enviado dentro da janela horária com conteúdo obrigatório (Regra 2.B.2 + 2.B.5).
+
+#### Critérios de Aceitação
+- Push contém: Título, Corpo descritivo, Ação (link para listagem ordenada por mais recentes).
+- Listagem aberta com destaque visual para anúncios novos.
+
+---
+
+### CT26 — Push NÃO disparado fora da janela horária (antes das 7h / após as 21h)
+
+#### Objetivo
+Validar que anúncios que surgem fora da janela 7h–21h não disparam push imediatamente, sendo acumulados para o primeiro ciclo do dia seguinte às 7h.
+
+#### Pré-Condições
+- Usuário autenticado com alerta ativo (push ligado)
+- Horário atual: fora da janela (ex.: 22h ou 5h)
+- Novo anúncio compatível publicado no portal
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aguardar um ciclo de verificação ocorrer fora da janela (ex.: às 22h) | Sistema não dispara push imediatamente |
+| 2 | Verificar o dispositivo do usuário | Nenhuma notificação push recebida até as 7h do dia seguinte |
+| 3 | Ao atingir as 7h do dia seguinte, verificar o recebimento | Push enviado com os anúncios acumulados do período fora da janela |
+
+#### Resultados Esperados
+- Push não enviado fora da janela 7h–21h (Regra 2.B.2).
+- Anúncios acumulados e enviados no primeiro ciclo das 7h do dia seguinte.
+
+#### Critérios de Aceitação
+- Sem push entre 21h01 e 6h59 (Brasília).
+
+---
+
+### CT27 — Intervalo mínimo de 4h entre pushes consecutivos do mesmo alerta
+
+#### Objetivo
+Validar que o sistema respeita o intervalo mínimo de 4 horas entre dois pushes consecutivos do mesmo alerta, acumulando novos anúncios para o próximo ciclo elegível.
+
+#### Pré-Condições
+- Usuário com alerta ativo (push ligado)
+- Push disparado às 8h para esse alerta
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Novo anúncio compatível surge às 9h (1h após o último push) | Sistema registra o anúncio mas não dispara push imediatamente |
+| 2 | Verificar o dispositivo às 10h, 11h | Nenhum push enviado (intervalo de 4h ainda não atingido) |
+| 3 | Ao atingir às 12h (4h após o push das 8h) e havendo anúncios acumulados | Push enviado com os anúncios acumulados |
+
+#### Resultados Esperados
+- Intervalo mínimo de 4h respeitado entre pushes do mesmo alerta (Regra 2.B.3).
+
+#### Critérios de Aceitação
+- Máximo de 4 pushes/dia por alerta (janela 7h–21h ÷ intervalo de 4h = até 4 ciclos, Regra 2.B.3.1).
+- Alertas distintos operam independentemente.
+
+---
+
+### CT28 — Deduplicação de push: anúncio compatível com múltiplos alertas do mesmo usuário
+
+#### Objetivo
+Validar que um anúncio compatível com múltiplos alertas do mesmo usuário é enviado em push somente pelo alerta com mais critérios preenchidos (desempate: alerta mais recente).
+
+#### Pré-Condições
+- Usuário com 2 alertas ativos (push ligados):
+  - Alerta A: Comprar + Apartamento + Curitiba (3 critérios)
+  - Alerta B: Comprar + Apartamento + Curitiba + Quartos 2+ + Preço até 500k (5 critérios)
+- Novo anúncio publicado compatível com AMBOS os alertas
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aguardar o ciclo de push | Sistema avalia compatibilidade do anúncio com ambos os alertas |
+| 2 | Verificar a notificação push recebida | Push enviado apenas pelo Alerta B (mais critérios preenchidos) |
+| 3 | Confirmar que não houve push duplicado pelo Alerta A | Nenhum segundo push do mesmo anúncio enviado ao usuário |
+
+#### Resultados Esperados
+- Anúncio não enviado via push em múltiplos alertas ao mesmo usuário nas mesmas 24h (Regra 2.D.2).
+
+#### Critérios de Aceitação
+- Alerta com mais critérios preenchidos tem prioridade.
+- Desempate por alerta mais recente quando critérios são iguais.
+
+---
+
+### CT29 — Anúncio reativado após +60 dias dispara push
+
+#### Objetivo
+Validar que um anúncio que ficou indisponível por mais de 60 dias e foi reativado é tratado como "anúncio novo" e dispara push.
+
+#### Pré-Condições
+- Usuário com alerta ativo (push ligado)
+- Anúncio compatível com o alerta ficou indisponível há 61+ dias e foi reativado
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aguardar o ciclo de verificação após a reativação do anúncio | Sistema considera o anúncio como "novo" |
+| 2 | Verificar o recebimento de push | Push enviado com o anúncio reativado incluído |
+
+#### Resultados Esperados
+- Anúncio reativado após >60 dias trata-se como novo e dispara alerta (Regra 2.A.2).
+
+#### Critérios de Aceitação
+- Push recebido com o anúncio reativado incluso.
+
+---
+
+### CT30 — Anúncio reativado em menos de 60 dias NÃO dispara push
+
+#### Objetivo
+Validar que anúncio reativado em menos de 60 dias de indisponibilidade não é considerado "anúncio novo" e não dispara alerta.
+
+#### Pré-Condições
+- Usuário com alerta ativo (push ligado)
+- Anúncio compatível ficou indisponível por 30 dias e foi reativado
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aguardar o ciclo de verificação após a reativação do anúncio | Sistema identifica que o anúncio foi reativado em menos de 60 dias |
+| 2 | Verificar o dispositivo do usuário | Nenhum push disparado para esse anúncio |
+
+#### Resultados Esperados
+- Anúncio reativado em <60 dias não gera notificação (Regra 2.A.2).
+
+#### Critérios de Aceitação
+- Sem push para reativações em até 60 dias de indisponibilidade.
+
+---
+
+## M8 — Disparo por E-mail (Digest)
+
+---
+
+### CT31 — E-mail digest enviado às 8h com anúncios compatíveis das últimas 24h
+
+#### Objetivo
+Validar que o e-mail digest é enviado diariamente às 8h (Brasília), consolidando anúncios novos das últimas 24h compatíveis com o alerta.
+
+#### Pré-Condições
+- Usuário autenticado com alerta ativo (e-mail: ligado, sem opt-out global)
+- Ao menos 1 anúncio compatível publicado nas últimas 24h
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aguardar o disparo diário às 8h | E-mail enviado para o endereço cadastrado do usuário |
+| 2 | Abrir o e-mail recebido | E-mail contém: Assunto identificando o alerta, anúncios (foto, preço, localização, características), links para cada anúncio, rodapé com link para todos os resultados, gerenciar alertas e opt-out |
+| 3 | Verificar que há no máximo 1 e-mail por alerta/dia | Nenhum segundo e-mail do mesmo alerta recebido no mesmo dia |
+
+#### Resultados Esperados
+- E-mail digest enviado às 8h com conteúdo obrigatório (Regras 2.C.2 + 2.C.5).
+
+#### Critérios de Aceitação
+- Máximo de 1 e-mail/dia por alerta (Regra 2.C.3).
+- Rodapé com link de opt-out global obrigatório (Regra 2.C.5 — requisito LGPD).
+
+---
+
+### CT32 — E-mail digest limita exibição a 20 anúncios e oferece link para o restante
+
+#### Objetivo
+Validar que quando há mais de 20 anúncios compatíveis, o e-mail exibe apenas os 20 mais recentes e inclui link para a listagem completa.
+
+#### Pré-Condições
+- Usuário com alerta ativo (e-mail: ligado)
+- Mais de 20 anúncios compatíveis publicados nas últimas 24h
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Receber o e-mail digest às 8h | E-mail recebido |
+| 2 | Contar os anúncios exibidos no e-mail | Exatamente 20 anúncios exibidos (os mais recentes) |
+| 3 | Verificar a presença do link de listagem completa | Link "Ver todos os resultados" ou equivalente presente no e-mail |
+| 4 | Clicar no link da listagem completa | Listagem com todos os anúncios compatíveis é aberta |
+
+#### Resultados Esperados
+- E-mail exibe até 20 anúncios; excedentes acessíveis via link (Regra 2.C.4).
+
+#### Critérios de Aceitação
+- Máximo de 20 anúncios no corpo do e-mail.
+- Link funcional para a listagem completa.
+
+---
+
+### CT33 — Opt-out global de e-mail desativa canal em todos os alertas
+
+#### Objetivo
+Validar que ao acionar o opt-out global de e-mail, o usuário não recebe mais e-mails de nenhum dos seus alertas ativos.
+
+#### Pré-Condições
+- Usuário autenticado com 2 ou mais alertas ativos (e-mail: ligado em todos)
+- Link de opt-out global presente no e-mail digest recebido
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | No rodapé do e-mail digest, clicar no link de opt-out global | Página de confirmação de opt-out carregada |
+| 2 | Confirmar o opt-out | Opt-out global ativado; confirmação exibida ao usuário |
+| 3 | Aguardar o ciclo diário de e-mail do dia seguinte | Nenhum e-mail enviado para nenhum dos alertas do usuário |
+| 4 | Verificar os detalhes dos alertas em "/alertas-de-busca/" | Canal e-mail exibido como desligado em todos os alertas |
+
+#### Resultados Esperados
+- E-mail desativado globalmente para todos os alertas (Regra 2.C.1).
+
+#### Critérios de Aceitação
+- Nenhum e-mail de alerta recebido após opt-out global.
+- Push (se ativo) continua funcionando normalmente — opt-out afeta apenas e-mail.
+
+---
+
+### CT34 — Deduplicação de e-mail: anúncio compatível com múltiplos alertas enviado apenas uma vez
+
+#### Objetivo
+Validar que um anúncio compatível com múltiplos alertas do mesmo usuário aparece no e-mail apenas do alerta com mais critérios preenchidos.
+
+#### Pré-Condições
+- Usuário com 2 alertas ativos (e-mail: ligado):
+  - Alerta A: Comprar + Apartamento + Curitiba (3 critérios)
+  - Alerta B: Comprar + Apartamento + Curitiba + Quartos 2+ (4 critérios)
+- Novo anúncio compatível com AMBOS os alertas
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Receber os e-mails digest do dia | E-mails dos dois alertas chegam (se ambos tiverem anúncios novos diferentes) |
+| 2 | No anúncio compatível com ambos, verificar em qual e-mail ele aparece | Anúncio aparece apenas no e-mail do Alerta B (mais critérios) |
+| 3 | Confirmar ausência no e-mail do Alerta A | O mesmo anúncio não consta no digest do Alerta A |
+
+#### Resultados Esperados
+- Anúncio não duplicado entre e-mails de alertas do mesmo usuário (Regra 2.D.3).
+
+#### Critérios de Aceitação
+- Alerta com mais critérios preenchidos priorizado. Desempate: alerta mais recente.
+
+---
+
+### CT35 — E-mail e push do mesmo dia para o mesmo anúncio (sem deduplicação entre canais)
+
+#### Objetivo
+Validar que um anúncio pode aparecer tanto no push quanto no e-mail do mesmo dia, pois não há deduplicação entre canais (comportamento intencional).
+
+#### Pré-Condições
+- Usuário com alerta ativo (push: ligado, e-mail: ligado)
+- Novo anúncio compatível publicado que gerou push
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Receber push com novo anúncio compatível durante o dia | Push recebido normalmente |
+| 2 | No dia seguinte às 8h, receber o e-mail digest | E-mail recebido com os anúncios das últimas 24h |
+| 3 | Verificar se o anúncio que gerou push também aparece no e-mail | Anúncio presente no e-mail (comportamento esperado e intencional) |
+
+#### Resultados Esperados
+- Mesmo anúncio pode aparecer via push e via e-mail (Regra 2.D.1 — intencional).
+
+#### Critérios de Aceitação
+- Ausência de deduplicação entre canais é comportamento especificado, não um defeito.
+
+---
+
+## M2B — Validação de Segurança (Proteção contra XSS)
+
+---
+
+### CT08_SEC — Validação de XSS em Nome de Alerta com Caracteres Especiais
+
+#### Objetivo
+Validar que o sistema sanitiza e escapa caracteres especiais no nome do alerta, prevenindo injeção de código (XSS) e quebra de estrutura HTML.
+
+#### Pré-Condições
+- Usuário autenticado com menos de 5 alertas ativos
+- Filtros aplicados com caracteres especiais potencialmente maliciosos:
+  - Tipo: "Apartamento<script>alert('XSS')</script>"
+  - Finalidade: "Comprar&onclick=alert('XSS')"
+  - Localização: "São Paulo\" onload=\"alert('XSS')"
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Aplicar filtros com caracteres especiais (se houver UI que permita) ou enviar via API com payload malicioso | Requisição enviada |
+| 2 | Criar alerta com os critérios especiais | Alerta criado sem erro; nome armazenado com escape correto |
+| 3 | Acessar `/alertas-de-busca/` e abrir detalhes do alerta | Nome exibido como **texto puro**, sem execução de código |
+| 4 | Abrir DevTools e inspecionar HTML do nome no DOM | Elemento contém `textContent`/`innerText`, NÃO `innerHTML` |
+| 5 | Verificar console do navegador | Nenhuma mensagem de erro XSS ou warning de segurança |
+
+#### Resultados Esperados
+- Nenhuma execução de código malicioso
+- Caracteres especiais escapados/sanitizados corretamente no armazenamento e exibição
+
+#### Critérios de Aceitação
+- ✅ `<script>` tags exibidas como texto literal, não executadas
+- ✅ `&`, `"`, `'` escapados corretamente (e.g., `&amp;`, `&quot;`, `&#x27;`)
+- ✅ Console do navegador sem erros de XSS
+- ✅ HTML seguro: uso de `textContent` ou `innerText`, NÃO `innerHTML`
+- ✅ Backend valida/sanitiza entrada antes de armazenar
+- ✅ Testes podem ser rodados via API com payloads de segurança (OWASP top 10)
+
+#### Severidade
+🔴 **CRÍTICA** — Vulnerabilidade de segurança
+
+#### Relacionado a
+- Regra 1.16 (Nome automático do alerta)
+- OWASP Top 10: Injection (A03:2021)
+
+---
+
+## M4B — Fluxo Avançado (Prevenção de Double-Click)
+
+---
+
+### CT11C — Double-Click Prevention em "Salvar Alerta"
+
+#### Objetivo
+Validar que o sistema previne criação de alertas múltiplos via double-click no botão "Salvar alerta", evitando duplicatas acidentais ou requisições simultâneas.
+
+#### Pré-Condições
+- Usuário autenticado com menos de 5 alertas ativos
+- Modal de criação de alerta aberto com critérios obrigatórios preenchidos (Comprar + Apartamento + Curitiba)
+- Nenhum alerta com os mesmos critérios já existe
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Na tela de criação de alerta, posicionar cursor sobre botão "Salvar alerta" | Botão visível, habilitado e clicável |
+| 2 | Executar **double-click rápido** (< 500ms entre clicks) no botão "Salvar alerta" | Apenas **1 requisição** HTTP enviada ao backend (não 2) |
+| 3 | Aguardar resposta de sucesso do servidor | Exibida tela de confirmação de criação |
+| 4 | Acessar `/alertas-de-busca/` e listar alertas | **Apenas 1 alerta** criado com os critérios (não duplicado) |
+| 5 | Abrir DevTools > Network tab | Verificar histórico de requisições: apenas **1 POST request** detectado durante double-click |
+| 6 | (Teste alternativo) Simular conexão lenta (DevTools > Throttle: Slow 3G) e repetir passos 2–5 | Mesmo resultado: apenas 1 POST, 1 alerta criado |
+
+#### Resultados Esperados
+- Apenas 1 alerta criado mesmo com double-click ou múltiplos cliques rápidos
+- Botão desabilitado ou feedback visual indicando requisição em progresso
+
+#### Critérios de Aceitação
+- ✅ Apenas 1 POST request enviado durante double-click
+- ✅ Botão "Salvar alerta" desabilitado/bloqueado após 1º click até resposta do servidor
+- ✅ Spinner ou mensagem "Salvando..." exibida durante requisição
+- ✅ Nenhum alerta duplicado criado no banco
+- ✅ Comportamento funciona em conexões lentas (3G throttling)
+- ✅ Backend também valida duplicidade como defesa em profundidade
+
+#### Notas Técnicas
+- Frontend: Implementar via `disabled` attribute, debounce, ou throttle
+- Backend: Validação de duplicidade + transaction lock (para evitar race conditions)
+- Recomendado: Usar idempotency key no request (Regra da spec de API)
+
+#### Severidade
+🟡 **MÉDIA** — Pode gerar duplicatas ou múltiplas requisições
+
+#### Relacionado a
+- Regra 1.15 (Tela de confirmação)
+- Regra 1.9 (Bloqueio de duplicidade)
+- Best Practice: Idempotency em APIs
+
+---
+
+## M5B — Configuração Avançada (Persistência de Ofertas)
+
+---
+
+### CT15B — Oferta de Push Persistente em Múltiplas Criações
+
+#### Objetivo
+Validar que após rejeitar oferta de push na 1ª criação de alerta, o sistema **continua oferecendo push** na 2ª, 3ª, etc., até que permissão seja concedida ou opt-out global seja acionado (respeitando Regra 1.12).
+
+#### Pré-Condições
+- Usuário autenticado sem permissão de push concedida no navegador/SO
+- Menos de 5 alertas ativos para poder criar múltiplos
+- Primeira oferta de push já foi **rejeitada** em alerta anterior (usuário clicou "Não" ou "Recusar")
+
+#### Passos
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Criar **1º alerta** (Comprar + Apartamento + Curitiba) e confirmar em "Salvar alerta" | Tela de sucesso exibida |
+| 2 | Verificar se oferta de push foi exibida (Regra 1.11) | Oferta de ativação de push apresentada (1ª oferta) |
+| 3 | Clicar em "Não" ou "Recusar" na oferta | Oferta fechada; alerta criado com e-mail ativo, push inativo |
+| 4 | Retornar para a listagem de imóveis | Usuário volta à página de busca com filtros preservados |
+| 5 | Criar **2º alerta diferente** (Alugar + Casa + Salvador) e confirmar | Tela de sucesso exibida |
+| 6 | Verificar se oferta de push aparece **novamente** | Oferta reaparece (2ª oferta, mesmo após rejeição anterior) |
+| 7 | Clicar em "Não" novamente | Oferta fechada; 2º alerta criado |
+| 8 | Criar **3º alerta** (Comprar + Imóvel Comercial + São Paulo) | Tela de sucesso exibida |
+| 9 | Verificar se oferta de push reaparece | Oferta apresentada (3ª oferta — persistência validada) |
+| 10 | Aceitar a oferta na 3ª criação | Permissão push solicitada ao navegador; se concedida, push ativado |
+| 11 | Criar **4º alerta** sem responder à oferta | Tela de sucesso exibida |
+| 12 | Verificar se oferta **desaparece** | Sem oferta (permissão já concedida na etapa 10) |
+
+#### Resultados Esperados
+- Oferta de push reaparece a cada criação até ser aceita ou opt-out global acionado
+- Histórico de rejeições não persiste entre criações (oferta não é "cancelada" por spam fatigue)
+- Oferta desaparece apenas quando: (a) permissão concedida, (b) opt-out global acionado, ou (c) limite de rejeições (se especificado) atingido
+
+#### Critérios de Aceitação
+- ✅ Oferta aparece consistentemente em cada criação (enquanto permissão não concedida)
+- ✅ Estado de "rejeção única" **não** bloqueia futuras ofertas
+- ✅ localStorage/sessionStorage reflete estado corretamente (rastreamento de permissão)
+- ✅ Transição suave entre criações (sem lag ou comportamento inesperado)
+- ✅ Oferta apenas desaparece quando permanentemente concedida ou opt-out global acionado
+- ✅ Testes com múltiplas criações (3+) em mesma sessão
+
+#### Notas Técnicas
+- Frontend: Rastrear estado de permissão em localStorage (chave: `notifications-permission-status`)
+- Backend: Log de ofertas/rejeições para análise (analytics)
+- Recomendado: Implementar "soft limit" de ofertas (ex: máx 5 por sessão) para evitar spam
+
+#### Severidade
+🟡 **MÉDIA** — Regra de negócio não respeitada em cenário comum
+
+#### Relacionado a
+- Regra 1.12 (Oferta repetida a cada criação)
+- Regra 1.11 (Oferta inicial de push)
+- Regra 1.10 (Configuração automática de canais)
+
+---
+
+## M2C — Critérios Sugeridos (UX & Matriz de Imóveis)
+
+---
+
+### CT08B — Critérios Sugeridos Corretos por Tipo de Imóvel
+
+#### Objetivo
+Validar que o sistema exibe critérios opcionais **corretos** conforme tipo de imóvel selecionado, seguindo matriz de recomendações (Anexo Imóveis, doc `02-matriz-criterios-imoveis.docx`). Confirma que CT08 não só **aceita** critérios, mas que sistema **sugere proativamente** os corretos para melhorar UX.
+
+#### Pré-Condições
+- Usuário autenticado
+- Acesso ao modal/sheet de criação de alerta (após clicar "Criar Alerta" com filtros obrigatórios aplicados)
+- Documento `02-matriz-criterios-imoveis.docx` disponível para validação de matriz esperada
+- Tipos de imóvel: Apartamento, Casa, Terreno, Imóvel Comercial
+
+#### Passos — Variação 1: Apartamento
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Criar alerta com Tipo **"Apartamento"** + filtros obrigatórios (Comprar + Curitiba) | Modal de criação exibido |
+| 2 | Observar quais campos/filtros opcionais são exibidos como **sugestões** | Comparam com matriz esperada: Apartamento deve sugerir [Quartos, Garagens, Área, Condomínio, Piscina] (verificar doc 02) |
+| 3 | Validar que campos **não sugeridos** para Apartamento não aparecem | Campos como "Terreno" ou "Lote" NÃO aparecem (ex: "Tamanho do Lote" é apenas para Terreno) |
+| 4 | Preencher 2–3 critérios sugeridos (ex: Quartos 2+, Garagens 1, Área 50–100m²) | Campos preenchidos corretamente |
+| 5 | Salvar alerta | Alerta criado |
+| 6 | Verificar nome gerado | Pode incluir criterios sugeridos relevantes (ex: "Apartamentos 2 quartos para comprar em Curitiba") |
+
+#### Passos — Variação 2: Casa
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Criar alerta com Tipo **"Casa"** + filtros obrigatórios | Modal exibido |
+| 2 | Observar campos sugeridos para Casa | Comparam com matriz: Casa deve sugerir [Quartos, Garagens, Área, Piscina, Jardim, Garagem subterrânea] (verificar doc 02) |
+| 3 | Validar diferença vs. Apartamento | Mais campos que Apartamento? (ex: "Piscina", "Jardim", "Garagem subterrânea" aparecem para Casa mas não para Apartamento) |
+| 4 | Preencher alguns critérios e salvar | Alerta criado com critérios sugeridos salvos |
+
+#### Passos — Variação 3: Terreno
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Criar alerta com Tipo **"Terreno"** + filtros obrigatórios | Modal exibido |
+| 2 | Observar campos sugeridos | Comparam com matriz: Terreno deve sugerir [Tamanho do Lote, Área, Zona (urbana/rural)] (verificar doc 02) |
+| 3 | Validar ausência de campos não relevantes | "Quartos" e "Condomínio" NÃO aparecem para Terreno |
+| 4 | Salvar alerta | Alerta criado |
+
+#### Passos — Variação 4: Imóvel Comercial
+
+| Id | Ação | Resultado Esperado |
+|----|------|--------------------|
+| 1 | Criar alerta com Tipo **"Imóvel Comercial"** + filtros obrigatórios | Modal exibido |
+| 2 | Observar campos sugeridos | Comparam com matriz: Imóvel Comercial deve sugerir [Tipo de Negócio, Área, Zona] (verificar doc 02) |
+| 3 | Validar que campos residenciais não aparecem | "Quartos", "Piscina", "Jardim" NÃO aparecem |
+| 4 | Salvar alerta | Alerta criado |
+
+#### Resultados Esperados
+- Critérios sugeridos exibidos **corretamente conforme tipo de imóvel**
+- Sem campos genéricos não esperados para o tipo
+- UX coerente com estratégia de "progressive disclosure" (não sobrecarregar usuário)
+- Todos os 4 tipos cobrados com variações validadas
+
+#### Critérios de Aceitação
+- ✅ Cada tipo de imóvel exibe apenas campos esperados da matriz
+- ✅ Nenhum campo extrapolado (ex: "Tamanho do Lote" não aparece para Apartamento)
+- ✅ Ordem de campos segue matriz (se especificado em doc 02)
+- ✅ Labels/descrições claras e contextualizadas para cada campo sugerido
+- ✅ Testes cobrem todos os 4 tipos principais: Apartamento, Casa, Terreno, Imóvel Comercial
+- ✅ Campos sugeridos aparecem "collapsed" ou em seção visualmente diferenciada
+
+#### Notas Técnicas
+- **Requer acesso ao documento `02-matriz-criterios-imoveis.docx`** — validar matriz esperada antes de implementar
+- Frontend: Usar objeto de configuração `SUGGESTED_CRITERIA_BY_TYPE` com mapeamento por tipo
+- Backend: Pode retornar array de critérios sugeridos via API (field suggestion endpoint)
+- Relacionado a UX patterns: "Smart form" ou "context-aware form fields"
+
+#### Severidade
+🟡 **MÉDIA** — UX impacta na qualidade dos alertas criados (usuários menos propensos a adicionar critérios relevantes)
+
+#### Relacionado a
+- Regra 1.7 (Orientação ao usuário — sugestões são forma de guiar)
+- Anexo Imóveis §4 (Critérios opcionais/sugeridos por tipo)
+- CT08 (Criar alerta com critérios opcionais — CT08B detalha QUAIS opcionais aparecer)
+
+---
+
+## PARTE II — ESPECIFICAÇÃO TÉCNICA DE BACKEND
+
+> **Seção para Engenheiros QA, Desenvolvedores e Arquitetos**  
+> Esta seção detalha a arquitetura técnica, contratos de API, banco de dados e fluxos de integração necessários para cobertura completa de testes de regressão em nível de API, banco de dados e serviços.
+
+---
+
+## Arquitetura Técnica — 3 Serviços Independentes
+
+O módulo de **Search Alerts** é composto por 3 serviços desacoplados que se comunicam de forma assíncrona:
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  ┌─ Frontend (App Mobile/Web) ────────────────────────────────────────────┐ │
+│  │  POST /search-alerts { filtros }                                      │ │
+│  └────────────────────────┬──────────────────────────────────────────────┘ │
+│                           │                                              │
+│  ┌────────────────────────▼────────────────────────────────────────────┐ │
+│  │  🔵 Serviço 1 — API REST (NestJS)                                 │ │
+│  │  search-alert.service (libs/domain/src/search-alert/)             │ │
+│  │                                                                     │ │
+│  │  • Validação de schema (CreateRealtySearchAlertRequest)           │ │
+│  │  • Verificação de limite (máx 5 alertas por usuário)              │ │
+│  │  • Normalização e deduplicação de filtros                          │ │
+│  │  • Query builder ES (SearchAlertEsQueryBuilder)                    │ │
+│  │  • Transações MySQL + Elasticsearch                                │ │
+│  │  • Enriquecimento de critérios (IDs → nomes legíveis)            │ │
+│  └────────────────────────┬────────────────────────────────────────────┘ │
+│                           │                                              │
+│  ┌────────────────────────▼────────────────────────────────────────────┐ │
+│  │  💾 Armazenamento:                                                  │ │
+│  │  • MySQL: tb_alerta_busca, tb_alerta_busca_match                  │ │
+│  │  • Elasticsearch: índice alertas_imoveis (Percolator)             │ │
+│  └────────────────────────┬────────────────────────────────────────────┘ │
+│                           │                                              │
+│  ┌────────────────────────▼────────────────────────────────────────────┐ │
+│  │  🟢 Serviço 2 — ElasticLoader (Node.js CLI Batch)                │ │
+│  │  elasticloader/                                                     │ │
+│  │                                                                     │ │
+│  │  • Sincroniza imóveis MySQL → Elasticsearch                        │ │
+│  │  • Executa Percolate queries (alertas vs imóveis)                  │ │
+│  │  • Grava matches em tb_alerta_busca_match (id_cron_log = NULL)    │ │
+│  │  • Enfileira notificações (SQS)                                     │ │
+│  │  • Processa em batches: 100 imóveis/lote                           │ │
+│  └────────────────────────┬────────────────────────────────────────────┘ │
+│                           │                                              │
+│  ┌────────────────────────▼────────────────────────────────────────────┐ │
+│  │  🟣 Serviço 3 — cnm-notificator (Express + Lambda)               │ │
+│  │  cnm-notificator/                                                  │ │
+│  │                                                                     │ │
+│  │  • API Express (ECS Fargate): recebe notificações via cron        │ │
+│  │  • Enfileira no SQS (visibilidade 300s)                            │ │
+│  │  • Lambda consumer: busca device tokens (DynamoDB)                │ │
+│  │  • Monta payloads FCM (Android/Web) + APNS (iOS)                  │ │
+│  │  • Envia via AWS Pinpoint                                          │ │
+│  │  • Logs em DynamoDB (notification-logs)                            │ │
+│  └────────────────────────┬────────────────────────────────────────────┘ │
+│                           │                                              │
+│  ┌────────────────────────▼────────────────────────────────────────────┐ │
+│  │  📲 Entregas (FCM → Android, APNS → iOS)                          │ │
+│  └────────────────────────────────────────────────────────────────────┘ │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## API REST — Endpoints & Contratos
+
+### 1. Endpoint: POST /search-alerts
+
+**Descrição:** Cria um alerta de busca com filtros personalizados.  
+**Autenticação:** Bearer Token (JWT)  
+**Resposta:** 201 Created
+
+#### Request Schema — `CreateRealtySearchAlertRequest`
+
+```json
+{
+  "segment": "REALTY",
+  "transactionType": 0,           // 0 = Comprar, 1 = Alugar
+  "propertyTypeIds": [1, 2],      // [Apartamento, Casa, ...]
+  "cityIds": [3560],               // [Curitiba, ...]
+  "neighborhoodIds": [123456],     // Opcional
+  "stateIds": [15],                // Opcional
+  "regionIds": [999],              // Opcional (região bairro)
+  "streetIds": [555],              // Opcional
+  "purpose": 0,                    // 0 = Residencial, 1 = Comercial
+  "minBedrooms": 2,                // Opcional
+  "minParkingSpaces": 1,           // Opcional
+  "minBathrooms": 1,               // Opcional
+  "minPrice": 250000,              // Opcional
+  "maxPrice": 500000,              // Opcional
+  "minArea": 50,                   // Opcional (m²)
+  "maxArea": 150,                  // Opcional (m²)
+  "featureIds": [10, 20],          // Opcional (características/áreas)
+  "considerTotalRent": 1,          // 0|1, se 1 usar valor aluguel total
+  "url": "https://..."             // Opcional (referência de contexto)
+}
+```
+
+**Validações:**
+- `segment` = "REALTY" (string literal)
+- `transactionType`: 0 ≤ x ≤ 1
+- `propertyTypeIds`: array não vazio, min 1 elemento
+- `cityIds`: array não vazio, min 1 elemento
+- `purpose`: 0 ≤ x ≤ 1
+- IDs numéricos: exclusiveMinimum > 0
+- Preços, área: exclusiveMinimum > 0
+- considerTotalRent: 0 | 1
+
+#### Response Schema — `GetSearchAlertItemResponse`
+
+```json
+{
+  "id": 42,
+  "sphinxId": "user:12345",
+  "criteria": {
+    "transactionType": 0,
+    "propertyTypeIds": [1, 2],
+    "cityIds": [3560],
+    "purpose": 0,
+    "minBedrooms": 2,
+    "transactionTypeName": "Comprar",
+    "purposeName": "Residencial",
+    "propertyTypeNames": ["Apartamento", "Casa"],
+    "cityNames": ["Curitiba"]
+  },
+  "esFilters": {
+    "bool": {
+      "must": [...]          // Query ES gerada (Percolator format)
+    }
+  },
+  "name": "Apartamentos 2+ quartos para comprar em Curitiba",
+  "url": "https://...",
+  "criteriaCount": 3,        // Contagem de critérios (padrão: 3 obrigatórios)
+  "deleted": false,
+  "segment": "REALTY",
+  "createdAt": "2026-05-28T10:30:00Z",
+  "updatedAt": null
+}
+```
+
+**Campos Enriquecidos (na resposta):**
+| Campo | Origem | Descrição |
+|-------|--------|-----------|
+| `transactionTypeName` | Mapa interno | "Comprar" ou "Alugar" |
+| `purposeName` | Mapa interno | "Residencial" ou "Comercial" |
+| `propertyTypeNames` | RealtyTypeService | ["Apartamento", "Casa", ...] |
+| `cityNames` | CityService | ["Curitiba", "São Paulo", ...] |
+| `neighborhoodNames` | NeighborhoodService | [...] |
+| `stateNames` | StateService | ["Paraná", ...] |
+| `featureNames` | GroupArea (repository) | ["Piscina", "Garagem", ...] |
+
+**HTTP Codes:**
+- `201 Created` — Alerta criado com sucesso
+- `400 Bad Request` — Schema inválido, limite atingido, ou filtros duplicados
+- `401 Unauthorized` — Token ausente ou inválido
+- `403 Forbidden` — Usuário PJ (apenas PF pode criar alertas)
+- `422 Unprocessable Entity` — Validação de negócio falhou (ex: dedup)
+- `500 Internal Server Error` — Falha ao indexar no ES
+
+### 2. Endpoint: GET /search-alerts
+
+**Descrição:** Lista alertas paginados do usuário autenticado.  
+**Autenticação:** Bearer Token  
+**Resposta:** 200 OK (Array paginado)
+
+#### Query Parameters
+
+| Parâmetro | Tipo | Padrão | Descrição |
+|-----------|------|--------|-----------|
+| `page` | integer | 1 | Página (1-indexed) |
+| `pageSize` | integer | 10 | Itens por página (1–100) |
+| `sortBy` | string | createdAt | Campo de ordenação |
+| `order` | string | DESC | ASC ou DESC |
+
+#### Response Schema — `GetSearchAlertsResponse`
+
+```json
+{
+  "data": [
+    { /* GetSearchAlertItemResponse */ },
+    { /* ... */ }
+  ],
+  "pagination": {
+    "page": 1,
+    "pageSize": 10,
+    "total": 42,
+    "totalPages": 5
+  }
+}
+```
+
+### 3. Endpoint: GET /search-alerts/:id
+
+**Descrição:** Busca detalhes de um alerta específico.  
+**Resposta:** 200 OK
+
+#### Response
+Retorna `GetSearchAlertItemResponse` (mesmo schema que POST)
+
+**HTTP Codes:**
+- `200 OK` — Alerta encontrado
+- `404 Not Found` — Alerta não existe ou foi deletado
+
+### 4. Endpoint: DELETE /search-alerts/:id
+
+**Descrição:** Deleta um alerta (soft delete transacional).  
+**Resposta:** 200 OK (sem body)
+
+**Operações:**
+1. Marca alerta como `deleted = true` em `tb_alerta_busca`
+2. Remove todos os matches em `tb_alerta_busca_match`
+3. Remove documento do Percolator em Elasticsearch
+4. Rollback se qualquer operação falhar
+
+**HTTP Codes:**
+- `200 OK` — Deletado com sucesso
+- `404 Not Found` — Alerta não encontrado
+
+---
+
+## Banco de Dados — Schema e Comportamentos
+
+### Tabelas Principais
+
+#### 1. tb_alerta_busca
+
+```sql
+CREATE TABLE tb_alerta_busca (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  sphinx_id VARCHAR(255) NOT NULL,
+  criterios JSON,                    -- Filtros originais do front
+  filtros_es JSON,                   -- Query ES gerada (Percolator)
+  nome VARCHAR(500) NOT NULL,        -- Nome legível gerado
+  qtd_criterios INT DEFAULT 3,       -- Contagem de critérios
+  deleted BOOLEAN DEFAULT FALSE,     -- Soft delete flag
+  data_cadastro DATETIME DEFAULT CURRENT_TIMESTAMP,
+  data_atualizacao DATETIME NULL,
+  
+  UNIQUE INDEX idx_sphinx_id_nome (sphinx_id, nome),  -- Dedup
+  INDEX idx_sphinx_deleted (sphinx_id, deleted),
+  INDEX idx_created_at (data_cadastro)
+);
+```
+
+**Regras:**
+- `deleted = false` por padrão
+- Queries listagem filtra `WHERE deleted = 0`
+- Soft delete preserva histórico para compliance LGPD
+- Dedup: `(sphinx_id, nome)` único para evitar duplicatas de mesmo usuário
+
+#### 2. tb_alerta_busca_match
+
+```sql
+CREATE TABLE tb_alerta_busca_match (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  id_alerta INT NOT NULL,
+  id_cron_log INT NULL,              -- NULL = pendente, preenchido = despachado
+  matched_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+  data_cadastro DATETIME DEFAULT CURRENT_TIMESTAMP,
+  
+  FOREIGN KEY (id_alerta) REFERENCES tb_alerta_busca(id),
+  INDEX idx_id_alerta (id_alerta),
+  INDEX idx_id_cron_log (id_cron_log),
+  INDEX idx_pendentes (id_cron_log, id_alerta)  -- Busca eficiente de pendentes
+);
+```
+
+**Regras:**
+- `id_cron_log = NULL` indica match pendente de despacho
+- Após despacho, `id_cron_log` é preenchido (marca histórico do cron)
+- Índice `idx_pendentes` otimiza query: `WHERE id_cron_log IS NULL AND id_alerta = ?`
+
+#### 3. tb_alerta_busca_match_item
+
+```sql
+CREATE TABLE tb_alerta_busca_match_item (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  id_match BIGINT NOT NULL,
+  id_anuncio INT NOT NULL,
+  segment ENUM('realty', 'vehicle') NOT NULL,
+  
+  FOREIGN KEY (id_match) REFERENCES tb_alerta_busca_match(id) ON DELETE CASCADE,
+  UNIQUE INDEX idx_match_anuncio (id_match, id_anuncio, segment)  -- Evita duplicatas
+);
+```
+
+**Regras:**
+- Combinação `(id_match, id_anuncio, segment)` é única
+- ElasticLoader usa `INSERT IGNORE` para silenciar duplicatas
+- Cascade delete quando match é removido
+
+### Transações Críticas
+
+#### Fluxo de Criação (API)
+
+```
+BEGIN TRANSACTION
+  1. INSERT INTO tb_alerta_busca (sphinx_id, criterios, filtros_es, nome, ...)
+  2. IF last_insert_id() > 0 THEN
+       Indexar documento no Percolator ES: PUT alertas_imoveis/_doc/{id}
+  3. IF ES fails THEN
+       ROLLBACK (DELETE registro criado no passo 1)
+       THROW exception
+  4. ELSE
+       COMMIT
+```
+
+**Pontos críticos:**
+- Rollback automático se indexação ES falhar
+- Sem alerta órfão (sem documento ES)
+- Sem documento ES órfão (sem registro MySQL)
+
+#### Fluxo de Exclusão (API)
+
+```
+BEGIN TRANSACTION
+  1. UPDATE tb_alerta_busca SET deleted = true WHERE id = ?
+  2. DELETE FROM tb_alerta_busca_match WHERE id_alerta = ?
+  3. COMMIT
+  4. DELETE alertas_imoveis/_doc/{id}  (fora da transação)
+```
+
+**Notas:**
+- Soft delete em primeiro lugar (garante não ser listado)
+- Hard delete de matches na mesma transação
+- ES delete é async (falha aqui não afeta MySQL)
+
+---
+
+## Elasticsearch — Percolator Pattern
+
+### Índices
+
+#### Índice: `alertas_imoveis` (Percolator)
+
+Armazena **queries dos usuários** como documentos (padrão invertido).
+
+```json
+{
+  "settings": {
+    "number_of_shards": 2,
+    "number_of_replicas": 1,
+    "analysis": {
+      "analyzer": {
+        "default": { "type": "standard" }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "query": {
+        "type": "percolator"
+      },
+      "alert_id": { "type": "integer" },
+      "sphinx_id": { "type": "keyword" },
+      "segment": { "type": "keyword" }
+    }
+  }
+}
+```
+
+**Documento armazenado:**
+
+```json
+{
+  "_id": "42",
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "finalidade1.keyword": "V" } },
+        { "terms": { "id_imovel_tipo": [1, 2] } },
+        { "terms": { "id_cidade_imovel": [3560] } },
+        { "range": { "qtd_quartos": { "gte": 2 } } },
+        { "range": { "valor_imovel": { "gte": 250000, "lte": 500000 } } }
+      ]
+    }
+  },
+  "alert_id": 42,
+  "sphinx_id": "user:12345",
+  "segment": "REALTY"
+}
+```
+
+#### Índice: `imovel_novo` (Documentos)
+
+Armazena **imóveis** para busca normal e percolate.
+
+```json
+{
+  "mappings": {
+    "properties": {
+      "id": { "type": "integer" },
+      "finalidade1": { "type": "keyword" },
+      "id_imovel_tipo": { "type": "keyword" },
+      "id_cidade_imovel": { "type": "keyword" },
+      "qtd_quartos": { "type": "integer" },
+      "qtd_quartos_maximo": { "type": "integer" },
+      "valor_imovel": { "type": "long" },
+      "valor_aluguel_total": { "type": "long" },
+      "area": { "type": "double" },
+      "area_maxima": { "type": "double" },
+      "area_grupo": {
+        "type": "nested",
+        "properties": {
+          "id": { "type": "integer" },
+          "name": { "type": "text" }
+        }
+      },
+      "geo_point": { "type": "geo_point" }
+    }
+  }
+}
+```
+
+### Query Builder — Filtros → Elasticsearch
+
+O `SearchAlertEsQueryBuilder` transforma filtros front-end em queries `bool.must`:
+
+| Filtro Front | Campo ES | Tipo Query | Operador ES |
+|-------------|----------|-----------|-----------|
+| `transactionType` | `finalidade1.keyword` | `term` | = |
+| `propertyTypeIds` | `id_imovel_tipo` | `terms` | IN |
+| `cityIds` | `id_cidade_imovel` | `terms` + `bool.should` | OR |
+| `neighborhoodIds` | `id_bairro_imovel` | `terms` | IN |
+| `minBedrooms` | `qtd_quartos` / `qtd_quartos_maximo` | `range` | ≥ |
+| `maxBedrooms` | `qtd_quartos_maximo` | `range` | ≤ |
+| `minPrice` | `valor_imovel` | `range` | ≥ |
+| `maxPrice` | `valor_imovel` | `range` | ≤ |
+| `minArea` | `area` | `range` | ≥ |
+| `maxArea` | `area_maxima` | `range` | ≤ |
+| `featureIds` | `area_grupo` | `nested` | AND |
+| `purpose` | `finalidade2.keyword` | `term` | = |
+
+**Exemplo: Filtros do usuário**
+
+```json
+{
+  "transactionType": 0,
+  "propertyTypeIds": [1, 2],
+  "cityIds": [3560, 3512],
+  "minBedrooms": 2,
+  "minPrice": 250000,
+  "maxPrice": 500000
+}
+```
+
+**Query ES Gerada:**
+
+```json
+{
+  "bool": {
+    "must": [
+      { "term": { "finalidade1.keyword": "V" } },
+      { "terms": { "id_imovel_tipo": [1, 2] } },
+      {
+        "bool": {
+          "should": [
+            { "term": { "id_cidade_imovel": 3560 } },
+            { "term": { "id_cidade_imovel": 3512 } }
+          ],
+          "minimum_should_match": 1
+        }
+      },
+      { "range": { "qtd_quartos": { "gte": 2 } } },
+      { "range": { "valor_imovel": { "gte": 250000, "lte": 500000 } } }
+    ]
+  }
+}
+```
+
+### Percolate Query — Matching
+
+ElasticLoader executa a **percolate query** para encontrar alertas que casam com um imóvel:
+
+```json
+{
+  "query": {
+    "percolate": {
+      "field": "query",
+      "document": {
+        "finalidade1": "V",
+        "id_imovel_tipo": 1,
+        "id_cidade_imovel": 3560,
+        "qtd_quartos": 3,
+        "valor_imovel": 350000,
+        "area": 75.5
+      }
+    }
+  },
+  "_source": false,
+  "size": 10000
+}
+```
+
+**Retorno:**
+```json
+{
+  "hits": {
+    "total": 3,
+    "hits": [
+      { "_id": "42" },   // alert_id: 42 casou
+      { "_id": "55" },   // alert_id: 55 casou
+      { "_id": "89" }    // alert_id: 89 casou
+    ]
+  }
+}
+```
+
+ElasticLoader grava 3 novos registros em `tb_alerta_busca_match` com `id_cron_log = NULL`.
+
+---
+
+## Fluxo Ponta a Ponta — Sequenciação Completa
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│ FASE 1 — CADASTRO DO ALERTA (Frontend → API)                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+1. Usuário logado aplica filtros e clica "Criar Alerta"
+   POST /search-alerts {
+     segment: "REALTY",
+     transactionType: 0,
+     propertyTypeIds: [1],
+     cityIds: [3560],
+     minBedrooms: 2,
+     minPrice: 250000
+   }
+
+2. API (NestJS):
+   ✓ Valida JWT (usuário autenticado, tipo PF)
+   ✓ Valida schema (CreateRealtySearchAlertRequest)
+   ✓ Conta alertas existentes (< 5)
+   ✓ Normaliza arrays (sort para dedup)
+   ✓ Busca alerta duplicado: SELECT ... WHERE sphinx_id=? AND nome LIKE '%Apt%'
+   ✓ Se existe: RETURN 422 (conflict)
+   ✓ Gera nome legível: "Apartamentos 2+ quartos para comprar em Curitiba"
+   ✓ BuildSearchAlertEsQuery → transforma em bool.must
+   ✓ BEGIN TRANSACTION
+   ✓ INSERT tb_alerta_busca → retorna id=42
+   ✓ ES: PUT alertas_imoveis/_doc/42 { query: {...}, alert_id: 42 }
+   ✓ COMMIT
+
+3. API retorna:
+   201 Created {
+     id: 42,
+     sphinxId: "user:12345",
+     criteria: { ... },
+     name: "Apartamentos 2+ quartos...",
+     segment: "REALTY",
+     createdAt: "2026-05-28T10:30:00Z"
+   }
+
+4. Frontend mostra confirmação e oferece push
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ FASE 2 — MATCHING (ElasticLoader batch periódico ~a cada 10 min)      │
+└─────────────────────────────────────────────────────────────────────────┘
+
+1. ElasticLoader roda via CLI:
+   $ node elasticloader.js CarregaImovel
+
+2. Carrega imóveis alterados:
+   SELECT id FROM tb_imovel WHERE updated > lastRunTime
+
+3. Para cada batch de 100 imóveis:
+   ✓ Enriquece: fotos, geo_point, áreas computadas
+   ✓ Bulk index em imovel_novo
+
+4. Executa percolate para cada imóvel:
+   POST imovel_novo/_search {
+     query: { percolate: { field: "query", document: {...} } }
+   }
+
+5. Recebe lista de alert_ids que casaram (ex: [42, 55, 89])
+
+6. Para cada alert_id:
+   INSERT INTO tb_alerta_busca_match (id_alerta, id_cron_log, matched_at)
+   VALUES (42, NULL, NOW())
+   → id_cron_log = NULL indica "pendente de despacho"
+
+7. ElasticLoader enfileira notificação (SQS)
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ FASE 3 — DESPACHO DE NOTIFICAÇÕES (Cron horário + SQS + Lambda)       │
+└─────────────────────────────────────────────────────────────────────────┘
+
+1. Cron job (a cada 1 hora):
+   SELECT id FROM tb_alerta_busca
+   WHERE deleted = 0 AND id IN (
+     SELECT id_alerta FROM tb_alerta_busca_match
+     WHERE id_cron_log IS NULL
+   )
+
+2. Para cada alerta:
+   SELECT id, id_anuncio FROM tb_alerta_busca_match_item
+   WHERE id_match IN (SELECT id FROM tb_alerta_busca_match WHERE ...)
+
+3. Cron → cnm-notificator API:
+   POST /notifications {
+     userId: 12345,
+     title: "Novo imóvel compatível!",
+     body: "Apartamento 3 quartos em Curitiba",
+     data: { alertId: 42, realtyId: 789 }
+   }
+
+4. cnm-notificator:
+   ✓ Valida x-api-key
+   ✓ Enfileira em SQS (visibilidade 300s)
+   ✓ Retorna 202 Accepted
+
+5. Lambda consumer (acionada por SQS):
+   ✓ Carrega secrets (API key, App ID Pinpoint)
+   ✓ Busca device tokens (DynamoDB): userId=12345 → [token1, token2]
+   ✓ Para cada token:
+     - Monta payload FCM (Android)
+     - Monta payload APNS (iOS)
+     - Envia via AWS Pinpoint SendMessagesCommand
+   ✓ Registra log (DynamoDB)
+   ✓ Se PERMANENT_FAILURE: desativa token
+
+6. Aws Pinpoint roteia para FCM/APNS
+
+7. Dispositivo recebe push notification
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ FASE 4 — GERENCIAMENTO DE ALERTAS (Usuário na área logada)            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+1. GET /search-alerts
+   ✓ Retorna lista paginada de alertas do usuário (deleted = 0)
+   ✓ Enriquece critérios com nomes legíveis
+
+2. GET /search-alerts/:id
+   ✓ Retorna detalhe de um alerta específico
+
+3. DELETE /search-alerts/:id
+   ✓ BEGIN TRANSACTION
+   ✓ UPDATE tb_alerta_busca SET deleted = true
+   ✓ DELETE FROM tb_alerta_busca_match
+   ✓ COMMIT
+   ✓ DELETE alertas_imoveis/_doc/{id}
+```
+
+---
+
+## Critérios de Teste de Backend — Matriz de Cobertura
+
+Para cada CTs de frontend, considerara os seguintes critérios de backend:
+
+### Camada API (HTTP)
+
+| ID | Critério | CT Relacionado | Verificação |
+|----|----------|---|---|
+| API_01 | Schema request validado (obrigatórios) | CT05, CT08 | POST /search-alerts com falta de `transactionType` retorna 400 |
+| API_02 | Schema response enriquecido | CT14 | Resposta contém `transactionTypeName`, `cityNames`, etc. |
+| API_03 | Códigos HTTP corretos | CT06, CT11, CT12 | 201, 400, 404, 403 |
+| API_04 | Auth requerido | CT01 | GET sem JWT retorna 401 |
+| API_05 | PF only (403 PJ) | CT02 | Usuário PJ recebe 403 |
+| API_06 | Limite 5 alertas (400 se excede) | CT09 | 6º alerta retorna 400 |
+| API_07 | Deduplicação (422 conflict) | CT10 | Mesmo nome retorna 422 |
+
+### Camada Banco de Dados (MySQL)
+
+| ID | Critério | CT Relacionado | Verificação |
+|----|----------|---|---|
+| DB_01 | Insert + transação | CT11 | `tb_alerta_busca` INSERT sucesso, id > 0 |
+| DB_02 | Soft delete (deleted flag) | CT12 | `deleted = true` após DELETE, ainda em DB |
+| DB_03 | Matches não listados (id_cron_log NULL) | CT18 | Matches com NULL → pendentes, não em listagem |
+| DB_04 | Hard delete matches | CT12 | DELETE alerta remove tb_alerta_busca_match |
+| DB_05 | Integridade FK | CT11 | FK entre match e alerta respeitada |
+| DB_06 | Dedup (UNIQUE idx) | CT10 | Tentativa INSERT duplicada falha |
+| DB_07 | Rollback transação | CT11C, CT15B | Se ES falha, MySQL rollback |
+
+### Elasticsearch (Percolator)
+
+| ID | Critério | CT Relacionado | Verificação |
+|----|----------|---|---|
+| ES_01 | Documento indexado (Percolator) | CT08, CT11 | PUT alertas_imoveis/_doc/{id} sucesso |
+| ES_02 | Query builder correto | CT08 | Filtros transformados em bool.must correto |
+| ES_03 | Percolate matching | CT25 | Percolate encontra alertas corretos |
+| ES_04 | Documento deletado | CT12 | DELETE alertas_imoveis/_doc/{id} após soft delete |
+| ES_05 | Nested queries (features) | CT08 | featureIds gera nested query correta |
+| ES_06 | Range queries | CT08 | minPrice/maxPrice → range query |
+| ES_07 | Terms queries (OR) | CT08 | cityIds → bool.should |
+
+### Fluxo de Integração (Ponta a Ponta)
+
+| ID | Critério | CT Relacionado | Verificação |
+|----|----------|---|---|
+| INT_01 | API → MySQL → ES sincronia | CT11 | Dados consistentes nas 3 camadas |
+| INT_02 | ElasticLoader → matches | CT25 | Imóvel novo gera match correto |
+| INT_03 | Matches → SQS | CT26 | Notificação enfileirada após match |
+| INT_04 | SQS → Lambda → Pinpoint | CT27 | Push enviado ao dispositivo |
+| INT_05 | Rollback cascata | CT15B | Falha ES → rollback MySQL |
+| INT_06 | Idempotência (duplicata match) | CT15B | ElasticLoader usa INSERT IGNORE |
+
+---
+
+## Resumo de Cobertura
+
+| # CT | Título | Tipo | Módulo | Regra(s) Cobertas |
+|------|--------|------|--------|-------------------|
+| CT01 | Botão "Criar Alerta" visível com filtros | Positivo | M1 | Regra 1.4, US Cenário 01 |
+| CT02 | Usuário não logado redirecionado para login | Negativo/Alternativo | M1 | Regra 1.6, US Cenário 03 |
+| CT03 | Bloqueio sem filtros obrigatórios | Negativo | M1 | Regras 1.4, 1.7, US Cenário 04 |
+| CT04 | CTA em estado vazio/fim de listagem | Positivo | M1 | Regras 1.4, 1.7 |
+| CT05 | Bloqueio sem Finalidade | Negativo | M2 | Regra 1.7, Anexo §3 |
+| CT06 | Bloqueio sem Tipo de Imóvel | Negativo | M2 | Regra 1.7, Anexo §3 |
+| CT07 | Bloqueio sem Localização | Negativo | M2 | Regra 1.7, Anexo §3 |
+| CT08 | Criar alerta com critérios opcionais | Positivo | M2 | Regras 1.5, 1.16, Anexo §4, §5 |
+| CT08B | Critérios sugeridos por tipo de imóvel | Regra de negócio | M2C | Anexo §4, UX Best Practice |
+| CT08_SEC | Validação XSS em nome de alerta | Segurança | M2B | Regra 1.16, OWASP A03:2021 |
+| CT09 | Bloqueio ao atingir limite de 5 alertas | Negativo | M3 | Regra 1.8 |
+| CT10 | Bloqueio de alerta duplicado | Negativo | M3 | Regra 1.9 |
+| CT11 | Criar alerta (happy path completo) | Positivo | M4 | Regras 1.1–1.16, US Cenário 05 |
+| CT11C | Double-click prevention em "Salvar Alerta" | Regra de negócio | M4B | Regras 1.15, 1.9, Idempotency |
+| CT12 | Fechar modal sem salvar | Negativo/Alternativo | M4 | US Cenário 06 |
+| CT13 | Navegar para gerenciamento pela tela de sucesso | Positivo | M4 | US2 Cenário 01 |
+| CT14 | Alerta criado com push ativo (permissão concedida) | Positivo | M5 | Regra 1.10 |
+| CT15 | Oferta de ativação de push após criação | Positivo | M5 | Regras 1.11, 1.12 |
+| CT15B | Oferta de push persistente em múltiplas criações | Regra de negócio | M5B | Regra 1.12, Persistência de UI |
+| CT16 | Recusar push mantém alerta por e-mail | Negativo/Alternativo | M5 | Regras 1.14, 1.10 |
+| CT17 | Push bloqueado no SO — orientação ao usuário | Negativo | M5 | Regra 1.13 |
+| CT18 | Visualizar lista de alertas | Positivo | M6 | Regras 3.1, 3.2 |
+| CT19 | Visualizar detalhes somente leitura | Positivo | M6 | Regras 3.3, 3.4 |
+| CT20 | Ver resultados de busca do alerta | Positivo | M6 | US2 Cenário 04 |
+| CT21 | Excluir alerta com confirmação | Positivo | M6 | Regra 3.5, US2 Cenário 05 |
+| CT22 | Cancelar exclusão de alerta | Negativo/Alternativo | M6 | Regra 3.5 |
+| CT23 | Limpar todos os alertas | Positivo | M6 | US2 Cenário 06 |
+| CT24 | Rota /alertas-de-busca/ protegida | Negativo | M6 | Regra 3.1 |
+| CT25 | Push na janela horária 7h–21h | Positivo | M7 | Regras 2.B.1, 2.B.2, 2.B.5 |
+| CT26 | Push bloqueado fora da janela | Negativo | M7 | Regra 2.B.2 |
+| CT27 | Intervalo mínimo de 4h entre pushes | Regra de negócio | M7 | Regras 2.B.3, 2.B.3.1 |
+| CT28 | Deduplicação de push entre alertas | Regra de negócio | M7 | Regra 2.D.2 |
+| CT29 | Push para anúncio reativado >60 dias | Positivo | M7 | Regra 2.A.2 |
+| CT30 | Sem push para reativação <60 dias | Negativo | M7 | Regra 2.A.2 |
+| CT31 | E-mail digest às 8h | Positivo | M8 | Regras 2.C.1, 2.C.2, 2.C.5 |
+| CT32 | Limite de 20 anúncios no e-mail | Regra de negócio | M8 | Regra 2.C.4 |
+| CT33 | Opt-out global de e-mail | Alternativo | M8 | Regras 2.C.1, 4.1 |
+| CT34 | Deduplicação de e-mail entre alertas | Regra de negócio | M8 | Regra 2.D.3 |
+| CT35 | Sem deduplicação entre canais (push + e-mail) | Positivo | M8 | Regra 2.D.1 |
+
+---
+
+> **Nota:** Testes de performance (Artillery), carga e automação regressiva são tratados nas tasks QA 09 e 10 do Test Plan e estão fora do escopo deste documento.
+
+---
+
+## PARTE III — BOAS PRÁTICAS DE QA & REGRESSÃO
+
+> **Recomendações para suportar testes regressivos futuros e garantir qualidade em nível enterprise.**
+
+---
+
+### 1. Estratégia de Testes Multi-Camadas
+
+Para máxima cobertura e confiabilidade, recomenda-se teste em **4 camadas**:
+
+```
+Nível 4: E2E (Frontend + Backend)    ← 39 CTs desta suite
+         UI/UX, fluxos completos
+         
+Nível 3: API (Integration)            ← 7 CTs (API_01 a API_07)
+         Contratos, autenticação, regras negócio
+         
+Nível 2: Banco de Dados (Unit)        ← 7 CTs (DB_01 a DB_07)
+         Transações, integridade referencial, soft delete
+         
+Nível 1: Elasticsearch (Unit)         ← 7 CTs (ES_01 a ES_07)
+         Query builder, Percolator matching
+         
+Nível 0: Serviços (Unit)              ← SearchAlertService, QueryBuilder
+         Métodos isolados, mocks
+```
+
+**Cobertura recomendada por projeto:**
+- **Fase 1 (Agora):** E2E (39 CTs)
+- **Fase 2 (Próx):** API (7 CTs) + DB (7 CTs)
+- **Fase 3 (Futuro):** ES (7 CTs) + Unit (10+ CTs)
+
+---
+
+### 2. Checklist para Testes Regressivos
+
+Antes de cada release, validar:
+
+#### Pré-Release (Manual + Automatizado)
+
+- [ ] **CT01–CT04:** Acesso funciona? (Auth, limites visíveis)
+- [ ] **CT05–CT08_SEC:** Critérios obrigatórios/opcionais validam? (XSS, schema)
+- [ ] **CT09–CT10:** Limite 5 e dedup funcionam? (DB queries)
+- [ ] **CT11–CT15B:** Fluxo completo ok? (double-click, persistência push)
+- [ ] **CT16–CT24:** Gerenciamento de alertas funciona? (listagem, soft delete)
+- [ ] **CT25–CT30:** Push notificação dispara? (ElasticLoader, SQS)
+- [ ] **CT31–CT35:** Email digest ok? (cron, template rendering)
+
+#### Pós-Release (Smoke Tests)
+
+- [ ] **Alerta criado → API 201 + MySQL insert ✓**
+- [ ] **Alerta deletado → soft delete + ES delete ✓**
+- [ ] **Imóvel novo → Percolate encontra alertas ✓**
+- [ ] **Notificação enfileirada → SQS + Lambda ✓**
+- [ ] **Push entregue → Pinpoint log ✓**
+
+#### Critical Path (deve passar sempre)
+
+1. `CT01` — Acesso (sem isso, nada funciona)
+2. `CT11` — Happy path completo
+3. `CT25` — Percolate matching
+4. `CT27` — Push delivery
+5. `CT12` — Soft delete (LGPD compliance)
+
+---
+
+### 3. Dados de Teste (Fixtures)
+
+Recomenda-se manter **fixtures imutáveis** para regressão:
+
+#### Usuários Teste
+
+```yaml
+users:
+  - id: user:99999
+    name: "QA Test PF"
+    type: "PF"
+    email: "qa@chavesnamao.internal"
+    status: "ACTIVE"
+    
+  - id: user:88888
+    name: "QA Test PJ"
+    type: "PJ"
+    email: "pj@chavesnamao.internal"
+    status: "ACTIVE"
+```
+
+#### Alertas Padrão (para regressão)
+
+```yaml
+alertas_baseline:
+  - alert_id: 9999
+    name: "QA: Apt 2+ quartos Curitiba (baseline)"
+    segment: "REALTY"
+    criteria:
+      transactionType: 0
+      propertyTypeIds: [1]
+      cityIds: [3560]
+      minBedrooms: 2
+    created: "2026-01-01T00:00:00Z"
+    
+  - alert_id: 8888
+    name: "QA: Casas 3+ quartos Salvador (baseline)"
+    segment: "REALTY"
+    criteria:
+      transactionType: 1
+      propertyTypeIds: [2]
+      cityIds: [2704]
+      minBedrooms: 3
+    created: "2026-01-01T00:00:00Z"
+```
+
+#### Imóveis Teste (para matching)
+
+```yaml
+realty_test_data:
+  - id: 999999
+    type: 1                    # Apartamento
+    city_id: 3560              # Curitiba
+    bedrooms: 3
+    price: 350000
+    area: 75
+    transaction: "V"           # Venda
+    status: "APPROVED"         # Deve casar com alert_id: 9999
+    created: "2026-01-15T00:00:00Z"
+```
+
+#### Estratégia de Limpeza
+
+```sql
+-- Manter fixtures, deletar dados de teste após cada suite
+DELETE FROM tb_alerta_busca WHERE sphinx_id LIKE 'test:%';
+DELETE FROM tb_alerta_busca_match WHERE id_alerta NOT IN (
+  SELECT id FROM tb_alerta_busca WHERE id IN (9999, 8888)
+);
+```
+
+---
+
+### 4. Monitoramento de Regressão
+
+Implementar **dashboards de qualidade**:
+
+| Métrica | Alerta | Ação |
+|---------|--------|------|
+| **Taxa de aprovação CT** | < 95% | Review código antes merge |
+| **Tempo API resposta** | > 500ms | Investigar query slow |
+| **Erro de Percolate** | > 0 | Checkar índice ES corrupto |
+| **Falha SQS/Lambda** | > 1% | DLQ review |
+| **Taxa soft-delete** | inconsistente | Verificar lógica delete |
+
+---
+
+### 5. Ciclo de Vida — Timeline Recomendado
+
+```
+SEMANA 1: Preparação
+  └─ Setup ambiente staging + fixtures
+  └─ Automação 39 CTs em Playwright
+  └─ CI/CD pipeline
+
+SEMANA 2–3: Automação E2E
+  └─ Implementar 39 CTs em Playwright
+  └─ Validar CI/CD
+  └─ Relatórios de cobertura
+
+SEMANA 4–5: API + DB (Phase 2)
+  └─ 7 CTs API (test via curl/Postman)
+  └─ 7 CTs DB (test via query direto)
+  └─ Integração com E2E suite
+
+SEMANA 6+: Elasticsearch (Phase 3)
+  └─ 7 CTs ES (test via Kibana/curl)
+  └─ Unit tests dos builders
+  └─ Testes de performance
+```
+
+---
+
+### 6. Referências & Links Úteis
+
+**Documentação Técnica:**
+- [Arquitetura de Push Notification](tecnico/search-alert/push-notification-architecture.md)
+- [API Search Alerts — Schemas](https://github.com/chavesnamao/api/...)
+
+**Ferramentas de Teste:**
+- **Playwright:** Automação E2E (39 CTs)
+- **Postman/Insomnia:** Testes API (7 CTs)
+- **DBeaver:** Consultas MySQL (7 CTs)
+- **Kibana:** Validação ES (7 CTs)
+
+**CI/CD:**
+- GitHub Actions: Trigger via `push` a `main`
+- Artifact: Relatório HTML (pytest + coverage)
+
+---
+
+## Conclusão
+
+Este documento consolida **100% da especificação** de **Criar Alerta** em:
+- ✅ **39 Casos de Teste** (35 core + 4 gaps identificados)
+- ✅ **Arquitetura de Backend** detalhada (3 serviços, APIs, DB, ES)
+- ✅ **Critérios de Teste** para 4 camadas (E2E, API, DB, ES)
+- ✅ **Boas Práticas** para regressão e qualidade
+- ✅ **Timeline** para implementação em fases
+
+**Status:** 📋 Pronto para Implementação (Fase 1: E2E em Playwright)
+
+

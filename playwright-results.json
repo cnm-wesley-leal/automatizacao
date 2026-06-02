@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 8
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 8
         },
         "id": "setup-chromium",
         "name": "setup-chromium",
@@ -38,7 +38,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 8
         },
         "id": "setup-webkit",
         "name": "setup-webkit",
@@ -56,7 +56,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 8
         },
         "id": "setup-ios",
         "name": "setup-ios",
@@ -74,7 +74,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 8
         },
         "id": "chromium",
         "name": "chromium",
@@ -92,7 +92,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 8
         },
         "id": "chromium-pf-flow",
         "name": "chromium-pf-flow",
@@ -110,7 +110,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 8
         },
         "id": "webkit-safari",
         "name": "webkit-safari",
@@ -128,7 +128,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 8
         },
         "id": "ios-safari-iphone-14",
         "name": "ios-safari-iphone-14",
@@ -170,292 +170,716 @@
   },
   "suites": [
     {
-      "title": "auth.setup.ts",
-      "file": "auth.setup.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "authenticate as WebUser",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 120000,
-              "annotations": [
-                {
-                  "type": "info",
-                  "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                }
-              ],
-              "expectedStatus": "passed",
-              "projectId": "setup-chromium",
-              "projectName": "setup-chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 12349,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-05-26T15:32:08.016Z",
-                  "annotations": [
-                    {
-                      "type": "info",
-                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                    }
-                  ],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "17e3fe6f4d9d8bd79c6b-cdc7b8df0f316be6340b",
-          "file": "auth.setup.ts",
-          "line": 12,
-          "column": 6
-        }
-      ]
-    },
-    {
-      "title": "tests\\Register.spec.ts",
-      "file": "tests/Register.spec.ts",
+      "title": "tests\\RealtySearch.spec.ts",
+      "file": "tests/RealtySearch.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Feature Auth - Cadastro de Usuários",
-          "file": "tests/Register.spec.ts",
-          "line": 59,
+          "title": "Busca por Endereço — Localização e Ranking",
+          "file": "tests/RealtySearch.spec.ts",
+          "line": 21,
           "column": 6,
           "specs": [
             {
-              "title": "CT11 - deve realizar cadastro com dados válidos (email novo)",
+              "title": "CT01 - deve exibir lista de cidades com número de anúncios ao clicar no input de localização",
               "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "type": "info",
-                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12449,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:39.343Z",
+                      "annotations": [],
+                      "attachments": []
                     }
                   ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-262ecfd164ae1c4cb535",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "CT02 - ao selecionar uma cidade o dropdown deve navegar para a página da cidade",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 12230,
+                      "duration": 13108,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-26T15:32:21.955Z",
-                      "annotations": [
-                        {
-                          "type": "info",
-                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                        }
-                      ],
+                      "startTime": "2026-06-02T12:24:39.699Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "de3567b02077f035b1b8-b6484802c0680fa63bf3",
-              "file": "tests/Register.spec.ts",
-              "line": 68,
+              "id": "357c407feea3e2d84137-e33bfec437216bb781a1",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 45,
               "column": 7
             },
             {
-              "title": "CT12 - deve exibir erro ao tentar cadastro com email duplicado",
+              "title": "CT03 - ao digitar no input a lista deve filtrar para cidades correspondentes",
               "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "info",
-                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 2,
-                      "parallelIndex": 1,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 9498,
+                      "duration": 13044,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-26T15:32:21.955Z",
-                      "annotations": [
-                        {
-                          "type": "info",
-                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                        }
-                      ],
+                      "startTime": "2026-06-02T12:24:39.371Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "de3567b02077f035b1b8-56ed8d9662e095c0819b",
-              "file": "tests/Register.spec.ts",
-              "line": 116,
+              "id": "357c407feea3e2d84137-7ea0ebe4da8c3a3db2a8",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 61,
               "column": 7
             },
             {
-              "title": "CT13 - deve validar força de senha durante o cadastro",
+              "title": "CT04 - contagem exibida na lista de cidades deve ser igual à contagem no h1 após seleção",
               "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "info",
-                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
-                      "parallelIndex": 2,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 9133,
+                      "duration": 13465,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-26T15:32:21.944Z",
-                      "annotations": [
-                        {
-                          "type": "info",
-                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                        }
-                      ],
+                      "startTime": "2026-06-02T12:24:39.578Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "de3567b02077f035b1b8-b64965066f24719014f3",
-              "file": "tests/Register.spec.ts",
-              "line": 136,
+              "id": "357c407feea3e2d84137-26781a40133f93798826",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 74,
               "column": 7
             },
             {
-              "title": "CT14 - deve validar senhas não coincidentes",
+              "title": "CT05 - contagem exibida na lista de bairros deve ser igual à contagem no h1 após seleção do bairro",
               "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "info",
-                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 3,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 8829,
+                      "duration": 14492,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-26T15:32:21.985Z",
-                      "annotations": [
-                        {
-                          "type": "info",
-                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                        }
-                      ],
+                      "startTime": "2026-06-02T12:24:39.692Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "de3567b02077f035b1b8-e8eeead1a2b2891a18ba",
-              "file": "tests/Register.spec.ts",
-              "line": 163,
+              "id": "357c407feea3e2d84137-43512a7b65baac436084",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 93,
               "column": 7
             },
             {
-              "title": "CT15 - deve validar formato de email inválido",
+              "title": "CT06 - todos os cards de imóvel devem pertencer à cidade selecionada",
               "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 120000,
-                  "annotations": [
-                    {
-                      "type": "info",
-                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 5,
-                      "parallelIndex": 4,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 8068,
+                      "duration": 16371,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-26T15:32:21.990Z",
-                      "annotations": [
-                        {
-                          "type": "info",
-                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                        }
-                      ],
+                      "startTime": "2026-06-02T12:24:39.752Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "de3567b02077f035b1b8-3dda30d3adc52c2ba8a6",
-              "file": "tests/Register.spec.ts",
-              "line": 192,
+              "id": "357c407feea3e2d84137-877fb3b956b77a7a2eaf",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 114,
               "column": 7
             },
             {
-              "title": "CT17 - deve permitir login social com novo registro automático",
+              "title": "CT07 - todos os cards de imóvel devem pertencer ao bairro selecionado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 18123,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:39.666Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-eae6867f1d3c9e7ade45",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 128,
+              "column": 7
+            },
+            {
+              "title": "CT10 - busca sem resultados deve exibir feedback e seção de imóveis próximos recomendados",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 16400,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:39.675Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-9d66ceaaaca4e0c42f84",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 149,
+              "column": 7
+            },
+            {
+              "title": "CT11 - chips de categoria devem incluir o qualificador da cidade após seleção",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11605,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:52.063Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-d94647a9f462dc484677",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 158,
+              "column": 7
+            },
+            {
+              "title": "CT12 - na aba Lançamentos a área de chips deve listar cidades e não tipos de imóvel",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 11196,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:52.668Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-89b59daf59abeca31909",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 174,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Busca por Endereço — Geolocalização",
+          "file": "tests/RealtySearch.spec.ts",
+          "line": 187,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT10 - deve solicitar permissão de geolocalização ao clicar em Perto de mim",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5811,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:53.042Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-3978101bdb283113a4d8",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 196,
+              "column": 7
+            },
+            {
+              "title": "CT11 - sem permissão de geolocalização Perto de mim deve exibir mensagem de erro",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6080,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:53.397Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-b3e8276ea43b7b29a541",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 219,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Busca por Endereço — Desambiguação e Robustez",
+          "file": "tests/RealtySearch.spec.ts",
+          "line": 237,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT13 - busca por nome exato deve priorizar o match exato antes dos similares",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 7685,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:54.409Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-c7ec1d960cf17a260e9e",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 240,
+              "column": 7
+            },
+            {
+              "title": "CT14 - bairro homônimo deve exibir qualificador de cidade para evitar ambiguidade",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 9446,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:56.304Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-0c311df1fcab5aa5eb3f",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 264,
+              "column": 7
+            },
+            {
+              "title": "CT15 - busca sem acento deve retornar sugestões com acento normalizado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 7673,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:56.327Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-04ca45322cdbb8a65b78",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 284,
+              "column": 7
+            },
+            {
+              "title": "CT16 - limpar o input de localização deve reverter a URL para listagem base",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 8429,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:58.021Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-caa273f5891047634875",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 303,
+              "column": 7
+            },
+            {
+              "title": "CT17 - acessar URL com slug de cidade deve pré-preencher o input de localização",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5708,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:58.877Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-2e0d9c867b2ab4bdc997",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 338,
+              "column": 7
+            },
+            {
+              "title": "CT18 - deep-link de aluguel em cidade deve preservar seleção de localização no input",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5812,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:24:59.505Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-541657eb38efd9863fcf",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 356,
+              "column": 7
+            },
+            {
+              "title": "CT19 - deve suportar navegação por teclado no dropdown de localização",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 7789,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:25:02.117Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-d2e766c987df9d9f209d",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 372,
+              "column": 7
+            },
+            {
+              "title": "CT20 - com permissão de geolocalização concedida Perto de mim deve navegar com contexto local",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6473,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:25:03.699Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-0c5841879891cb0a98ed",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 393,
+              "column": 7
+            },
+            {
+              "title": "CT21 - no mobile o input de localização deve abrir um modal de busca",
               "ok": true,
               "tags": [],
               "tests": [
@@ -463,39 +887,117 @@
                   "timeout": 120000,
                   "annotations": [
                     {
-                      "type": "info",
-                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
+                      "type": "skip",
+                      "description": "CT21: modal de localização é exclusivo do layout mobile",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtySearch.spec.ts",
+                        "line": 409,
+                        "column": 10
+                      }
                     }
                   ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "skipped",
+                      "duration": 180,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:25:03.882Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "CT21: modal de localização é exclusivo do layout mobile",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtySearch.spec.ts",
+                            "line": 409,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "357c407feea3e2d84137-b801ea3fd973f3fd1756",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 408,
+              "column": 7
+            },
+            {
+              "title": "CT22 - breadcrumb deve refletir cidade e bairro selecionados com links funcionais",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
+                      "workerIndex": 5,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 8010,
+                      "duration": 5800,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-26T15:32:22.027Z",
-                      "annotations": [
-                        {
-                          "type": "info",
-                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                        }
-                      ],
+                      "startTime": "2026-06-02T12:25:04.020Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "de3567b02077f035b1b8-ce2fc8fd4879f302270b",
-              "file": "tests/Register.spec.ts",
-              "line": 210,
+              "id": "357c407feea3e2d84137-8f2ad09de9b2e373b9e8",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 428,
+              "column": 7
+            },
+            {
+              "title": "CT23 - cidades no dropdown devem estar ordenadas do maior para o menor número de anúncios",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7302,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-02T12:25:04.079Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "357c407feea3e2d84137-c22d923e9a2c5e7e944c",
+              "file": "tests/RealtySearch.spec.ts",
+              "line": 443,
               "column": 7
             }
           ]
@@ -505,10 +1007,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-26T15:32:06.751Z",
-    "duration": 27677.997,
-    "expected": 7,
-    "skipped": 0,
+    "startTime": "2026-06-02T12:24:37.169Z",
+    "duration": 34325.013999999996,
+    "expected": 22,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }

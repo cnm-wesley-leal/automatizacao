@@ -129,6 +129,107 @@ export const REALTY_SEARCH_DATA = {
   },
 }
 
+export const VEHICLE_SEARCH_DATA = {
+  urls: {
+    listings: '/carros-usados/brasil/',
+    newListings: '/carros-novos/brasil/',
+    brandListings: '/carros/brasil/',
+    sedan: '/carros-sedas/brasil/',
+    hatchback: '/carros-hatchback/brasil/',
+    suv: '/carros-suv-crossover/brasil/',
+    pickup: '/carros-picapes/brasil/',
+    oldCars: '/carros-antigos/brasil/',
+    sevenSeats: '/carros-7-lugares/brasil/',
+    pcd: '/carros-para-pcd/brasil/',
+    armored: '/carros-blindados/brasil/',
+    electric: '/carros-eletricos/brasil/',
+    hybrid: '/carros-hibridos/brasil/',
+  },
+  bodyTypeIds: {
+    hatchback: 4,
+    pickup: 5,
+    sedan: 6,
+    suv: 7,
+  },
+  necessityIds: {
+    armored: 1,
+    sevenSeats: 2,
+    oldCars: 3,
+    pcd: 4,
+    electric: 6,
+    hybrid: 14,
+  },
+  publisherTypeIds: {
+    particular: 0,
+    store: 1,
+    dealership: 2,
+  },
+  transmissionIds: {
+    automatic: 1,
+    manual: 2,
+  },
+  fuelIds: {
+    alcohol: 1,
+    gasoline: 2,
+    diesel: 3,
+    flex: 4,
+    hybrid: 8,
+  },
+  colorIds: {
+    white: 0,
+    beige: 1,
+    red: 5,
+    blue: 10,
+    black: 12,
+    silver: 14,
+  },
+  optionalIds: {
+    abs: 27,
+    airbag: 38,
+    airConditioning: 40,
+    leatherSeats: 6,
+    armored: 239,
+  },
+  plateEndingIds: {
+    oneTwo: 0,
+    threeFour: 1,
+    fiveSix: 2,
+    sevenEight: 3,
+    nineZero: 4,
+  },
+  sortCodes: {
+    relevantes: 'or:0',
+    menorPreco: 'or:1',
+    maiorPreco: 'or:2',
+    maisRecentes: 'or:6',
+  },
+  brandUrls: [
+    'audi',
+    'bmw',
+    'chevrolet',
+    'fiat',
+    'hyundai',
+    'volkswagen',
+  ],
+  locationSearch: {
+    fuzz: {
+      cities: [
+        'brasil',
+        'pr-curitiba',
+        'sp-sao-paulo',
+        'rj-rio-de-janeiro',
+        'mg-belo-horizonte',
+        'rs-porto-alegre',
+      ],
+      prefixes: [
+        '/carros-usados/',
+        '/carros-sedas/',
+        '/carros-hatchback/',
+      ],
+    },
+  },
+}
+
 export const HOME_DATA = {
   h1: 'Encontre milhões de imóveis, carros e motos',
   tabs: {

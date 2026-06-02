@@ -204,6 +204,16 @@ test.describe('RealtySearch — Fuzz de Combinações Aleatórias', () => {
         ).toHaveURL(new RegExp(escapeRegExp(filter)))
       }
 
+      // Lista deve exibir cards OU estado vazio — nunca página quebrada
+      // /imovel/ = listings padrão | /lancamento/ = páginas de lançamentos
+      const hasCards = await page.locator('a[href*="/imovel/"], a[href*="/lancamento/"]').first().isVisible().catch(() => false)
+      const h1Text   = await page.getByRole('heading', { level: 1 }).textContent().catch(() => '')
+      const isEmpty  = /^0\s|nenhum/i.test(h1Text ?? '')
+      expect(
+        hasCards || isEmpty,
+        `Lista não atualizou — sem cards e sem estado vazio — ${scenario.url}\nh1: "${h1Text}"`,
+      ).toBe(true)
+
       // Nenhum erro de JavaScript não capturado (pageerror)
       expect(
         jsErrors,
@@ -319,6 +329,16 @@ test.describe('RealtySearch — Fuzz de Busca por Endereço', () => {
           `Tipo de transação "${txSegment}" perdido na URL — ${scenario.url}`,
         ).toHaveURL(new RegExp(escapeRegExp(txSegment)))
       }
+
+      // Lista deve exibir cards OU estado vazio — nunca página quebrada
+      // /imovel/ = listings padrão | /lancamento/ = páginas de lançamentos
+      const hasCards = await page.locator('a[href*="/imovel/"], a[href*="/lancamento/"]').first().isVisible().catch(() => false)
+      const h1Text   = await page.getByRole('heading', { level: 1 }).textContent().catch(() => '')
+      const isEmpty  = /^0\s|nenhum/i.test(h1Text ?? '')
+      expect(
+        hasCards || isEmpty,
+        `Lista não atualizou — sem cards e sem estado vazio — ${scenario.url}\nh1: "${h1Text}"`,
+      ).toBe(true)
 
       // Nenhum erro de JavaScript não capturado
       expect(
