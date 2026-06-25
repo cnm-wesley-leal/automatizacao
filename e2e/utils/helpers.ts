@@ -225,8 +225,9 @@ export async function openAuthPanel(page: Page): Promise<void> {
 export async function openLoginByEmail(page: Page): Promise<void> {
   await openAuthPanel(page)
   const emailBtn = page.getByRole('button', { name: TEST_DATA.locators.login.entrarComEmailBtn })
-  await expect(emailBtn).toBeVisible()
-  await resilientClick(page, emailBtn)
+  if (await emailBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
+    await resilientClick(page, emailBtn)
+  }
   await expect(page.getByPlaceholder(TEST_DATA.locators.login.emailInput)).toBeVisible()
   await expect(page.getByPlaceholder(TEST_DATA.locators.login.passwordInput)).toBeVisible()
 }

@@ -23,7 +23,7 @@ setup('authenticate as WebUser', async ({ page }, testInfo) => {
     await openLoginByEmail(page)
     await page.getByPlaceholder(TEST_DATA.locators.login.emailInput).fill(userEmail!)
     await page.getByPlaceholder(TEST_DATA.locators.login.passwordInput).fill(userPassword!)
-    await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn }).click()
+    await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn, exact: true }).click()
 
     try {
       await expect.poll(

@@ -30,9 +30,9 @@ test.describe('Feature Auth - Login e Cadastro', () => {
 
     await page.getByPlaceholder(TEST_DATA.locators.login.emailInput).fill(process.env.USER_EMAIL_WEBUSER!)
     await page.getByPlaceholder(TEST_DATA.locators.login.passwordInput).fill(process.env.USER_PASSWORD!)
-    await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn }).click()
+    await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn, exact: true }).click()
 
-    await expect(page.getByText(process.env.USER_EMAIL_WEBUSER!)).toBeVisible()
+    await expect(page.locator('header a[href="/conta/"]')).toBeVisible({ timeout: TIMEOUTS.authLink })
     await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeHidden()
     await assertAuthenticatedCookies(
       page,
@@ -48,9 +48,9 @@ test.describe('Feature Auth - Login e Cadastro', () => {
 
     await page.getByPlaceholder(TEST_DATA.locators.login.emailInput).fill(process.env.USER_EMAIL_WEBUSER!)
     await page.getByPlaceholder(TEST_DATA.locators.login.passwordInput).fill('SenhaInvalida123')
-    await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn }).click()
+    await page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn, exact: true }).click()
 
-    await expect(page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn })).toBeVisible()
+    await expect(page.getByRole('button', { name: TEST_DATA.locators.login.submitBtn, exact: true })).toBeVisible()
     await expect(page.getByText(/email e\/ou senha inv[aá]lidos/i)).toBeVisible()
     await expect(page.getByRole('link', { name: TEST_DATA.locators.login.entrarLink })).toBeVisible()
 
@@ -59,8 +59,9 @@ test.describe('Feature Auth - Login e Cadastro', () => {
 
   test('CT03 - deve abrir o fluxo de cadastro a partir do login', async ({ page }) => {
     await openAuthPanel(page)
-    await expect(page.getByRole('link', { name: TEST_DATA.locators.login.cadastreSeLink })).toBeVisible()
-    await page.getByRole('link', { name: TEST_DATA.locators.login.cadastreSeLink }).click()
+    const cadastreSeBtn = page.getByRole('button', { name: /cadastre-se/i })
+    await expect(cadastreSeBtn).toBeVisible()
+    await cadastreSeBtn.click()
 
     await expect(page.getByRole('textbox', { name: TEST_DATA.locators.registration.fullNameInput })).toBeVisible()
     await expect(page.getByRole('textbox', { name: TEST_DATA.locators.registration.emailInput })).toBeVisible()

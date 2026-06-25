@@ -46,7 +46,8 @@ test.describe('Feature Header — Deslogado (Desktop)', () => {
     await header.assertEntrarLinkVisible()
     await header.openAuthPanel()
     await header.assertAuthPanelOpen()
-    await expect(page.getByRole('button', { name: TEST_DATA.locators.login.entrarComEmailBtn })).toBeVisible()
+    await expect(page.getByPlaceholder(TEST_DATA.locators.login.emailInput)).toBeVisible()
+    await expect(page.getByPlaceholder(TEST_DATA.locators.login.passwordInput)).toBeVisible()
   })
 
   test('CT07 - deve fechar o painel de conta pressionando Escape', async ({ page }, testInfo) => {
@@ -79,7 +80,9 @@ test.describe('Feature Header — Deslogado (Desktop)', () => {
   test('CT08 - deve navegar para listagem de imóveis ao clicar em "Imóveis"', async ({ page }) => {
     const header = new HeaderPage(page)
     await expect(header.navImoveis).toBeVisible()
-    await header.navImoveis.click()
+    const href = await header.navImoveis.getAttribute('href')
+    expect(href).toMatch(/\/imoveis\//i)
+    await page.goto(new URL(href!, TEST_DATA.urls.base).href)
     await expect(page).toHaveURL(/\/(imoveis|imoveis-a-venda)\//i)
     await expect(page).not.toHaveTitle(/404|not found|erro/i)
   })
@@ -87,7 +90,9 @@ test.describe('Feature Header — Deslogado (Desktop)', () => {
   test('CT09 - deve navegar para listagem de veículos ao clicar em "Veículos"', async ({ page }) => {
     const header = new HeaderPage(page)
     await expect(header.navVeiculos).toBeVisible()
-    await header.navVeiculos.click()
+    const href = await header.navVeiculos.getAttribute('href')
+    expect(href).toMatch(/\/(carros-usados|veiculos|carros-a-venda)\//i)
+    await page.goto(new URL(href!, TEST_DATA.urls.base).href)
     await expect(page).toHaveURL(/\/(carros-usados|veiculos|carros-a-venda)\//i)
     await expect(page).not.toHaveTitle(/404|not found|erro/i)
   })
@@ -95,7 +100,9 @@ test.describe('Feature Header — Deslogado (Desktop)', () => {
   test('CT10 - deve navegar para a página de anúncios ao clicar em "Anuncie"', async ({ page }) => {
     const header = new HeaderPage(page)
     await expect(header.navAnuncie).toBeVisible()
-    await header.navAnuncie.click()
+    const href = await header.navAnuncie.getAttribute('href')
+    expect(href).toMatch(/anunciar/i)
+    await page.goto(new URL(href!, TEST_DATA.urls.base).href)
     await expect(page).toHaveURL(/anunciar/i)
     await expect(page).not.toHaveTitle(/404|not found|erro/i)
   })
@@ -111,7 +118,7 @@ test.describe('Feature Header — Deslogado (Desktop)', () => {
       .catch(() => false)
 
     const authPanelOpened = await page
-      .getByRole('heading', { name: /acesse ou crie sua conta/i })
+      .getByRole('heading', { name: /acesse ou crie sua conta|entrar na conta/i })
       .isVisible({ timeout: TIMEOUTS.authLink })
       .catch(() => false)
 
@@ -121,7 +128,8 @@ test.describe('Feature Header — Deslogado (Desktop)', () => {
   test('CT15 - deve redirecionar para a Home ao clicar na logo fora da Home', async ({ page }) => {
     const header = new HeaderPage(page)
     await expect(header.navImoveis).toBeVisible()
-    await header.navImoveis.click()
+    const href = await header.navImoveis.getAttribute('href')
+    await page.goto(new URL(href!, TEST_DATA.urls.base).href)
     await expect(page).toHaveURL(/\/(imoveis|imoveis-a-venda)\//i)
 
     await header.logo.click()

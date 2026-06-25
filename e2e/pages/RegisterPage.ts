@@ -23,11 +23,10 @@ export class RegisterPage {
       this.page.getByRole('heading', { name: /acesse ou crie sua conta/i })
     ).toBeVisible();
 
-    // Clica em "Cadastre-se aqui"
-    await expect(
-      this.page.getByRole('link', { name: TEST_DATA.locators.login.cadastreSeLink })
-    ).toBeVisible();
-    await this.page.getByRole('link', { name: TEST_DATA.locators.login.cadastreSeLink }).click();
+    // Clica no botão de cadastro
+    const cadastreSeBtn = this.page.getByRole('button', { name: /cadastre-se/i })
+    await expect(cadastreSeBtn).toBeVisible();
+    await cadastreSeBtn.click();
 
     // Aguarda carregamento do formulário de cadastro
     await this.assertFormFieldsVisible();

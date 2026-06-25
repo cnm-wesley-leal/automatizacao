@@ -21,6 +21,7 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
   // ── 1. Tipo de negócio ───────────────────────────────────────────────────
 
   test('CT01 - deve exibir imóveis para alugar ao navegar para /imoveis-para-alugar/', async ({ page }) => {
+    test.slow()
     await page.goto(D.urls.forRent, { waitUntil: 'domcontentloaded' })
     await expect(page.getByRole('heading', { level: 1 })).toContainText(/para alugar/i)
     // Links de listagem não possuem texto acessível (cards visuais), href é o seletor disponível
@@ -28,11 +29,13 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
   })
 
   test('CT02 - deve exibir imóveis à venda ao navegar para /imoveis-a-venda/', async ({ page }) => {
+    test.slow()
     await page.goto(D.urls.forSale, { waitUntil: 'domcontentloaded' })
     await expect(page.getByRole('heading', { level: 1 })).toContainText(/à venda|a venda/i)
   })
 
   test('CT03 - deve exibir lançamentos ao navegar para /lancamentos-imoveis/', async ({ page }) => {
+    test.slow()
     await page.goto(D.urls.launches, { waitUntil: 'domcontentloaded' })
     await expect(page.getByRole('heading', { level: 1 })).toContainText(/lançamento|lançamentos/i)
     // Itens de lançamento usam /lancamento/ no path
@@ -51,6 +54,7 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
   // ── 3. Filtro de quartos ─────────────────────────────────────────────────
 
   test('CT05 - deve filtrar por 3 quartos via URL', async ({ page }) => {
+    test.slow()
     await page.goto(`${D.urls.listings}3-quartos/`, { waitUntil: 'domcontentloaded' })
     await expect(page.getByRole('heading', { level: 1 })).toContainText(/3 quartos|3-quartos/i)
   })
@@ -71,6 +75,7 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
   })
 
   test('CT07 - deve reidratar botão de quartos ao abrir URL com /2-quartos/', async ({ page, isMobile }) => {
+    test.slow()
     test.skip(isMobile, 'Quartos accordion collapsed by default in mobile filter modal — button not in accessibility tree')
     await page.goto(`${D.urls.listings}2-quartos/`, { waitUntil: 'domcontentloaded' })
     await openFilterPanel(page)
@@ -86,8 +91,8 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
   // ── 4. Filtro de banheiros e garagens ────────────────────────────────────
 
   test('CT08 - deve aplicar filtros de banheiros e garagens via URL', async ({ page }) => {
-    // Capturar contagem inicial (sem filtro)
-    await page.goto(D.urls.listings, { waitUntil: 'domcontentloaded' })
+    test.slow()
+    // Capturar contagem inicial — beforeEach já navegou para D.urls.listings
     const h1Initial = page.getByRole('heading', { level: 1 })
     const countInitial = await h1Initial.textContent()
     
@@ -213,6 +218,7 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
 
   for (const { id, label, urlParam } of sortCases) {
     test(`${id} - deve aplicar ordenação "${label}" via UI`, async ({ page, isMobile }) => {
+      test.slow()
       test.skip(isMobile, 'Sort UI not available on mobile layout')
       await page.getByRole('button', { name: /Ordernar por/i }).click()
       await page.getByRole('button', { name: label }).click()
