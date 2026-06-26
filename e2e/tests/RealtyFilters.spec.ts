@@ -384,3 +384,88 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
     ).toBeGreaterThan(0)
   })
 })
+
+// ── Scroll infinito e fim de listagem ─────────────────────────────────────────
+
+test.describe('Scroll infinito e fim de listagem', () => {
+  // ── CT32: Scroll dispara carga de novos cards via API ─────────────────────
+
+  test('CT32 - scroll até o fim deve carregar mais cards via API (scroll infinito)', async ({ page }) => {
+    await page.goto(D.urls.listings, { waitUntil: 'domcontentloaded' })
+    await dismissCookieConsent(page)
+
+    const initialCount = await page.locator('a[href*="/imovel/"]').count()
+    expect(initialCount, 'Deve haver cards na carga inicial').toBeGreaterThan(0)
+
+    const [response] = await Promise.all([
+      page.waitForResponse(
+        res =>
+          res.url().includes('/api/realestate/listing/items/') &&
+          res.url().includes('pg=2') &&
+          res.status() === 200,
+        { timeout: 15_000 },
+      ),
+      page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)),
+    ])
+
+    expect(response.status()).toBe(200)
+
+    await page.waitForFunction(
+      (initial) => document.querySelectorAll('a[href*="/imovel/"]').length > initial,
+      initialCount,
+      { timeout: 10_000 },
+    )
+
+    const afterCount = await page.locator('a[href*="/imovel/"]').count()
+    expect(afterCount, 'Scroll deve carregar mais cards').toBeGreaterThan(initialCount)
+    await expect(page).toHaveURL(/\/imoveis\/brasil\//) // URL não muda durante scroll
+  })
+
+  // ── CT33: Separador "similares" aparece ao esgotar resultados principais ──
+
+  test('CT33 - ao esgotar resultados principais deve exibir seção de imóveis similares', async ({ page }) => {
+    await page.goto(D.urls.fewResults, { waitUntil: 'domcontentloaded' })
+    await dismissCookieConsent(page)
+
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight))
+    await page.waitForTimeout(2_500)
+
+    const similares = page.locator('div[class*="style_container__"]').filter({
+      has: page.locator('p', { hasText: /\+\s*\d+\s*imóveis similares/i }),
+    })
+    await expect(similares).toBeVisible({ timeout: 10_000 })
+
+    const textoSimilares = await similares.locator('p').textContent()
+    const match = textoSimilares?.match(/\+\s*(\d+)\s*imóveis similares/i)
+    expect(match, 'Texto deve conter contagem de similares').toBeTruthy()
+    const count = parseInt(match![1], 10)
+    expect(count, 'Contagem de similares deve ser positiva').toBeGreaterThan(0)
+  })
+
+  // ── CT34: Cards similares são links válidos de imóveis ────────────────────
+
+  test('CT34 - cards exibidos após o separador de similares devem ser links válidos de imóveis', async ({ page }) => {
+    await page.goto(D.urls.fewResults, { waitUntil: 'domcontentloaded' })
+    await dismissCookieConsent(page)
+
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight))
+    await page.waitForTimeout(2_500)
+
+    const separador = page.locator('div[class*="style_container__"]').filter({
+      has: page.locator('p', { hasText: /similares/i }),
+    })
+    await expect(separador).toBeVisible({ timeout: 10_000 })
+
+    // Cards totais devem exceder os ~13 principais carregados inicialmente
+    const totalCards = await page.locator('a[href*="/imovel/"]').count()
+    expect(totalCards, 'Deve haver cards de similares após o separador').toBeGreaterThan(13)
+
+    // Os primeiros 5 hrefs devem apontar para páginas de imóvel
+    const hrefs = await page.locator('a[href*="/imovel/"]').evaluateAll(
+      links => links.slice(0, 5).map(a => (a as HTMLAnchorElement).href),
+    )
+    for (const href of hrefs) {
+      expect(href).toMatch(/\/imovel\//)
+    }
+  })
+})

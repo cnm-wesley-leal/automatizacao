@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "setup-chromium",
         "name": "setup-chromium",
@@ -38,7 +38,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "setup-webkit",
         "name": "setup-webkit",
@@ -56,7 +56,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "setup-ios",
         "name": "setup-ios",
@@ -74,7 +74,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "chromium",
         "name": "chromium",
@@ -92,7 +92,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "chromium-pf-flow",
         "name": "chromium-pf-flow",
@@ -110,7 +110,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "webkit-safari",
         "name": "webkit-safari",
@@ -128,7 +128,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "ios-safari-iphone-14",
         "name": "ios-safari-iphone-14",
@@ -189,19 +189,19 @@
                 }
               ],
               "expectedStatus": "passed",
-              "projectId": "setup-webkit",
-              "projectName": "setup-webkit",
+              "projectId": "setup-chromium",
+              "projectName": "setup-chromium",
               "results": [
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 11742,
+                  "duration": 10648,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-25T19:47:16.323Z",
+                  "startTime": "2026-06-26T12:30:49.877Z",
                   "annotations": [
                     {
                       "type": "info",
@@ -214,7 +214,7 @@
               "status": "expected"
             }
           ],
-          "id": "17e3fe6f4d9d8bd79c6b-d7686079f35e4509168c",
+          "id": "17e3fe6f4d9d8bd79c6b-cdc7b8df0f316be6340b",
           "file": "auth.setup.ts",
           "line": 12,
           "column": 6
@@ -222,60 +222,118 @@
       ]
     },
     {
-      "title": "tests\\Register.spec.ts",
-      "file": "tests/Register.spec.ts",
+      "title": "tests\\RealtyFilters.spec.ts",
+      "file": "tests/RealtyFilters.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Feature Auth - Cadastro de Usuários",
-          "file": "tests/Register.spec.ts",
-          "line": 59,
+          "title": "Scroll infinito e fim de listagem",
+          "file": "tests/RealtyFilters.spec.ts",
+          "line": 390,
           "column": 6,
           "specs": [
             {
-              "title": "CT11 - deve realizar cadastro com dados válidos (email novo)",
+              "title": "CT32 - scroll até o fim deve carregar mais cards via API (scroll infinito)",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 180000,
-                  "annotations": [
-                    {
-                      "type": "info",
-                      "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                    }
-                  ],
+                  "timeout": 120000,
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "webkit-safari",
-                  "projectName": "webkit-safari",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 13188,
+                      "duration": 6637,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-25T19:47:29.243Z",
-                      "annotations": [
-                        {
-                          "type": "info",
-                          "description": "Cookie consent não exibido: Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Entendi' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Entendi' })\u001b[22m\n"
-                        }
-                      ],
+                      "startTime": "2026-06-26T12:31:02.965Z",
+                      "annotations": [],
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "de3567b02077f035b1b8-30657f3bca5a77953a0f",
-              "file": "tests/Register.spec.ts",
-              "line": 68,
+              "id": "3f96d8dede023941b5c3-7121bf689cd9440705a7",
+              "file": "tests/RealtyFilters.spec.ts",
+              "line": 393,
+              "column": 7
+            },
+            {
+              "title": "CT33 - ao esgotar resultados principais deve exibir seção de imóveis similares",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8989,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T12:31:02.966Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3f96d8dede023941b5c3-93e78895361b43f3393d",
+              "file": "tests/RealtyFilters.spec.ts",
+              "line": 426,
+              "column": 7
+            },
+            {
+              "title": "CT34 - cards exibidos após o separador de similares devem ser links válidos de imóveis",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 9067,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T12:31:02.971Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "3f96d8dede023941b5c3-49e88b532b1df0bda03a",
+              "file": "tests/RealtyFilters.spec.ts",
+              "line": 447,
               "column": 7
             }
           ]
@@ -285,9 +343,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-25T19:47:14.974Z",
-    "duration": 27631.649999999998,
-    "expected": 2,
+    "startTime": "2026-06-26T12:30:48.414Z",
+    "duration": 24747.311999999998,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

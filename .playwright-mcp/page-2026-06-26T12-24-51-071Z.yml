@@ -1,0 +1,489 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Chaves na Mão" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Chaves na Mão" [ref=e7]
+      - navigation [ref=e12]:
+        - generic [ref=e13]:
+          - link "Imóveis" [ref=e15] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - text: Imóveis
+            - img
+          - link "Veículos" [ref=e17] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - text: Veículos
+            - img
+          - link "Anuncie" [ref=e19] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - text: Anuncie
+            - img
+      - navigation [ref=e20]:
+        - link "Favoritos" [ref=e23] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e24]
+          - text: Favoritos
+  - main [ref=e28]:
+    - complementary [ref=e29]
+    - article [ref=e30]:
+      - generic [ref=e32]:
+        - navigation "breadcrumb" [ref=e34]:
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Imóveis" [ref=e37] [cursor=pointer]:
+                - /url: /imoveis/brasil/
+            - listitem [ref=e38]:
+              - img [ref=e39]
+            - listitem [ref=e41]:
+              - link "SP" [ref=e42] [cursor=pointer]:
+                - /url: /imoveis/sp/
+            - listitem [ref=e43]:
+              - img [ref=e44]
+            - listitem [ref=e46]:
+              - link "Campinas" [ref=e47] [cursor=pointer]:
+                - /url: /imoveis/sp-campinas/
+            - listitem [ref=e48]:
+              - img [ref=e49]
+            - listitem [ref=e51]:
+              - link "4 quartos" [disabled] [ref=e52]
+        - heading "13 Imóveis de 4 quartos em Campinas - SP" [level=1] [ref=e53]:
+          - strong [ref=e54]: 13 Imóveis de 4 quartos em Campinas - SP
+      - generic [ref=e57]:
+        - link "Casa em condomínio fechado com 4 quartos à venda na Rua Romilda Aparecida Cruz, 10, Residencial Jatibela, Campinas Casa em condomínio fechado com 4 quartos à venda na Rua Romilda Aparecida Cruz, 10, Residencial Jatibela, Campinas strong list Preço" [ref=e59] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-a-venda-4-quartos-com-garagem-sp-campinas-residencial-jatibela-1200m2-RS9500000/id-42636164/
+          - img "Casa em condomínio fechado com 4 quartos à venda na Rua Romilda Aparecida Cruz, 10, Residencial Jatibela, Campinas" [ref=e62]
+          - generic [ref=e63]:
+            - heading "Casa em condomínio fechado com 4 quartos à venda na Rua Romilda Aparecida Cruz, 10, Residencial Jatibela, Campinas" [level=2] [ref=e65]
+            - generic "strong" [ref=e66]:
+              - paragraph [ref=e67]: Rua Romilda Aparecida Cruz, 10
+              - paragraph [ref=e68]: Residencial Jatibela, Campinas/SP
+            - generic "list" [ref=e69]:
+              - paragraph [ref=e70]:
+                - img [ref=e71]
+                - text: 900m²
+              - paragraph [ref=e73]:
+                - img [ref=e74]
+                - text: "4"
+              - paragraph [ref=e76]:
+                - img [ref=e77]
+                - text: "6"
+              - paragraph [ref=e79]:
+                - img [ref=e80]
+                - text: "4"
+            - paragraph [ref=e82]:
+              - generic [ref=e83]: R$ 9.500.000
+              - generic "Condominio" [ref=e84]:
+                - text: Condomínio
+                - generic [ref=e85]: R$ 1.500
+        - link "Apartamento com 4 quartos à venda na Rua Doutor Guilherme da Silva, 360, Cambuí, Campinas Apartamento com 4 quartos à venda na Rua Doutor Guilherme da Silva, 360, Cambuí, Campinas strong list Preço" [ref=e87] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-campinas-cambui-488m2-RS8900000/id-42635107/
+          - img "Apartamento com 4 quartos à venda na Rua Doutor Guilherme da Silva, 360, Cambuí, Campinas" [ref=e90]
+          - generic [ref=e91]:
+            - heading "Apartamento com 4 quartos à venda na Rua Doutor Guilherme da Silva, 360, Cambuí, Campinas" [level=2] [ref=e93]
+            - generic "strong" [ref=e94]:
+              - paragraph [ref=e95]: Rua Doutor Guilherme Da Silva, 360
+              - paragraph [ref=e96]: Cambuí, Campinas/SP
+            - generic "list" [ref=e97]:
+              - paragraph [ref=e98]:
+                - img [ref=e99]
+                - text: 488m²
+              - paragraph [ref=e101]:
+                - img [ref=e102]
+                - text: "4"
+              - paragraph [ref=e104]:
+                - img [ref=e105]
+                - text: "6"
+              - paragraph [ref=e107]:
+                - img [ref=e108]
+                - text: "4"
+            - paragraph [ref=e110]:
+              - generic [ref=e111]: R$ 8.900.000
+              - generic "Condominio" [ref=e112]:
+                - text: Condomínio
+                - generic [ref=e113]: R$ 9.500
+        - link "Casa para venda no Condomínio Entreverdes, Sousas, Campinas - 4 suítes Casa para venda no Condomínio Entreverdes, Sousas, Campinas - 4 suítes strong list Preço" [ref=e115] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-a-venda-4-quartos-com-garagem-sp-campinas-loteamento-residencial-entre-verdes-sousas-530m2-RS8150000/id-43296625/
+          - img "Casa para venda no Condomínio Entreverdes, Sousas, Campinas - 4 suítes" [ref=e118]
+          - generic [ref=e119]:
+            - heading "Casa para venda no Condomínio Entreverdes, Sousas, Campinas - 4 suítes" [level=2] [ref=e121]
+            - generic "strong" [ref=e122]:
+              - paragraph [ref=e123]: Rua Terezinha Da Conceição Penteado Cardoso, 59
+              - paragraph [ref=e124]: Loteamento Residencial Entre Verdes (Sousas), Campinas/SP
+            - generic "list" [ref=e125]:
+              - paragraph [ref=e126]:
+                - img [ref=e127]
+                - text: 530m²
+              - paragraph [ref=e129]:
+                - img [ref=e130]
+                - text: "4"
+              - paragraph [ref=e132]:
+                - img [ref=e133]
+                - text: "6"
+              - paragraph [ref=e135]:
+                - img [ref=e136]
+                - text: "6"
+            - paragraph [ref=e138]:
+              - generic [ref=e139]: R$ 8.150.000
+        - link "Casa de altíssimo padrão à venda em condomínio na região do Gramado - Campinas, com 4 suítes com closet, salão de festas gourmet e lazer completo. Casa de altíssimo padrão à venda em condomínio na região do Gramado - Campinas, com 4 suítes com closet, salão de festas gourmet e lazer completo. strong list Preço" [ref=e141] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-a-venda-4-quartos-com-garagem-sp-campinas-sitios-de-recreio-gramado-RS9000000/id-32614629/
+          - img "Casa de altíssimo padrão à venda em condomínio na região do Gramado - Campinas, com 4 suítes com closet, salão de festas gourmet e lazer completo." [ref=e144]
+          - generic [ref=e145]:
+            - heading "Casa de altíssimo padrão à venda em condomínio na região do Gramado - Campinas, com 4 suítes com closet, salão de festas gourmet e lazer completo." [level=2] [ref=e147]
+            - generic "strong" [ref=e148]:
+              - paragraph [ref=e149]: Avenida Professora Dea Ehrhardt Carvalho, 115
+              - paragraph [ref=e150]: Sítios de Recreio Gramado, Campinas/SP
+            - generic "list" [ref=e151]:
+              - paragraph [ref=e152]:
+                - img [ref=e153]
+                - text: 565m²
+              - paragraph [ref=e155]:
+                - img [ref=e156]
+                - text: "4"
+              - paragraph [ref=e158]:
+                - img [ref=e159]
+                - text: "7"
+              - paragraph [ref=e161]:
+                - img [ref=e162]
+                - text: "6"
+            - paragraph [ref=e164]:
+              - generic [ref=e165]: R$ 9.000.000
+              - generic "Condominio" [ref=e166]:
+                - text: Condomínio
+                - generic [ref=e167]: R$ 4.539
+        - link "Apartamento alto padrão à venda no condomínio Edifício Princesa de Gales no Cambuí em Campinas - SP strong list Preço" [ref=e169] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-campinas-cambui-497m2-RS8500000/id-31185244/
+          - generic [ref=e171]:
+            - heading "Apartamento alto padrão à venda no condomínio Edifício Princesa de Gales no Cambuí em Campinas - SP" [level=2] [ref=e173]
+            - generic "strong" [ref=e174]:
+              - paragraph [ref=e175]: Rua Doutor Guilherme Da Silva, 360
+              - paragraph [ref=e176]: Cambuí, Campinas/SP
+            - generic "list" [ref=e177]:
+              - paragraph [ref=e178]:
+                - img [ref=e179]
+                - text: 497m²
+              - paragraph [ref=e181]:
+                - img [ref=e182]
+                - text: "4"
+              - paragraph [ref=e184]:
+                - img [ref=e185]
+                - text: "5"
+              - paragraph [ref=e187]:
+                - img [ref=e188]
+                - text: "8"
+            - paragraph [ref=e190]:
+              - generic [ref=e191]: R$ 8.500.000
+              - generic "Condominio" [ref=e192]:
+                - text: Condomínio
+                - generic [ref=e193]: R$ 6.900
+        - generic [ref=e198]:
+          - list [ref=e203]:
+            - listitem [ref=e204]
+          - list [ref=e214]:
+            - listitem [ref=e215]
+          - list [ref=e225]:
+            - listitem [ref=e226]
+          - list [ref=e236]:
+            - listitem [ref=e237]
+          - list [ref=e247]:
+            - listitem [ref=e248]
+        - link "Apartamento com 4 quartos à venda na Rua Doutor Guilherme da Silva, 360, Cambuí, Campinas, 488 m2 por R$ 9.500.000 strong list Preço" [ref=e255] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-campinas-cambui-488m2-RS9500000/id-35453639/
+          - generic [ref=e257]:
+            - heading "Apartamento com 4 quartos à venda na Rua Doutor Guilherme da Silva, 360, Cambuí, Campinas, 488 m2 por R$ 9.500.000" [level=2] [ref=e259]
+            - generic "strong" [ref=e260]:
+              - paragraph [ref=e261]: Rua Doutor Guilherme Da Silva, 360
+              - paragraph [ref=e262]: Cambuí, Campinas/SP
+            - generic "list" [ref=e263]:
+              - paragraph [ref=e264]:
+                - img [ref=e265]
+                - text: 488m²
+              - paragraph [ref=e267]:
+                - img [ref=e268]
+                - text: "4"
+              - paragraph [ref=e270]:
+                - img [ref=e271]
+                - text: "6"
+              - paragraph [ref=e273]:
+                - img [ref=e274]
+                - text: "8"
+            - paragraph [ref=e276]:
+              - generic [ref=e277]: R$ 9.500.000
+              - generic "Condominio" [ref=e278]:
+                - text: Condomínio
+                - generic [ref=e279]: R$ 9.500
+        - link "Apartamento à venda e locação em Campinas, Cambuí, com 488m² strong list Preço" [ref=e281] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-campinas-cambui-488m2-RS9000000/id-29166593/
+          - generic [ref=e283]:
+            - heading "Apartamento à venda e locação em Campinas, Cambuí, com 488m²" [level=2] [ref=e285]
+            - generic "strong" [ref=e286]:
+              - paragraph [ref=e287]: Rua Doutor Guilherme Da Silva, 441
+              - paragraph [ref=e288]: Cambuí, Campinas/SP
+            - generic "list" [ref=e289]:
+              - paragraph [ref=e290]:
+                - img [ref=e291]
+                - text: 488m²
+              - paragraph [ref=e293]:
+                - img [ref=e294]
+                - text: "4"
+              - paragraph [ref=e296]:
+                - img [ref=e297]
+                - text: "6"
+              - paragraph [ref=e299]:
+                - img [ref=e300]
+                - text: "8"
+            - paragraph [ref=e302]:
+              - generic [ref=e303]: R$ 9.000.000
+              - generic "Condominio" [ref=e304]:
+                - text: Condomínio
+                - generic [ref=e305]: R$ 8.707
+        - link "Apartamento à venda em Campinas, Cambuí, com 4 suítes, com 711 m², Princesa de Monaco strong list Preço" [ref=e307] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-4-quartos-com-garagem-sp-campinas-cambui-711m2-RS9600000/id-26796781/
+          - generic [ref=e309]:
+            - heading "Apartamento à venda em Campinas, Cambuí, com 4 suítes, com 711 m², Princesa de Monaco" [level=2] [ref=e311]
+            - generic "strong" [ref=e312]:
+              - paragraph [ref=e313]: Avenida Coronel Silva Teles, 995
+              - paragraph [ref=e314]: Cambuí, Campinas/SP
+            - generic "list" [ref=e315]:
+              - paragraph [ref=e316]:
+                - img [ref=e317]
+                - text: 711m²
+              - paragraph [ref=e319]:
+                - img [ref=e320]
+                - text: "4"
+              - paragraph [ref=e322]:
+                - img [ref=e323]
+                - text: "8"
+              - paragraph [ref=e325]:
+                - img [ref=e326]
+                - text: "8"
+            - paragraph [ref=e328]:
+              - generic [ref=e329]: R$ 9.600.000
+              - generic "Condominio" [ref=e330]:
+                - text: Condomínio
+                - generic [ref=e331]: R$ 6.609
+        - link "Casa alto padrão à venda no Condomínio Residencial Pedra Alta em Sousas Campinas - SP strong list Preço" [ref=e333] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-a-venda-5-quartos-com-garagem-sp-campinas-loteamento-residencial-pedra-alta-sousas-1015m2-RS9400000/id-41864615/
+          - generic [ref=e335]:
+            - heading "Casa alto padrão à venda no Condomínio Residencial Pedra Alta em Sousas Campinas - SP" [level=2] [ref=e337]
+            - generic "strong" [ref=e338]:
+              - paragraph [ref=e339]: Endereço indisponível
+              - paragraph [ref=e340]: Loteamento Residencial Pedra Alta (Sousas), Campinas/SP
+            - generic "list" [ref=e341]:
+              - paragraph [ref=e342]:
+                - img [ref=e343]
+                - text: 665m²
+              - paragraph [ref=e345]:
+                - img [ref=e346]
+                - text: "5"
+              - paragraph [ref=e348]:
+                - img [ref=e349]
+                - text: "8"
+              - paragraph [ref=e351]:
+                - img [ref=e352]
+                - text: "4"
+            - paragraph [ref=e354]:
+              - generic [ref=e355]: R$ 9.400.000
+              - generic "Condominio" [ref=e356]:
+                - text: Condomínio
+                - generic [ref=e357]: R$ 2.200
+        - link "Apartamento à venda no princesa de gales, cambuí , campinas-sp strong list Preço" [ref=e359] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-6-quartos-com-garagem-sp-campinas-cambui-RS9500000/id-30029368/
+          - generic [ref=e361]:
+            - heading "Apartamento à venda no princesa de gales, cambuí , campinas-sp" [level=2] [ref=e363]
+            - generic "strong" [ref=e364]:
+              - paragraph [ref=e365]: Rua Doutor Guilherme Da Silva, 360
+              - paragraph [ref=e366]: Cambuí, Campinas/SP
+            - generic "list" [ref=e367]:
+              - paragraph [ref=e368]:
+                - img [ref=e369]
+                - text: 500m²
+              - paragraph [ref=e371]:
+                - img [ref=e372]
+                - text: "6"
+              - paragraph [ref=e374]:
+                - img [ref=e375]
+                - text: "7"
+              - paragraph [ref=e377]:
+                - img [ref=e378]
+                - text: "8"
+            - paragraph [ref=e380]:
+              - generic [ref=e381]: R$ 9.500.000
+              - generic "Condominio" [ref=e382]:
+                - text: Condomínio
+                - generic [ref=e383]: R$ 8.700
+        - link "Apartamento alto padrão à venda no Condomínio Edifício Princesa de Gales no Cambuí em Campinas - SP strong list Preço" [ref=e385] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-6-quartos-com-garagem-sp-campinas-cambui-500m2-RS9500000/id-31185264/
+          - generic [ref=e387]:
+            - heading "Apartamento alto padrão à venda no Condomínio Edifício Princesa de Gales no Cambuí em Campinas - SP" [level=2] [ref=e389]
+            - generic "strong" [ref=e390]:
+              - paragraph [ref=e391]: Rua Doutor Guilherme Da Silva, 360
+              - paragraph [ref=e392]: Cambuí, Campinas/SP
+            - generic "list" [ref=e393]:
+              - paragraph [ref=e394]:
+                - img [ref=e395]
+                - text: 500m²
+              - paragraph [ref=e397]:
+                - img [ref=e398]
+                - text: "6"
+              - paragraph [ref=e400]:
+                - img [ref=e401]
+                - text: "7"
+              - paragraph [ref=e403]:
+                - img [ref=e404]
+                - text: "8"
+            - paragraph [ref=e406]:
+              - generic [ref=e407]: R$ 9.500.000
+              - generic "Condominio" [ref=e408]:
+                - text: Condomínio
+                - generic [ref=e409]: R$ 8.700
+        - link "Apartamento com 6 quartos à venda na Rua Doutor Guilherme da Silva, 360, Cambuí, Campinas, 488 m2 por R$ 9.500.000 strong list Preço" [ref=e411] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-6-quartos-com-garagem-sp-campinas-cambui-488m2-RS9500000/id-40852430/
+          - generic [ref=e413]:
+            - heading "Apartamento com 6 quartos à venda na Rua Doutor Guilherme da Silva, 360, Cambuí, Campinas, 488 m2 por R$ 9.500.000" [level=2] [ref=e415]
+            - generic "strong" [ref=e416]:
+              - paragraph [ref=e417]: Rua Doutor Guilherme Da Silva, 360
+              - paragraph [ref=e418]: Cambuí, Campinas/SP
+            - generic "list" [ref=e419]:
+              - paragraph [ref=e420]:
+                - img [ref=e421]
+                - text: 488m²
+              - paragraph [ref=e423]:
+                - img [ref=e424]
+                - text: "6"
+              - paragraph [ref=e426]:
+                - img [ref=e427]
+                - text: "7"
+              - paragraph [ref=e429]:
+                - img [ref=e430]
+                - text: "8"
+            - paragraph [ref=e432]:
+              - generic [ref=e433]: R$ 9.500.000
+              - generic "Condominio" [ref=e434]:
+                - text: Condomínio
+                - generic [ref=e435]: R$ 9.500
+        - link "Prédio com 26 salas à venda na Avenida Doutor Moraes Salles, 1251, Centro, Campinas por R$ 9.000.000 strong list Preço" [ref=e437] [cursor=pointer]:
+          - /url: /imovel/predio-a-venda-26-salas-com-garagem-sp-campinas-centro-RS9000000/id-16855645/
+          - generic [ref=e439]:
+            - heading "Prédio com 26 salas à venda na Avenida Doutor Moraes Salles, 1251, Centro, Campinas por R$ 9.000.000" [level=2] [ref=e441]
+            - generic "strong" [ref=e442]:
+              - paragraph [ref=e443]: Avenida Doutor Moraes Salles, 1251
+              - paragraph [ref=e444]: Centro, Campinas/SP
+            - generic "list" [ref=e445]:
+              - paragraph [ref=e446]:
+                - img [ref=e447]
+                - text: "26"
+              - paragraph [ref=e449]:
+                - img [ref=e450]
+                - text: "25"
+              - paragraph [ref=e452]:
+                - img [ref=e453]
+                - text: "18"
+            - paragraph [ref=e455]:
+              - generic [ref=e456]: R$ 9.000.000
+              - generic "IPTU" [ref=e457]:
+                - text: "Iptu:"
+                - generic [ref=e458]: R$ 17.800
+        - generic [ref=e459]:
+          - img "Chaves na Mão" [ref=e461]
+          - paragraph [ref=e465]:
+            - text: + 372 imóveis similares.
+            - img [ref=e466]
+        - link "Casa em condomínio fechado com 4 quartos à venda na Avenida Araçá, 280, Loteamento Alphaville Campinas, Campinas por R$ 8.900.000 strong list Preço" [ref=e469] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-a-venda-4-quartos-com-garagem-sp-campinas-loteamento-alphaville-campinas-768m2-RS8900000/id-41992872/
+          - generic [ref=e471]:
+            - heading "Casa em condomínio fechado com 4 quartos à venda na Avenida Araçá, 280, Loteamento Alphaville Campinas, Campinas por R$ 8.900.000" [level=2] [ref=e473]
+            - generic "strong" [ref=e474]:
+              - paragraph [ref=e475]: Avenida Araçá, 280
+              - paragraph [ref=e476]: Loteamento Alphaville Campinas, Campinas/SP
+            - generic "list" [ref=e477]:
+              - paragraph [ref=e478]:
+                - img [ref=e479]
+                - text: 768m²
+              - paragraph [ref=e481]:
+                - img [ref=e482]
+                - text: "4"
+              - paragraph [ref=e484]:
+                - img [ref=e485]
+                - text: "5"
+              - paragraph [ref=e487]:
+                - img [ref=e488]
+                - text: "5"
+            - paragraph [ref=e490]:
+              - generic [ref=e491]: R$ 8.900.000
+              - generic "Condominio" [ref=e492]:
+                - text: Condomínio
+                - generic [ref=e493]: R$ 1.300
+        - link "Casa em condomínio fechado com 6 quartos à venda no Sítios de Recreio Gramado, Campinas por R$ 8.473.000 strong list Preço" [ref=e495] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-a-venda-6-quartos-com-garagem-sp-campinas-sitios-de-recreio-gramado-RS8473000/id-38754192/
+          - generic [ref=e497]:
+            - heading "Casa em condomínio fechado com 6 quartos à venda no Sítios de Recreio Gramado, Campinas por R$ 8.473.000" [level=2] [ref=e499]
+            - generic "strong" [ref=e500]:
+              - paragraph [ref=e501]: Endereço indisponível
+              - paragraph [ref=e502]: Sítios de Recreio Gramado, Campinas/SP
+            - generic "list" [ref=e503]:
+              - paragraph [ref=e504]:
+                - img [ref=e505]
+                - text: "6"
+              - paragraph [ref=e507]:
+                - img [ref=e508]
+                - text: "10"
+              - paragraph [ref=e510]:
+                - img [ref=e511]
+                - text: "4"
+            - paragraph [ref=e513]:
+              - generic [ref=e514]: R$ 8.473.000
+        - generic [ref=e515]:
+          - generic [ref=e516]:
+            - generic [ref=e517]:
+              - heading "Mais buscados em Campinas" [level=3] [ref=e518]
+              - generic [ref=e520]:
+                - button "Anterior" [disabled] [ref=e521]:
+                  - generic:
+                    - img
+                - button "Próximo" [disabled] [ref=e522]:
+                  - generic:
+                    - img
+            - generic [ref=e523]:
+              - link "Casas em condomínio em Campinas com 4 quartos" [ref=e524] [cursor=pointer]:
+                - /url: /casas-em-condominio/sp-campinas/4-quartos/
+              - link "Casas em Campinas com 4 quartos" [ref=e525] [cursor=pointer]:
+                - /url: /casas/sp-campinas/4-quartos/
+              - link "Apartamentos em Campinas com 4 quartos" [ref=e526] [cursor=pointer]:
+                - /url: /apartamentos/sp-campinas/4-quartos/
+              - link "Chácaras em Campinas com 4 quartos" [ref=e527] [cursor=pointer]:
+                - /url: /chacaras/sp-campinas/4-quartos/
+              - link "Casa comercial em Campinas" [ref=e528] [cursor=pointer]:
+                - /url: /casa-comercial/sp-campinas/4-salas/
+              - link "Coberturas em Campinas com 4 quartos" [ref=e529] [cursor=pointer]:
+                - /url: /coberturas/sp-campinas/4-quartos/
+              - link "Sala comercial em Campinas" [ref=e530] [cursor=pointer]:
+                - /url: /sala-comercial/sp-campinas/4-salas/
+              - link "Galpões/Depósitos/Barracões em Campinas" [ref=e531] [cursor=pointer]:
+                - /url: /galpao/sp-campinas/4-salas/
+              - link "Prédios em Campinas" [ref=e532] [cursor=pointer]:
+                - /url: /predio/sp-campinas/4-salas/
+              - link "Ponto comercial em Campinas" [ref=e533] [cursor=pointer]:
+                - /url: /ponto-comercial/sp-campinas/4-salas/
+              - link "Kitnets em Campinas com 4 quartos" [ref=e534] [cursor=pointer]:
+                - /url: /kitnet/sp-campinas/4-quartos/
+              - link "Terrenos em Campinas com 4 quartos" [ref=e535] [cursor=pointer]:
+                - /url: /terrenos/sp-campinas/4-quartos/
+              - link "Flats em Campinas com 4 quartos" [ref=e536] [cursor=pointer]:
+                - /url: /flat/sp-campinas/4-quartos/
+              - link "Terrenos em condomínio em Campinas com 4 quartos" [ref=e537] [cursor=pointer]:
+                - /url: /terrenos-em-condominio/sp-campinas/4-quartos/
+              - link "Fazendas em Campinas" [ref=e538] [cursor=pointer]:
+                - /url: /fazendas/sp-campinas/4-salas/
+          - generic [ref=e543]:
+            - list [ref=e548]:
+              - listitem [ref=e549]
+            - list [ref=e559]:
+              - listitem [ref=e560]
+            - list [ref=e570]:
+              - listitem [ref=e571]
+            - list [ref=e581]:
+              - listitem [ref=e582]
+            - list [ref=e592]:
+              - listitem [ref=e593]
+  - generic [ref=e609]: Staging Environment - c5ecb7e0374503ca622a7d75b86c15e5e968fdcf
+  - alert [ref=e610]

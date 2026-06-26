@@ -1,0 +1,465 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Chaves na Mão" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Chaves na Mão" [ref=e7]
+      - navigation [ref=e12]:
+        - generic [ref=e13]:
+          - link "Imóveis" [ref=e15] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - text: Imóveis
+            - img
+          - link "Veículos" [ref=e17] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - text: Veículos
+            - img
+          - link "Anuncie" [ref=e19] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - text: Anuncie
+            - img
+      - navigation [ref=e20]:
+        - link "Favoritos" [ref=e23] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e24]
+          - text: Favoritos
+  - main [ref=e28]:
+    - complementary [ref=e29]
+    - article [ref=e30]:
+      - generic [ref=e32]:
+        - navigation "breadcrumb" [ref=e34]:
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Imóveis" [ref=e37] [cursor=pointer]:
+                - /url: /imoveis/brasil/
+            - listitem [ref=e38]:
+              - img [ref=e39]
+            - listitem [ref=e41]:
+              - link "Em todo Brasil" [disabled] [ref=e42]
+        - heading "4.679.906 Imóveis para comprar ou alugar no Brasil" [level=1] [ref=e43]:
+          - strong [ref=e44]: 4.679.906 Imóveis para comprar ou alugar no Brasil
+      - generic [ref=e47]:
+        - link "Casa com 2 quartos à venda na Rua Coronel Guilherme Theodoro Buest, 461, Umbará, Curitiba Casa com 2 quartos à venda na Rua Coronel Guilherme Theodoro Buest, 461, Umbará, Curitiba strong list Preço" [ref=e49] [cursor=pointer]:
+          - /url: /imovel/casa-a-venda-2-quartos-com-garagem-pr-curitiba-umbara-160m2-RS285000/id-40892158/
+          - img "Casa com 2 quartos à venda na Rua Coronel Guilherme Theodoro Buest, 461, Umbará, Curitiba" [ref=e52]
+          - generic [ref=e53]:
+            - heading "Casa com 2 quartos à venda na Rua Coronel Guilherme Theodoro Buest, 461, Umbará, Curitiba" [level=2] [ref=e55]
+            - generic "strong" [ref=e56]:
+              - paragraph [ref=e57]: Rua Coronel Guilherme Theodoro Buest, 461
+              - paragraph [ref=e58]: Umbará, Curitiba/PR
+            - generic "list" [ref=e59]:
+              - paragraph [ref=e60]:
+                - img [ref=e61]
+                - text: 70m²
+              - paragraph [ref=e63]:
+                - img [ref=e64]
+                - text: "2"
+              - paragraph [ref=e66]:
+                - img [ref=e67]
+                - text: "1"
+              - paragraph [ref=e69]:
+                - img [ref=e70]
+                - text: "1"
+            - paragraph [ref=e72]:
+              - generic [ref=e73]: R$ 285.000
+              - generic "IPTU" [ref=e74]:
+                - text: "Iptu:"
+                - generic [ref=e75]: R$ 800
+        - link "Copacabana Ipanema Andar alto 2 salas Hall entrada Lavabo 3 quartos (suíte) Armários Cozinha planejada Dependências completas Vaga garagem Copacabana Ipanema Andar alto 2 salas Hall entrada Lavabo 3 quartos (suíte) Armários Cozinha planejada Dependências completas Vaga garagem strong list Preço" [ref=e77] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-3-quartos-com-garagem-rj-rio-de-janeiro-copacabana-145m2-RS8300/id-42632237/
+          - img "Copacabana Ipanema Andar alto 2 salas Hall entrada Lavabo 3 quartos (suíte) Armários Cozinha planejada Dependências completas Vaga garagem" [ref=e80]
+          - generic [ref=e81]:
+            - heading "Copacabana Ipanema Andar alto 2 salas Hall entrada Lavabo 3 quartos (suíte) Armários Cozinha planejada Dependências completas Vaga garagem" [level=2] [ref=e83]
+            - generic "strong" [ref=e84]:
+              - paragraph [ref=e85]: Avenida Nossa Senhora De Copacabana, 1346
+              - paragraph [ref=e86]: Copacabana, Rio de Janeiro/RJ
+            - generic "list" [ref=e87]:
+              - paragraph [ref=e88]:
+                - img [ref=e89]
+                - text: 145m²
+              - paragraph [ref=e91]:
+                - img [ref=e92]
+                - text: "3"
+              - paragraph [ref=e94]:
+                - img [ref=e95]
+                - text: "3"
+              - paragraph [ref=e97]:
+                - img [ref=e98]
+                - text: "1"
+            - paragraph [ref=e100]:
+              - generic [ref=e101]: R$ 8.300
+              - generic "Condominio" [ref=e102]:
+                - text: Condomínio
+                - generic [ref=e103]: R$ 1.609
+        - link "Paradise residence - 3 quartos com varanda gourmet no jardim armação Paradise residence - 3 quartos com varanda gourmet no jardim armação strong list Preço" [ref=e105] [cursor=pointer]:
+          - /url: /lancamento/paradise-residence-3-quartos-com-varanda-gourmet-no-jardim-armacao/id-30580989/
+          - img "Paradise residence - 3 quartos com varanda gourmet no jardim armação" [ref=e108]
+          - generic [ref=e109]:
+            - heading "Paradise residence - 3 quartos com varanda gourmet no jardim armação" [level=2] [ref=e111]
+            - generic "strong" [ref=e112]:
+              - paragraph [ref=e113]: Rua Rodrigues Dórea, 170
+              - paragraph [ref=e114]: Armação, Salvador/BA
+            - generic "list" [ref=e115]:
+              - paragraph [ref=e116]:
+                - img [ref=e117]
+                - text: 95m²
+              - paragraph [ref=e119]:
+                - img [ref=e120]
+                - text: "3"
+              - paragraph [ref=e122]:
+                - img [ref=e123]
+                - text: "3"
+              - paragraph [ref=e125]:
+                - img [ref=e126]
+                - text: "2"
+            - paragraph [ref=e128]:
+              - generic [ref=e129]: R$ 922.793
+        - link "Apartamento com 3 dormitórios para alugar, 65 m² por R$ 2.240,00/mês - Parque Residencial Alcântara - Londrina/PR Apartamento com 3 dormitórios para alugar, 65 m² por R$ 2.240,00/mês - Parque Residencial Alcântara - Londrina/PR strong list Preço" [ref=e131] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-3-quartos-com-garagem-pr-londrina-parque-residencial-alcantara-76m2-RS1590/id-19873250/
+          - img "Apartamento com 3 dormitórios para alugar, 65 m² por R$ 2.240,00/mês - Parque Residencial Alcântara - Londrina/PR" [ref=e134]
+          - generic [ref=e135]:
+            - heading "Apartamento com 3 dormitórios para alugar, 65 m² por R$ 2.240,00/mês - Parque Residencial Alcântara - Londrina/PR" [level=2] [ref=e137]
+            - generic "strong" [ref=e138]:
+              - paragraph [ref=e139]: Avenida Garibaldi Deliberador
+              - paragraph [ref=e140]: Parque Residencial Alcântara, Londrina/PR
+            - generic "list" [ref=e141]:
+              - paragraph [ref=e142]:
+                - img [ref=e143]
+                - text: 65m²
+              - paragraph [ref=e145]:
+                - img [ref=e146]
+                - text: "3"
+              - paragraph [ref=e148]:
+                - img [ref=e149]
+                - text: "2"
+              - paragraph [ref=e151]:
+                - img [ref=e152]
+                - text: "1"
+            - paragraph [ref=e154]:
+              - generic [ref=e155]: R$ 1.590
+              - generic "Condominio" [ref=e156]:
+                - text: Condomínio
+                - generic [ref=e157]: R$ 650
+        - link "Casa em condomínio fechado com 3 quartos à venda na Vila Mafalda, Jundiaí strong list Preço" [ref=e159] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-a-venda-3-quartos-com-garagem-sp-jundiai-vila-mafalda-92m2-RS940000/id-5166103/
+          - generic [ref=e161]:
+            - heading "Casa em condomínio fechado com 3 quartos à venda na Vila Mafalda, Jundiaí" [level=2] [ref=e163]
+            - generic "strong" [ref=e164]:
+              - paragraph [ref=e165]: Endereço indisponível
+              - paragraph [ref=e166]: Vila Mafalda, Jundiaí/SP
+            - generic "list" [ref=e167]:
+              - paragraph [ref=e168]:
+                - img [ref=e169]
+                - text: 92m²
+              - paragraph [ref=e171]:
+                - img [ref=e172]
+                - text: "3"
+              - paragraph [ref=e174]:
+                - img [ref=e175]
+                - text: "1"
+              - paragraph [ref=e177]:
+                - img [ref=e178]
+                - text: "2"
+            - paragraph [ref=e180]:
+              - generic [ref=e181]: R$ 940.000
+              - generic "Condominio" [ref=e182]:
+                - text: Condomínio
+                - generic [ref=e183]: R$ 500
+        - generic [ref=e188]:
+          - list [ref=e193]:
+            - listitem [ref=e194]
+          - list [ref=e204]:
+            - listitem [ref=e205]
+          - list [ref=e215]:
+            - listitem [ref=e216]
+          - list [ref=e226]:
+            - listitem [ref=e227]
+          - list [ref=e237]:
+            - listitem [ref=e238]
+        - link "Ultima Loja Satélite para Locação no Open Mall Xaxim – Curitiba (PR) strong list Preço" [ref=e245] [cursor=pointer]:
+          - /url: /imovel/ponto-comercial-para-alugar-1-sala-pr-curitiba-xaxim-RS5000/id-28806993/
+          - generic [ref=e247]:
+            - heading "Ultima Loja Satélite para Locação no Open Mall Xaxim – Curitiba (PR)" [level=2] [ref=e249]
+            - generic "strong" [ref=e250]:
+              - paragraph [ref=e251]: Rua Waldemar Loureiro Campos, 3615
+              - paragraph [ref=e252]: Xaxim, Curitiba/PR
+            - generic "list" [ref=e253]:
+              - paragraph [ref=e254]:
+                - img [ref=e255]
+                - text: 46m²
+              - paragraph [ref=e257]:
+                - img [ref=e258]
+                - text: "1"
+              - paragraph [ref=e260]:
+                - img [ref=e261]
+                - text: "1"
+            - paragraph [ref=e263]:
+              - generic [ref=e264]: R$ 5.000
+        - link "Apartamento alto padrão para venda próximo ao MON strong list Preço" [ref=e266] [cursor=pointer]:
+          - /url: /lancamento/apartamento-alto-padrao-para-venda-proximo-ao-mon/id-32574631/
+          - generic [ref=e268]:
+            - heading "Apartamento alto padrão para venda próximo ao MON" [level=2] [ref=e270]
+            - generic "strong" [ref=e271]:
+              - paragraph [ref=e272]: Rua Celestino Júnior, 527
+              - paragraph [ref=e273]: São Francisco, Curitiba/PR
+            - generic "list" [ref=e274]:
+              - paragraph [ref=e275]:
+                - img [ref=e276]
+                - text: 24m²
+              - paragraph [ref=e278]:
+                - img [ref=e279]
+                - text: 1 a 3
+              - paragraph [ref=e281]:
+                - img [ref=e282]
+                - text: "1"
+              - paragraph [ref=e284]:
+                - img [ref=e285]
+                - text: "1"
+            - paragraph [ref=e287]:
+              - generic [ref=e288]: R$ 409.900
+              - generic [ref=e289]: A partir de
+        - link "Sala comercial para alugar na Rua Presidente Nereu Ramos, 19, Centro, Florianópolis, 61 m2 por R$ 2.800 strong list Preço" [ref=e291] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-sc-florianopolis-centro-61m2-RS2800/id-41278494/
+          - generic [ref=e293]:
+            - heading "Sala comercial para alugar na Rua Presidente Nereu Ramos, 19, Centro, Florianópolis, 61 m2 por R$ 2.800" [level=2] [ref=e295]
+            - generic "strong" [ref=e296]:
+              - paragraph [ref=e297]: Rua Presidente Nereu Ramos, 19
+              - paragraph [ref=e298]: Centro, Florianópolis/SC
+            - generic "list" [ref=e299]:
+              - paragraph [ref=e300]:
+                - img [ref=e301]
+                - text: 61m²
+            - paragraph [ref=e303]:
+              - generic [ref=e304]: R$ 2.800
+              - generic "Condominio" [ref=e305]:
+                - text: Condomínio
+                - generic [ref=e306]: R$ 730
+        - link "Vista mar, há 220 metros da praia e 2 vagas garragem, mobília completa. strong list Preço" [ref=e308] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-1-quarto-com-garagem-sc-itapema-meia-praia-98m2-RS1170000/id-42706179/
+          - generic [ref=e310]:
+            - heading "Vista mar, há 220 metros da praia e 2 vagas garragem, mobília completa." [level=2] [ref=e312]
+            - generic "strong" [ref=e313]:
+              - paragraph [ref=e314]: Rua 422, 15
+              - paragraph [ref=e315]: Meia Praia, Itapema/SC
+            - generic "list" [ref=e316]:
+              - paragraph [ref=e317]:
+                - img [ref=e318]
+                - text: 70m²
+              - paragraph [ref=e320]:
+                - img [ref=e321]
+                - text: "1"
+              - paragraph [ref=e323]:
+                - img [ref=e324]
+                - text: "2"
+              - paragraph [ref=e326]:
+                - img [ref=e327]
+                - text: "2"
+            - paragraph [ref=e329]:
+              - generic [ref=e330]: R$ 1.170.000
+              - generic "Condominio" [ref=e331]:
+                - text: Condomínio
+                - generic [ref=e332]: R$ 600
+        - generic:
+          - heading "Perguntas frequentes" [level=3] [ref=e335]
+          - generic [ref=e337]:
+            - button "Como encontrar imóveis para comprar com segurança?" [ref=e339] [cursor=pointer]
+            - button "Onde encontrar aluguel de imóveis com bom preço?" [ref=e341] [cursor=pointer]
+            - button "Onde encontrar imóveis à venda baratos?" [ref=e343] [cursor=pointer]
+            - button "O que avaliar no imóvel antes de comprar ou alugar?" [ref=e345] [cursor=pointer]
+            - button "Como funciona a compra e venda de imóveis online?" [ref=e347] [cursor=pointer]
+        - link "Casa em condomínio para aluguel, 3 quartos, 3 suítes, 2 vagas, Gávea - Uberlândia/MG strong list Preço" [ref=e349] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-para-alugar-3-quartos-com-garagem-mg-uberlandia-gavea-180m2-RS12000/id-43824858/
+          - generic [ref=e351]:
+            - heading "Casa em condomínio para aluguel, 3 quartos, 3 suítes, 2 vagas, Gávea - Uberlândia/MG" [level=2] [ref=e353]
+            - generic "strong" [ref=e354]:
+              - paragraph [ref=e355]: Endereço indisponível
+              - paragraph [ref=e356]: Gávea, Uberlândia/MG
+            - generic "list" [ref=e357]:
+              - paragraph [ref=e358]:
+                - img [ref=e359]
+                - text: 180m²
+              - paragraph [ref=e361]:
+                - img [ref=e362]
+                - text: "3"
+              - paragraph [ref=e364]:
+                - img [ref=e365]
+                - text: "4"
+              - paragraph [ref=e367]:
+                - img [ref=e368]
+                - text: "2"
+            - paragraph [ref=e370]:
+              - generic [ref=e371]: R$ 12.000
+              - generic "Condominio" [ref=e372]:
+                - text: Condomínio
+                - generic [ref=e373]: R$ 1.080
+        - link "Casa com 2 quartos à venda na Chácara Santa Maria, Cotia por R$ 520.000 strong list Preço" [ref=e375] [cursor=pointer]:
+          - /url: /imovel/casa-a-venda-2-quartos-sp-cotia-chacara-santa-maria-296m2-RS520000/id-34948744/
+          - generic [ref=e377]:
+            - heading "Casa com 2 quartos à venda na Chácara Santa Maria, Cotia por R$ 520.000" [level=2] [ref=e379]
+            - generic "strong" [ref=e380]:
+              - paragraph [ref=e381]: Endereço indisponível
+              - paragraph [ref=e382]: Chácara Santa Maria, Cotia/SP
+            - generic "list" [ref=e383]:
+              - paragraph [ref=e384]:
+                - img [ref=e385]
+                - text: 296m²
+              - paragraph [ref=e387]:
+                - img [ref=e388]
+                - text: "2"
+              - paragraph [ref=e390]:
+                - img [ref=e391]
+                - text: "2"
+            - paragraph [ref=e393]:
+              - generic [ref=e394]: R$ 520.000
+              - generic "IPTU" [ref=e395]:
+                - text: "Iptu:"
+                - generic [ref=e396]: R$ 2.688
+        - link "AMPLO APARTAMENTO, VISTA LIVRE, ALTO PADRãO E PERTO DA PRAIA- BOA VIAGEM strong list Preço" [ref=e398] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-4-quartos-com-garagem-pe-recife-boa-viagem-350m2-RS9300/id-39671819/
+          - generic [ref=e400]:
+            - heading "AMPLO APARTAMENTO, VISTA LIVRE, ALTO PADRãO E PERTO DA PRAIA- BOA VIAGEM" [level=2] [ref=e402]
+            - generic "strong" [ref=e403]:
+              - paragraph [ref=e404]: Rua Visconde De Jequitinhonha, 1828
+              - paragraph [ref=e405]: Boa Viagem, Recife/PE
+            - generic "list" [ref=e406]:
+              - paragraph [ref=e407]:
+                - img [ref=e408]
+                - text: 147m²
+              - paragraph [ref=e410]:
+                - img [ref=e411]
+                - text: "4"
+              - paragraph [ref=e413]:
+                - img [ref=e414]
+                - text: "3"
+              - paragraph [ref=e416]:
+                - img [ref=e417]
+                - text: "2"
+            - paragraph [ref=e419]:
+              - generic [ref=e420]: R$ 9.300
+        - link "Apartamento com 3 dormitórios - venda por R$ 740.000,00 ou aluguel por R$ 5.700,00/mês - Praia das Pitangueiras - Guarujá/SP strong list Preço" [ref=e422] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-guaruja-pitangueiras-135m2-RS740000/id-39672232/
+          - generic [ref=e424]:
+            - heading "Apartamento com 3 dormitórios - venda por R$ 740.000,00 ou aluguel por R$ 5.700,00/mês - Praia das Pitangueiras - Guarujá/SP" [level=2] [ref=e426]
+            - generic "strong" [ref=e427]:
+              - paragraph [ref=e428]: Endereço indisponível
+              - paragraph [ref=e429]: Pitangueiras, Guarujá/SP
+            - generic "list" [ref=e430]:
+              - paragraph [ref=e431]:
+                - img [ref=e432]
+                - text: 135m²
+              - paragraph [ref=e434]:
+                - img [ref=e435]
+                - text: "3"
+              - paragraph [ref=e437]:
+                - img [ref=e438]
+                - text: "2"
+              - paragraph [ref=e440]:
+                - img [ref=e441]
+                - text: "1"
+            - paragraph [ref=e443]:
+              - generic [ref=e444]: R$ 740.000
+        - link "Ponto Comercial pronto para restaurante para venda ou Locação 223 m² no Centro de Jundiaí strong list Preço" [ref=e446] [cursor=pointer]:
+          - /url: /imovel/ponto-comercial-para-alugar-sp-jundiai-centro-168m2-RS4000/id-43292465/
+          - generic [ref=e448]:
+            - heading "Ponto Comercial pronto para restaurante para venda ou Locação 223 m² no Centro de Jundiaí" [level=2] [ref=e450]
+            - generic "strong" [ref=e451]:
+              - paragraph [ref=e452]: Endereço indisponível
+              - paragraph [ref=e453]: Centro, Jundiaí/SP
+            - generic "list" [ref=e454]:
+              - paragraph [ref=e455]:
+                - img [ref=e456]
+                - text: 223m²
+              - paragraph [ref=e458]:
+                - img [ref=e459]
+                - text: "5"
+            - paragraph [ref=e461]:
+              - generic [ref=e462]: R$ 4.000
+              - generic "IPTU" [ref=e463]:
+                - text: "Iptu:"
+                - generic [ref=e464]: R$ 421
+        - link "Apartamento com 2 quartos para alugar na ENDEREÇO NÃO INFORMADO, Jardim Paulista, Bauru, 93 m2 por R$ 5.000 strong list Preço" [ref=e466] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-sp-bauru-jardim-paulista-93m2-RS5000/id-40993468/
+          - generic [ref=e468]:
+            - heading "Apartamento com 2 quartos para alugar na ENDEREÇO NÃO INFORMADO, Jardim Paulista, Bauru, 93 m2 por R$ 5.000" [level=2] [ref=e470]
+            - generic "strong" [ref=e471]:
+              - paragraph [ref=e472]: Endereço Não Informado
+              - paragraph [ref=e473]: Jardim Paulista, Bauru/SP
+            - generic "list" [ref=e474]:
+              - paragraph [ref=e475]:
+                - img [ref=e476]
+                - text: 93m²
+              - paragraph [ref=e478]:
+                - img [ref=e479]
+                - text: "2"
+            - paragraph [ref=e481]:
+              - generic [ref=e482]: R$ 5.000
+              - generic "Condominio" [ref=e483]:
+                - text: Condomínio
+                - generic [ref=e484]: R$ 873
+        - generic [ref=e485]:
+          - generic [ref=e486]:
+            - generic [ref=e487]:
+              - heading "Imóveis nos estados do Brasil" [level=3] [ref=e488]
+              - generic [ref=e490]:
+                - button "Anterior" [disabled] [ref=e491]:
+                  - generic:
+                    - img
+                - button "Próximo" [disabled] [ref=e492]:
+                  - generic:
+                    - img
+            - generic [ref=e493]:
+              - link "Imóveis em SP" [ref=e494] [cursor=pointer]:
+                - /url: /imoveis/sp/
+              - link "Imóveis no RS" [ref=e495] [cursor=pointer]:
+                - /url: /imoveis/rs/
+              - link "Imóveis no PR" [ref=e496] [cursor=pointer]:
+                - /url: /imoveis/pr/
+              - link "Imóveis em MG" [ref=e497] [cursor=pointer]:
+                - /url: /imoveis/mg/
+              - link "Imóveis em SC" [ref=e498] [cursor=pointer]:
+                - /url: /imoveis/sc/
+              - link "Imóveis no RJ" [ref=e499] [cursor=pointer]:
+                - /url: /imoveis/rj/
+              - link "Imóveis em GO" [ref=e500] [cursor=pointer]:
+                - /url: /imoveis/go/
+              - link "Imóveis na BA" [ref=e501] [cursor=pointer]:
+                - /url: /imoveis/ba/
+              - link "Imóveis no MT" [ref=e502] [cursor=pointer]:
+                - /url: /imoveis/mt/
+              - link "Imóveis em PE" [ref=e503] [cursor=pointer]:
+                - /url: /imoveis/pe/
+              - link "Imóveis no CE" [ref=e504] [cursor=pointer]:
+                - /url: /imoveis/ce/
+              - link "Imóveis no RN" [ref=e505] [cursor=pointer]:
+                - /url: /imoveis/rn/
+              - link "Imóveis na PB" [ref=e506] [cursor=pointer]:
+                - /url: /imoveis/pb/
+              - link "Imóveis no ES" [ref=e507] [cursor=pointer]:
+                - /url: /imoveis/es/
+              - link "Imóveis em SE" [ref=e508] [cursor=pointer]:
+                - /url: /imoveis/se/
+              - link "Imóveis no MS" [ref=e509] [cursor=pointer]:
+                - /url: /imoveis/ms/
+              - link "Imóveis no PI" [ref=e510] [cursor=pointer]:
+                - /url: /imoveis/pi/
+              - link "Imóveis em AL" [ref=e511] [cursor=pointer]:
+                - /url: /imoveis/al/
+              - link "Imóveis no AM" [ref=e512] [cursor=pointer]:
+                - /url: /imoveis/am/
+              - link "Imóveis no PA" [ref=e513] [cursor=pointer]:
+                - /url: /imoveis/pa/
+          - generic [ref=e518]:
+            - list [ref=e523]:
+              - listitem [ref=e524]
+            - list [ref=e534]:
+              - listitem [ref=e535]
+            - list [ref=e545]:
+              - listitem [ref=e546]
+            - list [ref=e556]:
+              - listitem [ref=e557]
+            - list [ref=e567]:
+              - listitem [ref=e568]
+          - link "Página 2" [ref=e575] [cursor=pointer]:
+            - /url: /imoveis/brasil/?pg=2
+  - generic [ref=e586]: Staging Environment - c5ecb7e0374503ca622a7d75b86c15e5e968fdcf
+  - alert [ref=e587]

@@ -1,0 +1,480 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Chaves na Mão" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Chaves na Mão" [ref=e7]
+      - navigation [ref=e12]:
+        - generic [ref=e13]:
+          - link "Imóveis" [ref=e15] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - text: Imóveis
+            - img
+          - link "Veículos" [ref=e17] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - text: Veículos
+            - img
+          - link "Anuncie" [ref=e19] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - text: Anuncie
+            - img
+      - navigation [ref=e20]:
+        - link "Favoritos" [ref=e23] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e24]
+          - text: Favoritos
+  - main [ref=e28]:
+    - complementary [ref=e29]
+    - article [ref=e30]:
+      - generic [ref=e32]:
+        - navigation "breadcrumb" [ref=e34]:
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Imóveis" [ref=e37] [cursor=pointer]:
+                - /url: /imoveis/brasil/
+            - listitem [ref=e38]:
+              - img [ref=e39]
+            - listitem [ref=e41]:
+              - link "SP" [ref=e42] [cursor=pointer]:
+                - /url: /imoveis/sp/
+            - listitem [ref=e43]:
+              - img [ref=e44]
+            - listitem [ref=e46]:
+              - link "Campinas" [ref=e47] [cursor=pointer]:
+                - /url: /imoveis/sp-campinas/
+            - listitem [ref=e48]:
+              - img [ref=e49]
+            - listitem [ref=e51]:
+              - link "3 quartos" [disabled] [ref=e52]
+        - heading "2.057 Imóveis de 3 quartos em Campinas - SP" [level=1] [ref=e53]:
+          - strong [ref=e54]: 2.057 Imóveis de 3 quartos em Campinas - SP
+      - generic [ref=e57]:
+        - link "Casa comercial com 8 salas à venda na Rua Doutor Emílio Ribas, 447, Cambuí, Campinas Casa comercial com 8 salas à venda na Rua Doutor Emílio Ribas, 447, Cambuí, Campinas strong list Preço" [ref=e59] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-a-venda-8-salas-com-garagem-sp-campinas-cambui-365m2-RS3900000/id-38700565/
+          - img "Casa comercial com 8 salas à venda na Rua Doutor Emílio Ribas, 447, Cambuí, Campinas" [ref=e62]
+          - generic [ref=e63]:
+            - heading "Casa comercial com 8 salas à venda na Rua Doutor Emílio Ribas, 447, Cambuí, Campinas" [level=2] [ref=e65]
+            - generic "strong" [ref=e66]:
+              - paragraph [ref=e67]: Rua Doutor Emílio Ribas, 447
+              - paragraph [ref=e68]: Cambuí, Campinas/SP
+            - generic "list" [ref=e69]:
+              - paragraph [ref=e70]:
+                - img [ref=e71]
+                - text: 227m²
+              - paragraph [ref=e73]:
+                - img [ref=e74]
+                - text: "8"
+              - paragraph [ref=e76]:
+                - img [ref=e77]
+                - text: "4"
+              - paragraph [ref=e79]:
+                - img [ref=e80]
+                - text: "4"
+            - paragraph [ref=e82]:
+              - generic [ref=e83]: R$ 3.900.000
+              - generic "IPTU" [ref=e84]:
+                - text: "Iptu:"
+                - generic [ref=e85]: R$ 1.770
+        - link "Casa comercial com 3 salas à venda na Rua Antônio Lapa, 582, Cambuí, Campinas Casa comercial com 3 salas à venda na Rua Antônio Lapa, 582, Cambuí, Campinas strong list Preço" [ref=e87] [cursor=pointer]:
+          - /url: /imovel/casa-comercial-a-venda-3-salas-com-garagem-sp-campinas-cambui-350m2-RS3800000/id-38665363/
+          - img "Casa comercial com 3 salas à venda na Rua Antônio Lapa, 582, Cambuí, Campinas" [ref=e90]
+          - generic [ref=e91]:
+            - heading "Casa comercial com 3 salas à venda na Rua Antônio Lapa, 582, Cambuí, Campinas" [level=2] [ref=e93]
+            - generic "strong" [ref=e94]:
+              - paragraph [ref=e95]: Rua Antônio Lapa, 582
+              - paragraph [ref=e96]: Cambuí, Campinas/SP
+            - generic "list" [ref=e97]:
+              - paragraph [ref=e98]:
+                - img [ref=e99]
+                - text: 350m²
+              - paragraph [ref=e101]:
+                - img [ref=e102]
+                - text: "3"
+              - paragraph [ref=e104]:
+                - img [ref=e105]
+                - text: "6"
+              - paragraph [ref=e107]:
+                - img [ref=e108]
+                - text: "5"
+            - paragraph [ref=e110]:
+              - generic [ref=e111]: R$ 3.800.000
+              - generic "IPTU" [ref=e112]:
+                - text: "Iptu:"
+                - generic [ref=e113]: R$ 1.139
+        - link "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 222 m², Prestige Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 222 m², Prestige strong list Preço" [ref=e115] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-cambui-222m2-RS3919000/id-39871652/
+          - img "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 222 m², Prestige" [ref=e118]
+          - generic [ref=e119]:
+            - heading "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 222 m², Prestige" [level=2] [ref=e121]
+            - generic "strong" [ref=e122]:
+              - paragraph [ref=e123]: Rua Doutor Sampaio Peixoto, 201
+              - paragraph [ref=e124]: Cambuí, Campinas/SP
+            - generic "list" [ref=e125]:
+              - paragraph [ref=e126]:
+                - img [ref=e127]
+                - text: 222m²
+              - paragraph [ref=e129]:
+                - img [ref=e130]
+                - text: "3"
+              - paragraph [ref=e132]:
+                - img [ref=e133]
+                - text: "4"
+              - paragraph [ref=e135]:
+                - img [ref=e136]
+                - text: "3"
+            - paragraph [ref=e138]:
+              - generic [ref=e139]: R$ 3.919.000
+        - link "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 219.45 m², Prestige Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 219.45 m², Prestige strong list Preço" [ref=e141] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-cambui-250m2-RS4000000/id-42088577/
+          - img "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 219.45 m², Prestige" [ref=e144]
+          - generic [ref=e145]:
+            - heading "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 219.45 m², Prestige" [level=2] [ref=e147]
+            - generic "strong" [ref=e148]:
+              - paragraph [ref=e149]: Rua Doutor Sampaio Peixoto
+              - paragraph [ref=e150]: Cambuí, Campinas/SP
+            - generic "list" [ref=e151]:
+              - paragraph [ref=e152]:
+                - img [ref=e153]
+                - text: 219m²
+              - paragraph [ref=e155]:
+                - img [ref=e156]
+                - text: "3"
+              - paragraph [ref=e158]:
+                - img [ref=e159]
+                - text: "4"
+              - paragraph [ref=e161]:
+                - img [ref=e162]
+                - text: "3"
+            - paragraph [ref=e164]:
+              - generic [ref=e165]: R$ 4.000.000
+        - link "Apartamento com 3 dormitórios, 170 m² - venda por R$ 4.000.000,00 ou aluguel por R$ 27.500,00/mês - Cambuí - Campinas/SP strong list Preço" [ref=e167] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-cambui-RS4000000/id-38709650/
+          - generic [ref=e169]:
+            - heading "Apartamento com 3 dormitórios, 170 m² - venda por R$ 4.000.000,00 ou aluguel por R$ 27.500,00/mês - Cambuí - Campinas/SP" [level=2] [ref=e171]
+            - generic "strong" [ref=e172]:
+              - paragraph [ref=e173]: Endereço indisponível
+              - paragraph [ref=e174]: Cambuí, Campinas/SP
+            - generic "list" [ref=e175]:
+              - paragraph [ref=e176]:
+                - img [ref=e177]
+                - text: 170m²
+              - paragraph [ref=e179]:
+                - img [ref=e180]
+                - text: "3"
+              - paragraph [ref=e182]:
+                - img [ref=e183]
+                - text: "4"
+              - paragraph [ref=e185]:
+                - img [ref=e186]
+                - text: "3"
+            - paragraph [ref=e188]:
+              - generic [ref=e189]: R$ 4.000.000
+              - generic "IPTU" [ref=e190]:
+                - text: "Iptu:"
+                - generic [ref=e191]: R$ 2.500
+        - generic [ref=e196]:
+          - list [ref=e201]:
+            - listitem [ref=e202]
+          - list [ref=e212]:
+            - listitem [ref=e213]
+          - list [ref=e223]:
+            - listitem [ref=e224]
+          - list [ref=e234]:
+            - listitem [ref=e235]
+          - list [ref=e245]:
+            - listitem [ref=e246]
+        - link "Apartamento com 3 quartos à venda na Rua Engenheiro José Francisco Bento Homem de Mello, 1155b, Fazenda São Quirino, Campinas, 300 m2 por R$ 3.654.000 strong list Preço" [ref=e253] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-fazenda-sao-quirino-300m2-RS3654000/id-42771944/
+          - generic [ref=e255]:
+            - heading "Apartamento com 3 quartos à venda na Rua Engenheiro José Francisco Bento Homem de Mello, 1155b, Fazenda São Quirino, Campinas, 300 m2 por R$ 3.654.000" [level=2] [ref=e257]
+            - generic "strong" [ref=e258]:
+              - paragraph [ref=e259]: Rua Engenheiro José Francisco Bento Homem De Mello, 1155b
+              - paragraph [ref=e260]: Fazenda São Quirino, Campinas/SP
+            - generic "list" [ref=e261]:
+              - paragraph [ref=e262]:
+                - img [ref=e263]
+                - text: 300m²
+              - paragraph [ref=e265]:
+                - img [ref=e266]
+                - text: "3"
+              - paragraph [ref=e268]:
+                - img [ref=e269]
+                - text: "4"
+              - paragraph [ref=e271]:
+                - img [ref=e272]
+                - text: "3"
+            - paragraph [ref=e274]:
+              - generic [ref=e275]: R$ 3.654.000
+              - generic "Condominio" [ref=e276]:
+                - text: Condomínio
+                - generic [ref=e277]: R$ 2.100
+        - link "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 180 m², Singulare Cambuí strong list Preço" [ref=e279] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-cambui-180m2-RS3500000/id-42095023/
+          - generic [ref=e281]:
+            - heading "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 180 m², Singulare Cambuí" [level=2] [ref=e283]
+            - generic "strong" [ref=e284]:
+              - paragraph [ref=e285]: Endereço indisponível
+              - paragraph [ref=e286]: Cambuí, Campinas/SP
+            - generic "list" [ref=e287]:
+              - paragraph [ref=e288]:
+                - img [ref=e289]
+                - text: 180m²
+              - paragraph [ref=e291]:
+                - img [ref=e292]
+                - text: "3"
+              - paragraph [ref=e294]:
+                - img [ref=e295]
+                - text: "4"
+              - paragraph [ref=e297]:
+                - img [ref=e298]
+                - text: "3"
+            - paragraph [ref=e300]:
+              - generic [ref=e301]: R$ 3.500.000
+              - generic "Condominio" [ref=e302]:
+                - text: Condomínio
+                - generic [ref=e303]: R$ 1.700
+        - link "Apartamento alto padrão para locação e venda no edificio Aura em Nova Campinas em Campinas - SP strong list Preço" [ref=e305] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-nova-campinas-140m2-RS3500000/id-38582203/
+          - generic [ref=e307]:
+            - heading "Apartamento alto padrão para locação e venda no edificio Aura em Nova Campinas em Campinas - SP" [level=2] [ref=e309]
+            - generic "strong" [ref=e310]:
+              - paragraph [ref=e311]: Avenida Doutor Hermas Braga, 36
+              - paragraph [ref=e312]: Nova Campinas, Campinas/SP
+            - generic "list" [ref=e313]:
+              - paragraph [ref=e314]:
+                - img [ref=e315]
+                - text: 140m²
+              - paragraph [ref=e317]:
+                - img [ref=e318]
+                - text: "3"
+              - paragraph [ref=e320]:
+                - img [ref=e321]
+                - text: "4"
+              - paragraph [ref=e323]:
+                - img [ref=e324]
+                - text: "3"
+            - paragraph [ref=e326]:
+              - generic [ref=e327]: R$ 3.500.000
+              - generic "Condominio" [ref=e328]:
+                - text: Condomínio
+                - generic [ref=e329]: R$ 2.200
+        - link "Apartamento à venda em Campinas, Jardim Madalena, com 3 suítes, com 225.73 m², Bougainville strong list Preço" [ref=e331] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-jardim-madalena-225m2-RS4000000/id-30896310/
+          - generic [ref=e333]:
+            - heading "Apartamento à venda em Campinas, Jardim Madalena, com 3 suítes, com 225.73 m², Bougainville" [level=2] [ref=e335]
+            - generic "strong" [ref=e336]:
+              - paragraph [ref=e337]: Avenida Doutor José Bonifácio Coutinho Nogueira, 1231
+              - paragraph [ref=e338]: Jardim Madalena, Campinas/SP
+            - generic "list" [ref=e339]:
+              - paragraph [ref=e340]:
+                - img [ref=e341]
+                - text: 225m²
+              - paragraph [ref=e343]:
+                - img [ref=e344]
+                - text: "3"
+              - paragraph [ref=e346]:
+                - img [ref=e347]
+                - text: "4"
+              - paragraph [ref=e349]:
+                - img [ref=e350]
+                - text: "3"
+            - paragraph [ref=e352]:
+              - generic [ref=e353]: R$ 4.000.000
+              - generic "Condominio" [ref=e354]:
+                - text: Condomínio
+                - generic [ref=e355]: R$ 1.927
+        - link "Apartamento com 3 quartos à venda na Rua Engenheiro José Francisco Bento Homem de Mello, 1155b, Fazenda São Quirino, Campinas, 299 m2 por R$ 3.654.000 strong list Preço" [ref=e357] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-fazenda-sao-quirino-299m2-RS3654000/id-42771945/
+          - generic [ref=e359]:
+            - heading "Apartamento com 3 quartos à venda na Rua Engenheiro José Francisco Bento Homem de Mello, 1155b, Fazenda São Quirino, Campinas, 299 m2 por R$ 3.654.000" [level=2] [ref=e361]
+            - generic "strong" [ref=e362]:
+              - paragraph [ref=e363]: Rua Engenheiro José Francisco Bento Homem De Mello, 1155b
+              - paragraph [ref=e364]: Fazenda São Quirino, Campinas/SP
+            - generic "list" [ref=e365]:
+              - paragraph [ref=e366]:
+                - img [ref=e367]
+                - text: 299m²
+              - paragraph [ref=e369]:
+                - img [ref=e370]
+                - text: "3"
+              - paragraph [ref=e372]:
+                - img [ref=e373]
+                - text: "4"
+              - paragraph [ref=e375]:
+                - img [ref=e376]
+                - text: "3"
+            - paragraph [ref=e378]:
+              - generic [ref=e379]: R$ 3.654.000
+              - generic "Condominio" [ref=e380]:
+                - text: Condomínio
+                - generic [ref=e381]: R$ 2.100
+        - link "Apartamento para venda em Cambuí de 196.44m² com 3 Quartos, 3 Suites e 3 Garagens strong list Preço" [ref=e383] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-cambui-196m2-RS3607000/id-43771286/
+          - generic [ref=e385]:
+            - heading "Apartamento para venda em Cambuí de 196.44m² com 3 Quartos, 3 Suites e 3 Garagens" [level=2] [ref=e387]
+            - generic "strong" [ref=e388]:
+              - paragraph [ref=e389]: Rua Santo Antônio, 390
+              - paragraph [ref=e390]: Cambuí, Campinas/SP
+            - generic "list" [ref=e391]:
+              - paragraph [ref=e392]:
+                - img [ref=e393]
+                - text: 196m²
+              - paragraph [ref=e395]:
+                - img [ref=e396]
+                - text: "3"
+              - paragraph [ref=e398]:
+                - img [ref=e399]
+                - text: "4"
+              - paragraph [ref=e401]:
+                - img [ref=e402]
+                - text: "3"
+            - paragraph [ref=e404]:
+              - generic [ref=e405]: R$ 3.607.000
+        - link "Apartamento à Venda - Cambuí, Campinas - 213m2 - Condomínio severo 111 - 3 suítes strong list Preço" [ref=e407] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-cambui-213m2-RS3850000/id-28390105/
+          - generic [ref=e409]:
+            - heading "Apartamento à Venda - Cambuí, Campinas - 213m2 - Condomínio severo 111 - 3 suítes" [level=2] [ref=e411]
+            - generic "strong" [ref=e412]:
+              - paragraph [ref=e413]: Rua Severo Penteado, 111
+              - paragraph [ref=e414]: Cambuí, Campinas/SP
+            - generic "list" [ref=e415]:
+              - paragraph [ref=e416]:
+                - img [ref=e417]
+                - text: 213m²
+              - paragraph [ref=e419]:
+                - img [ref=e420]
+                - text: "3"
+              - paragraph [ref=e422]:
+                - img [ref=e423]
+                - text: "4"
+              - paragraph [ref=e425]:
+                - img [ref=e426]
+                - text: "3"
+            - paragraph [ref=e428]:
+              - generic [ref=e429]: R$ 3.850.000
+              - generic "Condominio" [ref=e430]:
+                - text: Condomínio
+                - generic [ref=e431]: R$ 2.700
+        - link "Apartamento à venda em Campinas, Jardim Madalena, com 3 suítes, com 221 m² strong list Preço" [ref=e433] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-jardim-madalena-221m2-RS3600000/id-43155454/
+          - generic [ref=e435]:
+            - heading "Apartamento à venda em Campinas, Jardim Madalena, com 3 suítes, com 221 m²" [level=2] [ref=e437]
+            - generic "strong" [ref=e438]:
+              - paragraph [ref=e439]: Avenida Doutor José Bonifácio Coutinho Nogueira, 1216
+              - paragraph [ref=e440]: Jardim Madalena, Campinas/SP
+            - generic "list" [ref=e441]:
+              - paragraph [ref=e442]:
+                - img [ref=e443]
+                - text: 221m²
+              - paragraph [ref=e445]:
+                - img [ref=e446]
+                - text: "3"
+              - paragraph [ref=e448]:
+                - img [ref=e449]
+                - text: "4"
+              - paragraph [ref=e451]:
+                - img [ref=e452]
+                - text: "3"
+            - paragraph [ref=e454]:
+              - generic [ref=e455]: R$ 3.600.000
+              - generic "Condominio" [ref=e456]:
+                - text: Condomínio
+                - generic [ref=e457]: R$ 2.504
+        - link "Apartamento com 3 quartos à venda na Rua Engenheiro José Francisco Bento Homem de Mello, 1155, Fazenda São Quirino, Campinas, 229 m2 por R$ 3.564.000 strong list Preço" [ref=e459] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-fazenda-sao-quirino-277m2-RS3564000/id-15753160/
+          - generic [ref=e461]:
+            - heading "Apartamento com 3 quartos à venda na Rua Engenheiro José Francisco Bento Homem de Mello, 1155, Fazenda São Quirino, Campinas, 229 m2 por R$ 3.564.000" [level=2] [ref=e463]
+            - generic "strong" [ref=e464]:
+              - paragraph [ref=e465]: Rua Engenheiro José Francisco Bento Homem De Mello, 1155
+              - paragraph [ref=e466]: Fazenda São Quirino, Campinas/SP
+            - generic "list" [ref=e467]:
+              - paragraph [ref=e468]:
+                - img [ref=e469]
+                - text: 229m²
+              - paragraph [ref=e471]:
+                - img [ref=e472]
+                - text: "3"
+              - paragraph [ref=e474]:
+                - img [ref=e475]
+                - text: "4"
+              - paragraph [ref=e477]:
+                - img [ref=e478]
+                - text: "3"
+            - paragraph [ref=e480]:
+              - generic [ref=e481]: R$ 3.564.000
+        - link "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 221 m², Prestige strong list Preço" [ref=e483] [cursor=pointer]:
+          - /url: /imovel/apartamento-a-venda-3-quartos-com-garagem-sp-campinas-cambui-221m2-RS4000000/id-42089100/
+          - generic [ref=e485]:
+            - heading "Apartamento à venda em Campinas, Cambuí, com 3 suítes, com 221 m², Prestige" [level=2] [ref=e487]
+            - generic "strong" [ref=e488]:
+              - paragraph [ref=e489]: Rua Doutor Sampaio Peixoto, 121
+              - paragraph [ref=e490]: Cambuí, Campinas/SP
+            - generic "list" [ref=e491]:
+              - paragraph [ref=e492]:
+                - img [ref=e493]
+                - text: 221m²
+              - paragraph [ref=e495]:
+                - img [ref=e496]
+                - text: "3"
+              - paragraph [ref=e498]:
+                - img [ref=e499]
+                - text: "4"
+              - paragraph [ref=e501]:
+                - img [ref=e502]
+                - text: "3"
+            - paragraph [ref=e504]:
+              - generic [ref=e505]: R$ 4.000.000
+              - generic "Condominio" [ref=e506]:
+                - text: Condomínio
+                - generic [ref=e507]: R$ 2.200
+        - generic [ref=e508]:
+          - generic [ref=e509]:
+            - generic [ref=e510]:
+              - heading "Mais buscados em Campinas" [level=3] [ref=e511]
+              - generic [ref=e513]:
+                - button "Anterior" [disabled] [ref=e514]:
+                  - generic:
+                    - img
+                - button "Próximo" [disabled] [ref=e515]:
+                  - generic:
+                    - img
+            - generic [ref=e516]:
+              - link "Apartamentos em Campinas com 3 quartos" [ref=e517] [cursor=pointer]:
+                - /url: /apartamentos/sp-campinas/3-quartos/
+              - link "Casas em Campinas com 3 quartos" [ref=e518] [cursor=pointer]:
+                - /url: /casas/sp-campinas/3-quartos/
+              - link "Casas em condomínio em Campinas com 3 quartos" [ref=e519] [cursor=pointer]:
+                - /url: /casas-em-condominio/sp-campinas/3-quartos/
+              - link "Coberturas em Campinas com 3 quartos" [ref=e520] [cursor=pointer]:
+                - /url: /coberturas/sp-campinas/3-quartos/
+              - link "Chácaras em Campinas com 3 quartos" [ref=e521] [cursor=pointer]:
+                - /url: /chacaras/sp-campinas/3-quartos/
+              - link "Sala comercial em Campinas" [ref=e522] [cursor=pointer]:
+                - /url: /sala-comercial/sp-campinas/3-salas/
+              - link "Casa comercial em Campinas" [ref=e523] [cursor=pointer]:
+                - /url: /casa-comercial/sp-campinas/3-salas/
+              - link "Galpões/Depósitos/Barracões em Campinas" [ref=e524] [cursor=pointer]:
+                - /url: /galpao/sp-campinas/3-salas/
+              - link "Ponto comercial em Campinas" [ref=e525] [cursor=pointer]:
+                - /url: /ponto-comercial/sp-campinas/3-salas/
+              - link "Prédios em Campinas" [ref=e526] [cursor=pointer]:
+                - /url: /predio/sp-campinas/3-salas/
+              - link "Flats em Campinas com 3 quartos" [ref=e527] [cursor=pointer]:
+                - /url: /flat/sp-campinas/3-quartos/
+              - link "Terrenos em Campinas com 3 quartos" [ref=e528] [cursor=pointer]:
+                - /url: /terrenos/sp-campinas/3-quartos/
+              - link "Kitnets em Campinas com 3 quartos" [ref=e529] [cursor=pointer]:
+                - /url: /kitnet/sp-campinas/3-quartos/
+          - generic [ref=e534]:
+            - list [ref=e539]:
+              - listitem [ref=e540]
+            - list [ref=e550]:
+              - listitem [ref=e551]
+            - list [ref=e561]:
+              - listitem [ref=e562]
+            - list [ref=e572]:
+              - listitem [ref=e573]
+            - list [ref=e583]:
+              - listitem [ref=e584]
+  - generic [ref=e600]: Staging Environment - c5ecb7e0374503ca622a7d75b86c15e5e968fdcf
+  - alert [ref=e601]

@@ -1,0 +1,7 @@
+[     191ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://staging.chavesnamao.com.br/manifest.json:0
+[     192ms] [ERROR] Manifest fetch from https://staging.chavesnamao.com.br/manifest.json failed, code 502 @ https://staging.chavesnamao.com.br/imoveis/sp-campinas/?filtro=pmin:950000,pmax:960000,ban:3,gar:2:39
+[     714ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://staging.chavesnamao.com.br/manifest.json:0
+[     714ms] [ERROR] Manifest fetch from https://staging.chavesnamao.com.br/manifest.json failed, code 502 @ https://staging.chavesnamao.com.br/imoveis/sp-campinas/?filtro=pmin:950000,pmax:960000,ban:3,gar:2:0
+[    1712ms] [ERROR] Failed to load resource: the server responded with a status of 502 () @ https://staging.chavesnamao.com.br/imoveis/estatisticas/index/:0
+[    1712ms] [ERROR] HTTP Error: 502 -  @ https://cdn.chavesnamao.com.br/portal-staging/build/c5ecb7e0374503ca622a7d75b86c15e5e968fdcf/_next/static/chunks/25859-b09d783442b8185a.js:44
+[    6615ms] [WARNING] The resource https://cdn.chavesnamao.com.br/portal-staging/build/c5ecb7e0374503ca622a7d75b86c15e5e968fdcf/_next/static/chunks/33084.c27f8f9d188b82b2.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://staging.chavesnamao.com.br/imoveis/sp-campinas/?filtro=pmin:950000,pmax:960000,ban:3,gar:2:0

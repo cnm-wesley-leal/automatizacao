@@ -37,6 +37,7 @@ export const REALTY_SEARCH_DATA = {
     apartments: '/apartamentos/brasil/',
     zeroResults: '/imoveis-para-alugar/brasil/?filtro=pmin:9000000000,pmax:10000000000,ban:4,gar:4',
     directOwner: '/imoveis-para-alugar-direto-com-o-proprietario/brasil/',
+    fewResults: '/imoveis/sp-campinas/4-quartos/?filtro=pmin:8000000,pmax:10000000,ban:4,gar:4,are:[12]',
   },
   api: {
     navigationFilters: '/api/realestate/aggregations/navigationFilters/',
