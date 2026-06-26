@@ -1,0 +1,448 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Chaves na Mão" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Chaves na Mão" [ref=e7]
+      - navigation [ref=e12]:
+        - generic [ref=e13]:
+          - link "Imóveis" [ref=e15] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - text: Imóveis
+            - img
+          - link "Veículos" [ref=e17] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - text: Veículos
+            - img
+          - link "Anuncie" [ref=e19] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - text: Anuncie
+            - img
+      - navigation [ref=e20]:
+        - link "Favoritos" [ref=e23] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e24]
+          - text: Favoritos
+  - main [ref=e28]:
+    - complementary [ref=e29]
+    - article [ref=e30]:
+      - generic [ref=e32]:
+        - navigation "breadcrumb" [ref=e34]:
+          - list [ref=e35]:
+            - listitem [ref=e36]:
+              - link "Imóveis para alugar" [ref=e37] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/brasil/
+            - listitem [ref=e38]:
+              - img [ref=e39]
+            - listitem [ref=e41]:
+              - link "Em todo Brasil" [disabled] [ref=e42]
+        - heading "0 Imóveis para alugar no Brasil" [level=1] [ref=e43]:
+          - strong [ref=e44]: 0 Imóveis para alugar no Brasil
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - img "Chaves na Mão" [ref=e50]
+          - paragraph [ref=e54]:
+            - text: + 595519 imóveis similares.
+            - img [ref=e55]
+        - link "Cobertura Duplex Aclimação Com 4 Dorm, 3 Suites, 3 Vagas - 423M² Cobertura Duplex Aclimação Com 4 Dorm, 3 Suites, 3 Vagas - 423M² strong list Preço" [ref=e58] [cursor=pointer]:
+          - /url: /imovel/cobertura-para-alugar-4-quartos-com-garagem-sp-sao-paulo-aclimacao-692m2-RS10000/id-9243913/
+          - img "Cobertura Duplex Aclimação Com 4 Dorm, 3 Suites, 3 Vagas - 423M²" [ref=e61]
+          - generic [ref=e62]:
+            - heading "Cobertura Duplex Aclimação Com 4 Dorm, 3 Suites, 3 Vagas - 423M²" [level=2] [ref=e64]
+            - generic "strong" [ref=e65]:
+              - paragraph [ref=e66]: Rua Castro Alves, 806
+              - paragraph [ref=e67]: Aclimação, São Paulo/SP
+            - generic "list" [ref=e68]:
+              - paragraph [ref=e69]:
+                - img [ref=e70]
+                - text: 600m²
+              - paragraph [ref=e72]:
+                - img [ref=e73]
+                - text: "4"
+              - paragraph [ref=e75]:
+                - img [ref=e76]
+                - text: "5"
+              - paragraph [ref=e78]:
+                - img [ref=e79]
+                - text: "3"
+            - paragraph [ref=e81]:
+              - generic [ref=e82]: R$ 10.000
+              - generic "Condominio" [ref=e83]:
+                - text: Condomínio
+                - generic [ref=e84]: R$ 3.100
+        - link "Casa com 2 quartos para alugar na Barra de Maricá, Maricá , 85 m2 por R$ 2.800 Casa com 2 quartos para alugar na Barra de Maricá, Maricá , 85 m2 por R$ 2.800 strong list Preço" [ref=e86] [cursor=pointer]:
+          - /url: /imovel/casa-para-alugar-2-quartos-com-garagem-rj-marica-barra-de-marica-85m2-RS2800/id-43822904/
+          - img "Casa com 2 quartos para alugar na Barra de Maricá, Maricá , 85 m2 por R$ 2.800" [ref=e89]
+          - generic [ref=e90]:
+            - heading "Casa com 2 quartos para alugar na Barra de Maricá, Maricá , 85 m2 por R$ 2.800" [level=2] [ref=e92]
+            - generic "strong" [ref=e93]:
+              - paragraph [ref=e94]: Endereço indisponível
+              - paragraph [ref=e95]: Barra de Maricá, Maricá/RJ
+            - generic "list" [ref=e96]:
+              - paragraph [ref=e97]:
+                - img [ref=e98]
+                - text: 85m²
+              - paragraph [ref=e100]:
+                - img [ref=e101]
+                - text: "2"
+              - paragraph [ref=e103]:
+                - img [ref=e104]
+                - text: "2"
+              - paragraph [ref=e106]:
+                - img [ref=e107]
+                - text: "1"
+            - paragraph [ref=e109]:
+              - generic [ref=e110]: R$ 2.800
+        - link "Sala comercial com 1 sala para alugar na Rua Rio de Janeiro, 1450, Nova Rússia, Ponta Grossa Sala comercial com 1 sala para alugar na Rua Rio de Janeiro, 1450, Nova Rússia, Ponta Grossa strong list Preço" [ref=e112] [cursor=pointer]:
+          - /url: /imovel/sala-comercial-para-alugar-1-sala-pr-ponta-grossa-nova-russia-45m2-RS2400/id-18706307/
+          - img "Sala comercial com 1 sala para alugar na Rua Rio de Janeiro, 1450, Nova Rússia, Ponta Grossa" [ref=e115]
+          - generic [ref=e116]:
+            - heading "Sala comercial com 1 sala para alugar na Rua Rio de Janeiro, 1450, Nova Rússia, Ponta Grossa" [level=2] [ref=e118]
+            - generic "strong" [ref=e119]:
+              - paragraph [ref=e120]: Rua Rio De Janeiro, 1450
+              - paragraph [ref=e121]: Nova Rússia, Ponta Grossa/PR
+            - generic "list" [ref=e122]:
+              - paragraph [ref=e123]:
+                - img [ref=e124]
+                - text: 45m²
+              - paragraph [ref=e126]:
+                - img [ref=e127]
+                - text: "1"
+            - paragraph [ref=e129]:
+              - generic [ref=e130]: R$ 2.400
+        - link "Casa em Condomínio para Locação em Jandira, Parque Nova Jandira, 4 dormitórios, 4 suítes, 6 banheiros, 4 vagas Casa em Condomínio para Locação em Jandira, Parque Nova Jandira, 4 dormitórios, 4 suítes, 6 banheiros, 4 vagas strong list Preço" [ref=e132] [cursor=pointer]:
+          - /url: /imovel/casa-em-condominio-para-alugar-4-quartos-com-garagem-sp-jandira-parque-nova-jandira-250m2-RS8000/id-38506085/
+          - img "Casa em Condomínio para Locação em Jandira, Parque Nova Jandira, 4 dormitórios, 4 suítes, 6 banheiros, 4 vagas" [ref=e135]
+          - generic [ref=e136]:
+            - heading "Casa em Condomínio para Locação em Jandira, Parque Nova Jandira, 4 dormitórios, 4 suítes, 6 banheiros, 4 vagas" [level=2] [ref=e138]
+            - generic "strong" [ref=e139]:
+              - paragraph [ref=e140]: Rua Nelson Ruile, 7000
+              - paragraph [ref=e141]: Parque Nova Jandira, Jandira/SP
+            - generic "list" [ref=e142]:
+              - paragraph [ref=e143]:
+                - img [ref=e144]
+                - text: 250m²
+              - paragraph [ref=e146]:
+                - img [ref=e147]
+                - text: "4"
+              - paragraph [ref=e149]:
+                - img [ref=e150]
+                - text: "6"
+              - paragraph [ref=e152]:
+                - img [ref=e153]
+                - text: "4"
+            - paragraph [ref=e155]:
+              - generic [ref=e156]: R$ 8.000
+              - generic "Condominio" [ref=e157]:
+                - text: Condomínio
+                - generic [ref=e158]: R$ 360
+        - link "Apartamento 03 domitorios aluga chacara inglesa – vila mariana com 104 m² (11) 9.5778.1936 strong list Preço" [ref=e160] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-3-quartos-com-garagem-sp-sao-paulo-chacara-inglesa-RS7000/id-30111326/
+          - generic [ref=e162]:
+            - heading "Apartamento 03 domitorios aluga chacara inglesa – vila mariana com 104 m² (11) 9.5778.1936" [level=2] [ref=e164]
+            - generic "strong" [ref=e165]:
+              - paragraph [ref=e166]: Endereço indisponível
+              - paragraph [ref=e167]: Chácara Inglesa, São Paulo/SP
+            - generic "list" [ref=e168]:
+              - paragraph [ref=e169]:
+                - img [ref=e170]
+                - text: 104m²
+              - paragraph [ref=e172]:
+                - img [ref=e173]
+                - text: "3"
+              - paragraph [ref=e175]:
+                - img [ref=e176]
+                - text: "3"
+              - paragraph [ref=e178]:
+                - img [ref=e179]
+                - text: "2"
+            - paragraph [ref=e181]:
+              - generic [ref=e182]: R$ 7.000
+              - generic "Condominio" [ref=e183]:
+                - text: Condomínio
+                - generic [ref=e184]: R$ 1.360
+        - link "Apartamento, para locação, 02 dormitórios e vaga, Condomínio Pq Santa Lúcia strong list Preço" [ref=e186] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-guarulhos-agua-chata-47m2-RS1400/id-42696101/
+          - generic [ref=e188]:
+            - heading "Apartamento, para locação, 02 dormitórios e vaga, Condomínio Pq Santa Lúcia" [level=2] [ref=e190]
+            - generic "strong" [ref=e191]:
+              - paragraph [ref=e192]: Avenida River, 465
+              - paragraph [ref=e193]: Água Chata, Guarulhos/SP
+            - generic "list" [ref=e194]:
+              - paragraph [ref=e195]:
+                - img [ref=e196]
+                - text: 47m²
+              - paragraph [ref=e198]:
+                - img [ref=e199]
+                - text: "2"
+              - paragraph [ref=e201]:
+                - img [ref=e202]
+                - text: "1"
+              - paragraph [ref=e204]:
+                - img [ref=e205]
+                - text: "1"
+            - paragraph [ref=e207]:
+              - generic [ref=e208]: R$ 1.400
+        - link "Aluga-se excelente loja de 800m2 na Rodovia Amaral Peixoto ! strong list Preço" [ref=e210] [cursor=pointer]:
+          - /url: /imovel/ponto-comercial-para-alugar-rj-araruama-centro-800m2-RS35000/id-43954651/
+          - generic [ref=e212]:
+            - heading "Aluga-se excelente loja de 800m2 na Rodovia Amaral Peixoto !" [level=2] [ref=e214]
+            - generic "strong" [ref=e215]:
+              - paragraph [ref=e216]: Endereço indisponível
+              - paragraph [ref=e217]: Centro, Araruama/RJ
+            - generic "list" [ref=e218]:
+              - paragraph [ref=e219]:
+                - img [ref=e220]
+                - text: 800m²
+            - paragraph [ref=e222]:
+              - generic [ref=e223]: R$ 35.000
+              - generic "IPTU" [ref=e224]:
+                - text: "Iptu:"
+                - generic [ref=e225]: R$ 11.700
+        - link "Apartamento com 2 quartos para alugar na Rua Bandeirantes, 199, Conceição, Diadema strong list Preço" [ref=e227] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-sp-diadema-conceicao-RS1250/id-35876139/
+          - generic [ref=e229]:
+            - heading "Apartamento com 2 quartos para alugar na Rua Bandeirantes, 199, Conceição, Diadema" [level=2] [ref=e231]
+            - generic "strong" [ref=e232]:
+              - paragraph [ref=e233]: Rua Bandeirantes, 199
+              - paragraph [ref=e234]: Conceição, Diadema/SP
+            - generic "list" [ref=e235]:
+              - paragraph [ref=e236]:
+                - img [ref=e237]
+                - text: 50m²
+              - paragraph [ref=e239]:
+                - img [ref=e240]
+                - text: "2"
+              - paragraph [ref=e242]:
+                - img [ref=e243]
+                - text: "1"
+              - paragraph [ref=e245]:
+                - img [ref=e246]
+                - text: "1"
+            - paragraph [ref=e248]:
+              - generic [ref=e249]: R$ 1.250
+              - generic "Condominio" [ref=e250]:
+                - text: Condomínio
+                - generic [ref=e251]: R$ 460
+        - 'link "Casa ampla em condomínio de alto padrão em Vinhedo-SP: 3 quartos, 3 suítes, 3 salas, 5 banheiros, 4 vagas, 250m². strong list Preço" [ref=e253] [cursor=pointer]':
+          - /url: /imovel/casa-em-condominio-para-alugar-3-quartos-com-garagem-sp-vinhedo-vila-junqueira-RS11000/id-43782750/
+          - generic [ref=e255]:
+            - 'heading "Casa ampla em condomínio de alto padrão em Vinhedo-SP: 3 quartos, 3 suítes, 3 salas, 5 banheiros, 4 vagas, 250m²." [level=2] [ref=e257]'
+            - generic "strong" [ref=e258]:
+              - paragraph [ref=e259]: Endereço indisponível
+              - paragraph [ref=e260]: Vila Junqueira, Vinhedo/SP
+            - generic "list" [ref=e261]:
+              - paragraph [ref=e262]:
+                - img [ref=e263]
+                - text: "3"
+              - paragraph [ref=e265]:
+                - img [ref=e266]
+                - text: "5"
+              - paragraph [ref=e268]:
+                - img [ref=e269]
+                - text: "4"
+            - paragraph [ref=e271]:
+              - generic [ref=e272]: R$ 11.000
+              - generic "Condominio" [ref=e273]:
+                - text: Condomínio
+                - generic [ref=e274]: R$ 965
+        - link "Terreno, 1265 m² - venda por R$ 2.600.000,00 ou aluguel por R$ 29.000,00 - Nazaré - Salvador/BA strong list Preço" [ref=e276] [cursor=pointer]:
+          - /url: /imovel/terreno-comercial-para-alugar-ba-salvador-nazare-1265m2-RS16000/id-40427125/
+          - generic [ref=e278]:
+            - heading "Terreno, 1265 m² - venda por R$ 2.600.000,00 ou aluguel por R$ 29.000,00 - Nazaré - Salvador/BA" [level=2] [ref=e280]
+            - generic "strong" [ref=e281]:
+              - paragraph [ref=e282]: Rua Bela Vista Do Cabral, 35
+              - paragraph [ref=e283]: Nazaré, Salvador/BA
+            - generic "list" [ref=e284]:
+              - paragraph [ref=e285]:
+                - img [ref=e286]
+                - text: 1.265m²
+            - paragraph [ref=e288]:
+              - generic [ref=e289]: R$ 16.000
+              - generic "IPTU" [ref=e290]:
+                - text: "Iptu:"
+                - generic [ref=e291]: R$ 13.000
+        - link "Apartamento com 1 quarto para alugar na Avenida Portuaria, 103, Muro Alto, Ipojuca strong list Preço" [ref=e293] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-1-quarto-com-garagem-pe-ipojuca-muro-alto-33m2-RS2500/id-43527730/
+          - generic [ref=e295]:
+            - heading "Apartamento com 1 quarto para alugar na Avenida Portuaria, 103, Muro Alto, Ipojuca" [level=2] [ref=e297]
+            - generic "strong" [ref=e298]:
+              - paragraph [ref=e299]: Avenida Portuaria, 103
+              - paragraph [ref=e300]: Muro Alto, Ipojuca/PE
+            - generic "list" [ref=e301]:
+              - paragraph [ref=e302]:
+                - img [ref=e303]
+                - text: 33m²
+              - paragraph [ref=e305]:
+                - img [ref=e306]
+                - text: "1"
+              - paragraph [ref=e308]:
+                - img [ref=e309]
+                - text: "1"
+              - paragraph [ref=e311]:
+                - img [ref=e312]
+                - text: "1"
+            - paragraph [ref=e314]:
+              - generic [ref=e315]: R$ 2.500
+              - generic "Condominio" [ref=e316]:
+                - text: Condomínio
+                - generic [ref=e317]: R$ 500
+        - link "Apartamento com 1 quarto para alugar na Bela Vista, São Paulo strong list Preço" [ref=e319] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-1-quarto-com-garagem-sp-sao-paulo-bela-vista-50m2-RS3698/id-42924037/
+          - generic [ref=e321]:
+            - heading "Apartamento com 1 quarto para alugar na Bela Vista, São Paulo" [level=2] [ref=e323]
+            - generic "strong" [ref=e324]:
+              - paragraph [ref=e325]: Endereço indisponível
+              - paragraph [ref=e326]: Bela Vista, São Paulo/SP
+            - generic "list" [ref=e327]:
+              - paragraph [ref=e328]:
+                - img [ref=e329]
+                - text: 50m²
+              - paragraph [ref=e331]:
+                - img [ref=e332]
+                - text: "1"
+              - paragraph [ref=e334]:
+                - img [ref=e335]
+                - text: "1"
+              - paragraph [ref=e337]:
+                - img [ref=e338]
+                - text: "1"
+            - paragraph [ref=e340]:
+              - generic [ref=e341]: R$ 3.698
+              - generic "Condominio" [ref=e342]:
+                - text: Condomínio
+                - generic [ref=e343]: R$ 1.419
+        - link "Loja na av. Rui Barbosa, principal via do bairro Santa Terezinha. Local com excelente visibilidade para qualquer comércio. Oportunidade! strong list Preço" [ref=e345] [cursor=pointer]:
+          - /url: /imovel/ponto-comercial-para-alugar-1-sala-mg-juiz-de-fora-santa-terezinha-304m2-RS25000/id-23835196/
+          - generic [ref=e347]:
+            - heading "Loja na av. Rui Barbosa, principal via do bairro Santa Terezinha. Local com excelente visibilidade para qualquer comércio. Oportunidade!" [level=2] [ref=e349]
+            - generic "strong" [ref=e350]:
+              - paragraph [ref=e351]: Avenida Rui Barbosa, 480
+              - paragraph [ref=e352]: Santa Terezinha, Juiz de Fora/MG
+            - generic "list" [ref=e353]:
+              - paragraph [ref=e354]:
+                - img [ref=e355]
+                - text: 304m²
+              - paragraph [ref=e357]:
+                - img [ref=e358]
+                - text: "1"
+              - paragraph [ref=e360]:
+                - img [ref=e361]
+                - text: "333"
+            - paragraph [ref=e363]:
+              - generic [ref=e364]: R$ 25.000
+              - generic "IPTU" [ref=e365]:
+                - text: "Iptu:"
+                - generic [ref=e366]: R$ 7.050
+        - link "Apartamento com 2 quartos para alugar na Avenida Coronel Teixeira, 2, Ponta Negra, Manaus strong list Preço" [ref=e368] [cursor=pointer]:
+          - /url: /imovel/apartamento-para-alugar-2-quartos-com-garagem-am-manaus-ponta-negra-144m2-RS7000/id-43949539/
+          - generic [ref=e370]:
+            - heading "Apartamento com 2 quartos para alugar na Avenida Coronel Teixeira, 2, Ponta Negra, Manaus" [level=2] [ref=e372]
+            - generic "strong" [ref=e373]:
+              - paragraph [ref=e374]: Avenida Coronel Teixeira, 2
+              - paragraph [ref=e375]: Ponta Negra, Manaus/AM
+            - generic "list" [ref=e376]:
+              - paragraph [ref=e377]:
+                - img [ref=e378]
+                - text: 144m²
+              - paragraph [ref=e380]:
+                - img [ref=e381]
+                - text: "2"
+              - paragraph [ref=e383]:
+                - img [ref=e384]
+                - text: "2"
+              - paragraph [ref=e386]:
+                - img [ref=e387]
+                - text: "2"
+            - paragraph [ref=e389]:
+              - generic [ref=e390]: R$ 7.000
+        - link "Prédio comercial disponível para venda e locação na região central de São José dos Campos strong list Preço" [ref=e392] [cursor=pointer]:
+          - /url: /imovel/predio-para-alugar-10-salas-com-garagem-sp-sao-jose-dos-campos-centro-RS15000/id-33826232/
+          - generic [ref=e394]:
+            - heading "Prédio comercial disponível para venda e locação na região central de São José dos Campos" [level=2] [ref=e396]
+            - generic "strong" [ref=e397]:
+              - paragraph [ref=e398]: Endereço indisponível
+              - paragraph [ref=e399]: Centro, São José dos Campos/SP
+            - generic "list" [ref=e400]:
+              - paragraph [ref=e401]:
+                - img [ref=e402]
+                - text: 256m²
+              - paragraph [ref=e404]:
+                - img [ref=e405]
+                - text: "10"
+              - paragraph [ref=e407]:
+                - img [ref=e408]
+                - text: "4"
+              - paragraph [ref=e410]:
+                - img [ref=e411]
+                - text: "4"
+            - paragraph [ref=e413]:
+              - generic [ref=e414]: R$ 15.000
+              - generic "IPTU" [ref=e415]:
+                - text: "Iptu:"
+                - generic [ref=e416]: R$ 200
+        - generic [ref=e417]:
+          - generic [ref=e418]:
+            - generic [ref=e419]:
+              - heading "Imóveis para alugar nos estados do Brasil" [level=3] [ref=e420]
+              - generic [ref=e422]:
+                - button "Anterior" [disabled] [ref=e423]:
+                  - generic:
+                    - img
+                - button "Próximo" [disabled] [ref=e424]:
+                  - generic:
+                    - img
+            - generic [ref=e425]:
+              - link "Imóveis para alugar em SP" [ref=e426] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/sp/
+              - link "Imóveis para alugar no RS" [ref=e427] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/rs/
+              - link "Imóveis para alugar em MG" [ref=e428] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/mg/
+              - link "Imóveis para alugar no PR" [ref=e429] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pr/
+              - link "Imóveis para alugar em SC" [ref=e430] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/sc/
+              - link "Imóveis para alugar no RJ" [ref=e431] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/rj/
+              - link "Imóveis para alugar na BA" [ref=e432] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/ba/
+              - link "Imóveis para alugar em PE" [ref=e433] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pe/
+              - link "Imóveis para alugar em GO" [ref=e434] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/go/
+              - link "Imóveis para alugar no PI" [ref=e435] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pi/
+              - link "Imóveis para alugar no MT" [ref=e436] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/mt/
+              - link "Imóveis para alugar na PB" [ref=e437] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pb/
+              - link "Imóveis para alugar no CE" [ref=e438] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/ce/
+              - link "Imóveis para alugar no RN" [ref=e439] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/rn/
+              - link "Imóveis para alugar em SE" [ref=e440] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/se/
+              - link "Imóveis para alugar no ES" [ref=e441] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/es/
+              - link "Imóveis para alugar em AL" [ref=e442] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/al/
+              - link "Imóveis para alugar no AM" [ref=e443] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/am/
+              - link "Imóveis para alugar no MS" [ref=e444] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/ms/
+              - link "Imóveis para alugar no PA" [ref=e445] [cursor=pointer]:
+                - /url: /imoveis-para-alugar/pa/
+          - generic [ref=e450]:
+            - list [ref=e455]:
+              - listitem [ref=e456]
+            - list [ref=e466]:
+              - listitem [ref=e467]
+            - list [ref=e477]:
+              - listitem [ref=e478]
+            - list [ref=e488]:
+              - listitem [ref=e489]
+            - list [ref=e499]:
+              - listitem [ref=e500]
+  - generic [ref=e506]: Staging Environment - 59313c77c2c2b8e767b489d19e84af873711354b
+  - alert [ref=e507]

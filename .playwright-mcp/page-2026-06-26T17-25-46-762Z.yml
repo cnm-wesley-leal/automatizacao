@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Chaves na Mão" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - img "Chaves na Mão" [ref=e7]
+      - navigation [ref=e12]:
+        - generic [ref=e13]:
+          - link "Imóveis" [ref=e15] [cursor=pointer]:
+            - /url: /imoveis/brasil/
+            - text: Imóveis
+            - img
+          - link "Veículos" [ref=e17] [cursor=pointer]:
+            - /url: /carros-usados/brasil/
+            - text: Veículos
+            - img
+          - link "Anuncie" [ref=e19] [cursor=pointer]:
+            - /url: /anunciar-imoveis-carros-e-motos/
+            - text: Anuncie
+            - img
+      - navigation [ref=e20]:
+        - link "Favoritos" [ref=e23] [cursor=pointer]:
+          - /url: /favoritos/
+          - img [ref=e24]
+          - text: Favoritos
+  - main [ref=e28]:
+    - complementary [ref=e29]
+    - article [ref=e30]:
+      - list [ref=e40]:
+        - listitem [ref=e41]
+        - listitem [ref=e58]
+        - listitem [ref=e75]
+        - listitem [ref=e92]
+  - generic [ref=e109]: Staging Environment - 61dbe93ef95c1b886bb81bb4d78b50cc1dc938a5
+  - alert [ref=e110]

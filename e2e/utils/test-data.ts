@@ -231,6 +231,32 @@ export const VEHICLE_SEARCH_DATA = {
   },
 }
 
+export const REALTY_DETAIL_DATA = {
+  urls: {
+    rentListingBase:      '/imoveis-para-alugar/brasil/',
+    saleListingBase:      '/imoveis-a-venda/brasil/',
+    zeroResultsRent:      '/imoveis-para-alugar/brasil/?filtro=pmin:9000000000,pmax:10000000000',
+    zeroResultsCity:      '/imoveis-para-alugar/sp-campinas/?filtro=pmin:9000000000,pmax:10000000000',
+    contradictoryFilters: '/imoveis-a-venda/brasil/?filtro=pmin:5000000,pmax:1000',
+  },
+  // Estado vazio: não há componente separado — o h1 exibe "0 Imóveis..." + sugestões
+  zeroResultsH1: /^0\s/,
+  crossCheck: {
+    rooms2:   { listUrl: '/imoveis/brasil/2-quartos/',        bedsMin: 2 },
+    rooms3:   { listUrl: '/imoveis/brasil/3-quartos/',        bedsMin: 3 },
+    rent:     { listUrl: '/imoveis-para-alugar/brasil/',      priceLabel: /aluguel/i },
+    sale:     { listUrl: '/imoveis-a-venda/brasil/',          priceLabel: /venda|valor/i },
+    pmin:     { listUrl: '/imoveis/brasil/?filtro=pmin:500000',       priceMin: 500_000 },
+    pmax:     { listUrl: '/imoveis/brasil/?filtro=pmax:800000',       priceMax: 800_000 },
+    baths2:   { listUrl: '/imoveis/brasil/?filtro=ban:2',             bathsMin: 2 },
+    garage:   { listUrl: '/imoveis/brasil/?filtro=gar:1',             garagesMin: 1 },
+    piscina:  { listUrl: '/imoveis/brasil/?filtro=are:[5]',           feature: /piscina/i },
+    elevador: { listUrl: '/imoveis/brasil/?filtro=are:[12]',          feature: /elevador/i },
+    orderMenorPreco: { listUrl: '/imoveis/brasil/?filtro=or:1' },
+    multiFilter: { listUrl: '/imoveis-para-alugar/brasil/2-quartos/?filtro=ban:1' },
+  },
+}
+
 export const HOME_DATA = {
   h1: 'Encontre milhões de imóveis, carros e motos',
   tabs: {

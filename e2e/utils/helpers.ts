@@ -273,6 +273,24 @@ export async function clearFilters(page: Page): Promise<void> {
   await resilientClick(page, clearBtn)
 }
 
+/**
+ * Navega para a URL de listagem, dispensa cookies, aguarda ao menos 1 card
+ * e retorna o href absoluto do primeiro card de imóvel.
+ * Falha o teste se a lista não exibir nenhum resultado.
+ */
+export async function navigateToFirstResult(page: Page, listUrl: string): Promise<string> {
+  await resilientGoto(page, listUrl)
+  await dismissCookieConsent(page)
+  const firstCard = page.locator('a[href*="/imovel/"]').first()
+  await expect(firstCard).toBeVisible({ timeout: 15_000 })
+  const href = await firstCard.getAttribute('href') ?? ''
+  if (!href) throw new Error(`Nenhum card de imóvel encontrado em ${listUrl}`)
+  // Garante URL absoluta
+  if (href.startsWith('http')) return href
+  const base = TEST_DATA.urls.base.replace(/\/$/, '')
+  return `${base}${href}`
+}
+
 export async function expandFilterSection(page: Page, sectionName: string): Promise<void> {
   // Sections are accordions; click the <p> header to expand
   const header = page.locator('p').filter({ hasText: sectionName }).first()

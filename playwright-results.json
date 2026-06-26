@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 8
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 8
         },
         "id": "setup-chromium",
         "name": "setup-chromium",
@@ -38,7 +38,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 8
         },
         "id": "setup-webkit",
         "name": "setup-webkit",
@@ -56,7 +56,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 8
         },
         "id": "setup-ios",
         "name": "setup-ios",
@@ -74,7 +74,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 8
         },
         "id": "chromium",
         "name": "chromium",
@@ -92,7 +92,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 8
         },
         "id": "chromium-pf-flow",
         "name": "chromium-pf-flow",
@@ -110,7 +110,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 8
         },
         "id": "webkit-safari",
         "name": "webkit-safari",
@@ -128,7 +128,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 8
         },
         "id": "ios-safari-iphone-14",
         "name": "ios-safari-iphone-14",
@@ -196,12 +196,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10648,
+                  "duration": 11092,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-26T12:30:49.877Z",
+                  "startTime": "2026-06-26T19:22:24.673Z",
                   "annotations": [
                     {
                       "type": "info",
@@ -222,20 +222,20 @@
       ]
     },
     {
-      "title": "tests\\RealtyFilters.spec.ts",
-      "file": "tests/RealtyFilters.spec.ts",
+      "title": "tests\\RealtyDetail.spec.ts",
+      "file": "tests/RealtyDetail.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Scroll infinito e fim de listagem",
-          "file": "tests/RealtyFilters.spec.ts",
-          "line": 390,
+          "title": "Detalhes do Imóvel — Renderização dos Blocos",
+          "file": "tests/RealtyDetail.spec.ts",
+          "line": 47,
           "column": 6,
           "specs": [
             {
-              "title": "CT32 - scroll até o fim deve carregar mais cards via API (scroll infinito)",
+              "title": "CT01 - galeria de fotos presente com ao menos 1 imagem",
               "ok": true,
               "tags": [],
               "tests": [
@@ -250,12 +250,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6637,
+                      "duration": 12701,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-26T12:31:02.965Z",
+                      "startTime": "2026-06-26T19:22:37.594Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -263,13 +263,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "3f96d8dede023941b5c3-7121bf689cd9440705a7",
-              "file": "tests/RealtyFilters.spec.ts",
-              "line": 393,
+              "id": "430a1b8546aac7916ad8-093d063acd4e62c584de",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 56,
               "column": 7
             },
             {
-              "title": "CT33 - ao esgotar resultados principais deve exibir seção de imóveis similares",
+              "title": "CT02 - preço principal visível com valor numérico",
               "ok": true,
               "tags": [],
               "tests": [
@@ -284,12 +284,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 8989,
+                      "duration": 12788,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-26T12:31:02.966Z",
+                      "startTime": "2026-06-26T19:22:37.582Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -297,13 +297,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "3f96d8dede023941b5c3-93e78895361b43f3393d",
-              "file": "tests/RealtyFilters.spec.ts",
-              "line": 426,
+              "id": "430a1b8546aac7916ad8-eb1204bd3b137701cbea",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 64,
               "column": 7
             },
             {
-              "title": "CT34 - cards exibidos após o separador de similares devem ser links válidos de imóveis",
+              "title": "CT03 - endereço presente (bairro e/ou cidade)",
               "ok": true,
               "tags": [],
               "tests": [
@@ -318,12 +318,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 9067,
+                      "duration": 12419,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-26T12:31:02.971Z",
+                      "startTime": "2026-06-26T19:22:37.635Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -331,9 +331,1445 @@
                   "status": "expected"
                 }
               ],
-              "id": "3f96d8dede023941b5c3-49e88b532b1df0bda03a",
-              "file": "tests/RealtyFilters.spec.ts",
-              "line": 447,
+              "id": "430a1b8546aac7916ad8-851375dd8761556b422d",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 72,
+              "column": 7
+            },
+            {
+              "title": "CT04 - características presentes (quartos, banheiros, área, garagens)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 12690,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:37.595Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-db5b7839f68ea6e71912",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 80,
+              "column": 7
+            },
+            {
+              "title": "CT05 - descrição do imóvel presente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 12579,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:37.630Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-6e56bac8adb325f15845",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 86,
+              "column": 7
+            },
+            {
+              "title": "CT06 - seção de proximidades/mapa presente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 12540,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:37.632Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-7378e83b33dc01f54349",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 97,
+              "column": 7
+            },
+            {
+              "title": "CT07 - botões de contato do anunciante presentes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 12686,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:37.594Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-eee38e239e9ec1247d48",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 102,
+              "column": 7
+            },
+            {
+              "title": "CT08 - imóvel de aluguel exibe condomínio e/ou IPTU",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 12506,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:37.683Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-8feb9a2b67dc3623d730",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 110,
+              "column": 7
+            },
+            {
+              "title": "CT09 - imóvel de venda não exibe \"Aluguel\" no preço",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 360000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                        "line": 121,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 23310,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:50.453Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                            "line": 121,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-10677d788681905f7081",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 120,
+              "column": 7
+            },
+            {
+              "title": "CT10 - responsividade: elementos-chave visíveis em mobile (375px)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Validação de viewport mobile — executar em projeto mobile",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                        "line": 137,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "skipped",
+                      "duration": 11081,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:50.453Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Validação de viewport mobile — executar em projeto mobile",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                            "line": 137,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-c43f2fabd21505421418",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 136,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Detalhes do Imóvel — Funcionalidades",
+          "file": "tests/RealtyDetail.spec.ts",
+          "line": 149,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT11 - favoritar imóvel (logado) — botão muda estado visual",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Defina USER_EMAIL e configure auth para executar este teste.",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                        "line": 159,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "skipped",
+                      "duration": 12162,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:50.452Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Defina USER_EMAIL e configure auth para executar este teste.",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                            "line": 159,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-60f971ffe9cd95d31360",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 158,
+              "column": 7
+            },
+            {
+              "title": "CT12 - desfavoritar imóvel (logado) — toggle reverte estado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Defina USER_EMAIL e configure auth para executar este teste.",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                        "line": 181,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 12064,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:50.469Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Defina USER_EMAIL e configure auth para executar este teste.",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                            "line": 181,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-f2188b4fa5d30c15092d",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 180,
+              "column": 7
+            },
+            {
+              "title": "CT13 - favoritar (deslogado) — botão presente e ação tratada sem crash",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 26165,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:50.499Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-c7776dadfafe817b4841",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 198,
+              "column": 7
+            },
+            {
+              "title": "CT14 - galeria está visível por padrão (tab \"Fotos\" ativo)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 11985,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:50.519Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-0929e451db4fb48a503b",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "CT15 - tab \"Mapa\" exibe seção de proximidades ao clicar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 13103,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:50.536Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-3d861e55ff399ebc7237",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 233,
+              "column": 7
+            },
+            {
+              "title": "CT16 - botão de telefone do anunciante presente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 12081,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:22:50.536Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-4de40f0c2f1c1f5da9b2",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 245,
+              "column": 7
+            },
+            {
+              "title": "CT17 - botão de contato com o anunciante presente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 10832,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:01.558Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-e10318416d80eed37be8",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 252,
+              "column": 7
+            },
+            {
+              "title": "CT18 - formulário de perguntas rápidas presente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 12062,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:02.524Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-57ec0014d2a071c455fb",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 258,
+              "column": 7
+            },
+            {
+              "title": "CT19 - pergunta rápida dispara ação ao clicar (sem crash)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 12711,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:02.564Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-4e9267ace2cb5551c45a",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 263,
+              "column": 7
+            },
+            {
+              "title": "CT20 - formulário de contato não causa erro ao enviar sem autenticação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 13536,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:02.638Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-fab7cdd9c3c1559a9bf0",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 279,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Detalhes do Imóvel — Veracidade dos Detalhes Filtrados",
+          "file": "tests/RealtyDetail.spec.ts",
+          "line": 303,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT21 - filtro aluguel → detalhe exibe tipo locação",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11964,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:02.641Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-e230ff096a8ad5a1e330",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 307,
+              "column": 7
+            },
+            {
+              "title": "CT22 - filtro venda → detalhe não exibe \"Aluguel\" no preço",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 360000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                        "line": 322,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 11049,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:03.658Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                            "line": 322,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-998ebd05aab9831e327a",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 321,
+              "column": 7
+            },
+            {
+              "title": "CT23 - filtro 2 quartos → detalhe exibe ≥ 2 quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Primeiro resultado é imóvel comercial sem característica \"Quartos\" — lista de 2 quartos pode incluir comerciais",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                        "line": 344,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "skipped",
+                      "duration": 20735,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:12.402Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Primeiro resultado é imóvel comercial sem característica \"Quartos\" — lista de 2 quartos pode incluir comerciais",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                            "line": 344,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-c1052b35172b0a249172",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 336,
+              "column": 7
+            },
+            {
+              "title": "CT24 - filtro 3 quartos → detalhe exibe ≥ 3 quartos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Primeiro resultado é imóvel comercial sem característica \"Quartos\" — lista de 3 quartos pode incluir comerciais",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                        "line": 362,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 6,
+                      "status": "skipped",
+                      "duration": 20804,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:13.787Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Primeiro resultado é imóvel comercial sem característica \"Quartos\" — lista de 3 quartos pode incluir comerciais",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                            "line": 362,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-bfa1761caa0b4b86c65c",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 354,
+              "column": 7
+            },
+            {
+              "title": "CT25 - filtro pmin:500000 → preço no detalhe ≥ R$ 500.000",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 11365,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:14.610Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-cba74956b3b8fa837ad2",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 371,
+              "column": 7
+            },
+            {
+              "title": "CT26 - filtro pmax:800000 → preço no detalhe ≤ R$ 800.000",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11347,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:14.624Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-15bac119caf3a06e4e1f",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 385,
+              "column": 7
+            },
+            {
+              "title": "CT27 - filtro ban:2 → detalhe exibe ≥ 2 banheiros",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 11230,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:14.727Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-b8f15c053ffac64e2687",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 399,
+              "column": 7
+            },
+            {
+              "title": "CT28 - filtro gar:1 → detalhe exibe ≥ 1 vaga",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10859,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:15.295Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-4128db830bca4cdebf42",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 413,
+              "column": 7
+            },
+            {
+              "title": "CT29 - filtro piscina → detalhe menciona \"piscina\" nas amenidades",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 10895,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:16.191Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-b6e1735471d67d5cc1f4",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 427,
+              "column": 7
+            },
+            {
+              "title": "CT30 - filtro elevador → detalhe menciona \"elevador\" nas amenidades",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 10926,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:16.692Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-56da2c813935481d4310",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 441,
+              "column": 7
+            },
+            {
+              "title": "CT31 - ordenação menor preço → 1º card tem preço ≤ 2º card",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 5933,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:25.966Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-d471940f06bf02073bb1",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 455,
+              "column": 7
+            },
+            {
+              "title": "CT32 - filtro combinado aluguel + 2 quartos + ban:1 → detalhe satisfaz todos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 360000,
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                        "line": 487,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 11166,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:25.989Z",
+                      "annotations": [
+                        {
+                          "type": "slow",
+                          "location": {
+                            "file": "C:\\Automatização\\e2e\\tests\\RealtyDetail.spec.ts",
+                            "line": 487,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-1371d7aee79cbe67f422",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 486,
+              "column": 7
+            },
+            {
+              "title": "CT33 - zero resultados (preço absurdo) → h1 mostra \"0 Imóveis\" sem quebrar",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5904,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:25.994Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-61f099221d852e97c158",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 507,
+              "column": 7
+            },
+            {
+              "title": "CT34 - filtros contraditórios (pmin > pmax) → página não quebra",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5747,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:26.172Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-a25100b8614c450395a2",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 526,
+              "column": 7
+            },
+            {
+              "title": "CT35 - combinação impossível → estado vazio ou zero resultados consistente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 5698,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:27.101Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-55668e01f6796dfc70a3",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 545,
+              "column": 7
+            },
+            {
+              "title": "CT36 - URL de detalhe com parâmetros UTM carrega normalmente",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 10925,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:27.626Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-43c1e12e31b2872bbb31",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 567,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Detalhes do Imóvel — Mobile Exclusivos",
+          "file": "tests/RealtyDetail.spec.ts",
+          "line": 595,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CT37 - portal fixo: botão \"Ver telefones\" visível no rodapé (mobile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 7,
+                      "status": "passed",
+                      "duration": 11432,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:31.909Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-10feaee434045622c6d4",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 605,
+              "column": 7
+            },
+            {
+              "title": "CT38 - portal fixo: botão \"Contatar\" visível no rodapé (mobile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11378,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:31.910Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-f0f0ce2d945588904022",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 614,
+              "column": 7
+            },
+            {
+              "title": "CT39 - clicar \"Contatar\" no portal leva ao formulário de contato (mobile)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11402,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:31.931Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-6dbbcc52c79c694fefc0",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 621,
+              "column": 7
+            },
+            {
+              "title": "CT40 - layout mobile sem overflow horizontal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 10982,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-26T19:23:32.812Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "430a1b8546aac7916ad8-3c1606b6b8a77ac690e7",
+              "file": "tests/RealtyDetail.spec.ts",
+              "line": 635,
               "column": 7
             }
           ]
@@ -343,10 +1779,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-26T12:30:48.414Z",
-    "duration": 24747.311999999998,
-    "expected": 4,
-    "skipped": 0,
+    "startTime": "2026-06-26T19:22:23.349Z",
+    "duration": 80585.791,
+    "expected": 36,
+    "skipped": 5,
     "unexpected": 0,
     "flaky": 0
   }
