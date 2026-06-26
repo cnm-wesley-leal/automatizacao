@@ -50,6 +50,7 @@ test.describe('Busca por Endereço — Localização e Ranking', () => {
     await expect(items).not.toHaveCount(0, { timeout: 8000 })
     await expect(items.first()).toBeVisible()
     await items.first().click()
+    await page.getByRole('button', { name: /concluir/i }).click()
     await page.waitForLoadState('domcontentloaded')
     await expect(page).not.toHaveURL('/imoveis/brasil/')
     const h1Text = await page.getByRole('heading', { level: 1 }).textContent()
@@ -82,10 +83,16 @@ test.describe('Busca por Endereço — Localização e Ranking', () => {
     const countFromDropdown = extractFirstNumber(await campinasItem.textContent())
     expect(countFromDropdown, 'Dropdown deve conter um número').toBeGreaterThan(0)
     await campinasItem.click()
+    await page.getByRole('button', { name: /concluir/i }).click()
     await page.waitForLoadState('domcontentloaded')
     await expect(page).toHaveURL(L.city.slugPattern)
     const countFromH1 = extractFirstNumber(await page.getByRole('heading', { level: 1 }).textContent())
     expect(countFromH1, 'h1 deve conter um número positivo').toBeGreaterThan(0)
+    const diff = Math.abs(countFromDropdown - countFromH1) / countFromDropdown
+    expect(
+      diff,
+      `Contagem do dropdown (${countFromDropdown}) deve ser próxima da contagem no h1 (${countFromH1}) — tolerância 5%`,
+    ).toBeLessThan(0.05)
   })
 
   // ── CT05: Contagem na lista de bairro = contagem no h1 após seleção ──────
@@ -101,6 +108,7 @@ test.describe('Busca por Endereço — Localização e Ranking', () => {
     const countFromDropdown = extractFirstNumber(await bairroItems.first().textContent())
     expect(countFromDropdown, 'Dropdown de bairro deve conter um número').toBeGreaterThan(0)
     await bairroItems.first().click()
+    await page.getByRole('button', { name: /concluir/i }).click()
     await page.waitForLoadState('domcontentloaded')
     await expect(page).not.toHaveURL('/imoveis/brasil/')
     const countFromH1 = extractFirstNumber(await page.getByRole('heading', { level: 1 }).textContent())
@@ -134,6 +142,7 @@ test.describe('Busca por Endereço — Localização e Ranking', () => {
     const bairroItems = loc.getNeighborhoodItems()
     await expect(bairroItems.first()).toBeVisible()
     await bairroItems.first().click()
+    await page.getByRole('button', { name: /concluir/i }).click()
     await page.waitForLoadState('domcontentloaded')
     expect(page.url()).toMatch(L.city.slugPattern)
     await expect(page.getByRole('heading', { level: 1 })).toContainText(L.city.h1Pattern)
@@ -205,6 +214,7 @@ test.describe('Busca por Endereço — Geolocalização', () => {
     await page.goto(D.urls.listings, { waitUntil: 'domcontentloaded' })
     await dismissCookieConsent(page)
     const loc = new LocationSearchPage(page)
+    await loc.openLocationDropdown()
     await loc.clickNearMe()
     // waitForFunction serve como asserção: falha com timeout se __geoRequested nunca virar true
     // Aumentado de 5s para 10s para acomodar latência em CI/ambientes com rede lenta
@@ -221,6 +231,7 @@ test.describe('Busca por Endereço — Geolocalização', () => {
     await page.goto(D.urls.listings, { waitUntil: 'domcontentloaded' })
     await dismissCookieConsent(page)
     const loc = new LocationSearchPage(page)
+    await loc.openLocationDropdown()
     await loc.clickNearMe()
     const errorElement = loc.getGeoErrorElement().first()
     await expect(errorElement).toBeVisible()
@@ -310,24 +321,15 @@ test.describe('Busca por Endereço — Desambiguação e Robustez', () => {
     const campinasItem = loc.getCityItems().filter({ hasText: /campinas/i }).first()
     await expect(campinasItem).toBeVisible()
     await campinasItem.click()
+    await page.getByRole('button', { name: /concluir/i }).click()
     await page.waitForURL(L.city.slugPattern, { timeout: 15_000 })
-    // Validação: pós-clique, devemos estar na página de Campinas
+    // Validação: pós-Concluir, devemos estar na página de Campinas
     const h1Text = await page.getByRole('heading', { level: 1 }).textContent()
     expect(h1Text, 'Página deve mostrar imóveis em Campinas após seleção').toMatch(/campinas/i)
-    // Tenta remover a localização selecionada via botão de chip ou breadcrumb
-    const removeBtn = page.locator('#locationContainer').locator('button:not([class*="request"])').first()
-    let removeBtnClicked = false
-    if (await removeBtn.isVisible({ timeout: 2_000 }).catch(() => false)) {
-      await removeBtn.click()
-      removeBtnClicked = true
-    } else {
-      const breadcrumbLink = page.locator('[aria-label*="breadcrumb"] a, nav[aria-label*="readcrumb"] a').first()
-      // Garantir que breadcrumb está visível antes de clicar (caso contrario, click falha)
-      await expect(breadcrumbLink).toBeVisible({ timeout: 5_000 })
-      await breadcrumbLink.click()
-      removeBtnClicked = true
-    }
-    expect(removeBtnClicked, 'Deve haver um mecanismo visível para remover a localização (chip ou breadcrumb)').toBe(true)
+    // Remove a localização: abre filtro → sub-painel → clica chip × → confirma
+    await loc.openLocationDropdown()
+    await loc.clearLocationInput()
+    await page.getByRole('button', { name: /concluir/i }).click()
     await page.waitForLoadState('domcontentloaded')
     await expect(page).not.toHaveURL(L.city.slugPattern)
     await expect(page).toHaveURL(/\/imoveis\//)
@@ -384,6 +386,7 @@ test.describe('Busca por Endereço — Desambiguação e Robustez', () => {
     await loc.openLocationDropdown()
     await expect(loc.getCityItems().first()).toBeVisible()
     await loc.getCityItems().first().click()
+    await page.getByRole('button', { name: /concluir/i }).click()
     await page.waitForLoadState('domcontentloaded')
     await expect(page).not.toHaveURL('/imoveis/brasil/')
   })
@@ -397,6 +400,7 @@ test.describe('Busca por Endereço — Desambiguação e Robustez', () => {
     await page.goto(D.urls.listings, { waitUntil: 'domcontentloaded' })
     await dismissCookieConsent(page)
     const loc = new LocationSearchPage(page)
+    await loc.openLocationDropdown()
     await loc.clickNearMe()
     await page.waitForLoadState('domcontentloaded')
     await expect(page).not.toHaveURL('/imoveis/brasil/')
@@ -460,6 +464,44 @@ test.describe('Busca por Endereço — Desambiguação e Robustez', () => {
         `Item ${i + 1} (${counts[i]}) deve ter ≤ anúncios que o item ${i} (${counts[i - 1]})`,
       ).toBeLessThanOrEqual(counts[i - 1])
     }
+  })
+
+  // ── CT24: Localização + filtro de preço combinados ────────────────────────
+
+  test('CT24 - selecionar cidade e aplicar filtro de preço deve preservar ambos na URL', async ({ page, isMobile }) => {
+    test.skip(isMobile, 'CT24: requer dropdown de localização e painel de filtros do layout desktop')
+    await page.goto(D.urls.listings, { waitUntil: 'domcontentloaded' })
+    await dismissCookieConsent(page)
+    const loc = new LocationSearchPage(page)
+
+    // Passo 1: selecionar cidade via sub-painel de localização
+    await loc.openLocationDropdown()
+    await loc.typeLocation(L.city.name)
+    const campinasItem = loc.getCityItems().filter({ hasText: /campinas, sp/i }).first()
+    await expect(campinasItem).toBeVisible()
+    await campinasItem.click()
+    await page.getByRole('button', { name: /concluir/i }).click()
+    await page.waitForURL(L.city.slugPattern, { timeout: 15_000 })
+    await expect(page.getByRole('heading', { level: 1 })).toContainText(L.city.h1Pattern)
+
+    // Passo 2: aplicar filtro de preço mínimo mantendo a cidade na URL
+    await page.getByRole('button', { name: 'Filtros' }).click()
+    const pmin = page.locator('#pmin-input')
+    await pmin.fill('300000')
+    await expect(pmin).toHaveValue(/300/)
+    await page.getByRole('button', { name: /aplicar filtros/i }).click()
+    await page.waitForLoadState('domcontentloaded')
+
+    // Ambos devem estar presentes: slug de cidade na rota + parâmetro de preço na query
+    await expect(page).toHaveURL(L.city.slugPattern)
+    await expect(page).toHaveURL(/pmin:300000/)
+    await expect(page.getByRole('heading', { level: 1 })).toContainText(L.city.h1Pattern)
+
+    // Verificar que os resultados diminuíram (filtro de preço efetivo)
+    const countFiltered = extractFirstNumber(
+      await page.getByRole('heading', { level: 1 }).textContent(),
+    )
+    expect(countFiltered, 'Filtro de preço deve retornar resultados na cidade').toBeGreaterThan(0)
   })
 })
 

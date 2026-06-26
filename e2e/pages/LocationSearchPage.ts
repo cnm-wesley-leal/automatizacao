@@ -4,124 +4,143 @@ import { type Locator, type Page } from '@playwright/test'
  * Page Object para o componente de busca por localização (cidade/bairro)
  * presente nas páginas de listagem de imóveis.
  *
- * Locator hierarchy (conforme BLOCO 1):
- *   role → label → placeholder → text → testid
- *
- * Seletores baseados no placeholder visível na UI:
- *   "Digite bairro, rua ou cidade"
+ * Fluxo atual (após refatoração do componente):
+ *   1. Clicar em "Filtros" → abre painel principal
+ *   2. Clicar em "#locationFilter button" → abre sub-painel de localização
+ *   3. Sub-painel expõe #locInp-input, lista de cidades e "Perto de mim"
+ *   4. Selecionar cidade adiciona chip em [class*="filtersMarked"] (não navega)
+ *   5. Clicar "Concluir" → aplica filtro e navega
  */
 export class LocationSearchPage {
   readonly page: Page
 
-  /** Input de localização (cidade, bairro ou rua) */
+  /** Input de localização — só está no DOM quando o sub-painel está aberto */
   readonly locationInput: Locator
 
-  /** Botão / link "Perto de mim" com ícone de geolocalização */
+  /** Botão "Perto de mim" — disponível dentro do sub-painel de localização */
   readonly nearMeButton: Locator
 
   constructor(page: Page) {
     this.page = page
-    // #locInp-input é o ID estável do campo; placeholder como fallback
     this.locationInput = page.locator('#locInp-input')
-    this.nearMeButton  = page
-      .getByRole('button', { name: /perto de mim/i })
-      .or(page.getByRole('link', { name: /perto de mim/i }))
+    this.nearMeButton  = page.getByRole('button', { name: /perto de mim/i })
   }
 
-  // ── Dropdown ────────────────────────────────────────────────────────────────
+  // ── Sub-painel de localização ────────────────────────────────────────────────
 
   /**
-   * Abre o dropdown clicando no input de localização e aguarda que os itens
-   * fiquem visíveis. Funciona apenas na listagem geral (/imoveis/brasil/).
-   * Em páginas de cidade específica o dropdown não é exibido.
+   * Abre o sub-painel de localização.
+   * Garante que o painel principal de filtros esteja aberto antes de abrir o sub-painel.
    */
   async openLocationDropdown(): Promise<void> {
-    await this.locationInput.click()
-    await this.page
-      .locator('#locationContainer p[class*="items_"]')
-      .first()
-      .waitFor({ state: 'visible', timeout: 10_000 })
+    const locationFilter = this.page.locator('#locationFilter')
+    if (!await locationFilter.isVisible().catch(() => false)) {
+      await this.page.getByRole('button', { name: 'Filtros' }).click()
+      await locationFilter.waitFor({ state: 'visible', timeout: 8_000 })
+    }
+    await this.page.locator('#locationFilter button').click()
+    await this.locationInput.waitFor({ state: 'visible', timeout: 8_000 })
   }
 
   /**
-   * Retorna todos os itens de sugestão visíveis no dropdown.
-   * O componente usa <p class*="items_"> — sem ARIA roles.
-   * Sem texto digitado: apenas cidades top. Com texto: cidades + bairros + ruas.
+   * Retorna todos os itens de resultado na lista de localização
+   * (cidades + bairros + ruas quando há texto digitado).
    */
   getDropdownItems(): Locator {
-    return this.page.locator('#locationContainer p[class*="items_"]')
+    return this.page.locator('[class*="listLocation"] p[class*="listResultIcon"]')
   }
 
   /**
-   * Retorna itens de sugestão de cidades.
-   * Alias de getDropdownItems() — o primeiro item sempre é a melhor cidade.
+   * Retorna apenas itens da seção "Cidades" ou "Principais Cidades".
+   * Usa XPath para selecionar somente os <p> que seguem o h4 correspondente.
    */
   getCityItems(): Locator {
-    return this.getDropdownItems()
+    return this.page.locator(
+      'xpath=//span[contains(@class,"listLocation")]' +
+      '//p[contains(@class,"listResultIcon")]' +
+      '[preceding-sibling::h4[1][contains(normalize-space(),"Cidades")]]',
+    )
   }
 
   /**
-   * Retorna itens da seção "Bairros" do dropdown.
-   * Esta seção só aparece após digitar texto no input.
+   * Retorna apenas itens da seção "Bairros" ou "Principais Bairros".
+   * Disponível após digitar texto (seção "Bairros") ou após selecionar uma cidade.
    */
   getNeighborhoodItems(): Locator {
-    return this.page
-      .locator('#locationContainer')
-      .locator('span')
-      .filter({ has: this.page.locator('h4', { hasText: 'Bairros' }) })
-      .locator('p[class*="items_"]')
+    return this.page.locator(
+      'xpath=//span[contains(@class,"listLocation")]' +
+      '//p[contains(@class,"listResultIcon")]' +
+      '[preceding-sibling::h4[1][contains(normalize-space(),"Bairros")]]',
+    )
   }
 
   // ── Ações de seleção ────────────────────────────────────────────────────────
 
   /** Digita texto no input de localização sem selecionar nada */
   async typeLocation(text: string): Promise<void> {
-    await this.locationInput.click()
     await this.locationInput.pressSequentially(text, { delay: 40 })
   }
 
   /**
-   * Digita o nome de uma cidade e seleciona o primeiro item correspondente.
+   * Digita o nome de uma cidade, seleciona o primeiro item correspondente
+   * e confirma via "Concluir" para navegar.
    */
   async selectCity(name: string): Promise<void> {
-    await this.locationInput.click()
-    await this.locationInput.pressSequentially(name, { delay: 40 })
-    await this.page
-      .locator('#locationContainer p[class*="items_"]')
+    await this.typeLocation(name)
+    await this.getCityItems()
       .filter({ hasText: new RegExp(name, 'i') })
       .first()
       .click()
+    await this.page.getByRole('button', { name: /concluir/i }).click()
   }
 
   /**
-   * Seleciona um bairro pelo nome a partir da seção "Bairros" do dropdown.
-   * Deve ser chamado após typeLocation(), quando a seção de bairros estiver visível.
+   * Seleciona um bairro pelo nome e confirma via "Concluir".
+   * Deve ser chamado após typeLocation() ou após selecionar uma cidade.
    */
   async selectNeighborhood(name: string): Promise<void> {
-    await this.page
-      .locator('#locationContainer')
-      .locator('span')
-      .filter({ has: this.page.locator('h4', { hasText: 'Bairros' }) })
-      .locator('p[class*="items_"]')
+    await this.getNeighborhoodItems()
       .filter({ hasText: new RegExp(name, 'i') })
       .first()
       .click()
+    await this.page.getByRole('button', { name: /concluir/i }).click()
   }
 
-  /** Retorna o valor atual do input de localização */
+  /**
+   * Retorna o texto da localização selecionada.
+   * Lê do chip em [class*="filtersMarked"] quando o sub-painel está aberto,
+   * ou do botão #locationFilter quando o painel principal está aberto.
+   * Retorna string vazia se nenhuma localização estiver selecionada.
+   */
   async getSelectedLocationText(): Promise<string> {
-    return (await this.locationInput.inputValue()) || ''
+    const chip = this.page.locator('[class*="filtersMarked"] button')
+    if (await chip.isVisible().catch(() => false)) {
+      return (await chip.textContent() ?? '').trim()
+    }
+    const locBtn = this.page.locator('#locationFilter button')
+    if (await locBtn.isVisible().catch(() => false)) {
+      const text = (await locBtn.textContent() ?? '').trim()
+      return /em todo brasil/i.test(text) ? '' : text
+    }
+    return ''
   }
 
-  /** Limpa o input e fecha o dropdown */
+  /**
+   * Remove a localização selecionada clicando no chip ×.
+   * Se não houver chip, limpa o input diretamente.
+   */
   async clearLocationInput(): Promise<void> {
-    await this.locationInput.clear()
-    await this.locationInput.press('Escape')
+    const chip = this.page.locator('[class*="filtersMarked"] button')
+    if (await chip.isVisible().catch(() => false)) {
+      await chip.click()
+    } else {
+      await this.locationInput.clear()
+    }
   }
 
   // ── Geolocalização ──────────────────────────────────────────────────────────
 
-  /** Clica no botão "Perto de mim" */
+  /** Clica no botão "Perto de mim" (disponível apenas com o sub-painel aberto) */
   async clickNearMe(): Promise<void> {
     await this.nearMeButton.click()
   }
@@ -144,7 +163,6 @@ export class LocationSearchPage {
 
   /** Retorna os chips de categoria de imóvel (Apartamentos, Casas, etc.) */
   getCategoryChips(): Locator {
-    // Chips são links de navegação no carrossel abaixo do h1
     return this.page.locator('[class*="chip"], [class*="category"], [class*="tab"]').filter({
       hasText: /apartamento|casa|terreno|sala|lançamento|\bem\b/i,
     })

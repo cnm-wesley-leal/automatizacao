@@ -350,4 +350,37 @@ test.describe('Busca de Imóveis — Filtros e Resultados', () => {
     const filteredCount = extractFirstNumber(filteredText)
     expect(filteredCount, 'Contagem após filtro deve ser menor').toBeLessThan(initialCount)
   })
+
+  // ── 17. Integridade dos resultados ───────────────────────────────────────
+
+  test('CT31 - cards retornados pelo filtro de 3 quartos devem ter 3 ou mais quartos', async ({ page }) => {
+    await page.goto(`${D.urls.listings}3-quartos/`, { waitUntil: 'domcontentloaded' })
+    await expect(page.getByRole('heading', { level: 1 })).toContainText(/3 quartos/i)
+
+    const cardLinks = page.locator('a[href*="/imovel/"]')
+    await expect(cardLinks.first()).toBeVisible()
+    const total = Math.min(await cardLinks.count(), 10)
+
+    // Extrai contagem de quartos do slug da URL (ex: "3-quartos" → 3)
+    const bedroomPattern = /\/(\d+)-quartos\//
+    const checkedBedrooms: number[] = []
+
+    for (let i = 0; i < total; i++) {
+      const href = (await cardLinks.nth(i).getAttribute('href')) ?? ''
+      const match = href.match(bedroomPattern)
+      if (match) {
+        const bedrooms = parseInt(match[1], 10)
+        checkedBedrooms.push(bedrooms)
+        expect(
+          bedrooms,
+          `Card "${href}" retornado pelo filtro de 3+ quartos deve ter 3 ou mais quartos`,
+        ).toBeGreaterThanOrEqual(3)
+      }
+    }
+
+    expect(
+      checkedBedrooms.length,
+      'Ao menos um card deve conter informação de quartos na URL para validar a integridade do filtro',
+    ).toBeGreaterThan(0)
+  })
 })
