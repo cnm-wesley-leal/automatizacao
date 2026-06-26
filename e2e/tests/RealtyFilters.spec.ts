@@ -428,14 +428,11 @@ test.describe('Scroll infinito e fim de listagem', () => {
     await dismissCookieConsent(page)
 
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight))
-    await page.waitForTimeout(2_500)
 
-    const similares = page.locator('div[class*="style_container__"]').filter({
-      has: page.locator('p', { hasText: /\+\s*\d+\s*imóveis similares/i }),
-    })
+    const similares = page.getByText(/\+\s*\d+\s*imóveis similares/i)
     await expect(similares).toBeVisible({ timeout: 10_000 })
 
-    const textoSimilares = await similares.locator('p').textContent()
+    const textoSimilares = await similares.textContent()
     const match = textoSimilares?.match(/\+\s*(\d+)\s*imóveis similares/i)
     expect(match, 'Texto deve conter contagem de similares').toBeTruthy()
     const count = parseInt(match![1], 10)
@@ -449,11 +446,8 @@ test.describe('Scroll infinito e fim de listagem', () => {
     await dismissCookieConsent(page)
 
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight))
-    await page.waitForTimeout(2_500)
 
-    const separador = page.locator('div[class*="style_container__"]').filter({
-      has: page.locator('p', { hasText: /similares/i }),
-    })
+    const separador = page.getByText(/\+\s*\d+\s*imóveis similares/i)
     await expect(separador).toBeVisible({ timeout: 10_000 })
 
     // Cards totais devem exceder os ~13 principais carregados inicialmente

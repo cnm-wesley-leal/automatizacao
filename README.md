@@ -2,7 +2,7 @@
 
 Suíte de testes End-to-End para a plataforma **Chaves na Mão**, cobrindo autenticação, cadastro, busca de imóveis e navegação no ambiente de staging.
 
-> 📊 **Status Atual:** 100 testes | 100% taxa de sucesso | 100% cobertura | ✅ Pronto para Produção
+> 📊 **Status Atual:** 107 testes | 100% taxa de sucesso | 100% cobertura | ✅ Pronto para Produção
 
 ## 🚀 Tecnologias
 
@@ -103,8 +103,8 @@ e2e/
 | `npm run test:with-testdino` | Testes + envio automático ao TestDino |
 | `npx playwright test Header.spec.ts` | Suite de header e navegação (15 testes) |
 | `npx playwright test Home.spec.ts` | Suite da home e buscador (15 testes) |
-| `npx playwright test RealtySearch.spec.ts` | Suite de busca por endereço (23 testes) |
-| `npx playwright test RealtyFilters.spec.ts` | Suite de filtros avançados (30 testes) |
+| `npx playwright test RealtySearch.spec.ts` | Suite de busca por endereço (25 testes) |
+| `npx playwright test RealtyFilters.spec.ts` | Suite de filtros avançados (34 testes) |
 | `npx playwright test Register.spec.ts` | Suite de cadastro (6 testes) |
 | `npx playwright test Login.spec.ts` | Suite de login (10 testes) |
 
@@ -209,7 +209,7 @@ npx playwright test --reporter=json > results.json
 | CT14 | Troca imóvel → veículo: buscador de veículo aparece | ✅ |
 | CT15 | Troca veículo → imóvel: buscador de imóvel restaurado | ✅ |
 
-### Suite 6 — Filtros de Imóveis (30 testes)
+### Suite 6 — Filtros de Imóveis (34 testes)
 | ID | Caso de Teste | Status |
 |---|---|---|
 | CT01–CT04 | Navegação por tipo de negócio e tipo de imóvel | ✅ |
@@ -228,8 +228,12 @@ npx playwright test --reporter=json > results.json
 | CT28 | Filtros combinados via URL | ✅ |
 | CT29 | Limpar filtros ao clicar em Limpar | ✅ |
 | CT30 | Contagem no h1 atualizada após filtro | ✅ |
+| CT31 | Cards de 3 quartos têm 3+ quartos no href | ✅ |
+| CT32 | Scroll infinito — API pg=2 + mais cards carregados | ✅ |
+| CT33 | Seção "+ N imóveis similares" ao esgotar resultados | ✅ |
+| CT34 | Cards similares são links /imovel/ válidos | ✅ |
 
-### Suite 7 — Busca de Imóveis por Endereço (23 testes)
+### Suite 7 — Busca de Imóveis por Endereço (25 testes)
 | ID | Caso de Teste | Status |
 |---|---|---|
 | CT01 | Exibir lista de cidades com número de anúncios | ✅ |
@@ -253,6 +257,7 @@ npx playwright test --reporter=json > results.json
 | CT21 | Mobile — input abre modal fullscreen | ✅ |
 | CT22 | Breadcrumb reflete cidade e bairro | ✅ |
 | CT23 | Cidades ordenadas por número de anúncios | ✅ |
+| CT24 | Selecionar cidade + filtro de preço preserva ambos na URL | ✅ |
 | Geolocalização CT10 | Solicitar permissão ao clicar Perto de mim | ✅ |
 | Geolocalização CT11 | Sem permissão — exibir mensagem erro | ✅ |
 
@@ -325,6 +330,15 @@ Os relatórios HTML ficam em `playwright-report/index.html` após cada execuçã
 
 ## 📝 Histórico de Atualizações
 
+### v2.3 (26/06/2026) - Integridade, Scroll Infinito e Documentação
+- ✅ CT31 RealtyFilters: integridade de quartos (card href vs filtro aplicado)
+- ✅ CT32–CT34 RealtyFilters: scroll infinito (intercepção API pg=2) e fim de listagem (seção similares)
+- ✅ CT24 RealtySearch: filtro combinado cidade + preço preservado na URL
+- ✅ Criado `docs/tests/RealtyFilters.md` (34 casos documentados)
+- ✅ Atualizado `docs/tests/RealtySearch.md` (Seção B espúria removida, CT24 adicionado)
+- ✅ Seletores de scroll atualizados para `page.getByText()` (sem classes CSS frágeis)
+- 📈 Total de testes: 107
+
 ### v2.2 (02/06/2026) - Suites Header, Home e Filtros + Correções
 - ✅ Adicionadas suites Header (15 testes) e Home (15 testes)
 - ✅ Adicionada suite RealtyFilters com 30 testes de filtros avançados
@@ -358,4 +372,4 @@ Os relatórios HTML ficam em `playwright-report/index.html` após cada execuçã
 
 ---
 
-**Última atualização:** 02/06/2026 | **Status:** ✅ Pronto para Produção
+**Última atualização:** 26/06/2026 | **Status:** ✅ Pronto para Produção

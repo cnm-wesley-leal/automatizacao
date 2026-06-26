@@ -262,7 +262,7 @@
 └──────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────┐
-│ TESTES - DESAMBIGUAÇÃO E ROBUSTEZ (CT13-CT23):      │
+│ TESTES - DESAMBIGUAÇÃO E ROBUSTEZ (CT13-CT24):      │
 │ ✅ CT13 - Match exato priorizado sobre similares     │
 │ ✅ CT14 - Bairro homônimo com qualificador          │
 │ ✅ CT15 - Normalização de acentos                    │
@@ -274,6 +274,7 @@
 │ ✅ CT21 - Mobile abre modal de busca fullscreen     │
 │ ✅ CT22 - Breadcrumb reflete seleção de cidade      │
 │ ✅ CT23 - Cidades ordenadas por contagem            │
+│ ✅ CT24 - Cidade + filtro de preço preservados na URL│
 └──────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────┐
@@ -334,6 +335,65 @@
 
 ---
 
+---
+
+## 🔁 Fluxo 6: Scroll Infinito e Fim de Listagem
+
+```
+                     ┌──────────────────────────────────┐
+                     │   Página de Listagem             │
+                     │   /imoveis/brasil/               │
+                     │                                  │
+                     │  [Card 1] [Card 2] [Card N]      │
+                     │  ~20 cards na carga inicial      │
+                     │                                  │
+                     └─────────────┬────────────────────┘
+                                   │
+                            Scroll ↓ (fim da página)
+                                   │
+                  ┌────────────────────────────────────────┐
+                  │         Intersection Observer           │
+                  │         (sentinel element)             │
+                  │                                        │
+                  │  Dispara: GET /api/realestate/          │
+                  │           listing/items/?pg=2           │
+                  └────────────┬───────────────────────────┘
+                               │
+                       API 200 ↓
+                               │
+                  ┌────────────────────────────────────────┐
+                  │  Novos cards inseridos no DOM          │
+                  │  URL permanece /imoveis/brasil/        │
+                  │  Contagem de cards aumenta             │
+                  └────────────┬───────────────────────────┘
+                               │
+                    Mais scroll ↓ (resultados esgotados)
+                               │
+          ┌─────────────────────────────────────────────────┐
+          │                                                 │
+          ├─────────────────────┬───────────────────────────┤
+          │                     │                           │
+     [Resultados            [Fim da             [Seção Similares]
+      continuam]             listagem]
+          │                     │                           │
+          ↓                     ↓                           ↓
+  ┌──────────────┐  ┌─────────────────────┐  ┌─────────────────────┐
+  │  API pg=3,4  │  │  Separador visual   │  │  Cards adicionais   │
+  │  chamada     │  │                     │  │                     │
+  │  (scroll     │  │ "+ N imóveis        │  │  a[href*="/imovel/"]│
+  │  contínuo)   │  │  similares"         │  │  válidos            │
+  └──────────────┘  └─────────────────────┘  └─────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│ TESTES:                                                         │
+│ ✅ CT32 - Scroll dispara API pg=2 + contagem de cards aumenta  │
+│ ✅ CT33 - Seção "+ N imóveis similares" visível ao esgotar     │
+│ ✅ CT34 - Cards similares são links /imovel/ válidos           │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
 ## 📊 Matriz de Cobertura
 
 ```
@@ -347,13 +407,13 @@
 │ Login Social     │   7    │   7    │   0    │   0    │ 100% ✅  │
 │ Header           │  15    │  15    │   0    │   0    │ 100% ✅  │
 │ Home             │  15    │  15    │   0    │   0    │ 100% ✅  │
-│ Filtros Imóveis  │  30    │  30    │   0    │   0    │ 100% ✅  │
-│ Busca Imóveis    │  23    │  22    │   0    │   0    │ 100% ✅* │
+│ Filtros Imóveis  │  34    │  34    │   0    │   0    │ 100% ✅  │
+│ Busca Imóveis    │  25    │  24    │   0    │   0    │ 100% ✅* │
 │ Autenticação     │   1    │   1    │   0    │   0    │ 100% ✅  │
 │ Setup            │   1    │   1    │   0    │   0    │ 100% ✅  │
 │ Fuzz Testing     │   1    │   1    │   0    │   0    │ 100% ✅  │
 ├──────────────────┼────────┼────────┼────────┼────────┼──────────┤
-│ TOTAL            │ 101    │ 100    │   0    │   0    │ 100% ✅  │
+│ TOTAL            │ 107    │ 106    │   0    │   0    │ 100% ✅  │
 └──────────────────┴────────┴────────┴────────┴────────┴──────────┘
 
 * CT21 (Busca Imóveis) skip por design: exclusivo layout mobile, não executa em Chromium desktop
@@ -435,10 +495,12 @@ BUSCA DE IMÓVEIS POR ENDEREÇO
 │   ├── Mobile abre modal fullscreen ............. ✅ 100%
 │   ├── Breadcrumb reflete seleção ............... ✅ 100%
 │   └── Cidades ordenadas por contagem ........... ✅ 100%
+├── Combinado
+│   └── Cidade + filtro de preço coexistem na URL  ✅ 100%
 ├── Geolocalização
 │   ├── Solicitar permissão ao clicar Perto ..... ✅ 100%
 │   └── Sem permissão exibir erro ................ ✅ 100%
-└── Taxa: 100% (23/23 casos) ........................ ✅
+└── Taxa: 100% (25/25 casos) ........................ ✅
 
 AUTENTICAÇÃO (REGRESSIVO)
 ├── Cookies persistem após injeção ................ ✅ 100%
@@ -451,7 +513,7 @@ BUSCA FUZZ
 └── Taxa: 100% (1/1 casos) ....................... ✅
 
 ┌──────────────────────────────────────────────┐
-│ COBERTURA GERAL: 100% (100/101 exec.) ✅   │
+│ COBERTURA GERAL: 100% (106/107 exec.) ✅   │
 │ CONFIABILIDADE:  100% (sem flaky)          │
 │ PRONTO PRODUÇÃO: SIM ✅                     │
 │ * CT21 skip por design (mobile only)       │
@@ -516,18 +578,18 @@ Status Final: ✅ SUCESSO
 ├── Confiabilidade:  100% ✅
 ├── Documentação:    100% ✅
 ├── Código:          Excelente ✅
-├── Total Testes:    101 (100 exec. + 1 skip design)
-├── Taxa Sucesso:    100/100 ✅
+├── Total Testes:    107 (106 exec. + 1 skip design)
+├── Taxa Sucesso:    106/106 ✅
 └── Produção:        Ready ✅
 
 SUITES INCLUÍDAS:
 ✅ Login com Email (2 testes)
 ✅ Login Social (7 testes)
-✅ Cadastro (6 testes)
+✅ Cadastro (7 testes)
 ✅ Header e Navegação (15 testes)
 ✅ Home e Buscador (15 testes)
-✅ Filtros de Imóveis (30 testes)
-✅ Busca de Imóveis por Endereço (23 testes)
+✅ Filtros de Imóveis (34 testes) ← +CT31 integridade, +CT32-CT34 scroll/fim
+✅ Busca de Imóveis por Endereço (25 testes) ← +CT24 cidade+preço
 ✅ Autenticação (1 teste)
 ✅ Fuzz Testing (1 teste)
 ```
@@ -545,7 +607,19 @@ Dia 4: Suites Header, Home e Filtros + Correções
 │ 100 passando + 1 skip por design       │
 │ Cobertura: 100%                        │
 └────────────────────────────────────────┘
+                  ↓
+Dia 5: Integridade, Scroll Infinito e Documentação
+┌────────────────────────────────────────┐
+│ +CT31 (integridade de quartos)         │
+│ +CT32-CT34 (scroll infinito e similares│
+│ +CT24 RealtySearch (cidade + preço)    │
+│ Criado docs/tests/RealtyFilters.md     │
+│ Atualizado docs/tests/RealtySearch.md  │
+│ 107 testes totais                      │
+│ 106 passando + 1 skip por design       │
+│ Cobertura: 100%                        │
+└────────────────────────────────────────┘
 
 **VISUALIZAÇÃO COMPLETA - TODOS OS FLUXOS MAPEADOS, TESTADOS E DOCUMENTADOS ✅**
 
-**Última atualização:** 02/06/2026
+**Última atualização:** 26/06/2026
